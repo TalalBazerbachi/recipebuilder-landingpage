@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { FooterContent } from "@/data/landing-content";
 
 const footerLinks = {
@@ -12,14 +13,14 @@ const footerLinks = {
   Resources: [
     { label: "Blog", href: "/blog" },
     { label: "Compliance Resources", href: "/compliance-resources" },
-    { label: "FAQ", href: "#faq" },
+    { label: "FAQ", href: "/#faq" },
     { label: "Case Studies", href: "/blog" },
   ],
   Industries: [
-    { label: "Restaurants & Cafes", href: "#industries" },
-    { label: "Food Manufacturers", href: "#industries" },
-    { label: "Bakeries & Catering", href: "#industries" },
-    { label: "Nutrition Centers", href: "#industries" },
+    { label: "Restaurants & Cafes", href: "/#industries" },
+    { label: "Food Manufacturers", href: "/#industries" },
+    { label: "Bakeries & Catering", href: "/#industries" },
+    { label: "Nutrition Centers", href: "/#industries" },
   ],
   Company: [
     { label: "About Us", href: "/about" },
@@ -98,12 +99,23 @@ export default function Footer({ content = defaultContent }: { content?: FooterC
               <ul className="space-y-2.5">
                 {links.map((link) => (
                   <li key={link.label}>
-                    <a
-                      href={link.href}
-                      className="text-sm text-white/40 hover:text-white transition-colors"
-                    >
-                      {link.label}
-                    </a>
+                    {link.href.startsWith("http") || link.href.startsWith("mailto:") ? (
+                      <a
+                        href={link.href}
+                        target={link.href.startsWith("http") ? "_blank" : undefined}
+                        rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                        className="text-sm text-white/40 hover:text-white transition-colors"
+                      >
+                        {link.label}
+                      </a>
+                    ) : (
+                      <Link
+                        href={link.href}
+                        className="text-sm text-white/40 hover:text-white transition-colors"
+                      >
+                        {link.label}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>

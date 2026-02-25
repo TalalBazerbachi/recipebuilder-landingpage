@@ -120,7 +120,7 @@ const gccReasons = [
 export default function AboutPage() {
   return (
     <>
-      <Navbar />
+      <Navbar light />
       <main className="pt-28 pb-20">
         {/* Hero */}
         <section className="relative overflow-hidden">

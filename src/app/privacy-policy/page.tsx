@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function PrivacyPolicy() {
   return (
     <>
-      <Navbar />
+      <Navbar light />
       <main className="pt-28 pb-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-2">

@@ -92,7 +92,7 @@ const compliancePoints = [
 export default function FoodLabelingPage() {
   return (
     <>
-      <Navbar />
+      <Navbar light />
       <main>
         {/* Hero Section */}
         <section className="relative pt-32 pb-20 overflow-hidden">

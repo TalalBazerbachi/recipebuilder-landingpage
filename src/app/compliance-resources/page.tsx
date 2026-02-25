@@ -125,7 +125,7 @@ const regulatoryBodies = [
 export default function ComplianceResourcesPage() {
   return (
     <>
-      <Navbar />
+      <Navbar light />
       <main className="pt-28 pb-20">
         {/* Hero */}
         <section className="relative overflow-hidden">
