@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# AI agent configs
+.agent/
+.agents/
+.claude/
+.cline/
+.continue/
+.trae/
+.windsurf/
