@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import LogoBar from "@/components/LogoBar";
+
 import TrustPillars from "@/components/TrustPillars";
 import HowItWorks from "@/components/HowItWorks";
 import Features from "@/components/Features";
@@ -63,7 +63,6 @@ export default function GCCPage() {
       <Navbar variant="gcc" light />
       <main>
         <Hero content={gccContent.hero} />
-        <LogoBar />
         <TrustPillars content={gccContent.trustPillars} />
         <HowItWorks content={gccContent.howItWorks} />
         <Features content={gccContent.features} />

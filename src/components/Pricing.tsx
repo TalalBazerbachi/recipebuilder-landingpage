@@ -1,13 +1,14 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
-import { Check, X, ArrowRight, ShieldCheck } from "lucide-react";
+import { useRef, useState } from "react";
+import { Check, ArrowRight, BookOpen, Headset } from "lucide-react";
 import type { PricingContent } from "@/data/landing-content";
 
 export default function Pricing({ content }: { content: PricingContent }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const [isAnnual, setIsAnnual] = useState(true);
 
   return (
     <section id="pricing" className="relative py-24 bg-surface overflow-hidden" ref={ref}>
@@ -18,110 +19,161 @@ export default function Pricing({ content }: { content: PricingContent }) {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center max-w-3xl mx-auto mb-16"
+          className="text-center max-w-3xl mx-auto mb-12"
         >
           <span className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold text-primary bg-primary/10 border border-primary/20 rounded-full uppercase tracking-wider">
             Pricing
           </span>
           <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
-            Transparent Pricing,{" "}
-            <span className="gradient-text">No Surprises</span>
+            Simple, Transparent{" "}
+            <span className="gradient-text">Pricing</span>
           </h2>
           <p className="mt-4 text-lg text-text">
-            See how RecipeBuilder compares to the cost of traditional lab testing.
+            {content.subtitle}
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {/* Anchor: Lab Testing (faded/pain) */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="relative p-8 rounded-2xl border border-border bg-white"
+        {/* Billing toggle */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.15 }}
+          className="flex items-center justify-center gap-3 mb-12"
+        >
+          <span className={`text-sm font-medium ${!isAnnual ? "text-foreground" : "text-text-light"}`}>
+            Monthly
+          </span>
+          <button
+            onClick={() => setIsAnnual(!isAnnual)}
+            className="relative w-14 h-7 rounded-full bg-primary/20 transition-colors focus:outline-none focus:ring-2 focus:ring-primary/50"
+            aria-label="Toggle annual billing"
           >
-            <div className="text-sm font-medium text-text-light mb-4">
-              {content.anchorLabel}
-            </div>
-            <div className="flex items-baseline gap-1 mb-6">
-              <span className="text-3xl sm:text-4xl font-bold text-text-light line-through decoration-red-400/60 decoration-2">
-                {content.anchorPrice}
-              </span>
-            </div>
-            <div className="text-xs text-text-light mb-6 uppercase tracking-wider">
-              Per product
-            </div>
-            <ul className="space-y-3">
-              {content.anchorPains.map((pain) => (
-                <li key={pain} className="flex items-center gap-3 text-sm text-text-light">
-                  <div className="w-5 h-5 rounded-full bg-red-500/10 flex items-center justify-center flex-shrink-0">
-                    <X className="w-3 h-3 text-red-400" />
+            <div
+              className={`absolute top-0.5 w-6 h-6 rounded-full bg-primary shadow transition-transform ${
+                isAnnual ? "translate-x-7" : "translate-x-0.5"
+              }`}
+            />
+          </button>
+          <span className={`text-sm font-medium ${isAnnual ? "text-foreground" : "text-text-light"}`}>
+            Annual
+          </span>
+          {isAnnual && (
+            <span className="inline-flex items-center px-2.5 py-0.5 text-xs font-semibold text-emerald-700 bg-emerald-100 rounded-full">
+              Save up to 40%
+            </span>
+          )}
+        </motion.div>
+
+        {/* Tier cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-16">
+          {content.tiers.map((tier, i) => {
+            const isCustom = tier.monthlyPrice === null;
+            const price = isAnnual ? tier.annualPrice : tier.monthlyPrice;
+
+            return (
+              <motion.div
+                key={tier.name}
+                initial={{ opacity: 0, y: 30 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
+                className={`relative flex flex-col p-8 rounded-2xl border bg-white ${
+                  tier.highlighted
+                    ? "border-2 border-primary/40 shadow-xl shadow-primary/10 md:scale-105"
+                    : "border-border"
+                }`}
+              >
+                {/* Badge */}
+                {tier.badge && (
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                    <span className="inline-flex items-center gap-1.5 px-4 py-1 text-xs font-bold text-white bg-gradient-to-r from-primary to-accent rounded-full shadow-lg shadow-primary/25">
+                      {tier.badge}
+                    </span>
                   </div>
-                  {pain}
-                </li>
-              ))}
-            </ul>
-          </motion.div>
+                )}
 
-          {/* Main: RecipeBuilder (highlighted) */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="relative p-8 rounded-2xl border-2 border-primary/40 bg-white shadow-xl shadow-primary/10"
-          >
-            {/* Badge */}
-            <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-              <span className="inline-flex items-center gap-1.5 px-4 py-1 text-xs font-bold text-white bg-gradient-to-r from-primary to-accent rounded-full shadow-lg shadow-primary/25">
-                RecipeBuilder
-              </span>
-            </div>
+                {/* Name */}
+                <h3 className={`text-xl font-bold text-foreground ${tier.badge ? "mt-2" : ""}`}>
+                  {tier.name}
+                </h3>
 
-            <div className="text-sm font-medium text-primary mb-4 mt-2">
-              All-in-one platform
-            </div>
-            <div className="flex items-baseline gap-1 mb-1">
-              <span className="text-4xl sm:text-5xl font-bold text-foreground">
-                {content.mainPrice}
-              </span>
-            </div>
-            <div className="text-sm text-text mb-2">
-              {content.mainPriceSub}
-            </div>
-            <div className="text-sm text-text mb-1">
-              {content.mainAfterThat}
-            </div>
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold text-primary-dark bg-primary-light rounded-full mb-6">
-              {content.effectiveCost}
-            </div>
+                {/* Recipe count & support */}
+                <div className="flex items-center gap-2 mt-3 text-sm text-text">
+                  <BookOpen className="w-4 h-4 text-primary" />
+                  <span className="font-medium">{tier.recipes}</span>
+                </div>
+                <div className="flex items-center gap-2 mt-2 text-sm text-text">
+                  <Headset className="w-4 h-4 text-primary" />
+                  <span className="font-medium">{tier.support}</span>
+                </div>
 
-            <ul className="space-y-3 mb-8">
-              {content.features.map((feature) => (
-                <li key={feature.text} className="flex items-center gap-3 text-sm text-foreground">
-                  <div className="w-5 h-5 rounded-full bg-emerald-500/20 flex items-center justify-center flex-shrink-0">
-                    <Check className="w-3 h-3 text-emerald-400" />
-                  </div>
-                  {feature.text}
-                </li>
-              ))}
-            </ul>
+                {/* Price */}
+                <div className="mt-6 mb-6">
+                  {isCustom ? (
+                    <div className="text-3xl sm:text-4xl font-bold text-foreground">
+                      Custom
+                    </div>
+                  ) : (
+                    <>
+                      <div className="flex items-baseline gap-1">
+                        <span className="text-4xl sm:text-5xl font-bold text-foreground">
+                          ${price}
+                        </span>
+                        <span className="text-sm text-text-light">/mo</span>
+                      </div>
+                      {isAnnual && tier.annualPrice !== null && (
+                        <div className="mt-1 text-sm text-text-light">
+                          Billed annually (${tier.annualPrice * 12}/yr)
+                        </div>
+                      )}
+                      {!isAnnual && tier.annualPrice !== null && tier.monthlyPrice !== null && tier.annualPrice < tier.monthlyPrice && (
+                        <div className="mt-1 text-sm text-emerald-600">
+                          Save ${(tier.monthlyPrice - tier.annualPrice) * 12}/yr with annual
+                        </div>
+                      )}
+                    </>
+                  )}
+                </div>
 
-            <a
-              href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full px-6 py-3.5 text-sm font-semibold text-white bg-gradient-to-r from-primary to-primary-dark rounded-xl hover:shadow-lg hover:shadow-primary/25 transition-all hover:-translate-y-0.5"
-            >
-              Book a Demo
-              <ArrowRight className="w-4 h-4" />
-            </a>
+                {/* Features */}
+                <ul className="space-y-3 mb-8 flex-1">
+                  {content.allFeatures.map((feature) => (
+                    <li key={feature.text} className="flex items-start gap-3 text-sm text-foreground">
+                      <div className="w-5 h-5 rounded-full bg-emerald-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <Check className="w-3 h-3 text-emerald-500" />
+                      </div>
+                      {feature.text}
+                    </li>
+                  ))}
+                </ul>
 
-            <div className="mt-4 flex items-center justify-center gap-2 text-xs text-text-light">
-              <ShieldCheck className="w-3.5 h-3.5" />
-              {content.riskReversal}
-            </div>
-          </motion.div>
+                {/* CTA */}
+                <a
+                  href={tier.ctaHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`flex items-center justify-center gap-2 w-full px-6 py-3.5 text-sm font-semibold rounded-xl transition-all hover:-translate-y-0.5 ${
+                    tier.highlighted
+                      ? "text-white bg-gradient-to-r from-primary to-primary-dark hover:shadow-lg hover:shadow-primary/25"
+                      : "text-primary border-2 border-primary/30 hover:border-primary hover:bg-primary/5"
+                  }`}
+                >
+                  {tier.cta}
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              </motion.div>
+            );
+          })}
         </div>
+
+        {/* Bottom note */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.5, delay: 0.6 }}
+          className="text-center text-sm text-text-light mt-8"
+        >
+          All plans include a 14-day free trial. No credit card required.
+        </motion.p>
       </div>
     </section>
   );

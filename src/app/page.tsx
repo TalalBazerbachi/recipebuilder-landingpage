@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import LogoBar from "@/components/LogoBar";
+
 import TrustPillars from "@/components/TrustPillars";
 import HowItWorks from "@/components/HowItWorks";
 import Features from "@/components/Features";
@@ -20,7 +20,6 @@ export default function Home() {
       <Navbar variant="global" light />
       <main>
         <Hero content={globalContent.hero} />
-        <LogoBar />
         <TrustPillars content={globalContent.trustPillars} />
         <HowItWorks content={globalContent.howItWorks} />
         <Features content={globalContent.features} />

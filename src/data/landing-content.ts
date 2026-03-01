@@ -108,16 +108,22 @@ export interface PricingFeature {
   text: string;
 }
 
+export interface PricingTier {
+  name: string;
+  badge?: string;
+  monthlyPrice: number | null;
+  annualPrice: number | null;
+  recipes: string;
+  support: string;
+  highlighted?: boolean;
+  cta: string;
+  ctaHref: string;
+}
+
 export interface PricingContent {
-  anchorLabel: string;
-  anchorPrice: string;
-  anchorPains: string[];
-  mainPrice: string;
-  mainPriceSub: string;
-  mainAfterThat: string;
-  effectiveCost: string;
-  features: PricingFeature[];
-  riskReversal: string;
+  subtitle: string;
+  allFeatures: PricingFeature[];
+  tiers: PricingTier[];
 }
 
 export interface FooterContent {

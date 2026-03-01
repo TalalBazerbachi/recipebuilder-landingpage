@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ArrowRight,
+  BadgeCheck,
   Database,
   ShieldCheck,
   Languages,
@@ -15,6 +16,7 @@ import {
 import type { HeroContent } from "@/data/landing-content";
 
 const iconMap: Record<string, LucideIcon> = {
+  BadgeCheck,
   FileCheck,
   Database,
   ShieldCheck,
