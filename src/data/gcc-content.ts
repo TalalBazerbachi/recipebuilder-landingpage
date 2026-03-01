@@ -2,12 +2,14 @@ import type { LandingPageContent } from "./landing-content";
 
 export const gccContent: LandingPageContent = {
   hero: {
-    badge: "LABELS FOLLOWING GCC & SFDA LAWS",
-    headlineBefore: "Recipe Management & ",
-    headlineHighlight: "Food Labeling",
-    headlineAfter: " for GCC Food Businesses",
+    badge: "TRUSTED BY CARREFOUR & MORE",
+    headlineBefore: "From Recipe to ",
+    headlineHighlight: "GCC-Compliant Label",
+    headlineAfter: " — In Minutes, Not Weeks",
     subheadline:
-      "Build recipes, auto-generate nutrition labels with barcodes & QR codes, track costs and inventory — with labels that follow GCC & SFDA food labeling laws.",
+      "Stop paying $500+ per product for lab testing. RecipeBuilder auto-generates bilingual nutrition labels, barcodes, QR codes, and packaging artwork — following GCC & SFDA labeling laws.",
+    secondaryCta: { label: "Get a Sample Label", href: "mailto:info@bytebeam.co?subject=Sample Label Request - GCC" },
+    socialProofLine: "Trusted by Carrefour, Ben's Farmhouse & food businesses across the GCC",
     stats: [
       { iconName: "FileCheck", value: "5,000+", label: "Labels Approved by Dubai Municipality" },
       { iconName: "Database", value: "20,000+", label: "FDA-Sourced Ingredients" },
@@ -24,8 +26,8 @@ export const gccContent: LandingPageContent = {
         iconName: "MapPin",
         title: "Built for the GCC",
         description: "Designed from day one for food businesses in the UAE, Saudi Arabia, and the wider Gulf region.",
-        iconBg: "bg-blue-500/10",
-        iconColor: "text-blue-500",
+        iconBg: "bg-teal-600/10",
+        iconColor: "text-teal-600",
       },
       {
         iconName: "BadgeCheck",
@@ -38,8 +40,8 @@ export const gccContent: LandingPageContent = {
         iconName: "Globe",
         title: "Bilingual by Default",
         description: "Every label, ingredient list, and packaging artwork generated in both English and Arabic automatically.",
-        iconBg: "bg-indigo-500/10",
-        iconColor: "text-indigo-500",
+        iconBg: "bg-emerald-600/10",
+        iconColor: "text-emerald-600",
       },
       {
         iconName: "Zap",
@@ -72,7 +74,7 @@ export const gccContent: LandingPageContent = {
         iconName: "FileText",
         title: "Auto-Generate Food Labels",
         description: "Create professional packaging artwork with nutrition facts, ingredients in English & Arabic, storage instructions, and allergen disclaimers — all generated automatically from your recipes.",
-        gradient: "from-blue-500 to-blue-600",
+        gradient: "from-emerald-500 to-teal-600",
         span: "md:col-span-2",
       },
       {
@@ -86,7 +88,7 @@ export const gccContent: LandingPageContent = {
         iconName: "QrCode",
         title: "QR Code Nutrition Facts",
         description: "Generate scannable QR codes that link to a live nutrition facts page. Customers scan to view detailed nutritional information instantly.",
-        gradient: "from-sky-500 to-indigo-600",
+        gradient: "from-teal-500 to-cyan-600",
         span: "",
       },
       {
@@ -107,7 +109,7 @@ export const gccContent: LandingPageContent = {
         iconName: "Package",
         title: "Stock & Inventory Tracking",
         description: "Track portion counts in real-time with quick stock updates. Know exactly how much of each recipe is available and manage your production schedule.",
-        gradient: "from-cyan-500 to-blue-600",
+        gradient: "from-cyan-500 to-teal-600",
         span: "",
       },
     ],
@@ -180,15 +182,39 @@ export const gccContent: LandingPageContent = {
 
   comparison: {
     rows: [
-      { feature: "Speed", lab: "Weeks per product", spreadsheet: "Hours of manual work", recipebuilder: "Minutes — fully automated" },
+      { feature: "Cost", lab: "$500–$2,000 per product", spreadsheet: "Free but hours of labor", recipebuilder: "From $1 per recipe" },
+      { feature: "Time to Label", lab: "2–4 weeks", spreadsheet: "Hours per product", recipebuilder: "Under 5 minutes" },
       { feature: "Accuracy", lab: "High (lab-tested)", spreadsheet: "Error-prone", recipebuilder: "High (20,000+ FDA ingredients)" },
       { feature: "GCC & SFDA Labeling", lab: "Manual review needed", spreadsheet: "Not built-in", recipebuilder: "Follows GCC & SFDA laws" },
       { feature: "Barcodes & QR Codes", lab: false, spreadsheet: false, recipebuilder: true },
       { feature: "Bilingual Labels", lab: "Manual translation", spreadsheet: "Manual translation", recipebuilder: "Auto English & Arabic" },
       { feature: "Cost Analysis", lab: false, spreadsheet: "Manual formulas", recipebuilder: "Built-in with profit margin" },
-      { feature: "Stock Tracking", lab: false, spreadsheet: "Manual updates", recipebuilder: "Real-time portions" },
       { feature: "Packaging Artwork", lab: "Separate design needed", spreadsheet: false, recipebuilder: "Auto-generated, print-ready" },
     ],
+  },
+
+  pricing: {
+    anchorLabel: "Traditional Lab Testing",
+    anchorPrice: "$500 – $2,000",
+    anchorPains: [
+      "Per product, every time",
+      "2–4 weeks turnaround",
+      "No label generation included",
+      "Separate design costs",
+    ],
+    mainPrice: "$1,500",
+    mainPriceSub: "for your first 1,500 recipes",
+    mainAfterThat: "Then just $1.50 per additional recipe",
+    effectiveCost: "That's as low as $1 per recipe",
+    features: [
+      { text: "Unlimited label generation" },
+      { text: "GCC & SFDA compliant formats" },
+      { text: "Barcodes & QR codes included" },
+      { text: "Bilingual English & Arabic labels" },
+      { text: "Packaging artwork generation" },
+      { text: "Cost tracking & inventory management" },
+    ],
+    riskReversal: "Includes dedicated onboarding & hands-on support",
   },
 
   testimonials: {
@@ -196,12 +222,12 @@ export const gccContent: LandingPageContent = {
     headingHighlight: "Across the GCC",
     testimonials: [
       {
-        quote: "RecipeBuilder transformed how we handle food labeling. What used to take weeks now takes minutes. The bilingual labels are perfect for our GCC market.",
-        name: "Sarah A.",
-        title: "Operations Manager",
-        company: "Gulf Fresh Foods",
-        initials: "SA",
-        gradient: "from-blue-500 to-blue-600",
+        quote: "Working with ByteBeam has been an exceptional experience. Their agile and well-organised team helped us transform a time-consuming, manual process into a smart, efficient workflow — saving both time and costs while ensuring quality and compliance.",
+        name: "CFO",
+        title: "Chief Financial Officer",
+        company: "Takhlees Compliance Services",
+        initials: "TC",
+        gradient: "from-emerald-500 to-teal-600",
       },
       {
         quote: "The USDA database integration is incredibly accurate. We've processed hundreds of products and every label passed Dubai Municipality review on the first submission.",
@@ -217,7 +243,7 @@ export const gccContent: LandingPageContent = {
         title: "Founder & CEO",
         company: "NutriPlate Meals",
         initials: "FZ",
-        gradient: "from-sky-500 to-blue-600",
+        gradient: "from-teal-500 to-emerald-600",
       },
     ],
   },
@@ -225,36 +251,36 @@ export const gccContent: LandingPageContent = {
   faq: {
     faqs: [
       {
-        question: "What is RecipeBuilder?",
-        answer: "RecipeBuilder is a cloud-based recipe management and food labeling platform designed for food businesses in the GCC region. It lets you create recipes, auto-generate nutrition labels, barcodes, QR codes, and packaging artwork — with labels that follow GCC and SFDA labeling laws.",
+        question: "How is RecipeBuilder different from lab testing?",
+        answer: "Lab testing costs $500–$2,000 per product and takes 2–4 weeks. RecipeBuilder generates compliant nutrition labels in minutes using the USDA FoodData Central database with 20,000+ verified ingredients. You get bilingual labels, packaging artwork, barcodes, and QR codes — all from one platform, for a fraction of the cost.",
       },
       {
-        question: "How does the nutrition analysis work?",
-        answer: "RecipeBuilder uses the full USDA FoodData Central database to calculate nutrition facts. When you add ingredients to a recipe, the system automatically computes calories, macronutrients (protein, carbs, fat), micronutrients (vitamins, minerals), and generates FDA-style nutrition facts labels and traffic light labels.",
+        question: "How long does it take to generate my first label?",
+        answer: "Minutes. Create your recipe, add ingredients from the USDA database, and RecipeBuilder auto-generates your nutrition label, packaging artwork, barcode, and QR code instantly. Most users have their first label ready within 10 minutes of signing up.",
+      },
+      {
+        question: "Is the nutrition data accurate enough for GCC regulatory compliance?",
+        answer: "Yes. RecipeBuilder uses the full USDA FoodData Central database — the same data source used by food labs. Labels are auto-formatted to meet GCC and SFDA labeling requirements with bilingual English and Arabic text, proper allergen declarations, and required disclaimers.",
       },
       {
         question: "Does RecipeBuilder follow GCC food labeling laws?",
         answer: "Yes. RecipeBuilder helps you generate food labels that follow GCC and SFDA labeling requirements, including bilingual English and Arabic ingredient lists, proper nutrition fact formatting, allergen declarations, and storage instructions. Labels are auto-formatted according to regional labeling standards.",
       },
       {
-        question: "Can I generate barcodes and QR codes for my products?",
-        answer: "Every recipe in RecipeBuilder gets a unique barcode for product identification and point-of-sale integration. You also get a QR code that links to a live nutrition facts page — customers can scan it to view detailed nutritional information.",
-      },
-      {
-        question: "What ingredients database do you use?",
-        answer: "RecipeBuilder gives you access to over 20,000 ingredients sourced from the USDA FoodData Central database, each with complete nutritional profiles. You can also create custom ingredients with your own nutrient data if needed.",
-      },
-      {
-        question: "Can I track recipe inventory and stock?",
-        answer: "Yes. RecipeBuilder includes real-time stock tracking with quick update controls. You can increment or decrement portion counts with one click, set stock levels, and see the last update timestamp. This helps you manage production schedules and avoid stockouts.",
-      },
-      {
         question: "Do you support Arabic food labels?",
         answer: "RecipeBuilder auto-translates ingredient lists to Arabic and generates bilingual packaging artwork with both English and Arabic text. You can refresh the Arabic translation anytime and download labels as PNG or PDF for print-ready packaging.",
       },
       {
+        question: "Can I generate barcodes and QR codes for my products?",
+        answer: "Every recipe in RecipeBuilder gets a unique barcode for product identification and point-of-sale integration. You also get a QR code that links to a live nutrition facts page — customers can scan it to view detailed nutritional information.",
+      },
+      {
         question: "How much does RecipeBuilder cost?",
-        answer: "RecipeBuilder offers flexible plans for businesses of all sizes. Contact our sales team for a personalized quote based on your recipe volume, team size, and feature requirements. Book a demo to see the platform in action and discuss pricing.",
+        answer: "RecipeBuilder starts at $1,500 for your first 1,500 recipes — that's as low as $1 per recipe. After that, additional recipes are $1.50 each. Compare that to $500–$2,000 per product for traditional lab testing. Book a demo to see the platform in action and get a personalized walkthrough.",
+      },
+      {
+        question: "Can I track recipe costs and inventory?",
+        answer: "Yes. RecipeBuilder includes built-in cost tracking with profit margin calculations and real-time stock tracking. You can monitor ingredient costs, track portion counts, and manage production schedules — all from the same platform where you create your labels.",
       },
     ],
   },

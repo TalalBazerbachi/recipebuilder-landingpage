@@ -33,7 +33,7 @@ function CellValue({
       </span>
     );
   return (
-    <span className={highlight ? "text-white font-medium" : ""}>{value}</span>
+    <span className={highlight ? "text-foreground font-medium" : ""}>{value}</span>
   );
 }
 
@@ -42,8 +42,7 @@ export default function Comparison({ content }: { content: ComparisonContent }) 
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="relative py-24 bg-dark overflow-hidden" ref={ref}>
-      <div className="absolute inset-0 bg-grid-pattern" />
+    <section className="relative py-24 bg-white overflow-hidden" ref={ref}>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px]" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -56,11 +55,11 @@ export default function Comparison({ content }: { content: ComparisonContent }) 
           <span className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold text-primary bg-primary/10 border border-primary/20 rounded-full uppercase tracking-wider">
             Why RecipeBuilder
           </span>
-          <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
+          <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
             Compare Your{" "}
             <span className="gradient-text">Options</span>
           </h2>
-          <p className="mt-4 text-lg text-white/60">
+          <p className="mt-4 text-lg text-text">
             See how RecipeBuilder stacks up against traditional lab testing and
             manual spreadsheet approaches.
           </p>
@@ -70,21 +69,21 @@ export default function Comparison({ content }: { content: ComparisonContent }) 
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="overflow-x-auto rounded-2xl border border-white/10 bg-white/[0.02] backdrop-blur-sm"
+          className="overflow-x-auto rounded-2xl border border-border bg-surface"
         >
           <table className="w-full min-w-[700px]">
             <thead>
-              <tr className="border-b border-white/10">
-                <th className="text-left py-5 px-6 text-sm font-medium text-white/50">
+              <tr className="border-b border-border">
+                <th className="text-left py-5 px-6 text-sm font-medium text-text-light">
                   Feature
                 </th>
                 <th className="text-center py-5 px-6">
-                  <div className="text-sm font-medium text-white/50">
+                  <div className="text-sm font-medium text-text-light">
                     Lab Testing
                   </div>
                 </th>
                 <th className="text-center py-5 px-6">
-                  <div className="text-sm font-medium text-white/50">
+                  <div className="text-sm font-medium text-text-light">
                     Spreadsheets
                   </div>
                 </th>
@@ -100,15 +99,15 @@ export default function Comparison({ content }: { content: ComparisonContent }) 
               {content.rows.map((row) => (
                 <tr
                   key={row.feature}
-                  className="border-t border-white/5 hover:bg-white/[0.02] transition-colors"
+                  className="border-t border-border/50 hover:bg-white transition-colors"
                 >
-                  <td className="py-4 px-6 font-medium text-sm text-white/80">
+                  <td className="py-4 px-6 font-medium text-sm text-foreground">
                     {row.feature}
                   </td>
-                  <td className="py-4 px-6 text-center text-sm text-white/40">
+                  <td className="py-4 px-6 text-center text-sm text-text-light">
                     <CellValue value={row.lab} />
                   </td>
-                  <td className="py-4 px-6 text-center text-sm text-white/40">
+                  <td className="py-4 px-6 text-center text-sm text-text-light">
                     <CellValue value={row.spreadsheet} />
                   </td>
                   <td className="py-4 px-6 text-center text-sm text-primary">

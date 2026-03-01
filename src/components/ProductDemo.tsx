@@ -156,12 +156,12 @@ function MockupAddIngredients() {
 
 function MockupNutritionAnalysis() {
   const macros = [
-    { label: "Calories", value: "165", unit: "kcal", pct: 60, color: "bg-blue-500" },
+    { label: "Calories", value: "165", unit: "kcal", pct: 60, color: "bg-teal-600" },
     { label: "Total Fat", value: "8", unit: "g", pct: 35, color: "bg-amber-500" },
     { label: "Sat. Fat", value: "5", unit: "g", pct: 55, color: "bg-orange-500" },
     { label: "Carbs", value: "22", unit: "g", pct: 48, color: "bg-emerald-500" },
     { label: "Sugars", value: "14", unit: "g", pct: 42, color: "bg-rose-500" },
-    { label: "Protein", value: "2", unit: "g", pct: 12, color: "bg-indigo-500" },
+    { label: "Protein", value: "2", unit: "g", pct: 12, color: "bg-emerald-600" },
     { label: "Sodium", value: "95", unit: "mg", pct: 18, color: "bg-cyan-500" },
     { label: "Fiber", value: "1", unit: "g", pct: 8, color: "bg-lime-600" },
   ];

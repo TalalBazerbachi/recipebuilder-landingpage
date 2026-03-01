@@ -12,9 +12,9 @@ export default function Navbar({ variant = "global", light = false }: { variant?
     { label: "Features", href: `${basePath}/#features` },
     { label: "How It Works", href: `${basePath}/#how-it-works` },
     { label: "Industries", href: `${basePath}/#industries` },
+    { label: "Pricing", href: `${basePath}/#pricing` },
     { label: "Blog", href: "/blog" },
     { label: "About", href: "/about" },
-    { label: "FAQ", href: `${basePath}/#faq` },
     ...(variant === "global" ? [{ label: "GCC", href: "/gcc" }] : []),
   ];
   const [mobileOpen, setMobileOpen] = useState(false);

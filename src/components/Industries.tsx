@@ -21,7 +21,7 @@ const industries = [
       "Packaged item labeling",
       "Cost per serving tracking",
     ],
-    gradient: "from-blue-500 to-blue-600",
+    gradient: "from-emerald-500 to-teal-600",
   },
   {
     icon: Factory,

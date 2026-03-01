@@ -12,6 +12,8 @@ export interface HeroContent {
   headlineHighlight: string;
   headlineAfter: string;
   subheadline: string;
+  secondaryCta: { label: string; href: string };
+  socialProofLine: string;
   stats: HeroStat[];
   variant: "global" | "gcc";
 }
@@ -102,6 +104,22 @@ export interface FAQContent {
   faqs: FAQItem[];
 }
 
+export interface PricingFeature {
+  text: string;
+}
+
+export interface PricingContent {
+  anchorLabel: string;
+  anchorPrice: string;
+  anchorPains: string[];
+  mainPrice: string;
+  mainPriceSub: string;
+  mainAfterThat: string;
+  effectiveCost: string;
+  features: PricingFeature[];
+  riskReversal: string;
+}
+
 export interface FooterContent {
   description: string;
 }
@@ -113,6 +131,7 @@ export interface LandingPageContent {
   howItWorks: HowItWorksContent;
   productDemo: ProductDemoContent;
   comparison: ComparisonContent;
+  pricing: PricingContent;
   testimonials: TestimonialsContent;
   faq: FAQContent;
   footer: FooterContent;

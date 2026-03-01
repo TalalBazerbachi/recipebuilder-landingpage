@@ -3,18 +3,18 @@
 @theme inline {
   --color-background: #ffffff;
   --color-foreground: #0f172a;
-  --color-primary: #2563EB;
-  --color-primary-dark: #1D4ED8;
-  --color-primary-light: #EFF6FF;
-  --color-accent: #2782FF;
-  --color-accent-light: #E8F2FF;
-  --color-emerald: #059669;
+  --color-primary: #50C878;
+  --color-primary-dark: #0B6E4F;
+  --color-primary-light: #D1F2EB;
+  --color-accent: #0B6E4F;
+  --color-accent-light: #D1F2EB;
+  --color-emerald: #50C878;
   --color-text: #475569;
   --color-text-light: #94a3b8;
   --color-border: #e2e8f0;
   --color-surface: #f8fafc;
-  --color-dark: #0B1120;
-  --color-dark-card: #131B2E;
+  --color-dark: #013220;
+  --color-dark-card: #04422E;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -33,7 +33,7 @@ body {
 
 /* Gradient text utility */
 .gradient-text {
-  background: linear-gradient(135deg, #1D4ED8 0%, #2782FF 100%);
+  background: linear-gradient(135deg, #0B6E4F 0%, #50C878 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -48,7 +48,7 @@ body {
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: linear-gradient(135deg, #1D4ED8, #2782FF);
+  background: linear-gradient(135deg, #0B6E4F, #50C878);
   z-index: -1;
   filter: blur(24px);
   opacity: 0.4;

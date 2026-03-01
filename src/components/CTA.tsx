@@ -38,7 +38,7 @@ export default function CTA() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white max-w-3xl mx-auto leading-tight"
             >
-              Ready to Streamline Your Recipe Management & Food Labeling?
+              Every Week Without Compliant Labels Is Lost Revenue
             </motion.h2>
 
             <motion.p
@@ -47,8 +47,8 @@ export default function CTA() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="mt-6 text-lg text-white/70 max-w-xl mx-auto"
             >
-              See how RecipeBuilder can help your food business create compliant
-              labels, track costs, and manage inventory — all from one platform.
+              Join Carrefour, Ben&apos;s Farmhouse, and food businesses worldwide
+              already labeling smarter with RecipeBuilder.
             </motion.p>
 
             <motion.div
@@ -67,12 +67,21 @@ export default function CTA() {
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
-                href="mailto:info@bytebeam.co?subject=RecipeBuilder Inquiry"
+                href="mailto:info@bytebeam.co?subject=Sample Label Request"
                 className="inline-flex items-center gap-2 px-8 py-4 text-base font-semibold text-white border-2 border-white/30 rounded-xl hover:bg-white/10 transition-all"
               >
-                Contact Sales
+                Get a Sample Label
               </a>
             </motion.div>
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="mt-5 text-sm text-white/40"
+            >
+              Free demo. No commitment. Dedicated onboarding included.
+            </motion.p>
           </div>
         </motion.div>
       </div>

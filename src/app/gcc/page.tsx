@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import LogoBar from "@/components/LogoBar";
 import TrustPillars from "@/components/TrustPillars";
-import Features from "@/components/Features";
 import HowItWorks from "@/components/HowItWorks";
+import Features from "@/components/Features";
 import ProductDemo from "@/components/ProductDemo";
 import Industries from "@/components/Industries";
 import Comparison from "@/components/Comparison";
+import Pricing from "@/components/Pricing";
+import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
@@ -57,15 +60,18 @@ export const metadata: Metadata = {
 export default function GCCPage() {
   return (
     <>
-      <Navbar variant="gcc" />
+      <Navbar variant="gcc" light />
       <main>
         <Hero content={gccContent.hero} />
+        <LogoBar />
         <TrustPillars content={gccContent.trustPillars} />
-        <Features content={gccContent.features} />
         <HowItWorks content={gccContent.howItWorks} />
+        <Features content={gccContent.features} />
         <ProductDemo content={gccContent.productDemo} />
         <Industries />
         <Comparison content={gccContent.comparison} />
+        <Pricing content={gccContent.pricing} />
+        <Testimonials content={gccContent.testimonials} />
         <FAQ content={gccContent.faq} />
         <CTA />
       </main>

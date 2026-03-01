@@ -1,0 +1,130 @@
+PAGE: About RecipeBuilder (/about)
+URL: /about
+
+================================================================================
+HERO
+================================================================================
+
+Badge: ABOUT US
+Heading: About RecipeBuilder
+Subtext: We help food businesses across the GCC manage recipes, generate accurate nutrition labels, and navigate local food labeling regulations — all from one platform.
+
+================================================================================
+OUR STORY — "From Document Processing to Food Technology"
+================================================================================
+
+Label: Our Story
+Heading: From Document Processing to Food Technology
+
+RecipeBuilder is built by ByteBeam, a technology company based in Dubai, UAE. ByteBeam started as an AI-powered document processing company, building solutions that extract, structure, and analyze data from complex documents.
+
+While working with businesses across the region, we saw a clear gap in the food industry: food businesses in the GCC were struggling to generate accurate, regulation-ready food labels. The process was manual, error-prone, and time-consuming — often requiring nutritionists, designers, and regulatory consultants just to produce a single label.
+
+We built RecipeBuilder to solve that problem. By combining our expertise in AI and document processing with deep knowledge of GCC food labeling requirements, we created a platform that helps food businesses generate professional labels that follow local regulations — in minutes, not weeks.
+
+Today, our team has generated over 5,000 food labels approved by Dubai Municipality, and we serve food businesses across the UAE, Saudi Arabia, and the broader GCC region.
+
+================================================================================
+OUR MISSION
+================================================================================
+
+Label: Our Mission
+Heading: Make Food Labeling Accessible, Accurate, and Fast for Every Food Business in the GCC
+
+We believe every food business — whether a single-location bakery or a large-scale manufacturer — should be able to produce professional, regulation-ready food labels without needing a team of consultants. RecipeBuilder makes that possible.
+
+================================================================================
+WHAT WE DO — "One Platform for Recipe Management & Food Labeling"
+================================================================================
+
+Label: What We Do
+Heading: One Platform for Recipe Management & Food Labeling
+Subtitle: RecipeBuilder brings together everything a food business needs to manage recipes, analyze nutrition, generate labels, track costs, and run inventory.
+
+1. Food Labeling
+   Auto-generate professional packaging artwork with nutrition facts, bilingual ingredient lists, allergen declarations, barcodes, and QR codes — all following GCC and SFDA labeling laws.
+
+2. Recipe Management
+   Build and organize recipes with complete ingredient breakdowns, portion sizing, preparation instructions, and allergen tracking in one centralized platform.
+
+3. Nutrition Analysis
+   Calculate accurate nutrition data from 20,000+ FDA-sourced ingredients. Get per-serving breakdowns for calories, macronutrients, vitamins, and minerals automatically.
+
+4. Cost Tracking
+   Track ingredient costs, calculate cost per serving, analyze profit margins, and make informed pricing decisions with real-time recipe cost data.
+
+5. Inventory Management
+   Monitor stock levels in real time, track portion counts, manage production schedules, and keep your kitchen running efficiently with automated inventory updates.
+
+================================================================================
+WHO WE SERVE — "Built for Every Food Business"
+================================================================================
+
+Label: Who We Serve
+Heading: Built for Every Food Business
+Subtitle: From restaurants and food manufacturers to bakeries and nutrition centers — RecipeBuilder adapts to your workflow.
+
+1. Restaurants & Cafes
+   Manage full menus with accurate nutrition data, generate labels for packaged items, and track recipe costs across every location.
+
+2. Food Manufacturers
+   Scale your labeling workflow for production with retail-ready barcodes, batch packaging artwork, and consistent product labeling.
+
+3. Bakeries & Catering
+   Create professional labels for artisan products, track ingredient costs per portion, and manage allergen declarations across your catalog.
+
+4. Nutrition Centers
+   Build meal plans with precise nutrition data, generate client-facing nutrition labels, and track macros per serving for dietary programs.
+
+================================================================================
+WHY THE GCC — "Purpose-Built for the GCC Food Industry"
+================================================================================
+
+Label: Why the GCC
+Heading: Purpose-Built for the GCC Food Industry
+Subtitle: The GCC region has unique food labeling requirements that generic tools cannot address. RecipeBuilder was built specifically for this market.
+
+1. Strict Regulatory Requirements
+   The GCC region enforces detailed food labeling laws through bodies like SFDA, Dubai Municipality, and GSO. Every packaged food product must display accurate nutrition information, ingredient lists, and allergen declarations in the correct format.
+
+2. Bilingual Labeling Needs
+   With a diverse, multilingual population, the GCC requires bilingual food labels in both English and Arabic. RecipeBuilder generates both languages automatically, formatted correctly for packaging artwork.
+
+3. Fast-Growing Food Industry
+   The GCC food and beverage industry is expanding rapidly, with new restaurants, manufacturers, and food brands launching every week. These businesses need efficient tools to meet labeling requirements from day one.
+
+================================================================================
+THE TEAM — "The Team Behind RecipeBuilder"
+================================================================================
+
+Label: The Team
+Heading: The Team Behind RecipeBuilder
+
+RecipeBuilder is built and maintained by ByteBeam, a technology company headquartered in Dubai, UAE. Our team combines expertise in artificial intelligence, document processing, and food technology to build solutions specifically for the food industry.
+
+We work closely with food businesses, regulatory consultants, and nutritionists across the GCC to ensure that RecipeBuilder stays aligned with the latest labeling requirements and industry needs. Every feature we build is informed by real feedback from the businesses we serve.
+
+Our goal is straightforward: give food businesses the tools they need to manage recipes, generate labels, and stay on top of their operations — without the complexity and cost of traditional solutions.
+
+Links: Visit ByteBeam (bytebeam.co) | Follow Us on LinkedIn
+
+================================================================================
+CONTACT — "Get in Touch"
+================================================================================
+
+Label: Contact
+Heading: Get in Touch
+Subtitle: Have questions about RecipeBuilder or want to see how it works for your business? We would love to hear from you.
+
+Email: info@bytebeam.co
+Dubai, UAE — Headquarters
+Riyadh, Saudi Arabia — Regional Office
+
+================================================================================
+CTA
+================================================================================
+
+Heading: Ready to See RecipeBuilder in Action?
+Subtext: Book a personalized demo and see how RecipeBuilder can help your food business manage recipes, generate labels, and streamline operations.
+Primary CTA: "Book a Demo"
+Secondary CTA: "Contact Sales"

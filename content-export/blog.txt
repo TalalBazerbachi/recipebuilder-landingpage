@@ -1,0 +1,63 @@
+PAGE: Blog (/blog)
+URL: /blog
+
+================================================================================
+HERO
+================================================================================
+
+Badge: BLOG
+Heading: RecipeBuilder Blog
+Subtext: Expert guides on food labeling, GCC regulations, nutrition analysis, and recipe management for food businesses.
+
+================================================================================
+FEATURED POST (most recent)
+================================================================================
+
+The most recent blog post is displayed prominently as a featured article with its category badge, date, read time, title, and description.
+
+================================================================================
+ALL ARTICLES — "Latest Insights & Guides"
+================================================================================
+
+Label: All Articles
+Heading: Latest Insights & Guides
+Subtitle: In-depth articles covering food labeling regulations, recipe management best practices, and industry trends across the GCC.
+
+Blog Posts (sorted by date, most recent first):
+
+1. Abu Dhabi School Nutrition Guidelines: What Food Businesses Need to Know
+   Category: Compliance | Date: January 25, 2026 | Read Time: 12 min read
+   Description: An overview of ADAFSA's nutrition guidelines for food businesses supplying schools in Abu Dhabi, covering restricted ingredients, nutritional requirements, and labeling preparation.
+
+2. Allergen Labeling in the GCC: Complete Guide
+   Category: Compliance
+   Description: A comprehensive guide to allergen declaration requirements across GCC countries. Learn which allergens must be declared, how to format allergen statements, and what regulators expect.
+
+3. Halal Food Labeling in the UAE: Requirements
+   Category: Regulation
+   Description: Understand the halal labeling requirements for food products sold in the UAE, covering certification bodies, label placement, and standards.
+
+4. Food Labeling in Dubai: UAE.S 192:2019 Guide
+   Category: Regulation
+   Description: A detailed breakdown of the UAE.S 192:2019 standard for pre-packaged food labeling, covering mandatory label elements and bilingual requirements.
+
+5. Food Safety SOPs for Institutional Catering
+   Category: Industry
+   Description: Essential standard operating procedures for institutional catering operations including food handling, storage, and temperature control.
+
+6. GCC Sugar Tax: A Guide for Food & Beverage Manufacturers
+   Category: Regulation
+   Description: How the GCC excise tax on sugary drinks and energy beverages affects food manufacturers, covering tax rates and labeling implications.
+
+7. Front-of-Pack Nutrition Labels in the GCC
+   Category: Labeling
+   Description: A guide to front-of-pack nutrition labeling requirements and best practices in the GCC, covering traffic light labels and health logos.
+
+================================================================================
+CTA
+================================================================================
+
+Heading: Simplify Your Food Labeling Workflow
+Subtext: RecipeBuilder helps food businesses generate labels following GCC & SFDA laws, track costs, and manage inventory — all from one platform.
+Primary CTA: "Book a Demo"
+Secondary CTA: "Contact Sales"

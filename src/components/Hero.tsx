@@ -318,7 +318,7 @@ function RotatingFlagBadge() {
   }, []);
 
   return (
-    <div className="w-16 h-16 rounded-full overflow-hidden shadow-xl border-2 border-white relative">
+    <div className="w-16 h-16 rounded-full overflow-hidden shadow-xl border-2 border-gray-200 relative">
       <AnimatePresence mode="wait">
         <motion.div
           key={index}
@@ -362,7 +362,7 @@ function GCCHeroVisual() {
       transition={{ duration: 0.8, delay: 0.4 }}
       className="relative hidden lg:block"
     >
-      <div className="relative w-[360px] bg-white rounded-2xl shadow-2xl shadow-black/30 border border-white/20 p-6 transform rotate-1 hover:rotate-0 transition-transform duration-500">
+      <div className="relative w-[360px] bg-white rounded-2xl shadow-2xl shadow-black/10 border border-gray-200 p-6 transform rotate-1 hover:rotate-0 transition-transform duration-500">
         <div className="text-center mb-4 pb-3 border-b border-gray-200">
           <h3 className="text-lg font-bold text-gray-900">Chocolate Chip Cookies</h3>
           <p className="text-sm text-gray-500 mt-0.5" dir="rtl">كوكيز رقائق الشوكولاتة</p>
@@ -508,12 +508,9 @@ function HeroVisual({ variant }: { variant: "global" | "gcc" }) {
 
 export default function Hero({ content }: { content: HeroContent }) {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-dark">
-      <div className="absolute inset-0 bg-grid-pattern" />
-
-      <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] animate-float" />
-      <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-accent/15 rounded-full blur-[120px] animate-float" style={{ animationDelay: "3s" }} />
-      <div className="absolute top-1/2 right-1/3 w-[300px] h-[300px] bg-emerald/10 rounded-full blur-[100px] animate-float" style={{ animationDelay: "1.5s" }} />
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-white">
+      <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] animate-float" />
+      <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-accent/5 rounded-full blur-[120px] animate-float" style={{ animationDelay: "3s" }} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20 lg:pt-40 lg:pb-32 w-full">
         {/* Split layout: text left, visual right */}
@@ -537,7 +534,7 @@ export default function Hero({ content }: { content: HeroContent }) {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1]"
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-[1.1]"
             >
               {content.headlineBefore}
               <span className="gradient-text">{content.headlineHighlight}</span>
@@ -548,7 +545,7 @@ export default function Hero({ content }: { content: HeroContent }) {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="mt-6 text-lg sm:text-xl text-white/60 max-w-xl leading-relaxed"
+              className="mt-6 text-lg sm:text-xl text-text max-w-xl leading-relaxed"
             >
               {content.subheadline}
             </motion.p>
@@ -563,14 +560,14 @@ export default function Hero({ content }: { content: HeroContent }) {
                 href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-glow inline-flex items-center gap-2 px-8 py-4 text-base font-semibold text-white bg-gradient-to-r from-primary to-accent rounded-xl hover:shadow-2xl hover:shadow-primary/25 transition-all hover:-translate-y-0.5"
+                className="btn-glow inline-flex items-center gap-2 px-8 py-4 text-base font-semibold text-white bg-gradient-to-r from-primary to-primary-dark rounded-xl hover:shadow-2xl hover:shadow-primary/25 transition-all hover:-translate-y-0.5"
               >
                 Book a Demo
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
                 href="#product-demo"
-                className="inline-flex items-center gap-2 px-8 py-4 text-base font-semibold text-white/80 border border-white/20 rounded-xl hover:bg-white/5 hover:border-white/30 transition-all backdrop-blur-sm"
+                className="inline-flex items-center gap-2 px-8 py-4 text-base font-semibold text-foreground border border-border rounded-xl hover:bg-surface hover:border-primary/30 transition-all"
               >
                 <Play className="w-4 h-4" />
                 See How It Works
@@ -597,18 +594,18 @@ export default function Hero({ content }: { content: HeroContent }) {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.6 + i * 0.1 }}
-                className="relative group p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-white/20 transition-all"
+                className="relative group p-6 rounded-2xl bg-surface border border-border hover:border-primary/30 hover:shadow-md transition-all"
               >
                 {Icon && <Icon className="w-5 h-5 text-primary mb-3" />}
-                <div className="text-2xl font-bold text-white">{stat.value}</div>
-                <div className="text-xs text-white/50 mt-1">{stat.label}</div>
+                <div className="text-2xl font-bold text-foreground">{stat.value}</div>
+                <div className="text-xs text-text mt-1">{stat.label}</div>
               </motion.div>
             );
           })}
         </motion.div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-surface to-transparent" />
     </section>
   );
 }

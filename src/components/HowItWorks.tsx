@@ -14,14 +14,12 @@ export default function HowItWorks({ content }: { content: HowItWorksContent }) 
   return (
     <section
       id="how-it-works"
-      className="relative py-24 bg-dark overflow-hidden"
+      className="relative py-24 bg-surface overflow-hidden"
       ref={ref}
     >
-      <div className="absolute inset-0 bg-grid-pattern" />
-
-      {/* Gradient orbs */}
-      <div className="absolute top-0 left-1/4 w-[400px] h-[400px] bg-primary/10 rounded-full blur-[120px]" />
-      <div className="absolute bottom-0 right-1/4 w-[300px] h-[300px] bg-accent/10 rounded-full blur-[100px]" />
+      {/* Subtle gradient orbs */}
+      <div className="absolute top-0 left-1/4 w-[400px] h-[400px] bg-primary/5 rounded-full blur-[120px]" />
+      <div className="absolute bottom-0 right-1/4 w-[300px] h-[300px] bg-accent/5 rounded-full blur-[100px]" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -33,11 +31,11 @@ export default function HowItWorks({ content }: { content: HowItWorksContent }) 
           <span className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold text-primary bg-primary/10 border border-primary/20 rounded-full uppercase tracking-wider">
             How It Works
           </span>
-          <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
+          <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
             From Recipe to Label in{" "}
             <span className="gradient-text">Minutes</span>
           </h2>
-          <p className="mt-4 text-lg text-white/60">
+          <p className="mt-4 text-lg text-text">
             Three simple steps to create compliant food labels from your recipes.
           </p>
         </motion.div>
@@ -60,8 +58,8 @@ export default function HowItWorks({ content }: { content: HowItWorksContent }) 
 
               {/* Step icon container */}
               <div className="relative inline-flex items-center justify-center w-28 h-28 mb-8">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl rotate-6 group-hover:rotate-12 transition-transform duration-300" />
-                <div className="relative bg-dark-card rounded-3xl w-full h-full flex items-center justify-center border border-white/10 group-hover:border-primary/30 transition-colors">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl rotate-6 group-hover:rotate-12 transition-transform duration-300" />
+                <div className="relative bg-white rounded-3xl w-full h-full flex items-center justify-center border border-border group-hover:border-primary/30 transition-colors shadow-sm">
                   <Icon className="w-12 h-12 text-primary" />
                 </div>
                 <span className="absolute -top-3 -right-3 w-10 h-10 bg-gradient-to-br from-primary to-accent text-white text-sm font-bold rounded-full flex items-center justify-center shadow-lg shadow-primary/30">
@@ -69,10 +67,10 @@ export default function HowItWorks({ content }: { content: HowItWorksContent }) 
                 </span>
               </div>
 
-              <h3 className="text-xl font-semibold text-white mb-3">
+              <h3 className="text-xl font-semibold text-foreground mb-3">
                 {step.title}
               </h3>
-              <p className="text-white/50 leading-relaxed max-w-sm mx-auto">
+              <p className="text-text leading-relaxed max-w-sm mx-auto">
                 {step.description}
               </p>
             </motion.div>
