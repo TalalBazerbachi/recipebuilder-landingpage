@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   title:
     "Food Labeling Software — Auto-Generate Bilingual Food Labels | RecipeBuilder",
   description:
-    "Auto-generate professional bilingual food labels with nutrition facts panels, barcodes, QR codes, and allergen disclaimers. Labels follow GCC & SFDA labeling laws. Over 5,000 labels approved by Dubai Municipality.",
+    "RecipeBuilder's food labeling module auto-generates bilingual nutrition labels with facts panels, barcodes, QR codes, and allergen declarations from your recipes. Labels follow FDA, EU, GCC, and SFDA labeling standards. Over 5,000 labels approved by Dubai Municipality. Supports 40+ languages including Arabic. Built by ByteBeam (Dubai).",
   keywords: [
     "food labeling software",
     "food label generator",
@@ -510,6 +510,59 @@ export default function FoodLabelingPage() {
         </section>
       </main>
       <Footer />
+
+      {/* SoftwareApplication structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: "RecipeBuilder Food Labeling",
+            url: "https://recipebuilder.bytebeam.co/food-labeling",
+            applicationCategory: "BusinessApplication",
+            operatingSystem: "Web",
+            description: "Auto-generate professional bilingual food labels with nutrition facts panels, barcodes, QR codes, and allergen disclaimers. Labels follow GCC & SFDA labeling laws.",
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: "49",
+              highPrice: "99",
+              offerCount: "3",
+              category: "SaaS",
+              availability: "https://schema.org/InStock",
+            },
+            provider: {
+              "@type": "Organization",
+              name: "ByteBeam",
+              url: "https://www.bytebeam.co",
+            },
+            featureList: [
+              "Bilingual food labels (English & Arabic)",
+              "Nutrition facts panel generation",
+              "Barcode generation",
+              "QR code for nutrition info",
+              "Allergen declarations",
+              "GCC & SFDA compliant labels",
+              "Packaging artwork auto-generation",
+              "40+ language support",
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://recipebuilder.bytebeam.co" },
+              { "@type": "ListItem", position: 2, name: "Food Labeling", item: "https://recipebuilder.bytebeam.co/food-labeling" },
+            ],
+          }),
+        }}
+      />
     </>
   );
 }

@@ -1,0 +1,80 @@
+PAGE: Compliance Resources (/compliance-resources)
+URL: /compliance-resources
+
+================================================================================
+HERO
+================================================================================
+
+Badge: COMPLIANCE RESOURCES
+Heading: Compliance Resources
+Subtext: Guides and resources to help food businesses navigate GCC food labeling regulations, understand requirements, and stay on top of compliance.
+
+================================================================================
+WHY COMPLIANCE MATTERS
+================================================================================
+
+Heading: Why Compliance Matters
+
+Food labeling in the GCC is not optional — it is a legal requirement enforced by regulatory bodies across every member state. From the Saudi Food and Drug Authority (SFDA) to Dubai Municipality and the GCC Standardization Organization (GSO), each body sets specific requirements for how food products must be labeled before they reach consumers.
+
+Non-compliance can result in product recalls, fines, import rejections, and damage to your brand reputation. For food businesses operating in the UAE, Saudi Arabia, or anywhere in the GCC, understanding these regulations is essential to operating legally and building consumer trust.
+
+We have put together these resources to help food businesses understand the key labeling requirements, stay current with regulatory changes, and implement best practices across their operations.
+
+================================================================================
+GUIDES — "Regulatory Guides & Resources"
+================================================================================
+
+Label: Guides
+Heading: Regulatory Guides & Resources
+Subtitle: In-depth articles covering the key food labeling regulations, standards, and best practices for the GCC market.
+
+1. Allergen Labeling in the GCC: Complete Guide [Compliance]
+   A comprehensive guide to allergen declaration requirements across GCC countries. Learn which allergens must be declared, how to format allergen statements, and what regulators expect on your food labels.
+
+2. Halal Food Labeling in the UAE: Requirements [Regulation]
+   Understand the halal labeling requirements for food products sold in the UAE. Covers certification bodies, label placement, and what food businesses need to know to meet halal standards.
+
+3. Food Labeling in Dubai: UAE.S 192:2019 Guide [Regulation]
+   A detailed breakdown of the UAE.S 192:2019 standard for pre-packaged food labeling. Covers mandatory label elements, nutrition facts formatting, and bilingual requirements enforced by Dubai Municipality.
+
+4. Food Safety SOPs for Institutional Catering [Industry]
+   Essential standard operating procedures for institutional catering operations. Covers food handling, storage, temperature control, and documentation requirements for large-scale food service.
+
+5. Abu Dhabi School Nutrition Guidelines for Food Businesses [Compliance]
+   An overview of ADAFSA nutrition guidelines for food businesses supplying schools in Abu Dhabi. Covers restricted ingredients, nutritional requirements, and how to prepare labels for the school supply chain.
+
+6. GCC Sugar Tax: A Guide for Food & Beverage Manufacturers [Regulation]
+   How the GCC excise tax on sugary drinks and energy beverages affects food manufacturers. Covers tax rates, product classifications, labeling implications, and what manufacturers need to do.
+
+7. Front-of-Pack Nutrition Labels in the GCC [Labeling]
+   A guide to front-of-pack nutrition labeling requirements and best practices in the GCC. Covers traffic light labels, health logos, and how these systems are being adopted across the region.
+
+================================================================================
+REGULATORY BODIES — "Key GCC Regulatory Bodies"
+================================================================================
+
+Label: Regulatory Bodies
+Heading: Key GCC Regulatory Bodies
+Subtitle: Understanding who regulates food labeling in the GCC is the first step toward compliance. Here are the key authorities food businesses need to know.
+
+1. SFDA — Saudi Food and Drug Authority [Saudi Arabia]
+   The primary regulatory body overseeing food safety and labeling in Saudi Arabia. SFDA sets requirements for nutrition facts panels, ingredient lists, allergen declarations, and Arabic language labeling on all food products sold in the Kingdom.
+
+2. Dubai Municipality / MoIAT — Dubai Municipality & Ministry of Industry and Advanced Technology [UAE]
+   Dubai Municipality enforces food labeling standards within Dubai, while MoIAT oversees the UAE.S 192:2019 national standard for pre-packaged food labeling. Together, they regulate nutrition facts formatting, bilingual labeling, and product registration.
+
+3. GSO — GCC Standardization Organization [Gulf-wide]
+   GSO develops unified standards adopted across all GCC member states, including standards for food labeling, nutrition information, and pre-packaged food requirements. GSO standards serve as the baseline that individual countries build upon.
+
+4. ADAFSA — Abu Dhabi Agriculture and Food Safety Authority [Abu Dhabi, UAE]
+   ADAFSA regulates food safety and labeling within the Emirate of Abu Dhabi. The authority sets specific guidelines for school food suppliers, nutrition standards, and food establishment licensing in the emirate.
+
+================================================================================
+CTA
+================================================================================
+
+Heading: Need Help With Food Labeling Compliance?
+Subtext: RecipeBuilder generates food labels that follow GCC and SFDA labeling laws — with bilingual formatting, nutrition facts, allergen declarations, and barcodes built in. See it in action.
+Primary CTA: "Book a Demo"
+Secondary CTA: "Contact Sales"

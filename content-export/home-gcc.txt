@@ -1,0 +1,251 @@
+PAGE: Home — GCC Landing Page (/gcc)
+URL: /gcc
+
+================================================================================
+NAVBAR
+================================================================================
+
+Navigation Links: Features | How It Works | Industries | Pricing | Blog | About
+(All anchor links prefixed with /gcc/)
+CTA Button: "Book a Demo"
+
+================================================================================
+HERO SECTION
+================================================================================
+
+Badge: TRUSTED BY CARREFOUR & MORE
+
+Headline: From Recipe to GCC-Compliant Label — In Minutes, Not Weeks
+
+Subheadline: Stop paying $500+ per product for lab testing. RecipeBuilder auto-generates bilingual nutrition labels, barcodes, QR codes, and packaging artwork — following GCC & SFDA labeling laws.
+
+Primary CTA: "Book a Demo"
+Secondary CTA: "Get a Sample Label"
+
+Social Proof Line: Trusted by Carrefour, Ben's Farmhouse & food businesses across the GCC
+
+Stats:
+- 5,000+ — Labels Approved by Dubai Municipality
+- 20,000+ — FDA-Sourced Ingredients
+- GCC & SFDA — Follows Labeling Laws
+- Bilingual — English & Arabic Labels
+
+Visual (Desktop): A single GCC packaging label mockup showing product name in English + Arabic, bilingual ingredients list, nutrition panel, QR code, barcode, and a "Traffic Light" floating badge.
+
+================================================================================
+LOGO BAR
+================================================================================
+
+Heading: Trusted by food businesses worldwide
+Logos: Carrefour | Ben's Farmhouse
+
+================================================================================
+TRUST PILLARS — "Why RecipeBuilder"
+================================================================================
+
+Section Title: Why RecipeBuilder
+Section Heading: Built for Food Businesses That Need It Right
+Subtitle: The team behind 5,000+ food labels approved by Dubai Municipality.
+
+1. Built for the GCC
+   Designed from day one for food businesses in the UAE, Saudi Arabia, and the wider Gulf region.
+
+2. Accurate & FDA-Sourced
+   20,000+ ingredients from the USDA FoodData Central database. Every calculation backed by verified data.
+
+3. Bilingual by Default
+   Every label, ingredient list, and packaging artwork generated in both English and Arabic automatically.
+
+4. Fast & Automated
+   Generate nutrition labels, barcodes, QR codes, and packaging artwork in minutes — not weeks.
+
+5. Secure Cloud Platform
+   Recipes, formulations, and business data encrypted and stored with enterprise-grade security.
+
+6. Hands-On Support
+   Dedicated onboarding and support from a team that understands GCC food regulations.
+
+================================================================================
+HOW IT WORKS — "From Recipe to Label in Minutes"
+================================================================================
+
+Section Badge: How It Works
+Section Heading: From Recipe to Label in Minutes
+Subtitle: Three simple steps to create compliant food labels from your recipes.
+
+Step 01 — Create Your Recipe
+Add ingredients from the USDA database, set quantities and units, define preparation methods, calculate costs, and upload cover photos.
+
+Step 02 — Auto-Generate Labels
+Nutrition facts, packaging artwork, barcodes, and QR codes are generated automatically. Labels include bilingual English & Arabic text.
+
+Step 03 — Export & Manage
+Download labels as PNG or PDF. Track inventory with real-time stock counts, monitor ingredient costs and profit margins.
+
+================================================================================
+FEATURES — "Everything You Need to Manage Recipes & Labels"
+================================================================================
+
+Section Title: Features
+Section Heading: Everything You Need to Manage Recipes & Labels
+Subtitle: From recipe creation to food labeling that follows GCC & SFDA laws, RecipeBuilder handles every step.
+
+1. Auto-Generate Food Labels (wide card)
+   Create professional packaging artwork with nutrition facts, ingredients in English & Arabic, storage instructions, and allergen disclaimers — all generated automatically from your recipes.
+
+2. Barcode Generation
+   Every recipe gets a unique barcode for product identification, retail tracking, and point-of-sale integration. Print-ready barcodes included on your packaging.
+
+3. QR Code Nutrition Facts
+   Generate scannable QR codes that link to a live nutrition facts page. Customers scan to view detailed nutritional information instantly.
+
+4. 20,000+ FDA-Sourced Ingredients (wide card)
+   Search the USDA FoodData Central database with complete nutritional profiles. No manual data entry — just search and add.
+
+5. Bilingual Labels Following GCC Laws
+   Auto-translate and localize food labels to Arabic following GCC and SFDA labeling requirements. One click generates bilingual packaging artwork.
+
+6. Stock & Inventory Tracking
+   Track portion counts in real-time with quick stock updates. Know exactly how much of each recipe is available and manage your production schedule.
+
+================================================================================
+PRODUCT DEMO — "See the Full Workflow in Action"
+================================================================================
+
+Section Badge: Product Demo
+Section Heading: See the Full Workflow in Action
+Subtitle: Scroll through each step — from creating a recipe to generating a print-ready bilingual food label.
+
+Step 1 — Create Your Recipe
+Start by entering your recipe details — name, category, yield, and serving size. Organize recipes into categories and sub-categories for easy management.
+- Recipe name, category, and photo upload
+- Set yield and serving size
+- Define preparation instructions
+
+Step 2 — Add Ingredients from USDA
+Search over 20,000 FDA-sourced ingredients from the USDA FoodData Central database. Select an ingredient, set the quantity, and it's added to your recipe instantly.
+- Search 20,000+ verified ingredients
+- Complete nutritional profiles per ingredient
+- Set custom quantities and units
+
+Step 3 — Nutrition Data Updates Live
+As you add ingredients, per-serving nutrition data updates in real time. See calories, macros, micros, and traffic light indicators — all calculated automatically.
+- Real-time per-serving calculations
+- Traffic light labels (green/amber/red)
+- Full macro & micronutrient breakdown
+
+Step 4 — Nutrition Label Generated
+An FDA-style Nutrition Facts panel is auto-generated with accurate per-serving values, % Daily Values, and proper formatting — ready for your food packaging.
+- FDA-standard nutrition facts format
+- Per-serving and per-container values
+- % Daily Value calculations
+
+Step 5 — Packaging Artwork Ready
+A complete bilingual packaging label is generated with English & Arabic text, nutrition facts, barcode, QR code, allergen declarations, and storage instructions.
+- Bilingual English & Arabic labels
+- Auto-generated barcode & QR code
+- Allergen declarations & storage info
+
+================================================================================
+INDUSTRIES — "Built for Every Food Business"
+================================================================================
+
+(Same as Global variant — see home-global.txt)
+
+================================================================================
+COMPARISON — "Compare Your Options"
+================================================================================
+
+Feature               | Lab Testing              | Spreadsheets            | RecipeBuilder
+--------------------- | -------------------------| ----------------------- | ----------------------------
+Cost                  | $500–$2,000 per product  | Free but hours of labor | From $1 per recipe
+Time to Label         | 2–4 weeks                | Hours per product       | Under 5 minutes
+Accuracy              | High (lab-tested)        | Error-prone             | High (20,000+ FDA ingredients)
+GCC & SFDA Labeling   | Manual review needed     | Not built-in            | Follows GCC & SFDA laws
+Barcodes & QR Codes   | No                       | No                      | Yes
+Bilingual Labels      | Manual translation       | Manual translation      | Auto English & Arabic
+Cost Analysis         | No                       | Manual formulas         | Built-in with profit margin
+Packaging Artwork     | Separate design needed   | No                      | Auto-generated, print-ready
+
+================================================================================
+PRICING — "Transparent Pricing, No Surprises"
+================================================================================
+
+Traditional Lab Testing (crossed out):
+$500 – $2,000
+- Per product, every time
+- 2–4 weeks turnaround
+- No label generation included
+- Separate design costs
+
+RecipeBuilder:
+$1,500 for your first 1,500 recipes
+Then just $1.50 per additional recipe
+That's as low as $1 per recipe
+- Unlimited label generation
+- GCC & SFDA compliant formats
+- Barcodes & QR codes included
+- Bilingual English & Arabic labels
+- Packaging artwork generation
+- Cost tracking & inventory management
+
+Footer note: Includes dedicated onboarding & hands-on support
+
+================================================================================
+TESTIMONIALS — "Trusted by Food Businesses Across the GCC"
+================================================================================
+
+Section Heading: Trusted by Food Businesses Across the GCC
+
+1. "Working with ByteBeam has been an exceptional experience. Their agile and well-organised team helped us transform a time-consuming, manual process into a smart, efficient workflow — saving both time and costs while ensuring quality and compliance."
+   — CFO, Chief Financial Officer, Takhlees Compliance Services
+
+2. "The USDA database integration is incredibly accurate. We've processed hundreds of products and every label passed Dubai Municipality review on the first submission."
+   — Mohammed H., Quality Assurance Director, Artisan Bakery Co.
+
+3. "As a meal prep company, we need nutrition accuracy. RecipeBuilder's automated labeling and cost tracking has saved us countless hours every week."
+   — Fatima Z., Founder & CEO, NutriPlate Meals
+
+================================================================================
+FAQ — "Frequently Asked Questions"
+================================================================================
+
+Q: How is RecipeBuilder different from lab testing?
+A: Lab testing costs $500–$2,000 per product and takes 2–4 weeks. RecipeBuilder generates compliant nutrition labels in minutes using the USDA FoodData Central database with 20,000+ verified ingredients. You get bilingual labels, packaging artwork, barcodes, and QR codes — all from one platform, for a fraction of the cost.
+
+Q: How long does it take to generate my first label?
+A: Minutes. Create your recipe, add ingredients from the USDA database, and RecipeBuilder auto-generates your nutrition label, packaging artwork, barcode, and QR code instantly. Most users have their first label ready within 10 minutes of signing up.
+
+Q: Is the nutrition data accurate enough for GCC regulatory compliance?
+A: Yes. RecipeBuilder uses the full USDA FoodData Central database — the same data source used by food labs. Labels are auto-formatted to meet GCC and SFDA labeling requirements with bilingual English and Arabic text, proper allergen declarations, and required disclaimers.
+
+Q: Does RecipeBuilder follow GCC food labeling laws?
+A: Yes. RecipeBuilder helps you generate food labels that follow GCC and SFDA labeling requirements, including bilingual English and Arabic ingredient lists, proper nutrition fact formatting, allergen declarations, and storage instructions. Labels are auto-formatted according to regional labeling standards.
+
+Q: Do you support Arabic food labels?
+A: RecipeBuilder auto-translates ingredient lists to Arabic and generates bilingual packaging artwork with both English and Arabic text. You can refresh the Arabic translation anytime and download labels as PNG or PDF for print-ready packaging.
+
+Q: Can I generate barcodes and QR codes for my products?
+A: Every recipe in RecipeBuilder gets a unique barcode for product identification and point-of-sale integration. You also get a QR code that links to a live nutrition facts page — customers can scan it to view detailed nutritional information.
+
+Q: How much does RecipeBuilder cost?
+A: RecipeBuilder starts at $1,500 for your first 1,500 recipes — that's as low as $1 per recipe. After that, additional recipes are $1.50 each. Compare that to $500–$2,000 per product for traditional lab testing. Book a demo to see the platform in action and get a personalized walkthrough.
+
+Q: Can I track recipe costs and inventory?
+A: Yes. RecipeBuilder includes built-in cost tracking with profit margin calculations and real-time stock tracking. You can monitor ingredient costs, track portion counts, and manage production schedules — all from the same platform where you create your labels.
+
+================================================================================
+CTA SECTION
+================================================================================
+
+Heading: Every Week Without Compliant Labels Is Lost Revenue
+Subtext: Join Carrefour, Ben's Farmhouse, and food businesses worldwide already labeling smarter with RecipeBuilder.
+Primary CTA: "Book a Demo"
+Secondary CTA: "Get a Sample Label"
+Fine print: Free demo. No commitment. Dedicated onboarding included.
+
+================================================================================
+FOOTER
+================================================================================
+
+Description: The complete recipe management and food labeling platform for GCC food businesses. A product by ByteBeam.

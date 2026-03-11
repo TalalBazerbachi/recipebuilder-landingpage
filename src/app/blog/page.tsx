@@ -8,7 +8,7 @@ import { Calendar, Clock, ArrowRight, BookOpen, ChefHat } from "lucide-react";
 export const metadata: Metadata = {
   title: "Blog — RecipeBuilder | Food Labeling & Recipe Management Insights",
   description:
-    "Expert guides on GCC food labeling, SFDA regulations, nutrition analysis, allergen management, and recipe management for food businesses in the UAE and Saudi Arabia.",
+    "RecipeBuilder blog by ByteBeam. Expert guides on GCC food labeling regulations, SFDA compliance, UAE food labeling requirements, nutrition analysis, allergen management, halal certification, and recipe management best practices for food businesses in the UAE, Saudi Arabia, and Gulf region.",
   keywords: [
     "food labeling blog",
     "GCC food regulations",
@@ -208,6 +208,63 @@ export default function BlogPage() {
         </section>
       </main>
       <Footer />
+
+      {/* Blog structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            name: "RecipeBuilder Blog",
+            description:
+              "Expert guides on food labeling, GCC regulations, nutrition analysis, allergen management, and recipe management for food businesses.",
+            url: "https://recipebuilder.bytebeam.co/blog",
+            publisher: {
+              "@type": "Organization",
+              name: "RecipeBuilder",
+              url: "https://recipebuilder.bytebeam.co",
+            },
+            blogPost: sorted.map((post) => ({
+              "@type": "BlogPosting",
+              headline: post.title,
+              description: post.description,
+              url: `https://recipebuilder.bytebeam.co/blog/${post.slug}`,
+              datePublished: post.date,
+              author: {
+                "@type": "Organization",
+                name: "ByteBeam",
+                url: "https://www.bytebeam.co",
+              },
+            })),
+          }),
+        }}
+      />
+
+      {/* BreadcrumbList */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://recipebuilder.bytebeam.co",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Blog",
+                item: "https://recipebuilder.bytebeam.co/blog",
+              },
+            ],
+          }),
+        }}
+      />
     </>
   );
 }

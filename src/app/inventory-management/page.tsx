@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   title:
     "Recipe Inventory Management — Track Stock & Portions in Real-Time | RecipeBuilder",
   description:
-    "Track portion counts in real-time with quick stock update controls. View stock alongside prep time, serving size, selling price, and barcode — all on one dashboard. Built for GCC food businesses by ByteBeam.",
+    "RecipeBuilder's inventory management tracks portion counts and ingredient stock in real-time. Dashboard shows stock levels alongside prep time, serving size, selling price, and barcode for each recipe. Low-stock alerts and production scheduling included. Built for food manufacturers, restaurants, and catering businesses by ByteBeam (Dubai).",
   keywords: [
     "recipe inventory management",
     "food stock tracking",
@@ -519,6 +519,44 @@ export default function InventoryManagement() {
         </section>
       </main>
       <Footer />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: "RecipeBuilder Inventory Management",
+            url: "https://recipebuilder.bytebeam.co/inventory-management",
+            applicationCategory: "BusinessApplication",
+            operatingSystem: "Web",
+            description: "Track stock levels, manage portions, and monitor ingredient inventory in real-time for food businesses.",
+            offers: { "@type": "AggregateOffer", priceCurrency: "USD", lowPrice: "49", highPrice: "99", offerCount: "3", category: "SaaS", availability: "https://schema.org/InStock" },
+            provider: { "@type": "Organization", name: "ByteBeam", url: "https://www.bytebeam.co" },
+            featureList: [
+              "Real-time stock tracking",
+              "Portion count management",
+              "Ingredient inventory dashboard",
+              "Low stock alerts",
+              "Production schedule tracking",
+              "Batch management",
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://recipebuilder.bytebeam.co" },
+              { "@type": "ListItem", position: 2, name: "Inventory Management", item: "https://recipebuilder.bytebeam.co/inventory-management" },
+            ],
+          }),
+        }}
+      />
     </>
   );
 }

@@ -1,0 +1,77 @@
+PAGE: Privacy Policy (/privacy-policy)
+URL: /privacy-policy
+
+================================================================================
+PRIVACY POLICY
+================================================================================
+
+Updated: January 2026
+
+ByteBeam ("we," "us," or "our") operates the RecipeBuilder platform. This Privacy Policy explains how we collect, use, share, and protect your information when you use our website and services.
+
+Company: ByteBeam
+Contact Email: info@bytebeam.co
+Regions Served: UAE, Saudi Arabia, and the broader GCC region
+
+1. Information We Collect
+
+a) Information You Provide
+When you create an account, book a demo, or communicate with us, we may collect your name, email address, phone number, company name, postal address, and payment details.
+
+b) User Content
+We collect content you create or upload through RecipeBuilder, including recipes, ingredient lists, food labels, packaging artwork, nutrition data, images, and other materials you generate using our platform.
+
+c) Automatically Collected Information
+We may automatically collect certain information about your device and how you interact with our services, including your IP address, browser type, operating system, referring website, pages viewed, and time spent on our website.
+
+d) Cookies and Similar Technologies
+We use cookies and similar technologies to track your activity and improve your experience on our site.
+
+2. How We Use Your Information
+We use the information we collect to:
+- Provide, maintain, and improve our services, including recipe management, nutrition analysis, food label generation, barcode and QR code creation, and inventory tracking
+- Respond to your inquiries, process transactions, and provide customer support
+- Personalize your experience and deliver relevant content
+- Send promotional materials, product updates, and newsletters (you may opt out at any time)
+- Comply with legal requirements and enforce our terms of service
+- Analyze usage patterns to improve platform performance and features
+
+3. Sharing Your Information
+We may share your information in the following circumstances:
+- Service Providers: We may share data with third-party vendors who assist with payment processing, hosting, analytics, and other services necessary to operate RecipeBuilder.
+- Business Transfers: In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of the transaction.
+- Legal Compliance: We may disclose your information to comply with applicable laws, regulations, legal processes, or enforceable governmental requests.
+We do not sell your personal information to third parties.
+
+4. Data Retention and Security
+We retain your data for as long as necessary to provide our services and fulfill the purposes described in this policy. We employ industry-standard security measures, including AES-256 encryption for stored data and TLS/SSL encryption for data in transit, to protect your information from unauthorized access, alteration, or destruction.
+
+5. Your Rights and Choices
+You have the following rights regarding your personal data:
+- Right to Access: Request access to the personal data we hold about you.
+- Right to Rectification: Request correction of inaccurate or incomplete personal data.
+- Right to Deletion: Request the deletion of your personal data under certain conditions.
+- Right to Restrict Processing: Request restrictions on how we process your data.
+- Right to Data Portability: Receive your personal data in a structured, machine-readable format.
+- Right to Object: Object to data processing, including for marketing purposes.
+To exercise any of these rights, please contact us at info@bytebeam.co.
+
+6. Use of Cookies
+Cookies help us remember your preferences, analyze site traffic, authenticate users, and enhance security. You can manage cookie preferences through your browser settings. Disabling cookies may limit certain features of our website.
+
+7. Third-Party Links
+Our website may contain links to third-party sites that are not operated by us. We are not responsible for the privacy practices or content of those sites. We encourage you to review the privacy policies of any third-party sites you visit.
+
+8. Changes to This Privacy Policy
+We reserve the right to update this Privacy Policy at any time. Changes will be posted on this page with an updated revision date. We encourage you to review this policy periodically.
+
+9. Children's Privacy
+Our services are not intended for children under 13. We do not knowingly collect personal data from children. If we become aware that we have inadvertently collected data from a child under 13, we will take steps to delete it promptly.
+
+10. Contact Us
+If you have any questions about this Privacy Policy or wish to exercise your data protection rights, please contact us:
+Email: info@bytebeam.co
+Company: ByteBeam
+Regions: UAE & Saudi Arabia
+
+Last Updated: January 2026

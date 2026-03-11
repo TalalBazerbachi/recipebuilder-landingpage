@@ -1,0 +1,317 @@
+PAGE: Home — Global Landing Page (/)
+URL: /
+
+================================================================================
+NAVBAR
+================================================================================
+
+Navigation Links: Features | How It Works | Industries | Pricing | Blog | About | GCC
+CTA Button: "Book a Demo"
+
+================================================================================
+HERO SECTION
+================================================================================
+
+Badge: TRUSTED BY CARREFOUR & MORE
+
+Headline: From Recipe to Retail-Ready Label — In Minutes, Not Weeks
+
+Subheadline: Stop paying $500+ per product for lab testing. RecipeBuilder auto-generates compliant nutrition labels, barcodes, QR codes, and packaging artwork from your recipes — for FDA, EU, GCC, and 10+ regulatory frameworks.
+
+Primary CTA: "Book a Demo"
+Secondary CTA: "Get a Sample Label"
+
+Social Proof Line: Trusted by Carrefour, Ben's Farmhouse & food businesses worldwide
+
+Stats:
+- 20,000+ — FDA-Sourced Ingredients
+- Minutes — vs. Weeks with Lab Testing
+- FDA, EU & GCC — Compliant Label Formats
+- 40+ — Supported Languages
+
+Visual (Desktop): A floating collage of 4 UI mockup cards — an Allergens grid card, an FDA Nutrition Facts panel, a Packaging Artwork label, and a UK-style Traffic Light label — plus a rotating flag badge cycling through US, UK, France, Saudi Arabia, UAE, and a globe icon every 2 seconds.
+
+================================================================================
+LOGO BAR
+================================================================================
+
+Heading: Trusted by food businesses worldwide
+Logos: Carrefour | Ben's Farmhouse
+
+================================================================================
+TRUST PILLARS — "Why RecipeBuilder"
+================================================================================
+
+Section Title: Why RecipeBuilder
+Section Heading: Built for Food Businesses That Need It Right
+Subtitle: Trusted by food businesses worldwide to generate compliant nutrition labels.
+
+1. Global Compliance
+   Support for FDA, EU, GCC, and other regional labeling requirements. One platform, multiple regulatory frameworks.
+
+2. Accurate & FDA-Sourced
+   20,000+ ingredients from the USDA FoodData Central database. Every calculation backed by verified data.
+
+3. Multi-Language Support
+   Generate food labels in 40+ languages. Translate ingredient lists, allergen declarations, and packaging artwork automatically.
+
+4. Fast & Automated
+   Generate nutrition labels, barcodes, QR codes, and packaging artwork in minutes — not weeks.
+
+5. Secure Cloud Platform
+   Recipes, formulations, and business data encrypted and stored with enterprise-grade security.
+
+6. Dedicated Support
+   Hands-on onboarding and responsive support from a team that understands food labeling regulations.
+
+================================================================================
+HOW IT WORKS — "From Recipe to Label in Minutes"
+================================================================================
+
+Section Badge: How It Works
+Section Heading: From Recipe to Label in Minutes
+Subtitle: Three simple steps to create compliant food labels from your recipes.
+
+This section presents the core 3-step workflow that shows how RecipeBuilder transforms a raw recipe into a finished, regulation-ready food label. It is designed as a dark-background section with a subtle grid pattern and two blurred gradient orbs for visual depth. Each step is displayed as a card in a 3-column grid (stacked on mobile), with connector lines between them on desktop to indicate the sequential flow.
+
+Step 01 — Create Your Recipe
+Add ingredients from the USDA database, set quantities and units, define preparation methods, calculate costs, and upload cover photos.
+
+What happens here: The user starts by entering their recipe into RecipeBuilder. They search the built-in USDA FoodData Central database (20,000+ verified ingredients), select ingredients, and specify exact quantities and units. They can also define how the recipe is prepared (cooking instructions, temperatures, etc.), assign ingredient costs for financial tracking, and upload a cover photo for easy visual identification. This step captures all the raw data that RecipeBuilder needs to perform automatic calculations in the next step.
+
+Step 02 — Auto-Generate Labels
+Nutrition facts, packaging artwork, barcodes, and QR codes are generated automatically. Labels support multi-language translation.
+
+What happens here: Once the recipe is saved with its ingredients and quantities, RecipeBuilder automatically calculates the complete nutrition profile — calories, macronutrients (protein, carbs, fat), micronutrients (vitamins, minerals), and more — all based on USDA data. From this nutrition data, the platform generates several outputs simultaneously:
+- An FDA-style Nutrition Facts panel with per-serving values, % Daily Values, and proper formatting
+- Full packaging artwork that includes the nutrition panel, a bilingual ingredient list, allergen declarations, storage instructions, and manufacturer details
+- A unique barcode for product identification and retail scanning
+- A QR code that links to a live nutrition facts page consumers can scan
+- Traffic light labels (green/amber/red indicators for fat, sugars, salt) for consumer clarity
+Labels can be translated into 40+ languages automatically, making them ready for international markets.
+
+Step 03 — Export & Manage
+Download labels as PNG or PDF. Track inventory with real-time stock counts, monitor ingredient costs and profit margins.
+
+What happens here: The finished labels are available for immediate download in print-ready formats (high-resolution PNG for digital use, PDF for professional printing). Beyond label generation, RecipeBuilder also serves as an ongoing operational tool — users can track how many portions of each recipe are in stock with real-time inventory counts, monitor the cost of every ingredient to calculate per-serving cost and profit margins, and manage their entire recipe catalog from a single dashboard. This step represents the transition from label creation to day-to-day business management.
+
+Visual Details:
+- Each step has a large icon container with a gradient background that subtly rotates on hover
+- Step numbers (01, 02, 03) appear as gradient badges on each card
+- Horizontal connector lines run between the steps on desktop to show the flow
+- The entire section animates in with staggered fade-up effects when scrolled into view
+
+================================================================================
+FEATURES — "Everything You Need to Manage Recipes & Labels"
+================================================================================
+
+Section Title: Features
+Section Heading: Everything You Need to Manage Recipes & Labels
+Subtitle: From recipe creation to compliant food labeling, RecipeBuilder handles every step.
+
+1. Auto-Generate Food Labels (wide card)
+   Create professional packaging artwork with nutrition facts, ingredients, storage instructions, and allergen disclaimers — all generated automatically from your recipes.
+
+2. Barcode Generation
+   Every recipe gets a unique barcode for product identification, retail tracking, and point-of-sale integration. Print-ready barcodes included on your packaging.
+
+3. QR Code Nutrition Facts
+   Generate scannable QR codes that link to a live nutrition facts page. Customers scan to view detailed nutritional information instantly.
+
+4. 20,000+ FDA-Sourced Ingredients (wide card)
+   Search the USDA FoodData Central database with complete nutritional profiles. No manual data entry — just search and add.
+
+5. Multi-Language Compliant Labels
+   Auto-translate and localize food labels to 40+ languages. Generate multi-language packaging artwork that meets regional labeling requirements.
+
+6. Stock & Inventory Tracking
+   Track portion counts in real-time with quick stock updates. Know exactly how much of each recipe is available and manage your production schedule.
+
+================================================================================
+PRODUCT DEMO — "See the Full Workflow in Action"
+================================================================================
+
+Section Badge: Product Demo
+Section Heading: See the Full Workflow in Action
+Subtitle: Scroll through each step — from creating a recipe to generating a print-ready compliant food label.
+
+This is a scroll-driven interactive demo. On desktop, the left side stays sticky showing a browser frame with animated mockups, while the right side scrolls through 5 step panels. On mobile, steps stack vertically with mockups below each step description.
+
+Step 1 — Create Your Recipe
+Start by entering your recipe details — name, category, yield, and serving size. Organize recipes into categories and sub-categories for easy management.
+- Recipe name, category, and photo upload
+- Set yield and serving size
+- Define preparation instructions
+Mockup: A recipe creation form showing "Chocolate Chip Cookies", Bakery category, 24 cookies yield, 1 cookie (35g) serving size, 45 min prep time.
+
+Step 2 — Add Ingredients from USDA
+Search over 20,000 FDA-sourced ingredients from the USDA FoodData Central database. Select an ingredient, set the quantity, and it's added to your recipe instantly.
+- Search 20,000+ verified ingredients
+- Complete nutritional profiles per ingredient
+- Set custom quantities and units
+Mockup: Search box with "eggs" typed showing 3 results. Already-added ingredients: All-Purpose Flour 280g, Butter 200g, Granulated Sugar 150g, Chocolate Chips 180g.
+
+Step 3 — Nutrition Data Updates Live
+As you add ingredients, per-serving nutrition data updates in real time. See calories, macros, micros, and traffic light indicators — all calculated automatically.
+- Real-time per-serving calculations
+- Traffic light labels (green/amber/red)
+- Full macro & micronutrient breakdown
+Mockup: 8 nutrient cards showing Calories 165 kcal, Total Fat 8g, Sat. Fat 5g, Carbs 22g, Sugars 14g, Protein 2g, Sodium 95mg, Fiber 1g with traffic light indicators.
+
+Step 4 — Nutrition Label Generated
+An FDA-style Nutrition Facts panel is auto-generated with accurate per-serving values, % Daily Values, and proper formatting — ready for your food packaging.
+- FDA-standard nutrition facts format
+- Per-serving and per-container values
+- % Daily Value calculations
+Mockup: Full FDA Nutrition Facts panel — Serving Size 1 cookie (35g), 24 servings, Calories 165, with complete nutrient table.
+
+Step 5 — Packaging Artwork Ready
+A complete packaging label is generated with nutrition facts, barcode, QR code, allergen declarations, and storage instructions — with multi-language support.
+- Multi-language label support
+- Auto-generated barcode & QR code
+- Allergen declarations & storage info
+Mockup: Full packaging label for "Chocolate Chip Cookies" with mini nutrition panel, QR code, ingredient list, allergen line, barcode, and download buttons.
+
+================================================================================
+INDUSTRIES — "Built for Every Food Business"
+================================================================================
+
+Section Badge: Industries
+Section Heading: Built for Every Food Business
+Subtitle: Whether you run a restaurant, manufacture food products, or manage nutrition plans — RecipeBuilder adapts to your workflow.
+
+1. Restaurants, Cafes & Hotels
+   Manage your full menu with accurate nutrition data. Generate labels for packaged items and track recipe costs.
+   - Menu nutrition analysis
+   - Packaged item labeling
+   - Cost per serving tracking
+
+2. Food Manufacturers
+   Scale your labeling workflow for production. Auto-generate compliant packaging artwork and barcodes for retail.
+   - Retail-ready barcodes
+   - Batch packaging artwork
+   - Production inventory tracking
+
+3. Bakeries & Catering
+   Create professional labels for every product. Track ingredient costs and manage portion-based inventory.
+   - Per-portion cost analysis
+   - Allergen declarations
+   - Custom packaging labels
+
+4. Nutrition Centers & Meal Plans
+   Build meal plans with precise nutrition data. Generate client-facing nutrition labels and track macros.
+   - Macro nutrient breakdown
+   - Traffic light labels
+   - Meal plan recipe management
+
+================================================================================
+COMPARISON — "Compare Your Options"
+================================================================================
+
+Section Heading: Compare Your Options
+
+Feature               | Lab Testing              | Spreadsheets            | RecipeBuilder
+--------------------- | -------------------------| ----------------------- | ----------------------------
+Cost                  | $500–$2,000 per product  | Free but hours of labor | From $1 per recipe
+Time to Label         | 2–4 weeks                | Hours per product       | Under 5 minutes
+Accuracy              | High (lab-tested)        | Error-prone             | High (20,000+ FDA ingredients)
+Regulatory Compliance | Manual review needed     | Not built-in            | FDA, EU, GCC & more
+Barcodes & QR Codes   | No                       | No                      | Yes
+Multi-Language Labels  | Manual translation       | Manual translation      | Auto translation (40+ languages)
+Cost Analysis         | No                       | Manual formulas         | Built-in with profit margin
+Packaging Artwork     | Separate design needed   | No                      | Auto-generated, print-ready
+
+================================================================================
+PRICING — "Transparent Pricing, No Surprises"
+================================================================================
+
+Section Heading: Transparent Pricing, No Surprises
+
+Traditional Lab Testing (crossed out):
+$500 – $2,000
+- Per product, every time
+- 2–4 weeks turnaround
+- No label generation included
+- Separate design costs
+
+RecipeBuilder:
+$1,500 for your first 1,500 recipes
+Then just $1.50 per additional recipe
+That's as low as $1 per recipe
+- Unlimited label generation
+- All regulatory formats (FDA, EU, GCC & more)
+- Barcodes & QR codes included
+- Multi-language support (40+ languages)
+- Packaging artwork generation
+- Cost tracking & inventory management
+
+Footer note: Includes dedicated onboarding & hands-on support
+
+================================================================================
+TESTIMONIALS — "Trusted by Food Businesses Around the World"
+================================================================================
+
+Section Heading: Trusted by Food Businesses Around the World
+
+1. "Working with ByteBeam has been an exceptional experience. Their agile and well-organised team helped us transform a time-consuming, manual process into a smart, efficient workflow — saving both time and costs while ensuring quality and compliance."
+   — CFO, Chief Financial Officer, Takhlees Compliance Services
+
+2. "The USDA database integration is incredibly accurate. We've processed hundreds of products and every label passed FDA review on the first submission."
+   — David R., Quality Assurance Manager, Pacific Foods Inc.
+
+3. "As a meal prep company, we need nutrition accuracy. RecipeBuilder's automated labeling and cost tracking has saved us countless hours every week."
+   — Maria L., Founder & CEO, FreshPlate Meals
+
+================================================================================
+FAQ — "Frequently Asked Questions"
+================================================================================
+
+Section Heading: Frequently Asked Questions
+
+Q: How is RecipeBuilder different from lab testing?
+A: Lab testing costs $500–$2,000 per product and takes 2–4 weeks. RecipeBuilder generates compliant nutrition labels in minutes using the USDA FoodData Central database with 20,000+ verified ingredients. You get FDA-style labels, packaging artwork, barcodes, and QR codes — all from one platform, for a fraction of the cost.
+
+Q: How long does it take to generate my first label?
+A: Minutes. Create your recipe, add ingredients from the USDA database, and RecipeBuilder auto-generates your nutrition label, packaging artwork, barcode, and QR code instantly. Most users have their first label ready within 10 minutes of signing up.
+
+Q: Is the nutrition data accurate enough for regulatory compliance?
+A: Yes. RecipeBuilder uses the full USDA FoodData Central database — the same data source used by food labs. Every calculation is based on verified nutritional profiles. Labels are auto-formatted to meet FDA, EU, GCC/SFDA, and other regional standards with proper % Daily Values, allergen declarations, and required disclaimers.
+
+Q: What regulatory frameworks does RecipeBuilder support?
+A: RecipeBuilder supports FDA (US), EU, GCC/SFDA, and other regional labeling standards. Labels are auto-formatted according to the selected regulatory framework, with proper nutrition fact formatting, allergen declarations, and required disclaimers.
+
+Q: Can I generate barcodes and QR codes for my products?
+A: Every recipe in RecipeBuilder gets a unique barcode for product identification and point-of-sale integration. You also get a QR code that links to a live nutrition facts page — customers can scan it to view detailed nutritional information.
+
+Q: What languages are supported for food labels?
+A: RecipeBuilder supports 40+ languages for food label translation. Ingredient lists, allergen declarations, and packaging artwork can be auto-translated and formatted for your target market. Download labels as PNG or PDF for print-ready packaging.
+
+Q: How much does RecipeBuilder cost?
+A: RecipeBuilder starts at $1,500 for your first 1,500 recipes — that's as low as $1 per recipe. After that, additional recipes are $1.50 each. Compare that to $500–$2,000 per product for traditional lab testing. Book a demo to see the platform in action and get a personalized walkthrough.
+
+Q: Can I track recipe costs and inventory?
+A: Yes. RecipeBuilder includes built-in cost tracking with profit margin calculations and real-time stock tracking. You can monitor ingredient costs, track portion counts, and manage production schedules — all from the same platform where you create your labels.
+
+================================================================================
+CTA SECTION
+================================================================================
+
+Heading: Every Week Without Compliant Labels Is Lost Revenue
+Subtext: Join Carrefour, Ben's Farmhouse, and food businesses worldwide already labeling smarter with RecipeBuilder.
+Primary CTA: "Book a Demo"
+Secondary CTA: "Get a Sample Label"
+Fine print: Free demo. No commitment. Dedicated onboarding included.
+
+================================================================================
+FOOTER
+================================================================================
+
+Description: The complete recipe management and food labeling platform for food businesses worldwide. A product by ByteBeam.
+Contact: talal@bytebeam.co
+
+Product links: Food Labeling | Nutrition Analysis | Barcode & QR Codes | Packaging Artwork
+Resources links: Recipe Management | Cost Tracking | Inventory | Compliance Resources
+Industries links: Restaurants & Cafes | Food Manufacturers | Bakeries & Catering | Nutrition Centers
+Company links: About | Blog | Terms of Service | Privacy Policy
+
+Social: WhatsApp | LinkedIn

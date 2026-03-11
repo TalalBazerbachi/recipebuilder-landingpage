@@ -1,0 +1,128 @@
+PAGE: Recipe Management Software (/recipe-management)
+URL: /recipe-management
+
+================================================================================
+HERO
+================================================================================
+
+Badge: RECIPE MANAGEMENT SOFTWARE
+Heading: Organize, Analyze & Publish Your Recipes in One Platform
+Subheadline: Create recipes with automatic nutrition analysis from 20,000+ FDA-sourced ingredients. Organize with categories, support sub-recipes, document prep methods, and publish when ready — all from a single platform built for food businesses.
+
+Primary CTA: "Book a Demo"
+Secondary CTA: "Explore All Features"
+
+Stats:
+- 20,000+ — FDA-Sourced Ingredients
+- 5,000+ — Labels Approved by Dubai Municipality
+- Unlimited — Recipes & Sub-Recipes
+
+Screenshot: Recipe creation form showing ingredient management, nutrition breakdown, and recipe details.
+
+================================================================================
+CORE FEATURES — "Everything You Need to Manage Recipes Professionally"
+================================================================================
+
+Label: Core Features
+Heading: Everything You Need to Manage Recipes Professionally
+Subtitle: RecipeBuilder gives food businesses a complete recipe management system with built-in nutrition analysis, category organization, and sub-recipe support.
+
+1. Categories & Sub-Categories
+   Organize your recipes into categories and sub-categories that mirror your menu structure. Group recipes by meal type, cuisine, product line, or any classification that fits your business. Quickly find recipes using the structured hierarchy.
+
+2. 20,000+ USDA Ingredient Database
+   Search and add ingredients from a database of over 20,000 FDA-sourced entries with complete nutritional profiles. No manual data entry needed — every ingredient comes with calories, protein, carbohydrates, fat, vitamins, and minerals already defined.
+
+3. Nutrition Breakdown Per Recipe
+   Get an automatic nutrition breakdown for every recipe including calories, protein, carbohydrates, fat, saturated fat, sugars, fiber, and sodium. Nutrition data is calculated per serving and per 100g, making it ready for food labels.
+
+4. Sub-Recipe Support
+   Build complex recipes using other recipes as ingredients. Create sauces, doughs, marinades, and base preparations as sub-recipes, then use them across multiple parent recipes. Nutrition data flows through automatically.
+
+5. Cover Photos
+   Add cover photos to every recipe for easy visual identification. Whether you are browsing your recipe library or sharing recipes with your team, photos make it fast to find exactly what you need.
+
+6. Prep Method Documentation
+   Document detailed preparation methods with step-by-step instructions. Record cooking temperatures, timing, equipment needed, and technique notes so your team can replicate recipes with consistency every time.
+
+================================================================================
+WORKFLOW — "From Idea to Published Recipe in Minutes"
+================================================================================
+
+Label: Workflow
+Heading: From Idea to Published Recipe in Minutes
+Subtitle: RecipeBuilder simplifies the recipe creation process. Add ingredients, document your method, review nutrition data, and publish — all in one workflow.
+
+Step 01 — Create Your Recipe
+Name your recipe, assign it to a category, and start adding ingredients from the 20,000+ USDA database. Set quantities, units, and serving sizes.
+
+Step 02 — Add Preparation Details
+Document your prep method with step-by-step instructions, cooking temperatures, and timing. Upload a cover photo for visual identification.
+
+Step 03 — Review Nutrition Data
+RecipeBuilder automatically calculates the full nutrition breakdown based on your ingredients. Review calories, macros, vitamins, and minerals per serving.
+
+Step 04 — Publish or Save as Draft
+Publish your recipe to make it available for label generation and team access, or save it as a draft to continue working on it later.
+
+================================================================================
+INGREDIENT DATABASE — "20,000+ FDA-Sourced Ingredients with Full Nutrition Data"
+================================================================================
+
+Label: Ingredient Database
+Heading: 20,000+ FDA-Sourced Ingredients with Full Nutrition Data
+
+Every ingredient in RecipeBuilder comes from the USDA FoodData Central database with a complete nutritional profile. Search by name, browse categories, and add ingredients to your recipes instantly.
+
+Each ingredient includes data for calories, protein, carbohydrates, total fat, saturated fat, trans fat, fiber, sugars, sodium, cholesterol, and a full vitamin and mineral profile. This means your recipe nutrition calculations are accurate and based on trusted government data.
+
+Key points:
+- Search over 20,000 ingredients by name instantly
+- Complete macro and micro nutrient profiles included
+- No manual data entry — select and add
+- Data sourced from USDA FoodData Central
+- Custom ingredients can be added when needed
+
+Features:
+- Instant Search — Type any ingredient name and get instant results from the database. Results include nutritional previews so you can select the right ingredient quickly.
+- Automatic Calculations — As you add ingredients and set quantities, nutrition totals update in real time. Change a quantity and see the impact on your recipe nutrition immediately.
+- Sub-Recipe Ingredients — Use existing recipes as ingredients in new recipes. Nutrition data from sub-recipes is automatically included in the parent recipe calculation.
+
+================================================================================
+PUBLISH WHEN READY — "Draft, Review & Publish Your Recipes"
+================================================================================
+
+Label: Publish When Ready
+Heading: Draft, Review & Publish Your Recipes
+
+RecipeBuilder gives you control over your recipe workflow. Save recipes as drafts while you work on them, then publish when they are finalized. Published recipes become available across the entire platform.
+
+Once published, a recipe can generate food labels with barcodes and QR codes, appear in stock tracking, and be included in cost analysis reports. The draft-to-publish workflow ensures nothing goes live until it is ready.
+
+Published Recipes — Published recipes are available for food label generation, stock tracking, and cost analysis. Your team can access published recipes to maintain production consistency.
+
+Draft Recipes — Save recipes as drafts while you finalize ingredients, adjust quantities, or wait for preparation details. Drafts are private and do not appear in label generation or reports.
+
+Connected to Labels & Stock — Every published recipe connects directly to food label generation, stock tracking, and cost analysis. One recipe powers your labels, inventory, and financial reporting.
+
+================================================================================
+WHO USES THIS — "Who Uses RecipeBuilder for Recipe Management?"
+================================================================================
+
+Label: Built For Food Businesses
+Heading: Who Uses RecipeBuilder for Recipe Management?
+Subtitle: RecipeBuilder serves any food business that needs structured recipe management with built-in nutrition analysis and label generation.
+
+1. Restaurants & Cafes — Organize your full menu as recipes with nutrition data. Document prep methods for kitchen consistency and generate labels for packaged items.
+2. Food Manufacturers — Manage production recipes with precise ingredient quantities, sub-recipe support, and automatic nutrition calculations for product labels.
+3. Bakeries & Pastry Shops — Create recipes for baked goods with accurate ingredient tracking. Sub-recipes work perfectly for doughs, fillings, and icings used across products.
+4. Catering Companies — Build and organize recipes for your catering menu. Track nutrition per serving and generate labels for individually packaged catering items.
+
+================================================================================
+CTA
+================================================================================
+
+Heading: Ready to Organize Your Recipes in One Platform?
+Subtext: See how RecipeBuilder helps food businesses create, organize, and analyze recipes with automatic nutrition data from 20,000+ FDA-sourced ingredients.
+Primary CTA: "Book a Demo"
+Secondary CTA: "Contact Sales"

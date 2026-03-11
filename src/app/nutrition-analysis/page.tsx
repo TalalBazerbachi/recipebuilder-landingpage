@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   title:
     "Nutrition Analysis Software — Automatic Nutrition Facts from Recipes | RecipeBuilder",
   description:
-    "Automatically calculate nutrition facts from your recipes using USDA data. Generate FDA-style nutrition panels, traffic light labels, macro breakdowns, and allergen reports. Per-serving and per-100g calculations included.",
+    "RecipeBuilder's nutrition analysis calculates nutrition facts from recipes using the USDA FoodData Central database. Generates FDA-style nutrition panels, EU nutrition declarations, GCC-compliant tables, traffic light labels, and allergen reports. Per-serving and per-100g calculations. Used by food manufacturers, restaurants, and catering businesses. By ByteBeam (Dubai).",
   keywords: [
     "nutrition analysis software",
     "nutrition facts generator",
@@ -530,6 +530,45 @@ export default function NutritionAnalysisPage() {
         </section>
       </main>
       <Footer />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: "RecipeBuilder Nutrition Analysis",
+            url: "https://recipebuilder.bytebeam.co/nutrition-analysis",
+            applicationCategory: "BusinessApplication",
+            operatingSystem: "Web",
+            description: "Automatic nutrition facts generation from recipes. FDA-style panels, traffic light labels, macro breakdowns, and calorie calculations.",
+            offers: { "@type": "AggregateOffer", priceCurrency: "USD", lowPrice: "49", highPrice: "99", offerCount: "3", category: "SaaS", availability: "https://schema.org/InStock" },
+            provider: { "@type": "Organization", name: "ByteBeam", url: "https://www.bytebeam.co" },
+            featureList: [
+              "Automatic nutrition facts panels",
+              "FDA-style nutrition labels",
+              "Traffic light nutrition labels",
+              "Macro nutrient analysis",
+              "Calorie calculator from recipes",
+              "% Daily Value calculations",
+              "Allergen tracking",
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://recipebuilder.bytebeam.co" },
+              { "@type": "ListItem", position: 2, name: "Nutrition Analysis", item: "https://recipebuilder.bytebeam.co/nutrition-analysis" },
+            ],
+          }),
+        }}
+      />
     </>
   );
 }

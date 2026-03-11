@@ -1,0 +1,117 @@
+PAGE: Recipe Inventory Management (/inventory-management)
+URL: /inventory-management
+
+================================================================================
+HERO
+================================================================================
+
+Badge: INVENTORY & STOCK MANAGEMENT
+Heading: Track Recipe Stock and Portions in Real Time
+Subheadline: See how many portions are available for every recipe, update stock counts in seconds with quick controls, and view prep time, serving size, selling price, and barcode — all on one dashboard. Built for kitchens that need to move fast.
+
+Primary CTA: "Book a Demo"
+Secondary CTA: "Back to Overview"
+
+Stats:
+- Real-Time — Portion Count Tracking
+- 5,000+ — Labels Approved by Dubai Municipality
+- 20,000+ — FDA-Sourced Ingredients
+
+Screenshot: Inventory management dashboard showing real-time portion counts, quick stock update controls, and recipe details.
+
+================================================================================
+PORTION TRACKING — "Know Exactly How Many Portions Are Available"
+================================================================================
+
+Label: Portion Tracking
+Heading: Know Exactly How Many Portions Are Available
+Subtitle: RecipeBuilder tracks the current portion count for every recipe in your system. Whether you produce 50 servings of a salad or 200 units of a packaged snack, the stock number is always visible and always current. No separate inventory software, no paper logs — just a number you can trust.
+
+How Real-Time Tracking Works:
+
+1. Each recipe has a stock count — the number of portions currently available. This count lives directly on the recipe card in your dashboard, so you never have to navigate away to check inventory.
+
+2. Update with quick controls — tap -10, -5, -1, +1, +5, or +10 to adjust the count instantly. Sold five portions? Tap -5. Produced ten more? Tap +10. The interface is designed for speed, not data entry.
+
+3. Set stock to an exact value — after a physical count or a fresh production batch, type the exact number and confirm. The stock resets to your specified value immediately.
+
+4. Timestamp on every update — RecipeBuilder records when the stock was last modified. At a glance, managers can see which recipes have fresh counts and which may need verification.
+
+================================================================================
+QUICK CONTROLS — "Update Stock in Seconds, Not Minutes"
+================================================================================
+
+Label: Quick Controls
+Heading: Update Stock in Seconds, Not Minutes
+Subtitle: Kitchen environments are fast-paced. RecipeBuilder gives your team dedicated stock adjustment controls so they can update portion counts without interrupting their workflow. Every control is one tap — no forms, no confirmation dialogs, no friction.
+
+1. Quick Stock Update Controls
+   Adjust stock counts instantly with dedicated controls: -10, -5, -1, +1, +5, +10. No typing required. Kitchen staff can update portion counts in seconds between orders, during shift changes, or after a production run.
+
+2. Set Stock to a Specific Value
+   Need to set stock to an exact number after a physical count or a new production batch? Enter the value directly and the stock count updates immediately. Ideal for end-of-day reconciliation or restocking after a large prep session.
+
+3. Last Updated Timestamp
+   Every stock update is timestamped so you always know when the count was last changed. This gives managers visibility into how recently inventory was checked and helps identify recipes that may need a fresh count.
+
+4. Stock Count on Recipe Dashboard
+   The current stock count for each recipe is visible directly on the recipe dashboard. No need to open a separate inventory screen — you see at a glance how many portions are available alongside every other recipe detail.
+
+================================================================================
+UNIFIED DASHBOARD — "Everything About a Recipe in One View"
+================================================================================
+
+Label: Unified Dashboard
+Heading: Everything About a Recipe in One View
+Subtitle: Stock count is just one piece of the picture. RecipeBuilder displays prep time, per serving details, selling price, and barcode alongside inventory — so your team has all the information they need without switching between screens or systems.
+
+1. Prep Time
+   Each recipe displays its prep time so your team knows how long production takes. When stock runs low, you can immediately see whether a recipe can be replenished within your service window or if you need to plan ahead.
+
+2. Per Serving Information
+   Serving size in grams and per serving cost in AED are displayed alongside the stock count. This means you can make restocking decisions with full awareness of portion economics — how much each serving weighs and what it costs.
+
+3. Barcode at a Glance
+   Every recipe carries a unique barcode displayed on the dashboard. Use it for product identification, retail scanning, or point-of-sale integration. The barcode is always visible — no need to generate or look it up separately.
+
+4. Production Scheduling Support
+   Plan your production runs based on current stock levels and anticipated demand. When you can see exactly how many portions remain for every recipe, scheduling the next production batch becomes a straightforward decision rather than a guess.
+
+================================================================================
+PRODUCTION PLANNING — "Plan Production Runs With Confidence"
+================================================================================
+
+Label: Production Planning
+Heading: Plan Production Runs With Confidence
+
+Data-Driven Production Decisions:
+When you can see exactly how many portions of each recipe remain, deciding what to produce next becomes straightforward. Instead of producing the same quantities every day regardless of demand, your team can look at stock levels and prioritize recipes that are running low. This reduces overproduction, minimizes waste, and ensures popular items stay available.
+
+Shift Handovers Made Simple:
+At shift changes, incoming staff need to know the current state of inventory. With RecipeBuilder, the dashboard shows every recipe's stock count and the timestamp of the last update. The incoming team instantly sees what is available, what needs restocking, and how recently counts were verified — no verbal handoff notes needed.
+
+From Recipe to Shelf, Tracked End to End:
+RecipeBuilder connects recipe creation with inventory. You build the recipe, generate the food label that follows GCC and SFDA labeling laws, track ingredient costs, and then monitor how many finished portions are in stock. The entire lifecycle — from raw ingredients to sellable product — lives in one platform.
+
+================================================================================
+ONE PLATFORM — "Inventory Management Inside a Complete Recipe Platform"
+================================================================================
+
+Label: One Platform
+Heading: Inventory Management Inside a Complete Recipe Platform
+Subtitle: Inventory tracking is one part of RecipeBuilder. The same platform also handles recipe creation, auto-generated nutrition labels with bilingual English and Arabic text that follows GCC and SFDA labeling laws, barcode and QR code generation, and detailed cost tracking with profit analysis. Everything your food business needs, without switching tools.
+
+Platform highlights:
+- 5,000+ Labels Approved by Dubai Municipality
+- 20,000+ FDA-Sourced Ingredients
+- Labels Following GCC & SFDA Laws
+- Bilingual English & Arabic Labels
+
+================================================================================
+CTA
+================================================================================
+
+Heading: Take Control of Your Recipe Inventory Today
+Subtext: Book a demo to see how RecipeBuilder lets you track portion counts, update stock in seconds, and manage production — all from one dashboard.
+Primary CTA: "Book a Demo"
+Secondary CTA: "Contact Sales"

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title:
     "RecipeBuilder — Recipe Management & Food Labeling for GCC Food Businesses",
   description:
-    "Build recipes, auto-generate nutrition labels with barcodes & QR codes, track costs and inventory. Generate bilingual food labels following GCC & SFDA labeling laws. 20,000+ FDA-sourced ingredients. 5,000+ labels approved by Dubai Municipality.",
+    "RecipeBuilder is a food labeling and recipe management platform built for GCC food businesses by ByteBeam (Dubai). It generates bilingual English-Arabic nutrition labels, barcodes, and QR codes following GCC and SFDA labeling laws. 20,000+ USDA-verified ingredients. Over 5,000 labels approved by Dubai Municipality. Used by food manufacturers, restaurants, and catering businesses across UAE, Saudi Arabia, and the Gulf region.",
   keywords: [
     "recipe management software",
     "food labeling software GCC",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title:
       "RecipeBuilder — Recipe Management & Food Labeling for GCC Food Businesses",
     description:
-      "Build recipes, auto-generate nutrition labels with barcodes & QR codes, track costs and inventory. Bilingual English & Arabic labels following GCC & SFDA labeling laws.",
+      "RecipeBuilder by ByteBeam generates bilingual English-Arabic nutrition labels following GCC and SFDA labeling laws. 20,000+ USDA ingredients. 5,000+ labels approved by Dubai Municipality.",
     url: "https://recipebuilder.bytebeam.co/gcc",
     siteName: "RecipeBuilder",
     type: "website",
@@ -75,6 +75,50 @@ export default function GCCPage() {
         <CTA />
       </main>
       <Footer content={gccContent.footer} />
+
+      {/* FAQPage structured data for rich snippets */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: gccContent.faq.faqs.map((faq) => ({
+              "@type": "Question",
+              name: faq.question,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: faq.answer,
+              },
+            })),
+          }),
+        }}
+      />
+
+      {/* BreadcrumbList */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://recipebuilder.bytebeam.co",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "GCC",
+                item: "https://recipebuilder.bytebeam.co/gcc",
+              },
+            ],
+          }),
+        }}
+      />
     </>
   );
 }

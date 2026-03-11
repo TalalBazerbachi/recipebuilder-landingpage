@@ -1,0 +1,131 @@
+PAGE: Recipe Cost Tracking (/cost-tracking)
+URL: /cost-tracking
+
+================================================================================
+HERO
+================================================================================
+
+Badge: COST TRACKING & PROFIT ANALYSIS
+Heading: Know Your Recipe Costs and Profit Margins
+Subheadline: Track ingredient costs, food cost, labor, packaging, and wastage for every recipe. Configure VAT, set selling prices, account for aggregator commissions, and see your net profit percentage — all calculated in AED.
+
+Primary CTA: "Book a Demo"
+Secondary CTA: "Back to Overview"
+
+Stats:
+- AED — All Costs Tracked in AED
+- 5,000+ — Labels Approved by Dubai Municipality
+- Net Profit % — Calculated Automatically
+
+Screenshot: Cost tracking dashboard showing ingredient costs, total yield, per-serving cost, VAT, and net profit margin in AED.
+
+================================================================================
+COST BREAKDOWN — "Full Cost Breakdown for Every Recipe"
+================================================================================
+
+Label: Cost Breakdown
+Heading: Full Cost Breakdown for Every Recipe
+Subtitle: RecipeBuilder breaks down the cost of every recipe into its individual components. You see the total yield, total cost, and per serving cost at a glance — so you always know exactly what each portion costs to produce.
+
+Total Yield & Total Cost:
+Every recipe displays its total yield in grams alongside the total cost in AED. As you add or adjust ingredients, the figures update automatically. No spreadsheets, no manual calculations — just accurate numbers every time you open a recipe.
+
+Per Serving Cost & Serving Size:
+Define your serving size in grams and RecipeBuilder divides the total cost by the number of servings to give you the per serving cost in AED. This is the number that matters most when you set menu prices and evaluate whether a recipe makes financial sense for your business.
+
+================================================================================
+INGREDIENT COSTS — "Track the Cost of Every Ingredient"
+================================================================================
+
+Label: Ingredient Costs
+Heading: Track the Cost of Every Ingredient
+Subtitle: Every ingredient in your recipe carries a cost. RecipeBuilder lets you assign a price per unit to each ingredient and automatically sums them up based on the quantities used. When supplier prices change, update the ingredient cost once and every recipe that uses it recalculates instantly.
+
+How Ingredient Cost Tracking Works:
+
+1. Add ingredients to your recipe — search from a database of over 20,000 FDA-sourced ingredients with complete nutritional profiles, or create custom ingredients with your own data.
+
+2. Set the cost per unit in AED — assign a price to each ingredient based on what you pay your suppliers. Costs are stored and reused across all recipes that share the same ingredient.
+
+3. Specify the quantity used — enter the exact amount of each ingredient for your recipe. RecipeBuilder multiplies the unit cost by the quantity to calculate the ingredient line cost.
+
+4. View the total food cost — all ingredient line costs are summed into the total food cost for the recipe, displayed prominently in AED alongside the per serving breakdown.
+
+================================================================================
+COMPLETE COST PICTURE — "Four Cost Categories That Cover Everything"
+================================================================================
+
+Label: Complete Cost Picture
+Heading: Four Cost Categories That Cover Everything
+Subtitle: Ingredient cost alone does not tell the full story. RecipeBuilder captures four distinct cost categories so your per serving cost reflects the true expense of getting a finished product to your customer.
+
+1. Food Cost
+   Track raw ingredient costs for every recipe automatically. Each ingredient carries its unit price, and RecipeBuilder calculates the total food cost based on the exact quantities used in your recipe.
+
+2. Labor Cost
+   Factor in the labor required to prepare each recipe. Assign labor cost per recipe to capture the true cost of production, from prep work to plating and packaging.
+
+3. Packaging Cost
+   Include the cost of containers, labels, bags, boxes, and any other packaging materials. Packaging cost is added per recipe so your total cost reflects every expense before the product leaves your kitchen.
+
+4. Wastage Cost
+   Account for ingredient waste, trim loss, and shrinkage. Adding a wastage cost ensures your per serving cost reflects real-world production conditions, not just theoretical ingredient amounts.
+
+================================================================================
+PRICING & PROFIT — "From Selling Price to Net Profit in One View"
+================================================================================
+
+Label: Pricing & Profit
+Heading: From Selling Price to Net Profit in One View
+Subtitle: Set your selling price, configure VAT, account for delivery platform commissions, and see your net profit percentage — all on one screen, all in AED. RecipeBuilder removes the guesswork from food business pricing.
+
+1. Selling Price (VAT Exclusive & Inclusive)
+   Set your selling price and see both the VAT-exclusive and VAT-inclusive amounts side by side. RecipeBuilder handles the arithmetic so you can price your products accurately for menus, retail shelves, and delivery platforms.
+
+2. Configurable VAT Percentage
+   Configure the VAT rate that applies to your market. Whether you operate in the UAE at 5% VAT or in a jurisdiction with a different rate, RecipeBuilder lets you set the exact percentage and recalculates all pricing instantly.
+
+3. Aggregator Commission Tracking
+   Selling through food delivery aggregators? Enter the commission percentage charged by each platform and RecipeBuilder deducts it from your revenue to show you what you actually keep after every sale.
+
+4. Net Profit Percentage
+   After accounting for food cost, labor, packaging, wastage, VAT, and aggregator commissions, RecipeBuilder calculates your net profit percentage and highlights it in green. One number that tells you if the recipe is financially viable.
+
+================================================================================
+WHY IT MATTERS — "Cost Visibility That Drives Better Decisions"
+================================================================================
+
+Label: Why It Matters
+Heading: Cost Visibility That Drives Better Decisions
+
+Stop Guessing, Start Knowing:
+Many food businesses price their products based on intuition or rough estimates. RecipeBuilder replaces guesswork with precise, itemized cost data. When you can see that a recipe costs 12.40 AED to produce and your selling price is 35 AED, you make decisions from a position of clarity — not hope.
+
+Catch Margin Erosion Early:
+Supplier prices fluctuate. When the cost of a key ingredient increases, it can silently eat into your profit margin. RecipeBuilder surfaces these changes immediately. Update an ingredient price and you see the impact on every recipe that uses it, so you can adjust selling prices or find alternatives before margins erode.
+
+Price Confidently Across Channels:
+Selling through your own shop, a delivery aggregator, and a retail partner each involves different cost structures. Aggregators take a commission; retail may require different packaging. RecipeBuilder lets you model each scenario with its commission and cost inputs so you can set channel-specific prices that protect your margins everywhere you sell.
+
+================================================================================
+ONE PLATFORM — "Cost Tracking Built Into a Complete Recipe Platform"
+================================================================================
+
+Label: One Platform
+Heading: Cost Tracking Built Into a Complete Recipe Platform
+Subtitle: Cost tracking is one part of RecipeBuilder. The same platform also handles recipe management, nutrition label generation, bilingual food labeling that follows GCC and SFDA labeling laws, barcode and QR code generation, and real-time inventory management. Everything your food business needs, in one place.
+
+Platform highlights:
+- 5,000+ Labels Approved by Dubai Municipality
+- 20,000+ FDA-Sourced Ingredients
+- Labels Following GCC & SFDA Laws
+- Bilingual English & Arabic Labels
+
+================================================================================
+CTA
+================================================================================
+
+Heading: See Exactly What Every Recipe Costs — and What You Keep
+Subtext: Book a demo to see how RecipeBuilder tracks ingredient costs, calculates per serving cost, and shows your net profit margin in real time — all in AED.
+Primary CTA: "Book a Demo"
+Secondary CTA: "Contact Sales"

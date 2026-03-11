@@ -25,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: "About RecipeBuilder — Recipe Management & Food Labeling by ByteBeam",
   description:
-    "RecipeBuilder is built by ByteBeam, a Dubai-based technology company. We help food businesses across the GCC manage recipes, generate nutrition labels, and follow local food labeling regulations.",
+    "RecipeBuilder is a recipe management and food labeling platform built by ByteBeam, a Dubai-based technology company. ByteBeam helps food businesses across the GCC and worldwide manage recipes, auto-generate compliant nutrition labels, track costs, and manage inventory. Contact: info@bytebeam.co.",
   keywords: [
     "about RecipeBuilder",
     "ByteBeam",
@@ -483,6 +483,50 @@ export default function AboutPage() {
         </section>
       </main>
       <Footer />
+
+      {/* Organization structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "ByteBeam",
+            url: "https://www.bytebeam.co",
+            brand: {
+              "@type": "Brand",
+              name: "RecipeBuilder",
+              url: "https://recipebuilder.bytebeam.co",
+            },
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Dubai",
+              addressCountry: "AE",
+            },
+            contactPoint: {
+              "@type": "ContactPoint",
+              email: "info@bytebeam.co",
+              contactType: "sales",
+              areaServed: "Worldwide",
+            },
+          }),
+        }}
+      />
+
+      {/* BreadcrumbList */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://recipebuilder.bytebeam.co" },
+              { "@type": "ListItem", position: 2, name: "About", item: "https://recipebuilder.bytebeam.co/about" },
+            ],
+          }),
+        }}
+      />
     </>
   );
 }

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   title:
     "Recipe Management Software — Organize, Analyze & Publish Recipes | RecipeBuilder",
   description:
-    "Create and organize recipes with nutrition analysis, sub-recipe support, and category management. Built on a 20,000+ USDA ingredient database. Designed for restaurants, food manufacturers, and catering businesses.",
+    "RecipeBuilder's recipe management module lets food businesses create, organize, and scale recipes with automatic nutrition analysis and sub-recipe support. Built on 20,000+ USDA FoodData Central ingredients. Features batch scaling, category management, and multi-language ingredient lists. Used by restaurants, food manufacturers, bakeries, and catering companies. By ByteBeam (Dubai).",
   keywords: [
     "recipe management software",
     "recipe organizer",
@@ -549,6 +549,45 @@ export default function RecipeManagementPage() {
         </section>
       </main>
       <Footer />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: "RecipeBuilder Recipe Management",
+            url: "https://recipebuilder.bytebeam.co/recipe-management",
+            applicationCategory: "BusinessApplication",
+            operatingSystem: "Web",
+            description: "Organize, analyze, and publish recipes with automatic nutrition analysis, sub-recipe support, and USDA FoodData Central database access.",
+            offers: { "@type": "AggregateOffer", priceCurrency: "USD", lowPrice: "49", highPrice: "99", offerCount: "3", category: "SaaS", availability: "https://schema.org/InStock" },
+            provider: { "@type": "Organization", name: "ByteBeam", url: "https://www.bytebeam.co" },
+            featureList: [
+              "Recipe creation and organization",
+              "Sub-recipe and batch scaling",
+              "USDA FoodData Central database",
+              "Automatic nutrition analysis",
+              "Ingredient management",
+              "Recipe cost calculation",
+              "Multi-language support",
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://recipebuilder.bytebeam.co" },
+              { "@type": "ListItem", position: 2, name: "Recipe Management", item: "https://recipebuilder.bytebeam.co/recipe-management" },
+            ],
+          }),
+        }}
+      />
     </>
   );
 }

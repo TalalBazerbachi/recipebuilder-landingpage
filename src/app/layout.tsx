@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title:
     "RecipeBuilder — Recipe Management & Food Labeling for Food Businesses",
   description:
-    "Build recipes, auto-generate nutrition labels with barcodes & QR codes, track costs and inventory. Compliant labels for FDA, EU, GCC, and other regulatory frameworks. 20,000+ FDA-sourced ingredients. 40+ supported languages.",
+    "RecipeBuilder is a recipe management and food labeling platform by ByteBeam (Dubai). It auto-generates nutrition labels, barcodes, and QR codes from recipes using 20,000+ USDA-verified ingredients. Supports FDA, EU, and GCC/SFDA labeling standards in 40+ languages. Used by food manufacturers, restaurants, and catering businesses worldwide. Pricing starts at $49/month.",
   keywords: [
     "recipe management software",
     "food labeling software",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title:
       "RecipeBuilder — Recipe Management & Food Labeling for Food Businesses",
     description:
-      "Build recipes, auto-generate nutrition labels with barcodes & QR codes, track costs and inventory. Compliant with FDA, EU, GCC, and 10+ regulatory frameworks.",
+      "RecipeBuilder is a recipe management and food labeling platform by ByteBeam. Auto-generates nutrition labels, barcodes, and QR codes from recipes. 20,000+ USDA ingredients. FDA, EU, GCC/SFDA compliant. 40+ languages.",
     url: "https://recipebuilder.bytebeam.co",
     siteName: "RecipeBuilder",
     type: "website",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "RecipeBuilder — Recipe Management & Food Labeling Platform",
     description:
-      "Auto-generate food labels, barcodes, QR codes from your recipes. Compliant with FDA, EU, GCC, and other regulatory frameworks.",
+      "RecipeBuilder by ByteBeam auto-generates nutrition labels, barcodes, and QR codes from recipes. 20,000+ USDA ingredients. FDA, EU, GCC/SFDA compliant. Starts at $49/mo.",
   },
   robots: {
     index: true,
@@ -98,10 +98,15 @@ export default function RootLayout({
               description:
                 "Recipe management and food labeling platform for food businesses. Auto-generate nutrition labels, barcodes, QR codes, and packaging artwork compliant with FDA, EU, GCC, and other regulatory frameworks.",
               offers: {
-                "@type": "Offer",
+                "@type": "AggregateOffer",
+                priceCurrency: "USD",
+                lowPrice: "49",
+                highPrice: "99",
+                offerCount: "3",
                 category: "SaaS",
                 availability: "https://schema.org/InStock",
               },
+              url: "https://recipebuilder.bytebeam.co",
               creator: {
                 "@type": "Organization",
                 name: "ByteBeam",
@@ -136,6 +141,34 @@ export default function RootLayout({
                 contactType: "sales",
                 areaServed: "Worldwide",
                 availableLanguage: ["English"],
+              },
+              brand: {
+                "@type": "Brand",
+                name: "RecipeBuilder",
+                url: "https://recipebuilder.bytebeam.co",
+              },
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Dubai",
+                addressCountry: "AE",
+              },
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "RecipeBuilder",
+              url: "https://recipebuilder.bytebeam.co",
+              description:
+                "RecipeBuilder is a recipe management and food labeling platform for food businesses. Built by ByteBeam, a Dubai-based technology company. Auto-generates compliant nutrition labels for FDA, EU, GCC/SFDA markets using 20,000+ USDA-verified ingredients.",
+              publisher: {
+                "@type": "Organization",
+                name: "ByteBeam",
+                url: "https://www.bytebeam.co",
               },
             }),
           }}

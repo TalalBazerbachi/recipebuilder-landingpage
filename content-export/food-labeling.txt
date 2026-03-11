@@ -1,0 +1,129 @@
+PAGE: Food Labeling Software (/food-labeling)
+URL: /food-labeling
+
+================================================================================
+HERO
+================================================================================
+
+Badge: FOOD LABELING SOFTWARE
+Heading: Auto-Generate Professional Food Labels From Your Recipes
+Subheadline: Create bilingual packaging artwork with nutrition facts panels, barcodes, QR codes, allergen disclaimers, and storage instructions — all generated automatically from your recipes and following GCC & SFDA labeling laws.
+
+Primary CTA: "Book a Demo"
+Secondary CTA: "Explore All Features"
+
+Stats:
+- 5,000+ — Labels Approved by Dubai Municipality
+- GCC & SFDA — Follows Labeling Laws
+- Bilingual — English & Arabic Labels
+
+Screenshot: Packaging artwork showing bilingual food label with English and Arabic ingredient lists, nutrition facts panel, barcode, and QR code.
+
+================================================================================
+LABEL FEATURES — "Everything Your Food Label Needs — Generated Automatically"
+================================================================================
+
+Label: Label Features
+Heading: Everything Your Food Label Needs — Generated Automatically
+Subtitle: RecipeBuilder transforms your recipe data into fully formatted food labels. No design software required, no manual data entry, and no guesswork on regulations.
+
+1. Professional Packaging Artwork
+   Auto-generate print-ready packaging artwork directly from your recipes. Every label is formatted with proper typography, structured ingredient lists, and clear nutrition panels that meet professional packaging standards.
+
+2. Bilingual English & Arabic Labels
+   Generate ingredient lists and label content in both English and Arabic with a single click. RecipeBuilder handles the translation and layout so your labels serve both Arabic-speaking and English-speaking markets.
+
+3. Nutrition Facts Panels
+   Automatically produce FDA-style nutrition facts tables alongside traffic light labels. Per-serving and per-100g breakdowns are calculated from your recipe data, covering calories, protein, carbohydrates, fat, sugars, and salt.
+
+4. Barcodes for Product Identification
+   Every product label includes an auto-generated barcode for retail tracking, warehouse scanning, and point-of-sale integration. Barcodes are print-ready and embedded directly into your label artwork.
+
+5. QR Codes Linking to Live Nutrition Info
+   Each label includes a scannable QR code that links to a live nutrition information page. Your customers can scan the packaging to view detailed nutrition facts, allergen info, and ingredients on their phone.
+
+6. Download as PNG or PDF
+   Export your finished labels in high-resolution PNG for digital use or print-ready PDF for professional packaging. Labels are formatted to standard packaging dimensions and ready for your printer.
+
+================================================================================
+HOW IT WORKS — "From Recipe to Printed Label in Minutes"
+================================================================================
+
+Label: How It Works
+Heading: From Recipe to Printed Label in Minutes
+Subtitle: RecipeBuilder automates the entire label creation workflow. Enter your recipe once, and your label is generated with all the required information.
+
+Step 01 — Build Your Recipe
+Add ingredients from the 20,000+ FDA-sourced database, set quantities, and define serving sizes.
+
+Step 02 — Nutrition Calculated
+RecipeBuilder automatically calculates the full nutrition breakdown based on your ingredients and quantities.
+
+Step 03 — Label Generated
+A complete label is generated with nutrition facts, bilingual ingredients, barcodes, QR codes, and allergen info.
+
+Step 04 — Download & Print
+Export your label as a high-resolution PNG or print-ready PDF. Ready for packaging immediately.
+
+================================================================================
+REGULATORY ALIGNMENT — "Labels Following GCC & SFDA Labeling Laws"
+================================================================================
+
+Label: Regulatory Alignment
+Heading: Labels Following GCC & SFDA Labeling Laws
+
+Food labeling in the GCC region requires specific formatting, bilingual content, allergen declarations, and nutrition information. RecipeBuilder generates labels that follow these requirements so you can submit to municipal authorities with confidence.
+
+Over 5,000 food labels created with RecipeBuilder have been approved by Dubai Municipality. The platform stays updated with current GCC and SFDA labeling requirements to ensure your labels include all necessary information.
+
+What Every Label Includes:
+- Ingredient lists ordered by weight as required by GCC regulations
+- Bilingual content in English and Arabic on every label
+- Allergen declarations highlighted following SFDA requirements
+- Nutrition facts formatted to accepted panel layouts
+- Storage instructions and shelf-life information included
+- Net weight and serving size clearly displayed
+- Manufacturer and origin country details on every label
+- Traffic light nutrition indicators for consumer clarity
+
+================================================================================
+SAFETY & TRANSPARENCY — "Allergen Warnings, Storage Info & Full Ingredient Declarations"
+================================================================================
+
+Label: Safety & Transparency
+Heading: Allergen Warnings, Storage Info & Full Ingredient Declarations
+
+Consumers and regulators expect clear allergen information, proper storage guidance, and complete ingredient transparency on every food label. RecipeBuilder handles all of this automatically based on your recipe data.
+
+No more manually checking ingredient lists for allergens or formatting storage instructions. Enter your recipe once and the system generates all required safety and transparency information for your label.
+
+Allergen Identification:
+RecipeBuilder scans your recipe ingredients and automatically identifies major allergens including gluten, dairy, nuts, soy, eggs, fish, shellfish, and sesame. These are highlighted on the label following GCC requirements.
+
+Storage Instructions:
+Include storage temperature, shelf-life, and handling instructions on every label. Define custom storage conditions per recipe and they appear automatically on the generated label.
+
+Complete Ingredient Declarations:
+Ingredients are listed in descending order by weight as required by food labeling regulations. Sub-recipe ingredients are expanded and listed correctly within the declaration.
+
+================================================================================
+WHO USES THIS — "Who Uses RecipeBuilder for Food Labeling?"
+================================================================================
+
+Label: Built For Food Businesses
+Heading: Who Uses RecipeBuilder for Food Labeling?
+Subtitle: Any food business that needs professional packaging labels with accurate nutrition information and bilingual content.
+
+1. Food Manufacturers — Create labels for packaged food products sold in GCC retail markets. Barcodes included for retail tracking.
+2. Restaurants & Cafes — Label grab-and-go items, meal prep products, and packaged retail items with proper nutrition information.
+3. Bakeries & Catering — Generate labels for baked goods, desserts, and catering products with allergen declarations and ingredient lists.
+4. Cloud Kitchens — Produce labels for delivery-ready meals and meal kits with QR codes linking to live nutrition info.
+
+================================================================================
+CTA
+================================================================================
+
+Heading: Ready to Auto-Generate Professional Food Labels?
+Subtext: See how RecipeBuilder creates bilingual food labels with nutrition facts, barcodes, and QR codes — all following GCC & SFDA labeling laws.
+Primary CTA: "Book a Demo"
+Secondary CTA: "Contact Sales"

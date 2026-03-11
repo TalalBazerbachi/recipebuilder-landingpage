@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title:
     "Compliance Resources — GCC Food Labeling Regulations & Guides | RecipeBuilder",
   description:
-    "Guides and resources to help food businesses navigate GCC food labeling regulations. Learn about SFDA requirements, Dubai Municipality labeling laws, allergen labeling, halal certification, and more.",
+    "Free compliance guides for GCC food labeling regulations by RecipeBuilder. Covers SFDA requirements, Dubai Municipality labeling laws, UAE food labeling standards, allergen labeling rules, halal certification requirements, and nutrition label formatting. Published by ByteBeam (Dubai).",
   keywords: [
     "GCC food compliance",
     "SFDA labeling requirements",
@@ -322,6 +322,20 @@ export default function ComplianceResourcesPage() {
         </section>
       </main>
       <Footer />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://recipebuilder.bytebeam.co" },
+              { "@type": "ListItem", position: 2, name: "Compliance Resources", item: "https://recipebuilder.bytebeam.co/compliance-resources" },
+            ],
+          }),
+        }}
+      />
     </>
   );
 }

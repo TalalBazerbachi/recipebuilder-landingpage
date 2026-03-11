@@ -1,0 +1,79 @@
+PAGE: Terms of Service (/terms-of-service)
+URL: /terms-of-service
+
+================================================================================
+TERMS OF SERVICE
+================================================================================
+
+Updated: January 2026
+
+These Terms of Service ("Terms") govern your access to and use of the RecipeBuilder platform operated by ByteBeam ("we," "us," or "our"). By accessing or using RecipeBuilder, you agree to be bound by these Terms. If you do not agree, do not use our services.
+
+1. Definitions
+- "Platform" refers to the RecipeBuilder web application and all related services, features, and tools.
+- "User" refers to any individual or entity that accesses or uses the Platform.
+- "User Content" refers to recipes, ingredients, food labels, packaging artwork, nutrition data, images, and any other content created or uploaded by the User.
+- "Services" refers to recipe management, nutrition analysis, food label generation, barcode and QR code creation, cost analysis, inventory tracking, and any other functionality provided through the Platform.
+
+2. Account Registration
+To use certain features of RecipeBuilder, you must create an account. You agree to:
+- Provide accurate, complete, and current information during registration
+- Maintain the security of your account credentials and not share them with others
+- Notify us immediately of any unauthorized access to your account
+- Accept responsibility for all activities that occur under your account
+We reserve the right to suspend or terminate accounts that violate these Terms.
+
+3. Use of Services
+You agree to use RecipeBuilder only for lawful purposes. You shall not:
+- Use the Platform in any way that violates applicable local, national, or international laws or regulations
+- Upload content that is illegal, harmful, threatening, abusive, or otherwise objectionable
+- Attempt to gain unauthorized access to any part of the Platform or its systems
+- Reverse-engineer, decompile, or disassemble any part of the Platform
+- Use the Platform to generate misleading or fraudulent food labels or nutrition information
+- Resell, redistribute, or sublicense access to the Platform without our written consent
+
+4. User Content and Ownership
+You retain ownership of all User Content you create or upload to RecipeBuilder. By using our Services, you grant us a limited, non-exclusive license to process, store, and display your User Content solely for the purpose of providing the Services to you.
+You are solely responsible for the accuracy and legality of your User Content, including recipe data, ingredient information, and food labels generated through the Platform.
+
+5. Food Labeling Disclaimer
+RecipeBuilder is designed to help you generate food labels that follow GCC, SFDA, and other regional labeling requirements. However:
+- RecipeBuilder is a tool to assist with label generation, not a regulatory authority. We do not guarantee that labels generated through the Platform meet all applicable regulatory requirements in every jurisdiction.
+- You are responsible for verifying that all food labels, nutrition facts, ingredient lists, allergen declarations, and packaging artwork comply with the specific regulations applicable to your products and markets.
+- Nutrition data is sourced from the USDA FoodData Central database and user-provided inputs. We do not guarantee the accuracy of nutritional calculations for all use cases.
+- We recommend consulting with a qualified food regulatory professional to verify compliance before using labels in production.
+
+6. Subscription and Payment
+Certain features of RecipeBuilder require a paid subscription. By subscribing, you agree to:
+- Pay all applicable fees as described at the time of purchase
+- Authorize us to charge your designated payment method on a recurring basis (monthly or annually, depending on your plan)
+- Provide accurate and complete billing information
+Subscription fees are non-refundable unless otherwise stated. We reserve the right to change pricing with reasonable advance notice.
+
+7. Intellectual Property
+The RecipeBuilder platform, including its design, code, features, logos, trademarks, and all related intellectual property, is owned by ByteBeam. You may not copy, modify, distribute, or create derivative works based on our Platform without our written consent.
+
+8. Limitation of Liability
+To the fullest extent permitted by law, ByteBeam shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or business opportunities arising from your use of RecipeBuilder.
+Our total liability for any claims arising from your use of the Platform shall not exceed the amount you paid to us in the twelve (12) months preceding the claim.
+
+9. Disclaimers
+RecipeBuilder is provided on an "as is" and "as available" basis without warranties of any kind, express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.
+We do not warrant that the Platform will be uninterrupted, error-free, secure, or free of viruses or other harmful components.
+
+10. Termination
+We may terminate or suspend your access to RecipeBuilder at any time, with or without cause, and with or without notice. Upon termination, your right to use the Platform ceases immediately. You may request export of your User Content within 30 days of termination by contacting us.
+
+11. Governing Law
+These Terms shall be governed by and construed in accordance with the laws of the United Arab Emirates. Any disputes arising from these Terms or your use of the Platform shall be resolved in the courts of the UAE.
+
+12. Changes to These Terms
+We reserve the right to update these Terms at any time. Changes will be posted on this page with an updated revision date. Continued use of the Platform after changes are posted constitutes your acceptance of the revised Terms.
+
+13. Contact Us
+If you have any questions about these Terms, please contact us:
+Email: info@bytebeam.co
+Company: ByteBeam
+Regions: UAE & Saudi Arabia
+
+Last Updated: January 2026

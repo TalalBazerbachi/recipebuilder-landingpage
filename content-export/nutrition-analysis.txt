@@ -1,0 +1,128 @@
+PAGE: Nutrition Analysis Software (/nutrition-analysis)
+URL: /nutrition-analysis
+
+================================================================================
+HERO
+================================================================================
+
+Badge: NUTRITION ANALYSIS SOFTWARE
+Heading: Automatic Nutrition Facts From Your Recipes
+Subheadline: Calculate complete nutrition breakdowns from your recipes using USDA data. Generate FDA-style nutrition panels, traffic light labels, macro charts, and allergen reports — all calculated automatically from your ingredients.
+
+Primary CTA: "Book a Demo"
+Secondary CTA: "Explore All Features"
+
+Stats:
+- 20,000+ — FDA-Sourced Ingredients
+- Full Profile — Macros, Vitamins & Minerals
+- Per-Serving — And Per-100g Calculations
+
+Screenshot: Nutrition facts panel with traffic light labels showing energy, fat, sugars, and salt per serving.
+
+================================================================================
+ANALYSIS FEATURES — "Complete Nutrition Analysis for Every Recipe"
+================================================================================
+
+Label: Analysis Features
+Heading: Complete Nutrition Analysis for Every Recipe
+Subtitle: RecipeBuilder provides a full suite of nutrition analysis tools that calculate, format, and visualize nutrition data from your recipes automatically.
+
+1. Automatic Nutrition Calculation
+   RecipeBuilder calculates the complete nutrition profile of every recipe automatically. Add your ingredients and quantities, and the system produces a full breakdown based on USDA FoodData Central data — no manual calculations required.
+
+2. FDA-Style Nutrition Facts Panel
+   Generate a standard nutrition facts panel formatted in the FDA style used across the food industry. Includes serving size, calories, total fat, saturated fat, trans fat, cholesterol, sodium, carbohydrates, fiber, sugars, and protein.
+
+3. Traffic Light Labels
+   Produce traffic light nutrition labels showing color-coded indicators for energy, fat, saturates, sugars, and salt. Green, amber, and red indicators give consumers a quick visual guide to the nutritional balance of your product.
+
+4. Macro Nutrient Breakdown Chart
+   View a donut chart showing the macro nutrient distribution of your recipe — protein, carbohydrates, and fat as a percentage of total energy. Instantly understand the nutritional balance of any recipe at a glance.
+
+5. Per-Serving & Per-100g Calculations
+   Nutrition data is calculated both per serving and per 100g. Per-serving data is ideal for consumer-facing labels, while per-100g data is required by many GCC and international labeling standards.
+
+6. Vitamin & Mineral Tracking
+   Track vitamins and minerals across your recipes including Vitamin A, Vitamin C, calcium, iron, potassium, and more. Full micronutrient data is pulled from the USDA database for every ingredient in your recipe.
+
+================================================================================
+HOW IT WORKS — "From Ingredients to Nutrition Facts in Seconds"
+================================================================================
+
+Label: How It Works
+Heading: From Ingredients to Nutrition Facts in Seconds
+Subtitle: RecipeBuilder calculates nutrition data as you build your recipe. Add ingredients, set quantities, and the analysis updates in real time.
+
+Step 01 — Add Ingredients
+Search the 20,000+ FDA-sourced database and add ingredients to your recipe with precise quantities and units.
+
+Step 02 — Set Serving Size
+Define your serving size and number of servings. This determines the per-serving nutrition calculations on your label.
+
+Step 03 — Review Analysis
+View the complete nutrition breakdown with FDA-style panel, traffic light indicators, macro chart, and allergen report.
+
+Step 04 — Generate Label
+Use the nutrition data to auto-generate a complete food label with all panels, barcodes, and bilingual content.
+
+================================================================================
+COMPREHENSIVE DATA — "Full Nutrient Profile for Every Recipe"
+================================================================================
+
+Label: Comprehensive Data
+Heading: Full Nutrient Profile for Every Recipe
+
+RecipeBuilder tracks a complete range of nutrients for every recipe. From macronutrients like protein, carbohydrates, and fat to micronutrients like Vitamin A, calcium, and iron — every recipe gets a full nutritional profile.
+
+All nutrient values are calculated from the USDA FoodData Central database, the same source used by the FDA and food scientists worldwide. This ensures your nutrition data is accurate and based on established reference values.
+
+The analysis covers all nutrients required for standard nutrition facts panels, traffic light labels, and GCC labeling requirements.
+
+Nutrients Tracked:
+
+Energy: Calories (kcal), Kilojoules (kJ)
+
+Macronutrients: Total Fat, Saturated Fat, Trans Fat, Total Carbohydrates, Dietary Fiber, Total Sugars, Protein
+
+Minerals & Electrolytes: Sodium, Cholesterol, Calcium, Iron, Potassium
+
+Vitamins: Vitamin A, Vitamin C, Vitamin D, B Vitamins
+
+================================================================================
+ALLERGEN SAFETY — "Automatic Allergen Identification from Your Ingredients"
+================================================================================
+
+Label: Allergen Safety
+Heading: Automatic Allergen Identification from Your Ingredients
+
+RecipeBuilder automatically scans your recipe ingredients and identifies all major allergens. This information appears in the nutrition analysis and is included on generated food labels as allergen declarations.
+
+Allergen identification covers the 14 major allergens recognized by GCC food labeling regulations. When any ingredient in your recipe contains or is derived from a major allergen, it is flagged automatically and included in the allergen statement on your label.
+
+This is especially important for food businesses operating in the UAE and Saudi Arabia where allergen declarations are a required element of food labeling.
+
+Allergens Automatically Identified:
+Gluten (wheat, barley, rye) | Dairy (milk, lactose) | Tree Nuts | Peanuts | Eggs | Soy | Fish | Shellfish | Sesame | Mustard | Celery | Lupin
+
+================================================================================
+VISUAL NUTRITION INDICATORS — "Traffic Light Labels for Consumer Clarity"
+================================================================================
+
+Label: Visual Nutrition Indicators
+Heading: Traffic Light Labels for Consumer Clarity
+Subtitle: Traffic light labels use green, amber, and red color coding to help consumers understand the nutritional balance of food products at a glance. RecipeBuilder generates these automatically.
+
+1. Energy — Total calories per serving, color-coded based on energy density. Helps consumers manage daily calorie intake.
+2. Fat — Total fat content per serving or per 100g. Color indicates whether the fat level is low, medium, or high.
+3. Saturates — Saturated fat content specifically. High saturated fat products receive a red indicator for consumer awareness.
+4. Sugars — Total sugar content per serving. The indicator shows whether sugar levels fall in the low, medium, or high range.
+5. Salt — Sodium content converted to salt equivalent. Color coding alerts consumers to high-salt products.
+
+================================================================================
+CTA
+================================================================================
+
+Heading: Ready to Get Automatic Nutrition Analysis for Your Recipes?
+Subtext: See how RecipeBuilder calculates complete nutrition facts, generates traffic light labels, and identifies allergens — all from your recipe ingredients.
+Primary CTA: "Book a Demo"
+Secondary CTA: "Contact Sales"

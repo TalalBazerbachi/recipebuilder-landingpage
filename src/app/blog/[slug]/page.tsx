@@ -4,7 +4,25 @@ import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { blogPosts } from "@/data/blog-posts";
-import { Calendar, Clock, ArrowLeft, ArrowRight, ChefHat, BookOpen } from "lucide-react";
+import { Calendar, Clock, ArrowLeft, ArrowRight, ChefHat } from "lucide-react";
+
+function extractFaqs(html: string): { question: string; answer: string }[] {
+  const faqs: { question: string; answer: string }[] = [];
+  const faqSectionMatch = html.match(
+    /<h2>Frequently Asked Questions<\/h2>([\s\S]*?)(?=<h2>|$)/
+  );
+  if (!faqSectionMatch) return faqs;
+  const section = faqSectionMatch[1];
+  const qRegex = /<h3>(.*?)<\/h3>\s*<p>([\s\S]*?)<\/p>/g;
+  let match;
+  while ((match = qRegex.exec(section)) !== null) {
+    faqs.push({
+      question: match[1].replace(/<[^>]*>/g, "").trim(),
+      answer: match[2].replace(/<[^>]*>/g, "").trim(),
+    });
+  }
+  return faqs;
+}
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -61,6 +79,7 @@ export default async function BlogPostPage({ params }: PageProps) {
   const related = sorted
     .filter((p) => p.slug !== slug)
     .slice(0, 3);
+  const faqs = extractFaqs(post.content);
 
   return (
     <>
@@ -127,16 +146,17 @@ export default async function BlogPostPage({ params }: PageProps) {
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
 
-            {/* JSON-LD */}
+            {/* BlogPosting JSON-LD */}
             <script
               type="application/ld+json"
               dangerouslySetInnerHTML={{
                 __html: JSON.stringify({
                   "@context": "https://schema.org",
-                  "@type": "BlogPosting",
+                  "@type": "Article",
                   headline: post.title,
                   description: post.description,
                   datePublished: post.date,
+                  dateModified: post.date,
                   author: {
                     "@type": "Organization",
                     name: "ByteBeam",
@@ -155,6 +175,58 @@ export default async function BlogPostPage({ params }: PageProps) {
                 }),
               }}
             />
+
+            {/* BreadcrumbList JSON-LD */}
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "BreadcrumbList",
+                  itemListElement: [
+                    {
+                      "@type": "ListItem",
+                      position: 1,
+                      name: "Home",
+                      item: "https://recipebuilder.bytebeam.co",
+                    },
+                    {
+                      "@type": "ListItem",
+                      position: 2,
+                      name: "Blog",
+                      item: "https://recipebuilder.bytebeam.co/blog",
+                    },
+                    {
+                      "@type": "ListItem",
+                      position: 3,
+                      name: post.title,
+                      item: `https://recipebuilder.bytebeam.co/blog/${post.slug}`,
+                    },
+                  ],
+                }),
+              }}
+            />
+
+            {/* FAQPage JSON-LD (if post has FAQ section) */}
+            {faqs.length > 0 && (
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                  __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "FAQPage",
+                    mainEntity: faqs.map((faq) => ({
+                      "@type": "Question",
+                      name: faq.question,
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: faq.answer,
+                      },
+                    })),
+                  }),
+                }}
+              />
+            )}
           </article>
         </section>
 

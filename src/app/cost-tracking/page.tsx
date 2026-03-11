@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   title:
     "Recipe Cost Tracking — Ingredient Costs, Profit Margins & VAT | RecipeBuilder",
   description:
-    "Track ingredient costs per recipe, calculate per serving cost, food cost, labor cost, packaging cost, and wastage. Configure VAT, aggregator commissions, and see net profit margins — all in AED. Built for GCC food businesses by ByteBeam.",
+    "RecipeBuilder's cost tracking calculates per-serving cost, food cost percentage, labor cost, packaging cost, and wastage for every recipe. Supports VAT configuration, aggregator commissions, and net profit margin calculations in AED and USD. Built for food manufacturers, restaurants, and catering businesses by ByteBeam (Dubai).",
   keywords: [
     "recipe cost calculator",
     "food cost tracking",
@@ -566,6 +566,44 @@ export default function CostTracking() {
         </section>
       </main>
       <Footer />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: "RecipeBuilder Cost Tracking",
+            url: "https://recipebuilder.bytebeam.co/cost-tracking",
+            applicationCategory: "BusinessApplication",
+            operatingSystem: "Web",
+            description: "Track ingredient costs, calculate profit margins, manage VAT, and optimize food costs for recipes and menu items.",
+            offers: { "@type": "AggregateOffer", priceCurrency: "USD", lowPrice: "49", highPrice: "99", offerCount: "3", category: "SaaS", availability: "https://schema.org/InStock" },
+            provider: { "@type": "Organization", name: "ByteBeam", url: "https://www.bytebeam.co" },
+            featureList: [
+              "Ingredient cost tracking",
+              "Profit margin calculation",
+              "VAT calculation",
+              "Menu pricing optimization",
+              "Cost per serving analysis",
+              "Real-time cost updates",
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://recipebuilder.bytebeam.co" },
+              { "@type": "ListItem", position: 2, name: "Cost Tracking", item: "https://recipebuilder.bytebeam.co/cost-tracking" },
+            ],
+          }),
+        }}
+      />
     </>
   );
 }
