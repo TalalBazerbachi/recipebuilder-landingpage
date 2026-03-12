@@ -352,18 +352,54 @@ Parseur's approach (which we should replicate):
 
 ## 7. CTA Strategy
 
+### Philosophy
+
+RecipeBuilder is early-stage. The CTA strategy prioritizes **trust-building over conversion pressure**. Readers who find value in content will convert — CTAs make the next step obvious, not interrupt.
+
+**Two-track model:**
+- **High-touch track**: "Book a Demo" → Calendly → for businesses ready to evaluate
+- **Low-touch track**: "Contact Sales" → email → for general inquiries
+
+Never lead with "Book a Demo" as the *only* option in body copy — pair it with context. "Book a Demo" is the primary ask because RecipeBuilder is not a self-serve product.
+
+---
+
 ### CTA Types and Placement
 
-| CTA Type | Copy Pattern | Placement |
-|----------|-------------|-----------|
-| Primary (demo) | "Book a demo" with Calendly link | End of product section |
-| Secondary (contact) | "Contact Sales" with email link | Footer CTA banner |
-| Soft (inline) | "RecipeBuilder handles this automatically — [learn more]" | Within educational sections (max 1-2 per post) |
-| Related reading | "Related Resources" with 2-3 post links | Below conclusion |
+| CTA Type | Copy Pattern | URL | Placement |
+|----------|-------------|-----|-----------|
+| Primary | "Book a free demo" or "Book a Demo" | Calendly link | Mid-article box, end-of-post banner, product section |
+| Secondary | "Contact Sales" | mailto:info@bytebeam.co | End-of-post banner only |
+| Soft inline | "RecipeBuilder handles this — [book a demo]" | Calendly | Inside product section (max once, never before 70% mark) |
+| Related reading | "Related Resources" | Internal blog URLs | Below conclusion, always |
 
-### CTA Banner (End of Post)
+---
 
-Every post should end with a consistent CTA banner (matching the current blog CTA section):
+### Mid-Article CTA Box (1 per post — injected by template)
+
+**Handled automatically by the blog post template** (`/blog/[slug]/page.tsx`) — it splits content after the 2nd H2 and injects the CTA box. No need to add it manually in post content.
+
+Placement: After the 2nd major H2 section (~40-50% through the article). The reader has received real value and just hit a pain-point description before the solution.
+
+Design: Light green callout box (border-primary/20, bg-primary-light/40), 2 lines of copy + link.
+
+Copy pattern:
+```
+┌──────────────────────────────────────────────────────┐
+│  RecipeBuilder automates this.                        │
+│  Generate compliance-ready nutrition labels, manage   │
+│  your allergen database, and track recipe costs —    │
+│  all from one platform built for food businesses.    │
+│                                                       │
+│  [Book a free demo →]   (links to Calendly)          │
+└──────────────────────────────────────────────────────┘
+```
+
+---
+
+### End-of-Post CTA Banner (hardcoded in page template)
+
+Every post ends with a full-width gradient CTA section (handled by the page template, after Related Posts). This is the highest-intent moment.
 
 ```
 ┌─────────────────────────────────────────────┐
@@ -377,6 +413,15 @@ Every post should end with a consistent CTA banner (matching the current blog CT
 │  [Book a Demo]  [Contact Sales]              │
 └─────────────────────────────────────────────┘
 ```
+
+---
+
+### What NOT to Do
+
+- **No popup or exit-intent CTAs** — undermines trust
+- **No CTA before the 70% mark** (product section rule applies)
+- **No 3+ CTAs per post** — the mid-article box + end banner is the right amount
+- **Don't use "click here"** as anchor text — always descriptive
 
 ---
 

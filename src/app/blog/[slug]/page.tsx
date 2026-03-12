@@ -6,6 +6,22 @@ import Footer from "@/components/Footer";
 import { blogPosts } from "@/data/blog-posts";
 import { Calendar, Clock, ArrowLeft, ArrowRight, ChefHat } from "lucide-react";
 
+function splitAtSecondH2(html: string): [string, string] {
+  let count = 0;
+  let splitIndex = -1;
+  const pattern = /<\/h2>/gi;
+  let match;
+  while ((match = pattern.exec(html)) !== null) {
+    count++;
+    if (count === 2) {
+      splitIndex = match.index + match[0].length;
+      break;
+    }
+  }
+  if (splitIndex === -1) return [html, ""];
+  return [html.slice(0, splitIndex), html.slice(splitIndex)];
+}
+
 function extractFaqs(html: string): { question: string; answer: string }[] {
   const faqs: { question: string; answer: string }[] = [];
   const faqSectionMatch = html.match(
@@ -80,6 +96,20 @@ export default async function BlogPostPage({ params }: PageProps) {
     .filter((p) => p.slug !== slug)
     .slice(0, 3);
   const faqs = extractFaqs(post.content);
+  const [contentBefore, contentAfter] = splitAtSecondH2(post.content);
+
+  const proseClasses =
+    "prose prose-slate max-w-none" +
+    " [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:text-foreground [&_h2]:mt-10 [&_h2]:mb-4" +
+    " [&_h3]:text-base [&_h3]:font-semibold [&_h3]:text-foreground [&_h3]:mt-6 [&_h3]:mb-2" +
+    " [&_p]:text-text [&_p]:leading-relaxed [&_p]:mb-4" +
+    " [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2 [&_ul]:mb-4 [&_ul]:text-text" +
+    " [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:space-y-2 [&_ol]:mb-4 [&_ol]:text-text" +
+    " [&_li]:leading-relaxed" +
+    " [&_strong]:text-foreground" +
+    " [&_table]:w-full [&_table]:border-collapse [&_table]:mb-4" +
+    " [&_th]:text-left [&_th]:p-3 [&_th]:border [&_th]:border-border [&_th]:bg-surface [&_th]:font-medium [&_th]:text-foreground [&_th]:text-sm" +
+    " [&_td]:p-3 [&_td]:border [&_td]:border-border [&_td]:text-sm [&_td]:text-text";
 
   return (
     <>
@@ -131,20 +161,31 @@ export default async function BlogPostPage({ params }: PageProps) {
         {/* Content */}
         <section className="py-12 bg-white">
           <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div
-              className="prose prose-slate max-w-none
-                [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:text-foreground [&_h2]:mt-10 [&_h2]:mb-4
-                [&_h3]:text-base [&_h3]:font-semibold [&_h3]:text-foreground [&_h3]:mt-6 [&_h3]:mb-2
-                [&_p]:text-text [&_p]:leading-relaxed [&_p]:mb-4
-                [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2 [&_ul]:mb-4 [&_ul]:text-text
-                [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:space-y-2 [&_ol]:mb-4 [&_ol]:text-text
-                [&_li]:leading-relaxed
-                [&_strong]:text-foreground
-                [&_table]:w-full [&_table]:border-collapse [&_table]:mb-4
-                [&_th]:text-left [&_th]:p-3 [&_th]:border [&_th]:border-border [&_th]:bg-surface [&_th]:font-medium [&_th]:text-foreground [&_th]:text-sm
-                [&_td]:p-3 [&_td]:border [&_td]:border-border [&_td]:text-sm [&_td]:text-text"
-              dangerouslySetInnerHTML={{ __html: post.content }}
-            />
+            <div className={proseClasses} dangerouslySetInnerHTML={{ __html: contentBefore }} />
+
+            {contentAfter && (
+              <>
+                {/* Mid-article CTA — placed after 2nd major section (~40-50% mark) */}
+                <div className="my-8 rounded-xl border border-primary/20 bg-primary-light/40 p-6">
+                  <p className="text-sm text-foreground mb-3">
+                    <strong>RecipeBuilder automates this.</strong> Generate
+                    compliance-ready nutrition labels, manage your allergen
+                    database, and track recipe costs — all from one platform
+                    built for food businesses in the UAE and beyond.
+                  </p>
+                  <a
+                    href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary-dark hover:underline"
+                  >
+                    Book a free demo
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </a>
+                </div>
+                <div className={proseClasses} dangerouslySetInnerHTML={{ __html: contentAfter }} />
+              </>
+            )}
 
             {/* BlogPosting JSON-LD */}
             <script
