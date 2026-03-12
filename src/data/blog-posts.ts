@@ -2786,9 +2786,10 @@ export const blogPosts: BlogPost[] = [
 
 <h3>Related Resources</h3>
 <ul>
-<li><a href="/blog/abu-dhabi-school-nutrition-guidelines-food-businesses">Abu Dhabi School Nutrition Guidelines: What Food Businesses Need to Know</a></li>
-<li><a href="/blog/food-safety-sops-institutional-catering">Food Safety SOPs for Institutional Catering: Schools, Airlines & Hospitals</a></li>
-<li><a href="/blog/allergen-labeling-gcc-complete-guide">Allergen Labeling in the GCC: A Complete Guide for Food Businesses</a></li>
+<li><a href="/blog/nutri-check-dubai-school-canteen-compliance-guide">How to Use NutriCheck for Dubai School Canteen Compliance</a></li>
+<li><a href="/blog/smart-food-choices-system-dubai-school-canteen">Dubai's Smart Food Choices System: Green, Yellow, Red & Black Categories Explained</a></li>
+<li><a href="/blog/nutrition-in-charge-dubai-schools-nic-guide">Nutrition in Charge (NIC): Roles & Responsibilities for Dubai School Caterers</a></li>
+<li><a href="/blog/dubai-school-canteen-monthly-audit-checklist">Dubai School Canteen Monthly Audit Checklist: What Inspectors Look For</a></li>
 </ul>
 `,
   },
@@ -2962,8 +2963,8 @@ export const blogPosts: BlogPost[] = [
 <h3>Related Resources</h3>
 <ul>
 <li><a href="/blog/dubai-municipality-school-food-requirements-caterers-guide">Dubai Municipality School Food Requirements: Complete Guide for Caterers</a></li>
-<li><a href="/blog/food-safety-sops-institutional-catering">Food Safety SOPs for Institutional Catering: Schools, Airlines & Hospitals</a></li>
-<li><a href="/blog/uae-food-labeling-requirements-2026">UAE Food Labeling Requirements: Complete Compliance Guide 2026</a></li>
+<li><a href="/blog/dubai-school-canteen-monthly-audit-checklist">Dubai School Canteen Monthly Audit Checklist: What Inspectors Look For</a></li>
+<li><a href="/blog/nutri-check-dubai-school-canteen-compliance-guide">How to Use NutriCheck for Dubai School Canteen Compliance</a></li>
 </ul>
 `,
   },
@@ -3118,8 +3119,8 @@ export const blogPosts: BlogPost[] = [
 <h3>Related Resources</h3>
 <ul>
 <li><a href="/blog/dubai-municipality-school-food-requirements-caterers-guide">Dubai Municipality School Food Requirements: Complete Guide for Caterers</a></li>
-<li><a href="/blog/dubai-municipality-food-safety-requirements-catering-companies">Dubai Municipality Food Safety Requirements for Catering Companies</a></li>
-<li><a href="/blog/dubai-municipality-montaji-food-registration">Dubai Municipality Food Registration: Montaji Portal Guide 2026</a></li>
+<li><a href="/blog/nutrition-in-charge-dubai-schools-nic-guide">Nutrition in Charge (NIC): Roles & Responsibilities for Dubai School Caterers</a></li>
+<li><a href="/blog/nutri-check-dubai-school-canteen-compliance-guide">How to Use NutriCheck for Dubai School Canteen Compliance</a></li>
 </ul>
 `,
   },
@@ -3266,9 +3267,9 @@ export const blogPosts: BlogPost[] = [
 
 <h3>Related Resources</h3>
 <ul>
-<li><a href="/blog/dubai-municipality-school-food-requirements-caterers-guide">Dubai Municipality School Food Requirements: Complete Guide for Caterers</a></li>
-<li><a href="/blog/allergen-labeling-gcc-complete-guide">Allergen Labeling in the GCC: A Complete Guide for Food Businesses</a></li>
-<li><a href="/blog/front-of-pack-nutrition-labels-gcc-guide">Front-of-Pack Nutrition Labels: A Guide for GCC Food Businesses</a></li>
+<li><a href="/blog/smart-food-choices-system-dubai-school-canteen">Dubai's Smart Food Choices System: Green, Yellow, Red & Black Categories Explained</a></li>
+<li><a href="/blog/dubai-school-canteen-monthly-audit-checklist">Dubai School Canteen Monthly Audit Checklist: What Inspectors Look For</a></li>
+<li><a href="/blog/green-canteen-certification-dubai-sustainability">Dubai Green Canteen Certification: Sustainability Requirements for School Food Suppliers</a></li>
 </ul>
 `,
   },

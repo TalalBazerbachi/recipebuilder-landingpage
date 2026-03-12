@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 
@@ -73,6 +74,22 @@ export default function GCCPage() {
         <Testimonials content={gccContent.testimonials} />
         <FAQ content={gccContent.faq} />
         <CTA />
+
+        {/* Cross-link to school catering specialisation */}
+        <div className="bg-surface border-t border-border py-10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="text-sm text-text">
+              <strong className="text-foreground">Operating a school catering business in Dubai?</strong>{" "}
+              We have a dedicated compliance guide for Dubai Municipality school food requirements.
+            </p>
+            <Link
+              href="/school-catering-dubai"
+              className="flex-shrink-0 inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-primary-dark bg-primary-light rounded-lg hover:bg-primary/20 transition-colors"
+            >
+              School Catering Guide →
+            </Link>
+          </div>
+        </div>
       </main>
       <Footer content={gccContent.footer} />
 

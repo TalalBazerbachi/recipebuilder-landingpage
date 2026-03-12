@@ -13,14 +13,15 @@ const footerLinks = {
   Resources: [
     { label: "Blog", href: "/blog" },
     { label: "Compliance Resources", href: "/compliance-resources" },
+    { label: "GCC Food Businesses", href: "/gcc" },
     { label: "FAQ", href: "/#faq" },
-    { label: "Case Studies", href: "/blog" },
   ],
   Industries: [
     { label: "Restaurants & Cafes", href: "/#industries" },
     { label: "Food Manufacturers", href: "/#industries" },
     { label: "Bakeries & Catering", href: "/#industries" },
     { label: "Nutrition Centers", href: "/#industries" },
+    { label: "School Food Catering (Dubai)", href: "/school-catering-dubai" },
   ],
   Company: [
     { label: "About Us", href: "/about" },
