@@ -18,6 +18,7 @@ import {
   Package,
   Layers,
   FlaskConical,
+  Quote,
 } from "lucide-react";
 
 interface PageProps {
@@ -51,6 +52,46 @@ export async function generateMetadata({
     },
   };
 }
+
+// Universal FAQs hardcoded (same for every comparison page)
+const universalFaqs: { question: string; answer: string }[] = [
+  {
+    question: "Is RecipeBuilder GCC and SFDA compliant?",
+    answer:
+      "Yes. RecipeBuilder was built specifically for GCC food businesses. Labels cover GSO standards, SFDA Technical Regulation requirements, UAE ESMA, and Dubai Municipality review requirements. Over 5,000 labels created with RecipeBuilder have been approved by Dubai Municipality.",
+  },
+  {
+    question: "What languages does RecipeBuilder support?",
+    answer:
+      "RecipeBuilder generates labels in 40+ languages including Arabic. Bilingual English-Arabic labels are generated automatically from a single recipe — no separate translation workflow needed.",
+  },
+  {
+    question:
+      "Does RecipeBuilder generate packaging artwork or just a nutrition panel?",
+    answer:
+      "RecipeBuilder generates complete packaging artwork including the nutrition facts panel, bilingual ingredient list, allergen declaration, storage instructions, barcode, and QR code — all formatted for print. Most competitors generate only a nutrition panel image.",
+  },
+  {
+    question: "What ingredient database does RecipeBuilder use?",
+    answer:
+      "RecipeBuilder is built on USDA FoodData Central with 20,000+ verified ingredients. You can also add custom ingredients with manual nutrition values for proprietary formulations.",
+  },
+  {
+    question: "How long does it take to get started with RecipeBuilder?",
+    answer:
+      "Most food businesses create their first label within a day of starting a free trial. The ingredient database is searchable, recipe building is straightforward, and label generation is automatic once a recipe is saved.",
+  },
+  {
+    question: "Does RecipeBuilder have a free trial?",
+    answer:
+      "Yes. RecipeBuilder offers a 14-day free trial with no credit card required. You can build recipes, generate labels, and test the GCC compliance features before committing.",
+  },
+  {
+    question: "How does RecipeBuilder pricing work?",
+    answer:
+      "RecipeBuilder starts at $15/mo on the Starter plan, scaling to $79/mo for larger teams. All plans include unlimited label generation, GCC/SFDA compliance features, and packaging artwork. There are no per-label or per-product fees.",
+  },
+];
 
 // Per-competitor FAQ answers
 function buildFaqs(
@@ -232,7 +273,7 @@ function buildFaqs(
     ],
   };
 
-  return (
+  const competitorFaqs =
     faqMap[page.slug] ?? [
       {
         question: `How does RecipeBuilder compare to ${competitor}?`,
@@ -246,8 +287,9 @@ function buildFaqs(
         question: `Is RecipeBuilder cheaper than ${competitor}?`,
         answer: `RecipeBuilder starts at $15/mo with a 14-day free trial, versus ${competitor}'s ${competitorPricing}. RecipeBuilder also bundles features — packaging artwork, barcodes, QR codes, recipe costing, and inventory management — that ${competitor} either charges extra for or does not offer at all.`,
       },
-    ]
-  );
+    ];
+
+  return [...competitorFaqs, ...universalFaqs];
 }
 
 const differentiatorIcons = [
@@ -269,6 +311,18 @@ export default async function CompareSlugPage({ params }: PageProps) {
   if (!page) notFound();
 
   const faqs = buildFaqs(page);
+
+  // Tier-1 slugs for "Related comparisons" section
+  const tier1Slugs = [
+    "recipal-alternative",
+    "food-label-maker-alternative",
+    "nutrical-alternative",
+    "labelcalc-alternative",
+  ];
+
+  const relatedPages = comparePages.filter(
+    (p) => tier1Slugs.includes(p.slug) && p.slug !== page.slug
+  );
 
   const jsonLdSoftware = {
     "@context": "https://schema.org",
@@ -358,8 +412,27 @@ export default async function CompareSlugPage({ params }: PageProps) {
           </div>
         </div>
 
+        {/* Editorial meta bar */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-3 pb-0">
+          <p className="text-sm text-text/60">
+            Reading time: ~8 min &middot; Published March 2026 &middot; Last
+            updated March 2026
+          </p>
+          <p className="text-sm text-text/60 mt-0.5">
+            Disclosure: RecipeBuilder is our product. We&apos;ve tried to make
+            this comparison accurate and fair. If you spot an error, email us at{" "}
+            <a
+              href="mailto:info@bytebeam.co"
+              className="underline underline-offset-2 hover:text-text transition-colors"
+            >
+              info@bytebeam.co
+            </a>
+            .
+          </p>
+        </div>
+
         {/* Hero */}
-        <section className="relative pt-12 pb-20 overflow-hidden">
+        <section className="relative pt-10 pb-20 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-primary-light/60 to-white pointer-events-none" />
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-4xl mx-auto">
@@ -393,6 +466,44 @@ export default async function CompareSlugPage({ params }: PageProps) {
                   Contact Sales
                 </a>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Key Takeaways box */}
+        <section className="pb-12">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-amber-50 border border-amber-200 rounded-2xl p-8 max-w-3xl mx-auto">
+              <h2 className="text-base font-semibold text-amber-900 mb-4 uppercase tracking-wider">
+                Key Takeaways
+              </h2>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+                  <span className="text-amber-900 text-sm leading-relaxed">
+                    RecipeBuilder covers 10+ regulatory frameworks.{" "}
+                    {page.competitor} covers {page.competitorRegions}.
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+                  <span className="text-amber-900 text-sm leading-relaxed">
+                    RecipeBuilder generates complete packaging artwork with
+                    barcodes and QR codes. {page.competitor} generates{" "}
+                    {page.featureRows.find(
+                      (r) => r.feature === "Packaging artwork generation"
+                    )?.competitor ?? "label panels only"}
+                    .
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+                  <span className="text-amber-900 text-sm leading-relaxed">
+                    RecipeBuilder starts at $15/mo. {page.competitor} starts at{" "}
+                    {page.competitorPricing}.
+                  </span>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
@@ -531,6 +642,126 @@ export default async function CompareSlugPage({ params }: PageProps) {
           </div>
         </section>
 
+        {/* When to Choose Each — decision matrix */}
+        <section className="py-24">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <span className="text-sm font-semibold text-primary uppercase tracking-wider">
+                Decision Guide
+              </span>
+              <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-foreground">
+                When to choose each
+              </h2>
+              <p className="mt-4 text-lg text-text">
+                An honest look at which platform is the better fit depending on
+                your situation.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {/* RecipeBuilder column */}
+              <div className="bg-white rounded-2xl border border-border shadow-sm overflow-hidden">
+                <div className="bg-primary px-7 py-5">
+                  <h3 className="text-lg font-semibold text-white">
+                    Choose RecipeBuilder if you&hellip;
+                  </h3>
+                </div>
+                <ul className="p-7 space-y-4">
+                  {[
+                    "Sell or plan to sell in the GCC, Saudi Arabia, UAE, or any Gulf market",
+                    "Need bilingual English and Arabic labels on your packaging",
+                    "Want complete packaging artwork generated automatically — not just a nutrition panel",
+                    "Need barcodes and QR codes on every label without additional tools",
+                    "Want recipe costing and inventory management in the same platform",
+                    "Are looking for a more affordable option with a 14-day free trial",
+                  ].map((bullet) => (
+                    <li key={bullet} className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                      <span className="text-text text-sm leading-relaxed">
+                        {bullet}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              {/* Competitor column */}
+              <div className="bg-white rounded-2xl border border-border shadow-sm overflow-hidden">
+                <div className="bg-surface px-7 py-5 border-b border-border">
+                  <h3 className="text-lg font-semibold text-foreground">
+                    Choose {page.competitor} if you&hellip;
+                  </h3>
+                </div>
+                <ul className="p-7 space-y-4">
+                  {page.whenToChooseCompetitor.map((bullet) => (
+                    <li key={bullet} className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
+                      <span className="text-text text-sm leading-relaxed">
+                        {bullet}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ROI / Benefits — "Why the numbers matter" */}
+        <section className="py-24 bg-surface">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <span className="text-sm font-semibold text-primary uppercase tracking-wider">
+                By the Numbers
+              </span>
+              <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-foreground">
+                Why the numbers matter
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {[
+                {
+                  stat: "5,000+",
+                  label: "labels approved by Dubai Municipality",
+                  detail:
+                    "The gold standard for GCC food compliance — a proven track record in the region.",
+                },
+                {
+                  stat: "20,000+",
+                  label: "USDA FoodData Central ingredients",
+                  detail:
+                    "No manual data entry for ingredient nutrition. Search, select, and build recipes instantly.",
+                },
+                {
+                  stat: "From $15/mo",
+                  label: "vs $300–$800 per lab test",
+                  detail:
+                    "Dramatically lower cost than alternatives, with unlimited recipe iterations included.",
+                },
+                {
+                  stat: "40+",
+                  label: "languages including Arabic",
+                  detail:
+                    "Covers every GCC market from one platform — bilingual labels generated automatically.",
+                },
+              ].map((item) => (
+                <div
+                  key={item.stat}
+                  className="bg-white rounded-2xl border border-border p-8 shadow-sm"
+                >
+                  <div className="text-3xl font-bold text-primary mb-2">
+                    {item.stat}
+                  </div>
+                  <div className="text-base font-semibold text-foreground mb-2">
+                    {item.label}
+                  </div>
+                  <p className="text-sm text-text leading-relaxed">
+                    {item.detail}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Competitor context */}
         <section className="py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -588,6 +819,168 @@ export default async function CompareSlugPage({ params }: PageProps) {
           </div>
         </section>
 
+        {/* Testimonials */}
+        <section className="py-24 bg-surface">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <span className="text-sm font-semibold text-primary uppercase tracking-wider">
+                Customer Stories
+              </span>
+              <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-foreground">
+                What RecipeBuilder customers say
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {[
+                {
+                  quote:
+                    "RecipeBuilder simplified our entire labeling workflow. Labels that used to take days now take minutes, and Dubai Municipality approved them first time.",
+                  name: "Operations Manager",
+                  title: "Food Business",
+                  location: "Dubai",
+                },
+                {
+                  quote:
+                    "We switched from manual Excel tracking to RecipeBuilder and the difference is night and day. Recipe costing, label generation, all in one place.",
+                  name: "Founder",
+                  title: "Artisan Food Brand",
+                  location: "UAE",
+                },
+              ].map((testimonial, i) => (
+                <div
+                  key={i}
+                  className="bg-white rounded-2xl border border-border p-8 shadow-sm relative"
+                >
+                  <Quote className="w-10 h-10 text-primary/20 absolute top-6 right-6" />
+                  <p className="text-text leading-relaxed text-base italic mb-6">
+                    &ldquo;{testimonial.quote}&rdquo;
+                  </p>
+                  <div>
+                    <p className="font-semibold text-foreground text-sm">
+                      {testimonial.name}
+                    </p>
+                    <p className="text-text/70 text-sm">
+                      {testimonial.title}, {testimonial.location}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Deep-dive: Why RecipeBuilder is the best alternative */}
+        <section className="py-24">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="mb-10">
+              <span className="text-sm font-semibold text-primary uppercase tracking-wider">
+                In Depth
+              </span>
+              <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-foreground">
+                Why RecipeBuilder is the best {page.competitor} alternative
+              </h2>
+            </div>
+
+            <div className="prose prose-base max-w-none text-text space-y-10">
+              <div>
+                <h3 className="text-xl font-semibold text-foreground mb-4">
+                  Regulatory coverage: the most important limitation of{" "}
+                  {page.competitor} for international food businesses
+                </h3>
+                <p className="leading-relaxed">
+                  Food regulations are not interchangeable. A label that meets
+                  FDA requirements in the US does not meet the GCC&apos;s GSO
+                  standards or Saudi Arabia&apos;s SFDA Technical Regulation.
+                  The UAE&apos;s ESMA requirements and Dubai Municipality&apos;s
+                  review process add further specific formatting demands —
+                  including mandatory bilingual English and Arabic text, specific
+                  nutrient declaration formats, and allergen presentation rules.
+                </p>
+                <p className="leading-relaxed mt-4">
+                  {page.competitor} covers {page.competitorRegions}. For any
+                  food business selling into the Gulf, this means {page.competitor}{" "}
+                  cannot legally produce a compliant label — not because of a
+                  missing feature, but because the regulatory frameworks it
+                  supports simply do not apply in GCC markets. RecipeBuilder was
+                  built with GCC compliance as a first-class feature: over 5,000
+                  labels produced with RecipeBuilder have been approved by Dubai
+                  Municipality.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold text-foreground mb-4">
+                  Complete packaging workflow: a nutrition panel is not a food
+                  label
+                </h3>
+                <p className="leading-relaxed">
+                  Most nutrition label tools produce a single output: a
+                  nutrition facts panel image. That image is one element of a
+                  complete food label. A retail-ready food product also requires
+                  a bilingual ingredient declaration, allergen declaration,
+                  storage instructions, country of origin, manufacturer details,
+                  net weight, a barcode scannable at retail, and — increasingly
+                  — a QR code for digital traceability.
+                </p>
+                <p className="leading-relaxed mt-4">
+                  RecipeBuilder generates all of these elements together in a
+                  single export, formatted for print and ready to send to your
+                  packaging supplier. There is no separate design step, no
+                  barcode tool to subscribe to, no translation agency needed for
+                  the Arabic. The complete artwork comes out of a single recipe
+                  save.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold text-foreground mb-4">
+                  Pricing at scale: how the total cost of food labeling adds up
+                </h3>
+                <p className="leading-relaxed">
+                  RecipeBuilder starts at $15/mo with a flat subscription that
+                  covers unlimited label generation. There are no per-label fees,
+                  no per-product charges, and no separate line items for
+                  barcodes, QR codes, or packaging artwork — they are all
+                  included. {page.competitor} starts at {page.competitorPricing}.
+                  For food businesses with 10, 20, or 50 SKUs, the difference
+                  compounds quickly. A 14-day free trial means you can verify
+                  the fit before committing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Migration / switching callout */}
+        <section className="py-12">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-blue-50 border border-blue-200 rounded-2xl p-8">
+              <h3 className="text-xl font-semibold text-blue-900 mb-3">
+                Switching from {page.competitor}?
+              </h3>
+              <p className="text-blue-800 leading-relaxed mb-3">
+                Most food businesses are up and running on RecipeBuilder within
+                a week. There&apos;s no data migration required — you&apos;ll
+                rebuild your recipes directly in RecipeBuilder using our
+                20,000+ ingredient database.
+              </p>
+              <p className="text-blue-800 leading-relaxed mb-6">
+                Book a 30-minute onboarding call and we&apos;ll walk you
+                through the transition.
+              </p>
+              <a
+                href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors"
+              >
+                Book a 30-minute onboarding call
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section className="py-24 bg-surface">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -615,8 +1008,81 @@ export default async function CompareSlugPage({ params }: PageProps) {
           </div>
         </section>
 
-        {/* Bottom CTA banner */}
+        {/* Related comparisons */}
         <section className="py-24">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <span className="text-sm font-semibold text-primary uppercase tracking-wider">
+                More Comparisons
+              </span>
+              <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-foreground">
+                Related comparisons
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {relatedPages.map((related) => (
+                <Link
+                  key={related.slug}
+                  href={`/compare/${related.slug}`}
+                  className="bg-white rounded-2xl border border-border p-6 shadow-sm hover:shadow-md hover:border-primary/20 transition-all group"
+                >
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-xs font-semibold text-primary uppercase tracking-wider">
+                      Comparison
+                    </span>
+                    <ArrowRight className="w-4 h-4 text-text/40 group-hover:text-primary transition-colors" />
+                  </div>
+                  <h3 className="text-base font-semibold text-foreground mb-2">
+                    RecipeBuilder vs. {related.competitor}
+                  </h3>
+                  <p className="text-sm text-text line-clamp-2">
+                    {related.metaDescription}
+                  </p>
+                </Link>
+              ))}
+              {/* Related blog posts */}
+              <Link
+                href="/blog/best-nutrition-label-software-2026"
+                className="bg-white rounded-2xl border border-border p-6 shadow-sm hover:shadow-md hover:border-primary/20 transition-all group"
+              >
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-xs font-semibold text-primary uppercase tracking-wider">
+                    Blog
+                  </span>
+                  <ArrowRight className="w-4 h-4 text-text/40 group-hover:text-primary transition-colors" />
+                </div>
+                <h3 className="text-base font-semibold text-foreground mb-2">
+                  Best Nutrition Label Software 2026
+                </h3>
+                <p className="text-sm text-text">
+                  A comprehensive guide to the top food labeling tools for
+                  growing food businesses in 2026.
+                </p>
+              </Link>
+              <Link
+                href="/blog/best-nutrition-label-software-gcc-middle-east"
+                className="bg-white rounded-2xl border border-border p-6 shadow-sm hover:shadow-md hover:border-primary/20 transition-all group"
+              >
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-xs font-semibold text-primary uppercase tracking-wider">
+                    Blog
+                  </span>
+                  <ArrowRight className="w-4 h-4 text-text/40 group-hover:text-primary transition-colors" />
+                </div>
+                <h3 className="text-base font-semibold text-foreground mb-2">
+                  Best Nutrition Label Software for GCC & Middle East
+                </h3>
+                <p className="text-sm text-text">
+                  Which food labeling tools actually support GCC, SFDA, and
+                  Arabic label requirements in 2026?
+                </p>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Bottom CTA banner */}
+        <section className="py-24 bg-surface">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary to-primary-dark px-8 py-16 sm:px-16 sm:py-24 text-center">
               <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2" />

@@ -14,6 +14,14 @@ import {
   ChevronRight,
   ChevronDown,
   ChevronUp,
+  AlertTriangle,
+  Users,
+  Utensils,
+  ShoppingBag,
+  Store,
+  Monitor,
+  Smartphone,
+  Tablet,
 } from "lucide-react";
 
 // ---------------------------------------------------------------------------
@@ -475,6 +483,444 @@ export default function IngredientListMakerPage() {
                   Contact Sales
                 </a>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* Upsell box */}
+        {/* ------------------------------------------------------------------ */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+          <div className="rounded-xl border border-primary/20 bg-primary-light/40 p-6">
+            <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-1">
+              Want to automate this?
+            </p>
+            <h2 className="text-xl font-bold text-foreground mb-2">
+              Want ingredient lists auto-generated from recipes?
+            </h2>
+            <p className="text-text leading-relaxed mb-4 max-w-2xl">
+              RecipeBuilder builds ingredient lists directly from your recipe — ordered by weight, bilingual English+Arabic, allergens highlighted, compliant with GCC/FDA/EU. No manual entry.
+            </p>
+            <a
+              href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline"
+            >
+              Book a free demo <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* Cross-sell one-liner */}
+        {/* ------------------------------------------------------------------ */}
+        <div className="py-6">
+          <p className="text-sm text-text/70 max-w-2xl mx-auto text-center px-4">
+            Need full food labeling? Compare{" "}
+            <a href="/compare/food-label-maker-alternative" className="underline hover:text-primary">
+              RecipeBuilder vs Food Label Maker
+            </a>{" "}
+            or read our{" "}
+            <a href="/gcc" className="underline hover:text-primary">
+              GCC food labeling guide
+            </a>
+            .
+          </p>
+        </div>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* Why Use This Tool */}
+        {/* ------------------------------------------------------------------ */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+          <h2 className="text-2xl font-bold text-foreground mb-2 text-center">
+            Why Use This Tool
+          </h2>
+          <p className="text-text text-center max-w-xl mx-auto mb-10">
+            Format a compliant ingredient statement in seconds — no spreadsheets, no sorting by hand.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-2xl border border-border p-6">
+              <div className="w-10 h-10 bg-primary-light rounded-xl flex items-center justify-center mb-4">
+                <List className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="text-base font-bold text-foreground mb-2">Weight-sorted automatically</h3>
+              <p className="text-sm text-text leading-relaxed">
+                Ingredients sort from highest to lowest weight as required by FDA, EU, and GCC regulations. No manual sorting.
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl border border-border p-6">
+              <div className="w-10 h-10 bg-primary-light rounded-xl flex items-center justify-center mb-4">
+                <AlertTriangle className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="text-base font-bold text-foreground mb-2">Allergen detection</h3>
+              <p className="text-sm text-text leading-relaxed">
+                The tool scans for the Big 9 allergens (wheat, milk, eggs, peanuts, tree nuts, soy, fish, shellfish, sesame) and highlights them in your output.
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl border border-border p-6">
+              <div className="w-10 h-10 bg-primary-light rounded-xl flex items-center justify-center mb-4">
+                <Copy className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="text-base font-bold text-foreground mb-2">Copy-ready output</h3>
+              <p className="text-sm text-text leading-relaxed">
+                Copy your formatted ingredient statement to clipboard with one click. Ready to paste into your label artwork or spec sheet.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* How It Works */}
+        {/* ------------------------------------------------------------------ */}
+        <div className="bg-surface">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+            <h2 className="text-2xl font-bold text-foreground mb-2 text-center">
+              How It Works
+            </h2>
+            <p className="text-text text-center max-w-xl mx-auto mb-10">
+              From ingredient weights to formatted declaration in three steps.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              {[
+                {
+                  step: "1",
+                  title: "Add your ingredients",
+                  desc: "Enter each ingredient name and its quantity in grams. Add sub-ingredients for compound ingredients (e.g., butter = cream, salt).",
+                },
+                {
+                  step: "2",
+                  title: "Click Generate",
+                  desc: "Ingredients sort by weight. Allergens are detected and highlighted. Sub-ingredients appear in parentheses.",
+                },
+                {
+                  step: "3",
+                  title: "Copy and use",
+                  desc: "Copy the formatted ingredient statement to your clipboard. Paste into your label or spec sheet.",
+                },
+              ].map((s) => (
+                <div key={s.step} className="bg-white rounded-2xl border border-border p-6">
+                  <div className="w-8 h-8 rounded-full bg-primary text-white text-sm font-bold flex items-center justify-center mb-4">
+                    {s.step}
+                  </div>
+                  <h3 className="text-base font-bold text-foreground mb-2">{s.title}</h3>
+                  <p className="text-sm text-text leading-relaxed">{s.desc}</p>
+                </div>
+              ))}
+            </div>
+            {/* Important Notes */}
+            <div className="rounded-xl border border-amber-200 bg-amber-50 p-6">
+              <p className="text-sm font-semibold text-amber-700 uppercase tracking-wider mb-3">
+                Important Notes
+              </p>
+              <ul className="space-y-2 text-sm text-amber-900 leading-relaxed">
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 shrink-0 w-1.5 h-1.5 rounded-full bg-amber-500 inline-block" />
+                  Ingredients must be entered with gram weights for correct sorting. The tool sorts by weight, not volume.
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 shrink-0 w-1.5 h-1.5 rounded-full bg-amber-500 inline-block" />
+                  Allergen detection scans ingredient names. It cannot detect allergens hidden in compound ingredient names — verify manually.
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 shrink-0 w-1.5 h-1.5 rounded-full bg-amber-500 inline-block" />
+                  This tool generates the ingredient declaration text only. For full label artwork including barcodes, QR codes, and nutrition facts, use RecipeBuilder.
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 shrink-0 w-1.5 h-1.5 rounded-full bg-amber-500 inline-block" />
+                  GCC regulations require ingredient lists in both English and Arabic. This tool generates English only. RecipeBuilder handles bilingual output automatically.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* Educational content */}
+        {/* ------------------------------------------------------------------ */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+          {/* Sub-section A */}
+          <div className="max-w-3xl mb-12">
+            <h2 className="text-2xl font-bold text-foreground mb-4">
+              FDA and GCC Ingredient Declaration Rules
+            </h2>
+            <div className="space-y-4 text-text leading-relaxed">
+              <p>
+                Both FDA (21 CFR 101.4) and GCC food labeling standards require ingredients to be listed in descending order of weight — meaning the ingredient used in the greatest amount by weight appears first. This applies to the weight of the ingredient as it was added to the product, before processing (some water may evaporate, for example, but you use the original wet weight).
+              </p>
+              <p>
+                Compound ingredients — ingredients that are themselves made up of multiple components, such as chocolate chips (which may contain cocoa, sugar, cocoa butter, and emulsifiers) — must be declared either by listing all their sub-ingredients in parentheses immediately after the compound ingredient's name, or by declaring each sub-ingredient individually in the main ingredient list in order of their weight in the finished product.
+              </p>
+              <p>
+                Allergen declaration requirements differ by jurisdiction. In the US, the FASTER Act (2023) requires the Big 9 allergens (peanuts, tree nuts, milk, eggs, wheat, soy, fish, shellfish, sesame) to be declared either in the ingredient list in bold or in a separate "Contains:" statement. GCC standards require declaration of the same major allergens, and require the full ingredient list in both English and Arabic. Always verify your final allergen declarations with a regulatory advisor.
+              </p>
+            </div>
+          </div>
+
+          {/* Sub-section B — Comparison table */}
+          <div>
+            <h2 className="text-2xl font-bold text-foreground mb-6">
+              Free Tool vs RecipeBuilder
+            </h2>
+            <div className="overflow-x-auto rounded-2xl border border-border">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-border bg-surface">
+                    <th className="text-left px-5 py-3 font-semibold text-foreground">Feature</th>
+                    <th className="text-center px-5 py-3 font-semibold text-text">Free Tool</th>
+                    <th className="text-center px-5 py-3 font-semibold text-primary">RecipeBuilder</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-border">
+                  {[
+                    ["Auto-generate from recipe", "✗ Manual entry", "✓ From recipe ingredients"],
+                    ["Bilingual Arabic-English output", "✗ English only", "✓ Auto-generated"],
+                    ["Allergen highlighting", "✓ Name-scan only", "✓ Full declaration formatting"],
+                    ["Compound ingredient formatting", "✓ Manual sub-ingredients", "✓ Auto from recipe structure"],
+                    ["Regulatory frameworks", "Generic structure", "FDA, EU, GCC/SFDA compliant"],
+                    ["Full label artwork", "✗", "✓ With barcodes and QR codes"],
+                    ["Price", "Free", "From $15/mo"],
+                  ].map(([feature, free, rb]) => (
+                    <tr key={feature} className="bg-white">
+                      <td className="px-5 py-3 text-foreground font-medium">{feature}</td>
+                      <td className="px-5 py-3 text-center text-text">{free}</td>
+                      <td className="px-5 py-3 text-center text-primary font-medium">{rb}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* Perfect For */}
+        {/* ------------------------------------------------------------------ */}
+        <div className="bg-surface">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+            <h2 className="text-2xl font-bold text-foreground mb-2 text-center">
+              Perfect For
+            </h2>
+            <p className="text-text text-center max-w-xl mx-auto mb-10">
+              Anyone who needs a formatted ingredient declaration without a full labeling platform.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+              {[
+                {
+                  icon: <Utensils className="w-5 h-5 text-primary" />,
+                  title: "Food Manufacturers",
+                  desc: "Generate ingredient declarations for new product development and spec sheets before full label design.",
+                },
+                {
+                  icon: <ShoppingBag className="w-5 h-5 text-primary" />,
+                  title: "Bakeries",
+                  desc: "Quickly format ingredient statements for baked goods, especially useful for products with many compound ingredients like butter, chocolate, or pastry.",
+                },
+                {
+                  icon: <Store className="w-5 h-5 text-primary" />,
+                  title: "Catering Businesses",
+                  desc: "Create ingredient declarations for packaged items sold at events or through retail channels.",
+                },
+                {
+                  icon: <Users className="w-5 h-5 text-primary" />,
+                  title: "Food Scientists",
+                  desc: "Format ingredient lists for R&D documentation and regulatory submission prep.",
+                },
+              ].map((card) => (
+                <div key={card.title} className="bg-white rounded-2xl border border-border p-5">
+                  <div className="w-9 h-9 bg-primary-light rounded-lg flex items-center justify-center mb-4">
+                    {card.icon}
+                  </div>
+                  <h3 className="text-base font-bold text-foreground mb-1.5">{card.title}</h3>
+                  <p className="text-sm text-text leading-relaxed">{card.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* FAQ */}
+        {/* ------------------------------------------------------------------ */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+          <h2 className="text-2xl font-bold text-foreground mb-10 text-center">
+            Frequently Asked Questions
+          </h2>
+          <div className="max-w-3xl mx-auto space-y-5">
+            {[
+              {
+                q: "Is this ingredient list maker free?",
+                a: "Yes, free with no sign-up required.",
+              },
+              {
+                q: "How does ingredient sorting work?",
+                a: "Ingredients sort by the gram weight you enter, highest to lowest. This matches the FDA, EU, and GCC requirement that ingredients appear in descending order by weight.",
+              },
+              {
+                q: "Does this tool generate Arabic ingredient lists?",
+                a: "No, this tool generates English only. For bilingual English-Arabic ingredient declarations required for GCC food labels, use RecipeBuilder, which handles bilingual formatting automatically.",
+              },
+              {
+                q: "How does allergen detection work?",
+                a: "The tool scans ingredient names and sub-ingredient text for the Big 9 allergens (wheat/gluten, milk/dairy, eggs, peanuts, tree nuts, soy, fish, shellfish, sesame). Allergens found are highlighted in the output with a bold indicator. Manual verification is still recommended.",
+              },
+              {
+                q: "What are compound ingredients and how do I declare them?",
+                a: "Compound ingredients are ingredients made of multiple sub-ingredients (e.g., butter = cream + salt). They appear in the ingredient list by their name followed by sub-ingredients in parentheses. Use the sub-ingredient toggle on each ingredient row to add these.",
+              },
+              {
+                q: "Is this compliant with GCC food labeling regulations?",
+                a: "This tool generates an ingredient statement structure that follows GCC's descending-by-weight requirement. However, GCC labels require bilingual Arabic-English declarations, which this tool does not generate. For fully compliant GCC ingredient lists, use RecipeBuilder.",
+              },
+            ].map((item) => (
+              <div key={item.q} className="border border-border rounded-xl p-5 bg-white">
+                <h3 className="text-base font-semibold text-foreground mb-2">{item.q}</h3>
+                <p className="text-sm text-text leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* Stats strip */}
+        {/* ------------------------------------------------------------------ */}
+        <div className="bg-primary">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <p className="text-center text-white/70 text-sm font-semibold uppercase tracking-wider mb-8">
+              Trusted by food businesses worldwide
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+              {[
+                { metric: "5,000+", label: "Labels approved by Dubai Municipality" },
+                { metric: "20,000+", label: "USDA FoodData Central ingredients" },
+                { metric: "10+", label: "Regulatory frameworks supported" },
+                { metric: "14-day", label: "Free trial — no credit card" },
+              ].map((s) => (
+                <div key={s.metric}>
+                  <div className="text-3xl font-bold text-white mb-1">{s.metric}</div>
+                  <div className="text-sm text-white/70 leading-snug">{s.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* Works Everywhere */}
+        {/* ------------------------------------------------------------------ */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+          <h2 className="text-2xl font-bold text-foreground mb-2 text-center">
+            Works Everywhere
+          </h2>
+          <p className="text-text text-center max-w-xl mx-auto mb-10">
+            No installation. No account. Works in any browser on any device.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+            {[
+              {
+                icon: <Monitor className="w-5 h-5 text-primary" />,
+                title: "Desktop",
+                browsers: ["Chrome", "Firefox", "Safari", "Edge"],
+              },
+              {
+                icon: <Smartphone className="w-5 h-5 text-primary" />,
+                title: "Mobile",
+                browsers: ["iOS Safari", "Android Chrome"],
+              },
+              {
+                icon: <Tablet className="w-5 h-5 text-primary" />,
+                title: "Tablet",
+                browsers: ["iPad", "Android"],
+              },
+            ].map((device) => (
+              <div key={device.title} className="bg-white rounded-2xl border border-border p-5 text-center">
+                <div className="w-10 h-10 bg-primary-light rounded-xl flex items-center justify-center mx-auto mb-3">
+                  {device.icon}
+                </div>
+                <h3 className="text-base font-bold text-foreground mb-2">{device.title}</h3>
+                <div className="space-y-1">
+                  {device.browsers.map((b) => (
+                    <p key={b} className="text-sm text-text">{b}</p>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* More Free Tools */}
+        {/* ------------------------------------------------------------------ */}
+        <div className="bg-surface">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+            <h2 className="text-2xl font-bold text-foreground mb-2 text-center">
+              More Free Tools
+            </h2>
+            <p className="text-text text-center max-w-xl mx-auto mb-10">
+              Free tools for food businesses, no account required.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
+                {
+                  title: "Nutrition Label Generator",
+                  desc: "Generate an FDA Nutrition Facts panel from your nutrition data — instantly, free.",
+                  href: "/tools/nutrition-label-generator",
+                },
+                {
+                  title: "Recipe Cost Calculator",
+                  desc: "Calculate food cost per serving, margins, and suggested retail price.",
+                  href: "/tools/recipe-cost-calculator",
+                },
+                {
+                  title: "All Free Tools",
+                  desc: "View our full suite of free food business tools.",
+                  href: "/tools",
+                },
+              ].map((tool) => (
+                <Link
+                  key={tool.title}
+                  href={tool.href}
+                  className="group bg-white rounded-2xl border border-border p-6 hover:border-primary/30 hover:shadow-md transition-all"
+                >
+                  <h3 className="text-base font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                    {tool.title}
+                  </h3>
+                  <p className="text-sm text-text leading-relaxed mb-3">{tool.desc}</p>
+                  <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary">
+                    Try it free <ArrowRight className="w-3.5 h-3.5" />
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* Final CTA */}
+        {/* ------------------------------------------------------------------ */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+          <div className="rounded-2xl bg-gradient-to-br from-primary to-primary-dark p-10 sm:p-14 text-white text-center">
+            <h2 className="text-3xl font-bold mb-3">
+              Want ingredient lists that build themselves?
+            </h2>
+            <p className="text-white/80 max-w-2xl mx-auto leading-relaxed mb-8">
+              RecipeBuilder generates compliant ingredient declarations automatically from your recipe — bilingual English+Arabic, allergens declared, sub-ingredients formatted correctly. For every recipe in your library.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-semibold text-primary bg-white rounded-lg hover:bg-white/90 transition-colors"
+              >
+                Book a free demo <ArrowRight className="w-4 h-4" />
+              </a>
+              <a
+                href="mailto:info@bytebeam.co?subject=RecipeBuilder Inquiry"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-semibold text-white border-2 border-white/30 rounded-lg hover:bg-white/10 transition-colors"
+              >
+                Contact Sales
+              </a>
             </div>
           </div>
         </div>

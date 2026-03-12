@@ -5,7 +5,20 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { ArrowRight, FlaskConical, ChevronRight } from "lucide-react";
+import {
+  ArrowRight,
+  FlaskConical,
+  ChevronRight,
+  ShieldCheck,
+  Download,
+  Users,
+  Utensils,
+  ShoppingBag,
+  CheckCircle,
+  Monitor,
+  Smartphone,
+  Tablet,
+} from "lucide-react";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -725,6 +738,439 @@ export default function NutritionLabelGeneratorPage() {
                   Contact Sales
                 </a>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* Upsell box */}
+        {/* ------------------------------------------------------------------ */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+          <div className="rounded-xl border border-primary/20 bg-primary-light/40 p-6">
+            <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-1">
+              Want to automate this?
+            </p>
+            <h2 className="text-xl font-bold text-foreground mb-2">
+              Want your recipes to auto-generate this label?
+            </h2>
+            <p className="text-text leading-relaxed mb-4 max-w-2xl">
+              RecipeBuilder calculates nutrition from 20,000+ USDA ingredients and generates this exact label format automatically — for GCC, FDA, EU, and 10+ other regulatory frameworks. No manual data entry.
+            </p>
+            <a
+              href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline"
+            >
+              Book a free demo <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* Cross-sell one-liner */}
+        {/* ------------------------------------------------------------------ */}
+        <div className="py-6">
+          <p className="text-sm text-text/70 max-w-2xl mx-auto text-center px-4">
+            Building a food business? Compare{" "}
+            <a href="/compare/recipal-alternative" className="underline hover:text-primary">
+              RecipeBuilder vs ReciPal
+            </a>{" "}
+            or see{" "}
+            <a href="/blog/best-nutrition-label-software-2026" className="underline hover:text-primary">
+              all nutrition label software options
+            </a>
+            .
+          </p>
+        </div>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* Why Use This Tool */}
+        {/* ------------------------------------------------------------------ */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+          <h2 className="text-2xl font-bold text-foreground mb-2 text-center">
+            Why Use This Tool
+          </h2>
+          <p className="text-text text-center max-w-xl mx-auto mb-10">
+            The fastest way to preview an FDA Nutrition Facts panel without design software.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-2xl border border-border p-6">
+              <div className="w-10 h-10 bg-primary-light rounded-xl flex items-center justify-center mb-4">
+                <FlaskConical className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="text-base font-bold text-foreground mb-2">Instant preview</h3>
+              <p className="text-sm text-text leading-relaxed">
+                See your FDA nutrition facts panel update in real time as you type. No design software needed.
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl border border-border p-6">
+              <div className="w-10 h-10 bg-primary-light rounded-xl flex items-center justify-center mb-4">
+                <ShieldCheck className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="text-base font-bold text-foreground mb-2">FDA-accurate format</h3>
+              <p className="text-sm text-text leading-relaxed">
+                Calculations use the FDA's 2020 Daily Value reference amounts. Formatting matches the official Nutrition Facts panel layout.
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl border border-border p-6">
+              <div className="w-10 h-10 bg-primary-light rounded-xl flex items-center justify-center mb-4">
+                <Download className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="text-base font-bold text-foreground mb-2">Free, no sign-up</h3>
+              <p className="text-sm text-text leading-relaxed">
+                Generate as many labels as you need. Take a screenshot or print directly from your browser.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* How It Works */}
+        {/* ------------------------------------------------------------------ */}
+        <div className="bg-surface">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+            <h2 className="text-2xl font-bold text-foreground mb-2 text-center">
+              How It Works
+            </h2>
+            <p className="text-text text-center max-w-xl mx-auto mb-10">
+              Three steps from data to label.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              {[
+                {
+                  step: "1",
+                  title: "Enter your nutrition data",
+                  desc: "Fill in serving size, calories, and all macronutrients using the form on the left.",
+                },
+                {
+                  step: "2",
+                  title: "Preview updates in real time",
+                  desc: "The FDA Nutrition Facts panel on the right updates instantly as you type each value.",
+                },
+                {
+                  step: "3",
+                  title: "Print or screenshot",
+                  desc: "Use your browser's print function or take a screenshot to save your label.",
+                },
+              ].map((s) => (
+                <div key={s.step} className="bg-white rounded-2xl border border-border p-6">
+                  <div className="w-8 h-8 rounded-full bg-primary text-white text-sm font-bold flex items-center justify-center mb-4">
+                    {s.step}
+                  </div>
+                  <h3 className="text-base font-bold text-foreground mb-2">{s.title}</h3>
+                  <p className="text-sm text-text leading-relaxed">{s.desc}</p>
+                </div>
+              ))}
+            </div>
+            {/* Important Notes */}
+            <div className="rounded-xl border border-amber-200 bg-amber-50 p-6">
+              <p className="text-sm font-semibold text-amber-700 uppercase tracking-wider mb-3">
+                Important Notes
+              </p>
+              <ul className="space-y-2 text-sm text-amber-900 leading-relaxed">
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 shrink-0 w-1.5 h-1.5 rounded-full bg-amber-500 inline-block" />
+                  This tool generates a visual FDA Nutrition Facts panel. It does not calculate nutrition from ingredients — you need to supply the values yourself.
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 shrink-0 w-1.5 h-1.5 rounded-full bg-amber-500 inline-block" />
+                  For auto-calculated nutrition from your actual recipes, try RecipeBuilder — it calculates from USDA ingredient data.
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 shrink-0 w-1.5 h-1.5 rounded-full bg-amber-500 inline-block" />
+                  FDA labeling regulations have specific rounding rules, serving size requirements, and declaration thresholds. For regulatory submission, verify your final label against FDA guidelines.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* Educational content */}
+        {/* ------------------------------------------------------------------ */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+          {/* Sub-section A */}
+          <div className="max-w-3xl mb-12">
+            <h2 className="text-2xl font-bold text-foreground mb-4">
+              FDA Nutrition Label Requirements
+            </h2>
+            <div className="space-y-4 text-text leading-relaxed">
+              <p>
+                The FDA requires nutrition labeling on most packaged foods sold in the United States under 21 CFR Part 101. The Nutrition Facts panel must display specific nutrients in a defined order and format. The 2020 updated rules increased the required font size for calories, made vitamin D and potassium mandatory declarations, and updated Daily Values for several nutrients.
+              </p>
+              <p>
+                Serving size is regulated — it must reflect the amount people typically eat (Reference Amounts Customarily Consumed, or RACCs), not a manufacturer-preferred portion. Misrepresenting serving sizes to make a product appear lower in calories is a labeling violation.
+              </p>
+              <p>
+                Mandatory nutrients include: calories, total fat, saturated fat, trans fat, cholesterol, sodium, total carbohydrate, dietary fiber, total sugars, added sugars, protein, vitamin D, calcium, iron, and potassium. Percent Daily Values (%DV) must be declared for all nutrients except trans fat and total sugars. The footnote explaining %DV is required at the bottom of the panel.
+              </p>
+            </div>
+          </div>
+
+          {/* Sub-section B — Comparison table */}
+          <div>
+            <h2 className="text-2xl font-bold text-foreground mb-6">
+              Free Tool vs RecipeBuilder
+            </h2>
+            <div className="overflow-x-auto rounded-2xl border border-border">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-border bg-surface">
+                    <th className="text-left px-5 py-3 font-semibold text-foreground">Feature</th>
+                    <th className="text-center px-5 py-3 font-semibold text-text">Free Tool</th>
+                    <th className="text-center px-5 py-3 font-semibold text-primary">RecipeBuilder</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-border">
+                  {[
+                    ["Calculate nutrition from recipes", "✗ Manual entry", "✓ Auto from 20,000+ ingredients"],
+                    ["Regulatory frameworks", "FDA format only", "FDA, EU, GCC/SFDA, 10+ frameworks"],
+                    ["Arabic bilingual labels", "✗", "✓ English + Arabic auto-generated"],
+                    ["Packaging artwork (barcodes, QR)", "✗", "✓ Print-ready artwork"],
+                    ["Recipe costing & margins", "✗", "✓ Built-in"],
+                    ["Price", "Free", "From $15/mo"],
+                  ].map(([feature, free, rb]) => (
+                    <tr key={feature} className="bg-white">
+                      <td className="px-5 py-3 text-foreground font-medium">{feature}</td>
+                      <td className="px-5 py-3 text-center text-text">{free}</td>
+                      <td className="px-5 py-3 text-center text-primary font-medium">{rb}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* Perfect For */}
+        {/* ------------------------------------------------------------------ */}
+        <div className="bg-surface">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+            <h2 className="text-2xl font-bold text-foreground mb-2 text-center">
+              Perfect For
+            </h2>
+            <p className="text-text text-center max-w-xl mx-auto mb-10">
+              Anyone who needs an FDA Nutrition Facts panel without signing up for software.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+              {[
+                {
+                  icon: <Users className="w-5 h-5 text-primary" />,
+                  title: "Food Manufacturers",
+                  desc: "Generate nutrition panel mockups for recipe development before committing to full packaging artwork.",
+                },
+                {
+                  icon: <Utensils className="w-5 h-5 text-primary" />,
+                  title: "Restaurant Owners",
+                  desc: "Preview what your packaged grab-and-go items' labels will look like before investing in design.",
+                },
+                {
+                  icon: <ShoppingBag className="w-5 h-5 text-primary" />,
+                  title: "Food Startups",
+                  desc: "Understand FDA nutrition label formatting before your product is ready for full RecipeBuilder setup.",
+                },
+                {
+                  icon: <FlaskConical className="w-5 h-5 text-primary" />,
+                  title: "Nutrition Students",
+                  desc: "Practice creating FDA Nutrition Facts panels for coursework or exam preparation.",
+                },
+              ].map((card) => (
+                <div key={card.title} className="bg-white rounded-2xl border border-border p-5">
+                  <div className="w-9 h-9 bg-primary-light rounded-lg flex items-center justify-center mb-4">
+                    {card.icon}
+                  </div>
+                  <h3 className="text-base font-bold text-foreground mb-1.5">{card.title}</h3>
+                  <p className="text-sm text-text leading-relaxed">{card.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* FAQ */}
+        {/* ------------------------------------------------------------------ */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+          <h2 className="text-2xl font-bold text-foreground mb-10 text-center">
+            Frequently Asked Questions
+          </h2>
+          <div className="max-w-3xl mx-auto space-y-5">
+            {[
+              {
+                q: "Is this nutrition label generator free?",
+                a: "Yes. Completely free to use, no sign-up required. Generate as many labels as you want.",
+              },
+              {
+                q: "Does this tool calculate nutrition from my recipe?",
+                a: "No. You must enter the nutrition values manually. If you want automatic nutrition calculation from your actual ingredients, try RecipeBuilder — it calculates from a database of 20,000+ USDA-verified ingredients.",
+              },
+              {
+                q: "Can I download the nutrition label as a PDF?",
+                a: "You can print the panel directly from your browser (Ctrl+P / Cmd+P) or take a screenshot. For print-ready PDF labels with full packaging artwork, try RecipeBuilder.",
+              },
+              {
+                q: "Does this generate GCC or SFDA nutrition labels?",
+                a: "This tool generates FDA-format labels only. For GCC/SFDA-compliant labels with bilingual Arabic-English output, use RecipeBuilder, which supports 10+ regulatory frameworks including all GCC standards.",
+              },
+              {
+                q: "Is this tool compliant with FDA labeling regulations?",
+                a: "This tool generates a Nutrition Facts panel in the correct FDA visual format using 2020 Daily Value reference amounts. However, FDA labeling regulations have specific rounding rules and thresholds. Always verify your final label against official FDA guidance before commercial use.",
+              },
+              {
+                q: "What's the difference between this free tool and RecipeBuilder?",
+                a: "This free tool generates a single Nutrition Facts panel from values you enter manually. RecipeBuilder auto-calculates nutrition from your recipe ingredients, generates complete packaging artwork (with barcodes, QR codes, and bilingual Arabic-English ingredient lists), covers 10+ regulatory frameworks, and includes recipe costing and inventory management.",
+              },
+            ].map((item) => (
+              <div key={item.q} className="border border-border rounded-xl p-5 bg-white">
+                <h3 className="text-base font-semibold text-foreground mb-2">{item.q}</h3>
+                <p className="text-sm text-text leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* Stats strip */}
+        {/* ------------------------------------------------------------------ */}
+        <div className="bg-primary">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <p className="text-center text-white/70 text-sm font-semibold uppercase tracking-wider mb-8">
+              Trusted by food businesses worldwide
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+              {[
+                { metric: "5,000+", label: "Labels approved by Dubai Municipality" },
+                { metric: "20,000+", label: "USDA FoodData Central ingredients" },
+                { metric: "10+", label: "Regulatory frameworks supported" },
+                { metric: "14-day", label: "Free trial — no credit card" },
+              ].map((s) => (
+                <div key={s.metric}>
+                  <div className="text-3xl font-bold text-white mb-1">{s.metric}</div>
+                  <div className="text-sm text-white/70 leading-snug">{s.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* Works Everywhere */}
+        {/* ------------------------------------------------------------------ */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+          <h2 className="text-2xl font-bold text-foreground mb-2 text-center">
+            Works Everywhere
+          </h2>
+          <p className="text-text text-center max-w-xl mx-auto mb-10">
+            No installation. No account. Works in any browser on any device.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+            {[
+              {
+                icon: <Monitor className="w-5 h-5 text-primary" />,
+                title: "Desktop",
+                browsers: ["Chrome", "Firefox", "Safari", "Edge"],
+              },
+              {
+                icon: <Smartphone className="w-5 h-5 text-primary" />,
+                title: "Mobile",
+                browsers: ["iOS Safari", "Android Chrome"],
+              },
+              {
+                icon: <Tablet className="w-5 h-5 text-primary" />,
+                title: "Tablet",
+                browsers: ["iPad", "Android"],
+              },
+            ].map((device) => (
+              <div key={device.title} className="bg-white rounded-2xl border border-border p-5 text-center">
+                <div className="w-10 h-10 bg-primary-light rounded-xl flex items-center justify-center mx-auto mb-3">
+                  {device.icon}
+                </div>
+                <h3 className="text-base font-bold text-foreground mb-2">{device.title}</h3>
+                <div className="space-y-1">
+                  {device.browsers.map((b) => (
+                    <p key={b} className="text-sm text-text">{b}</p>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* More Free Tools */}
+        {/* ------------------------------------------------------------------ */}
+        <div className="bg-surface">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+            <h2 className="text-2xl font-bold text-foreground mb-2 text-center">
+              More Free Tools
+            </h2>
+            <p className="text-text text-center max-w-xl mx-auto mb-10">
+              Free tools for food businesses, no account required.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
+                {
+                  title: "Ingredient List Maker",
+                  desc: "Sort ingredients by weight and format a compliant ingredient statement.",
+                  href: "/tools/ingredient-list-maker",
+                },
+                {
+                  title: "Recipe Cost Calculator",
+                  desc: "Calculate food cost per serving, margins, and suggested retail price.",
+                  href: "/tools/recipe-cost-calculator",
+                },
+                {
+                  title: "All Free Tools",
+                  desc: "View our full suite of free food business tools.",
+                  href: "/tools",
+                },
+              ].map((tool) => (
+                <Link
+                  key={tool.title}
+                  href={tool.href}
+                  className="group bg-white rounded-2xl border border-border p-6 hover:border-primary/30 hover:shadow-md transition-all"
+                >
+                  <h3 className="text-base font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                    {tool.title}
+                  </h3>
+                  <p className="text-sm text-text leading-relaxed mb-3">{tool.desc}</p>
+                  <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary">
+                    Try it free <ArrowRight className="w-3.5 h-3.5" />
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* Final CTA */}
+        {/* ------------------------------------------------------------------ */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+          <div className="rounded-2xl bg-gradient-to-br from-primary to-primary-dark p-10 sm:p-14 text-white text-center">
+            <h2 className="text-3xl font-bold mb-3">
+              Want labels that calculate themselves?
+            </h2>
+            <p className="text-white/80 max-w-2xl mx-auto leading-relaxed mb-8">
+              RecipeBuilder auto-generates FDA, GCC, and EU nutrition labels from your recipes. Add an ingredient, the label updates. No manual entry ever.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-semibold text-primary bg-white rounded-lg hover:bg-white/90 transition-colors"
+              >
+                Book a free demo <ArrowRight className="w-4 h-4" />
+              </a>
+              <a
+                href="mailto:info@bytebeam.co?subject=RecipeBuilder Inquiry"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-semibold text-white border-2 border-white/30 rounded-lg hover:bg-white/10 transition-colors"
+              >
+                Contact Sales
+              </a>
             </div>
           </div>
         </div>

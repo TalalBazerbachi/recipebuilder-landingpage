@@ -17,6 +17,7 @@ export type CompareData = {
   keyDifferentiators: string[];
   metaDescription: string;
   keywords: string[];
+  whenToChooseCompetitor: string[];
 };
 
 export const comparePages: CompareData[] = [
@@ -113,6 +114,12 @@ export const comparePages: CompareData[] = [
       "food labeling software UAE",
       "packaging artwork generator",
     ],
+    whenToChooseCompetitor: [
+      "You only sell in the US or Canada and need FDA/CFIA labels",
+      "You don't need GCC compliance, Arabic labels, or packaging artwork",
+      "You want a simple, established US-focused nutrition panel tool",
+      "Your business has no plans to expand into Gulf markets",
+    ],
   },
   {
     slug: "food-label-maker-alternative",
@@ -204,6 +211,12 @@ export const comparePages: CompareData[] = [
       "nutrition label generator UAE",
       "SFDA food label software",
       "packaging artwork food label",
+    ],
+    whenToChooseCompetitor: [
+      "You need FDA-focused labels for a US-only food business",
+      "You want a comprehensive allergen management system for North American markets",
+      "Your budget allows for their enterprise tiers and you're satisfied with panel-only output",
+      "You don't need GCC compliance or bilingual Arabic output",
     ],
   },
   {
@@ -297,6 +310,11 @@ export const comparePages: CompareData[] = [
       "food label packaging artwork GCC",
       "food labeling software UAE comparison",
     ],
+    whenToChooseCompetitor: [
+      "You need GCC compliance and are comfortable with a simpler feature set",
+      "Your primary need is nutrition calculations for GCC labels without full packaging workflow",
+      "You prefer a GCC-native tool and don't need multi-framework coverage",
+    ],
   },
   {
     slug: "labelcalc-alternative",
@@ -388,6 +406,11 @@ export const comparePages: CompareData[] = [
       "food label software modern",
       "nutrition label software GCC",
       "food labeling software affordable",
+    ],
+    whenToChooseCompetitor: [
+      "You're deeply integrated with the Datacor/LabelCalc ecosystem already",
+      "You need US FDA compliance with their specific legacy database",
+      "You primarily operate in the US and don't need GCC or international compliance",
     ],
   },
 
@@ -483,6 +506,12 @@ export const comparePages: CompareData[] = [
       "GCC nutrition label software",
       "food label software small business",
     ],
+    whenToChooseCompetitor: [
+      "Your business requires clinical-level nutritional analysis and you have the budget",
+      "You need the most comprehensive ingredient database available for R&D research",
+      "Your team has dedicated nutrition scientists who need advanced analytical features",
+      "You work in institutional or hospital settings requiring clinical nutrition data",
+    ],
   },
   {
     slug: "nutritics-alternative",
@@ -575,6 +604,11 @@ export const comparePages: CompareData[] = [
       "nutrition software Arabic",
       "EU food label software alternative",
     ],
+    whenToChooseCompetitor: [
+      "You operate primarily in the UK or EU foodservice sector",
+      "You need clinical nutrition management for healthcare or dietetics settings",
+      "You want a tool with a 1.5M+ ingredient database for EU-specific requirements",
+    ],
   },
   {
     slug: "nutritionist-pro-alternative",
@@ -665,6 +699,10 @@ export const comparePages: CompareData[] = [
       "food labeling software GCC",
       "nutrition analysis software modern",
       "SFDA labeling software alternative",
+    ],
+    whenToChooseCompetitor: [
+      "You need clinical nutrition analysis for US/Canada dietetic practice",
+      "You work in a healthcare or institutional setting requiring clinical-grade analysis",
     ],
   },
   {
@@ -757,6 +795,10 @@ export const comparePages: CompareData[] = [
       "restaurant vs packaged food labeling",
       "GCC food labeling MenuSano",
       "packaging artwork food label software",
+    ],
+    whenToChooseCompetitor: [
+      "You run a restaurant in Canada or the US and need menu calorie labeling for compliance",
+      "Your primary use case is front-of-house menu nutrition display, not packaged food labels",
     ],
   },
 
@@ -851,6 +893,10 @@ export const comparePages: CompareData[] = [
       "food labeling software GCC from UK",
       "SFDA label software UK business",
     ],
+    whenToChooseCompetitor: [
+      "You're a UK or EU SMB that doesn't need GCC compliance",
+      "You want a newer, lighter-weight tool for EU market labels only",
+    ],
   },
   {
     slug: "foodzilla-alternative",
@@ -941,6 +987,10 @@ export const comparePages: CompareData[] = [
       "food label software vs nutrition coaching",
       "food manufacturer compliance software",
       "GCC food labeling tool",
+    ],
+    whenToChooseCompetitor: [
+      "You're a registered dietitian or nutrition coach managing client meal plans",
+      "Your primary use case is client diet tracking, not food manufacturing or packaging labels",
     ],
   },
   {
@@ -1033,6 +1083,10 @@ export const comparePages: CompareData[] = [
       "allergen labeling software comparison",
       "food manufacturing labeling software UK",
     ],
+    whenToChooseCompetitor: [
+      "You're a UK food supplier who needs to share product allergen data with operators on their network",
+      "You operate within the UK foodservice supply chain and need B2B allergen data sharing",
+    ],
   },
   {
     slug: "lab-testing-alternative",
@@ -1124,6 +1178,12 @@ export const comparePages: CompareData[] = [
       "fast nutrition label generation",
       "affordable nutrition analysis food business",
       "GCC food label without lab testing",
+    ],
+    whenToChooseCompetitor: [
+      "Your product is a novel formulation or contains ingredients not in standard databases",
+      "You need laboratory-verified nutritional data for regulatory submission or clinical research",
+      "Your product category requires mandatory lab testing per the regulatory body in your market",
+      "You've already done RecipeBuilder analysis and need lab verification for final regulatory sign-off",
     ],
   },
 ];
