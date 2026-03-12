@@ -10,18 +10,25 @@ const footerLinks = {
     { label: "Cost Tracking", href: "/cost-tracking" },
     { label: "Inventory Management", href: "/inventory-management" },
   ],
+  "Free Tools": [
+    { label: "Nutrition Label Generator", href: "/tools/nutrition-label-generator" },
+    { label: "Ingredient List Maker", href: "/tools/ingredient-list-maker" },
+    { label: "Recipe Cost Calculator", href: "/tools/recipe-cost-calculator" },
+    { label: "All Free Tools", href: "/tools" },
+  ],
+  Compare: [
+    { label: "vs ReciPal", href: "/compare/recipal-alternative" },
+    { label: "vs Food Label Maker", href: "/compare/food-label-maker-alternative" },
+    { label: "vs Nutrical", href: "/compare/nutrical-alternative" },
+    { label: "vs Genesis R&D", href: "/compare/genesis-rd-alternative" },
+    { label: "All Comparisons", href: "/compare" },
+  ],
   Resources: [
     { label: "Blog", href: "/blog" },
     { label: "Compliance Resources", href: "/compliance-resources" },
     { label: "GCC Food Businesses", href: "/gcc" },
+    { label: "School Catering Dubai", href: "/school-catering-dubai" },
     { label: "FAQ", href: "/#faq" },
-  ],
-  Industries: [
-    { label: "Restaurants & Cafes", href: "/#industries" },
-    { label: "Food Manufacturers", href: "/#industries" },
-    { label: "Bakeries & Catering", href: "/#industries" },
-    { label: "Nutrition Centers", href: "/#industries" },
-    { label: "School Food Catering (Dubai)", href: "/school-catering-dubai" },
   ],
   Company: [
     { label: "About Us", href: "/about" },
@@ -42,9 +49,9 @@ export default function Footer({ content = defaultContent }: { content?: FooterC
       <div className="absolute inset-0 bg-grid-pattern" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-10">
           {/* Brand */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 md:col-span-2">
             <div className="flex items-center gap-2.5 mb-5">
               <Image src="/logo.png" alt="RecipeBuilder" width={36} height={36} className="w-9 h-9" />
               <span className="text-xl font-bold text-white">

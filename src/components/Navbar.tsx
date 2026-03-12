@@ -10,11 +10,10 @@ export default function Navbar({ variant = "global", light = false }: { variant?
   const basePath = variant === "gcc" ? "/gcc" : "";
   const navLinks = [
     { label: "Features", href: `${basePath}/#features` },
-    { label: "How It Works", href: `${basePath}/#how-it-works` },
-    { label: "Industries", href: `${basePath}/#industries` },
     { label: "Pricing", href: `${basePath}/#pricing` },
+    { label: "Tools", href: "/tools" },
+    { label: "Compare", href: "/compare" },
     { label: "Blog", href: "/blog" },
-    { label: "About", href: "/about" },
     ...(variant === "global" ? [{ label: "GCC", href: "/gcc" }] : []),
   ];
   const [mobileOpen, setMobileOpen] = useState(false);
