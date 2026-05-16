@@ -538,7 +538,7 @@ export default function NutritionAnalysisPage() {
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
             name: "RecipeBuilder Nutrition Analysis",
-            url: "https://recipebuilder.bytebeam.co/nutrition-analysis",
+            url: "https://www.recipebuilder.co/nutrition-analysis",
             applicationCategory: "BusinessApplication",
             operatingSystem: "Web",
             description: "Automatic nutrition facts generation from recipes. FDA-style panels, traffic light labels, macro breakdowns, and calorie calculations.",
@@ -563,8 +563,8 @@ export default function NutritionAnalysisPage() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://recipebuilder.bytebeam.co" },
-              { "@type": "ListItem", position: 2, name: "Nutrition Analysis", item: "https://recipebuilder.bytebeam.co/nutrition-analysis" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.recipebuilder.co" },
+              { "@type": "ListItem", position: 2, name: "Nutrition Analysis", item: "https://www.recipebuilder.co/nutrition-analysis" },
             ],
           }),
         }}

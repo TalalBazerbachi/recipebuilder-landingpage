@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   description:
     "RecipeBuilder is a recipe management and food labeling platform by ByteBeam (Dubai). It auto-generates nutrition labels, barcodes, and QR codes from recipes using 20,000+ USDA-verified ingredients. Supports FDA, EU, and GCC/SFDA labeling standards in 40+ languages. Used by food manufacturers, restaurants, and catering businesses worldwide. Pricing starts at $49/month.",
   alternates: {
-    canonical: "https://recipebuilder.bytebeam.co",
+    canonical: "https://www.recipebuilder.co",
   },
 };
 
@@ -74,7 +74,7 @@ export default function Home() {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://recipebuilder.bytebeam.co",
+                item: "https://www.recipebuilder.co",
               },
             ],
           }),

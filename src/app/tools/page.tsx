@@ -35,13 +35,13 @@ export const metadata: Metadata = {
     "free food label tools",
   ],
   alternates: {
-    canonical: "https://recipebuilder.bytebeam.co/tools",
+    canonical: "https://www.recipebuilder.co/tools",
   },
   openGraph: {
     title: "Free Food Business Tools | RecipeBuilder",
     description:
       "Free nutrition label generator, ingredient list maker, recipe cost calculator and more — built for food businesses.",
-    url: "https://recipebuilder.bytebeam.co/tools",
+    url: "https://www.recipebuilder.co/tools",
     siteName: "RecipeBuilder",
     type: "website",
   },
@@ -284,13 +284,13 @@ export default function ToolsPage() {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://recipebuilder.bytebeam.co",
+                item: "https://www.recipebuilder.co",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Tools",
-                item: "https://recipebuilder.bytebeam.co/tools",
+                item: "https://www.recipebuilder.co/tools",
               },
             ],
           }),

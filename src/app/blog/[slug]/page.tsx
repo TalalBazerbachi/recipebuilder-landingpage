@@ -63,7 +63,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       type: "article",
       publishedTime: post.date,
       siteName: "RecipeBuilder",
-      url: `https://recipebuilder.bytebeam.co/blog/${post.slug}`,
+      url: `https://www.recipebuilder.co/blog/${post.slug}`,
     },
     twitter: {
       card: "summary_large_image",
@@ -71,7 +71,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: post.description,
     },
     alternates: {
-      canonical: `https://recipebuilder.bytebeam.co/blog/${post.slug}`,
+      canonical: `https://www.recipebuilder.co/blog/${post.slug}`,
     },
   };
 }
@@ -206,11 +206,11 @@ export default async function BlogPostPage({ params }: PageProps) {
                   publisher: {
                     "@type": "Organization",
                     name: "RecipeBuilder",
-                    url: "https://recipebuilder.bytebeam.co",
+                    url: "https://www.recipebuilder.co",
                   },
                   mainEntityOfPage: {
                     "@type": "WebPage",
-                    "@id": `https://recipebuilder.bytebeam.co/blog/${post.slug}`,
+                    "@id": `https://www.recipebuilder.co/blog/${post.slug}`,
                   },
                   keywords: post.keywords.join(", "),
                 }),
@@ -229,19 +229,19 @@ export default async function BlogPostPage({ params }: PageProps) {
                       "@type": "ListItem",
                       position: 1,
                       name: "Home",
-                      item: "https://recipebuilder.bytebeam.co",
+                      item: "https://www.recipebuilder.co",
                     },
                     {
                       "@type": "ListItem",
                       position: 2,
                       name: "Blog",
-                      item: "https://recipebuilder.bytebeam.co/blog",
+                      item: "https://www.recipebuilder.co/blog",
                     },
                     {
                       "@type": "ListItem",
                       position: 3,
                       name: post.title,
-                      item: `https://recipebuilder.bytebeam.co/blog/${post.slug}`,
+                      item: `https://www.recipebuilder.co/blog/${post.slug}`,
                     },
                   ],
                 }),

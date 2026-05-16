@@ -45,13 +45,13 @@ export const metadata: Metadata = {
       "Recipe Cost Tracking — Ingredient Costs, Profit Margins & VAT | RecipeBuilder",
     description:
       "Track ingredient costs per recipe, calculate per serving cost, and see net profit margins with VAT and aggregator commission tracking. All costs in AED.",
-    url: "https://recipebuilder.bytebeam.co/cost-tracking",
+    url: "https://www.recipebuilder.co/cost-tracking",
     siteName: "RecipeBuilder",
     type: "website",
     locale: "en_US",
   },
   alternates: {
-    canonical: "https://recipebuilder.bytebeam.co/cost-tracking",
+    canonical: "https://www.recipebuilder.co/cost-tracking",
   },
 };
 
@@ -574,7 +574,7 @@ export default function CostTracking() {
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
             name: "RecipeBuilder Cost Tracking",
-            url: "https://recipebuilder.bytebeam.co/cost-tracking",
+            url: "https://www.recipebuilder.co/cost-tracking",
             applicationCategory: "BusinessApplication",
             operatingSystem: "Web",
             description: "Track ingredient costs, calculate profit margins, manage VAT, and optimize food costs for recipes and menu items.",
@@ -598,8 +598,8 @@ export default function CostTracking() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://recipebuilder.bytebeam.co" },
-              { "@type": "ListItem", position: 2, name: "Cost Tracking", item: "https://recipebuilder.bytebeam.co/cost-tracking" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.recipebuilder.co" },
+              { "@type": "ListItem", position: 2, name: "Cost Tracking", item: "https://www.recipebuilder.co/cost-tracking" },
             ],
           }),
         }}

@@ -519,7 +519,7 @@ export default function FoodLabelingPage() {
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
             name: "RecipeBuilder Food Labeling",
-            url: "https://recipebuilder.bytebeam.co/food-labeling",
+            url: "https://www.recipebuilder.co/food-labeling",
             applicationCategory: "BusinessApplication",
             operatingSystem: "Web",
             description: "Auto-generate professional bilingual food labels with nutrition facts panels, barcodes, QR codes, and allergen disclaimers. Labels follow GCC & SFDA labeling laws.",
@@ -557,8 +557,8 @@ export default function FoodLabelingPage() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://recipebuilder.bytebeam.co" },
-              { "@type": "ListItem", position: 2, name: "Food Labeling", item: "https://recipebuilder.bytebeam.co/food-labeling" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.recipebuilder.co" },
+              { "@type": "ListItem", position: 2, name: "Food Labeling", item: "https://www.recipebuilder.co/food-labeling" },
             ],
           }),
         }}

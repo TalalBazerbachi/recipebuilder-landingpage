@@ -154,7 +154,7 @@ export default function ProductShowcase() {
                   </div>
                   <div className="flex-1 mx-4">
                     <div className="bg-white rounded-lg border border-border px-3 py-1.5 text-xs text-text-light text-center max-w-xs mx-auto">
-                      app.recipebuilder.bytebeam.co
+                      app.recipebuilder.co
                     </div>
                   </div>
                 </div>

@@ -18,11 +18,17 @@ const nextConfig: NextConfig = {
             key: "Referrer-Policy",
             value: "strict-origin-when-cross-origin",
           },
-          {
-            key: "Last-Modified",
-            value: new Date().toUTCString(),
-          },
         ],
+      },
+    ];
+  },
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "recipebuilder.co" }],
+        destination: "https://www.recipebuilder.co/:path*",
+        permanent: true,
       },
     ];
   },

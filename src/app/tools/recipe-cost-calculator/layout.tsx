@@ -19,13 +19,13 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical:
-      "https://recipebuilder.bytebeam.co/tools/recipe-cost-calculator",
+      "https://www.recipebuilder.co/tools/recipe-cost-calculator",
   },
   openGraph: {
     title: "Free Recipe Cost Calculator | RecipeBuilder",
     description:
       "Calculate food cost per serving, suggested retail price, and gross margin in real time. Free, no sign-up.",
-    url: "https://recipebuilder.bytebeam.co/tools/recipe-cost-calculator",
+    url: "https://www.recipebuilder.co/tools/recipe-cost-calculator",
     siteName: "RecipeBuilder",
     type: "website",
   },

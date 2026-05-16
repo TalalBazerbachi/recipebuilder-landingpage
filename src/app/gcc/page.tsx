@@ -48,13 +48,13 @@ export const metadata: Metadata = {
       "RecipeBuilder — Recipe Management & Food Labeling for GCC Food Businesses",
     description:
       "RecipeBuilder by ByteBeam generates bilingual English-Arabic nutrition labels following GCC and SFDA labeling laws. 20,000+ USDA ingredients. 5,000+ labels approved by Dubai Municipality.",
-    url: "https://recipebuilder.bytebeam.co/gcc",
+    url: "https://www.recipebuilder.co/gcc",
     siteName: "RecipeBuilder",
     type: "website",
     locale: "en_US",
   },
   alternates: {
-    canonical: "https://recipebuilder.bytebeam.co/gcc",
+    canonical: "https://www.recipebuilder.co/gcc",
   },
 };
 
@@ -124,13 +124,13 @@ export default function GCCPage() {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://recipebuilder.bytebeam.co",
+                item: "https://www.recipebuilder.co",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "GCC",
-                item: "https://recipebuilder.bytebeam.co/gcc",
+                item: "https://www.recipebuilder.co/gcc",
               },
             ],
           }),
