@@ -34,7 +34,7 @@ export default function robots(): MetadataRoute.Robots {
       // Brave
       { userAgent: "BraveBot", allow: "/" },
     ],
-    sitemap: "https://recipebuilder.bytebeam.co/sitemap.xml",
-    host: "https://recipebuilder.bytebeam.co",
+    sitemap: "https://www.recipebuilder.co/sitemap.xml",
+    host: "https://www.recipebuilder.co",
   };
 }

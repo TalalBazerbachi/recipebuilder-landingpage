@@ -219,17 +219,17 @@ export default function BlogPage() {
             name: "RecipeBuilder Blog",
             description:
               "Expert guides on food labeling, GCC regulations, nutrition analysis, allergen management, and recipe management for food businesses.",
-            url: "https://recipebuilder.bytebeam.co/blog",
+            url: "https://www.recipebuilder.co/blog",
             publisher: {
               "@type": "Organization",
               name: "RecipeBuilder",
-              url: "https://recipebuilder.bytebeam.co",
+              url: "https://www.recipebuilder.co",
             },
             blogPost: sorted.map((post) => ({
               "@type": "BlogPosting",
               headline: post.title,
               description: post.description,
-              url: `https://recipebuilder.bytebeam.co/blog/${post.slug}`,
+              url: `https://www.recipebuilder.co/blog/${post.slug}`,
               datePublished: post.date,
               author: {
                 "@type": "Organization",
@@ -253,13 +253,13 @@ export default function BlogPage() {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://recipebuilder.bytebeam.co",
+                item: "https://www.recipebuilder.co",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Blog",
-                item: "https://recipebuilder.bytebeam.co/blog",
+                item: "https://www.recipebuilder.co/blog",
               },
             ],
           }),

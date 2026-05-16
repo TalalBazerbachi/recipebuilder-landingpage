@@ -29,7 +29,7 @@ function BrowserFrame({ children }: { children: React.ReactNode }) {
         </div>
         <div className="flex-1 mx-8">
           <div className="bg-white rounded-md border border-border px-3 py-1 text-[11px] text-gray-400 text-center max-w-[240px] mx-auto">
-            app.recipebuilder.bytebeam.co
+            app.recipebuilder.co
           </div>
         </div>
       </div>

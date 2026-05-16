@@ -41,12 +41,12 @@ export async function generateMetadata({
     description: page.metaDescription,
     keywords: page.keywords,
     alternates: {
-      canonical: `https://recipebuilder.bytebeam.co/compare/${page.slug}`,
+      canonical: `https://www.recipebuilder.co/compare/${page.slug}`,
     },
     openGraph: {
       title: `RecipeBuilder vs. ${page.competitor}`,
       description: page.metaDescription,
-      url: `https://recipebuilder.bytebeam.co/compare/${page.slug}`,
+      url: `https://www.recipebuilder.co/compare/${page.slug}`,
       siteName: "RecipeBuilder",
       type: "website",
     },
@@ -328,7 +328,7 @@ export default async function CompareSlugPage({ params }: PageProps) {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: "RecipeBuilder",
-    url: "https://recipebuilder.bytebeam.co",
+    url: "https://www.recipebuilder.co",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     description:
@@ -356,19 +356,19 @@ export default async function CompareSlugPage({ params }: PageProps) {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://recipebuilder.bytebeam.co",
+        item: "https://www.recipebuilder.co",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Comparisons",
-        item: "https://recipebuilder.bytebeam.co/compare",
+        item: "https://www.recipebuilder.co/compare",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: `RecipeBuilder vs. ${page.competitor}`,
-        item: `https://recipebuilder.bytebeam.co/compare/${page.slug}`,
+        item: `https://www.recipebuilder.co/compare/${page.slug}`,
       },
     ],
   };

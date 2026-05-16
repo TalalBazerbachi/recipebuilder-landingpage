@@ -330,8 +330,8 @@ export default function ComplianceResourcesPage() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://recipebuilder.bytebeam.co" },
-              { "@type": "ListItem", position: 2, name: "Compliance Resources", item: "https://recipebuilder.bytebeam.co/compliance-resources" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.recipebuilder.co" },
+              { "@type": "ListItem", position: 2, name: "Compliance Resources", item: "https://www.recipebuilder.co/compliance-resources" },
             ],
           }),
         }}

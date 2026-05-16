@@ -46,13 +46,13 @@ export const metadata: Metadata = {
       "Recipe Inventory Management — Track Stock & Portions in Real-Time | RecipeBuilder",
     description:
       "Track portion counts in real-time with quick stock update controls. View stock, prep time, selling price, and barcode on one dashboard.",
-    url: "https://recipebuilder.bytebeam.co/inventory-management",
+    url: "https://www.recipebuilder.co/inventory-management",
     siteName: "RecipeBuilder",
     type: "website",
     locale: "en_US",
   },
   alternates: {
-    canonical: "https://recipebuilder.bytebeam.co/inventory-management",
+    canonical: "https://www.recipebuilder.co/inventory-management",
   },
 };
 
@@ -527,7 +527,7 @@ export default function InventoryManagement() {
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
             name: "RecipeBuilder Inventory Management",
-            url: "https://recipebuilder.bytebeam.co/inventory-management",
+            url: "https://www.recipebuilder.co/inventory-management",
             applicationCategory: "BusinessApplication",
             operatingSystem: "Web",
             description: "Track stock levels, manage portions, and monitor ingredient inventory in real-time for food businesses.",
@@ -551,8 +551,8 @@ export default function InventoryManagement() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://recipebuilder.bytebeam.co" },
-              { "@type": "ListItem", position: 2, name: "Inventory Management", item: "https://recipebuilder.bytebeam.co/inventory-management" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.recipebuilder.co" },
+              { "@type": "ListItem", position: 2, name: "Inventory Management", item: "https://www.recipebuilder.co/inventory-management" },
             ],
           }),
         }}

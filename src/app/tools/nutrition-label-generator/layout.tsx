@@ -17,14 +17,14 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical:
-      "https://recipebuilder.bytebeam.co/tools/nutrition-label-generator",
+      "https://www.recipebuilder.co/tools/nutrition-label-generator",
   },
   openGraph: {
     title:
       "Free FDA Nutrition Label Generator | RecipeBuilder",
     description:
       "Create a real-time FDA Nutrition Facts panel. Enter nutrients and watch the label render instantly.",
-    url: "https://recipebuilder.bytebeam.co/tools/nutrition-label-generator",
+    url: "https://www.recipebuilder.co/tools/nutrition-label-generator",
     siteName: "RecipeBuilder",
     type: "website",
   },

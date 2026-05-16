@@ -557,7 +557,7 @@ export default function RecipeManagementPage() {
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
             name: "RecipeBuilder Recipe Management",
-            url: "https://recipebuilder.bytebeam.co/recipe-management",
+            url: "https://www.recipebuilder.co/recipe-management",
             applicationCategory: "BusinessApplication",
             operatingSystem: "Web",
             description: "Organize, analyze, and publish recipes with automatic nutrition analysis, sub-recipe support, and USDA FoodData Central database access.",
@@ -582,8 +582,8 @@ export default function RecipeManagementPage() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://recipebuilder.bytebeam.co" },
-              { "@type": "ListItem", position: 2, name: "Recipe Management", item: "https://recipebuilder.bytebeam.co/recipe-management" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.recipebuilder.co" },
+              { "@type": "ListItem", position: 2, name: "Recipe Management", item: "https://www.recipebuilder.co/recipe-management" },
             ],
           }),
         }}

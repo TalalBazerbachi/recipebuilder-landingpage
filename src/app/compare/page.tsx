@@ -34,14 +34,14 @@ export const metadata: Metadata = {
     "nutrition label maker comparison",
   ],
   alternates: {
-    canonical: "https://recipebuilder.bytebeam.co/compare",
+    canonical: "https://www.recipebuilder.co/compare",
   },
   openGraph: {
     title:
       "RecipeBuilder vs. The Competition — Food Labeling & Compliance Software Comparisons",
     description:
       "How does RecipeBuilder stack up against ReciPal, Food Label Maker, Genesis R&D, Nutritics, and more? See the full feature-by-feature breakdown.",
-    url: "https://recipebuilder.bytebeam.co/compare",
+    url: "https://www.recipebuilder.co/compare",
     siteName: "RecipeBuilder",
     type: "website",
   },
@@ -366,13 +366,13 @@ export default function ComparePage() {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://recipebuilder.bytebeam.co",
+                item: "https://www.recipebuilder.co",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Comparisons",
-                item: "https://recipebuilder.bytebeam.co/compare",
+                item: "https://www.recipebuilder.co/compare",
               },
             ],
           }),

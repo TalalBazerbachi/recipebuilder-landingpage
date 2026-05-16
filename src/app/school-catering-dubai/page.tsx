@@ -42,13 +42,13 @@ export const metadata: Metadata = {
       "School Food Catering Software for Dubai | Dubai Municipality Compliance | RecipeBuilder",
     description:
       "RecipeBuilder helps Dubai school food caterers comply with Dubai Municipality requirements — generate nutrition labels, build allergen matrices, and prepare NutriCheck audit documentation from one platform.",
-    url: "https://recipebuilder.bytebeam.co/school-catering-dubai",
+    url: "https://www.recipebuilder.co/school-catering-dubai",
     siteName: "RecipeBuilder",
     type: "website",
     locale: "en_US",
   },
   alternates: {
-    canonical: "https://recipebuilder.bytebeam.co/school-catering-dubai",
+    canonical: "https://www.recipebuilder.co/school-catering-dubai",
   },
 };
 
@@ -576,13 +576,13 @@ export default function SchoolCateringDubaiPage() {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://recipebuilder.bytebeam.co",
+                item: "https://www.recipebuilder.co",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "School Catering Dubai",
-                item: "https://recipebuilder.bytebeam.co/school-catering-dubai",
+                item: "https://www.recipebuilder.co/school-catering-dubai",
               },
             ],
           }),
@@ -599,7 +599,7 @@ export default function SchoolCateringDubaiPage() {
             name: "RecipeBuilder by ByteBeam",
             description:
               "School food catering compliance software for Dubai — nutrition labels, allergen matrices, Smart Food Choices classification, and NutriCheck audit documentation.",
-            url: "https://recipebuilder.bytebeam.co/school-catering-dubai",
+            url: "https://www.recipebuilder.co/school-catering-dubai",
             email: "info@bytebeam.co",
             areaServed: {
               "@type": "City",
@@ -634,7 +634,7 @@ export default function SchoolCateringDubaiPage() {
             name: "RecipeBuilder",
             applicationCategory: "BusinessApplication",
             operatingSystem: "Web",
-            url: "https://recipebuilder.bytebeam.co",
+            url: "https://www.recipebuilder.co",
             description:
               "Recipe management and food labeling software for Dubai school food caterers — generates Dubai Municipality-compliant nutrition labels, allergen matrices, and NutriCheck audit documentation.",
             offers: {

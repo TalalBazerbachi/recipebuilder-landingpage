@@ -18,13 +18,13 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical:
-      "https://recipebuilder.bytebeam.co/tools/ingredient-list-maker",
+      "https://www.recipebuilder.co/tools/ingredient-list-maker",
   },
   openGraph: {
     title: "Free Ingredient List Maker | RecipeBuilder",
     description:
       "Create compliant ingredient statements sorted by weight with allergen highlighting. Free, no sign-up.",
-    url: "https://recipebuilder.bytebeam.co/tools/ingredient-list-maker",
+    url: "https://www.recipebuilder.co/tools/ingredient-list-maker",
     siteName: "RecipeBuilder",
     type: "website",
   },

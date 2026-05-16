@@ -51,7 +51,7 @@ export const metadata: Metadata = {
       "RecipeBuilder — Recipe Management & Food Labeling for Food Businesses",
     description:
       "RecipeBuilder is a recipe management and food labeling platform by ByteBeam. Auto-generates nutrition labels, barcodes, and QR codes from recipes. 20,000+ USDA ingredients. FDA, EU, GCC/SFDA compliant. 40+ languages.",
-    url: "https://recipebuilder.bytebeam.co",
+    url: "https://www.recipebuilder.co",
     siteName: "RecipeBuilder",
     type: "website",
     locale: "en_US",
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://recipebuilder.bytebeam.co",
+    canonical: "https://www.recipebuilder.co",
   },
 };
 
@@ -109,7 +109,7 @@ export default function RootLayout({
                 category: "SaaS",
                 availability: "https://schema.org/InStock",
               },
-              url: "https://recipebuilder.bytebeam.co",
+              url: "https://www.recipebuilder.co",
               creator: {
                 "@type": "Organization",
                 name: "ByteBeam",
@@ -148,7 +148,7 @@ export default function RootLayout({
               brand: {
                 "@type": "Brand",
                 name: "RecipeBuilder",
-                url: "https://recipebuilder.bytebeam.co",
+                url: "https://www.recipebuilder.co",
               },
               address: {
                 "@type": "PostalAddress",
@@ -165,7 +165,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "RecipeBuilder",
-              url: "https://recipebuilder.bytebeam.co",
+              url: "https://www.recipebuilder.co",
               description:
                 "RecipeBuilder is a recipe management and food labeling platform for food businesses. Built by ByteBeam, a Dubai-based technology company. Auto-generates compliant nutrition labels for FDA, EU, GCC/SFDA markets using 20,000+ USDA-verified ingredients.",
               publisher: {

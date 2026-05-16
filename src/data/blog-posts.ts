@@ -4690,7 +4690,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Beyond minimum compliance, features that add operational value include: a comprehensive ingredient database with GCC-market foods; full packaging artwork generation rather than just a nutrition panel; recipe costing and inventory management to reduce the need for separate tools; and multi-framework support for businesses with exports to Western markets.</p>
 
-<p>RecipeBuilder meets all of these criteria. If you are a food business operating in the GCC and want to see the platform in action, <a href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall">book a free demo</a> to walk through your specific compliance requirements with the ByteBeam team. You can also explore RecipeBuilder's GCC-specific features at <a href="/gcc">recipebuilder.bytebeam.co/gcc</a>.</p>
+<p>RecipeBuilder meets all of these criteria. If you are a food business operating in the GCC and want to see the platform in action, <a href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall">book a free demo</a> to walk through your specific compliance requirements with the ByteBeam team. You can also explore RecipeBuilder's GCC-specific features at <a href="/gcc">www.recipebuilder.co/gcc</a>.</p>
 
 <h2>Frequently Asked Questions</h2>
 

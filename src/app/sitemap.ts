@@ -1,8 +1,33 @@
 import type { MetadataRoute } from "next";
 import { blogPosts } from "@/data/blog-posts";
 
+// Stable per-route lastmod dates. Bump these alongside meaningful content
+// changes — never set them to `new Date()`, which makes every URL claim
+// to have been updated on the build date and causes Google to ignore
+// lastmod entirely as an untrustworthy signal.
+const ROUTE_LAST_MODIFIED: Record<string, string> = {
+  "/": "2026-03-11",
+  "/gcc": "2026-03-12",
+  "/school-catering-dubai": "2026-03-12",
+  "/blog": "2026-03-21",
+  "/compare": "2026-03-12",
+  "/tools": "2026-03-12",
+  "/about": "2026-03-11",
+  "/compliance-resources": "2026-03-11",
+  "/food-labeling": "2026-03-11",
+  "/recipe-management": "2026-03-11",
+  "/nutrition-analysis": "2026-03-11",
+  "/cost-tracking": "2026-03-11",
+  "/inventory-management": "2026-03-11",
+  "/privacy-policy": "2026-02-25",
+  "/terms-of-service": "2026-02-25",
+};
+
+const COMPARE_LAST_MODIFIED = "2026-03-12";
+const TOOL_LAST_MODIFIED = "2026-03-12";
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://recipebuilder.bytebeam.co";
+  const baseUrl = "https://www.recipebuilder.co";
 
   const blogEntries: MetadataRoute.Sitemap = blogPosts.map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
@@ -21,7 +46,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const productEntries: MetadataRoute.Sitemap = productPages.map((slug) => ({
     url: `${baseUrl}/${slug}`,
-    lastModified: new Date(),
+    lastModified: new Date(ROUTE_LAST_MODIFIED[`/${slug}`]),
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
@@ -43,7 +68,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const compareEntries: MetadataRoute.Sitemap = compareSlugs.map((slug) => ({
     url: `${baseUrl}/compare/${slug}`,
-    lastModified: new Date(),
+    lastModified: new Date(COMPARE_LAST_MODIFIED),
     changeFrequency: "monthly" as const,
     priority: 0.85,
   }));
@@ -56,7 +81,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const toolEntries: MetadataRoute.Sitemap = toolSlugs.map((slug) => ({
     url: `${baseUrl}/tools/${slug}`,
-    lastModified: new Date(),
+    lastModified: new Date(TOOL_LAST_MODIFIED),
     changeFrequency: "monthly" as const,
     priority: 0.85,
   }));
@@ -64,49 +89,49 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified: new Date(ROUTE_LAST_MODIFIED["/"]),
       changeFrequency: "weekly",
       priority: 1,
     },
     {
       url: `${baseUrl}/gcc`,
-      lastModified: new Date(),
+      lastModified: new Date(ROUTE_LAST_MODIFIED["/gcc"]),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/school-catering-dubai`,
-      lastModified: new Date(),
+      lastModified: new Date(ROUTE_LAST_MODIFIED["/school-catering-dubai"]),
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/blog`,
-      lastModified: new Date(),
+      lastModified: new Date(ROUTE_LAST_MODIFIED["/blog"]),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/compare`,
-      lastModified: new Date(),
+      lastModified: new Date(ROUTE_LAST_MODIFIED["/compare"]),
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/tools`,
-      lastModified: new Date(),
+      lastModified: new Date(ROUTE_LAST_MODIFIED["/tools"]),
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/about`,
-      lastModified: new Date(),
+      lastModified: new Date(ROUTE_LAST_MODIFIED["/about"]),
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
       url: `${baseUrl}/compliance-resources`,
-      lastModified: new Date(),
+      lastModified: new Date(ROUTE_LAST_MODIFIED["/compliance-resources"]),
       changeFrequency: "monthly",
       priority: 0.7,
     },
@@ -115,13 +140,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...toolEntries,
     {
       url: `${baseUrl}/privacy-policy`,
-      lastModified: new Date(),
+      lastModified: new Date(ROUTE_LAST_MODIFIED["/privacy-policy"]),
       changeFrequency: "monthly",
       priority: 0.3,
     },
     {
       url: `${baseUrl}/terms-of-service`,
-      lastModified: new Date(),
+      lastModified: new Date(ROUTE_LAST_MODIFIED["/terms-of-service"]),
       changeFrequency: "monthly",
       priority: 0.3,
     },
