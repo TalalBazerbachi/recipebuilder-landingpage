@@ -78,6 +78,14 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://www.recipebuilder.co",
+    types: {
+      "application/rss+xml": [
+        {
+          url: "https://www.recipebuilder.co/feed.xml",
+          title: "RecipeBuilder Blog",
+        },
+      ],
+    },
   },
 };
 
