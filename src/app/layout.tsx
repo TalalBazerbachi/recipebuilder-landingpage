@@ -97,6 +97,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="RecipeBuilder Blog"
+          href="https://www.recipebuilder.co/feed.xml"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
