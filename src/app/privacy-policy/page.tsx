@@ -3,9 +3,16 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — RecipeBuilder by ByteBeam",
+  title: "Privacy Policy | RecipeBuilder",
   description:
-    "Privacy Policy for RecipeBuilder, a recipe management and food labeling platform by ByteBeam.",
+    "Privacy Policy for RecipeBuilder, a recipe management and food labeling platform by ByteBeam (Dubai).",
+  alternates: {
+    canonical: "https://www.recipebuilder.co/privacy-policy",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function PrivacyPolicy() {

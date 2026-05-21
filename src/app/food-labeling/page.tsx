@@ -19,10 +19,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title:
-    "Food Labeling Software — Auto-Generate Bilingual Food Labels | RecipeBuilder",
+  title: "Food Labeling Software — Auto-Generate Compliant Labels | RecipeBuilder",
   description:
-    "RecipeBuilder's food labeling module auto-generates bilingual nutrition labels with facts panels, barcodes, QR codes, and allergen declarations from your recipes. Labels follow FDA, EU, GCC, and SFDA labeling standards. Over 5,000 labels approved by Dubai Municipality. Supports 40+ languages including Arabic. Built by ByteBeam (Dubai).",
+    "Auto-generate bilingual nutrition labels, barcodes, QR codes, and allergen declarations from your recipes. FDA, EU, GCC/SFDA compliant. 40+ languages.",
   keywords: [
     "food labeling software",
     "food label generator",
@@ -37,6 +36,17 @@ export const metadata: Metadata = {
     "nutrition facts panel generator",
     "food label barcode",
   ],
+  alternates: {
+    canonical: "https://www.recipebuilder.co/food-labeling",
+  },
+  openGraph: {
+    title: "Food Labeling Software — Auto-Generate Compliant Labels",
+    description:
+      "Auto-generate bilingual nutrition labels, barcodes, QR codes, and allergen declarations from your recipes. FDA, EU, GCC/SFDA compliant.",
+    url: "https://www.recipebuilder.co/food-labeling",
+    siteName: "RecipeBuilder",
+    type: "website",
+  },
 };
 
 const features = [
@@ -526,7 +536,7 @@ export default function FoodLabelingPage() {
             offers: {
               "@type": "AggregateOffer",
               priceCurrency: "USD",
-              lowPrice: "49",
+              lowPrice: "29",
               highPrice: "99",
               offerCount: "3",
               category: "SaaS",

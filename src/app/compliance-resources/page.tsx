@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { blogPosts } from "@/data/blog-posts";
 import {
   ArrowRight,
   BookOpen,
@@ -12,10 +13,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title:
-    "Compliance Resources — GCC Food Labeling Regulations & Guides | RecipeBuilder",
+  title: "Food Compliance Resources — GCC, FDA & EU Labeling Guides | RecipeBuilder",
   description:
-    "Free compliance guides for GCC food labeling regulations by RecipeBuilder. Covers SFDA requirements, Dubai Municipality labeling laws, UAE food labeling standards, allergen labeling rules, halal certification requirements, and nutrition label formatting. Published by ByteBeam (Dubai).",
+    "Free regulatory guides covering SFDA, Dubai Municipality, UAE.S 192:2019, FDA, EU, and GCC food labeling requirements. Updated for 2026.",
   keywords: [
     "GCC food compliance",
     "SFDA labeling requirements",
@@ -25,6 +25,17 @@ export const metadata: Metadata = {
     "halal labeling requirements",
     "allergen labeling GCC",
   ],
+  alternates: {
+    canonical: "https://www.recipebuilder.co/compliance-resources",
+  },
+  openGraph: {
+    title: "Food Compliance Resources — GCC, FDA & EU Labeling Guides",
+    description:
+      "Free regulatory guides covering SFDA, Dubai Municipality, UAE.S 192:2019, FDA, EU, and GCC food labeling requirements.",
+    url: "https://www.recipebuilder.co/compliance-resources",
+    siteName: "RecipeBuilder",
+    type: "website",
+  },
 };
 
 const resources = [
@@ -122,7 +133,36 @@ const regulatoryBodies = [
   },
 ];
 
+// Auto-derive the full set of compliance + regulation + labeling posts so this
+// hub stays in sync with the blog without manual curation.
+const categoryColorMap: Record<string, string> = {
+  Compliance: "bg-red-50 text-red-700",
+  Regulation: "bg-amber-50 text-amber-700",
+  Labeling: "bg-green-50 text-green-700",
+  Industry: "bg-blue-50 text-blue-700",
+  Technology: "bg-purple-50 text-purple-700",
+  "Food Business": "bg-teal-50 text-teal-700",
+  "GCC Market": "bg-indigo-50 text-indigo-700",
+};
+
 export default function ComplianceResourcesPage() {
+  // Pull every Compliance / Regulation / Labeling blog post, sorted by recency.
+  const autoResources = [...blogPosts]
+    .filter((p) =>
+      ["Compliance", "Regulation", "Labeling"].includes(p.category)
+    )
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .map((p) => ({
+      slug: `/blog/${p.slug}`,
+      category: p.category,
+      categoryColor: categoryColorMap[p.category] ?? "bg-gray-50 text-gray-700",
+      title: p.title,
+      description: p.description,
+    }));
+
+  // Use auto-resources (full 25+ posts) instead of the hand-curated 7.
+  const displayResources = autoResources;
+
   return (
     <>
       <Navbar light />
@@ -197,7 +237,7 @@ export default function ComplianceResourcesPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {resources.map((resource) => (
+              {displayResources.map((resource) => (
                 <Link
                   key={resource.slug}
                   href={resource.slug}
@@ -333,6 +373,31 @@ export default function ComplianceResourcesPage() {
               { "@type": "ListItem", position: 1, name: "Home", item: "https://www.recipebuilder.co" },
               { "@type": "ListItem", position: 2, name: "Compliance Resources", item: "https://www.recipebuilder.co/compliance-resources" },
             ],
+          }),
+        }}
+      />
+
+      {/* CollectionPage + ItemList — surfaces this hub as a topical collection */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            name: "Food Compliance Resources — GCC, FDA & EU Labeling Guides",
+            description:
+              "Free regulatory guides covering SFDA, Dubai Municipality, UAE.S 192:2019, FDA, EU, and GCC food labeling requirements.",
+            url: "https://www.recipebuilder.co/compliance-resources",
+            mainEntity: {
+              "@type": "ItemList",
+              numberOfItems: displayResources.length,
+              itemListElement: displayResources.slice(0, 20).map((r, i) => ({
+                "@type": "ListItem",
+                position: i + 1,
+                url: `https://www.recipebuilder.co${r.slug}`,
+                name: r.title,
+              })),
+            },
           }),
         }}
       />

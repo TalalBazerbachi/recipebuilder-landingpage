@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import NewsletterCapture from "@/components/NewsletterCapture";
 import { blogPosts } from "@/data/blog-posts";
 import { Calendar, Clock, ArrowLeft, ArrowRight, ChefHat } from "lucide-react";
 
@@ -20,6 +21,52 @@ function splitAtSecondH2(html: string): [string, string] {
   }
   if (splitIndex === -1) return [html, ""];
   return [html.slice(0, splitIndex), html.slice(splitIndex)];
+}
+
+/**
+ * Slugify an H2 heading into a URL-safe anchor id.
+ * Mirrors what we inject into the rendered HTML in `addH2Anchors`.
+ */
+function h2Slug(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/<[^>]*>/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 80);
+}
+
+/**
+ * Extract all H2 headings from the post HTML so we can render an
+ * Affinda-style Table of Contents at the top with anchor links.
+ * Filters out the FAQ section since that has its own visual treatment.
+ */
+function extractH2Headings(html: string): { id: string; text: string }[] {
+  const h2Regex = /<h2>([\s\S]*?)<\/h2>/g;
+  const headings: { id: string; text: string }[] = [];
+  let match;
+  while ((match = h2Regex.exec(html)) !== null) {
+    const text = match[1].replace(/<[^>]*>/g, "").trim();
+    if (!text) continue;
+    // Skip auto-injected sections so the TOC stays focused on the article.
+    if (/frequently asked questions/i.test(text)) continue;
+    if (/related resources/i.test(text)) continue;
+    if (/conclusion/i.test(text) && headings.length === 0) continue;
+    headings.push({ id: h2Slug(text), text });
+  }
+  return headings;
+}
+
+/**
+ * Inject `id="..."` anchors into every H2 so the TOC links resolve to
+ * scroll positions in the rendered article.
+ */
+function addH2Anchors(html: string): string {
+  return html.replace(/<h2>([\s\S]*?)<\/h2>/g, (full, inner) => {
+    const text = inner.replace(/<[^>]*>/g, "").trim();
+    if (!text) return full;
+    return `<h2 id="${h2Slug(text)}">${inner}</h2>`;
+  });
 }
 
 function extractFaqs(html: string): { question: string; answer: string }[] {
@@ -40,6 +87,52 @@ function extractFaqs(html: string): { question: string; answer: string }[] {
   return faqs;
 }
 
+/**
+ * Detect numbered-step posts (H3s with leading numbers like "1. ", "Step 1",
+ * "01.") so we can emit HowTo schema for them. Returns the parsed steps or null.
+ */
+function extractHowToSteps(
+  html: string
+): { name: string; text: string }[] | null {
+  const stepRegex = /<h3>\s*(?:Step\s+)?(\d{1,2})[.):]?\s+([^<]+?)<\/h3>\s*([\s\S]*?)(?=<h[23]>|$)/g;
+  const steps: { name: string; text: string }[] = [];
+  let match;
+  while ((match = stepRegex.exec(html)) !== null) {
+    const text = match[3]
+      .replace(/<[^>]*>/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+    if (text.length > 40 && text.length < 800) {
+      steps.push({
+        name: match[2].trim(),
+        text,
+      });
+    }
+  }
+  return steps.length >= 3 ? steps : null;
+}
+
+/**
+ * Detect listicle posts (e.g. "5 Best ... Alternatives") by H2/H3 numbering
+ * patterns. Returns an ItemList of the top-ranked entries.
+ */
+function extractListiclePicks(
+  html: string,
+  baseUrl: string
+): { name: string; url?: string }[] | null {
+  // Match H2s that begin with a number (e.g. "1. RecipeBuilder", "2. ReciPal")
+  const pickRegex = /<h2>\s*(\d{1,2})[.):]?\s+([^<]+?)<\/h2>/g;
+  const picks: { name: string; url?: string }[] = [];
+  let match;
+  while ((match = pickRegex.exec(html)) !== null) {
+    picks.push({
+      name: match[2].trim(),
+      url: baseUrl,
+    });
+  }
+  return picks.length >= 3 ? picks : null;
+}
+
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
@@ -53,8 +146,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const post = blogPosts.find((p) => p.slug === slug);
   if (!post) return {};
 
+  // Title: keep blog post's own title intact (no brand suffix bloat).
+  // Brand appears in site name, OG site_name, and SERP domain rendering.
+  const title =
+    post.title.length <= 60
+      ? `${post.title} | RecipeBuilder`
+      : post.title;
+
   return {
-    title: `${post.title} — RecipeBuilder Blog`,
+    title,
     description: post.description,
     keywords: post.keywords,
     openGraph: {
@@ -62,6 +162,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: post.description,
       type: "article",
       publishedTime: post.date,
+      modifiedTime: post.updatedDate ?? post.date,
+      authors: post.author ? [post.author.name] : ["RecipeBuilder Editorial Team"],
+      tags: post.keywords,
       siteName: "RecipeBuilder",
       url: `https://www.recipebuilder.co/blog/${post.slug}`,
     },
@@ -89,14 +192,72 @@ export default async function BlogPostPage({ params }: PageProps) {
   const post = blogPosts.find((p) => p.slug === slug);
   if (!post) notFound();
 
-  const sorted = [...blogPosts].sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
-  const related = sorted
+  // Score-based related posts: prefer same-category + keyword overlap,
+  // tie-broken by recency. Replaces date-only sort which gave every
+  // post the same 3 "newest posts" as related.
+  const related = [...blogPosts]
     .filter((p) => p.slug !== slug)
-    .slice(0, 3);
+    .map((p) => {
+      const categoryScore = p.category === post.category ? 5 : 0;
+      const keywordOverlap = p.keywords.filter((k) =>
+        post.keywords.includes(k)
+      ).length;
+      // Cluster-aware slug similarity: shared 2-token prefix bonus.
+      const slugTokens = post.slug.split("-").slice(0, 2).join("-");
+      const slugBonus = slugTokens && p.slug.startsWith(slugTokens) ? 3 : 0;
+      const recencyTiebreaker = new Date(p.date).getTime() / 1e12;
+      return {
+        post: p,
+        score:
+          categoryScore +
+          keywordOverlap * 2 +
+          slugBonus +
+          recencyTiebreaker,
+      };
+    })
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 3)
+    .map((x) => x.post);
+
   const faqs = extractFaqs(post.content);
-  const [contentBefore, contentAfter] = splitAtSecondH2(post.content);
+  const anchoredContent = addH2Anchors(post.content);
+  const [contentBefore, contentAfter] = splitAtSecondH2(anchoredContent);
+  const tocHeadings = extractH2Headings(post.content);
+  const showToc = tocHeadings.length >= 3; // Only show TOC for substantive posts
+  const modifiedDate = post.updatedDate ?? post.date;
+  const wasUpdated = post.updatedDate && post.updatedDate !== post.date;
+  const author = post.author ?? {
+    name: "RecipeBuilder Editorial Team",
+    role: "Food Compliance & Recipe Management",
+    url: "https://www.recipebuilder.co/about",
+  };
+
+  // Heuristic schema detection
+  const howToSteps = extractHowToSteps(post.content);
+  const postUrl = `https://www.recipebuilder.co/blog/${post.slug}`;
+  const listiclePicks = /best|alternatives|alternative/i.test(post.title)
+    ? extractListiclePicks(post.content, postUrl)
+    : null;
+
+  // AI summarize URL templates (parsli-style)
+  const aiSummarizers = [
+    {
+      name: "ChatGPT",
+      href: `https://chat.openai.com/?q=${encodeURIComponent(`Summarize this RecipeBuilder article: ${postUrl}`)}`,
+    },
+    {
+      name: "Claude",
+      href: `https://claude.ai/new?q=${encodeURIComponent(`Summarize this RecipeBuilder article: ${postUrl}`)}`,
+    },
+    {
+      name: "Perplexity",
+      href: `https://www.perplexity.ai/?q=${encodeURIComponent(`Summarize this article and identify the key compliance requirements: ${postUrl}`)}`,
+    },
+    {
+      name: "Google AI",
+      href: `https://www.google.com/search?q=${encodeURIComponent(postUrl)}&udm=50`,
+    },
+  ];
 
   const proseClasses =
     "prose prose-slate max-w-none" +
@@ -127,7 +288,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               Back to Blog
             </Link>
 
-            <div className="flex items-center gap-3 mb-5">
+            <div className="flex flex-wrap items-center gap-3 mb-5">
               <span
                 className={`text-xs font-semibold px-2.5 py-1 rounded-full ${
                   categoryColors[post.category] || "bg-gray-50 text-gray-700"
@@ -143,6 +304,16 @@ export default async function BlogPostPage({ params }: PageProps) {
                   day: "numeric",
                 })}
               </span>
+              {wasUpdated && (
+                <span className="flex items-center gap-1 text-sm text-primary-dark font-medium">
+                  Updated{" "}
+                  {new Date(modifiedDate).toLocaleDateString("en-US", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
+                </span>
+              )}
               <span className="flex items-center gap-1 text-sm text-text-light">
                 <Clock className="w-3.5 h-3.5" />
                 {post.readTime}
@@ -155,12 +326,69 @@ export default async function BlogPostPage({ params }: PageProps) {
             <p className="mt-6 text-lg sm:text-xl text-text leading-relaxed max-w-3xl">
               {post.description}
             </p>
+
+            {/* Author byline — E-E-A-T signal */}
+            <div className="mt-6 flex items-center gap-3 text-sm">
+              <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center text-white font-semibold text-xs">
+                {author.name
+                  .split(" ")
+                  .map((n) => n[0])
+                  .slice(0, 2)
+                  .join("")}
+              </div>
+              <div>
+                <span className="font-medium text-foreground">
+                  By {author.name}
+                </span>
+                <span className="text-text-light"> · {author.role}</span>
+              </div>
+            </div>
+
+            {/* Summarize with AI — opens this article in the user's chatbot of choice */}
+            <div className="mt-6 flex flex-wrap items-center gap-2 text-xs">
+              <span className="text-text-light font-medium">Summarize with:</span>
+              {aiSummarizers.map((tool) => (
+                <a
+                  key={tool.name}
+                  href={tool.href}
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white border border-border rounded-full text-text font-medium hover:border-primary hover:text-primary transition-colors"
+                >
+                  {tool.name}
+                </a>
+              ))}
+            </div>
           </div>
         </section>
 
         {/* Content */}
         <section className="py-12 bg-white">
           <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Table of Contents — Affinda pattern, helps AI/LLM citation + reader navigation */}
+            {showToc && (
+              <nav
+                aria-label="Table of contents"
+                className="mb-10 rounded-xl border border-border bg-surface/40 p-6"
+              >
+                <h2 className="text-xs font-bold uppercase tracking-wider text-text-light mb-4">
+                  On this page
+                </h2>
+                <ol className="space-y-2 list-decimal list-inside marker:text-text-light marker:text-sm">
+                  {tocHeadings.map((h) => (
+                    <li key={h.id} className="text-sm">
+                      <a
+                        href={`#${h.id}`}
+                        className="text-text hover:text-primary hover:underline transition-colors"
+                      >
+                        {h.text}
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+              </nav>
+            )}
+
             <div className={proseClasses} dangerouslySetInnerHTML={{ __html: contentBefore }} />
 
             {contentAfter && (
@@ -197,21 +425,33 @@ export default async function BlogPostPage({ params }: PageProps) {
                   headline: post.title,
                   description: post.description,
                   datePublished: post.date,
-                  dateModified: post.date,
+                  dateModified: modifiedDate,
                   author: {
-                    "@type": "Organization",
-                    name: "ByteBeam",
-                    url: "https://www.bytebeam.co",
+                    "@type": "Person",
+                    name: author.name,
+                    jobTitle: author.role,
+                    url: author.url ?? "https://www.recipebuilder.co/about",
+                    worksFor: {
+                      "@type": "Organization",
+                      name: "ByteBeam",
+                      url: "https://www.bytebeam.co",
+                    },
                   },
                   publisher: {
                     "@type": "Organization",
                     name: "RecipeBuilder",
                     url: "https://www.recipebuilder.co",
+                    logo: {
+                      "@type": "ImageObject",
+                      url: "https://www.recipebuilder.co/logo.png",
+                    },
                   },
+                  image: `https://www.recipebuilder.co/blog/${post.slug}/opengraph-image`,
                   mainEntityOfPage: {
                     "@type": "WebPage",
                     "@id": `https://www.recipebuilder.co/blog/${post.slug}`,
                   },
+                  articleSection: post.category,
                   keywords: post.keywords.join(", "),
                 }),
               }}
@@ -268,7 +508,118 @@ export default async function BlogPostPage({ params }: PageProps) {
                 }}
               />
             )}
+
+            {/* HowTo JSON-LD — emitted for posts with numbered step H3s */}
+            {howToSteps && howToSteps.length >= 3 && (
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                  __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "HowTo",
+                    name: post.title,
+                    description: post.description,
+                    totalTime: `PT${
+                      parseInt(post.readTime.match(/\d+/)?.[0] ?? "10", 10)
+                    }M`,
+                    step: howToSteps.map((s, i) => ({
+                      "@type": "HowToStep",
+                      position: i + 1,
+                      name: s.name,
+                      text: s.text,
+                    })),
+                  }),
+                }}
+              />
+            )}
+
+            {/* ItemList JSON-LD — emitted for "best-of" / "alternatives" listicles */}
+            {listiclePicks && (
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                  __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "ItemList",
+                    name: post.title,
+                    description: post.description,
+                    numberOfItems: listiclePicks.length,
+                    itemListElement: listiclePicks.map((p, i) => ({
+                      "@type": "ListItem",
+                      position: i + 1,
+                      name: p.name,
+                    })),
+                  }),
+                }}
+              />
+            )}
+
+            {/* Speakable JSON-LD — flags the TL;DR + opening as voice-search / AI-summary friendly */}
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "WebPage",
+                  speakable: {
+                    "@type": "SpeakableSpecification",
+                    cssSelector: [".key-takeaways", ".blog-cta-box", "h1"],
+                    xpath: [
+                      "/html/head/title",
+                      "/html/head/meta[@name='description']/@content",
+                    ],
+                  },
+                  url: postUrl,
+                }),
+              }}
+            />
           </article>
+        </section>
+
+        {/* Author bio block — E-E-A-T signal at article close */}
+        <section className="py-12 bg-white border-t border-border">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex items-start gap-5">
+              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center text-white font-bold text-lg flex-shrink-0">
+                {author.name
+                  .split(" ")
+                  .map((n) => n[0])
+                  .slice(0, 2)
+                  .join("")}
+              </div>
+              <div>
+                <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-1">
+                  About the author
+                </p>
+                <h3 className="text-lg font-semibold text-foreground">
+                  {author.name}
+                </h3>
+                <p className="text-sm text-text-light mb-2">{author.role}</p>
+                <p className="text-text leading-relaxed text-sm">
+                  RecipeBuilder is built by the team at ByteBeam (Dubai). We
+                  work daily with food manufacturers, school caterers, and
+                  cloud kitchens across the GCC, US, EU, and UK to keep
+                  labels compliant and recipes profitable. If you spot
+                  something we got wrong here — or want to compare notes on
+                  a specific regulation —{" "}
+                  <a
+                    href="mailto:info@bytebeam.co"
+                    className="text-primary hover:underline font-medium"
+                  >
+                    email us
+                  </a>
+                  .
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Newsletter capture — keeps low-intent readers in our orbit */}
+        <section className="py-12 bg-white">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <NewsletterCapture variant="inline" />
+          </div>
         </section>
 
         {/* Related posts */}

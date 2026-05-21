@@ -20,10 +20,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title:
-    "Recipe Management Software — Organize, Analyze & Publish Recipes | RecipeBuilder",
+  title: "Recipe Management Software for Food Businesses | RecipeBuilder",
   description:
-    "RecipeBuilder's recipe management module lets food businesses create, organize, and scale recipes with automatic nutrition analysis and sub-recipe support. Built on 20,000+ USDA FoodData Central ingredients. Features batch scaling, category management, and multi-language ingredient lists. Used by restaurants, food manufacturers, bakeries, and catering companies. By ByteBeam (Dubai).",
+    "Create, organize, and scale recipes with automatic nutrition analysis and sub-recipe support. Built on 20,000+ USDA ingredients. From $29/mo (annual).",
   keywords: [
     "recipe management software",
     "recipe organizer",
@@ -37,6 +36,17 @@ export const metadata: Metadata = {
     "recipe builder tool",
     "food production recipe management",
   ],
+  alternates: {
+    canonical: "https://www.recipebuilder.co/recipe-management",
+  },
+  openGraph: {
+    title: "Recipe Management Software for Food Businesses",
+    description:
+      "Create, organize, and scale recipes with automatic nutrition analysis and sub-recipe support. Built on 20,000+ USDA ingredients.",
+    url: "https://www.recipebuilder.co/recipe-management",
+    siteName: "RecipeBuilder",
+    type: "website",
+  },
 };
 
 const coreFeatures = [
@@ -561,7 +571,7 @@ export default function RecipeManagementPage() {
             applicationCategory: "BusinessApplication",
             operatingSystem: "Web",
             description: "Organize, analyze, and publish recipes with automatic nutrition analysis, sub-recipe support, and USDA FoodData Central database access.",
-            offers: { "@type": "AggregateOffer", priceCurrency: "USD", lowPrice: "49", highPrice: "99", offerCount: "3", category: "SaaS", availability: "https://schema.org/InStock" },
+            offers: { "@type": "AggregateOffer", priceCurrency: "USD", lowPrice: "29", highPrice: "99", offerCount: "3", category: "SaaS", availability: "https://schema.org/InStock" },
             provider: { "@type": "Organization", name: "ByteBeam", url: "https://www.bytebeam.co" },
             featureList: [
               "Recipe creation and organization",

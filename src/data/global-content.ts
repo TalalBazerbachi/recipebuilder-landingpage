@@ -296,7 +296,7 @@ export const globalContent: LandingPageContent = {
       },
       {
         question: "How much does RecipeBuilder cost?",
-        answer: "RecipeBuilder starts at $1,500 for your first 1,500 recipes — that's as low as $1 per recipe. After that, additional recipes are $1.50 each. Compare that to $500–$2,000 per product for traditional lab testing. Book a demo to see the platform in action and get a personalized walkthrough.",
+        answer: "RecipeBuilder starts at $29/month billed annually ($49/month billed monthly) on the Starter plan — up to 75 recipes, unlimited label generation, barcodes, QR codes, and FDA, EU, and GCC/SFDA compliance included. The Growth plan is $69/month annually ($99 monthly) for up to 400 recipes with priority support. Business plans with unlimited recipes are custom-quoted. Compare that to $500–$2,000 per product for traditional lab testing.",
       },
       {
         question: "Can I track recipe costs and inventory?",

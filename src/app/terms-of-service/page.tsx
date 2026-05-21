@@ -3,9 +3,16 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — RecipeBuilder by ByteBeam",
+  title: "Terms of Service | RecipeBuilder",
   description:
-    "Terms of Service for RecipeBuilder, a recipe management and food labeling platform by ByteBeam.",
+    "Terms of Service for RecipeBuilder, a recipe management and food labeling platform by ByteBeam (Dubai).",
+  alternates: {
+    canonical: "https://www.recipebuilder.co/terms-of-service",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function TermsOfService() {

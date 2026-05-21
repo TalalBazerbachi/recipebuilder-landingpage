@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title:
     "RecipeBuilder Alternatives & Comparisons — vs ReciPal, Food Label Maker, Nutrical & More",
   description:
-    "See how RecipeBuilder compares against every major food labeling and nutrition software competitor. GCC/SFDA compliance, bilingual Arabic labels, packaging artwork, barcodes, and QR codes — all from $15/mo.",
+    "See how RecipeBuilder compares against every major food labeling and nutrition software competitor. GCC/SFDA compliance, bilingual Arabic labels, packaging artwork, barcodes, and QR codes — all from $29/mo billed annually.",
   keywords: [
     "RecipeBuilder alternative",
     "RecipeBuilder comparison",
@@ -86,7 +86,7 @@ const rbStrengths = [
   },
   {
     icon: CheckCircle,
-    title: "From $15/mo with Free Trial",
+    title: "From $29/mo (annual) with Free Trial",
     description:
       "Transparent, accessible pricing with a 14-day free trial — no enterprise contract or demo-only gatekeeping.",
   },
@@ -196,7 +196,7 @@ export default function ComparePage() {
               </span>
               <span className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-primary shrink-0" />
-                From $15/mo · 14-day free trial
+                From $29/mo (annual) · 14-day free trial
               </span>
             </div>
           </div>

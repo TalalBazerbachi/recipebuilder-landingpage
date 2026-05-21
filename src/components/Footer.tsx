@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { FooterContent } from "@/data/landing-content";
+import NewsletterCapture from "./NewsletterCapture";
 
 const footerLinks = {
   Product: [
@@ -28,12 +29,13 @@ const footerLinks = {
     { label: "Compliance Resources", href: "/compliance-resources" },
     { label: "GCC Food Businesses", href: "/gcc" },
     { label: "School Catering Dubai", href: "/school-catering-dubai" },
+    { label: "Blog RSS Feed", href: "/feed.xml" },
     { label: "FAQ", href: "/#faq" },
   ],
   Company: [
     { label: "About Us", href: "/about" },
     { label: "ByteBeam", href: "https://www.bytebeam.co" },
-    { label: "Contact Us", href: "mailto:talal@bytebeam.co" },
+    { label: "Contact Sales", href: "mailto:info@bytebeam.co?subject=RecipeBuilder%20Inquiry" },
     { label: "Privacy Policy", href: "/privacy-policy" },
     { label: "Terms of Service", href: "/terms-of-service" },
   ],
@@ -47,6 +49,25 @@ export default function Footer({ content = defaultContent }: { content?: FooterC
   return (
     <footer className="relative bg-dark overflow-hidden">
       <div className="absolute inset-0 bg-grid-pattern" />
+
+      {/* Newsletter bar — captures low-intent visitors before the link wall */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8 border-b border-white/10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-2">
+              Stay ahead of food compliance changes
+            </h3>
+            <p className="text-white/60 text-sm leading-relaxed max-w-md">
+              Practical guides on FDA, EU, and GCC food labeling, Dubai
+              Municipality requirements, and food cost management — when
+              there&apos;s something worth reading. No spam.
+            </p>
+          </div>
+          <div>
+            <NewsletterCapture variant="compact" />
+          </div>
+        </div>
+      </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-10">
@@ -62,7 +83,7 @@ export default function Footer({ content = defaultContent }: { content?: FooterC
               {content.description}
             </p>
             <div className="mt-6 space-y-2 text-sm text-white/40">
-              <p>talal@bytebeam.co</p>
+              <p>info@bytebeam.co</p>
             </div>
             <div className="mt-5 flex items-center gap-3">
               <a

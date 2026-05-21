@@ -33,7 +33,7 @@ export const comparePages: CompareData[] = [
     competitorRegions: "USA, Canada (FDA & CFIA only)",
     heroHeadline: "Looking for a ReciPal alternative?",
     heroSubtext:
-      "ReciPal is the go-to tool for US food entrepreneurs — but the moment you need GCC compliance, bilingual Arabic labels, or print-ready packaging artwork, it falls short. RecipeBuilder covers 10+ regulatory frameworks including GCC/SFDA, generates full packaging artwork with barcodes and QR codes, and supports 40+ languages out of the box. All starting from $15/mo.",
+      "ReciPal is the go-to tool for US food entrepreneurs — but the moment you need GCC compliance, bilingual Arabic labels, or print-ready packaging artwork, it falls short. RecipeBuilder covers 10+ regulatory frameworks including GCC/SFDA, generates full packaging artwork with barcodes and QR codes, and supports 40+ languages out of the box. All starting from $29/mo billed annually.",
     featureRows: [
       {
         feature: "Regulatory frameworks",
@@ -85,7 +85,7 @@ export const comparePages: CompareData[] = [
       },
       {
         feature: "Starting price",
-        recipebuilder: "From $15/mo",
+        recipebuilder: "From $29/mo (annual)",
         competitor: "From $49/mo",
         rbWins: true,
       },
@@ -104,7 +104,7 @@ export const comparePages: CompareData[] = [
       "Recipe costing, margin analysis, and inventory management — a complete platform, not just a label tool",
     ],
     metaDescription:
-      "Comparing RecipeBuilder vs ReciPal? RecipeBuilder covers GCC/SFDA compliance, bilingual Arabic labels, packaging artwork, barcodes, and QR codes — all starting from $15/mo. ReciPal is FDA/CFIA only.",
+      "Comparing RecipeBuilder vs ReciPal? RecipeBuilder covers GCC/SFDA compliance, bilingual Arabic labels, packaging artwork, barcodes, and QR codes — all starting from $29/mo billed annually. ReciPal is FDA/CFIA only.",
     keywords: [
       "ReciPal alternative",
       "ReciPal vs RecipeBuilder",
@@ -184,7 +184,7 @@ export const comparePages: CompareData[] = [
       },
       {
         feature: "Starting price",
-        recipebuilder: "From $15/mo",
+        recipebuilder: "From $29/mo (annual)",
         competitor: "From $39/mo",
         rbWins: true,
       },
@@ -200,10 +200,10 @@ export const comparePages: CompareData[] = [
       "Bilingual Arabic/English labels generated automatically, essential for GCC retail and foodservice",
       "Complete packaging artwork output: ingredient declarations, allergens, barcodes, QR codes, and storage info in one file",
       "Recipe costing and inventory management bundled in — no need to manage separate tools",
-      "More transparent and accessible pricing starting at $15/mo vs enterprise-tier lock-in",
+      "More transparent and accessible pricing starting at $29/mo billed annually vs enterprise-tier lock-in",
     ],
     metaDescription:
-      "RecipeBuilder vs Food Label Maker: RecipeBuilder adds GCC/SFDA compliance, bilingual Arabic, packaging artwork, barcodes, and QR codes that Food Label Maker doesn't offer — from $15/mo.",
+      "RecipeBuilder vs Food Label Maker: RecipeBuilder adds GCC/SFDA compliance, bilingual Arabic, packaging artwork, barcodes, and QR codes that Food Label Maker doesn't offer — from $29/mo billed annually.",
     keywords: [
       "Food Label Maker alternative",
       "Food Label Maker vs RecipeBuilder",
@@ -230,7 +230,7 @@ export const comparePages: CompareData[] = [
     competitorRegions: "GCC-focused; limited international",
     heroHeadline: "Looking for a Nutrical alternative?",
     heroSubtext:
-      "Nutrical covers GCC nutrition basics, but food businesses need more than a facts panel — they need complete packaging artwork, barcodes, QR codes, and the flexibility to sell into FDA or EU markets as well. RecipeBuilder delivers the full picture: GCC/SFDA compliance plus 9 additional regulatory frameworks, print-ready artwork, and built-in recipe costing, all from $15/mo.",
+      "Nutrical covers GCC nutrition basics, but food businesses need more than a facts panel — they need complete packaging artwork, barcodes, QR codes, and the flexibility to sell into FDA or EU markets as well. RecipeBuilder delivers the full picture: GCC/SFDA compliance plus 9 additional regulatory frameworks, print-ready artwork, and built-in recipe costing, all from $29/mo billed annually.",
     featureRows: [
       {
         feature: "Regulatory frameworks",
@@ -282,7 +282,7 @@ export const comparePages: CompareData[] = [
       },
       {
         feature: "Starting price",
-        recipebuilder: "From $15/mo — transparent pricing",
+        recipebuilder: "From $29/mo (annual) — transparent pricing",
         competitor: "Custom pricing — no public rates",
         rbWins: true,
       },
@@ -297,11 +297,11 @@ export const comparePages: CompareData[] = [
       "RecipeBuilder matches Nutrical on GCC/SFDA compliance while also covering FDA, EU, Codex, and 7 more frameworks",
       "Full packaging artwork generation — barcodes, QR codes, ingredient declarations, and allergen panels in one export",
       "20,000+ USDA-verified ingredients vs a smaller proprietary database",
-      "Transparent subscription pricing from $15/mo with a free trial — no custom-quote gatekeeping",
+      "Transparent subscription pricing from $29/mo billed annually with a free trial — no custom-quote gatekeeping",
       "Recipe costing, margin tracking, and inventory management built in alongside labeling",
     ],
     metaDescription:
-      "RecipeBuilder vs Nutrical: both cover GCC/SFDA, but RecipeBuilder also adds FDA, EU, packaging artwork, barcodes, QR codes, recipe costing, and a 14-day free trial from $15/mo.",
+      "RecipeBuilder vs Nutrical: both cover GCC/SFDA, but RecipeBuilder also adds FDA, EU, packaging artwork, barcodes, QR codes, recipe costing, and a 14-day free trial from $29/mo billed annually.",
     keywords: [
       "Nutrical alternative",
       "Nutrical vs RecipeBuilder",
@@ -327,7 +327,7 @@ export const comparePages: CompareData[] = [
     competitorRegions: "USA only",
     heroHeadline: "Looking for a LabelCalc alternative?",
     heroSubtext:
-      "LabelCalc served a generation of US food producers, but it was never built for global markets, bilingual labels, or modern packaging workflows. RecipeBuilder is a purpose-built, cloud-native platform covering GCC/SFDA, FDA, EU, and 7 more frameworks — with auto-generated packaging artwork, barcodes, QR codes, and recipe costing starting at $15/mo.",
+      "LabelCalc served a generation of US food producers, but it was never built for global markets, bilingual labels, or modern packaging workflows. RecipeBuilder is a purpose-built, cloud-native platform covering GCC/SFDA, FDA, EU, and 7 more frameworks — with auto-generated packaging artwork, barcodes, QR codes, and recipe costing starting at $29/mo billed annually.",
     featureRows: [
       {
         feature: "Regulatory frameworks",
@@ -379,7 +379,7 @@ export const comparePages: CompareData[] = [
       },
       {
         feature: "Starting price",
-        recipebuilder: "From $15/mo",
+        recipebuilder: "From $29/mo (annual)",
         competitor: "From $500+/yr enterprise pricing",
         rbWins: true,
       },
@@ -394,11 +394,11 @@ export const comparePages: CompareData[] = [
       "Modern cloud-native platform vs a legacy desktop-era tool now bundled into an ERP product",
       "GCC/SFDA and multi-framework support for businesses selling across regions — not US-only",
       "Full packaging artwork with barcodes and QR codes in a single export — no extra tools needed",
-      "Accessible pricing from $15/mo vs $500+/yr enterprise contracts with no free trial",
+      "Accessible pricing from $29/mo billed annually vs $500+/yr enterprise contracts with no free trial",
       "Built-in recipe costing and inventory without requiring an expensive ERP add-on",
     ],
     metaDescription:
-      "RecipeBuilder vs LabelCalc (Datacor): RecipeBuilder offers GCC/SFDA compliance, bilingual Arabic labels, packaging artwork, barcodes, and accessible pricing from $15/mo — LabelCalc is US-only with dated interface.",
+      "RecipeBuilder vs LabelCalc (Datacor): RecipeBuilder offers GCC/SFDA compliance, bilingual Arabic labels, packaging artwork, barcodes, and accessible pricing from $29/mo billed annually — LabelCalc is US-only with dated interface.",
     keywords: [
       "LabelCalc alternative",
       "LabelCalc Datacor alternative",
@@ -426,7 +426,7 @@ export const comparePages: CompareData[] = [
     competitorRegions: "USA, Canada (no GCC or international market focus)",
     heroHeadline: "Looking for a Genesis R&D alternative?",
     heroSubtext:
-      "Genesis R&D is the gold standard for large US food manufacturers — but at $18,000+/yr with no GCC/SFDA support and a steep learning curve, it is simply not built for growing food businesses. RecipeBuilder delivers professional-grade nutrition labeling, packaging artwork, GCC/SFDA compliance, and recipe management starting at $15/mo with a 14-day free trial.",
+      "Genesis R&D is the gold standard for large US food manufacturers — but at $18,000+/yr with no GCC/SFDA support and a steep learning curve, it is simply not built for growing food businesses. RecipeBuilder delivers professional-grade nutrition labeling, packaging artwork, GCC/SFDA compliance, and recipe management starting at $29/mo billed annually with a 14-day free trial.",
     featureRows: [
       {
         feature: "Regulatory frameworks",
@@ -478,7 +478,7 @@ export const comparePages: CompareData[] = [
       },
       {
         feature: "Starting price",
-        recipebuilder: "From $15/mo",
+        recipebuilder: "From $29/mo (annual)",
         competitor: "$18,000+/yr enterprise license",
         rbWins: true,
       },
@@ -490,14 +490,14 @@ export const comparePages: CompareData[] = [
       },
     ],
     keyDifferentiators: [
-      "Accessible pricing — from $15/mo vs $18,000+/yr, with a free trial and no sales gatekeeping",
+      "Accessible pricing — from $29/mo billed annually vs $18,000+/yr, with a free trial and no sales gatekeeping",
       "GCC/SFDA compliance and Arabic labeling that Genesis R&D simply does not offer",
       "Packaging artwork, barcodes, and QR codes included — Genesis R&D outputs reports, not print-ready label files",
       "Purpose-built for growing food businesses: fast onboarding, intuitive UI, no enterprise implementation project required",
       "Recipe costing and inventory alongside compliance — a unified platform rather than a standalone analytics tool",
     ],
     metaDescription:
-      "RecipeBuilder vs Genesis R&D: get professional food labeling with GCC/SFDA compliance, bilingual Arabic, and packaging artwork from $15/mo — not $18,000+/yr with no GCC support.",
+      "RecipeBuilder vs Genesis R&D: get professional food labeling with GCC/SFDA compliance, bilingual Arabic, and packaging artwork from $29/mo billed annually — not $18,000+/yr with no GCC support.",
     keywords: [
       "Genesis R&D alternative",
       "Genesis R&D affordable alternative",
@@ -524,7 +524,7 @@ export const comparePages: CompareData[] = [
     competitorRegions: "UK, EU, Ireland (no GCC/Middle East)",
     heroHeadline: "Looking for a Nutritics alternative?",
     heroSubtext:
-      "Nutritics is a powerful UK/EU nutrition tool — but if your business operates in the GCC, needs bilingual Arabic labels, or requires print-ready packaging artwork for retail, it falls short. RecipeBuilder fills every gap: GCC/SFDA compliance, bilingual English and Arabic output, full packaging artwork with barcodes and QR codes, and recipe costing — starting from $15/mo.",
+      "Nutritics is a powerful UK/EU nutrition tool — but if your business operates in the GCC, needs bilingual Arabic labels, or requires print-ready packaging artwork for retail, it falls short. RecipeBuilder fills every gap: GCC/SFDA compliance, bilingual English and Arabic output, full packaging artwork with barcodes and QR codes, and recipe costing — starting from $29/mo billed annually.",
     featureRows: [
       {
         feature: "Regulatory frameworks",
@@ -576,7 +576,7 @@ export const comparePages: CompareData[] = [
       },
       {
         feature: "Starting price",
-        recipebuilder: "From $15/mo",
+        recipebuilder: "From $29/mo (annual)",
         competitor: "From ~£99/mo (~$125/mo)",
         rbWins: true,
       },
@@ -591,11 +591,11 @@ export const comparePages: CompareData[] = [
       "GCC/SFDA compliance and 9 additional regulatory frameworks vs Nutritics' EU/UK-only focus",
       "Bilingual Arabic/English label output for GCC retail and foodservice — not available in Nutritics",
       "Full packaging artwork generation with barcodes and QR codes — a complete print-ready file, not just a data export",
-      "Lower starting price: $15/mo vs ~£99/mo for a product purpose-built for GCC food businesses",
+      "Lower starting price: $29/mo billed annually vs ~£99/mo for a product purpose-built for GCC food businesses",
       "5,000+ labels already approved by Dubai Municipality — proven track record in the GCC market",
     ],
     metaDescription:
-      "RecipeBuilder vs Nutritics: RecipeBuilder adds GCC/SFDA compliance, bilingual Arabic labels, and packaging artwork that Nutritics doesn't offer — from $15/mo. Ideal for GCC and international food businesses.",
+      "RecipeBuilder vs Nutritics: RecipeBuilder adds GCC/SFDA compliance, bilingual Arabic labels, and packaging artwork that Nutritics doesn't offer — from $29/mo billed annually. Ideal for GCC and international food businesses.",
     keywords: [
       "Nutritics alternative",
       "Nutritics vs RecipeBuilder",
@@ -673,7 +673,7 @@ export const comparePages: CompareData[] = [
       },
       {
         feature: "Starting price",
-        recipebuilder: "From $15/mo",
+        recipebuilder: "From $29/mo (annual)",
         competitor: "From $39/mo",
         rbWins: true,
       },
@@ -692,7 +692,7 @@ export const comparePages: CompareData[] = [
       "Lower starting price with more features included in the base plan",
     ],
     metaDescription:
-      "RecipeBuilder vs Nutritionist Pro: RecipeBuilder adds GCC/SFDA compliance, Arabic labels, packaging artwork with barcodes and QR codes from $15/mo — Nutritionist Pro skips the GCC market entirely.",
+      "RecipeBuilder vs Nutritionist Pro: RecipeBuilder adds GCC/SFDA compliance, Arabic labels, packaging artwork with barcodes and QR codes from $29/mo billed annually — Nutritionist Pro skips the GCC market entirely.",
     keywords: [
       "Nutritionist Pro alternative",
       "Nutritionist Pro vs RecipeBuilder",
@@ -716,7 +716,7 @@ export const comparePages: CompareData[] = [
     competitorRegions: "Canada, USA (no GCC or international)",
     heroHeadline: "Looking for a MenuSano alternative?",
     heroSubtext:
-      "MenuSano works well for Canadian restaurant menu labeling, but it was never designed for packaged food manufacturing, GCC compliance, or Arabic markets. RecipeBuilder is built for the full food production workflow: GCC/SFDA labeling, bilingual Arabic output, print-ready packaging artwork with barcodes and QR codes, recipe costing, and inventory management — starting from $15/mo.",
+      "MenuSano works well for Canadian restaurant menu labeling, but it was never designed for packaged food manufacturing, GCC compliance, or Arabic markets. RecipeBuilder is built for the full food production workflow: GCC/SFDA labeling, bilingual Arabic output, print-ready packaging artwork with barcodes and QR codes, recipe costing, and inventory management — starting from $29/mo billed annually.",
     featureRows: [
       {
         feature: "Regulatory frameworks",
@@ -768,7 +768,7 @@ export const comparePages: CompareData[] = [
       },
       {
         feature: "Starting price",
-        recipebuilder: "From $15/mo",
+        recipebuilder: "From $29/mo (annual)",
         competitor: "From $69/mo",
         rbWins: true,
       },
@@ -783,11 +783,11 @@ export const comparePages: CompareData[] = [
       "Built for packaged food manufacturing — not just restaurant menus — with full retail packaging artwork output",
       "GCC/SFDA compliance and bilingual Arabic labels for food businesses in the Gulf region",
       "Barcodes and QR codes auto-generated on every label — essential for retail product traceability",
-      "Lower starting price ($15/mo vs $69/mo) for a broader feature set",
+      "Lower starting price ($29/mo billed annually vs $69/mo) for a broader feature set",
       "Inventory management and margin tracking built in alongside labeling",
     ],
     metaDescription:
-      "RecipeBuilder vs MenuSano: RecipeBuilder covers GCC/SFDA compliance, bilingual Arabic, packaging artwork, barcodes, and QR codes from $15/mo — MenuSano is a Canada/US restaurant tool only.",
+      "RecipeBuilder vs MenuSano: RecipeBuilder covers GCC/SFDA compliance, bilingual Arabic, packaging artwork, barcodes, and QR codes from $29/mo billed annually — MenuSano is a Canada/US restaurant tool only.",
     keywords: [
       "MenuSano alternative",
       "MenuSano vs RecipeBuilder",
@@ -814,7 +814,7 @@ export const comparePages: CompareData[] = [
     competitorRegions: "UK and EU only",
     heroHeadline: "Looking for a Nutraid alternative?",
     heroSubtext:
-      "Nutraid is an accessible entry point for UK food labeling basics, but it cannot support GCC markets, Arabic language requirements, or print-ready packaging artwork. RecipeBuilder handles all of this — GCC/SFDA compliance, bilingual Arabic/English labels, barcodes, QR codes, and full packaging artwork — while remaining affordable at $15/mo with a 14-day free trial.",
+      "Nutraid is an accessible entry point for UK food labeling basics, but it cannot support GCC markets, Arabic language requirements, or print-ready packaging artwork. RecipeBuilder handles all of this — GCC/SFDA compliance, bilingual Arabic/English labels, barcodes, QR codes, and full packaging artwork — while remaining affordable at $29/mo billed annually with a 14-day free trial.",
     featureRows: [
       {
         feature: "Regulatory frameworks",
@@ -866,7 +866,7 @@ export const comparePages: CompareData[] = [
       },
       {
         feature: "Starting price",
-        recipebuilder: "From $15/mo",
+        recipebuilder: "From $29/mo (annual)",
         competitor: "From ~£19/mo (~$24/mo)",
         rbWins: true,
       },
@@ -885,7 +885,7 @@ export const comparePages: CompareData[] = [
       "5,000+ labels already approved by Dubai Municipality — Nutraid has no presence in GCC markets",
     ],
     metaDescription:
-      "RecipeBuilder vs Nutraid: RecipeBuilder covers GCC/SFDA, Arabic, packaging artwork, barcodes, and QR codes — Nutraid is UK/EU only. Both affordable, but RecipeBuilder scales globally from $15/mo.",
+      "RecipeBuilder vs Nutraid: RecipeBuilder covers GCC/SFDA, Arabic, packaging artwork, barcodes, and QR codes — Nutraid is UK/EU only. Both affordable, but RecipeBuilder scales globally from $29/mo billed annually.",
     keywords: [
       "Nutraid alternative",
       "Nutraid vs RecipeBuilder",
@@ -909,7 +909,7 @@ export const comparePages: CompareData[] = [
     competitorRegions: "Global (but dietitian/coaching focus)",
     heroHeadline: "Looking for a Foodzilla alternative for food manufacturing?",
     heroSubtext:
-      "Foodzilla excels at dietitian client management and meal planning — but it is not a food labeling or manufacturing compliance tool. If your business needs regulatory-compliant food labels, packaging artwork, barcodes, QR codes, and GCC/SFDA compliance, RecipeBuilder is the purpose-built solution starting at $15/mo with a 14-day free trial.",
+      "Foodzilla excels at dietitian client management and meal planning — but it is not a food labeling or manufacturing compliance tool. If your business needs regulatory-compliant food labels, packaging artwork, barcodes, QR codes, and GCC/SFDA compliance, RecipeBuilder is the purpose-built solution starting at $29/mo billed annually with a 14-day free trial.",
     featureRows: [
       {
         feature: "Regulatory frameworks",
@@ -961,7 +961,7 @@ export const comparePages: CompareData[] = [
       },
       {
         feature: "Starting price",
-        recipebuilder: "From $15/mo",
+        recipebuilder: "From $29/mo (annual)",
         competitor: "From $29/mo",
         rbWins: true,
       },
@@ -980,7 +980,7 @@ export const comparePages: CompareData[] = [
       "5,000+ labels approved by Dubai Municipality — a proven food compliance track record",
     ],
     metaDescription:
-      "RecipeBuilder vs Foodzilla: Foodzilla is for dietitians and coaches. RecipeBuilder is the food manufacturing and compliance platform with GCC/SFDA labeling, packaging artwork, and barcodes from $15/mo.",
+      "RecipeBuilder vs Foodzilla: Foodzilla is for dietitians and coaches. RecipeBuilder is the food manufacturing and compliance platform with GCC/SFDA labeling, packaging artwork, and barcodes from $29/mo billed annually.",
     keywords: [
       "Foodzilla alternative food manufacturing",
       "Foodzilla vs RecipeBuilder",
@@ -1004,7 +1004,7 @@ export const comparePages: CompareData[] = [
     competitorRegions: "UK foodservice industry only",
     heroHeadline: "Looking for an Erudus alternative for food labeling?",
     heroSubtext:
-      "Erudus is a UK allergen data-sharing network for foodservice — not a food labeling platform. If you need to generate regulatory-compliant food labels, packaging artwork, and GCC/SFDA compliance documents, RecipeBuilder is the complete solution: 10+ frameworks, bilingual Arabic/English labels, barcodes, QR codes, and recipe costing from $15/mo.",
+      "Erudus is a UK allergen data-sharing network for foodservice — not a food labeling platform. If you need to generate regulatory-compliant food labels, packaging artwork, and GCC/SFDA compliance documents, RecipeBuilder is the complete solution: 10+ frameworks, bilingual Arabic/English labels, barcodes, QR codes, and recipe costing from $29/mo billed annually.",
     featureRows: [
       {
         feature: "Regulatory frameworks",
@@ -1056,7 +1056,7 @@ export const comparePages: CompareData[] = [
       },
       {
         feature: "Starting price",
-        recipebuilder: "From $15/mo",
+        recipebuilder: "From $29/mo (annual)",
         competitor: "Free for suppliers; £200+/yr for operators",
         rbWins: true,
       },
@@ -1075,7 +1075,7 @@ export const comparePages: CompareData[] = [
       "Designed for food manufacturers producing retail products, not just UK foodservice operators",
     ],
     metaDescription:
-      "RecipeBuilder vs Erudus: Erudus is a UK allergen data network. RecipeBuilder is a complete food labeling platform with GCC/SFDA compliance, packaging artwork, barcodes, and Arabic labels from $15/mo.",
+      "RecipeBuilder vs Erudus: Erudus is a UK allergen data network. RecipeBuilder is a complete food labeling platform with GCC/SFDA compliance, packaging artwork, barcodes, and Arabic labels from $29/mo billed annually.",
     keywords: [
       "Erudus alternative",
       "Erudus vs RecipeBuilder",
@@ -1099,7 +1099,7 @@ export const comparePages: CompareData[] = [
     competitorRegions: "Global (but tied to physical lab location and shipping)",
     heroHeadline: "RecipeBuilder vs nutrition lab testing — software wins",
     heroSubtext:
-      "Lab testing is the traditional route to nutritional data, but $300–$800 per test and a 2–4 week wait makes fast recipe iteration impossible. RecipeBuilder calculates nutrition in real time from 20,000+ USDA-verified ingredients, generates GCC/SFDA-compliant labels instantly, and produces print-ready packaging artwork with barcodes and QR codes — all from $15/mo with unlimited recipe iterations.",
+      "Lab testing is the traditional route to nutritional data, but $300–$800 per test and a 2–4 week wait makes fast recipe iteration impossible. RecipeBuilder calculates nutrition in real time from 20,000+ USDA-verified ingredients, generates GCC/SFDA-compliant labels instantly, and produces print-ready packaging artwork with barcodes and QR codes — all from $29/mo billed annually with unlimited recipe iterations.",
     featureRows: [
       {
         feature: "Regulatory frameworks",
@@ -1151,7 +1151,7 @@ export const comparePages: CompareData[] = [
       },
       {
         feature: "Starting price",
-        recipebuilder: "From $15/mo — unlimited recipe iterations",
+        recipebuilder: "From $29/mo (annual) — unlimited recipe iterations",
         competitor: "$300–$800 per test per recipe version",
         rbWins: true,
       },
@@ -1167,10 +1167,10 @@ export const comparePages: CompareData[] = [
       "Unlimited recipe changes at no extra cost — reformulate freely without paying $300–$800 per test",
       "Full GCC/SFDA compliance, bilingual labels, and packaging artwork included — lab testing gives you data, not labels",
       "Barcodes and QR codes auto-generated — no additional design or development work needed",
-      "Starting from $15/mo vs hundreds of dollars per single lab test — dramatically lower cost at scale",
+      "Starting from $29/mo billed annually vs hundreds of dollars per single lab test — dramatically lower cost at scale",
     ],
     metaDescription:
-      "RecipeBuilder vs lab nutrition testing: get instant GCC/SFDA-compliant labels, packaging artwork, barcodes, and unlimited recipe iterations from $15/mo — vs $300–$800 per lab test with 2–4 week wait.",
+      "RecipeBuilder vs lab nutrition testing: get instant GCC/SFDA-compliant labels, packaging artwork, barcodes, and unlimited recipe iterations from $29/mo billed annually — vs $300–$800 per lab test with 2–4 week wait.",
     keywords: [
       "nutrition lab testing alternative",
       "nutrition analysis software vs lab testing",

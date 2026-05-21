@@ -6,9 +6,9 @@ import { blogPosts } from "@/data/blog-posts";
 import { Calendar, Clock, ArrowRight, BookOpen, ChefHat } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Blog — RecipeBuilder | Food Labeling & Recipe Management Insights",
+  title: "Food Labeling & Recipe Management Blog | RecipeBuilder",
   description:
-    "RecipeBuilder blog by ByteBeam. Expert guides on GCC food labeling regulations, SFDA compliance, UAE food labeling requirements, nutrition analysis, allergen management, halal certification, and recipe management best practices for food businesses in the UAE, Saudi Arabia, and Gulf region.",
+    "Expert guides on GCC, FDA, and EU food labeling, SFDA compliance, allergen management, halal certification, and recipe management for food businesses.",
   keywords: [
     "food labeling blog",
     "GCC food regulations",
@@ -19,6 +19,17 @@ export const metadata: Metadata = {
     "allergen labeling GCC",
     "halal food labeling",
   ],
+  alternates: {
+    canonical: "https://www.recipebuilder.co/blog",
+  },
+  openGraph: {
+    title: "Food Labeling & Recipe Management Blog",
+    description:
+      "Expert guides on GCC, FDA, and EU food labeling, SFDA compliance, allergen management, and recipe management.",
+    url: "https://www.recipebuilder.co/blog",
+    siteName: "RecipeBuilder",
+    type: "website",
+  },
 };
 
 const categoryColors: Record<string, string> = {

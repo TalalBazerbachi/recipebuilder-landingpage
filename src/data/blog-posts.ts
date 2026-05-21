@@ -3,9 +3,24 @@ export interface BlogPost {
   title: string;
   description: string;
   date: string;
+  /**
+   * Optional ISO date of the most recent meaningful content update.
+   * If absent, blog template falls back to `date`. Bump this when
+   * regulations or numbers change so Google sees fresh `dateModified`.
+   */
+  updatedDate?: string;
   category: string;
   readTime: string;
   keywords: string[];
+  /**
+   * Optional individual author byline. If absent, falls back to
+   * the RecipeBuilder Editorial Team org-level byline.
+   */
+  author?: {
+    name: string;
+    role: string;
+    url?: string;
+  };
   content: string; // HTML string
 }
 
@@ -2798,6 +2813,7 @@ export const blogPosts: BlogPost[] = [
 <h2>Conclusion: School Food Compliance Is the Price of Market Access</h2>
 <p>Dubai's school food market is valuable — recurring contracts, predictable volumes, and long-term relationships. But access is strictly controlled by Dubai Municipality, and the standards are high. Caterers that invest in proper food safety systems, accurate nutritional analysis, robust allergen management, and compliant labeling will win and retain school contracts. Those that treat compliance as an afterthought will find themselves excluded from one of Dubai's most attractive food service segments.</p>
 
+<div class="blog-cta-box"><h3>RecipeBuilder for Dubai School Caterers</h3><p>RecipeBuilder generates Dubai Municipality-compliant nutrition labels, allergen matrices (all 14 GSO allergens), Smart Food Choices traffic-light classifications, and NutriCheck audit documentation from a single platform — used by school caterers across the UAE to maintain MySchoolFood compliance. <a href="/school-catering-dubai">See how RecipeBuilder helps Dubai school caterers stay compliant →</a></p></div>
 <h3>Related Resources</h3>
 <ul>
 <li><a href="/blog/nutri-check-dubai-school-canteen-compliance-guide">How to Use NutriCheck for Dubai School Canteen Compliance</a></li>
@@ -2974,6 +2990,7 @@ export const blogPosts: BlogPost[] = [
 <h2>Conclusion: Food Safety Is the Foundation of Every Successful Dubai Catering Business</h2>
 <p>Dubai's catering market is competitive, profitable, and growing. But every catering company in the emirate operates under the watchful oversight of Dubai Municipality's Food Safety Department. The businesses that succeed are those that treat food safety not as a regulatory burden but as a core operational capability — embedded in their systems, their training, their documentation, and their culture. The cost of compliance is predictable and manageable. The cost of non-compliance — fines, closure, lost contracts, reputational damage — is not.</p>
 
+<div class="blog-cta-box"><h3>RecipeBuilder for Dubai School Caterers</h3><p>RecipeBuilder generates Dubai Municipality-compliant nutrition labels, allergen matrices (all 14 GSO allergens), Smart Food Choices traffic-light classifications, and NutriCheck audit documentation from a single platform — used by school caterers across the UAE to maintain MySchoolFood compliance. <a href="/school-catering-dubai">See how RecipeBuilder helps Dubai school caterers stay compliant →</a></p></div>
 <h3>Related Resources</h3>
 <ul>
 <li><a href="/blog/dubai-municipality-school-food-requirements-caterers-guide">Dubai Municipality School Food Requirements: Complete Guide for Caterers</a></li>
@@ -3130,6 +3147,7 @@ export const blogPosts: BlogPost[] = [
 <h2>Conclusion: Preparation Is the Difference Between 6 Weeks and 6 Months</h2>
 <p>The path to becoming an approved school food supplier in Dubai is straightforward but demanding. The businesses that move through the process quickly are those that prepare their documentation thoroughly before submitting, invest in accurate nutritional analysis tools, ensure their facility meets standards before the inspection, and treat the application as a project with defined milestones and deadlines. The school food market in Dubai rewards preparation — and penalizes shortcuts.</p>
 
+<div class="blog-cta-box"><h3>RecipeBuilder for Dubai School Caterers</h3><p>RecipeBuilder generates Dubai Municipality-compliant nutrition labels, allergen matrices (all 14 GSO allergens), Smart Food Choices traffic-light classifications, and NutriCheck audit documentation from a single platform — used by school caterers across the UAE to maintain MySchoolFood compliance. <a href="/school-catering-dubai">See how RecipeBuilder helps Dubai school caterers stay compliant →</a></p></div>
 <h3>Related Resources</h3>
 <ul>
 <li><a href="/blog/dubai-municipality-school-food-requirements-caterers-guide">Dubai Municipality School Food Requirements: Complete Guide for Caterers</a></li>
@@ -3279,6 +3297,7 @@ export const blogPosts: BlogPost[] = [
 <h2>Conclusion: Nutrition Compliance Is a Data Problem — Solve It with Data Tools</h2>
 <p>The fundamental challenge of school nutrition compliance is not understanding what the requirements are — this guide has laid them out clearly. The challenge is maintaining accurate, up-to-date nutritional data for every item on a rotating menu, across multiple age groups, with allergen tracking that reflects current production, and documentation that can withstand inspection scrutiny. This is a data management problem, and it requires data management tools. Caterers that invest in systematic recipe-to-nutrition workflows will maintain compliance efficiently. Those that rely on manual calculations and static spreadsheets will spend disproportionate time on compliance — and still face higher risk of errors and inspection failures.</p>
 
+<div class="blog-cta-box"><h3>RecipeBuilder for Dubai School Caterers</h3><p>RecipeBuilder generates Dubai Municipality-compliant nutrition labels, allergen matrices (all 14 GSO allergens), Smart Food Choices traffic-light classifications, and NutriCheck audit documentation from a single platform — used by school caterers across the UAE to maintain MySchoolFood compliance. <a href="/school-catering-dubai">See how RecipeBuilder helps Dubai school caterers stay compliant →</a></p></div>
 <h3>Related Resources</h3>
 <ul>
 <li><a href="/blog/smart-food-choices-system-dubai-school-canteen">Dubai's Smart Food Choices System: Green, Yellow, Red & Black Categories Explained</a></li>
@@ -3460,6 +3479,7 @@ export const blogPosts: BlogPost[] = [
 <h3>How does NutriCheck connect to my FoodWatch grading?</h3>
 <p>NutriCheck self-audit performance is one of the data inputs that Dubai Municipality uses when assigning and reviewing FoodWatch grades. Consistent audit passes support a strong FoodWatch rating; recurring failures — particularly in food safety and allergen management — can result in a grade downgrade.</p>
 
+<div class="blog-cta-box"><h3>RecipeBuilder for Dubai School Caterers</h3><p>RecipeBuilder generates Dubai Municipality-compliant nutrition labels, allergen matrices (all 14 GSO allergens), Smart Food Choices traffic-light classifications, and NutriCheck audit documentation from a single platform — used by school caterers across the UAE to maintain MySchoolFood compliance. <a href="/school-catering-dubai">See how RecipeBuilder helps Dubai school caterers stay compliant →</a></p></div>
 <h3>Related Resources</h3>
 <ul>
 <li><a href="/blog/dubai-municipality-school-food-requirements-caterers-guide">Dubai Municipality School Food Requirements: Complete Guide for Caterers</a></li>
@@ -3613,6 +3633,7 @@ export const blogPosts: BlogPost[] = [
 <h3>Who verifies our Smart Food Choices classifications?</h3>
 <p>Your classifications are subject to verification through the NutriCheck monthly self-audit process and during physical inspections by Dubai Municipality Food Safety inspectors. Inspectors may request the nutritional analysis documentation that underpins your classifications. If a classification cannot be supported by documented nutritional analysis, it is treated as unverified — which is a compliance finding.</p>
 
+<div class="blog-cta-box"><h3>RecipeBuilder for Dubai School Caterers</h3><p>RecipeBuilder generates Dubai Municipality-compliant nutrition labels, allergen matrices (all 14 GSO allergens), Smart Food Choices traffic-light classifications, and NutriCheck audit documentation from a single platform — used by school caterers across the UAE to maintain MySchoolFood compliance. <a href="/school-catering-dubai">See how RecipeBuilder helps Dubai school caterers stay compliant →</a></p></div>
 <h3>Related Resources</h3>
 <ul>
 <li><a href="/blog/dubai-municipality-school-food-requirements-caterers-guide">Dubai Municipality School Food Requirements: Complete Guide for Caterers</a></li>
@@ -3757,6 +3778,7 @@ export const blogPosts: BlogPost[] = [
 <h3>What documentation does the NIC need to maintain on a daily basis?</h3>
 <p>The NIC is responsible for ensuring the following are current and accessible: temperature logs, allergen matrix, approved menu, nutritional analysis records for all menu items, staff health cards and training records, NutriCheck audit records, and the NIC appointment letter itself. Not all of these require daily updates, but all of them must be available for inspection at any time.</p>
 
+<div class="blog-cta-box"><h3>RecipeBuilder for Dubai School Caterers</h3><p>RecipeBuilder generates Dubai Municipality-compliant nutrition labels, allergen matrices (all 14 GSO allergens), Smart Food Choices traffic-light classifications, and NutriCheck audit documentation from a single platform — used by school caterers across the UAE to maintain MySchoolFood compliance. <a href="/school-catering-dubai">See how RecipeBuilder helps Dubai school caterers stay compliant →</a></p></div>
 <h3>Related Resources</h3>
 <ul>
 <li><a href="/blog/nutri-check-dubai-school-canteen-compliance-guide">How to Use NutriCheck for Dubai School Canteen Compliance</a></li>
@@ -3942,6 +3964,7 @@ export const blogPosts: BlogPost[] = [
 <h3>Do I need to complete a separate monthly audit for each school I service?</h3>
 <p>Yes. NutriCheck tracks compliance at the individual school canteen level. If you operate canteens at three schools, you have three separate monthly audit obligations. Your NIC must complete each one within the respective audit window for each school.</p>
 
+<div class="blog-cta-box"><h3>RecipeBuilder for Dubai School Caterers</h3><p>RecipeBuilder generates Dubai Municipality-compliant nutrition labels, allergen matrices (all 14 GSO allergens), Smart Food Choices traffic-light classifications, and NutriCheck audit documentation from a single platform — used by school caterers across the UAE to maintain MySchoolFood compliance. <a href="/school-catering-dubai">See how RecipeBuilder helps Dubai school caterers stay compliant →</a></p></div>
 <h3>Related Resources</h3>
 <ul>
 <li><a href="/blog/nutri-check-dubai-school-canteen-compliance-guide">How to Use NutriCheck for Dubai School Canteen Compliance</a></li>
@@ -4108,6 +4131,7 @@ export const blogPosts: BlogPost[] = [
 <h3>Can a canteen hold Green Canteen status alongside a FoodWatch grade other than A?</h3>
 <p>Green Canteen certification and FoodWatch grading are assessed against different criteria. Theoretically, a canteen could hold Green Canteen status while having room for improvement in its FoodWatch grade — and vice versa. In practice, however, a well-run Green Canteen operation will typically also perform well on the food safety and nutritional compliance dimensions that drive FoodWatch grading. The two frameworks are complementary rather than competing.</p>
 
+<div class="blog-cta-box"><h3>RecipeBuilder for Dubai School Caterers</h3><p>RecipeBuilder generates Dubai Municipality-compliant nutrition labels, allergen matrices (all 14 GSO allergens), Smart Food Choices traffic-light classifications, and NutriCheck audit documentation from a single platform — used by school caterers across the UAE to maintain MySchoolFood compliance. <a href="/school-catering-dubai">See how RecipeBuilder helps Dubai school caterers stay compliant →</a></p></div>
 <h3>Related Resources</h3>
 <ul>
 <li><a href="/blog/dubai-municipality-school-food-requirements-caterers-guide">Dubai Municipality School Food Requirements: Complete Guide for Caterers</a></li>
@@ -4181,7 +4205,7 @@ export const blogPosts: BlogPost[] = [
     <tr>
       <td><strong>RecipeBuilder</strong></td>
       <td>GCC/international multi-market</td>
-      <td>$15/mo</td>
+      <td>$29/mo billed annually</td>
       <td>FDA, EU FIC, GCC/GSO, SFDA, UAE ESMA</td>
       <td>Yes</td>
     </tr>
@@ -4247,7 +4271,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>RecipeBuilder, developed by ByteBeam in Dubai, is designed from the ground up to handle the complexity of multi-market food labeling, with particular depth in GCC compliance. It is the only tool in this comparison that natively supports FDA, EU FIC 1169/2011, GCC/GSO, SFDA (Saudi Arabia), and UAE ESMA frameworks simultaneously.</p>
 
-<p><strong>Strengths:</strong> Broadest regulatory coverage in this comparison. Generates full packaging artwork — not just a nutrition panel — including barcodes, QR codes, bilingual ingredient lists, and allergen declarations. Arabic and 40+ language support. 20,000+ USDA FoodData Central ingredients. Over 5,000 labels approved by Dubai Municipality. Includes recipe costing, inventory management, and nutrition analysis in one platform. Starts at $15/month, making it the most affordable option in this list for the feature set it delivers.</p>
+<p><strong>Strengths:</strong> Broadest regulatory coverage in this comparison. Generates full packaging artwork — not just a nutrition panel — including barcodes, QR codes, bilingual ingredient lists, and allergen declarations. Arabic and 40+ language support. 20,000+ USDA FoodData Central ingredients. Over 5,000 labels approved by Dubai Municipality. Includes recipe costing, inventory management, and nutrition analysis in one platform. Starts at $29/month billed annually, making it the most affordable option in this list for the feature set it delivers.</p>
 
 <p><strong>Limitations:</strong> Primarily positioned for GCC and international markets — US-only brands may not fully utilize the international compliance features. Relatively newer platform compared to established players like Genesis R&D or ReciPal.</p>
 
@@ -4327,14 +4351,15 @@ export const blogPosts: BlogPost[] = [
 <p>Most professional nutrition label software does not offer a fully free tier, though several tools offer limited free trials. RecipeBuilder offers a free trial to explore the platform. Some government resources — such as the FDA's online tools — allow basic label generation at no cost, but these are generally not suitable for production use at any scale. For a growing food business, the compliance risk of relying on free tools typically outweighs the cost of a paid subscription.</p>
 
 <h3>How much does nutrition label software cost?</h3>
-<p>Pricing ranges widely depending on the tool and tier. RecipeBuilder starts at $15/month, making it the most affordable option for the feature set it delivers. ReciPal starts at $49/month. Food Label Maker charges per label or via subscription tiers that scale with volume. Genesis R&D starts at approximately $18,000 per year. Most tools offer tiered pricing based on the number of products, users, or labels generated per month.</p>
+<p>Pricing ranges widely depending on the tool and tier. RecipeBuilder starts at $29/month billed annually, making it the most affordable option for the feature set it delivers. ReciPal starts at $49/month. Food Label Maker charges per label or via subscription tiers that scale with volume. Genesis R&D starts at approximately $18,000 per year. Most tools offer tiered pricing based on the number of products, users, or labels generated per month.</p>
 
+<div class="blog-cta-box"><h3>Compare RecipeBuilder Head-to-Head</h3><p>Side-by-side comparisons against every major nutrition label and food labeling platform — features, pricing, compliance coverage, and switching paths:</p><ul><li><a href="/compare/recipal-alternative">RecipeBuilder vs ReciPal</a></li><li><a href="/compare/food-label-maker-alternative">RecipeBuilder vs Food Label Maker</a></li><li><a href="/compare/genesis-rd-alternative">RecipeBuilder vs Genesis R<h3>Related Resources</h3>amp;D</a></li><li><a href="/compare/nutritics-alternative">RecipeBuilder vs Nutritics</a></li><li><a href="/compare/nutritionist-pro-alternative">RecipeBuilder vs Nutritionist Pro</a></li><li><a href="/compare/labelcalc-alternative">RecipeBuilder vs LabelCalc</a></li><li><a href="/compare">See all 12 competitor comparisons →</a></li></ul></div>
 <h3>Related Resources</h3>
 <ul>
 <li><a href="/blog/recipal-alternatives">5 Best ReciPal Alternatives for Food Businesses (2026)</a></li>
 <li><a href="/blog/food-label-maker-alternatives">5 Best Food Label Maker Alternatives (2026)</a></li>
 <li><a href="/blog/best-nutrition-label-software-gcc-middle-east">Best Nutrition Label Software for GCC &amp; Middle East Food Businesses (2026)</a></li>
-<li><a href="/blog/food-labeling-dubai-uae-s-192-2019">UAE Food Labeling Standard S 192/2019: What Food Businesses Need to Know</a></li>
+<li><a href="/blog/food-labeling-dubai-uae-s-192-2019-guide">UAE Food Labeling Standard S 192/2019: What Food Businesses Need to Know</a></li>
 <li><a href="/gcc">RecipeBuilder for GCC Food Businesses</a></li>
 </ul>
 `,
@@ -4390,7 +4415,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>The platform goes well beyond label generation. RecipeBuilder produces full packaging artwork — including barcodes, QR codes, bilingual ingredient lists, allergen declarations, and brand elements — in Arabic and 40+ other languages. Over 5,000 labels generated through the platform have been approved by Dubai Municipality. The ingredient database draws on 20,000+ entries from the USDA FoodData Central, and the platform includes recipe costing and inventory management tools that eliminate the need for separate spreadsheets or software.</p>
 
-<p>Starting at $15 per month, RecipeBuilder is also significantly more affordable than ReciPal for comparable or greater functionality. For a food business that is expanding regionally or internationally, the total cost of ownership is lower when you factor in the elimination of separate GCC compliance tools.</p>
+<p>Starting at $29/month billed annually, RecipeBuilder is also significantly more affordable than ReciPal for comparable or greater functionality. For a food business that is expanding regionally or internationally, the total cost of ownership is lower when you factor in the elimination of separate GCC compliance tools.</p>
 
 <p><strong>Best for:</strong> Food businesses operating in or exporting to GCC markets, brands that need full packaging artwork, businesses that want recipe costing and inventory management alongside label generation.</p>
 
@@ -4440,7 +4465,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>If your business is US-only with no international ambitions, ReciPal may still be adequate for your needs. The case for switching is strongest when you are expanding geographically, moving into retail distribution that requires full packaging artwork, or seeking a tool that combines label generation with recipe costing and inventory management in one subscription.</p>
 
-<p>For GCC-based businesses or any brand with Middle East export ambitions, RecipeBuilder is the clear choice among these alternatives. It is the only tool in this list that covers GCC/GSO, SFDA, and UAE ESMA alongside FDA and EU FIC, generates Arabic-language labels, and produces full packaging artwork — all starting at $15 per month.</p>
+<p>For GCC-based businesses or any brand with Middle East export ambitions, RecipeBuilder is the clear choice among these alternatives. It is the only tool in this list that covers GCC/GSO, SFDA, and UAE ESMA alongside FDA and EU FIC, generates Arabic-language labels, and produces full packaging artwork — all starting at $29/month billed annually.</p>
 
 <p>To see how RecipeBuilder handles your specific regulatory and labeling requirements, <a href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall">book a free demo</a> with the ByteBeam team.</p>
 
@@ -4453,17 +4478,18 @@ export const blogPosts: BlogPost[] = [
 <p>No. ReciPal covers FDA (US) and CFIA (Canada) label formats only. It does not support GCC/GSO, SFDA, UAE ESMA, or any Arabic-language output. Food businesses that need to label products for sale in UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, or Oman must use a different tool — ReciPal cannot generate compliant labels for these markets regardless of how recipes are entered.</p>
 
 <h3>What is better than ReciPal for international food businesses?</h3>
-<p>RecipeBuilder is the strongest alternative for businesses with international or GCC ambitions. It covers FDA, EU FIC, GCC/GSO, SFDA, and UAE ESMA in one platform, generates Arabic and multilingual labels, produces full packaging artwork (not just a nutrition panel), and includes recipe costing and inventory management. It also starts at $15/month — significantly lower than ReciPal's $49/month entry point — while offering a considerably broader feature set for international markets.</p>
+<p>RecipeBuilder is the strongest alternative for businesses with international or GCC ambitions. It covers FDA, EU FIC, GCC/GSO, SFDA, and UAE ESMA in one platform, generates Arabic and multilingual labels, produces full packaging artwork (not just a nutrition panel), and includes recipe costing and inventory management. It also starts at $29/month billed annually — significantly lower than ReciPal's $49/month entry point — while offering a considerably broader feature set for international markets.</p>
 
 <h3>Can I migrate from ReciPal to another tool?</h3>
 <p>Yes. Most nutrition label software platforms allow recipe import via CSV or Excel, making migration manageable. The main effort in switching is reviewing and verifying ingredient matches in the new platform's database to ensure nutritional values are consistent. RecipeBuilder's 20,000+ ingredient database based on USDA FoodData Central means most US-market ingredients are already present, simplifying the transition. A discovery call with the RecipeBuilder team can help you assess migration requirements for your specific product catalog.</p>
 
+<div class="blog-cta-box"><h3>Compare RecipeBuilder Head-to-Head</h3><p>Side-by-side comparisons against every major nutrition label and food labeling platform — features, pricing, compliance coverage, and switching paths:</p><ul><li><a href="/compare/recipal-alternative">RecipeBuilder vs ReciPal</a></li><li><a href="/compare/food-label-maker-alternative">RecipeBuilder vs Food Label Maker</a></li><li><a href="/compare/genesis-rd-alternative">RecipeBuilder vs Genesis R<h3>Related Resources</h3>amp;D</a></li><li><a href="/compare/nutritics-alternative">RecipeBuilder vs Nutritics</a></li><li><a href="/compare/nutritionist-pro-alternative">RecipeBuilder vs Nutritionist Pro</a></li><li><a href="/compare/labelcalc-alternative">RecipeBuilder vs LabelCalc</a></li><li><a href="/compare">See all 12 competitor comparisons →</a></li></ul></div>
 <h3>Related Resources</h3>
 <ul>
 <li><a href="/compare/recipal-alternative">RecipeBuilder vs ReciPal: Detailed Comparison</a></li>
 <li><a href="/blog/best-nutrition-label-software-2026">8 Best Nutrition Label Software in 2026 (Compared)</a></li>
 <li><a href="/blog/best-nutrition-label-software-gcc-middle-east">Best Nutrition Label Software for GCC &amp; Middle East Food Businesses (2026)</a></li>
-<li><a href="/blog/food-labeling-dubai-uae-s-192-2019">UAE Food Labeling Standard S 192/2019: What Food Businesses Need to Know</a></li>
+<li><a href="/blog/food-labeling-dubai-uae-s-192-2019-guide">UAE Food Labeling Standard S 192/2019: What Food Businesses Need to Know</a></li>
 <li><a href="/gcc">RecipeBuilder for GCC Food Businesses</a></li>
 </ul>
 `,
@@ -4517,7 +4543,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>The ingredient database contains over 20,000 entries based on USDA FoodData Central. More than 5,000 labels generated through the platform have been reviewed and approved by Dubai Municipality. Recipe costing, inventory management, and nutrition analysis are included in the same subscription — eliminating the need for separate tools.</p>
 
-<p>At $15/month, RecipeBuilder starts at a significantly lower price point than Food Label Maker for comparable or superior functionality. For businesses that generate multiple label versions across different markets, the flat subscription model avoids the per-label cost escalation that makes Food Label Maker expensive at scale.</p>
+<p>At $29/month billed annually, RecipeBuilder starts at a significantly lower price point than Food Label Maker for comparable or superior functionality. For businesses that generate multiple label versions across different markets, the flat subscription model avoids the per-label cost escalation that makes Food Label Maker expensive at scale.</p>
 
 <p><strong>Best for:</strong> Food businesses in or exporting to GCC markets, brands needing full packaging artwork, businesses seeking to consolidate label generation with recipe costing and inventory management.</p>
 
@@ -4569,7 +4595,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>If your business is entirely US or EU-focused and you need a straightforward panel generator, ReciPal (for US/Canada) or a continued use of Food Label Maker (for dual FDA/EU coverage) may still be adequate. The strongest case for switching arises when you are expanding into GCC markets, need full packaging artwork for retail distribution, want to consolidate recipe costing alongside label generation, or find that per-label pricing is escalating faster than your margins can absorb.</p>
 
-<p>For GCC businesses or brands with international ambitions, RecipeBuilder's combination of multi-framework compliance, Arabic language support, full packaging artwork, and $15/month starting price makes it the most practical alternative to Food Label Maker available today.</p>
+<p>For GCC businesses or brands with international ambitions, RecipeBuilder's combination of multi-framework compliance, Arabic language support, full packaging artwork, and $29/month billed annually starting price makes it the most practical alternative to Food Label Maker available today.</p>
 
 <p>If you want to see how RecipeBuilder handles your specific markets and product types, <a href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall">book a free discovery call</a> with the ByteBeam team.</p>
 
@@ -4579,7 +4605,7 @@ export const blogPosts: BlogPost[] = [
 <p>No. Food Label Maker supports FDA and EU FIC 1169/2011 label formats only. It does not generate labels compliant with GCC/GSO, SFDA, UAE ESMA, or any other GCC-specific regulatory framework. It also does not produce Arabic-language output. GCC food businesses need a tool specifically designed for their regulatory environment — RecipeBuilder and Nutrical are the two main options in that space, with RecipeBuilder offering significantly broader features and multi-market coverage.</p>
 
 <h3>What is cheaper than Food Label Maker?</h3>
-<p>RecipeBuilder starts at $15/month compared to Food Label Maker's higher-tier subscription and per-label fees. For businesses generating a significant number of labels or label iterations — during product development reformulations, for instance — RecipeBuilder's flat subscription model is typically more cost-effective. At higher volumes, the difference becomes more pronounced because Food Label Maker's per-label charges accumulate while RecipeBuilder's monthly fee remains fixed.</p>
+<p>RecipeBuilder starts at $29/month billed annually compared to Food Label Maker's higher-tier subscription and per-label fees. For businesses generating a significant number of labels or label iterations — during product development reformulations, for instance — RecipeBuilder's flat subscription model is typically more cost-effective. At higher volumes, the difference becomes more pronounced because Food Label Maker's per-label charges accumulate while RecipeBuilder's monthly fee remains fixed.</p>
 
 <h3>Does Food Label Maker support Arabic labels?</h3>
 <p>No. Food Label Maker does not support Arabic-language label generation. For food businesses that need bilingual Arabic-English labels — which are required for retail sale in UAE, Saudi Arabia, and all other GCC markets — Food Label Maker is not a viable option. RecipeBuilder provides Arabic and 40+ language support with right-to-left text rendering suitable for GCC packaging requirements.</p>
@@ -4587,12 +4613,13 @@ export const blogPosts: BlogPost[] = [
 <h3>Which is better: Food Label Maker or RecipeBuilder?</h3>
 <p>For US-only food businesses with modest label volumes, Food Label Maker covers the basics adequately. For any business operating in GCC markets, needing Arabic labels, requiring full packaging artwork beyond a nutrition panel, or managing a growing product catalog where per-label fees add up, RecipeBuilder is the stronger choice. RecipeBuilder covers more regulatory frameworks (FDA, EU FIC, GCC/GSO, SFDA, UAE ESMA), starts at a lower price, generates complete packaging artwork, and includes recipe costing and inventory management in one subscription.</p>
 
+<div class="blog-cta-box"><h3>Compare RecipeBuilder Head-to-Head</h3><p>Side-by-side comparisons against every major nutrition label and food labeling platform — features, pricing, compliance coverage, and switching paths:</p><ul><li><a href="/compare/recipal-alternative">RecipeBuilder vs ReciPal</a></li><li><a href="/compare/food-label-maker-alternative">RecipeBuilder vs Food Label Maker</a></li><li><a href="/compare/genesis-rd-alternative">RecipeBuilder vs Genesis R<h3>Related Resources</h3>amp;D</a></li><li><a href="/compare/nutritics-alternative">RecipeBuilder vs Nutritics</a></li><li><a href="/compare/nutritionist-pro-alternative">RecipeBuilder vs Nutritionist Pro</a></li><li><a href="/compare/labelcalc-alternative">RecipeBuilder vs LabelCalc</a></li><li><a href="/compare">See all 12 competitor comparisons →</a></li></ul></div>
 <h3>Related Resources</h3>
 <ul>
 <li><a href="/compare/food-label-maker-alternative">RecipeBuilder vs Food Label Maker: Detailed Comparison</a></li>
 <li><a href="/blog/best-nutrition-label-software-2026">8 Best Nutrition Label Software in 2026 (Compared)</a></li>
 <li><a href="/blog/best-nutrition-label-software-gcc-middle-east">Best Nutrition Label Software for GCC &amp; Middle East Food Businesses (2026)</a></li>
-<li><a href="/blog/food-labeling-dubai-uae-s-192-2019">UAE Food Labeling Standard S 192/2019: What Food Businesses Need to Know</a></li>
+<li><a href="/blog/food-labeling-dubai-uae-s-192-2019-guide">UAE Food Labeling Standard S 192/2019: What Food Businesses Need to Know</a></li>
 <li><a href="/gcc">RecipeBuilder for GCC Food Businesses</a></li>
 </ul>
 `,
@@ -4668,7 +4695,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>The ingredient database contains over 20,000 entries from USDA FoodData Central, supplemented with GCC-market ingredients. Arabic name rendering for ingredients is supported natively, ensuring that bilingual ingredient lists are accurate rather than machine-translated. The platform includes recipe costing, inventory management, and nutrition analysis in one subscription — giving food businesses a complete operational tool rather than a single-function label generator.</p>
 
-<p>RecipeBuilder starts at $15/month, making it accessible to small and medium-sized food businesses that cannot afford enterprise-level tools. The pricing structure is subscription-based rather than per-label, which suits businesses with growing product catalogs.</p>
+<p>RecipeBuilder starts at $29/month billed annually, making it accessible to small and medium-sized food businesses that cannot afford enterprise-level tools. The pricing structure is subscription-based rather than per-label, which suits businesses with growing product catalogs.</p>
 
 <h2>Nutrical</h2>
 
@@ -4704,13 +4731,14 @@ export const blogPosts: BlogPost[] = [
 <p>RecipeBuilder is the primary food labeling software with native SFDA (Saudi Food and Drug Authority) compliance. It applies SFDA Technical Regulation requirements for nutrient declaration format, Arabic bilingual labeling, and Saudi-specific label elements. Nutrical also has GCC/SFDA awareness. Western tools — ReciPal, Food Label Maker, Genesis R&D, and others — do not support SFDA requirements and cannot generate SFDA-compliant labels regardless of how recipes are entered.</p>
 
 <h3>Is there nutrition label software for Dubai Municipality requirements?</h3>
-<p>Yes. RecipeBuilder has been used to generate over 5,000 labels that have been reviewed and approved by Dubai Municipality. The platform supports Montaji product registration fields, FoodWatch-aligned nutritional declaration formats, and the bilingual Arabic-English requirements of Dubai Municipality's food labeling regulations. For food businesses seeking Dubai Municipality approval for packaged products, RecipeBuilder provides the documentation and label output that the municipality's review process requires. See our detailed guide on <a href="/blog/food-labeling-dubai-uae-s-192-2019">UAE Food Labeling Standard S 192/2019</a> for the specific regulatory requirements that apply.</p>
+<p>Yes. RecipeBuilder has been used to generate over 5,000 labels that have been reviewed and approved by Dubai Municipality. The platform supports Montaji product registration fields, FoodWatch-aligned nutritional declaration formats, and the bilingual Arabic-English requirements of Dubai Municipality's food labeling regulations. For food businesses seeking Dubai Municipality approval for packaged products, RecipeBuilder provides the documentation and label output that the municipality's review process requires. See our detailed guide on <a href="/blog/food-labeling-dubai-uae-s-192-2019-guide">UAE Food Labeling Standard S 192/2019</a> for the specific regulatory requirements that apply.</p>
 
+<div class="blog-cta-box"><h3>Compare RecipeBuilder Head-to-Head</h3><p>Side-by-side comparisons against every major nutrition label and food labeling platform — features, pricing, compliance coverage, and switching paths:</p><ul><li><a href="/compare/recipal-alternative">RecipeBuilder vs ReciPal</a></li><li><a href="/compare/food-label-maker-alternative">RecipeBuilder vs Food Label Maker</a></li><li><a href="/compare/genesis-rd-alternative">RecipeBuilder vs Genesis R<h3>Related Resources</h3>amp;D</a></li><li><a href="/compare/nutritics-alternative">RecipeBuilder vs Nutritics</a></li><li><a href="/compare/nutritionist-pro-alternative">RecipeBuilder vs Nutritionist Pro</a></li><li><a href="/compare/labelcalc-alternative">RecipeBuilder vs LabelCalc</a></li><li><a href="/compare">See all 12 competitor comparisons →</a></li></ul></div>
 <h3>Related Resources</h3>
 <ul>
 <li><a href="/gcc">RecipeBuilder for GCC Food Businesses</a></li>
 <li><a href="/compare/nutrical-alternative">RecipeBuilder vs Nutrical: Detailed Comparison</a></li>
-<li><a href="/blog/food-labeling-dubai-uae-s-192-2019">UAE Food Labeling Standard S 192/2019: What Food Businesses Need to Know</a></li>
+<li><a href="/blog/food-labeling-dubai-uae-s-192-2019-guide">UAE Food Labeling Standard S 192/2019: What Food Businesses Need to Know</a></li>
 <li><a href="/blog/best-nutrition-label-software-2026">8 Best Nutrition Label Software in 2026 (Compared)</a></li>
 <li><a href="/blog/recipal-alternatives">5 Best ReciPal Alternatives for Food Businesses (2026)</a></li>
 </ul>

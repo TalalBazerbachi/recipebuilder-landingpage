@@ -531,7 +531,7 @@ export default function InventoryManagement() {
             applicationCategory: "BusinessApplication",
             operatingSystem: "Web",
             description: "Track stock levels, manage portions, and monitor ingredient inventory in real-time for food businesses.",
-            offers: { "@type": "AggregateOffer", priceCurrency: "USD", lowPrice: "49", highPrice: "99", offerCount: "3", category: "SaaS", availability: "https://schema.org/InStock" },
+            offers: { "@type": "AggregateOffer", priceCurrency: "USD", lowPrice: "29", highPrice: "99", offerCount: "3", category: "SaaS", availability: "https://schema.org/InStock" },
             provider: { "@type": "Organization", name: "ByteBeam", url: "https://www.bytebeam.co" },
             featureList: [
               "Real-time stock tracking",

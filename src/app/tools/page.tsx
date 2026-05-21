@@ -197,26 +197,32 @@ export default function ToolsPage() {
           </div>
         </section>
 
-        {/* Coming Soon Tools */}
+        {/* Coming Soon Tools — clickable waitlist cards, not ghost SKUs */}
         <section className="py-20 bg-surface">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-foreground mb-2">
-              Coming soon
+              On the roadmap
             </h2>
             <p className="text-text mb-10">
-              More tools are in development. These will be free too.
+              More free tools are in active development. Click any tool to be
+              notified by email when it ships.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {comingSoonTools.map((tool) => (
-                <div
+                <a
                   key={tool.title}
-                  className="relative flex flex-col bg-white rounded-2xl border border-border p-6 opacity-70"
+                  href={`mailto:info@bytebeam.co?subject=Notify%20me%20when%20${encodeURIComponent(
+                    tool.title
+                  )}%20launches&body=Please%20email%20me%20when%20the%20${encodeURIComponent(
+                    tool.title
+                  )}%20free%20tool%20is%20available.`}
+                  className="relative flex flex-col bg-white rounded-2xl border border-border p-6 hover:shadow-md hover:border-primary/30 transition-all group"
                 >
                   <div className="absolute top-4 right-4">
-                    <Lock className="w-4 h-4 text-text/40" />
+                    <Lock className="w-4 h-4 text-text/40 group-hover:text-primary/60 transition-colors" />
                   </div>
                   <div className="w-10 h-10 bg-surface rounded-xl flex items-center justify-center mb-4 border border-border">
-                    <tool.icon className="w-5 h-5 text-text/50" />
+                    <tool.icon className="w-5 h-5 text-text/60" />
                   </div>
                   <h3 className="text-base font-semibold text-foreground mb-2">
                     {tool.title}
@@ -224,10 +230,11 @@ export default function ToolsPage() {
                   <p className="text-text text-sm leading-relaxed">
                     {tool.description}
                   </p>
-                  <span className="mt-4 text-xs font-medium text-text/50 uppercase tracking-wider">
-                    Coming soon
+                  <span className="mt-4 text-xs font-semibold text-primary uppercase tracking-wider inline-flex items-center gap-1">
+                    Notify me on launch
+                    <ArrowRight className="w-3 h-3" />
                   </span>
-                </div>
+                </a>
               ))}
             </div>
           </div>

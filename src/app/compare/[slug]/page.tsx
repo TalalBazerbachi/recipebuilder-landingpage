@@ -37,14 +37,14 @@ export async function generateMetadata({
   if (!page) return {};
 
   return {
-    title: `RecipeBuilder vs. ${page.competitor} — Full Feature Comparison`,
+    title: `${page.competitor} Alternative (2026): RecipeBuilder vs ${page.competitor}`,
     description: page.metaDescription,
     keywords: page.keywords,
     alternates: {
       canonical: `https://www.recipebuilder.co/compare/${page.slug}`,
     },
     openGraph: {
-      title: `RecipeBuilder vs. ${page.competitor}`,
+      title: `${page.competitor} Alternative — RecipeBuilder vs ${page.competitor} (2026)`,
       description: page.metaDescription,
       url: `https://www.recipebuilder.co/compare/${page.slug}`,
       siteName: "RecipeBuilder",
@@ -89,7 +89,7 @@ const universalFaqs: { question: string; answer: string }[] = [
   {
     question: "How does RecipeBuilder pricing work?",
     answer:
-      "RecipeBuilder starts at $15/mo on the Starter plan, scaling to $79/mo for larger teams. All plans include unlimited label generation, GCC/SFDA compliance features, and packaging artwork. There are no per-label or per-product fees.",
+      "RecipeBuilder starts at $29/mo billed annually on the Starter plan, scaling to $79/mo for larger teams. All plans include unlimited label generation, GCC/SFDA compliance features, and packaging artwork. There are no per-label or per-product fees.",
   },
 ];
 
@@ -114,7 +114,7 @@ function buildFaqs(
       },
       {
         question: `Is RecipeBuilder cheaper than ${competitor}?`,
-        answer: `Yes. RecipeBuilder starts at $15/mo versus ${competitor}'s $49/mo entry tier, while offering a substantially broader feature set: GCC/SFDA compliance, packaging artwork, barcodes, QR codes, recipe costing, and inventory management — none of which are included in ${competitor}. Both offer a free trial, so you can evaluate RecipeBuilder without committing.`,
+        answer: `Yes. RecipeBuilder starts at $29/mo billed annually versus ${competitor}'s $49/mo entry tier, while offering a substantially broader feature set: GCC/SFDA compliance, packaging artwork, barcodes, QR codes, recipe costing, and inventory management — none of which are included in ${competitor}. Both offer a free trial, so you can evaluate RecipeBuilder without committing.`,
       },
     ],
     "food-label-maker-alternative": [
@@ -128,7 +128,7 @@ function buildFaqs(
       },
       {
         question: `Is RecipeBuilder cheaper than ${competitor}?`,
-        answer: `RecipeBuilder starts at $15/mo, while ${competitor} starts at $39/mo and climbs into enterprise pricing on request. Beyond the lower base price, RecipeBuilder bundles recipe costing, inventory management, and full packaging artwork — capabilities that would require additional tools or higher ${competitor} tiers.`,
+        answer: `RecipeBuilder starts at $29/mo billed annually, while ${competitor} starts at $39/mo and climbs into enterprise pricing on request. Beyond the lower base price, RecipeBuilder bundles recipe costing, inventory management, and full packaging artwork — capabilities that would require additional tools or higher ${competitor} tiers.`,
       },
     ],
     "nutrical-alternative": [
@@ -142,7 +142,7 @@ function buildFaqs(
       },
       {
         question: `Is RecipeBuilder cheaper than ${competitor}?`,
-        answer: `${competitor} uses custom pricing with no publicly listed rates, which means you need to request a quote. RecipeBuilder offers transparent subscription pricing from $15/mo with a 14-day free trial, so you can assess value immediately without a sales conversation.`,
+        answer: `${competitor} uses custom pricing with no publicly listed rates, which means you need to request a quote. RecipeBuilder offers transparent subscription pricing from $29/mo billed annually with a 14-day free trial, so you can assess value immediately without a sales conversation.`,
       },
     ],
     "labelcalc-alternative": [
@@ -156,13 +156,13 @@ function buildFaqs(
       },
       {
         question: `Is RecipeBuilder cheaper than ${competitor}?`,
-        answer: `Considerably. ${competitor} now sits within Datacor's enterprise ERP pricing, typically $500–$1,500+/yr with no self-serve trial. RecipeBuilder starts at $15/mo with a 14-day free trial and transparent monthly pricing — no annual contracts or enterprise negotiations required.`,
+        answer: `Considerably. ${competitor} now sits within Datacor's enterprise ERP pricing, typically $500–$1,500+/yr with no self-serve trial. RecipeBuilder starts at $29/mo billed annually with a 14-day free trial and transparent monthly pricing — no annual contracts or enterprise negotiations required.`,
       },
     ],
     "genesis-rd-alternative": [
       {
         question: `How does RecipeBuilder compare to ${competitor}?`,
-        answer: `${competitor} is the gold-standard nutrition analysis platform for large US food manufacturers — it has an enormous ingredient database, advanced formulation tools, and deep regulatory compliance for the US market. However, it costs $18,000+/yr, requires significant onboarding, and has no GCC or SFDA support. RecipeBuilder targets growing food businesses and GCC operators: it is faster to deploy, covers 10+ frameworks including GCC/SFDA, generates packaging artwork with barcodes and QR codes, and starts at $15/mo.`,
+        answer: `${competitor} is the gold-standard nutrition analysis platform for large US food manufacturers — it has an enormous ingredient database, advanced formulation tools, and deep regulatory compliance for the US market. However, it costs $18,000+/yr, requires significant onboarding, and has no GCC or SFDA support. RecipeBuilder targets growing food businesses and GCC operators: it is faster to deploy, covers 10+ frameworks including GCC/SFDA, generates packaging artwork with barcodes and QR codes, and starts at $29/mo billed annually.`,
       },
       {
         question: `Can RecipeBuilder replace ${competitor} for GCC businesses?`,
@@ -170,7 +170,7 @@ function buildFaqs(
       },
       {
         question: `Is RecipeBuilder cheaper than ${competitor}?`,
-        answer: `RecipeBuilder starts at $15/mo vs ${competitor}'s $18,000+/yr enterprise licensing — a difference of over 99% in cost. RecipeBuilder also offers a 14-day free trial with no sales engagement required, whereas ${competitor} requires a formal demo and enterprise contract.`,
+        answer: `RecipeBuilder starts at $29/mo billed annually vs ${competitor}'s $18,000+/yr enterprise licensing — a difference of over 99% in cost. RecipeBuilder also offers a 14-day free trial with no sales engagement required, whereas ${competitor} requires a formal demo and enterprise contract.`,
       },
     ],
     "nutritics-alternative": [
@@ -184,7 +184,7 @@ function buildFaqs(
       },
       {
         question: `Is RecipeBuilder cheaper than ${competitor}?`,
-        answer: `RecipeBuilder starts at $15/mo vs ${competitor}'s approximately £99/mo (~$125/mo) entry tier. For GCC businesses, RecipeBuilder offers better regulatory fit at a lower price — and the feature overlap that ${competitor} does offer (EU frameworks, recipe management) is matched by RecipeBuilder as well.`,
+        answer: `RecipeBuilder starts at $29/mo billed annually vs ${competitor}'s approximately £99/mo (~$125/mo) entry tier. For GCC businesses, RecipeBuilder offers better regulatory fit at a lower price — and the feature overlap that ${competitor} does offer (EU frameworks, recipe management) is matched by RecipeBuilder as well.`,
       },
     ],
     "nutritionist-pro-alternative": [
@@ -198,7 +198,7 @@ function buildFaqs(
       },
       {
         question: `Is RecipeBuilder cheaper than ${competitor}?`,
-        answer: `RecipeBuilder starts at $15/mo vs ${competitor}'s $39/mo entry tier, and includes packaging artwork, barcodes, QR codes, recipe costing, and inventory management that ${competitor} does not bundle in at its base price.`,
+        answer: `RecipeBuilder starts at $29/mo billed annually vs ${competitor}'s $39/mo entry tier, and includes packaging artwork, barcodes, QR codes, recipe costing, and inventory management that ${competitor} does not bundle in at its base price.`,
       },
     ],
     "menusano-alternative": [
@@ -212,7 +212,7 @@ function buildFaqs(
       },
       {
         question: `Is RecipeBuilder cheaper than ${competitor}?`,
-        answer: `RecipeBuilder starts at $15/mo vs ${competitor}'s $69/mo entry tier — a meaningful saving, especially when RecipeBuilder includes features like packaging artwork, barcodes, QR codes, and inventory management that ${competitor} does not offer.`,
+        answer: `RecipeBuilder starts at $29/mo billed annually vs ${competitor}'s $69/mo entry tier — a meaningful saving, especially when RecipeBuilder includes features like packaging artwork, barcodes, QR codes, and inventory management that ${competitor} does not offer.`,
       },
     ],
     "nutraid-alternative": [
@@ -226,7 +226,7 @@ function buildFaqs(
       },
       {
         question: `Is RecipeBuilder cheaper than ${competitor}?`,
-        answer: `${competitor} starts at approximately £19/mo (~$24/mo). RecipeBuilder starts at $15/mo and includes significantly more: 10+ regulatory frameworks, packaging artwork, barcodes, QR codes, recipe costing, and inventory management — substantially more capability at a comparable or lower price.`,
+        answer: `${competitor} starts at approximately £19/mo (~$24/mo). RecipeBuilder starts at $29/mo billed annually and includes significantly more: 10+ regulatory frameworks, packaging artwork, barcodes, QR codes, recipe costing, and inventory management — substantially more capability at a comparable or lower price.`,
       },
     ],
     "foodzilla-alternative": [
@@ -240,7 +240,7 @@ function buildFaqs(
       },
       {
         question: `Is RecipeBuilder cheaper than ${competitor}?`,
-        answer: `RecipeBuilder starts at $15/mo vs ${competitor}'s $29/mo entry tier. More importantly, RecipeBuilder is the appropriate tool for food manufacturing — ${competitor}'s lower tiers are designed for individual dietitians, not food businesses.`,
+        answer: `RecipeBuilder starts at $29/mo billed annually vs ${competitor}'s $29/mo entry tier. More importantly, RecipeBuilder is the appropriate tool for food manufacturing — ${competitor}'s lower tiers are designed for individual dietitians, not food businesses.`,
       },
     ],
     "erudus-alternative": [
@@ -254,7 +254,7 @@ function buildFaqs(
       },
       {
         question: `Is RecipeBuilder cheaper than ${competitor}?`,
-        answer: `${competitor} offers free supplier access but charges operators ~£200+/yr for broader functionality. RecipeBuilder starts at $15/mo as a complete food labeling and compliance platform. The comparison is largely moot given that they serve different workflows, but RecipeBuilder offers far more labeling and manufacturing functionality for any food business.`,
+        answer: `${competitor} offers free supplier access but charges operators ~£200+/yr for broader functionality. RecipeBuilder starts at $29/mo billed annually as a complete food labeling and compliance platform. The comparison is largely moot given that they serve different workflows, but RecipeBuilder offers far more labeling and manufacturing functionality for any food business.`,
       },
     ],
     "lab-testing-alternative": [
@@ -268,7 +268,7 @@ function buildFaqs(
       },
       {
         question: `Is RecipeBuilder cheaper than lab testing?`,
-        answer: `Dramatically. A single lab test costs $300–$800, takes 2–4 weeks, and must be repeated every time you change your recipe. RecipeBuilder costs $15–$79/mo and supports unlimited recipe iterations in real time. For a business with 10 products that reformulates twice a year, lab testing alone could cost $6,000–$16,000/yr just for the raw data — before label design, artwork, or compliance formatting.`,
+        answer: `Dramatically. A single lab test costs $300–$800, takes 2–4 weeks, and must be repeated every time you change your recipe. RecipeBuilder costs $29–$99/mo and supports unlimited recipe iterations in real time. For a business with 10 products that reformulates twice a year, lab testing alone could cost $6,000–$16,000/yr just for the raw data — before label design, artwork, or compliance formatting.`,
       },
     ],
   };
@@ -277,7 +277,7 @@ function buildFaqs(
     faqMap[page.slug] ?? [
       {
         question: `How does RecipeBuilder compare to ${competitor}?`,
-        answer: `RecipeBuilder covers 10+ regulatory frameworks including GCC/SFDA, generates complete print-ready packaging artwork with barcodes and QR codes, and supports bilingual English and Arabic output — capabilities ${competitor} does not offer. For food businesses operating in the GCC or needing a complete packaging workflow, RecipeBuilder is the more comprehensive choice starting from $15/mo.`,
+        answer: `RecipeBuilder covers 10+ regulatory frameworks including GCC/SFDA, generates complete print-ready packaging artwork with barcodes and QR codes, and supports bilingual English and Arabic output — capabilities ${competitor} does not offer. For food businesses operating in the GCC or needing a complete packaging workflow, RecipeBuilder is the more comprehensive choice starting from $29/mo billed annually.`,
       },
       {
         question: `Can RecipeBuilder replace ${competitor} for GCC businesses?`,
@@ -285,11 +285,26 @@ function buildFaqs(
       },
       {
         question: `Is RecipeBuilder cheaper than ${competitor}?`,
-        answer: `RecipeBuilder starts at $15/mo with a 14-day free trial, versus ${competitor}'s ${competitorPricing}. RecipeBuilder also bundles features — packaging artwork, barcodes, QR codes, recipe costing, and inventory management — that ${competitor} either charges extra for or does not offer at all.`,
+        answer: `RecipeBuilder starts at $29/mo billed annually with a 14-day free trial, versus ${competitor}'s ${competitorPricing}. RecipeBuilder also bundles features — packaging artwork, barcodes, QR codes, recipe costing, and inventory management — that ${competitor} either charges extra for or does not offer at all.`,
       },
     ];
 
   return [...competitorFaqs, ...universalFaqs];
+}
+
+/**
+ * Returns ONLY the competitor-specific FAQs — used for FAQPage JSON-LD
+ * to avoid duplicating the 7 universal FAQs across all 12 comparison
+ * pages. The universal FAQs are still rendered visibly to users; they
+ * just don't appear in structured data, which prevents Google from
+ * treating the FAQ schema as boilerplate-duplicated content.
+ */
+function buildSchemaFaqs(
+  page: (typeof comparePages)[0]
+): { question: string; answer: string }[] {
+  const allFaqs = buildFaqs(page);
+  // First 3 entries are always the competitor-specific FAQs.
+  return allFaqs.slice(0, 3);
 }
 
 const differentiatorIcons = [
@@ -311,6 +326,9 @@ export default async function CompareSlugPage({ params }: PageProps) {
   if (!page) notFound();
 
   const faqs = buildFaqs(page);
+  // Schema FAQs are competitor-specific only to avoid duplicating the
+  // 7 universal FAQs across all 12 compare pages (FAQ schema spam).
+  const schemaFaqs = buildSchemaFaqs(page);
 
   // Tier-1 slugs for "Related comparisons" section
   const tier1Slugs = [
@@ -336,8 +354,8 @@ export default async function CompareSlugPage({ params }: PageProps) {
     offers: {
       "@type": "AggregateOffer",
       priceCurrency: "USD",
-      lowPrice: "15",
-      highPrice: "79",
+      lowPrice: "29",
+      highPrice: "99",
       offerCount: "3",
       availability: "https://schema.org/InStock",
     },
@@ -376,7 +394,7 @@ export default async function CompareSlugPage({ params }: PageProps) {
   const jsonLdFaq = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: faqs.map((faq) => ({
+    mainEntity: schemaFaqs.map((faq) => ({
       "@type": "Question",
       name: faq.question,
       acceptedAnswer: {
@@ -499,7 +517,7 @@ export default async function CompareSlugPage({ params }: PageProps) {
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
                   <span className="text-amber-900 text-sm leading-relaxed">
-                    RecipeBuilder starts at $15/mo. {page.competitor} starts at{" "}
+                    RecipeBuilder starts at $29/mo billed annually. {page.competitor} starts at{" "}
                     {page.competitorPricing}.
                   </span>
                 </li>
@@ -526,7 +544,7 @@ export default async function CompareSlugPage({ params }: PageProps) {
               </span>
               <span className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-primary shrink-0" />
-                From $15/mo · 14-day free trial
+                From $29/mo (annual) · 14-day free trial
               </span>
             </div>
           </div>
@@ -731,7 +749,7 @@ export default async function CompareSlugPage({ params }: PageProps) {
                     "No manual data entry for ingredient nutrition. Search, select, and build recipes instantly.",
                 },
                 {
-                  stat: "From $15/mo",
+                  stat: "From $29/mo (annual)",
                   label: "vs $300–$800 per lab test",
                   detail:
                     "Dramatically lower cost than alternatives, with unlimited recipe iterations included.",
@@ -804,7 +822,7 @@ export default async function CompareSlugPage({ params }: PageProps) {
                     "5,000+ labels approved by Dubai Municipality",
                     "20,000+ USDA FoodData Central ingredients",
                     "Recipe costing, margin tracking & inventory management",
-                    "From $15/mo with a 14-day free trial",
+                    "From $29/mo (annual) with a 14-day free trial",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-primary mt-0.5 shrink-0" />
@@ -834,17 +852,18 @@ export default async function CompareSlugPage({ params }: PageProps) {
               {[
                 {
                   quote:
-                    "RecipeBuilder simplified our entire labeling workflow. Labels that used to take days now take minutes, and Dubai Municipality approved them first time.",
-                  name: "Operations Manager",
-                  title: "Food Business",
-                  location: "Dubai",
+                    "Working with ByteBeam has been an exceptional experience. They transformed a time-consuming, manual labeling process into a smart, efficient workflow — saving time and costs while ensuring quality and compliance.",
+                  name: "Chief Financial Officer",
+                  title: "Operations & Finance",
+                  location: "Takhlees Compliance Services",
                 },
                 {
                   quote:
-                    "We switched from manual Excel tracking to RecipeBuilder and the difference is night and day. Recipe costing, label generation, all in one place.",
-                  name: "Founder",
-                  title: "Artisan Food Brand",
-                  location: "UAE",
+                    "The USDA database integration is incredibly accurate. We've processed hundreds of products and every label passed FDA review on the first submission.",
+                  name: "David R.",
+                  title: "Quality Assurance Manager",
+                  location: "Pacific Foods Inc.",
+                  metric: "100% FDA first-pass approval",
                 },
               ].map((testimonial, i) => (
                 <div
@@ -855,13 +874,23 @@ export default async function CompareSlugPage({ params }: PageProps) {
                   <p className="text-text leading-relaxed text-base italic mb-6">
                     &ldquo;{testimonial.quote}&rdquo;
                   </p>
-                  <div>
-                    <p className="font-semibold text-foreground text-sm">
-                      {testimonial.name}
-                    </p>
-                    <p className="text-text/70 text-sm">
-                      {testimonial.title}, {testimonial.location}
-                    </p>
+                  <div className="flex items-end justify-between gap-4">
+                    <div>
+                      <p className="font-semibold text-foreground text-sm">
+                        {testimonial.name}
+                      </p>
+                      <p className="text-text/70 text-sm">
+                        {testimonial.title}
+                      </p>
+                      <p className="text-primary/80 text-xs font-medium mt-0.5">
+                        {testimonial.location}
+                      </p>
+                    </div>
+                    {testimonial.metric && (
+                      <p className="text-xs font-bold text-primary text-right">
+                        {testimonial.metric}
+                      </p>
+                    )}
                   </div>
                 </div>
               ))}
@@ -937,7 +966,7 @@ export default async function CompareSlugPage({ params }: PageProps) {
                   Pricing at scale: how the total cost of food labeling adds up
                 </h3>
                 <p className="leading-relaxed">
-                  RecipeBuilder starts at $15/mo with a flat subscription that
+                  RecipeBuilder starts at $29/mo billed annually with a flat subscription that
                   covers unlimited label generation. There are no per-label fees,
                   no per-product charges, and no separate line items for
                   barcodes, QR codes, or packaging artwork — they are all

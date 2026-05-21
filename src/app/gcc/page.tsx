@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   title:
     "RecipeBuilder — Recipe Management & Food Labeling for GCC Food Businesses",
   description:
-    "RecipeBuilder is a food labeling and recipe management platform built for GCC food businesses by ByteBeam (Dubai). It generates bilingual English-Arabic nutrition labels, barcodes, and QR codes following GCC and SFDA labeling laws. 20,000+ USDA-verified ingredients. Over 5,000 labels approved by Dubai Municipality. Used by food manufacturers, restaurants, and catering businesses across UAE, Saudi Arabia, and the Gulf region.",
+    "Bilingual English-Arabic nutrition labels for GCC food businesses. SFDA, GSO, and Dubai Municipality compliant. 5,000+ labels approved. From $29/mo (annual).",
   keywords: [
     "recipe management software",
     "food labeling software GCC",
@@ -132,6 +132,58 @@ export default function GCCPage() {
                 name: "GCC",
                 item: "https://www.recipebuilder.co/gcc",
               },
+            ],
+          }),
+        }}
+      />
+
+      {/* Service schema with areaServed — geo-targeted intent signal */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            serviceType: "Food Labeling & Recipe Management Software",
+            provider: {
+              "@type": "Organization",
+              name: "ByteBeam",
+              url: "https://www.bytebeam.co",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Dubai",
+                addressCountry: "AE",
+              },
+            },
+            description:
+              "Bilingual English-Arabic food labeling and recipe management software for GCC food businesses. Compliant with UAE.S 9:2017, UAE.S 192:2019, SFDA Technical Regulation, GSO standards, and Dubai Municipality Montaji requirements.",
+            areaServed: [
+              { "@type": "Country", name: "United Arab Emirates" },
+              { "@type": "Country", name: "Saudi Arabia" },
+              { "@type": "Country", name: "Kuwait" },
+              { "@type": "Country", name: "Qatar" },
+              { "@type": "Country", name: "Bahrain" },
+              { "@type": "Country", name: "Oman" },
+            ],
+            audience: {
+              "@type": "BusinessAudience",
+              audienceType:
+                "Food manufacturers, school caterers, restaurants, bakeries, and food packaging companies in the GCC",
+            },
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: "29",
+              highPrice: "99",
+              offerCount: "3",
+              availability: "https://schema.org/InStock",
+            },
+            hasCredential: [
+              "5,000+ labels approved by Dubai Municipality",
+              "UAE.S 9:2017 compliant",
+              "UAE.S 192:2019 compliant",
+              "SFDA Technical Regulation compliant",
+              "GSO standards aligned",
             ],
           }),
         }}

@@ -578,7 +578,7 @@ export default function CostTracking() {
             applicationCategory: "BusinessApplication",
             operatingSystem: "Web",
             description: "Track ingredient costs, calculate profit margins, manage VAT, and optimize food costs for recipes and menu items.",
-            offers: { "@type": "AggregateOffer", priceCurrency: "USD", lowPrice: "49", highPrice: "99", offerCount: "3", category: "SaaS", availability: "https://schema.org/InStock" },
+            offers: { "@type": "AggregateOffer", priceCurrency: "USD", lowPrice: "29", highPrice: "99", offerCount: "3", category: "SaaS", availability: "https://schema.org/InStock" },
             provider: { "@type": "Organization", name: "ByteBeam", url: "https://www.bytebeam.co" },
             featureList: [
               "Ingredient cost tracking",

@@ -271,36 +271,36 @@ export const gccContent: LandingPageContent = {
   faq: {
     faqs: [
       {
-        question: "How is RecipeBuilder different from lab testing?",
-        answer: "Lab testing costs $500–$2,000 per product and takes 2–4 weeks. RecipeBuilder generates compliant nutrition labels in minutes using the USDA FoodData Central database with 20,000+ verified ingredients. You get bilingual labels, packaging artwork, barcodes, and QR codes — all from one platform, for a fraction of the cost.",
+        question: "Does RecipeBuilder follow UAE.S 9:2017 and UAE.S 192:2019 labeling standards?",
+        answer: "Yes. RecipeBuilder's GCC label format follows UAE.S 9:2017 (pre-packaged food labeling) and UAE.S 192:2019 (nutrition label format) requirements administered by Emirates Authority for Standardization and Metrology (ESMA) and enforced by Dubai Municipality. This includes the mandatory bilingual Arabic-English ingredient declaration in descending order by weight, allergen declaration in bold per GSO 9/2013, nutrition facts per 100g AND per serving, production and expiry dates in DD/MM/YYYY format, and country of origin. Labels also follow GSO standards adopted across the wider GCC.",
       },
       {
-        question: "How long does it take to generate my first label?",
-        answer: "Minutes. Create your recipe, add ingredients from the USDA database, and RecipeBuilder auto-generates your nutrition label, packaging artwork, barcode, and QR code instantly. Most users have their first label ready within 10 minutes of signing up.",
+        question: "Are RecipeBuilder labels accepted by Dubai Municipality Montaji food registration?",
+        answer: "Over 5,000 labels created with RecipeBuilder have been approved through Dubai Municipality's review process. The platform produces the documentation Montaji portal review requires: bilingual nutrition tables, ingredient list ordered by weight, allergen declarations, manufacturer and country-of-origin information, and net weight in both metric and Arabic numerals. We do not submit on your behalf — you upload RecipeBuilder's PDF output to your Montaji submission.",
       },
       {
-        question: "Is the nutrition data accurate enough for GCC regulatory compliance?",
-        answer: "Yes. RecipeBuilder uses the full USDA FoodData Central database — the same data source used by food labs. Labels are auto-formatted to meet GCC and SFDA labeling requirements with bilingual English and Arabic text, proper allergen declarations, and required disclaimers.",
+        question: "How does RecipeBuilder handle Saudi SFDA Technical Regulation requirements?",
+        answer: "RecipeBuilder's SFDA preset implements the technical regulations for nutrition labeling on pre-packaged food in Saudi Arabia, including the per-100g format required for the Saudi market, the mandatory Arabic ingredient declaration, sugar tax-eligible product flagging, and the front-of-pack traffic light label that became mandatory for select beverage categories. Products requiring SFDA registration still need to go through SFDA's eService portal separately — RecipeBuilder supplies the compliant label artwork your dossier needs.",
       },
       {
-        question: "Does RecipeBuilder follow GCC food labeling laws?",
-        answer: "Yes. RecipeBuilder helps you generate food labels that follow GCC and SFDA labeling requirements, including bilingual English and Arabic ingredient lists, proper nutrition fact formatting, allergen declarations, and storage instructions. Labels are auto-formatted according to regional labeling standards.",
+        question: "What about Arabic translation accuracy? Do I need a sworn translator?",
+        answer: "RecipeBuilder's Arabic translation uses a curated food-industry glossary maintained by ByteBeam — not generic machine translation. Ingredient terms are matched against a verified Arabic ingredient name database, and allergen terms follow Dubai Municipality's standard Arabic spellings. You can still override any auto-translation manually. For products requiring sworn-translator certification (rare for retail labels — mostly for medical or infant products), you export the label as editable PDF for downstream translation review.",
       },
       {
-        question: "Do you support Arabic food labels?",
-        answer: "RecipeBuilder auto-translates ingredient lists to Arabic and generates bilingual packaging artwork with both English and Arabic text. You can refresh the Arabic translation anytime and download labels as PNG or PDF for print-ready packaging.",
+        question: "Is the Smart Food Choices (Green/Yellow/Red/Black) classification supported?",
+        answer: "Yes. For school catering products and items sold in Dubai school canteens, RecipeBuilder automatically classifies each recipe against Dubai Municipality's Smart Food Choices nutrient thresholds and assigns the Green, Yellow, Red, or Black category. The platform also flags which specific nutrient (saturated fat, sugar, sodium, total fat) is driving a non-Green classification so you can target reformulation. See our /school-catering-dubai page for the school-specific feature set.",
       },
       {
-        question: "Can I generate barcodes and QR codes for my products?",
-        answer: "Every recipe in RecipeBuilder gets a unique barcode for product identification and point-of-sale integration. You also get a QR code that links to a live nutrition facts page — customers can scan it to view detailed nutritional information.",
+        question: "Can RecipeBuilder generate labels for the GCC sugar tax (excise tax)?",
+        answer: "RecipeBuilder calculates total sugar per 100ml and per serving for beverages, flags products that fall into UAE/Saudi/Bahrain/Oman/Qatar excise tax categories (sweetened beverages, energy drinks, carbonated drinks), and includes excise tax declaration fields on the label when required. For tax reporting itself, RecipeBuilder exports the underlying sugar/serving data — final tax filings happen in your national excise system (e.g. UAE Federal Tax Authority).",
       },
       {
-        question: "How much does RecipeBuilder cost?",
-        answer: "RecipeBuilder starts at $1,500 for your first 1,500 recipes — that's as low as $1 per recipe. After that, additional recipes are $1.50 each. Compare that to $500–$2,000 per product for traditional lab testing. Book a demo to see the platform in action and get a personalized walkthrough.",
+        question: "Which GCC countries' regulations does RecipeBuilder cover?",
+        answer: "Full label-generation support is currently provided for the UAE (UAE.S/Dubai Municipality), Saudi Arabia (SFDA), Bahrain, Kuwait, Oman, and Qatar — i.e. all six GCC member states under the GCC Standardization Organization (GSO) umbrella. Cross-border product labels can be generated in a single bilingual format that satisfies the harmonized GSO baseline, with country-specific overlays (excise tax categories, language-of-instruction order, FOPNL adoption status) configurable per SKU.",
       },
       {
-        question: "Can I track recipe costs and inventory?",
-        answer: "Yes. RecipeBuilder includes built-in cost tracking with profit margin calculations and real-time stock tracking. You can monitor ingredient costs, track portion counts, and manage production schedules — all from the same platform where you create your labels.",
+        question: "How much does RecipeBuilder cost for GCC food businesses?",
+        answer: "RecipeBuilder starts at $29/month billed annually ($49/month billed monthly) on the Starter plan — up to 75 recipes, unlimited bilingual English-Arabic label generation, GCC/SFDA compliance, barcodes, and QR codes included. The Growth plan is $69/month annually ($99 monthly) for up to 400 recipes with priority support. Business plans with unlimited recipes and dedicated account management are custom-quoted. Most GCC caterers pay back the subscription on a single Dubai Municipality-approved label vs. the $500–$2,000 per-product cost of lab testing.",
       },
     ],
   },

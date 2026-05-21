@@ -20,10 +20,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title:
-    "Nutrition Analysis Software — Automatic Nutrition Facts from Recipes | RecipeBuilder",
+  title: "Nutrition Analysis Software — Auto-Calculate Nutrition Facts | RecipeBuilder",
   description:
-    "RecipeBuilder's nutrition analysis calculates nutrition facts from recipes using the USDA FoodData Central database. Generates FDA-style nutrition panels, EU nutrition declarations, GCC-compliant tables, traffic light labels, and allergen reports. Per-serving and per-100g calculations. Used by food manufacturers, restaurants, and catering businesses. By ByteBeam (Dubai).",
+    "Calculate nutrition facts from recipes using the USDA FoodData Central database. FDA, EU, and GCC-compliant panels with traffic light labels and allergens.",
   keywords: [
     "nutrition analysis software",
     "nutrition facts generator",
@@ -37,6 +36,17 @@ export const metadata: Metadata = {
     "vitamin mineral tracking",
     "allergen identification software",
   ],
+  alternates: {
+    canonical: "https://www.recipebuilder.co/nutrition-analysis",
+  },
+  openGraph: {
+    title: "Nutrition Analysis Software — Auto-Calculate Nutrition Facts",
+    description:
+      "Calculate nutrition facts from recipes using the USDA FoodData Central database. FDA, EU, and GCC-compliant panels.",
+    url: "https://www.recipebuilder.co/nutrition-analysis",
+    siteName: "RecipeBuilder",
+    type: "website",
+  },
 };
 
 const analysisFeatures = [
@@ -542,7 +552,7 @@ export default function NutritionAnalysisPage() {
             applicationCategory: "BusinessApplication",
             operatingSystem: "Web",
             description: "Automatic nutrition facts generation from recipes. FDA-style panels, traffic light labels, macro breakdowns, and calorie calculations.",
-            offers: { "@type": "AggregateOffer", priceCurrency: "USD", lowPrice: "49", highPrice: "99", offerCount: "3", category: "SaaS", availability: "https://schema.org/InStock" },
+            offers: { "@type": "AggregateOffer", priceCurrency: "USD", lowPrice: "29", highPrice: "99", offerCount: "3", category: "SaaS", availability: "https://schema.org/InStock" },
             provider: { "@type": "Organization", name: "ByteBeam", url: "https://www.bytebeam.co" },
             featureList: [
               "Automatic nutrition facts panels",

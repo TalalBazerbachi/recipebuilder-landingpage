@@ -23,9 +23,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About RecipeBuilder — Recipe Management & Food Labeling by ByteBeam",
+  title: "About RecipeBuilder — Built by ByteBeam (Dubai)",
   description:
-    "RecipeBuilder is a recipe management and food labeling platform built by ByteBeam, a Dubai-based technology company. ByteBeam helps food businesses across the GCC and worldwide manage recipes, auto-generate compliant nutrition labels, track costs, and manage inventory. Contact: info@bytebeam.co.",
+    "RecipeBuilder is a recipe management and food labeling platform built by ByteBeam, a Dubai technology company helping food businesses worldwide stay compliant.",
   keywords: [
     "about RecipeBuilder",
     "ByteBeam",
@@ -34,6 +34,17 @@ export const metadata: Metadata = {
     "food technology GCC",
     "food labeling platform",
   ],
+  alternates: {
+    canonical: "https://www.recipebuilder.co/about",
+  },
+  openGraph: {
+    title: "About RecipeBuilder — Built by ByteBeam (Dubai)",
+    description:
+      "RecipeBuilder is a recipe management and food labeling platform built by ByteBeam, a Dubai technology company.",
+    url: "https://www.recipebuilder.co/about",
+    siteName: "RecipeBuilder",
+    type: "website",
+  },
 };
 
 const products = [
