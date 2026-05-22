@@ -38,7 +38,7 @@ export default function Navbar({ variant = "global", light = false }: { variant?
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 lg:h-20">
         <Link href={variant === "gcc" ? "/gcc" : "/"} className="flex items-center gap-2.5">
-          <Image src="/logo.png" alt="RecipeBuilder" width={36} height={36} className="w-9 h-9" />
+          <Image src="/logo.svg" alt="RecipeBuilder" width={36} height={36} className="w-9 h-9" priority unoptimized />
           <span
             className={`text-xl font-bold transition-colors duration-300 ${
               useDarkText ? "text-foreground" : "text-white"

@@ -74,7 +74,7 @@ export default function Footer({ content = defaultContent }: { content?: FooterC
           {/* Brand */}
           <div className="lg:col-span-2 md:col-span-2">
             <div className="flex items-center gap-2.5 mb-5">
-              <Image src="/logo.png" alt="RecipeBuilder" width={36} height={36} className="w-9 h-9" />
+              <Image src="/logo.svg" alt="RecipeBuilder" width={36} height={36} className="w-9 h-9" unoptimized />
               <span className="text-xl font-bold text-white">
                 RecipeBuilder
               </span>

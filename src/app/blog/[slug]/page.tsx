@@ -443,7 +443,9 @@ export default async function BlogPostPage({ params }: PageProps) {
                     url: "https://www.recipebuilder.co",
                     logo: {
                       "@type": "ImageObject",
-                      url: "https://www.recipebuilder.co/logo.png",
+                      url: "https://www.recipebuilder.co/apple-icon",
+                      width: 180,
+                      height: 180,
                     },
                   },
                   image: `https://www.recipebuilder.co/blog/${post.slug}/opengraph-image`,
