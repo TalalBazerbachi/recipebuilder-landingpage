@@ -139,7 +139,7 @@ export default function CostTracking() {
 
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall"
+                href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-white bg-primary rounded-lg hover:bg-primary-dark transition-colors shadow-lg shadow-primary/25"
@@ -190,8 +190,8 @@ export default function CostTracking() {
                 <Image
                   src="/screenshots/cost-breakdown.png"
                   alt="RecipeBuilder cost tracking dashboard showing ingredient costs, total yield, per-serving cost, VAT, and net profit margin in AED"
-                  width={1400}
-                  height={900}
+                  width={2286}
+                  height={1003}
                   className="w-full h-auto"
                   priority
                 />
@@ -545,7 +545,7 @@ export default function CostTracking() {
 
                 <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
                   <a
-                    href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall"
+                    href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-primary bg-white rounded-lg hover:bg-white/90 transition-colors"

@@ -469,7 +469,7 @@ export default async function CompareSlugPage({ params }: PageProps) {
 
               <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
-                  href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall"
+                  href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-white bg-primary rounded-lg hover:bg-primary-dark transition-colors shadow-lg shadow-primary/25"
@@ -998,7 +998,7 @@ export default async function CompareSlugPage({ params }: PageProps) {
                 through the transition.
               </p>
               <a
-                href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall"
+                href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors"
@@ -1130,7 +1130,7 @@ export default async function CompareSlugPage({ params }: PageProps) {
                 </p>
                 <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
                   <a
-                    href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall"
+                    href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-primary bg-white rounded-lg hover:bg-white/90 transition-colors"

@@ -341,7 +341,7 @@ export default function ComplianceResourcesPage() {
                 </p>
                 <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
                   <a
-                    href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall"
+                    href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-primary bg-white rounded-lg hover:bg-white/90 transition-colors"

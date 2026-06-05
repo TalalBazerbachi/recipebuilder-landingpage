@@ -129,7 +129,7 @@ export default function FoodLabelingPage() {
 
               <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
-                  href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall"
+                  href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-white bg-primary rounded-lg hover:bg-primary-dark transition-colors shadow-lg shadow-primary/25"
@@ -183,8 +183,8 @@ export default function FoodLabelingPage() {
                 <Image
                   src="/screenshots/packaging-artwork.png"
                   alt="RecipeBuilder auto-generated bilingual food label showing English and Arabic ingredient lists, nutrition facts panel, barcode, and QR code"
-                  width={1400}
-                  height={900}
+                  width={1138}
+                  height={672}
                   className="w-full h-auto"
                   priority
                 />
@@ -499,7 +499,7 @@ export default function FoodLabelingPage() {
 
                 <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
                   <a
-                    href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall"
+                    href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-primary bg-white rounded-lg hover:bg-white/90 transition-colors"

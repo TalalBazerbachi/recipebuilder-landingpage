@@ -53,7 +53,7 @@ export const metadata: Metadata = {
 };
 
 const DEMO_URL =
-  "https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall";
+  "https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call";
 const CONTACT_URL =
   "mailto:info@bytebeam.co?subject=RecipeBuilder School Catering Dubai";
 

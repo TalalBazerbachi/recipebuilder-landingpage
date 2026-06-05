@@ -209,7 +209,7 @@ export default function RecipeCostCalculatorPage() {
             tracking across your full menu with real-time updates when
             ingredient prices change, try{" "}
             <a
-              href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall"
+              href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-primary hover:underline"
@@ -561,7 +561,7 @@ export default function RecipeCostCalculatorPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall"
+                  href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-primary bg-white rounded-lg hover:bg-white/90 transition-colors"
@@ -595,7 +595,7 @@ export default function RecipeCostCalculatorPage() {
               RecipeBuilder tracks real-time ingredient costs, auto-updates your cost per serving when prices change, and flags recipes that fall outside your margin targets.
             </p>
             <a
-              href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall"
+              href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline"
@@ -1001,7 +1001,7 @@ export default function RecipeCostCalculatorPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall"
+                href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-semibold text-primary bg-white rounded-lg hover:bg-white/90 transition-colors"

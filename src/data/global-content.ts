@@ -212,7 +212,7 @@ export const globalContent: LandingPageContent = {
         recipes: "Up to 75 recipes",
         support: "Email support",
         cta: "Start Free Trial",
-        ctaHref: "https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall",
+        ctaHref: "https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call",
       },
       {
         name: "Growth",
@@ -223,7 +223,7 @@ export const globalContent: LandingPageContent = {
         support: "Priority email & chat support",
         highlighted: true,
         cta: "Start Free Trial",
-        ctaHref: "https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall",
+        ctaHref: "https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call",
       },
       {
         name: "Business",
@@ -232,7 +232,7 @@ export const globalContent: LandingPageContent = {
         recipes: "Unlimited recipes",
         support: "Dedicated account manager & phone support",
         cta: "Contact Us",
-        ctaHref: "https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall",
+        ctaHref: "https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call",
       },
     ],
   },

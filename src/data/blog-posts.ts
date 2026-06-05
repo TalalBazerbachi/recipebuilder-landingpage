@@ -1268,7 +1268,7 @@ export const blogPosts: BlogPost[] = [
 <li><a href="/cost-tracking">Cost tracking</a> to monitor ingredient and production costs alongside compliance workflows.</li>
 <li>Document organization for registration submissions to Montaji and FIEMIS.</li>
 </ul>
-<p>To learn how RecipeBuilder can streamline your UAE food labeling compliance, <a href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall">book a discovery call</a>.</p>
+<p>To learn how RecipeBuilder can streamline your UAE food labeling compliance, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a discovery call</a>.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -1482,7 +1482,7 @@ export const blogPosts: BlogPost[] = [
 <li>Document checklist management to ensure all required certificates are collected and current.</li>
 <li>Multi-product registration tracking for businesses managing large product portfolios.</li>
 </ul>
-<p>To learn how RecipeBuilder can simplify your Montaji registration process, <a href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall">book a discovery call</a>.</p>
+<p>To learn how RecipeBuilder can simplify your Montaji registration process, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a discovery call</a>.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -1711,7 +1711,7 @@ export const blogPosts: BlogPost[] = [
 <li>Multi-market registration management for product portfolios.</li>
 <li>Integration with existing ERP and product data systems.</li>
 </ul>
-<p>To learn how RecipeBuilder can streamline your GCC compliance operations, <a href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall">book a discovery call</a>.</p>
+<p>To learn how RecipeBuilder can streamline your GCC compliance operations, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a discovery call</a>.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -1914,7 +1914,7 @@ export const blogPosts: BlogPost[] = [
 <li><strong>Serving size configuration</strong>: Set your serving size using current RACC values, and RecipeBuilder automatically calculates "per serving" and "per container" values.</li>
 <li><strong>Export-ready labels</strong>: Download labels in print-ready formats for direct use on packaging.</li>
 </ul>
-<p>To see how RecipeBuilder can streamline your FDA nutrition labeling workflow, <a href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall">book a demo</a>.</p>
+<p>To see how RecipeBuilder can streamline your FDA nutrition labeling workflow, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a demo</a>.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -2075,7 +2075,7 @@ export const blogPosts: BlogPost[] = [
 <li><strong>Ingredient change alerts</strong>: When you modify a recipe's ingredients, RecipeBuilder automatically updates the allergen declaration and alerts you to any changes.</li>
 <li><strong>USDA-verified ingredient data</strong>: All 20,000+ ingredients in RecipeBuilder's database include allergen classification data sourced from USDA FoodData Central.</li>
 </ul>
-<p>To see how RecipeBuilder can help you maintain allergen compliance across your product line, <a href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall">book a demo</a>.</p>
+<p>To see how RecipeBuilder can help you maintain allergen compliance across your product line, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a demo</a>.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -2231,7 +2231,7 @@ export const blogPosts: BlogPost[] = [
 <li><strong>Single-serving and dual-column detection</strong>: RecipeBuilder alerts you when your package size triggers single-serving rules or dual-column labeling requirements.</li>
 <li><strong>All nutrients recalculated per serving</strong>: When you adjust the serving size, all 15+ mandatory nutrient values are recalculated instantly.</li>
 </ul>
-<p>To see how RecipeBuilder handles serving size calculations for your products, <a href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall">book a demo</a>.</p>
+<p>To see how RecipeBuilder handles serving size calculations for your products, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a demo</a>.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -2406,7 +2406,7 @@ export const blogPosts: BlogPost[] = [
 <li><strong>Reference food comparisons</strong>: For comparative claims ("Reduced," "Less," "Light"), RecipeBuilder helps you document the reference food and calculate the percentage difference.</li>
 <li><strong>Daily Value calculations</strong>: All %DV calculations use the current (2020) Daily Values, ensuring "Good Source Of" and "High In" claims are validated against the correct benchmarks.</li>
 </ul>
-<p>To see how RecipeBuilder can help validate claims on your food labels, <a href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall">book a demo</a>.</p>
+<p>To see how RecipeBuilder can help validate claims on your food labels, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a demo</a>.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -2571,7 +2571,7 @@ export const blogPosts: BlogPost[] = [
 <li><strong>Multi-location consistency</strong>: Centrally managed recipes ensure that calorie calculations are consistent across all locations.</li>
 <li><strong>Exportable nutrition data</strong>: Download nutrition information in formats suitable for menu boards, printed menus, nutrition pamphlets, and digital displays.</li>
 </ul>
-<p>To see how RecipeBuilder can streamline your restaurant's calorie labeling compliance, <a href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall">book a demo</a>.</p>
+<p>To see how RecipeBuilder can streamline your restaurant's calorie labeling compliance, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a demo</a>.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -2794,7 +2794,7 @@ export const blogPosts: BlogPost[] = [
 <li><strong>Menu cycle management</strong> — Plan and analyze 4-week menu rotations, ensuring each cycle meets nutritional targets across all meal types.</li>
 <li><strong>Recipe change alerts</strong> — When any ingredient or quantity changes, RecipeBuilder recalculates all affected nutrition values and allergen declarations automatically.</li>
 </ul>
-<p>To see how RecipeBuilder can streamline your school catering compliance, <a href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall">book a demo</a>.</p>
+<p>To see how RecipeBuilder can streamline your school catering compliance, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a demo</a>.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -2971,7 +2971,7 @@ export const blogPosts: BlogPost[] = [
 <li><strong>Bilingual label generation</strong> — Arabic and English labels meeting <a href="/blog/uae-food-labeling-requirements-2026">UAE labeling standards</a> for any pre-packaged items produced by the catering operation.</li>
 <li><strong>Cost tracking</strong> — Real-time food cost calculations per dish, supporting margin management across large-scale catering operations.</li>
 </ul>
-<p>To see how RecipeBuilder supports your catering compliance, <a href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall">book a demo</a>.</p>
+<p>To see how RecipeBuilder supports your catering compliance, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a demo</a>.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -3128,7 +3128,7 @@ export const blogPosts: BlogPost[] = [
 <li><strong>Compliant label generation</strong> — Generate bilingual Arabic/English labels for pre-packaged items with correct formatting, allergen declarations, and date formats.</li>
 <li><strong>Change management</strong> — When you modify a recipe during the revision process, all affected nutrition values and allergen data update automatically.</li>
 </ul>
-<p>To see how RecipeBuilder can help you prepare your supplier application, <a href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall">book a demo</a>.</p>
+<p>To see how RecipeBuilder can help you prepare your supplier application, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a demo</a>.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -3278,7 +3278,7 @@ export const blogPosts: BlogPost[] = [
 <li><strong>Automatic updates</strong> — When you change a recipe ingredient or quantity, every affected calculation — nutrition values, allergen matrix, traffic light indicators — updates automatically.</li>
 <li><strong>Cost tracking</strong> — See per-serving food cost alongside nutrition data, enabling menu optimization that balances compliance with profitability.</li>
 </ul>
-<p>To see how RecipeBuilder handles school nutrition compliance, <a href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall">book a demo</a>.</p>
+<p>To see how RecipeBuilder handles school nutrition compliance, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a demo</a>.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -3457,7 +3457,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>When your menu changes — a new item added, an ingredient substituted — RecipeBuilder recalculates the affected nutrition values and allergen flags instantly. Your NutriCheck documentation reflects your actual current menu, not a static snapshot from months ago.</p>
 
-<p>If you want to see how RecipeBuilder fits into your NutriCheck workflow, <a href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall">book a discovery call</a> with our team.</p>
+<p>If you want to see how RecipeBuilder fits into your NutriCheck workflow, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a discovery call</a> with our team.</p>
 
 <h2>Summary</h2>
 
@@ -3611,7 +3611,7 @@ export const blogPosts: BlogPost[] = [
 
 <p><a href="/nutrition-analysis">RecipeBuilder</a> calculates the full nutritional profile of your menu items at the recipe level, using your actual ingredients and portion sizes. It can flag which items fall into each Smart Food Choices category based on current nutritional thresholds, identify items that are close to a category boundary and could be reclassified through minor reformulation, and generate the documentation your NutriCheck auditors need to verify your menu compliance.</p>
 
-<p>When a recipe changes, RecipeBuilder recalculates automatically — so your classification data stays current with your actual menu. To see how this works for your canteen operation, <a href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall">book a discovery call</a>.</p>
+<p>When a recipe changes, RecipeBuilder recalculates automatically — so your classification data stays current with your actual menu. To see how this works for your canteen operation, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a discovery call</a>.</p>
 
 <h2>Summary</h2>
 
@@ -3756,7 +3756,7 @@ export const blogPosts: BlogPost[] = [
 
 <p><a href="/nutrition-analysis">RecipeBuilder</a> gives your NIC a single platform to manage the nutritional and allergen documentation that underpins school canteen compliance. Recipe-level nutrition analysis is calculated automatically and updated instantly when ingredients change. Allergen matrices are generated from ingredient data and can be exported in formats suitable for NutriCheck documentation and inspection review.</p>
 
-<p>When a DM inspector arrives unannounced, your NIC can pull current, accurate compliance documentation immediately — rather than scrambling to compile it. To see how RecipeBuilder integrates with your NIC's workflow, <a href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall">book a discovery call</a> with our team.</p>
+<p>When a DM inspector arrives unannounced, your NIC can pull current, accurate compliance documentation immediately — rather than scrambling to compile it. To see how RecipeBuilder integrates with your NIC's workflow, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a discovery call</a> with our team.</p>
 
 <h2>Summary</h2>
 
@@ -3942,7 +3942,7 @@ export const blogPosts: BlogPost[] = [
 
 <p><a href="/nutrition-analysis">RecipeBuilder</a> maintains your nutrition and allergen documentation in real time. When a recipe changes, nutrition calculations and allergen matrices update automatically. When you need to submit documentation for a NutriCheck audit, your records are ready — not something you need to compile from scratch each month.</p>
 
-<p>For catering companies managing multiple school canteens, RecipeBuilder provides a single dashboard across all your menu items, making audit preparation consistent and efficient across your entire operation. To see how it works, <a href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall">book a discovery call</a>.</p>
+<p>For catering companies managing multiple school canteens, RecipeBuilder provides a single dashboard across all your menu items, making audit preparation consistent and efficient across your entire operation. To see how it works, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a discovery call</a>.</p>
 
 <h2>Summary</h2>
 
@@ -4109,7 +4109,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>When Dubai Municipality assessors ask for documentation of your menu sustainability — proportions of plant-based dishes, local ingredient sourcing, portion sizing data — RecipeBuilder provides the underlying data in a format that can be presented as part of your Green Canteen application and ongoing compliance record.</p>
 
-<p>To see how RecipeBuilder supports your sustainability documentation alongside your nutritional and allergen compliance, <a href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall">book a discovery call</a> with our team.</p>
+<p>To see how RecipeBuilder supports your sustainability documentation alongside your nutritional and allergen compliance, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a discovery call</a> with our team.</p>
 
 <h2>Summary</h2>
 
@@ -4337,7 +4337,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Businesses exporting from GCC markets to Europe or North America should look specifically for tools that support multiple frameworks simultaneously. RecipeBuilder's coverage of FDA, EU FIC, GCC/GSO, SFDA, and UAE ESMA in a single platform means you can manage labels for multiple export destinations without running parallel systems.</p>
 
-<p>If you're operating in or expanding into the GCC and want to see what multi-market label compliance looks like in practice, <a href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall">book a free demo of RecipeBuilder</a> to explore how it handles your specific regulatory requirements.</p>
+<p>If you're operating in or expanding into the GCC and want to see what multi-market label compliance looks like in practice, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a free demo of RecipeBuilder</a> to explore how it handles your specific regulatory requirements.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -4467,7 +4467,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>For GCC-based businesses or any brand with Middle East export ambitions, RecipeBuilder is the clear choice among these alternatives. It is the only tool in this list that covers GCC/GSO, SFDA, and UAE ESMA alongside FDA and EU FIC, generates Arabic-language labels, and produces full packaging artwork — all starting at $29/month billed annually.</p>
 
-<p>To see how RecipeBuilder handles your specific regulatory and labeling requirements, <a href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall">book a free demo</a> with the ByteBeam team.</p>
+<p>To see how RecipeBuilder handles your specific regulatory and labeling requirements, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a free demo</a> with the ByteBeam team.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -4597,7 +4597,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>For GCC businesses or brands with international ambitions, RecipeBuilder's combination of multi-framework compliance, Arabic language support, full packaging artwork, and $29/month billed annually starting price makes it the most practical alternative to Food Label Maker available today.</p>
 
-<p>If you want to see how RecipeBuilder handles your specific markets and product types, <a href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall">book a free discovery call</a> with the ByteBeam team.</p>
+<p>If you want to see how RecipeBuilder handles your specific markets and product types, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a free discovery call</a> with the ByteBeam team.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -4717,7 +4717,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Beyond minimum compliance, features that add operational value include: a comprehensive ingredient database with GCC-market foods; full packaging artwork generation rather than just a nutrition panel; recipe costing and inventory management to reduce the need for separate tools; and multi-framework support for businesses with exports to Western markets.</p>
 
-<p>RecipeBuilder meets all of these criteria. If you are a food business operating in the GCC and want to see the platform in action, <a href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall">book a free demo</a> to walk through your specific compliance requirements with the ByteBeam team. You can also explore RecipeBuilder's GCC-specific features at <a href="/gcc">www.recipebuilder.co/gcc</a>.</p>
+<p>RecipeBuilder meets all of these criteria. If you are a food business operating in the GCC and want to see the platform in action, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a free demo</a> to walk through your specific compliance requirements with the ByteBeam team. You can also explore RecipeBuilder's GCC-specific features at <a href="/gcc">www.recipebuilder.co/gcc</a>.</p>
 
 <h2>Frequently Asked Questions</h2>
 

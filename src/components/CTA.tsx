@@ -58,7 +58,7 @@ export default function CTA() {
               className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
             >
               <a
-                href="https://calendly.com/talal-bytebeam/foodlabelbuilder-discoverycall"
+                href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 text-base font-semibold text-primary bg-white rounded-xl hover:bg-white/90 transition-all hover:-translate-y-0.5 shadow-xl"
