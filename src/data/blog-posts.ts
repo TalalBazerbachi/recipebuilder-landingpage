@@ -27,1287 +27,1296 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     slug: "front-of-pack-nutrition-labels-gcc-guide",
-    title: "Front-of-Pack Nutrition Labels: A Guide for GCC Food Businesses",
+    title: "Abu Dhabi Nutri-Mark: Front-of-Pack Label Guide (2026)",
     description:
-      "A comprehensive guide to global front-of-pack nutrition labeling systems including NutriMark UAE, Nutri-Score, Traffic Light, Warning Labels, Health Star Rating, and Nutri-Grade — and how GCC food businesses can prepare for mandatory adoption.",
+      "Abu Dhabi's Nutri-Mark explained: A to E grades, the five first-phase categories, how scores are calculated, how to register, and its mandatory status.",
     date: "2026-01-10",
+    updatedDate: "2026-09-14",
     category: "Labeling",
     readTime: "10 min read",
     keywords: [
-      "front-of-pack labeling",
-      "NutriMark UAE",
-      "Nutri-Score",
-      "traffic light labels",
-      "health star rating",
-      "GCC food labeling",
-      "FOPNL food business",
-      "nutrition labeling systems",
-      "UAE food label requirements",
-      "food packaging regulations GCC",
-      "Nutri-Grade labeling",
+      "Nutri-Mark",
+      "Abu Dhabi Nutri-Mark",
+      "Nutri-Mark label",
+      "Nutri-Mark calculation",
+      "Nutri-Mark mandatory",
+      "front-of-pack nutrition label Abu Dhabi",
+      "ADQCC Nutri-Mark",
+      "QCC Nutri-Mark registration",
+      "ADG-044-2024",
+      "UAE front-of-pack labelling",
     ],
     content: `
-<h2>Introduction: Why Front-of-Pack Labeling Is Coming to the GCC</h2>
-<p>Front-of-pack nutrition labels (FOPNLs) are designed to give consumers a quick, at-a-glance understanding of a product's nutritional profile without needing to read the detailed nutrition facts panel on the back. Around the world, governments are adopting — or mandating — FOPNL systems as a tool to combat obesity and diet-related disease. The GCC is no exception.</p>
-<p>The UAE has already introduced the NutriMark system on a voluntary basis, and Saudi Arabia's SFDA has signaled its intention to implement a front-of-pack labeling requirement aligned with its national nutrition strategy. For food businesses operating in the Gulf, understanding the major FOPNL systems, how they work, and what they require is no longer optional — it is a near-term operational necessity.</p>
-<p>This guide covers the six most prominent FOPNL systems globally, examines the specific approach being taken in the UAE and Saudi Arabia, and outlines what food businesses need to do to prepare.</p>
+<p>Nutri-Mark is Abu Dhabi's front-of-pack nutrition label: a single letter from A to E, each with its own colour, printed on the front of a pack to summarise how nutritious a food or drink is compared with similar products. It was developed by the Abu Dhabi Quality and Conformity Council (ADQCC, now branded QCC) with the Abu Dhabi Public Health Centre (ADPHC), and it is the first scheme of its kind in the region.</p>
+<p>For manufacturers, importers and brands selling packaged food in Abu Dhabi, Nutri-Mark raises practical questions. Which products does it cover? How is the grade worked out? Is it mandatory yet? This guide answers each one using ADQCC's official documents and government announcements, and flags where the timeline has changed since launch.</p>
 
 <div class="key-takeaways">
 <h3>Key Takeaways</h3>
 <ul>
-<li><strong>Mandatory front-of-pack labeling in the GCC is a question of when, not if</strong> — The UAE's NutriMark is the most likely foundation for a mandatory scheme, and Saudi Arabia's SFDA is expected to announce its approach within one to two years.</li>
-<li><strong>All major FOPNL systems require accurate per-product nutritional data</strong> — Whether NutriMark, Nutri-Score, traffic light, or warning labels, every system demands calculations based on actual formulations, not estimates.</li>
-<li><strong>Modeling products against multiple systems reveals portfolio vulnerabilities</strong> — Products that score poorly under one system typically score poorly under all, making them clear reformulation priorities.</li>
-<li><strong>Early adopters gain a competitive edge</strong> — Businesses that voluntarily display favorable front-of-pack ratings can differentiate themselves in a market where consumers are increasingly health-conscious.</li>
+<li><strong>Nutri-Mark is an Abu Dhabi scheme</strong>: it was developed by ADQCC and ADPHC, announced at the Abu Dhabi International Food Exhibition (ADIFE) in November 2024, and set out in the Abu Dhabi Guideline ADG-044-2024, which ADQCC approved in March 2025.</li>
+<li><strong>Grades run from A (dark green) to E (dark orange)</strong>. They are meant for comparing products within the same category, not for labelling foods "good" or "bad".</li>
+<li><strong>The grade is based on the 2023 revision of Nutri-Score</strong>. It weighs nutrients to limit (energy, sugars, saturated fat, sodium) against components to encourage (fibre, protein, fruits and vegetables), and must be calculated with ADQCC's official calculation tool.</li>
+<li><strong>The first phase covers five product categories</strong>: oils, dairy, beverages, baked goods, and children's food such as cereals and snacks.</li>
+<li><strong>The mandatory date has moved</strong>. Launch announcements said labels would be mandatory for those categories from 1 June 2025. That date was postponed to Q4 2025, and government-quoted reporting in 2026 describes the scheme as not yet mandatory. Check QCC for the current position.</li>
 </ul>
 </div>
 
-<h2>NutriMark: The UAE's Own System</h2>
-<p>NutriMark is the UAE's homegrown front-of-pack labeling system, developed by the Emirates Authority for Standardization and Metrology (now part of MoIAT) in collaboration with nutrition scientists and public health authorities. The system uses a graded scale — typically displayed as a logo on the front of the package — that rates a product's overall nutritional quality based on its content of energy, saturated fat, sodium, sugars, fiber, protein, and fruit/vegetable content.</p>
-<p>Products receive a rating that communicates at a glance whether the item is a healthier choice within its category. The rating algorithm is nutrient-profile-based, meaning it considers both negative nutrients (those to limit, such as sugar and sodium) and positive nutrients (those to encourage, such as fiber and protein). The system is designed to work across food categories, although category-specific thresholds may apply.</p>
-<p>As of early 2026, NutriMark remains voluntary. However, the UAE's National Nutrition Strategy includes the adoption of a mandatory FOPNL as a medium-term objective. Food businesses that begin incorporating NutriMark into their packaging now will have a smoother transition when mandatory adoption is announced. Calculating a product's NutriMark rating requires accurate per-serving nutritional data — which reinforces the importance of maintaining precise recipe-level nutrition calculations for every product in the portfolio.</p>
+<h2>What Is Nutri-Mark?</h2>
+<p>QCC's official Nutri-Mark overview describes it as a summary front-of-pack label. It gives an overall assessment of a product's nutrient composition in simplified form and sits alongside the mandatory nutrition declaration on the back of the pack. It does not replace your nutrition facts table. It condenses that information into one grade a shopper can read at a glance.</p>
+<p>The scheme was announced jointly by ADQCC and ADPHC on 26 November 2024 at ADIFE. On 1 March 2025, ADQCC, through the Standard Technical Committee for the Emirate of Abu Dhabi, approved the Abu Dhabi guideline for using the label. According to QCC, the guideline was developed with ADPHC and other stakeholders, including the Abu Dhabi Department of Economic Development (ADDED), the Abu Dhabi Agriculture and Food Safety Authority (ADAFSA) and the Abu Dhabi Early Childhood Authority (ECA).</p>
+<p>Nutri-Mark is an Abu Dhabi government initiative. It is not a federal UAE standard issued by the Ministry of Industry and Advanced Technology (MoIAT), formerly ESMA, and it is separate from other schemes that sound similar, such as Dubai's school canteen programmes.</p>
 
-<h2>Nutri-Score: Europe's Widely Adopted Model</h2>
-<p>Nutri-Score is one of the most widely recognized FOPNL systems globally. Developed in France, it has been adopted — either mandatorily or voluntarily — in several European countries including France, Belgium, Germany, the Netherlands, and Spain. The system uses a five-tier color-coded scale from A (dark green, best nutritional quality) to E (dark red, lowest nutritional quality).</p>
-<p>The Nutri-Score algorithm evaluates products per 100g, scoring negative points for energy, saturated fat, sugars, and sodium, and positive points for fiber, protein, and fruits/vegetables/legumes/nuts. The net score determines the letter grade. The system has been praised for its simplicity and consumer comprehension but has faced criticism for not accounting for portion sizes and for sometimes penalizing foods that are traditionally considered healthy (such as olive oil and cheese) due to their fat or calorie content.</p>
-<p>For GCC food businesses that export to Europe, Nutri-Score compliance is already relevant. Understanding the algorithm allows businesses to model how their products would score and to make informed reformulation decisions. Even in the GCC, elements of the Nutri-Score approach — particularly its nutrient profiling methodology — have influenced the development of local systems like NutriMark.</p>
+<h2>The A to E Grading Scale</h2>
+<p>QCC describes a graded scale of five letters and colours. According to QCC, the purpose is to distinguish healthier options from less healthy ones within the same product category, and to help producers see how reformulating a product could move it up a grade.</p>
+<table>
+<thead>
+<tr><th>Grade</th><th>Colour (per QCC)</th><th>Meaning</th></tr>
+</thead>
+<tbody>
+<tr><td>A</td><td>Dark green</td><td>Highest nutritional quality within the category</td></tr>
+<tr><td>B</td><td>Light green</td><td>Better than average</td></tr>
+<tr><td>C</td><td>Yellow</td><td>Intermediate</td></tr>
+<tr><td>D</td><td>Light orange</td><td>Lower nutritional quality</td></tr>
+<tr><td>E</td><td>Dark orange</td><td>Lowest nutritional quality within the category</td></tr>
+</tbody>
+</table>
+<p>Some press coverage and ADQCC's March 2025 announcement describe the colours as running "green to red". For packaging artwork, follow QCC's official Nutri-Mark Label and Graphics Guidelines rather than colours seen in news graphics.</p>
 
-<h2>Traffic Light Labels: The Color-Coded Approach</h2>
-<p>The traffic light system, pioneered in the United Kingdom, uses red, amber, and green color coding to indicate whether a product's content of fat, saturated fat, sugars, and salt is high, medium, or low per serving and per 100g. Each nutrient is evaluated independently, so a product might carry a green indicator for fat but a red indicator for sugar.</p>
-<p>The traffic light system is valued for its transparency — consumers can immediately see which specific nutrients are of concern in a given product. It is also relatively straightforward for food businesses to implement, as it requires calculating the four key nutrients per serving and per 100g and comparing them against established thresholds published by public health authorities.</p>
-<p>In the GCC context, traffic light labeling has been discussed in the context of school canteen food and food service operations. Abu Dhabi's school nutrition guidelines, for example, reference traffic light color coding for meals served in school cafeterias. RecipeBuilder supports traffic light label generation, enabling food businesses to automatically calculate and display the appropriate color codes for each nutrient based on the recipe's nutritional profile. This is particularly useful for catering companies that need to produce traffic light displays for rotating menus.</p>
+<h2>How the Nutri-Mark Grade Is Calculated</h2>
+<p>According to QCC, the Nutri-Mark grading system is based on the 2023 revision of Nutri-Score, the front-of-pack label first used in France in 2017, adapted to the UAE's regulatory and market context. The detailed methodology is set out in ADG-044-2024.</p>
+<p>QCC's summary of the calculation groups the inputs into two sets:</p>
+<ul>
+<li><strong>Nutrients to limit:</strong> energy, sugars, saturated fat and sodium.</li>
+<li><strong>Nutrients and components to encourage:</strong> fibre, protein, and fruits and vegetables.</li>
+</ul>
+<p>Combining the two gives one score, and that score sets the letter grade. In the Nutri-Score 2023 method that Nutri-Mark is based on, points are calculated per 100 g or 100 ml of product, and adapted calculations are published for general foods, for fats, oils, nuts and seeds, and for beverages. The exact rules for your product, including thresholds and group-specific adjustments, are in ADG-044-2024. Use those rather than a generic Nutri-Score explainer.</p>
+<p>QCC says operators must calculate the score with its <strong>official Excel calculation tool</strong>. The current tool on QCC's site is dated April 2026. If you score products in your own spreadsheet or a third-party tool, check the results against the official tool before submitting.</p>
 
-<h2>Warning Labels: The Latin American Model</h2>
-<p>Chile introduced a mandatory warning label system in 2016 that has since been adopted, in various forms, by Mexico, Peru, Colombia, Uruguay, and Argentina. Under this approach, products that exceed defined thresholds for calories, sugar, sodium, or saturated fat per serving must carry prominent black octagonal warning labels on the front of the package. The labels use simple text — such as "High in Sugar" or "High in Sodium" — without color gradients or scoring scales.</p>
-<p>The warning label approach is considered the most direct and impactful of the FOPNL systems. Research from Chile has shown that warning labels significantly reduce consumption of high-sugar and high-sodium products, particularly among children and lower-income consumers. The simplicity of the system — a product either carries a warning or it does not — eliminates the ambiguity that can arise with graded systems.</p>
-<p>While no GCC country has adopted warning labels as of early 2026, Saudi Arabia's SFDA has studied the model closely, and it remains a possibility for future implementation. Food businesses should be aware of the warning label thresholds used in Latin American markets and evaluate how their products would fare under such a system. Products that would trigger warnings under a warning label system are also likely to score poorly under graded systems like NutriMark or Nutri-Score.</p>
+<h2>Which Products Does Nutri-Mark Cover?</h2>
+<p>ADQCC's launch announcement says the first phase focuses on five product categories:</p>
+<ul>
+<li>Oils</li>
+<li>Dairy</li>
+<li>Beverages</li>
+<li>Baked goods</li>
+<li>Children's food, which ADQCC says includes cereals and snacks commonly eaten by children</li>
+</ul>
+<p>ADQCC also announced a second phase introducing system certification for non-packaged food. At launch, officials said further food items would follow the first phase, and The National reported that the system is intended eventually to cover all food sold in the emirate. No dates for those later phases have been published.</p>
+<p>QCC's Nutri-Mark guidance is addressed to food and beverage operators, which it lists as retailers, suppliers, distributors, importers and manufacturers. When the scheme launched, ADQCC officials said manufacturers and local agents of products in scope would be responsible for grading products accurately and producing the front-of-pack labels.</p>
 
-<h2>Health Star Rating: Australia and New Zealand's Model</h2>
-<p>The Health Star Rating (HSR) system, used in Australia and New Zealand, assigns products a rating from 0.5 to 5 stars based on their overall nutritional profile. Like Nutri-Score, the HSR algorithm evaluates both negative and positive nutrient components. The star rating is displayed on the front of the pack, and businesses may optionally display per-serving information for energy, sodium, sugar, and saturated fat alongside the star rating.</p>
-<p>The HSR system has been credited with driving reformulation in Australia, where manufacturers have modified products to improve their star ratings. The system is voluntary but widely adopted, with major retailers and manufacturers using it across a broad range of product categories. The visual simplicity of the star rating — more stars equals a healthier product — has strong consumer recognition.</p>
-<p>For GCC food businesses that export to Australia and New Zealand, understanding the HSR algorithm is important. The system also serves as a reference point for policymakers in the Gulf who are evaluating which FOPNL model best suits their market. The HSR's approach to balancing positive and negative nutrients may influence how GCC systems evolve.</p>
+<h2>Is Nutri-Mark Mandatory? The Timeline So Far</h2>
+<p>This is where most online guides are out of date. Nutri-Mark was launched as a mandatory scheme for its first five categories, but the start date has since been postponed. Here is what official announcements and reputable press quoting officials have said:</p>
+<table>
+<thead>
+<tr><th>Date</th><th>Development</th></tr>
+</thead>
+<tbody>
+<tr><td>26 Nov 2024</td><td>ADQCC and ADPHC announce Nutri-Mark at ADIFE. Officials say labels will be required on the five first-phase categories from 1 June 2025, and The National reports existing goods would have six months to update packaging.</td></tr>
+<tr><td>1 Mar 2025</td><td>ADQCC approves the Abu Dhabi guideline for use of the Nutri-Mark label.</td></tr>
+<tr><td>30 May 2025</td><td>ADQCC and the Department of Health – Abu Dhabi announce that official implementation, originally scheduled for June 2025, is postponed to Q4 2025 so businesses have time to adapt production and reformulate (WAM).</td></tr>
+<tr><td>30 Jan 2026</td><td>The National reports that Nutri-Mark is currently implemented on a voluntary basis, that QCC is focused on awareness and market readiness, and that no date has yet been set for mandatory implementation.</td></tr>
+<tr><td>Jun 2026</td><td>QCC launches a Nutri-Mark scanning feature in the TAMM app. Gulf News quotes QCC saying the system is not yet mandatory, that labelled products are available through four major retail outlets in Abu Dhabi, and that QCC plans regular random inspections to verify grades.</td></tr>
+</tbody>
+</table>
+<p>As of this update we have found no official announcement of a new mandatory start date. ADQCC has published a Conditions for Use document (QCC-CoU01-01) dated April 2026, and that document governs anyone who uses the mark. Because the rules have changed more than once, confirm the current position directly with QCC at Nutrimark@qcc.gov.ae before making packaging decisions.</p>
+<p>When the scheme launched, ADQCC officials said that once the requirement applied, products in scope found on shelves without the label would be withdrawn and retailers fined, and that products showing an inaccurate grade would face action. Expect enforcement details to be confirmed when a mandatory date is set.</p>
+<p><strong>Outside Abu Dhabi:</strong> in October 2025, the UAE law firm Al Safar and Partners reported that neither Dubai Municipality nor MoIAT had announced Nutri-Mark requirements outside Abu Dhabi. If you sell across the UAE, treat Nutri-Mark as an Abu Dhabi scheme unless a federal or emirate-level authority says otherwise.</p>
 
-<h2>Nutri-Grade: Singapore's Beverage-Focused System</h2>
-<p>Singapore's Nutri-Grade system, introduced in 2022, takes a different approach. Rather than applying to all food products, it focuses specifically on beverages. All non-alcoholic beverages sold in Singapore must carry a Nutri-Grade label grading them from A (healthiest) to D (least healthy) based on their sugar and saturated fat content. Products graded C or D are prohibited from certain forms of advertising.</p>
-<p>The Nutri-Grade model is relevant to GCC food businesses for two reasons. First, the GCC's own sugar tax framework, discussed elsewhere in this blog, reflects a similar focus on beverages as a priority category for nutritional intervention. Second, Singapore's approach — targeting a specific product category with a mandatory, graded label — may influence how GCC regulators phase in their own FOPNL requirements, starting with high-impact categories before extending to all foods.</p>
+<h2>How to Obtain the Right to Use Nutri-Mark</h2>
+<p>QCC's official page on obtaining the right to use the mark sets out three steps that operators must complete before putting Nutri-Mark on a product.</p>
+<h3>Step 1: Calculate the Score With the Official Tool</h3>
+<p>Enter your product's nutrition data into QCC's Nutri-Mark calculation tool to get its score and grade. Use the version currently published on QCC's Official Documents and Tools page.</p>
+<h3>Step 2: Submit Your Data to QCC</h3>
+<p>Submit the data to QCC through its online registration process. QCC's site has previously described this process as under development, so check the current submission route with QCC if the online option is not available.</p>
+<h3>Step 3: Apply the Label Using the Official Graphics</h3>
+<p>Once registration is complete, QCC provides the official graphic files. Apply the mark strictly in line with the Nutri-Mark Label and Graphics Guidelines (the version on QCC's site is dated August 2025).</p>
+<p>QCC lists these official documents as the basis of the scheme. Read them before redesigning packaging:</p>
+<ul>
+<li>Abu Dhabi Guideline for the Nutri-mark (ADG-044-2024): scope, methodology and implementation requirements</li>
+<li>Conditions for Use of the Nutri-mark (QCC-CoU01-01): legal and operational conditions for use</li>
+<li>Nutri-mark Questions and Answers</li>
+<li>Nutri-mark Calculation Tool (Excel)</li>
+<li>Nutri-mark Label and Graphics Guidelines</li>
+</ul>
 
-<h2>Preparing Your Business: Practical Steps for FOPNL Readiness</h2>
-<p>Regardless of which specific FOPNL system the GCC ultimately mandates, the underlying requirements for food businesses are consistent. Every system requires accurate, per-product nutritional data. Every system requires that this data be calculated based on the actual formulation, not estimates or approximations. And every system requires that labels be updated when formulations change.</p>
-<p>Start by building a complete nutritional profile for every product in your portfolio. Ensure that the profile covers all nutrients used in major FOPNL algorithms: energy, total fat, saturated fat, trans fat, total sugars, added sugars, sodium, fiber, and protein. Use a recognized nutritional database — such as the USDA FoodData Central or region-specific databases — to calculate these values based on your actual recipes.</p>
-<p>Next, model your products against the major FOPNL systems. How would each product score under NutriMark? Under Nutri-Score? Under a traffic light system? Under a warning label system? This exercise reveals where your portfolio's vulnerabilities lie and where reformulation could have the greatest impact. Platforms like RecipeBuilder allow businesses to generate these analyses directly from their recipe data, providing a rapid way to evaluate the portfolio without waiting for external laboratory testing.</p>
-<p>Finally, establish a process for maintaining FOPNL readiness over time. This means linking your recipe management system to your labeling and packaging workflows so that any formulation change triggers a recalculation of the product's nutritional profile and, if applicable, its FOPNL rating. The goal is a system where nutritional data flows seamlessly from the recipe to the label, with minimal manual intervention and maximum accuracy.</p>
+<h2>Preparing Your Product Data</h2>
+<p>A Nutri-Mark grade is only as reliable as the nutrition data behind it, so it pays to get that data in order whether or not a mandatory date has been set. A practical approach:</p>
+<ul>
+<li><strong>Build per-100 g or per-100 ml profiles</strong> for every product in the first-phase categories. Include energy, sugars, saturated fat, sodium or salt, fibre and protein.</li>
+<li><strong>Record fruit and vegetable content</strong> from your formulation, since it counts as a favourable component in the calculation.</li>
+<li><strong>Check consistency with your back-of-pack declaration.</strong> Nutri-Mark summarises the mandatory nutrition declaration, so the two should come from the same data. Our <a href="/blog/uae-food-labeling-requirements-2026">UAE food labeling requirements guide</a> covers the back-of-pack rules.</li>
+<li><strong>Re-score after every formulation change.</strong> Changing a supplier, sugar level or oil blend can move a product across a grade boundary.</li>
+<li><strong>Keep an audit trail</strong> linking each grade to the recipe version and data used. QCC has said it plans random inspections to verify grades.</li>
+<li><strong>Confirm evidence requirements</strong> such as laboratory analysis against ADG-044-2024 and the Conditions for Use, rather than assuming calculated values will be accepted.</li>
+</ul>
+<p>For context on other schemes: Nutri-Score, which Nutri-Mark is based on, is voluntary for producers in France and has been recommended by Belgium, Switzerland, Germany, Spain, the Netherlands and Luxembourg. In Saudi Arabia, the SFDA invited manufacturers in 2018 to join a voluntary pledge to use front-of-pack labels with multiple traffic-light colour coding. A 2021 study in <em>Nutrients</em> found that only 80 of 4,335 screened companies had adopted front-of-pack labels by 2020. None of these schemes carries over automatically, so a product sold in several markets may need scoring under each one separately.</p>
 
-<h2>The Regulatory Outlook: What to Expect in the GCC</h2>
-<p>Industry observers and regulatory insiders broadly agree that mandatory FOPNL in the GCC is a question of when, not if. The UAE's NutriMark system provides the most likely foundation for a mandatory scheme in the Emirates. Saudi Arabia's SFDA is expected to announce its approach — possibly drawing on elements of multiple international systems — within the next one to two years. Other GCC states will likely follow the lead of the UAE and Saudi Arabia, as has been the pattern with previous labeling and food safety regulations.</p>
-<p>For food businesses, the strategic implication is clear: invest in nutritional data infrastructure now. The businesses that already have accurate, product-level nutritional data — maintained in systems that can adapt to new labeling requirements — will be able to respond quickly when mandatory FOPNL is announced. Those that do not will face a scramble to generate data for potentially hundreds of products under tight regulatory timelines.</p>
+<h2>Where RecipeBuilder Fits</h2>
+<p>The hardest part of any Nutri-Mark submission is the nutrition data itself: accurate per-100 g figures for each product, kept up to date as recipes change. RecipeBuilder is built for that data work. It does not issue or calculate the official Nutri-Mark grade. That must come from QCC's official calculation tool and registration process. What it does is give your team a single, version-controlled source for the nutrition figures you enter into the tool and print on the back of the pack.</p>
+
+<div class="blog-cta-box">
+<h3>Get Your Nutrition Data Ready for Nutri-Mark</h3>
+<p>RecipeBuilder calculates per-100 g nutrition profiles and per-serving values from your recipes using USDA FoodData Central data. It also generates bilingual English/Arabic label content and print-ready packaging artwork, so your back-of-pack declaration and the figures you enter into QCC's Nutri-Mark tool come from the same recipe records. <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">Book a call</a> to see how it fits your labeling workflow.</p>
+</div>
 
 <h2>Frequently Asked Questions</h2>
 
-<h3>What is NutriMark and when will it become mandatory in the UAE?</h3>
-<p>NutriMark is the UAE's front-of-pack nutrition labeling system that rates a product's overall nutritional quality using a graded scale based on energy, saturated fat, sodium, sugars, fiber, protein, and fruit or vegetable content. It is currently voluntary, but the UAE's National Nutrition Strategy includes mandatory front-of-pack labeling as a medium-term objective, and industry observers expect it within the next few years.</p>
+<h3>Who developed Nutri-Mark?</h3>
+<p>Nutri-Mark was developed by the Abu Dhabi Quality and Conformity Council (ADQCC) with the Abu Dhabi Public Health Centre (ADPHC) and announced at the Abu Dhabi International Food Exhibition in November 2024. ADQCC approved the supporting Abu Dhabi guideline in March 2025, and its official documents are published on QCC's Nutri-Mark pages.</p>
 
-<h3>How does Nutri-Score differ from the traffic light labeling system?</h3>
-<p>Nutri-Score provides a single overall letter grade from A to E for the entire product based on a net score algorithm. The traffic light system evaluates four individual nutrients — fat, saturated fat, sugars, and salt — independently, assigning red, amber, or green to each. A product might receive mixed colors under traffic light but a single overall grade under Nutri-Score.</p>
+<h3>Is Nutri-Mark mandatory in Abu Dhabi?</h3>
+<p>It was announced as mandatory for five first-phase categories from 1 June 2025, but ADQCC and the Department of Health – Abu Dhabi postponed implementation to Q4 2025. Reporting in January and June 2026 that quotes QCC describes the scheme as voluntary for now, with no mandatory date set. Confirm the current status with QCC at Nutrimark@qcc.gov.ae.</p>
 
-<h3>How can RecipeBuilder help prepare for front-of-pack labeling requirements?</h3>
-<p>RecipeBuilder calculates accurate per-serving nutritional data directly from recipe formulations using the USDA database. Businesses can generate nutritional profiles covering all nutrients used in major FOPNL algorithms and model how products would score under different systems. When formulations change, nutritional data updates automatically, keeping FOPNL ratings current without manual recalculation.</p>
+<h3>Which products are in the first phase of Nutri-Mark?</h3>
+<p>ADQCC names five first-phase categories: oils, dairy, beverages, baked goods, and children's food including cereals and snacks. A later phase is planned to introduce certification for non-packaged food, and officials have said more categories will follow, but no dates for later phases have been published.</p>
 
-<h3>Which front-of-pack labeling system is Saudi Arabia likely to adopt?</h3>
-<p>Saudi Arabia's SFDA has not yet finalized its approach, but it is expected to announce a front-of-pack labeling requirement within the next one to two years. The SFDA has studied multiple international models including warning labels, Nutri-Score, and graded systems. The final system may draw on elements from multiple approaches, aligned with the Kingdom's national nutrition strategy.</p>
-
-<h2>Conclusion: Front-of-Pack Labeling as a Differentiator</h2>
-<p>Front-of-pack nutrition labels are coming to the GCC. The exact system, timeline, and requirements remain to be finalized, but the direction is clear. Food businesses that prepare now — by building accurate nutritional profiles, modeling their products against major FOPNL systems, and investing in digital tools that keep their data current — will not only be ready for mandatory adoption but will be able to use FOPNL as a competitive differentiator. In a market where consumers are increasingly health-conscious and regulators are increasingly demanding, the ability to display a favorable front-of-pack rating is a tangible business advantage.</p>
+<h3>How is a Nutri-Mark grade calculated?</h3>
+<p>According to QCC, Nutri-Mark is based on the 2023 revision of Nutri-Score. It weighs nutrients to limit (energy, sugars, saturated fat, sodium) against components to encourage (fibre, protein, fruits and vegetables) to produce a grade from A to E. Operators must use QCC's official calculation tool, and the full methodology is set out in guideline ADG-044-2024.</p>
 
 <h3>Related Resources</h3>
 <ul>
-<li>UAE Wellness Strategy: How Food Businesses Can Support National Health Goals</li>
-<li><a href="/blog/uae-food-labeling-requirements-2026">Understanding the GCC Sugar Tax: What It Means for Food and Beverage Businesses</a></li>
-<li><a href="/blog/uae-food-labeling-requirements-2026">Food Labeling in Dubai: A Guide to UAE.S 192:2019</a></li>
+<li><a href="https://qcc.gov.ae/Nutri-Mark/Overview">QCC: Nutri-Mark Overview (official)</a></li>
+<li><a href="https://qcc.gov.ae/Nutri-Mark/Official-Documents-and-Tools">QCC: Nutri-Mark Official Documents and Tools</a></li>
+<li><a href="/blog/uae-food-labeling-requirements-2026">UAE Food Labeling Requirements 2026: Standards, Dates and Penalties</a></li>
+<li><a href="/blog/dubai-municipality-montaji-food-registration">Dubai Food Product Registration: ZAD, FIRS and Montaji Explained</a></li>
+<li><a href="/food-labeling">RecipeBuilder Food Labeling</a></li>
+<li><a href="/recipe-management">RecipeBuilder Recipe Management</a></li>
 </ul>
 `,
   },
   {
     slug: "uae-food-labeling-requirements-2026",
-    title: "UAE Food Labeling Requirements: Complete Compliance Guide 2026",
+    title: "UAE Food Labeling Requirements 2026: Standards, Dates and Penalties",
     description:
-      "Master UAE food labeling requirements for 2026. Learn ESMA compliance, Dubai Municipality registration, and Arabic labeling rules for food businesses operating in the UAE.",
+      "UAE food labeling rules for 2026: UAE.S GSO 9, the Arabic rule, date marking, UAE.S 192:2019 additives, allergens, halal, Nutri-Mark and penalties.",
     date: "2026-01-16",
+    updatedDate: "2026-09-14",
     category: "Compliance",
-    readTime: "12 min read",
+    readTime: "13 min read",
     keywords: [
       "UAE food labeling requirements",
-      "ESMA compliance",
-      "Dubai Municipality food registration",
-      "UAE food label regulations",
-      "Emirates food labeling standards",
-      "Montaji registration Dubai",
-      "Arabic food labeling",
-      "nutritional labeling UAE",
-      "food compliance GCC",
+      "UAE.S GSO 9 labeling",
+      "Arabic food label UAE",
+      "UAE food date marking",
+      "UAE.S 192:2019 food additives",
+      "allergen labeling UAE",
+      "halal labeling UAE",
+      "Nutri-Mark Abu Dhabi",
+      "FIEMIS ADAFSA",
+      "Federal Law No. 10 of 2015 food safety penalties",
+      "MoIAT food standards",
     ],
     content: `
-<h2>Introduction</h2>
-<p>Non-compliance with UAE food labeling requirements can result in fines ranging from AED 10,000 to AED 2,000,000, shipment rejections at ports, and even imprisonment for serious violations. For food manufacturers, importers, and distributors operating in the <a href="/">UAE and broader GCC region</a>, understanding these regulations is not optional — it is essential for market access.</p>
-<p>The UAE food labeling framework is governed by a combination of national standards, emirate-level authorities, and GCC-wide technical regulations. This guide covers the mandatory <a href="/food-labeling">food labeling requirements</a>, common pitfalls, and practical steps food businesses must take to ensure their products are compliant before they reach the market.</p>
+<p>Every prepackaged food sold in the UAE is checked against its label. Importers submit artwork for label assessment before goods enter the country, and in Dubai newly registered imports can be sampled and tested. If a laboratory finds an ingredient or additive that the label does not declare, the item is rejected. For manufacturers, importers and distributors, the label is often where a UAE launch either clears quickly or stalls.</p>
+<p>This guide covers the rules behind a UAE food label in 2026: the labeling technical regulation, the Arabic rule, date marking, nutrition labeling, additives under UAE.S 192:2019, allergens, halal and GMO statements, Abu Dhabi's Nutri-Mark and federal penalties. Standards are revised periodically, so confirm the edition in force with the Ministry of Industry and Advanced Technology (MoIAT) or your emirate's food authority before printing packaging.</p>
 
-<div class="key-takeaways">
-<h3>Key Takeaways</h3>
-<ul>
-<li><strong>Three regulatory bodies govern UAE food labeling</strong> — ESMA sets national standards, Dubai Municipality manages registration via the Montaji Portal, and ADAFSA oversees food safety in Abu Dhabi through FIEMIS.</li>
-<li><strong>Arabic labeling is mandatory and translation quality matters</strong> — Arabic text must not be smaller than English text, with a minimum height of 1.6mm, and machine translations are frequently rejected.</li>
-<li><strong>Penalties for non-compliance range from AED 10,000 to AED 2,000,000</strong> — with possible imprisonment for serious violations such as trading adulterated or harmful food.</li>
-<li><strong>All 12 mandatory label elements must appear in both Arabic and English</strong> — including product name, ingredients, net quantity, country of origin, nutritional information, allergen declarations, and date markings in the correct format.</li>
-</ul>
-</div>
+<div class="key-takeaways"><h3>Key Takeaways</h3><ul>
+<li><strong>UAE.S GSO 9, "Labeling of Prepackaged Food Stuffs", is the core labeling technical regulation.</strong> The standards work once done by ESMA has sat with MoIAT since ESMA was merged into the ministry in July 2020.</li>
+<li><strong>Arabic is mandatory. English is optional.</strong> If you add English or any other language, that information must be identical to the Arabic.</li>
+<li><strong>Date format depends on shelf life.</strong> Products with a shelf life of three months or less need day/month/year. Longer-life products may use day/month/year or month/year. Dates go on the original pack, never on a sticker.</li>
+<li><strong>UAE.S 192:2019 is the food additives regulation, not a general labeling rule.</strong> It adds a warning for six synthetic colours and requires the source of gelatin, lecithins and mono- and diglycerides to be declared.</li>
+<li><strong>Nutri-Mark is an Abu Dhabi scheme from ADQCC and ADPHC.</strong> It was announced as mandatory from 1 June 2025 for five product categories, but that deadline was postponed and the scheme remains voluntary. Confirm the current status with QCC.</li>
+<li><strong>Penalties are set by Federal Law No. 10 of 2015.</strong> Trading in adulterated, harmful or rotten food carries a fine of AED 100,000 to AED 2,000,000, imprisonment of at least three months, or either penalty.</li>
+</ul></div>
 
-<h2>Understanding UAE Food Regulatory Bodies</h2>
-<p>Three main regulatory bodies oversee food labeling and registration in the UAE. Each has distinct responsibilities, and food businesses must understand which authority applies to their operations.</p>
+<h2>Who Regulates Food Labels in the UAE</h2>
+<p>Federal standards and law set the requirements. Emirate-level authorities run registration, label assessment, inspection and enforcement.</p>
 
-<h3>ESMA — Emirates Authority for Standardization and Metrology</h3>
-<p>ESMA sets national food labeling standards for the UAE. The key standard is <strong>UAE.S 9:2017</strong>, which was updated by <strong>UAE.S 9:2019</strong>. This standard defines mandatory label elements for pre-packaged foods, including product identification, ingredient listing, date marking, nutritional information, and allergen declarations. ESMA also administers the <strong>NutriMark</strong> scheme, which is now active and provides a <a href="/blog/front-of-pack-nutrition-labels-gcc-guide">front-of-pack nutritional rating system</a> to help consumers make healthier choices.</p>
+<h3>MoIAT (formerly ESMA)</h3>
+<p>The Ministry of Industry and Advanced Technology was established in July 2020. The Emirates Authority for Standardization and Metrology (ESMA) was merged into its structure, so older documents that say "ESMA standard" now fall under MoIAT. The ministry's Standardization Affairs Sector prepares national standards and technical regulations. Many UAE food standards adopt texts from the GCC Standardization Organization (GSO), which is why labeling standards often carry a "UAE.S GSO" prefix.</p>
+
+<h3>ZAD, the national food registration portal</h3>
+<p>In 2018 the UAE introduced the National Scheme for Food Accreditation and Registration. It created an electronic food registration portal known as ZAD. Importers use it to register food items and request label assessment. Registration checks that a product meets UAE technical regulations, including those on labeling, shelf life and halal requirements.</p>
 
 <h3>Dubai Municipality</h3>
-<p>Dubai Municipality manages food product registration through the <strong>Montaji Portal</strong>. All food products imported into or manufactured in Dubai must be registered through this system before they can be sold — our <a href="/blog/dubai-municipality-montaji-food-registration">Montaji Portal step-by-step guide</a> covers the full registration process. Registration fees are AED 10 per product, with additional fees for certificates and laboratory testing. The Montaji system verifies label compliance in line with Dubai's S 192/2019 food labeling directive, documentation, and laboratory analysis as part of the approval process.</p>
+<p>Dubai importers register products and obtain label approval through Dubai Municipality's Food Import and Re-export System (FIRS) or ZADI, Dubai's integrated food import platform. According to the US Department of Agriculture's 2022 UAE report, each pack size counts as a separate item, any change to packaging, weight, label or barcode needs a label re-assessment, and first-time registrations can be laboratory tested.</p>
+<p>Dubai Municipality's <a href="/blog/dubai-municipality-montaji-food-registration">Montaji platform</a> is its registration and verification system for regulated consumer products, such as health supplements, cosmetics and food contact materials. Check which system applies to your product category before you submit.</p>
 
-<h3>ADAFSA — Abu Dhabi Agriculture and Food Safety Authority</h3>
-<p>ADAFSA oversees food safety and registration in Abu Dhabi. It has launched the <strong>FIEMIS</strong> (Food Information and Early Market Intelligence System) to manage food establishment licensing, product registration, and import controls within the emirate. Businesses operating in Abu Dhabi — including those supplying to <a href="/blog/dubai-municipality-school-food-requirements-caterers-guide">Abu Dhabi school catering programs</a> — must register with ADAFSA in addition to meeting federal ESMA standards.</p>
+<h3>ADAFSA in Abu Dhabi</h3>
+<p>The Abu Dhabi Agriculture and Food Safety Authority (ADAFSA) launched FIEMIS, the <strong>Food Import and Export Management Information System</strong>, in October 2022. Through it, food importers and exporters can complete ADAFSA services online, including company registration, product registration, inspection requests and customs declarations, and can track shipments. In the other emirates, label assessment sits with each municipality's food control department.</p>
 
-<h2>Mandatory Label Requirements</h2>
-<p>Under UAE.S 9:2017 and related GCC standards, pre-packaged food products must include the following information on their labels:</p>
+<h2>Mandatory Label Content Under UAE.S GSO 9</h2>
+<p>The UAE applies GSO 9, "Labeling of Prepackaged Food Stuffs", as a technical regulation. USDA's 2022 report refers to UAE.S GSO 9:2019. At GCC level, GSO has since published GSO 9:2022 and an amendment, GSO 9:2022/Amd1:2025. Check with MoIAT which edition applies to your product on the date you register it. USDA's report summarises the core label content as follows.</p>
 <table>
 <thead>
-<tr><th>Element</th><th>Requirement</th><th>Source</th></tr>
+<tr><th>Element</th><th>What the label needs</th></tr>
 </thead>
 <tbody>
-<tr><td>Product Name</td><td>Clear, truthful product identification</td><td>UAE.S 9:2017</td></tr>
-<tr><td>Ingredients List</td><td>Listed in descending order by weight (<a href="/food-labeling">generate compliant lists</a>)</td><td>UAE.S 9:2017</td></tr>
-<tr><td>Net Quantity</td><td>Weight or volume in metric units</td><td>UAE.S 9:2017</td></tr>
-<tr><td>Country of Origin</td><td>Specific country of manufacture</td><td>UAE.S 9:2017</td></tr>
-<tr><td>Manufacturer Details</td><td>Company name, address, and contact details</td><td>UAE.S 9:2017</td></tr>
-<tr><td>Local Importer</td><td>UAE-based distributor name and address</td><td>UAE.S 9:2017</td></tr>
-<tr><td>Production Date</td><td>Clearly stated on packaging</td><td>UAE.S 9:2017</td></tr>
-<tr><td>Expiry Date</td><td>Format depends on product shelf life</td><td>UAE.S 9:2017</td></tr>
-<tr><td>Storage Conditions</td><td>If applicable for product safety</td><td>UAE.S 9:2017</td></tr>
-<tr><td>Nutritional Information</td><td>Per GSO 2233 requirements</td><td>GSO 2233:2021</td></tr>
-<tr><td>Allergen Declarations</td><td>Highlighted for major allergens</td><td>UAE.S 9:2017</td></tr>
-<tr><td>Batch/Lot Number</td><td>Required for traceability and recalls</td><td>UAE.S 9:2017</td></tr>
+<tr><td>Name of the food</td><td>Shown in a prominent position</td></tr>
+<tr><td>Ingredients</td><td>Listed in descending order of proportion</td></tr>
+<tr><td>Food additives</td><td>Declared with their functional class (see the additives section below)</td></tr>
+<tr><td>Nutrition declaration</td><td>As required by UAE.S GSO 2233</td></tr>
+<tr><td>Net contents</td><td>Weight or volume in accepted units</td></tr>
+<tr><td>Manufacturer</td><td>Name and address of the manufacturer, or of the packer if different</td></tr>
+<tr><td>Country of origin</td><td>The producing country</td></tr>
+<tr><td>Dates</td><td>Production and expiry dates for products with a mandatory shelf life</td></tr>
+<tr><td>Storage conditions</td><td>Where the validity of the date depends on them</td></tr>
+<tr><td>Instructions for use</td><td>Where needed</td></tr>
+<tr><td>Animal source</td><td>If the food or any ingredient contains animal content</td></tr>
+<tr><td>Warnings and declarations</td><td>Any mandatory warning or advisory statements, and use of irradiation</td></tr>
+<tr><td>Lot number</td><td>Production batch declared in code or another indelible mark</td></tr>
 </tbody>
 </table>
-<p>All mandatory information must appear in both Arabic and English. Product labels that omit any of these elements will be rejected during registration or at the point of import. Tools like <a href="/food-labeling">RecipeBuilder's nutrition label generator</a> can help ensure your labels include every required element in the correct format.</p>
+<p>Barcodes must be unique. You cannot re-register a barcode against a different item description, such as a different weight, brand or recipe. Products containing pork must meet the general labeling requirements and state clearly that they contain pork. Products for institutional use (catering rather than retail) can be accepted without an Arabic label, but cannot be sold in retail stores unless an Arabic label is added.</p>
 
-<h2>Arabic Language Requirements</h2>
-<p>Arabic labeling is mandatory for all food products sold in the UAE. This requirement is non-negotiable and applies to both locally manufactured and imported products.</p>
+<h2>The Arabic Language Rule</h2>
+<p>The rule is often overstated as "everything in Arabic and English". In fact, <strong>labels must be in Arabic.</strong> Other languages are allowed alongside the Arabic, and any information given in another language must be identical to the Arabic text. As the US International Trade Administration puts it, labels must be in Arabic only or Arabic and English. English is optional, though many imported products are bilingual in practice.</p>
+<p>Imported products can use an Arabic sticker instead of reprinting packaging, subject to strict conditions:</p>
 <ul>
-<li>Arabic text must not be smaller than English text on the label.</li>
-<li>The minimum text height for mandatory information is <strong>1.6mm</strong>.</li>
-<li>Sticker labels (applied over original foreign-language packaging) are accepted, but they must be approved by the relevant authority <strong>before export</strong> to the UAE.</li>
-<li>Arabic translations must be accurate — direct machine translations are frequently rejected during registration review.</li>
+<li>Stickers must be approved by UAE authorities during label assessment before use.</li>
+<li>For imports, stickering must be done before export. It cannot be done when goods arrive in the UAE.</li>
+<li>Use a single sticker. It must not hide required information, contradict the original label, or come off easily.</li>
+<li>The sticker must not carry production or expiry dates that differ from the original label. Dates printed only on a sticker are not accepted.</li>
 </ul>
-<p>Businesses should engage qualified Arabic translators who are familiar with food labeling terminology. Incorrect or awkward Arabic translations are one of the most common reasons for label rejection at the Montaji registration stage. A purpose-built <a href="/food-labeling">food labeling platform</a> can generate bilingual labels with validated Arabic output, reducing the risk of translation-related rejections.</p>
+<p>At minimum, the Arabic label or sticker must give the product name, ingredients, country of origin and, where applicable, storage conditions, instructions for use and nutritional information. Because the Arabic text is the reference, use a translator who knows food terminology and check it against the English line by line.</p>
 
-<h2>Date Format Requirements</h2>
-<p>The UAE has specific requirements for how production and expiry dates must be displayed on food packaging. The required format depends on the product's shelf life:</p>
+<h2>Date Marking Requirements</h2>
+<p>Date marking is easy to get wrong on imported artwork. Under UAE.S 9:2019, as summarised by USDA:</p>
 <table>
 <thead>
-<tr><th>Shelf Life</th><th>Required Format</th><th>Example</th></tr>
+<tr><th>Shelf life</th><th>Required format</th><th>Example</th></tr>
 </thead>
 <tbody>
-<tr><td>3 months or less</td><td>Day/Month/Year</td><td>15/06/2025</td></tr>
-<tr><td>More than 3 months</td><td>Day/Month/Year OR Month/Year</td><td>06/2025</td></tr>
+<tr><td>Three months or less</td><td>Day/month/year</td><td>15/06/2026</td></tr>
+<tr><td>Longer than three months</td><td>Day/month/year or month/year</td><td>06/2026 or June 2026</td></tr>
 </tbody>
 </table>
-<p>Products using non-standard date formats — such as Month/Day/Year (common in the US) — will be flagged during compliance review. Businesses exporting from markets that use different date conventions must ensure their labels are reformatted for the UAE market. This is a particularly common issue for manufacturers also serving the US market under <a href="/food-labeling">FDA nutrition labeling rules</a>, where date formatting conventions differ significantly.</p>
-
-<h2>Nutritional Information Requirements</h2>
-<p>Under <strong>GSO 2233:2021</strong>, all pre-packaged food products must include a nutrition information panel. The following nutrients must be declared:</p>
 <ul>
-<li>Energy (kJ and kcal)</li>
-<li>Protein (g)</li>
-<li>Total fat (g)</li>
-<li>Saturated fat (g)</li>
-<li>Total carbohydrates (g)</li>
-<li>Sugars (g)</li>
-<li>Sodium or Salt (mg or g)</li>
-<li>Dietary fiber (g)</li>
+<li>With the month/year format, the last day of that month counts as the expiry date. The month can be written as a number or a word.</li>
+<li>Only one set of production and expiry dates is allowed on a pack.</li>
+<li>Dates must be engraved, embossed, printed or stamped in indelible ink directly on the original label or primary packaging. A barcode cannot replace an expiry date.</li>
+<li>Introduce the expiry date with an accepted phrase such as "Expiration", "Use by" or "Best before".</li>
 </ul>
-<p>Nutritional values must be declared per 100g or 100ml, and may additionally be declared per serving. The Nutrient Reference Value (NRV) percentage should be included where applicable to help consumers understand the contribution of each nutrient relative to daily intake recommendations.</p>
-<p>Nutritional claims — such as "low fat," "sugar-free," or "high in protein" — are permitted only if the product meets the specific criteria defined in GSO 2233. Making unsubstantiated nutritional claims is a compliance violation and can result in product withdrawal. Using <a href="/food-labeling">automated nutrition analysis</a> to calculate nutrient values from your recipes ensures accuracy and gives you confidence that your claims are substantiated.</p>
+<p>Some foods, including fresh fruit and vegetables, honey, non-fortified salt, solid sugar, chewing gum, loose tea, dry cereals and spices, are exempt from an expiry date but still need a production date, harvest year or packing date. Mandatory shelf-life periods for specific foods are set separately in UAE.S 150-1, so check it before fixing a shelf life.</p>
 
-<h2>Allergen Declarations</h2>
-<p>Major allergens must be highlighted on the label in both English and Arabic. The allergens recognized under UAE and GCC standards follow the Codex Alimentarius list and include:</p>
+<h2>Nutrition Labeling</h2>
+<p>UAE.S GSO 2233:2021, "Requirements of Nutritional Labeling", makes a nutrition declaration mandatory on prepackaged food intended to be eaten directly or after heating. USDA summarises the core requirements:</p>
 <ul>
-<li>Cereals containing gluten</li>
+<li>Declare the nutritive value, including energy, protein, carbohydrates, fats and dietary fibre.</li>
+<li>Declare each vitamin, mineral or other nutrient added as an ingredient separately.</li>
+<li>Express values per 100 g or 100 ml, or per serving as specified by the manufacturer.</li>
+<li>Use gram, mg, µg or IU, and kilocalories for energy.</li>
+</ul>
+<p>Nutrition and health claims are governed by UAE.S GSO 2333:2019 and the Codex general guidelines on claims. Claims are not permitted on foods for infants and young children unless a specific standard allows them, and health claims must be supported by evidence. The UAE's traffic-light front-of-pack standard, UAE.S 5034:2018, was changed from mandatory to voluntary by the UAE Cabinet in December 2021.</p>
+
+<h2>Abu Dhabi's Nutri-Mark</h2>
+<p>Nutri-Mark is a front-of-pack nutrition grade launched by the <strong>Abu Dhabi Quality and Conformity Council (ADQCC)</strong> and the <strong>Abu Dhabi Public Health Centre (ADPHC)</strong>. It is not an ESMA or MoIAT scheme. Announced in November 2024, it grades products from A (highest nutritional value) to E (lowest), each with its own colour.</p>
+<p>Nutri-Mark was announced as mandatory in the Emirate of Abu Dhabi from 1 June 2025 for five first-phase categories: baked goods, oils, dairy products, beverages, and children's food such as cereals and snacks. Days before that date, ADQCC and the Abu Dhabi Department of Health postponed the mandatory phase to the fourth quarter of 2025 (WAM, 30 May 2025), and reports in 2026 describe the scheme as still voluntary with no mandatory date announced. The penalties described at launch, such as withdrawing unmarked products, therefore have not taken effect. A later phase is planned to cover non-packaged food. For the grading method, covered categories and registration steps, see our <a href="/blog/front-of-pack-nutrition-labels-gcc-guide">Abu Dhabi Nutri-Mark guide</a>.</p>
+
+<h2>Food Additives Under UAE.S 192:2019</h2>
+<p>UAE.S 192:2019 is often wrongly described as a labeling directive. It is the UAE technical regulation <strong>"Additives Permitted for Use in Food Stuffs"</strong>, approved in October 2019. It covers which additives may be used, in which foods, and at what maximum levels.</p>
+<h3>What the standard covers</h3>
+<ul>
+<li><strong>Approved references.</strong> Permitted additives and maximum use levels follow the Codex General Standard for Food Additives and the relevant EU additive regulations. Additives may be used only in the food categories those references allow, and within the maximum levels.</li>
+<li><strong>Unlisted additives.</strong> Where Codex and EU lists are silent, competent authorities can assess an additive on scientific and legislative justification from the applicant.</li>
+<li><strong>Islamic law.</strong> Additives that violate Islamic law are prohibited. This includes additives containing or made from pork products, and ethanol, except where it results from natural fermentation or is used in limited amounts as a solvent for additives.</li>
+</ul>
+<h3>How additives appear on the label</h3>
+<p>Additives are declared in the ingredients list. USDA's guidance for the UAE says an additive's name or E-number must be declared together with its functional class, such as preservative or emulsifier. Where an additive could fit more than one class, use the class that best reflects its function in the food. UAE.S 192:2019 then adds two specific label requirements:</p>
+<ul>
+<li><strong>Six synthetic colours carry a warning.</strong> If a product contains Sunset Yellow (E 110), Quinoline Yellow (E 104), Carmoisine (E 122), Allura Red (E 129), Tartrazine (E 102) or Ponceau 4R (E 124), mark the colour with an asterisk. Print this warning below the ingredients list: "May have an adverse effect on activity and attention in children".</li>
+<li><strong>Some ingredient sources must be named.</strong> If gelatin, lecithins or mono- and diglycerides are used, declare their source.</li>
+</ul>
+<p>Potassium bromate (E924), a flour treatment agent, is one additive UAE authorities have acted on specifically. Gulf News reported that bakeries and flour mills were instructed not to use it, under a directive from the General Secretariat of UAE Municipalities. For any other additive, check the current approved references before you assume it is permitted.</p>
+
+<h2>Allergen Declaration</h2>
+<p>GSO 9 requires foods and ingredients known to cause hypersensitivity to be declared on the label. In the GSO 9/2013 text we reviewed, the listed categories were:</p>
+<ul>
+<li>Cereals containing gluten, such as wheat, barley, oats, rye and spelt</li>
 <li>Crustaceans</li>
 <li>Eggs</li>
 <li>Fish</li>
-<li>Peanuts</li>
-<li>Soybeans</li>
-<li>Milk and dairy products</li>
-<li>Tree nuts</li>
+<li>Peanuts and soybeans</li>
+<li>Nuts (the English translation reads "walnuts")</li>
+<li>Milk and milk products, including lactose</li>
+<li>Sulphite at 10 ppm or more</li>
 <li>Celery</li>
 <li>Mustard</li>
 <li>Sesame seeds</li>
-<li>Sulphites (above 10 mg/kg)</li>
+<li>Molluscs (translated as "clams")</li>
 <li>Lupin</li>
-<li>Molluscs</li>
 </ul>
-<p>Allergens must be clearly distinguished from the rest of the ingredients list — typically through bold text, uppercase lettering, or a separate allergen statement. For a comprehensive breakdown of allergen labeling across all GCC markets, see our complete GCC allergen labeling guide. Precautionary allergen labeling (e.g., "may contain traces of nuts") should be used only where there is a genuine risk of cross-contamination and should not be used as a blanket disclaimer.</p>
+<p>It also requires declaration where a biotechnology-derived ingredient could carry over one of these allergens. Secondary sources quote different GCC allergen counts and GSO 9 has been revised since 2013, so check the list against the edition MoIAT applies today.</p>
+<p>For compound ingredients, such as a sauce in a ready meal, GSO 9/2013 lets you declare the compound ingredient by name followed by its own ingredients in brackets. We found no percentage threshold there exempting allergens in compound ingredients, and no specific provision on "may contain" statements. Declare allergens wherever they occur, and keep any precautionary statement truthful and not misleading.</p>
 
-<h2>Industry-Specific Requirements</h2>
-<h3>Meat and Poultry Products</h3>
-<p>All meat and poultry products must carry a valid <strong>Halal certificate</strong> from a recognized certification body. The Halal logo and certificate number must appear on the label — our Halal food labeling requirements guide covers the full certification process and label specifications. Products containing pork or pork derivatives cannot be sold in general retail channels and require a separate license for sale in designated outlets.</p>
-
-<h3>Dairy Products</h3>
-<p>Dairy labels must clearly indicate whether the product is made from fresh, reconstituted, or recombined milk. Products containing vegetable fat in place of milk fat must not be labeled as dairy products and must carry a clear declaration of the fat source.</p>
-
-<h3>Beverages and Energy Drinks</h3>
-<p>Energy drinks are subject to specific labeling requirements, including mandatory warnings such as "Not suitable for children under 16, pregnant or breastfeeding women, or people sensitive to caffeine." Caffeine content must be declared per serving. Sweetened beverages fall under the expanded GCC excise tax framework and must declare sugar content accurately for both labeling and tax compliance purposes.</p>
-
-<h3>Packaged Foods with Additives</h3>
-<p>Food additives must be declared by their functional class name and either their specific name or E-number. Only additives that are permitted under UAE.S and GSO standards may be used. Products containing additives not approved in the UAE will be rejected at registration.</p>
-
-<h3>GMO and Organic Labeling</h3>
-<p>Products containing genetically modified organisms must carry a GMO declaration if the GMO content exceeds the threshold defined by UAE standards. Organic products must carry certification from a recognized organic certification body, and the label must include the certification mark and certificate number.</p>
-
-<h2>Common Compliance Mistakes</h2>
-<p>Based on rejection data from regulatory bodies, the following are the most frequent compliance failures for food labels in the UAE. Our <a href="/blog">compliance resources hub</a> provides additional checklists and tools to help you avoid these issues:</p>
+<h2>Halal and GMO Statements</h2>
+<h3>Halal</h3>
+<p>Halal requirements sit in their own family of standards, and the numbers are often confused:</p>
 <ul>
-<li><strong>Incorrect Arabic translation</strong> — Machine-generated or inaccurate Arabic text that does not match the English label content.</li>
-<li><strong>Missing local importer details</strong> — Imported products that do not include the name and address of a UAE-based distributor or agent.</li>
-<li><strong>Date format errors</strong> — Using Month/Day/Year format instead of the required Day/Month/Year format.</li>
-<li><strong>Absent certificates</strong> — Missing Halal, Free Sale, Health, or GMP certificates required for the product category.</li>
-<li><strong>Stickering after import</strong> — Applying Arabic sticker labels after the product has arrived in the UAE without prior approval.</li>
-<li><strong>Incomplete allergen information</strong> — Failing to highlight allergens or omitting allergen declarations from the Arabic portion of the label.</li>
-<li><strong>Expired documentation</strong> — Submitting certificates or laboratory analysis reports that have passed their validity period.</li>
+<li><strong>UAE.S 2055-1</strong>: Halal products, Part 1: General Requirements for Halal Food</li>
+<li><strong>UAE.S 2055-2</strong>: General Requirements for Halal Certification Bodies. This applies to certifiers, not directly to food products.</li>
+<li><strong>UAE.S 993</strong>: Animal Slaughtering Requirements According to Islamic Rules</li>
 </ul>
+<p>Under Cabinet Decree No. 10 of 2014, establishments must get halal certificates for final products and raw materials from halal certification bodies registered with MoIAT. If a product shows a halal logo on its label, the importer must provide a halal certificate from a certifier approved by UAE authorities. Meat and meat products need a halal slaughter certificate. MoIAT's UAE Halal National Mark is optional.</p>
+<h3>GMO</h3>
+<p>GMO labeling is governed by <strong>UAE.S GSO 2141:2011</strong> for unprocessed agricultural products and <strong>UAE.S GSO 2142:2011</strong> for processed food and feed. UAE.S GSO 2142 is a GMO standard, not a general labeling standard. Labeling is required where genetically modified content exceeds one percent. If a label claims "GMO free", the supplier must provide a certificate from a government authority in the country of origin.</p>
 
-<h2>Step-by-Step Compliance Checklist</h2>
-<h3>Pre-Production Phase</h3>
-<ul>
-<li>Verify that all ingredients are permitted under UAE and GCC food standards.</li>
-<li>Calculate complete <a href="/food-labeling">nutritional information</a> per 100g/100ml and per serving.</li>
-<li>Identify all allergens present in the product and in the production environment.</li>
-<li>Obtain Halal certification if applicable to the product category.</li>
-</ul>
-
-<h3>Label Design Phase</h3>
-<ul>
-<li>Include all 12 mandatory label elements listed in the requirements table above — or use a <a href="/food-labeling">nutrition label generator</a> to build compliant labels automatically.</li>
-<li>Ensure Arabic and English text are of equal or greater size.</li>
-<li>Use the correct date format based on the product's shelf life.</li>
-<li>Highlight allergens using bold, uppercase, or a separate allergen statement.</li>
-<li>Include the NutriMark rating if participating in ESMA's scheme.</li>
-</ul>
-
-<h3>Pre-Import Phase</h3>
-<ul>
-<li>Register the product on the <a href="/blog/dubai-municipality-montaji-food-registration">Montaji Portal</a> (for Dubai) or FIEMIS (for Abu Dhabi).</li>
-<li>Submit label artwork for assessment and approval.</li>
-<li>Obtain laboratory analysis from an accredited lab.</li>
-<li>Prepare all required certificates (Free Sale, Health, Origin, GMP, Halal).</li>
-</ul>
-
-<h3>Documentation Phase</h3>
-<ul>
-<li>Compile a complete product file including formulation records, nutritional analysis, certificates, and approved label artwork.</li>
-<li>Verify that all certificates are current and will remain valid through the expected import and distribution period.</li>
-<li>Maintain copies of all registration confirmations and approval notices.</li>
-</ul>
-
-<h2>Penalties for Non-Compliance</h2>
-<p>The UAE enforces food labeling violations through a tiered penalty structure. Penalties vary based on the severity of the violation:</p>
+<h2>Penalties Under Federal Law No. 10 of 2015</h2>
+<p>Article 14 of Federal Law No. 10 of 2015 on Food Safety sets the criminal penalties. These apply without prejudice to any more severe penalty under another law. The figures below come from the official English translation, but the Arabic text published in the Official Gazette prevails.</p>
 <table>
 <thead>
-<tr><th>Violation Type</th><th>Penalty</th></tr>
+<tr><th>Offence</th><th>Penalty</th></tr>
 </thead>
 <tbody>
-<tr><td>Trading adulterated, harmful, or spoiled food</td><td>AED 100,000 – 2,000,000 + imprisonment</td></tr>
-<tr><td>Trading pork/alcohol without license</td><td>Up to AED 500,000 + imprisonment</td></tr>
-<tr><td>Technical regulation violations</td><td>AED 10,000 – 100,000</td></tr>
-<tr><td>Other labeling violations</td><td>Minimum AED 10,000</td></tr>
-<tr><td>Repeat violations</td><td>Penalties doubled</td></tr>
+<tr><td>Trading in adulterated, harmful or rotten food at any stage of the food chain</td><td>Imprisonment of at least three months and a fine of AED 100,000 to AED 2,000,000, or either penalty</td></tr>
+<tr><td>Trading without a licence in food containing pork or its derivatives, alcohol, or other materials that violate Islamic Sharia</td><td>Imprisonment of at least one month and a fine of AED 50,000 to AED 500,000, or either penalty</td></tr>
+<tr><td>Trading, promoting or publishing a false description of food to deceive the consumer</td><td>Fine of AED 10,000 to AED 100,000</td></tr>
+<tr><td>Trading in food that violates technical regulations issued under the law</td><td>Fine of AED 10,000 to AED 100,000</td></tr>
+<tr><td>Other violations of the law</td><td>Fine of at least AED 10,000</td></tr>
+<tr><td>Repeat offences</td><td>Penalty doubled</td></tr>
 </tbody>
 </table>
-<p>In addition to financial penalties, non-compliant products may be confiscated, recalled, or barred from re-import. Businesses with repeated violations may face suspension or revocation of their trade license.</p>
+<p>Under Article 17, authorities can also issue warnings, close an establishment for up to three months, or close it permanently and seek withdrawal of its licence if the violation is not fixed.</p>
 
-<h2>How RecipeBuilder Supports UAE Label Compliance</h2>
-<p>RecipeBuilder helps food businesses generate compliant labels, track nutritional information, and manage food labeling requirements across GCC markets — all from one platform. Whether you are launching a new product or bringing an existing range into the UAE, RecipeBuilder is built for <a href="/">GCC food compliance</a> from the ground up. Key capabilities include:</p>
-<ul>
-<li><a href="/food-labeling">Automated nutritional calculations</a> based on product recipes and ingredient databases.</li>
-<li>Bilingual <a href="/food-labeling">label generation</a> in Arabic and English with correct formatting.</li>
-<li>Allergen detection and highlighting based on ingredient composition.</li>
-<li>Date format validation and shelf-life management.</li>
-<li><a href="/recipe-management">Recipe management</a> with version control for tracking formulation changes across products.</li>
-<li><a href="/cost-tracking">Cost tracking</a> to monitor ingredient and production costs alongside compliance workflows.</li>
-<li>Document organization for registration submissions to Montaji and FIEMIS.</li>
-</ul>
-<p>To learn how RecipeBuilder can streamline your UAE food labeling compliance, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a discovery call</a>.</p>
+<h2>How RecipeBuilder Helps With Label Preparation</h2>
+<p>Many label errors start in the recipe: an ingredient that moved after reformulation, an allergen inside a sub-recipe, or an Arabic panel that no longer matches the English. RecipeBuilder keeps the recipe as the single source for label content. It supports label preparation; it does not replace assessment by UAE authorities.</p>
+<div class="blog-cta-box"><h3>Turn recipes into UAE-ready label content</h3><p>RecipeBuilder generates ingredient lists ordered by weight, calculates nutrition from USDA FoodData Central data, builds allergen declarations from your ingredients and sub-recipes, and produces bilingual English/Arabic label content, print-ready packaging artwork, barcodes and QR codes. <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">Book a call</a> to see how it fits your UAE labeling workflow.</p></div>
 
 <h2>Frequently Asked Questions</h2>
-
-<h3>What are the mandatory label elements for food products sold in the UAE?</h3>
-<p>Under UAE.S 9:2017, all pre-packaged food products must display 12 mandatory elements in both Arabic and English: product name, ingredients list (in descending order by weight), net quantity, country of origin, manufacturer details, local importer details, production date, expiry date, storage conditions, nutritional information per GSO 2233, allergen declarations, and batch/lot number for traceability.</p>
-
-<h3>What date format is required on UAE food labels?</h3>
-<p>Products with a shelf life of 3 months or less must use Day/Month/Year format (e.g., 15/06/2025). Products with a shelf life longer than 3 months may use either Day/Month/Year or Month/Year format (e.g., 06/2025). The US-standard Month/Day/Year format is not accepted and will be flagged during compliance review.</p>
-
-<h3>How does RecipeBuilder help with UAE food labeling compliance?</h3>
-<p>RecipeBuilder automates nutritional calculations based on product recipes, generates bilingual Arabic/English labels with correct formatting, detects and highlights allergens based on ingredient composition, validates date formats, and organizes documentation for registration submissions to both the Montaji Portal in Dubai and FIEMIS in Abu Dhabi.</p>
-
-<h3>What happens if a food product fails UAE labeling compliance?</h3>
-<p>Non-compliant products may be rejected at import, confiscated from retail shelves, or recalled. Financial penalties range from AED 10,000 for technical violations to AED 2,000,000 for trading adulterated or harmful food, with possible imprisonment for serious offenses. Repeat violations result in doubled penalties and potential suspension or revocation of the business trade license.</p>
-
-<h3>Do I need separate registrations for Dubai and Abu Dhabi?</h3>
-<p>Yes. Dubai requires product registration through the <a href="/blog/dubai-municipality-montaji-food-registration">Montaji Portal</a> managed by Dubai Municipality, while Abu Dhabi requires registration through ADAFSA's FIEMIS system. Federal ESMA standards apply across all emirates, but each emirate has its own registration authority and process. Products sold in both emirates must be registered with both systems.</p>
-
-<h3>What nutrition label software works for UAE and GCC compliance?</h3>
-<p>Most international <a href="/compare">nutrition label software tools</a> are built for FDA or EU markets and do not support GCC-specific requirements like Arabic bilingual labels, GSO 2233 nutrient declarations, or NutriMark ratings. RecipeBuilder is designed specifically for <a href="/">GCC food compliance</a> and generates labels that meet UAE, Saudi Arabia, and broader Gulf market standards from a single platform. See our <a href="/compare">2026 nutrition label software comparison</a> for a full breakdown.</p>
-
-<h2>Conclusion</h2>
-<p>UAE food labeling compliance requires attention to detail across multiple regulatory dimensions. The key takeaways for food businesses are:</p>
-<ul>
-<li><strong>Arabic labeling is mandatory</strong> — and the quality of translation matters as much as its presence.</li>
-<li><strong>Three regulatory bodies</strong> (ESMA, Dubai Municipality, ADAFSA) govern different aspects of food labeling and registration.</li>
-<li><strong>Date formats must follow UAE conventions</strong> — Day/Month/Year for short shelf-life products, with Month/Year permitted for longer shelf-life items.</li>
-<li><strong>Certifications</strong> (Halal, Free Sale, Health, GMP) must be obtained before import, not after.</li>
-<li><strong>Label artwork must be pre-approved</strong> through the relevant registration portal before products are shipped.</li>
-<li><strong>Penalties are significant</strong> — ranging from AED 10,000 to AED 2,000,000 with possible imprisonment for serious violations.</li>
-</ul>
-<p>Businesses that invest in building compliant labeling processes from the outset will avoid costly rejections, protect their market access, and build trust with both regulators and consumers in the UAE. As <a href="/recipe-management">digital tools continue to transform F&B operations across the GCC</a>, automating label compliance is becoming a competitive advantage — not just a regulatory necessity.</p>
+<h3>Does a UAE food label have to be in both Arabic and English?</h3>
+<p>No. Arabic is mandatory and English is optional. Under UAE.S GSO 9, labels must be in Arabic, and if another language such as English is also used, that information must be identical to the Arabic text. Imported products may use a single approved Arabic sticker applied before export, but dates must be printed on the original pack.</p>
+<h3>What date format is required on food labels in the UAE?</h3>
+<p>Products with a shelf life of three months or less must show dates as day/month/year. Products with a longer shelf life may use day/month/year or month/year, and with month/year the last day of the month counts as the expiry date. Only one set of production and expiry dates is allowed, printed in indelible ink directly on the original label or pack.</p>
+<h3>Is UAE.S 192:2019 a food labeling standard?</h3>
+<p>No. UAE.S 192:2019 is the technical regulation "Additives Permitted for Use in Food Stuffs". It sets which additives may be used and at what levels, with reference to Codex and EU additive lists. It adds a few label rules, such as a warning for six synthetic colours, but general label content is governed by UAE.S GSO 9.</p>
+<h3>Is Nutri-Mark mandatory across the whole UAE?</h3>
+<p>No. Nutri-Mark is an Abu Dhabi scheme run by the Abu Dhabi Quality and Conformity Council and the Abu Dhabi Public Health Centre. It was announced as mandatory in the Emirate of Abu Dhabi from 1 June 2025 for five initial categories (baked goods, oils, dairy products, beverages and children's food), but the mandatory phase was postponed and the scheme remains voluntary as of 2026. Check the current status with the Abu Dhabi Quality and Conformity Council before relying on it.</p>
 
 <h3>Related Resources</h3>
 <ul>
-<li><a href="/blog/dubai-municipality-montaji-food-registration">Dubai Municipality Food Registration: Montaji Portal Guide 2026</a></li>
-<li>Halal Food Labeling in the UAE: Certification and Requirements</li>
-<li>Allergen Labeling in the GCC: Complete Compliance Guide</li>
-<li><a href="/blog/front-of-pack-nutrition-labels-gcc-guide">Front-of-Pack Nutrition Labels in the GCC: What Food Businesses Need to Know</a></li>
-<li>GCC Sugar Tax: Guide for Food and Beverage Manufacturers</li>
-<li><a href="/compare">Best Nutrition Label Software for GCC and Middle East Markets</a></li>
-<li>Food Labeling in Dubai: UAE S 192/2019 Guide</li>
-<li><a href="/food-labeling">Free Nutrition Label Generator Tool</a></li>
+<li><a href="/blog/front-of-pack-nutrition-labels-gcc-guide">Abu Dhabi Nutri-Mark: Front-of-Pack Label Guide (2026)</a></li>
+<li><a href="/blog/dubai-municipality-montaji-food-registration">Dubai Food Product Registration: ZAD, FIRS and Montaji Explained</a></li>
+<li><a href="/blog/how-to-become-approved-school-food-supplier-dubai">How to Become an Approved School Food Supplier in Dubai (2026)</a></li>
+<li><a href="/food-labeling">RecipeBuilder Food Labeling</a></li>
+<li><a href="/recipe-management">RecipeBuilder Recipe Management</a></li>
+<li><a href="/compare">Compare Nutrition Label Software</a></li>
+<li><a href="https://moiat.gov.ae/en/programs/halal">MoIAT: UAE Halal Programme and Standards</a></li>
+<li><a href="https://www.trade.gov/knowledge-product/united-arab-emirates-labelingmarking-requirements">US International Trade Administration: UAE Labeling Requirements</a></li>
+<li><a href="https://www.mediaoffice.abudhabi/en/economy/adafsa-launches-food-import-and-export-management-information-system/">Abu Dhabi Media Office: ADAFSA Launches FIEMIS</a></li>
 </ul>
 `,
   },
   {
     slug: "dubai-municipality-montaji-food-registration",
-    title: "Dubai Municipality Food Registration: Montaji Portal Guide 2026",
+    title: "Dubai Food Product Registration: ZAD, FIRS and Montaji Explained",
     description:
-      "Step-by-step guide to registering food products on Dubai Municipality's Montaji portal. Learn requirements, fees, and tips for faster approval in 2026.",
+      "How food product registration works in Dubai: the ZAD, FIRS and ZADI portals, label assessment, risk-based lab testing, and where Montaji fits.",
     date: "2026-01-16",
+    updatedDate: "2026-09-14",
     category: "Compliance",
-    readTime: "10 min read",
+    readTime: "9 min read",
     keywords: [
-      "Montaji registration Dubai",
-      "Dubai Municipality food import",
-      "UAE food product registration",
-      "Montaji portal guide",
-      "Dubai food registration",
+      "Dubai food product registration",
+      "Dubai Municipality food registration",
+      "ZAD food registration UAE",
       "FIRS Dubai Municipality",
-      "food import UAE",
-      "Dubai food compliance",
+      "ZADI Dubai food import",
+      "Montaji registration Dubai",
+      "food label assessment Dubai",
+      "UAE food import registration",
     ],
     content: `
-<h2>Introduction</h2>
-<p>Importing or selling food products in Dubai without proper registration results in shipment rejections, financial penalties, and potential loss of trading privileges. Dubai Municipality's Montaji system is the mandatory gateway for all food product registrations in the emirate. Whether you are a local manufacturer, an international exporter, or an importer-distributor, understanding the Montaji registration process is essential for getting your products to market in Dubai.</p>
-<p>This guide walks through the full registration process — from account setup and document preparation to fee payment, laboratory testing, and certificate issuance — so that food businesses can navigate the system efficiently and avoid common delays.</p>
+<p>Many guides describe Dubai Municipality's Montaji portal as the place to register food products. For ordinary packaged food, that is not how the system works. Montaji is Dubai Municipality's platform for consumer products such as cosmetics, personal care products, health supplements and detergents. Food items go through a different route: the federal ZAD platform and Dubai Municipality's own food item registration and label assessment service, which importers reach through the FIRS and ZADI portals.</p>
+<p>This guide explains which system does what, who has to register, what the application asks for, when laboratory testing applies, and how registration connects to releasing a shipment. Where a fee, processing time or validity period could not be confirmed from an official source, we say so.</p>
 
 <div class="key-takeaways">
 <h3>Key Takeaways</h3>
 <ul>
-<li><strong>All food products sold in Dubai must be registered through the Montaji Portal</strong> — this applies to importers, local manufacturers, distributors, re-exporters, and e-commerce food sellers.</li>
-<li><strong>Registration requires 10+ documents per product</strong> — including product datasheets, label artwork, nutritional analysis, Free Sale Certificate, Health Certificate, and Halal Certificate where applicable.</li>
-<li><strong>First-time registrations typically take 16-31 business days</strong> — with label assessment being the stage where the most rejections occur due to missing mandatory elements or incorrect Arabic translations.</li>
-<li><strong>Registration certificates are valid for 5 years</strong> — renewal applications should be submitted at least 30 days before expiry to avoid gaps that could block imports.</li>
+<li><strong>Food must be registered in ZAD before it is traded.</strong> Under Ministerial Decree No. 239 of 2018, food that is imported, produced locally, or changed in its label, ingredients or composition must be registered in the federal ZAD system before being handled in UAE markets.</li>
+<li><strong>In Dubai, registration and label assessment happen through Dubai Municipality's "Register and Assess a Food Item" service,</strong> which importers use through the FIRS and ZADI portals.</li>
+<li><strong>Montaji is not the channel for ordinary packaged food.</strong> It covers consumer products such as cosmetics, perfumes, health supplements, detergents, antibacterial products and food contact materials.</li>
+<li><strong>Laboratory testing is risk-based, not automatic for every product.</strong> According to the USDA's 2025 UAE import report, food items registering for the first time for import into Dubai undergo testing by Dubai Municipality based on product risk and how often the item is imported.</li>
+<li><strong>Each pack size counts as a separate food item,</strong> and any change to the label, weight, packaging or barcode after approval needs a new label assessment.</li>
 </ul>
 </div>
 
-<h2>What Is the Montaji Portal?</h2>
-<p>Montaji is Dubai Municipality's digital platform for registering consumer products. It handles food products, cosmetics, health supplements, and other regulated consumer goods. The portal is accessible at <strong>montajiprd.dm.gov.ae</strong> and serves as the single point of entry for product registration applications in Dubai.</p>
-<p>The following types of businesses are required to register their products through Montaji:</p>
+<h2>Montaji, ZAD, FIRS and ZADI: Which System Does What?</h2>
 <table>
 <thead>
-<tr><th>Business Type</th><th>Registration Requirement</th></tr>
+<tr><th>System</th><th>Operated by</th><th>What it is used for</th></tr>
 </thead>
 <tbody>
-<tr><td>Food importers</td><td>All imported food products must be registered before clearance</td></tr>
-<tr><td>Local food manufacturers</td><td>All manufactured food products must be registered before sale</td></tr>
-<tr><td>Food distributors</td><td>Products distributed under own brand must be registered</td></tr>
-<tr><td>Re-exporters</td><td>Products re-exported from Dubai free zones may require registration</td></tr>
-<tr><td>E-commerce food sellers</td><td>Products sold online to Dubai consumers must be registered</td></tr>
+<tr><td><strong>ZAD</strong></td><td>Ministry of Climate Change and Environment (MOCCAE), developed with Dubai Municipality</td><td>The federal smart portal for food trade. Food businesses register their companies and food items, search registered items, check banned food lists, and get no-objection certificates to move food consignments between emirates.</td></tr>
+<tr><td><strong>FIRS</strong> (Food Import and Re-export System)</td><td>Dubai Municipality</td><td>Dubai's food import system. Importers register food items, request label assessments, submit import and re-export requests, and follow up on fees and fines.</td></tr>
+<tr><td><strong>ZADI</strong></td><td>Dubai government platform</td><td>An integrated platform for Dubai food import services: food import requests, re-export requests, food item registration, label assessment, customs services and customs declarations.</td></tr>
+<tr><td><strong>Montaji</strong></td><td>Dubai Municipality</td><td>Registration and verification of consumer products such as cosmetics, personal care products, perfumes, health supplements, detergents, antibacterial products and food contact materials.</td></tr>
 </tbody>
 </table>
+<p>ZAD went live on 1 April 2018. At launch, Dubai Municipality said it had integrated FIRS with ZAD, so food would no longer need separate registration in each emirate. According to the USDA, once a product is registered in ZAD, the importer can apply for an import permit and ship through any UAE port.</p>
+<p>If you sell health supplements, cosmetics or food packaging materials, Montaji is relevant. If you import or make packaged food, your route is ZAD plus Dubai Municipality's food item service. Some categories, including certain dairy products, juices and beverages, also need a UAE Certificate of Conformity under the Emirates Conformity Assessment Scheme (ECAS), run by the Ministry of Industry and Advanced Technology (MOIAT). Check with MOIAT whether your product is in scope.</p>
 
-<h2>Prerequisites: What You Need Before Starting</h2>
-<h3>Company Requirements</h3>
-<p>Before you can register products on Montaji, your company must have the following in place:</p>
+<h2>Who Needs to Register Food Products?</h2>
+<p>The legal basis is Federal Law No. 10 of 2015 on Food Safety. Article 7 says food manufacturers, producers and importers must register their products before trading them. Article 8 says no food may be imported for the first time unless approved by the Ministry through a national approval and registration system. Ministerial Decree No. 239 of 2018 set up that system, known as ZAD.</p>
+<p>In practice, this means:</p>
 <ul>
-<li><strong>Valid trade license</strong> — issued by the Dubai Department of Economic Development (DED) or a free zone authority.</li>
-<li><strong>Establishment card</strong> — from Dubai Municipality, confirming that your food establishment is registered and approved.</li>
-<li><strong>Food handling permit</strong> — for staff involved in food handling, storage, or distribution.</li>
-<li><strong>Warehouse approval</strong> — if storing food products, the warehouse must be approved by Dubai Municipality's Food Safety Department.</li>
-<li><strong>Importer code</strong> — a unique identifier issued by Dubai Municipality to food import businesses.</li>
+<li><strong>Importers</strong> register each food item before applying for an import request. USDA guidance for exporters notes that registration is done by the UAE importer, so overseas manufacturers usually work through their importer or distributor.</li>
+<li><strong>Local manufacturers</strong> register food they produce in the UAE, just as importers do.</li>
+<li><strong>Anyone changing a registered product</strong> must register again if the label, ingredients or composition change.</li>
+<li><strong>Re-exporters in Dubai</strong> need label approval for consignments meant for re-export as well as those meant for local sale. Dubai Municipality runs a separate service for approving the release of food imported for re-export.</li>
+</ul>
+<p>Two points often catch businesses out: a 100 g and a 200 g pack of the same product are separate food items that must each be registered, and a label changed after approval (packaging, weight, text or barcode) needs a new assessment.</p>
+
+<h2>What the Application Asks For</h2>
+<p>The core of a food item application is product data and images, not a large bundle of certificates. Dubai Municipality's food item service lists two documents: the label of the food item and a product photo. Through the portal, you also enter structured product details. Dubai Municipality's ZAD user guide lists:</p>
+<ul>
+<li>Trade name, brand, product name and manufacturer</li>
+<li>All ingredients used to make the product</li>
+<li>All food additives used</li>
+<li>Attachments: copies of the label and product images</li>
+</ul>
+<p>More documents may be needed depending on the product and its claims. According to the USDA, ZAD registration requires a copy of the label and packaging, plus an official certificate from the competent authority in the country of origin to back up any health or nutrition claims. For registration through FIRS, importers upload health and laboratory certificates. Certain categories such as meat, fish and eggs need a government health certificate at import. If you claim a product is halal, you need a certificate from an approved halal certifier. Only the UAE national halal logo may be used on packs.</p>
+<p>Dubai Municipality's label assessment guidance says the product details in the application should match the label exactly. Mismatches between the form and the artwork cause avoidable delays.</p>
+
+<h2>How Food Registration Works in Dubai: Step by Step</h2>
+<p>This sequence draws on Dubai Municipality's service information, its ZAD user guide and the USDA's 2025 UAE import report. Portal screens change, so follow the live wording.</p>
+
+<h3>Step 1: Set up company access</h3>
+<p>Create a Dubai ID, which is linked to your Emirates ID, and register your company in the system. According to the USDA, getting FIRS access involves an online application with company details and a copy of your trade license. After approval, you can use the system for food item registration, label assessments and import or re-export requests.</p>
+
+<h3>Step 2: Search the food item catalogue</h3>
+<p>Before registering a new item, search the catalogue to see whether it is already registered. You can search by barcode, country of origin, net weight or trademark. The ZAD guide also lets you register a new item based on an existing one.</p>
+
+<h3>Step 3: Enter the food item details and upload the label</h3>
+<p>Fill in the trade name, brand, manufacturer, ingredients and additives, then upload the label and product images. Dubai Municipality asks for label images in artwork form where possible, uploaded upright, so reviewers do not have to rotate them.</p>
+
+<h3>Step 4: Complete the label assessment</h3>
+<p>Dubai Municipality assesses the label against local specifications from MOIAT, GCC Standardization Organization (GSO) standards, the Codex Alimentarius, and European rules on food additives. The main labeling standard is UAE.S GSO 9, which covers labeling of prepackaged foodstuffs. If the label needs changes, you receive an assessment report explaining them. According to the USDA, an import request can only be made once both product registration and label assessment are successful.</p>
+
+<h3>Step 5: Provide samples for laboratory testing if required</h3>
+<p>Dubai Municipality decides whether testing is needed and which tests to run. According to the USDA, first-time items for import into Dubai are tested based on product safety risk and import frequency. Samples go to the Food and Environment section of Dubai Municipality's Central Laboratory, the number of samples depends on the tests requested, and results can take up to five working days depending on the test. If the lab finds an ingredient or additive that is not on the label, the item is rejected.</p>
+
+<h3>Step 6: Submit the import request and clear the consignment</h3>
+<p>With the item registered and the label approved, submit an import request through FIRS or ZADI. You will need the port of entry, airway bill number, arrival date and country of origin. When the goods arrive they may be inspected against the details in the system. Once inspection and quarantine clearance are done, the importer pays customs duty and releases the shipment. FIRS tells you if a shipment is held or rejected, and you can appeal through the same portal. Dubai Municipality handles this final step as a separate service: releasing imported food consignments for sale in the local market.</p>
+
+<h2>What Label Reviewers Check</h2>
+<p>Most avoidable rejections start with the label. Based on UAE.S GSO 9 as summarized in the USDA's 2025 report, the label must include:</p>
+<ul>
+<li>The product name, in a prominent position</li>
+<li>Ingredients in descending order of proportion, with additives named by their functional class</li>
+<li>A nutrition declaration</li>
+<li>Net quantity</li>
+<li>Name and address of the manufacturer, or of the packer if different</li>
+<li>Country of origin</li>
+<li>Production and expiry dates where shelf life is mandatory, and storage conditions if they affect the date</li>
+<li>Instructions for use, a coded batch or lot number, and the animal source of any animal-derived ingredient</li>
+<li>Mandatory warnings and declarations</li>
+<li>Arabic text, with any other language matching the Arabic exactly</li>
+</ul>
+<p>There are some specific rules as well. Six synthetic colours (E102, E104, E110, E122, E124 and E129) must be marked on the label with a warning about possible effects on children's activity and attention. The source of gelatin, lecithin, mono- and diglycerides must be declared. Titanium dioxide (E171) has been banned as a food additive since 31 March 2023. Arabic translation stickers are allowed, but they must be submitted during label assessment, applied as a single sticker before export, and must not hide required information or contradict the original label. For the full labeling picture, see our <a href="/blog/uae-food-labeling-requirements-2026">UAE food labeling requirements guide</a> and our <a href="/blog/front-of-pack-nutrition-labels-gcc-guide">front-of-pack nutrition labeling guide for the GCC</a>.</p>
+
+<h2>Fees, Processing Times and Validity: Check the Live Service Card</h2>
+<p>Earlier versions of this article listed fixed government fees, a certificate validity period and a timeline in business days. We have removed them. The figures published online disagree with each other, and we could not confirm any of them on a live Dubai Municipality page. Fees also change, and testing or consignment release may be charged separately.</p>
+<ul>
+<li>Check current fees and service times on Dubai Municipality's <a href="https://www.dm.gov.ae/municipality-business/food-safety-department-2/important-information-to-food-establishment/">food safety services page</a>, under "Apply to Register and Assess a Food Item" and "Apply to Release Imported Food Consignments for Sale in Local Market".</li>
+<li>Don't assume a registration lasts a set number of years. Any change to the label, pack size, weight or barcode needs a new assessment.</li>
+<li>Allow time for laboratory testing if it is requested for a first-time item.</li>
 </ul>
 
-<h3>Document Requirements</h3>
-<p>Each product registration application requires the following documentation:</p>
+<h2>Common Reasons Registrations Get Delayed</h2>
 <ul>
-<li><strong>Product datasheet</strong> — specifications including product name, brand, ingredients, and shelf life.</li>
-<li><strong>Product images</strong> — clear photographs of the product and its packaging from all angles.</li>
-<li><strong>Label artwork</strong> — the final label design in both Arabic and English, showing all mandatory label elements.</li>
-<li><strong>Ingredients list</strong> — complete list of all ingredients, additives, and processing aids.</li>
-<li><strong>Nutritional information</strong> — laboratory-verified nutritional analysis per 100g/100ml and per serving.</li>
-<li><strong>Free Sale Certificate</strong> — issued by the competent authority in the country of origin, confirming the product is freely sold there.</li>
-<li><strong>Health Certificate</strong> — confirming the product meets food safety requirements in the country of origin.</li>
-<li><strong>Certificate of Origin</strong> — verifying the country of manufacture.</li>
-<li><strong>GMP Certificate</strong> — Good Manufacturing Practice certification for the production facility.</li>
-<li><strong>Halal Certificate</strong> — from a UAE-recognized Halal certification body (required for meat, poultry, and products containing animal-derived ingredients).</li>
-<li><strong>Organic Certificate</strong> — if the product is marketed as organic.</li>
-<li><strong>Laboratory analysis report</strong> — from an accredited laboratory, covering microbiological, chemical, and nutritional parameters.</li>
-</ul>
-<p>All certificates must be valid, legalized or apostilled, and — where required — attested by the UAE Embassy in the country of origin.</p>
-
-<h2>Step-by-Step Registration Process</h2>
-
-<h3>Step 1: Create a Montaji Account</h3>
-<p>Visit montajiprd.dm.gov.ae and register your company. You will need your trade license number, establishment card details, and authorized signatory information. Account approval typically takes 2-3 business days.</p>
-
-<h3>Step 2: Prepare the Product Application</h3>
-<p>Log in to Montaji and start a new product registration application. Enter the product details including product name (in Arabic and English), brand name, product category, country of origin, manufacturer name and address, and barcode number (if applicable). Ensure all details match the information on your label artwork and certificates exactly.</p>
-
-<h3>Step 3: Submit Label Artwork for Assessment</h3>
-<p>Upload the final label artwork for review. The label assessor will check for compliance with <a href="/blog/uae-food-labeling-requirements-2026">UAE food labeling requirements</a>, including the presence of all mandatory elements, correct Arabic translation, proper date formatting, and allergen declarations. Label assessment is often the stage where the most rejections occur, so ensure your label is fully compliant before submission.</p>
-
-<h3>Step 4: Upload Required Documents</h3>
-<p>Upload all required certificates and documents. Each document must be in PDF format, clearly legible, and within its validity period. The system will flag missing or expired documents and prevent submission until all requirements are met.</p>
-
-<h3>Step 5: Pay Application Fees</h3>
-<p>Montaji registration involves several fees:</p>
-<table>
-<thead>
-<tr><th>Fee Type</th><th>Amount (AED)</th></tr>
-</thead>
-<tbody>
-<tr><td>Product registration submission</td><td>10</td></tr>
-<tr><td>Registration certificate issuance</td><td>220</td></tr>
-<tr><td>Laboratory testing (microbiological)</td><td>100 – 150</td></tr>
-<tr><td>Laboratory testing (chemical/nutritional)</td><td>150 – 250</td></tr>
-<tr><td>Label assessment (if re-submission required)</td><td>10</td></tr>
-</tbody>
-</table>
-<p>Fees are payable online through the Montaji portal. Payment must be completed before the application moves to the review stage.</p>
-
-<h3>Step 6: Laboratory Sample Submission</h3>
-<p>After the application is submitted and fees are paid, you will receive instructions to submit product samples to the <strong>Dubai Central Laboratory (DCL)</strong> for testing. Samples must be submitted in their original, sealed packaging and must match the product described in the registration application. DCL will conduct microbiological, chemical, and nutritional testing. Test results are shared directly with the Montaji system — you do not need to upload them separately.</p>
-
-<h3>Step 7: Application Review</h3>
-<p>Dubai Municipality's food registration team reviews the complete application, including label artwork, documentation, and laboratory results. If any issues are found, the application is returned with specific comments identifying the required corrections. You can address the comments and resubmit through the portal. Multiple review cycles are common for first-time registrations.</p>
-
-<h3>Step 8: Certificate Issuance</h3>
-<p>Once the application passes all reviews, a product registration certificate is issued. The certificate is valid for <strong>5 years</strong> from the date of issuance. The certificate number must be referenced on all import documentation for the registered product. Without a valid registration certificate, shipments will be held at Dubai ports and may be rejected or returned.</p>
-
-<h2>Common Registration Challenges</h2>
-<p>Based on common rejection patterns, the following issues cause the most delays in the Montaji registration process:</p>
-<ul>
-<li><strong>Document rejections</strong> — Certificates that are not legalized, not apostilled, or not attested by the UAE Embassy in the country of origin.</li>
-<li><strong>Label compliance issues</strong> — Missing mandatory label elements, incorrect Arabic translation, or date format errors. See our <a href="/blog/uae-food-labeling-requirements-2026">UAE food labeling requirements guide</a> for the full list of mandatory elements.</li>
-<li><strong>Incomplete ingredient information</strong> — Failing to declare all ingredients, additives, and processing aids, or not listing ingredients in descending order by weight.</li>
-<li><strong>Certificate validity</strong> — Submitting certificates that have expired or will expire before the review process is complete.</li>
-<li><strong>Free zone limitations</strong> — Products manufactured or stored in free zones may have different registration requirements. Confirm with Dubai Municipality whether your free zone activity requires Montaji registration.</li>
+<li><strong>Wrong channel:</strong> submitting packaged food through Montaji.</li>
+<li><strong>Form and label mismatch:</strong> brand, name, net weight or ingredients differ from the artwork.</li>
+<li><strong>Unregistered pack sizes or label changes:</strong> each size is its own item, and changes after approval need reassessment.</li>
+<li><strong>Undeclared ingredients or additives:</strong> found in testing, they lead to rejection.</li>
+<li><strong>Sticker problems:</strong> Arabic stickers that hide required information, contradict the label, or were not assessed.</li>
+<li><strong>Halal claims:</strong> no approved certifier, or a halal logo other than the UAE national mark.</li>
+<li><strong>Missed ECAS requirement:</strong> some dairy, juice and other products also need a MOIAT Certificate of Conformity.</li>
 </ul>
 
-<h2>Fees and Timeline Summary</h2>
-<p>The total processing time depends on the completeness of your initial submission and the number of review cycles required:</p>
-<table>
-<thead>
-<tr><th>Stage</th><th>Estimated Duration</th></tr>
-</thead>
-<tbody>
-<tr><td>Account setup and approval</td><td>2 – 3 business days</td></tr>
-<tr><td>Application preparation and submission</td><td>1 – 3 business days</td></tr>
-<tr><td>Label assessment</td><td>3 – 5 business days</td></tr>
-<tr><td>Laboratory testing (DCL)</td><td>5 – 10 business days</td></tr>
-<tr><td>Application review and approval</td><td>5 – 10 business days</td></tr>
-<tr><td><strong>Total (first-time registration)</strong></td><td><strong>16 – 31 business days</strong></td></tr>
-</tbody>
-</table>
-<p>Experienced registrants with complete documentation can often complete the process in 2-3 weeks. First-time registrations with multiple review cycles may take 4-6 weeks.</p>
+<h2>Preparing Label Content Before You Submit</h2>
+<p>The portals check what you submit. They don't create it. Whether a label passes is mostly decided earlier: a correctly ordered ingredient statement, accurate nutrition values, allergen declarations, and Arabic and English text that match. RecipeBuilder is recipe management and labeling software for that preparation work. It does not submit applications to ZAD, FIRS, ZADI or Montaji, it is not affiliated with Dubai Municipality, and approval always rests with the authority.</p>
 
-<h2>Renewal and Modification Process</h2>
-<p>Montaji registration certificates are valid for <strong>5 years</strong>. Renewal applications should be submitted at least 30 days before the certificate expiry date to avoid any gap in registration that could affect imports.</p>
-<p>If you need to modify a registered product — such as changing the label design, updating the ingredient list, or changing the manufacturer — you must submit an amendment application through Montaji. Amendments go through a review process similar to the initial registration, though they are typically faster if the changes are minor.</p>
-<p>Label changes that affect mandatory information (nutritional values, allergens, ingredients) will require a new laboratory analysis. Changes to non-mandatory information (marketing text, design elements) can usually be processed without retesting.</p>
-
-<h2>Prohibited Products</h2>
-<p>The following products cannot be registered or imported through Montaji:</p>
-<ul>
-<li><strong>Alcohol and alcoholic beverages</strong> — require a separate license and registration process.</li>
-<li><strong>Poppy seeds and poppy seed products</strong> — banned in the UAE.</li>
-<li><strong>Products containing banned ingredients</strong> — including certain food colorings, preservatives, and additives not approved under UAE food standards.</li>
-<li><strong>Products with unsubstantiated health claims</strong> — any product making therapeutic or health claims must be supported by scientific evidence and may require additional registration as a health supplement.</li>
-</ul>
-
-<h2>How RecipeBuilder Helps with Montaji Registration</h2>
-<p>RecipeBuilder helps food businesses validate label compliance against UAE requirements before Montaji submission, organize documentation, and track multiple product registrations. Key features include:</p>
-<ul>
-<li>Label compliance validation against UAE.S 9:2017 and GSO 2233:2021 requirements.</li>
-<li>Automated nutritional calculations to prepare accurate nutrition panels for laboratory verification.</li>
-<li>Bilingual label generation in Arabic and English with correct formatting and allergen highlighting.</li>
-<li>Document checklist management to ensure all required certificates are collected and current.</li>
-<li>Multi-product registration tracking for businesses managing large product portfolios.</li>
-</ul>
-<p>To learn how RecipeBuilder can simplify your Montaji registration process, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a discovery call</a>.</p>
+<div class="blog-cta-box">
+<h3>Get your label content right before registration</h3>
+<p>RecipeBuilder builds ingredient lists ordered by weight from your recipes, calculates nutrition values using USDA FoodData Central data, generates allergen declarations, and produces bilingual English and Arabic label content. It also exports print-ready packaging artwork and barcodes, so the label you upload for assessment matches the data behind it. <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">Book a call</a> to see how it fits your product registration workflow.</p>
+</div>
 
 <h2>Frequently Asked Questions</h2>
 
-<h3>What is the Montaji Portal and who needs to use it?</h3>
-<p>Montaji is Dubai Municipality's mandatory digital platform for registering consumer products, including all food items sold in Dubai. Food importers, local manufacturers, distributors selling under their own brand, re-exporters from free zones, and e-commerce food sellers must all register their products through Montaji before they can be sold or cleared at Dubai ports.</p>
+<h3>Is Montaji used to register food products in Dubai?</h3>
+<p>Not for ordinary packaged food. Montaji is Dubai Municipality's platform for consumer products such as cosmetics, personal care products, perfumes, health supplements, detergents, antibacterial products and food contact materials. Food items must be registered in the federal ZAD system under Ministerial Decree No. 239 of 2018. In Dubai, registration and label assessment go through Dubai Municipality's "Register and Assess a Food Item" service, which importers use via the FIRS and ZADI portals.</p>
 
-<h3>How long does Montaji food product registration take?</h3>
-<p>First-time registrations typically take 16 to 31 business days, covering account setup (2-3 days), application preparation (1-3 days), label assessment (3-5 days), laboratory testing at Dubai Central Laboratory (5-10 days), and application review (5-10 days). Experienced registrants with complete documentation can often finish in 2-3 weeks, while first-time submissions with review cycles may take 4-6 weeks.</p>
+<h3>Does every food product need laboratory testing at Dubai Municipality?</h3>
+<p>No. According to the USDA's 2025 UAE import regulations report, food items registering for the first time for import into Dubai are tested by Dubai Municipality based on product safety risk and import frequency. The municipality decides which tests to run and how many samples it needs, and results can take up to five working days depending on the test. Consignments can also be inspected on arrival. If testing finds an ingredient or additive that is not declared on the label, the item is rejected.</p>
 
-<h3>How can RecipeBuilder help with the Montaji registration process?</h3>
-<p>RecipeBuilder helps by validating label compliance against UAE.S 9:2017 and GSO 2233:2021 requirements before submission, generating accurate bilingual Arabic/English labels with allergen highlighting, automating nutritional calculations for laboratory verification, managing document checklists to ensure all certificates are collected and current, and tracking multiple product registrations for large portfolios.</p>
+<h3>How much does food product registration cost in Dubai, and how long does it last?</h3>
+<p>We don't quote a figure. The fees and validity periods published online disagree, and we could not confirm them on a live Dubai Municipality page. Check current fees and service times on Dubai Municipality's food safety services page before applying, and don't count on a registration lasting a fixed number of years. Any change to the label, pack size, weight or barcode needs a new label assessment.</p>
 
-<h3>What are the most common reasons for Montaji registration rejection?</h3>
-<p>The most frequent causes of rejection are documents that are not legalized or apostilled, label compliance issues including missing mandatory elements and incorrect Arabic translations, incomplete ingredient information or wrong listing order, expired certificates submitted with the application, and uncertainty about free zone registration requirements. Label assessment is the stage with the highest rejection rate.</p>
-
-<h2>Key Contacts</h2>
-<table>
-<thead>
-<tr><th>Resource</th><th>Contact / URL</th></tr>
-</thead>
-<tbody>
-<tr><td>Montaji Portal</td><td>montajiprd.dm.gov.ae</td></tr>
-<tr><td>Dubai Municipality</td><td>dm.gov.ae</td></tr>
-<tr><td>Dubai Central Laboratory (DCL)</td><td>dcl.dm.gov.ae</td></tr>
-<tr><td>Food Safety Department</td><td>Dubai Municipality Food Safety — 800 900</td></tr>
-</tbody>
-</table>
+<h3>Do I need to register again if I change my product label?</h3>
+<p>Yes, in most cases. Under Ministerial Decree No. 239 of 2018, food whose label, ingredients or composition has changed must be registered in ZAD before being handled in UAE markets. USDA guidance for Dubai also says a label reassessment is needed when packaging, weight, label or barcode changes after approval. Each pack size is treated as a separate food item.</p>
 
 <h3>Related Resources</h3>
 <ul>
-<li><a href="/blog/uae-food-labeling-requirements-2026">UAE Food Labeling Requirements: Complete Compliance Guide 2026</a></li>
-<li>GCC Document Compliance Automation: A No-Code Approach for 2026</li>
+<li><a href="/blog/uae-food-labeling-requirements-2026">UAE Food Labeling Requirements 2026: Standards, Dates and Penalties</a></li>
+<li><a href="/blog/front-of-pack-nutrition-labels-gcc-guide">Abu Dhabi Nutri-Mark: Front-of-Pack Label Guide (2026)</a></li>
+<li><a href="/food-labeling">RecipeBuilder Food Labeling</a></li>
+<li><a href="/recipe-management">RecipeBuilder Recipe Management</a></li>
+<li><a href="https://www.dm.gov.ae/municipality-business/food-safety-department-2/important-information-to-food-establishment/">Dubai Municipality: Food Safety Department services</a></li>
+<li><a href="https://zad.gov.ae/">ZAD: Federal Smart Portal for Food Trade</a></li>
+<li><a href="https://uaelegislation.gov.ae/en/legislations/1161">Federal Law No. 10 of 2015 on Food Safety</a></li>
+<li><a href="https://www.fas.usda.gov/data/gain/2025/11/united-arab-emirates-fairs-country-report-annual">USDA FAS: UAE FAIRS Country Report 2025</a></li>
 </ul>
 `,
   },
   {
     slug: "dubai-municipality-school-food-requirements-caterers-guide",
-    title:
-      "Dubai Municipality School Food Requirements: Complete 2026 Guide for Caterers and Suppliers",
+    title: "Dubai Municipality School Food Requirements: 2026 Guide for Caterers",
     description:
-      "Dubai Municipality requires all school food caterers and suppliers to meet specific food safety, nutrition, and labeling standards under the MySchoolFood programme. This guide covers approved supplier registration, HACCP certification, calorie and nutrient limits by age group, allergen management, banned ingredients, bilingual menu labeling, and inspection protocols. RecipeBuilder auto-generates compliant nutrition panels and allergen matrices for school menus.",
+      "What Dubai Municipality requires from school caterers: Food Permit, Approved Menu, Smart Choices nutrient limits, allergens and supplier grade A/B.",
     date: "2026-03-10",
+    updatedDate: "2026-09-14",
     category: "Compliance",
-    readTime: "15 min read",
+    readTime: "13 min read",
     keywords: [
-      "Dubai Municipality school food",
-      "school food catering Dubai",
-      "MySchoolFood Dubai Municipality",
+      "Dubai Municipality school food requirements",
       "school food supplier requirements Dubai",
-      "school catering compliance UAE",
-      "Dubai Municipality food safety schools",
-      "school canteen nutrition standards",
-      "approved school food vendor Dubai",
-      "school meal calorie requirements UAE",
-      "HACCP school catering Dubai",
-      "nutrition compliance school catering",
-      "Dubai Municipality food inspection schools",
+      "Food Permit to Educational Institutions",
+      "Dubai school canteen Approved Menu",
+      "Smart Choices classification Dubai",
+      "My School Food Dubai Municipality",
+      "Dubai Food and Nutrition Guidelines educational institutions",
+      "school catering compliance Dubai",
+      "Dubai school canteen banned foods",
+      "school food allergens Dubai",
+      "DMChecked school canteen",
+      "Green Canteens Dubai",
     ],
     content: `
-<h2>Introduction: Dubai Municipality's School Food Standards Are Non-Negotiable</h2>
-<p>Dubai Municipality enforces some of the most detailed school food safety and nutrition requirements in the Gulf region. Through the <strong>MySchoolFood programme</strong> (<a href="https://myschoolfood.com" target="_blank" rel="noopener noreferrer">myschoolfood.com</a>), the municipality provides a comprehensive framework covering what students eat, how food is prepared and transported, and what nutritional information must be communicated to schools, parents, and students. For food catering companies and suppliers serving Dubai's schools, compliance with these requirements is a prerequisite for winning and retaining contracts — not a competitive differentiator.</p>
-<p>As of 2026, over 200 private schools operate in Dubai, serving a student population of more than 300,000. The school catering market represents a significant and recurring revenue stream for food businesses. But access to this market is strictly gated by Dubai Municipality's Food Safety Department, which conducts regular inspections, reviews supplier documentation, and has the authority to suspend or revoke a caterer's approval to serve schools. This guide covers every requirement food caterers and suppliers must meet to operate in Dubai's school food market.</p>
+<p>Supplying food to schools in Dubai means working to one main rulebook: Dubai Municipality's <em>Dubai Food and Nutrition Guidelines and Requirements in Educational Institutions</em>. The Food Safety Department wrote it, and it is published through the municipality's <a href="https://myschoolfood.com" target="_blank" rel="noopener noreferrer">My School Food</a> programme. It sets out who may supply a canteen, which permit you need, how menus get approved, and the nutrient limits every menu item has to meet.</p>
+<p>This guide goes through the supplier requirements in that document clause by clause, so you can check your own operation against the source. The guideline uses "shall" or "must" for mandatory requirements and "should" for strongly recommended ones. We keep that difference below. Rules change, so always check the <a href="https://myschoolfood.com/wp-content/uploads/2025/11/Dubai-Food-Nutrition-Guidelines-and-Requirements.pdf" target="_blank" rel="noopener noreferrer">current guideline PDF</a> and confirm anything you are unsure about with the Food Safety Department (nutrition@dm.gov.ae) before you submit a menu.</p>
 
 <div class="key-takeaways">
 <h3>Key Takeaways</h3>
 <ul>
-<li><strong>HACCP certification is mandatory</strong> — All school food caterers must hold current HACCP (or ISO 22000) certification verified by Dubai Municipality before serving any school.</li>
-<li><strong>Calorie and nutrient limits vary by age group</strong> — Primary school lunches target 550–650 kcal; secondary school lunches target 700–850 kcal, with caps on sodium, sugar, and saturated fat per meal.</li>
-<li><strong>14 allergens must be declared</strong> — Full allergen matrices following GSO 9/2013 are required for every menu item, updated whenever recipes change.</li>
-<li><strong>Bilingual menu labeling is mandatory</strong> — All nutrition information, ingredient lists, and allergen declarations must appear in both Arabic and English.</li>
+<li><strong>Two approvals come before anything else.</strong> A supplier needs a Food Permit to Educational Institutions from Dubai Municipality, and it may only sell the items on its Approved Menu.</li>
+<li><strong>Supplier eligibility is specific.</strong> You need a trade license covering the activity, an inspection grade of A or B, an independent third-party food safety audit, and a trained Person-in-Charge (PIC) present on every shift.</li>
+<li><strong>Every menu item is classified under Smart Choices</strong> (Green, Amber, Red, Black). Limits apply both per 100 g and per serving, and the per-serving limits are adjusted by age group.</li>
+<li><strong>Some foods are banned outright.</strong> These include artificial sweeteners, processed meats, confectionery, sugary drinks, deep-fried foods, and anything non-halal.</li>
+<li><strong>Allergens must be declared no matter how small the amount.</strong> The guideline lists nine allergen groups that Dubai Municipality recognises.</li>
+<li><strong>Sustainability is part of the guidance.</strong> Schools must offer a vegetarian option, and meat-free days and locally sourced ingredients are encouraged.</li>
 </ul>
 </div>
 
-<h2>The MySchoolFood Programme: What It Covers</h2>
-<p>Dubai Municipality's MySchoolFood programme is the emirate's official framework for managing school food safety and nutrition. The programme covers four key stakeholder groups: students (with age-appropriate nutrition education), teachers (with classroom nutrition resources), parents (with guidance on healthy lunchboxes and reading food labels), and food suppliers (with compliance requirements and operational standards).</p>
-<p>For food caterers and suppliers, the programme establishes binding requirements in five areas:</p>
+<h2>Who the Guideline Applies To</h2>
+<p>Section 3 of the guideline covers food suppliers, and canteens run by schools, that serve or sell food to private school students aged 4 to 18. It also covers vending machines, cafés and events on school premises, plus canteens in nurseries, universities and colleges. It applies to cooked, ready-to-eat and pre-packaged food, and to service providers that support suppliers, such as food laboratories, training centres and consultants.</p>
+<p>The programme is large. When Dubai Municipality launched the My School Food digital platform in June 2025, <a href="https://gulfnews.com/uae/dubai-overhauls-school-canteens-unveils-new-website-ai-chatbot-with-stricter-guidelines-1.500158719" target="_blank" rel="noopener noreferrer">Gulf News reported</a> that it covers more than 400,000 students across more than 500 schools, nurseries and universities, plus over 50 school food suppliers.</p>
+
+<h2>Supplier Eligibility: What You Need Before You Can Supply</h2>
+<p>Clause 3.2.1.2 says educational institutions should buy food only from suppliers that have all of the following:</p>
 <ul>
-<li><strong>Supplier registration and approval</strong> — Businesses must be registered and approved by Dubai Municipality's Food Safety Department before they can supply food to any school in the emirate.</li>
-<li><strong>Food safety management</strong> — HACCP-based systems covering the entire chain from ingredient procurement through cooking, transport, and service.</li>
-<li><strong>Nutritional standards</strong> — Defined calorie ranges, macronutrient targets, and micronutrient requirements for each age group.</li>
-<li><strong>Allergen management</strong> — Comprehensive allergen declaration and cross-contamination prevention protocols.</li>
-<li><strong>Labeling and communication</strong> — Bilingual nutrition information on all packaged items and menu displays.</li>
+<li><strong>A valid trade license</strong> that explicitly names the relevant business activity, such as catering, bakery or manufacturing.</li>
+<li><strong>A high food safety rating.</strong> This means a verifiable inspection grade of <strong>A or B</strong> from the Food Safety Department's Food Inspection Section.</li>
+<li><strong>Safe food handling facilities</strong> that can prepare, transport and store food to the standards in the Dubai Food Code.</li>
+<li><strong>A third-party food safety audit.</strong> An independent audit must confirm that you follow food safety regulations.</li>
+<li><strong>A trained Person-in-Charge (PIC) for the canteen.</strong> The PIC must be formally trained in both nutrition requirements and food safety, and must hold an active account on the municipality's digital food safety platform. The PIC must be present on every shift. If a school has several food service areas, each one needs its own PIC.</li>
+</ul>
+<p>Clause 3.2.2.1 adds two more conditions. The Food Safety Department must approve the layout and processes of your canteen and/or production facility before you start supplying. You must also keep a good compliance history, with no major violations during the supply period.</p>
+
+<h3>About Inspection Grades, Foodwatch and DMChecked</h3>
+<p>Dubai Municipality grades food establishments on a five-letter scale from A to E. <a href="https://gulfnews.com/uae/scan-qr-codes-to-get-food-safety-record-of-restaurants-in-dubai-1.62133377" target="_blank" rel="noopener noreferrer">Gulf News</a> described the grades as running from A ("Excellent") to E ("Very poor"). A school supplier needs an A or a B. A C, D or E does not meet the school supplier requirement.</p>
+<p>The guideline text still refers to <strong>Foodwatch</strong>, the municipality's food safety platform. It is used for PIC accounts, for linking a school to its approved supplier, and for uploading Approved Menus. Since then, Dubai Municipality has introduced <strong>DMChecked</strong>, which <a href="https://gulfnews.com/uae/dubai-overhauls-school-canteens-unveils-new-website-ai-chatbot-with-stricter-guidelines-1.500158719" target="_blank" rel="noopener noreferrer">Gulf News describes</a> as the revamped platform that replaces Foodwatch. <a href="https://www.khaleejtimes.com/uae/education/dubai-canteen-food-inspections" target="_blank" rel="noopener noreferrer">Khaleej Times reports</a> that DMChecked is now used to monitor canteen performance and review menus. Where this guide says "Foodwatch", check with the municipality which platform the step now uses.</p>
+
+<h2>The Food Permit and the Approved Menu</h2>
+<p>Under clauses 3.2.1.3 and 3.2.2.3, every business that supplies food to an educational institution, and every school that runs its own canteen, must hold a valid <strong>Food Permit to Educational Institutions</strong> from the Food Safety Department. Only the foods listed in the permit may be sold. Any change to the Approved Menu needs a new approval from Dubai Municipality. Clause 3.2.2.4 says suppliers must not provide any food the Food Safety Department has not approved.</p>
+<p>The guideline sets out the Approved Menu application in three steps:</p>
+
+<h3>Step 1: Complete and Submit the Application</h3>
+<p>Submit your weekly menus together with the completed <em>Supply Food To Educational Institutions Form</em>. The form must name the supplier's designated PIC and the school's appointed PIC. Menu items sent outside the cycle menu are not accepted, except for vending machines or canteens that sell the same items all year. New or reformulated items are approved only at the end of each term, and the approval takes effect the following term.</p>
+
+<h3>Step 2: Receive the Approved Menu</h3>
+<p>The municipality reviews the form and the weekly menus. If the items comply, it issues an "Approved Menu".</p>
+
+<h3>Step 3: Digitise the Approved Menu</h3>
+<p>The supplier's PIC at the canteen uploads the Approved Menu and that week's submitted menu to the school's QR code on the municipality's food safety platform.</p>
+
+<h3>Menu Cycle and Nutrition Data Rules</h3>
+<ul>
+<li><strong>Weekly menu cycle (3.3.1.1):</strong> You must rotate at least four weekly cycle menus, and two to three seasonal menus are recommended. Menus are submitted in 4-week batches, with values entered per 100 g for each component.</li>
+<li><strong>Nutritional assessment (3.2.2.5):</strong> You must assess every product from its recipe, including ingredients and quantities. You must provide the results to the Food Safety Department, to schools, or to any authorised regulator when asked.</li>
+<li><strong>Revalidation (3.2.2.6):</strong> Whenever you change a product, its ingredients, its proportions or its serving size, you must revalidate the nutrition information and get it approved again.</li>
+<li><strong>Accepted methods (3.2.2.7):</strong> The nutrition information can come from nutrient analysis software, from a laboratory approved by the Food Safety Department, or from manual calculation using known or accepted ingredient values.</li>
 </ul>
 
-<h2>Supplier Registration and Approval Process</h2>
-<p>Before a catering company can serve any school in Dubai, it must complete Dubai Municipality's supplier approval process. The process involves multiple stages:</p>
-
-<h3>Step 1: Company Qualification</h3>
-<p>The business must hold a valid Dubai trade license with a food-related activity code. The company's food handling facility must be registered with Dubai Municipality and hold a current establishment card. All food handlers must have valid food handling permits issued by Dubai Municipality.</p>
-
-<h3>Step 2: Documentation Submission</h3>
-<p>Suppliers must submit a comprehensive documentation package including:</p>
-<ul>
-<li><strong>HACCP or ISO 22000 certificate</strong> — from an accredited certification body.</li>
-<li><strong>Food safety management plan</strong> — documenting hazard analysis, critical control points, monitoring procedures, and corrective actions specific to school food production.</li>
-<li><strong>Menu plans</strong> — proposed menus for a minimum cycle length (typically 4 weeks), with full nutritional analysis for every item.</li>
-<li><strong>Allergen management plan</strong> — documenting allergen identification, cross-contamination controls, and communication protocols.</li>
-<li><strong>Staff training records</strong> — demonstrating that all food handlers have completed food safety training and allergen awareness training.</li>
-<li><strong>Vehicle and equipment specifications</strong> — documenting temperature-controlled transport capabilities and food-grade equipment.</li>
-</ul>
-
-<h3>Step 3: Facility Inspection</h3>
-<p>Dubai Municipality's food safety inspectors conduct an on-site inspection of the catering facility. The inspection covers production areas, storage facilities, cold chain equipment, cleaning and sanitation procedures, pest control measures, and staff hygiene practices. The facility must score above the minimum threshold on Dubai Municipality's inspection criteria to proceed.</p>
-
-<h3>Step 4: Approval and Ongoing Compliance</h3>
-<p>Upon approval, the caterer is added to Dubai Municipality's list of approved school food suppliers. Approval is not permanent — it is subject to ongoing compliance verified through unannounced inspections, annual documentation reviews, and complaint investigations. A caterer that fails an inspection or receives substantiated complaints may have their approval suspended or revoked.</p>
-
-<h2>Food Safety Requirements: HACCP and Beyond</h2>
-<p>HACCP certification is the baseline food safety requirement for school caterers in Dubai. However, Dubai Municipality's expectations go beyond the HACCP certificate itself. Inspectors evaluate whether the HACCP system is genuinely implemented — not just documented. Key areas of focus include:</p>
-
-<h3>Temperature Control</h3>
-<ul>
-<li><strong>Hot food</strong>: Must be maintained at 63°C or above from cooking through to service. Temperature must be recorded at cooking completion, before transport, at school delivery, and at point of service.</li>
-<li><strong>Cold food</strong>: Must be held at 5°C or below. Cold chain integrity must be maintained during transport using insulated containers with temperature monitoring.</li>
-<li><strong>Reheating</strong>: If food is reheated at the school site, it must reach a core temperature of 75°C before service.</li>
-<li><strong>Cooling</strong>: Cooked food that will be served cold or stored must be cooled from 63°C to 5°C within 90 minutes.</li>
-</ul>
-
-<h3>Transport Requirements</h3>
-<p>All vehicles used to transport school food must be temperature-controlled and approved by Dubai Municipality. Vehicles must be dedicated to food transport (not shared with non-food goods), cleaned and sanitized between trips, and equipped with calibrated temperature monitoring devices. Transport time from the production facility to the school must not exceed defined limits — typically 2 hours for hot food and 4 hours for cold food, provided temperature requirements are continuously met.</p>
-
-<h3>Personal Hygiene and Staff Health</h3>
-<p>All food handlers must hold valid Dubai Municipality food handling permits. Staff must undergo annual medical examinations and be free from communicable diseases. Personal hygiene standards include hand washing protocols, clean uniforms, hair restraints, and restrictions on jewelry and nail polish in food preparation areas. Staff showing symptoms of illness — vomiting, diarrhea, fever, skin infections — must be excluded from food handling duties until cleared by a medical professional.</p>
-
-<h2>Nutritional Standards by Age Group</h2>
-<p>Dubai Municipality sets specific nutritional targets for school meals based on the age group being served. These targets are based on the UAE Dietary Guidelines and aligned with WHO recommendations for childhood nutrition. Caterers must demonstrate that their menus meet these standards through documented nutritional analysis.</p>
-
-<h3>Primary School Students (Ages 6–11)</h3>
+<h2>Menu Item Types and Weight Limits</h2>
+<p>Clause 3.3.1.2 defines six kinds of menu items: <strong>Main dish</strong>, <strong>Main dish combo</strong> (a main plus a dessert side), <strong>Full meal combo</strong> (a main, a dessert side and a beverage), <strong>Entrée snack</strong> (a smaller portion of a main dish), <strong>Snacks</strong> (small pre-packaged items) and <strong>Beverages</strong>. For mains and combos, you declare each component per 100 g, then assess the whole item per 100 g and per serving. Each main dish must contain at least three food groups, and protein, grains and vegetables are the major components (3.3.1.4).</p>
+<p>Clause 3.3.1.3 sets a weight limit for each food type:</p>
 <table>
 <thead>
-<tr><th>Nutrient</th><th>Lunch Target</th><th>Snack Target</th></tr>
+<tr><th>Food type</th><th>Weight limit per item</th></tr>
 </thead>
 <tbody>
-<tr><td>Energy (kcal)</td><td>550 – 650</td><td>150 – 200</td></tr>
-<tr><td>Total Fat</td><td>Not more than 35% of energy</td><td>Not more than 35% of energy</td></tr>
-<tr><td>Saturated Fat</td><td>Not more than 11% of energy</td><td>Not more than 11% of energy</td></tr>
-<tr><td>Total Sugars</td><td>Not more than 10% of energy</td><td>Not more than 10% of energy</td></tr>
-<tr><td>Sodium</td><td>Less than 600 mg per meal</td><td>Less than 200 mg</td></tr>
-<tr><td>Fiber</td><td>Minimum 4 g per meal</td><td>Minimum 1.5 g</td></tr>
-<tr><td>Protein</td><td>Minimum 12 g per meal</td><td>Minimum 3 g</td></tr>
+<tr><td>Pre-packaged products</td><td>40 g</td></tr>
+<tr><td>Bakery and dessert items</td><td>60 g</td></tr>
+<tr><td>Other savory foods (e.g. samosas, manakish, pizza, filled breads)</td><td>100 g</td></tr>
+<tr><td>Catered foods (mains and entrées)</td><td>No set limit</td></tr>
 </tbody>
 </table>
 
-<h3>Secondary School Students (Ages 12–18)</h3>
+<h2>The Smart Choices Classification</h2>
+<p>Under clause 3.3.2.1, every menu item supplied to a school must be classified into one of four colour categories. Each category controls how often the item may appear on the menu:</p>
+<ul>
+<li><strong>Daily Smart Choices (Green):</strong> fruits, vegetables, whole grains, lean proteins, low-fat dairy, healthy fats and water. These are always on the menu.</li>
+<li><strong>Sometimes Smart Choices (Amber):</strong> moderately healthy items, such as muffins without frosting or full-fat yogurt. These may appear twice a week. There is also a "Sometimes Smart +" (light amber) level for items closer to Green, which is offered once a week in smaller portions.</li>
+<li><strong>Seldom Smart Choices (Red):</strong> restricted items, such as frosted baked goods, baked donuts and ice cream. These may be served once a month, or three times a term (3.3.2.5).</li>
+<li><strong>Never Smart Choices (Black):</strong> banned items. These are not allowed on the menu or as an ingredient.</li>
+</ul>
+<p>For a plain-language walkthrough of the categories, see our <a href="/blog/smart-food-choices-system-dubai-school-canteen">Smart Food Choices guide</a>.</p>
+
+<h3>Nutrient Criteria</h3>
+<p>Clause 3.3.2.2 says each menu item must meet the criteria for calories, total fat, saturated fat, added sugars, sodium and fibre. The limits apply both per serving and per 100 g (3.3.2.3). The table below shows the figures as printed in the guideline. The guideline's table does not print units, so check the <em>How To Categorize Menu Items</em> annex before you apply them. For fibre, the value is a minimum, not a maximum.</p>
 <table>
 <thead>
-<tr><th>Nutrient</th><th>Lunch Target</th><th>Snack Target</th></tr>
+<tr><th>Nutrient</th><th>Green (per serving)</th><th>Amber (per serving)</th><th>Red (per serving)</th><th>Green (per 100 g)</th><th>Amber (per 100 g)</th><th>Red (per 100 g)</th></tr>
 </thead>
 <tbody>
-<tr><td>Energy (kcal)</td><td>700 – 850</td><td>200 – 250</td></tr>
-<tr><td>Total Fat</td><td>Not more than 35% of energy</td><td>Not more than 35% of energy</td></tr>
-<tr><td>Saturated Fat</td><td>Not more than 11% of energy</td><td>Not more than 11% of energy</td></tr>
-<tr><td>Total Sugars</td><td>Not more than 10% of energy</td><td>Not more than 10% of energy</td></tr>
-<tr><td>Sodium</td><td>Less than 800 mg per meal</td><td>Less than 250 mg</td></tr>
-<tr><td>Fiber</td><td>Minimum 5.5 g per meal</td><td>Minimum 2 g</td></tr>
-<tr><td>Protein</td><td>Minimum 15 g per meal</td><td>Minimum 4 g</td></tr>
+<tr><td>Energy</td><td>500</td><td>600</td><td>&gt; 600</td><td>120</td><td>500</td><td>&gt; 500</td></tr>
+<tr><td>Total fat</td><td>19.5</td><td>23</td><td>&gt; 23</td><td>3</td><td>17.5</td><td>&gt; 17.5</td></tr>
+<tr><td>Saturated fat</td><td>5</td><td>6</td><td>&gt; 6</td><td>1.5</td><td>5</td><td>&gt; 5</td></tr>
+<tr><td>Sodium</td><td>600</td><td>700</td><td>&gt; 700</td><td>120</td><td>600</td><td>&gt; 600</td></tr>
+<tr><td>Added sugars</td><td>6.75</td><td>9</td><td>&gt; 9</td><td>5.75</td><td>11.25</td><td>&gt; 11.25</td></tr>
+<tr><td>Dietary fibre</td><td>2.8</td><td>2.52</td><td>&lt; 2.52</td><td>3</td><td>2</td><td>&lt; 2</td></tr>
 </tbody>
 </table>
+<p><em>Source: Smart Choices Nutrient Criteria Table, clause 3.3.2.2 of the guideline.</em></p>
 
-<h3>Menu Composition Requirements</h3>
-<p>Beyond nutrient targets, Dubai Municipality requires that school menus follow the <strong>Healthy Eating Plate model</strong> — a visual framework that divides each meal into proportional sections: approximately half the plate for vegetables and fruits, one quarter for whole grains or complex carbohydrates, and one quarter for lean protein. Water must be the primary beverage offered. Low-fat milk is the only other beverage permitted as a regular menu option.</p>
-<p>Menus must rotate on a minimum 4-week cycle to ensure dietary variety. Each cycle must be nutritionally analyzed to demonstrate compliance with the targets above. Caterers must submit menu plans and nutritional analyses to the school and make them available for Dubai Municipality inspection.</p>
+<h3>Age-Group Percentages</h3>
+<p>The per-serving limits above are a baseline. Clause 3.3.2.4 scales them by age group and by the kind of menu item. For example, a main dish for 4–8 year olds is assessed at 70% of the baseline limits. A full meal combo for 14–18 year olds is assessed at 130%.</p>
+<table>
+<thead>
+<tr><th>Age group</th><th>Main dish</th><th>Main dish combo</th><th>Full meal combo</th><th>Entrée snack</th><th>Snacks</th></tr>
+</thead>
+<tbody>
+<tr><td>4–8 years (Small)</td><td>70%</td><td>80%</td><td>100%</td><td>40%</td><td>40%</td></tr>
+<tr><td>9–13 years (Medium)</td><td>90%</td><td>100%</td><td>120%</td><td>70%</td><td>70%</td></tr>
+<tr><td>14–18 years / University (Large)</td><td>100%</td><td>110%</td><td>130%</td><td>Not specified</td><td>Not specified</td></tr>
+</tbody>
+</table>
+<p>The guideline sets separate percentages for nursery age groups from 6 months to 6 years. It also includes a phased schedule of targets (Annex 20) that moves canteen menus steadily away from Red and Amber items toward Green.</p>
 
-<h2>Banned and Restricted Items</h2>
-<p>Dubai Municipality maintains an explicit list of items that may not be sold, served, or distributed in Dubai schools:</p>
+<h2>Banned and Restricted Foods</h2>
+<p>Clause 3.4.3 lists the <strong>Never Smart Choices</strong>. These must not be used, served, displayed or promoted in schools:</p>
 <ul>
-<li><strong>Carbonated beverages</strong> — including sparkling water with added flavoring or sweeteners.</li>
-<li><strong>Energy drinks</strong> — all products marketed as energy drinks, regardless of caffeine content.</li>
-<li><strong>Confectionery and candy</strong> — including chocolate bars, gummies, and sugar-coated products.</li>
-<li><strong>Deep-fried items</strong> — products that are deep-fried as the primary cooking method. Shallow frying and oven-baking are permitted within fat content limits.</li>
-<li><strong>Artificial colorings linked to hyperactivity</strong> — including tartrazine (E102), quinoline yellow (E104), sunset yellow (E110), carmoisine (E122), ponceau 4R (E124), and allura red (E129).</li>
-<li><strong>Products high in trans fats</strong> — any product containing partially hydrogenated oils or more than 0.5g trans fat per serving.</li>
-<li><strong>Processed meats exceeding sodium thresholds</strong> — sausages, hot dogs, and similar products that exceed defined sodium and fat limits per serving.</li>
+<li>Artificial sweeteners and salt substitutes</li>
+<li>Food or drinks with added protein supplements</li>
+<li>Non-halal foods in any form, at any activity or event, including events for staff and parents</li>
+<li>Processed meats, such as deli meats, hot dogs, mortadella, and commercially processed burgers and nuggets</li>
+<li>Sugar and chocolate confectionery</li>
+<li>Highly sweetened drinks, such as soft drinks, sports drinks and flavoured water (energy drinks are also listed among the banned examples)</li>
+<li>Chocolate in all its forms, with narrow exemptions: low-sugar chocolate milk or hot chocolate (200 ml), and cacao in baked goods made mainly with fruit, vegetables or legumes</li>
+<li>Deep-fried foods (a baked version that is low in fat and/or sodium is exempt)</li>
 </ul>
-<p>Caterers must verify that every ingredient in every recipe complies with these restrictions. A single non-compliant ingredient — even as a minor component of a compound ingredient — can trigger an inspection failure.</p>
+<p>Clause 3.4.2 lists <strong>Restricted Foods</strong>. These are allowed only within set exemptions, usually no more than twice a week. They include savory pre-packaged snacks, bakery products, high-salt condiments and pickles, high-fat sauces and dressings, regular coconut milk, and dairy desserts. Beverages must meet the Simplified Beverage Criteria, which cover volume, fruit juice content and added sugars per 100 ml. Coffee and tea are allowed only for the oldest students (Grades 11–12 / Years 12–13), up to 240 ml, and only in a separate designated area. Vending machines must mainly stock Green items, and must not sell Red or Black items (3.4.4).</p>
 
-<h2>Allergen Management for School Caterers</h2>
-<p>Allergen management in Dubai schools follows <a href="/blog/uae-food-labeling-requirements-2026">GSO 9/2013</a>, which requires declaration of 14 major allergens. For school caterers, the requirements go beyond packaged food labeling:</p>
-
-<h3>Allergen Matrix</h3>
-<p>Caterers must maintain a complete allergen matrix for their entire menu. The matrix maps every dish to the allergens it contains, presented as a table that schools can share with parents and display in cafeteria areas. The matrix must be updated whenever a recipe or ingredient changes.</p>
-
-<h3>Cross-Contamination Controls</h3>
-<p>Production facilities must implement physical controls to prevent allergen cross-contamination:</p>
+<h2>Nutrition Labelling and Allergens</h2>
+<p><strong>Labelling (3.4.8).</strong> Every menu item sold on school premises must be verified and labelled per serving for calories, carbohydrates, saturated fat, sodium and added sugars. The guideline also says a fuller panel should be provided for all meals, snacks and beverages. That panel gives the name, net weight and serving size, then kilocalories, carbohydrates, added sugars, dietary fibre, protein, total fat, saturated fat, sodium, vitamin D and iron, both per serving and per 100 g. Pre-packaged products must also meet UAE labelling rules. See our <a href="/blog/uae-food-labeling-requirements-2026">UAE food labeling guide</a>.</p>
+<p><strong>Allergens (3.4.9).</strong> Every meal must show any allergen present, whether it is a main ingredient, part of a compound ingredient, an additive or a processing aid. Allergens must be labelled or declared on the menu however small the amount, citing the Dubai Food Code. The Food Safety Department recognises nine allergen groups in this guideline:</p>
 <ul>
-<li>Dedicated utensils and equipment for allergen-free meal preparation (color-coded systems are recommended).</li>
-<li>Separate preparation areas or controlled scheduling where allergen-containing and allergen-free items are produced at different times.</li>
-<li>Documented cleaning and verification procedures between production runs.</li>
-<li>Ingredient storage that separates allergenic ingredients from non-allergenic ones.</li>
+<li>Crustaceans and their products</li>
+<li>Peanuts and their products</li>
+<li>Soybeans and their products</li>
+<li>Tree nuts and their products</li>
+<li>Sesame seeds and their products</li>
+<li>Fish and fish products</li>
+<li>Egg and egg products</li>
+<li>Milk and milk products</li>
+<li>Gluten and cereals containing gluten (Kamut, wheat, oats, rye, barley and spelt)</li>
 </ul>
 
-<h3>Communication Protocols</h3>
-<p>Caterers must establish clear communication channels with schools for managing student allergies. This includes receiving and documenting individual student allergy information, preparing individualized allergen-free meals when required, training serving staff to identify and correctly distribute allergen-specific meals, and maintaining an emergency response protocol for accidental allergen exposure.</p>
+<h2>Food Safety, Training and Inspections</h2>
+<p>Clause 3.4.10 says all food suppliers must follow the <strong>10 Points to Food Safety</strong>: good personal hygiene, preventing the spread of illness, supplier management, food safety controls, monitoring storage practices, evaluating the menu, pest management, cleaning and disinfection, waste management, and allergen management. Schools and nurseries with children aged 6 and under have extra requirements for pantries and lunch box storage (3.4.11).</p>
+<p><strong>Training (3.5.1).</strong> Basic Food Hygiene Training is mandatory for all food handlers. Managers, PICs and school representatives should also complete PIC and Advanced PIC training, plus the nutrition and sustainability training run by the municipality's Applied Nutrition and Awareness Section. Dubai Municipality also publishes a <em>Nutrition In-Charge</em> training programme on the My School Food site.</p>
+<p><strong>Monitoring (3.5.2).</strong> The supplier's PIC must carry out canteen self-monitoring every month, and the school's PIC every quarter. Production facilities also self-monitor. Suppliers of ready-to-eat, high-risk foods to schools should be treated as high-risk establishments and inspected at least once every six months.</p>
+<p><strong>Enforcement.</strong> According to <a href="https://www.khaleejtimes.com/uae/education/dubai-canteen-food-inspections" target="_blank" rel="noopener noreferrer">Khaleej Times</a>, the municipality's food safety officers inspect 456 institutions a year. When they find non-compliance, they act immediately: products are withdrawn, their circulation is banned, and schools must take corrective steps. The guideline does not publish fines, so ask the municipality directly about penalties.</p>
 
-<h2>Labeling and Menu Display Requirements</h2>
-<p>All food supplied to Dubai schools must meet <a href="/blog/uae-food-labeling-requirements-2026">UAE food labeling requirements</a> with additional school-specific provisions:</p>
+<h2>Sustainability and "Green Canteens"</h2>
+<p>"Green Canteens" is not a formal certification you can apply for. <a href="https://gulfnews.com/uae/dubai-overhauls-school-canteens-unveils-new-website-ai-chatbot-with-stricter-guidelines-1.500158719" target="_blank" rel="noopener noreferrer">Gulf News</a> describes it as a sustainability concept within the guidance, covering sustainable menus, locally sourced food, less food waste, and avoiding single-use packaging. The one firm rule is clause 3.4.1: all schools must offer at least one vegetarian option for every type of meal sold. The rest are recommendations, such as meat-free days in each weekly cycle menu (3.4.6), locally sourced ingredients (3.4.7) and less food and packaging waste (2.4).</p>
 
-<h3>Pre-Packaged Items</h3>
-<p>Any pre-packaged food item (individually wrapped sandwiches, snack boxes, bottled beverages) must carry a full label compliant with <a href="/blog/uae-food-labeling-requirements-2026">UAE.S 9:2017</a> including product name, ingredient list, nutritional information per 100g and per serving, allergen declarations, production and expiry dates, storage conditions, and manufacturer details. All text must appear in both Arabic and English.</p>
+<h2>How Software Helps With the Nutrition Workload</h2>
+<p>The hardest part for most caterers is the arithmetic, not the kitchen. Every recipe needs a nutrition assessment. Every component has to be declared per 100 g. Every item has to be checked against Smart Choices limits at the right age-group percentage. And all of it must be redone whenever an ingredient or portion changes. Across a four-week menu cycle, that is hundreds of calculations to keep in step with what is actually being cooked. The guideline explicitly accepts nutrient analysis software as a way to get the data.</p>
 
-<h3>Cafeteria-Style Service</h3>
-<p>For meals served in bulk (cafeteria lines, buffet-style service), caterers must display:</p>
-<ul>
-<li>Dish name in Arabic and English.</li>
-<li>Calorie count per serving.</li>
-<li>Allergen indicators (using standardized icons or text).</li>
-<li>Traffic light color coding — green (low), amber (medium), red (high) — for fat, sugar, and salt content per serving.</li>
-</ul>
-<p>This information must be visible at the point of selection — on menu boards, tray liners, counter cards, or digital displays. The format must be legible and accessible to students of the age group being served.</p>
-
-<h2>Inspection and Enforcement</h2>
-<p>Dubai Municipality conducts both scheduled and unannounced inspections of school catering operations. Inspections cover:</p>
-<ul>
-<li><strong>Documentation review</strong> — HACCP plans, temperature logs, allergen matrices, staff training records, menu nutritional analyses.</li>
-<li><strong>Facility inspection</strong> — Kitchen cleanliness, equipment maintenance, cold chain integrity, storage conditions, pest control.</li>
-<li><strong>Food sampling</strong> — Samples may be collected for laboratory analysis to verify nutritional content, allergen presence, and microbiological safety.</li>
-<li><strong>Menu compliance</strong> — Verification that the food being served matches the approved menu plan and meets nutritional targets.</li>
-<li><strong>Staff interviews</strong> — Inspectors may question food handlers on food safety procedures, allergen management protocols, and emergency response procedures.</li>
-</ul>
-<p>Violations are categorized by severity. Critical violations — such as temperature abuse, undeclared allergens, or use of banned ingredients — can result in immediate suspension of the caterer's school approval. Non-critical violations trigger corrective action requirements with defined timelines. Repeat violations result in escalating penalties, up to and including permanent revocation of approval to serve schools.</p>
-
-<h2>How RecipeBuilder Supports School Food Compliance</h2>
-<p>RecipeBuilder is purpose-built for the challenges school food caterers face in Dubai. The platform connects recipe management directly to nutritional analysis, allergen tracking, and label generation — eliminating the manual spreadsheet work that causes most compliance failures:</p>
-<ul>
-<li><strong>Per-meal nutritional analysis</strong> — Enter your recipes and RecipeBuilder calculates calories, fat, saturated fat, sugars, sodium, fiber, and protein per serving using 20,000+ USDA-verified ingredients. Compare results against Dubai Municipality's age-group targets instantly.</li>
-<li><strong>Automatic allergen matrix generation</strong> — RecipeBuilder flags all 14 GSO-recognized allergens present in each recipe and generates a complete allergen matrix for your full menu cycle.</li>
-<li><strong>Bilingual label generation</strong> — Generate Arabic and English nutrition labels, ingredient lists, and allergen declarations for pre-packaged items following UAE.S 9:2017 requirements.</li>
-<li><strong>Traffic light calculations</strong> — Automatically assigns green, amber, and red indicators for fat, sugar, and salt based on per-serving nutritional values.</li>
-<li><strong>Menu cycle management</strong> — Plan and analyze 4-week menu rotations, ensuring each cycle meets nutritional targets across all meal types.</li>
-<li><strong>Recipe change alerts</strong> — When any ingredient or quantity changes, RecipeBuilder recalculates all affected nutrition values and allergen declarations automatically.</li>
-</ul>
-<p>To see how RecipeBuilder can streamline your school catering compliance, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a demo</a>.</p>
+<div class="blog-cta-box"><h3>Keep Your School Menu Data in One Place</h3><p>RecipeBuilder links your recipes to their nutrition and allergen data. It calculates nutrition from USDA FoodData Central data, generates allergen declarations from your ingredients, produces bilingual English/Arabic labels, and tracks recipe costs, so a changed ingredient updates everything that depends on it. You still classify items and submit menus through Dubai Municipality's own process. RecipeBuilder keeps the numbers behind those submissions consistent. <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">Book a call</a> to see how it fits your school catering workflow.</p></div>
 
 <h2>Frequently Asked Questions</h2>
 
-<h3>What certifications do I need to supply food to Dubai schools?</h3>
-<p>At minimum, you need a valid Dubai trade license with a food activity code, a Dubai Municipality establishment card, HACCP or ISO 22000 certification from an accredited body, food handling permits for all staff, and an approved food transport vehicle. Some schools also require additional certifications such as halal certification for meat products.</p>
+<h3>What inspection grade do I need to supply food to Dubai schools?</h3>
+<p>The guideline requires a verifiable inspection grade of A or B from the Food Safety Department's Food Inspection Section. Dubai Municipality's grades run from A (Excellent) to E (Very poor), so a C, D or E does not meet the school supplier requirement. You also need a good compliance history with no major violations during the supply period.</p>
 
-<h3>How often does Dubai Municipality inspect school caterers?</h3>
-<p>Dubai Municipality conducts both scheduled and unannounced inspections throughout the school year. The frequency depends on your compliance history — caterers with clean records may be inspected quarterly, while those with prior violations may face monthly visits. Food samples may be collected for laboratory analysis during any inspection.</p>
+<h3>Is HACCP certification required for Dubai school caterers?</h3>
+<p>The Dubai school food guideline does not name HACCP or ISO 22000 as a requirement. It does require an independent third-party food safety audit, facilities that meet the Dubai Food Code, a trained Person-in-Charge on every shift, and adherence to the 10 Points to Food Safety. Many caterers run a certified food safety management system anyway, but check with the Food Safety Department before treating any specific certificate as mandatory.</p>
 
-<h3>Can RecipeBuilder generate the allergen matrix required by Dubai Municipality?</h3>
-<p>Yes. RecipeBuilder automatically identifies all 14 GSO-recognized allergens present in each recipe ingredient and generates a complete allergen matrix for your full menu. The matrix updates automatically whenever you change a recipe or substitute an ingredient, ensuring your allergen documentation always matches your actual production.</p>
+<h3>How many allergens must school caterers declare in Dubai?</h3>
+<p>The guideline lists nine allergen groups recognised by Dubai Municipality's Food Safety Department: crustaceans, peanuts, soybeans, tree nuts, sesame, fish, egg, milk, and cereals containing gluten. They must be declared on the menu or label however small the amount, including when they come from a compound ingredient, additive or processing aid. Pre-packaged products must also meet the UAE labelling standards that apply to them.</p>
 
-<h3>What happens if my school food menu fails a Dubai Municipality inspection?</h3>
-<p>The consequences depend on the violation severity. Critical violations — such as temperature abuse, undeclared allergens, or banned ingredients — can result in immediate suspension of your approval to serve schools. Non-critical violations trigger corrective action requirements with defined deadlines. Repeat violations lead to escalating penalties up to permanent revocation of school supplier approval.</p>
+<h3>Can I add a new dish to my school menu mid-term?</h3>
+<p>Generally, no. Only foods on your Approved Menu may be sold, and any change needs Dubai Municipality's approval. Under the guideline, new or reformulated menu items are approved only at the end of each term and take effect the following term. Vending machines and canteens that sell the same items all year are the exception.</p>
 
-<h2>Conclusion: School Food Compliance Is the Price of Market Access</h2>
-<p>Dubai's school food market is valuable — recurring contracts, predictable volumes, and long-term relationships. But access is strictly controlled by Dubai Municipality, and the standards are high. Caterers that invest in proper food safety systems, accurate nutritional analysis, robust allergen management, and compliant labeling will win and retain school contracts. Those that treat compliance as an afterthought will find themselves excluded from one of Dubai's most attractive food service segments.</p>
-
-<div class="blog-cta-box"><h3>RecipeBuilder for Dubai School Caterers</h3><p>RecipeBuilder generates Dubai Municipality-compliant nutrition labels, allergen matrices (all 14 GSO allergens), Smart Food Choices traffic-light classifications, and NutriCheck audit documentation from a single platform — used by school caterers across the UAE to maintain MySchoolFood compliance. <a href="/school-catering-dubai">See how RecipeBuilder helps Dubai school caterers stay compliant →</a></p></div>
 <h3>Related Resources</h3>
 <ul>
-<li><a href="/blog/nutri-check-dubai-school-canteen-compliance-guide">How to Use NutriCheck for Dubai School Canteen Compliance</a></li>
-<li><a href="/blog/smart-food-choices-system-dubai-school-canteen">Dubai's Smart Food Choices System: Green, Yellow, Red & Black Categories Explained</a></li>
-<li><a href="/blog/nutri-check-dubai-school-canteen-compliance-guide">Nutrition in Charge (NIC): Roles & Responsibilities for Dubai School Caterers</a></li>
-<li><a href="/blog/nutri-check-dubai-school-canteen-compliance-guide">Dubai School Canteen Monthly Audit Checklist: What Inspectors Look For</a></li>
+<li><a href="https://myschoolfood.com/wp-content/uploads/2025/11/Dubai-Food-Nutrition-Guidelines-and-Requirements.pdf" target="_blank" rel="noopener noreferrer">Dubai Food and Nutrition Guidelines and Requirements in Educational Institutions (Dubai Municipality PDF)</a></li>
+<li><a href="/blog/smart-food-choices-system-dubai-school-canteen">Dubai Smart Food Choices for Schools: Green, Amber, Red &amp; Black</a></li>
+<li><a href="/blog/how-to-become-approved-school-food-supplier-dubai">How to Become an Approved School Food Supplier in Dubai (2026)</a></li>
+<li><a href="/blog/nutri-check-dubai-school-canteen-compliance-guide">NutriCheck and Nutrition in Charge: Dubai School Canteen Self-Audits</a></li>
+<li><a href="/blog/uae-food-labeling-requirements-2026">UAE Food Labeling Requirements 2026: Standards, Dates and Penalties</a></li>
+<li><a href="/school-catering-dubai">RecipeBuilder for Dubai School Caterers</a></li>
 </ul>
 `,
   },
-
   {
     slug: "how-to-become-approved-school-food-supplier-dubai",
-    title:
-      "How to Become a Dubai Municipality Approved School Food Supplier in 2026",
+    title: "How to Become an Approved School Food Supplier in Dubai (2026)",
     description:
-      "Becoming an approved school food supplier in Dubai requires registration with Dubai Municipality's Food Safety Department, HACCP certification, documented nutrition analysis for all menu items, allergen management systems, and compliant bilingual labeling. This step-by-step guide covers the full process from trade license to first delivery, including costs, timelines, common rejection reasons, and tips for faster approval. RecipeBuilder streamlines the nutrition documentation required for supplier approval.",
+      "What Dubai Municipality requires to supply school canteens: supplier criteria, the Food Permit and Approved Menu steps, menu change rules and ongoing duties.",
     date: "2026-03-09",
+    updatedDate: "2026-09-14",
     category: "Compliance",
-    readTime: "11 min read",
+    readTime: "10 min read",
     keywords: [
       "approved school food supplier Dubai",
-      "school food vendor Dubai Municipality",
-      "school canteen supplier UAE",
+      "Food Permit To Educational Institutions",
+      "Dubai Municipality school canteen supplier",
+      "Approved Menu Dubai schools",
+      "Supply Food To Educational Institutions Form",
       "how to supply food to schools Dubai",
-      "school catering business Dubai",
-      "Dubai Municipality food supplier registration",
-      "school food contract Dubai",
-      "food supplier approval process Dubai",
-      "school catering license Dubai",
-      "MySchoolFood supplier requirements",
-      "school food business UAE 2026",
-      "Dubai school canteen vendor",
+      "My School Food supplier requirements",
+      "school catering Dubai requirements",
+      "Dubai school canteen PIC requirements",
+      "Dubai Food and Nutrition Guidelines educational institutions",
     ],
     content: `
-<h2>Introduction: The School Food Market in Dubai Is Worth Pursuing</h2>
-<p>Dubai's private school sector serves over 300,000 students across 200+ schools, and virtually all of them require external food supply — whether through full catering contracts, pre-packaged meal delivery, vending machine supply, or canteen stocking. School food contracts are among the most attractive in the food service industry: they are long-term (typically 1–3 years with renewal options), provide predictable volumes, and generate recurring revenue throughout the academic year.</p>
-<p>But entering this market requires navigating Dubai Municipality's supplier approval process — a structured, multi-step procedure designed to ensure that only qualified food businesses serve the emirate's students. Businesses that understand the process and prepare thoroughly can move from application to first delivery in as little as 6–8 weeks. Those that submit incomplete applications or fail inspections can spend months in revision cycles. This guide walks through every step.</p>
+<p>Supplying food to Dubai schools is regulated activity. Dubai Municipality's Food Safety Department sets out who may supply school canteens, and what they may serve, in the <em>Dubai Food and Nutrition Guidelines and Requirements in Educational Institutions</em>, published through the My School Food programme. For a new caterer, bakery or food manufacturer, two things have to be in place: your business has to meet the guideline's criteria for an approved food supplier, and your menu has to be approved under a Food Permit To Educational Institutions before you sell it.</p>
+<p>This guide walks through both, based on the guideline text itself. Where the guideline does not publish something, such as fees or processing times, we say so rather than guess. Always confirm current procedures with Dubai Municipality before you commit to a school contract.</p>
 
 <div class="key-takeaways">
 <h3>Key Takeaways</h3>
 <ul>
-<li><strong>The approval process takes 6–12 weeks</strong> — Well-prepared applicants with complete documentation can be approved in 6–8 weeks; incomplete applications typically take 10–12 weeks due to revision cycles.</li>
-<li><strong>Nutritional analysis for every menu item is required upfront</strong> — You must submit documented per-serving nutrition data for your full proposed menu before approval is granted.</li>
-<li><strong>HACCP certification must be in place before you apply</strong> — You cannot begin the supplier registration process without current HACCP or ISO 22000 certification.</li>
-<li><strong>The most common rejection reason is incomplete documentation</strong> — Missing certificates, inaccurate nutritional data, and non-compliant label artwork cause the majority of first-submission rejections.</li>
+<li><strong>Supplier eligibility comes first:</strong> a trade license covering the relevant activity, a Food Inspection grade of A or B, Food Code-compliant facilities, an independent third-party food safety audit, and a trained Person-in-Charge (PIC) assigned to the canteen.</li>
+<li><strong>Menus are approved, not just suppliers:</strong> you submit weekly cycle menus with the Supply Food To Educational Institutions Form, receive an Approved Menu, then upload it on the school's QR code.</li>
+<li><strong>Any change to the Approved Menu needs another approval.</strong> New or reformulated items are approved only at the end of each term, to take effect the following term.</li>
+<li><strong>You may only sell what is approved:</strong> schools must make sure only the foods listed in the permit are sold.</li>
+<li><strong>Nutrition and allergen data must be based on the recipe,</strong> and allergens must be declared on the menu, however small the amount.</li>
 </ul>
 </div>
 
-<h2>Step 1: Establish Your Business Entity</h2>
-<p>Before you can approach Dubai Municipality, your business must be properly established:</p>
+<h2>What the Rules Cover</h2>
+<p>The guideline's requirements section applies to food suppliers and school-run canteens serving private school students aged 4 to 18, as well as vending machines, student cafés and events, and canteens in nurseries, early learning centres, universities and colleges. It covers cooked, ready-to-eat and pre-packaged food. It also reaches service providers that support suppliers, such as food laboratories, training centres and nutrition consultants.</p>
+<p>The guideline uses "shall" and "must" for mandatory requirements and "should" for strongly recommended ones. That distinction matters when you read the clauses quoted below.</p>
+<p>Annex 13 of the guideline shows two supply models, both of which require a school food permit application:</p>
 <ul>
-<li><strong>Trade license</strong> — Obtain a trade license from Dubai's Department of Economy and Tourism (DET) with an appropriate food activity code. For school food supply, the relevant codes include food catering, food manufacturing, or food distribution, depending on your business model.</li>
-<li><strong>Facility</strong> — Secure a food production or preparation facility that meets Dubai Municipality's standards. The facility must be in a commercially zoned area with appropriate utilities, ventilation, and waste management. Home kitchens are not eligible.</li>
-<li><strong>Establishment card</strong> — Register your facility with Dubai Municipality's Food Safety Department. An inspector will visit to verify that the facility meets physical requirements before the establishment card is issued.</li>
-</ul>
-<p>Estimated cost for this step: AED 15,000–30,000 depending on trade license type and facility size. Timeline: 2–4 weeks.</p>
-
-<h2>Step 2: Obtain HACCP Certification</h2>
-<p>HACCP certification is a prerequisite for school food supply — you must have it before submitting your supplier application. The certification process involves:</p>
-<ol>
-<li><strong>Develop your HACCP plan</strong> — Document hazard analysis, critical control points, critical limits, monitoring procedures, corrective actions, verification methods, and record-keeping systems for your specific operation.</li>
-<li><strong>Implement the system</strong> — Put the HACCP plan into practice across your facility. This includes training staff, establishing monitoring routines, and building the record-keeping infrastructure.</li>
-<li><strong>Engage an accredited certification body</strong> — Choose a certification body accredited by a recognized accreditation authority (e.g., UKAS, JAS-ANZ, or equivalent). The certification body will audit your facility and HACCP implementation.</li>
-<li><strong>Pass the audit</strong> — The auditor will verify that your HACCP plan is documented, implemented, and effective. Non-conformities must be resolved before certification is granted.</li>
-</ol>
-<p>Estimated cost: AED 5,000–15,000 for certification (depending on facility size and certification body). Timeline: 4–8 weeks from HACCP plan development to certificate issuance.</p>
-
-<h2>Step 3: Prepare Your Menu and Nutritional Documentation</h2>
-<p>This is where most applicants underestimate the work required. Dubai Municipality expects school food suppliers to submit:</p>
-<ul>
-<li><strong>A complete menu plan</strong> — Minimum 4-week rotation cycle showing every meal and snack item, with descriptions and portion sizes.</li>
-<li><strong>Per-serving nutritional analysis for every item</strong> — Calories, total fat, saturated fat, sugars, sodium, fiber, and protein for each dish based on the actual recipe and portion size. The analysis must demonstrate compliance with <a href="/blog/dubai-municipality-school-food-requirements-caterers-guide">Dubai Municipality's age-group nutritional targets</a>.</li>
-<li><strong>A complete allergen matrix</strong> — Mapping every menu item to the 14 <a href="/blog/uae-food-labeling-requirements-2026">GSO-recognized allergens</a> it contains.</li>
-<li><strong>Label artwork</strong> — For any pre-packaged items, label artwork must be submitted showing all mandatory elements in Arabic and English.</li>
-</ul>
-<p>For a 4-week menu with 20 lunch items and 10 snack items, that means producing nutritional analyses for 30+ unique recipes — each requiring accurate ingredient-level data and per-serving calculations. This is where <a href="/recipe-management">digital recipe management tools</a> provide significant efficiency over manual spreadsheet calculations.</p>
-
-<h2>Step 4: Submit Your Supplier Application</h2>
-<p>With your documentation package complete, submit your application to Dubai Municipality's Food Safety Department. The submission includes:</p>
-<ul>
-<li>Copy of trade license and establishment card.</li>
-<li>HACCP or ISO 22000 certificate (valid and from an accredited body).</li>
-<li>Staff food handler permits and training records.</li>
-<li>Food safety management plan.</li>
-<li>Vehicle permits and specifications.</li>
-<li>Complete menu plans with nutritional analyses.</li>
-<li>Allergen matrix.</li>
-<li>Label artwork for pre-packaged items.</li>
-<li>Allergen management plan.</li>
-<li>Cleaning and sanitation schedule.</li>
-<li>Pest control contract and reports.</li>
-</ul>
-<p>The Food Safety Department will review the submission for completeness. Incomplete submissions are returned with specific comments identifying what is missing or insufficient. First-time applicants should expect at least one revision cycle.</p>
-
-<h2>Step 5: Facility Inspection</h2>
-<p>After the documentation review is passed, Dubai Municipality schedules a facility inspection. The inspection covers every aspect of your operation: kitchen layout and workflow, equipment condition and calibration, cold chain infrastructure, storage conditions, cleaning and sanitation practices, pest control measures, staff hygiene and permit verification, and HACCP record-keeping systems.</p>
-<p>The inspection uses a scoring system. You must meet the minimum threshold score to proceed. If you fall below the threshold, the inspector will identify the deficiencies, and you will have a defined period to correct them before a re-inspection.</p>
-
-<h2>Step 6: Approval and School Engagement</h2>
-<p>Once you pass the documentation review and facility inspection, you receive approval to supply food to Dubai schools. This does not mean automatic contracts — you must still engage with individual schools to win their business. However, being on Dubai Municipality's approved supplier list is a prerequisite that schools verify before considering any caterer.</p>
-<p>When engaging schools, be prepared to provide your Dubai Municipality approval documentation, your menu plans and nutritional analyses, references from other institutional clients, pricing proposals, and information about your allergen management and food safety systems.</p>
-
-<h2>Common Reasons for Application Rejection</h2>
-<p>Based on industry experience, the most common reasons for supplier application rejection include:</p>
-<ul>
-<li><strong>Incomplete nutritional analysis</strong> — Missing nutrients (e.g., providing calories and fat but omitting sodium or fiber), using estimated values instead of recipe-based calculations, or failing to provide per-serving data for every menu item.</li>
-<li><strong>Expired or invalid certificates</strong> — HACCP certificates from non-accredited bodies, expired food handler permits, or pest control contracts that have lapsed.</li>
-<li><strong>Non-compliant label artwork</strong> — Missing Arabic text, incorrect date formats, absent allergen declarations, or missing manufacturer details on pre-packaged items.</li>
-<li><strong>Facility deficiencies</strong> — Inadequate handwashing stations, improper separation of raw and cooked food areas, insufficient cold storage, or lack of pest control documentation.</li>
-<li><strong>Incomplete allergen documentation</strong> — Missing allergen matrix, failure to identify allergens in compound ingredients, or lack of cross-contamination prevention procedures.</li>
+<li><strong>Category 1: canteen managed by an external contractor</strong>, using a catering facility either inside or outside the school.</li>
+<li><strong>Category 2: canteen managed by the educational institution</strong>, with food supplied by individual food businesses.</li>
 </ul>
 
-<h2>Cost Summary</h2>
+<h2>Supplier Eligibility Requirements</h2>
+<p>Clause 3.2.2.2 requires food businesses supplying schools to meet all of the supplier criteria in clause 3.2.1.2. Those criteria are:</p>
 <table>
 <thead>
-<tr><th>Item</th><th>Estimated Cost (AED)</th></tr>
+<tr><th>Requirement</th><th>What the guideline says</th></tr>
 </thead>
 <tbody>
-<tr><td>Trade license (annual)</td><td>10,000 – 15,000</td></tr>
-<tr><td>Establishment card</td><td>500 – 2,000</td></tr>
-<tr><td>HACCP certification</td><td>5,000 – 15,000</td></tr>
-<tr><td>Food handler permits (per person)</td><td>110</td></tr>
-<tr><td>Vehicle permit (per vehicle)</td><td>500 – 1,000</td></tr>
-<tr><td>Laboratory testing (if required)</td><td>500 – 2,000</td></tr>
-<tr><td>Nutritional analysis software/service</td><td>Varies (RecipeBuilder from $828/year)</td></tr>
-<tr><td><strong>Total estimated startup cost</strong></td><td><strong>20,000 – 40,000</strong></td></tr>
+<tr><td>Trade license</td><td>A valid trade license that explicitly names the relevant business activity, such as catering, bakery or manufacturing.</td></tr>
+<tr><td>Food safety rating</td><td>A verifiable inspection grade of A or B from the Food Safety Department's Food Inspection Section.</td></tr>
+<tr><td>Facilities</td><td>Facilities equipped to prepare, transport and store food according to the Dubai Food Code.</td></tr>
+<tr><td>Third-party audit</td><td>An independent third-party audit verifying adherence to food safety regulations must be in place.</td></tr>
+<tr><td>Trained PIC for the canteen</td><td>A designated Person-in-Charge with an active Foodwatch account, assigned to that school's canteen and formally trained in both nutrition requirements and food safety. The PIC must be present every shift, and separate PICs are needed for multiple food service areas or locations in the school.</td></tr>
 </tbody>
 </table>
+<p>Clause 3.2.2.1 adds two more conditions. The layout and processes of the canteen and/or production facility must be approved by the Food Safety Department before supply begins. The supplier must also keep a good compliance history, with no major violations during the supply period.</p>
+<p>A note on grades and platforms. Dubai Municipality grades food establishments on an A to E scale, so the guideline accepts only the top two grades. The guideline, dated August 2024, refers to Foodwatch throughout. Dubai Municipality now says it monitors school canteens and reviews menus through its DM Checked platform. Check with the Food Safety Department which platform your PIC account and menu uploads should use.</p>
 
-<h2>How RecipeBuilder Accelerates the Approval Process</h2>
-<p>The nutrition documentation step is the most time-consuming part of the supplier application process. RecipeBuilder eliminates the manual calculation burden:</p>
+<h2>How to Apply: The Approved Menu Process</h2>
+<p>Under clause 3.2.2.3, businesses that supply schools, and schools that run their own canteens, must obtain a valid Food Permit To Educational Institutions from the Food Safety Department. You get it by following the Approved Menu steps below (also shown in Annex 14).</p>
+
+<h3>Step 1: Complete the Application Form and Submit It to Food Permits</h3>
+<p>Submit a copy of your weekly menus with the completed Supply Food To Educational Institutions Form. The form names the designated PIC from the food supplier and the PIC appointed by the school, who must be able to review food safety and nutrition requirements. Items sent for approval outside the cycle menu are not accepted, except for vending machines or canteens with regular items all year. Annex 15 explains how to fill in the form, section by section:</p>
 <ul>
-<li><strong>Recipe-based nutrition analysis</strong> — Enter your recipes with ingredients and quantities. RecipeBuilder calculates per-serving calories, fat, saturated fat, sugars, sodium, fiber, and protein using 20,000+ USDA-verified ingredients — the exact nutrients Dubai Municipality requires.</li>
-<li><strong>Instant allergen matrix</strong> — Generate a complete 14-allergen matrix for your full menu in seconds, formatted for submission to Dubai Municipality.</li>
-<li><strong>Menu cycle analysis</strong> — Analyze your 4-week menu rotation to verify that every item and every day meets the age-group nutritional targets before you submit.</li>
-<li><strong>Compliant label generation</strong> — Generate bilingual Arabic/English labels for pre-packaged items with correct formatting, allergen declarations, and date formats.</li>
-<li><strong>Change management</strong> — When you modify a recipe during the revision process, all affected nutrition values and allergen data update automatically.</li>
+<li>General information (the school, the supplier, the PICs, the menu cycle)</li>
+<li>Weeks 1 to 4 of the menu</li>
+<li>Entrée snacks and snacks</li>
+<li>Drinks</li>
 </ul>
-<p>To see how RecipeBuilder can help you prepare your supplier application, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a demo</a>.</p>
+<p>The form checks your menu against the guideline's primary requirements (weekly cycle menu, kind of menu items, food types, food groups) and its nutrition requirements (per 100 g criteria, per-serving criteria and the Smart Choices classification).</p>
+
+<h3>Step 2: Approved Menu Issuance</h3>
+<p>The Food Safety Department reviews the form and weekly menus. If the menu items comply, it issues the official Approved Menu document through Food Permits.</p>
+
+<h3>Step 3: Approved Menu Digitization</h3>
+<p>Once you receive the Approved Menu, your PIC in the canteen uploads it, together with the submitted menu for that week, on the school's QR code on Foodwatch.</p>
+
+<h2>Preparing a Menu That Can Be Approved</h2>
+<p>Most of the work is in the menu itself. Section 3.3 of the guideline sets out the core requirements:</p>
+<ul>
+<li><strong>Weekly menu cycle:</strong> at least four weekly cycle menus must be rotated, and two to three seasonal menus are recommended. Menus are submitted in 4-week batches, with values entered per 100 g for each component as applicable.</li>
+<li><strong>Kinds of menu items:</strong> each item must fit a defined kind: main dish, main dish combo, full meal combo, entrée snack, snack or beverage. For main dishes and combos, each component is declared per 100 g with its nutrients of concern, then the dish is evaluated as a whole per 100 g and per serving against the age-group criteria.</li>
+<li><strong>Weight limits by food type:</strong> 40 g for pre-packaged products, 60 g for bakery and dessert items and 100 g for other savoury foods. Catered mains and entrées have no set weight limit.</li>
+<li><strong>Food groups:</strong> each main dish must include at least three food groups, with protein, grains and vegetables as the main components.</li>
+<li><strong>Smart Choices classification:</strong> items are classified by nutritional value, which determines how often they can appear. See our <a href="/blog/smart-food-choices-system-dubai-school-canteen">Smart Food Choices guide</a> for details.</li>
+</ul>
+<h3>Nutrition information</h3>
+<p>Clause 3.2.2.5 requires suppliers to assess the nutrition of all their products from the recipe, including ingredients and quantities, and to share it with the Food Safety Department, schools or other authorities when asked. Under clause 3.2.2.7 you can get the values from nutrient analysis software, from a laboratory approved by the Food Safety Department, or by manual calculation from known ingredient values or accepted data. For manual calculations, the guideline points suppliers to the Applied Nutrition and Awareness Section at nutrition@dm.gov.ae. Schools should also hold nutrition and allergen information from their suppliers for labelling, documentation and verification (clause 3.2.1.7).</p>
+<h3>Allergens</h3>
+<p>Clause 3.4.9 requires every meal to show any allergen present as a main ingredient, compound ingredient, additive or processing aid. Allergens must be labelled or declared on the menu no matter how small the amount. The guideline lists nine allergens recognised by the Food Safety Department: crustaceans, peanuts, soybeans, tree nuts, sesame seeds, fish, egg, milk, and gluten and cereals containing gluten (Kamut, wheat, oats, rye, barley and spelt), each including their products.</p>
+
+<h2>Menu Changes and the Scope of Your Permit</h2>
+<p>This is where new suppliers most often get caught out, so read these clauses carefully:</p>
+<ul>
+<li><strong>Any change needs re-approval.</strong> Clause 3.2.1.3 states that any change to the Approved Menu requires another approval from Dubai Municipality. The guideline does not exempt "minor" changes.</li>
+<li><strong>Approvals follow the school term.</strong> New or reformulated items are approved only at the end of each term, to take effect the following term (clause 3.2.2.3).</li>
+<li><strong>Recipe changes trigger revalidation.</strong> Clause 3.2.2.6 requires suppliers to revalidate and get approval for nutrition information whenever products, ingredients, proportions or serving sizes change.</li>
+<li><strong>Only approved food may be sold.</strong> Suppliers may not provide any food not approved by the Food Safety Department (clause 3.2.2.4), and schools must make sure only the foods listed in the permit are sold (clause 3.2.1.3).</li>
+</ul>
+<p>The guideline does not describe a single approval that covers every school in Dubai. The application form names a specific school and its PIC. The PIC is assigned to that school's canteen, and the Approved Menu is uploaded on that school's QR code. So treat each school contract as needing its own Approved Menu, and confirm with Food Permits before you start supplying another school.</p>
+
+<h2>Obligations After Approval</h2>
+<p>Approval is the start of ongoing compliance, not the end:</p>
+<ul>
+<li><strong>Training:</strong> Basic Food Hygiene Training is mandatory for all food handlers. Managers and PICs should also complete the relevant PIC training (clause 3.5.1). My School Food runs a Nutrition In-Charge Training Program for suppliers and school management.</li>
+<li><strong>Self-monitoring:</strong> the food supplier's PIC must carry out canteen self-monitoring monthly, and production facilities are also subject to self-monitoring (clause 3.5.2).</li>
+<li><strong>Inspections:</strong> suppliers of ready-to-eat high-risk foods to schools should be treated as high-risk establishments and inspected at least once every six months. Inspections cover food safety and nutrition, and any change in supplier, process or product (clause 3.5.2).</li>
+<li><strong>Food safety practice:</strong> all suppliers must follow the guideline's 10 Points To Food Safety, which include supplier management and allergen management (clause 3.4.10).</li>
+</ul>
+<p>Dubai Municipality says it combines field visits to school canteens with monitoring on DM Checked. Where it finds non-compliance, it can withdraw non-conforming products, prohibit their circulation and require corrective action.</p>
+<p>The guideline does not publish application fees or processing times. Ask Dubai Municipality directly rather than relying on third-party estimates, and plan around the end-of-term approval window for any menu changes.</p>
+
+<h2>Keeping Menu Documentation Manageable</h2>
+<p>For a caterer, the hardest part is keeping recipe-based nutrition values, per-serving figures and allergen declarations accurate across a four-week cycle, and updating them every time a recipe, ingredient or portion changes. Software is one of the three calculation methods the guideline allows. Whatever method you use, the output still has to meet the guideline's criteria and pass the Food Safety Department's review.</p>
+
+<div class="blog-cta-box">
+<h3>Build your school menu documentation in one place</h3>
+<p>RecipeBuilder calculates menu nutrition from USDA FoodData Central data, gives per-serving values for each recipe, generates allergen declarations, produces bilingual English/Arabic labels and tracks recipe costing. When you change an ingredient or portion, the figures update so you can prepare a revalidation. <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">Book a call</a> to see how it fits your school menu workflow.</p>
+</div>
 
 <h2>Frequently Asked Questions</h2>
 
-<h3>How long does it take to become an approved school food supplier in Dubai?</h3>
-<p>The full process — from trade license to Dubai Municipality approval — typically takes 6–12 weeks. Well-prepared applicants with complete documentation, valid HACCP certification, and a facility that passes inspection on the first visit can be approved in 6–8 weeks. Applications with missing documents or facility deficiencies may take 10–12 weeks due to revision and re-inspection cycles.</p>
+<h3>Does one approval let me supply any school in Dubai?</h3>
+<p>The guideline does not describe an emirate-wide approval. You must meet the supplier criteria in clause 3.2.1.2. The Food Permit To Educational Institutions is then tied to an Approved Menu, and the application form names a specific school and its PIC. That menu is uploaded on that school's QR code, and schools must make sure only foods listed in the permit are sold. Plan for an Approved Menu for each school you supply, and confirm the scope with Dubai Municipality's Food Permits before starting at a new school.</p>
 
-<h3>Do I need separate approval for each school I want to supply?</h3>
-<p>No. Dubai Municipality's supplier approval covers all schools in the emirate. Once approved, you can approach any Dubai school. However, individual schools may have additional qualification criteria beyond Dubai Municipality's baseline requirements, such as specific dietary certifications or minimum insurance coverage.</p>
+<h3>Do I need re-approval if I change an item on my approved menu?</h3>
+<p>Yes. Clause 3.2.1.3 says any change to the Approved Menu requires another approval from Dubai Municipality, and clause 3.2.2.6 requires revalidation whenever products, ingredients, proportions or serving sizes change. New or reformulated items are approved only at the end of each term, to take effect the next term. Until then, you may only serve the items already approved.</p>
 
-<h3>Can RecipeBuilder calculate nutrition data for Dubai Municipality's required format?</h3>
-<p>Yes. RecipeBuilder calculates all seven nutrients required by Dubai Municipality — calories, total fat, saturated fat, sugars, sodium, fiber, and protein — per serving for every recipe. You can compare results against the age-group targets (primary: 550–650 kcal lunch; secondary: 700–850 kcal lunch) directly within the platform.</p>
+<h3>What food safety grade does a school food supplier need?</h3>
+<p>The guideline requires a verifiable inspection grade of A or B from Dubai Municipality's Food Inspection Section. You also need a trade license covering the relevant activity, facilities that meet the Dubai Food Code, an independent third-party food safety audit, a trained PIC present on every shift, Food Safety Department approval of your canteen or production facility layout and processes, and a compliance history with no major violations.</p>
 
-<h3>What happens if I change my menu after approval?</h3>
-<p>You must notify the school and update your nutritional documentation for any menu changes. If the changes are minor (ingredient substitutions within the same food group), you typically do not need to re-submit to Dubai Municipality. Significant changes — adding new menu items, changing portion sizes, or modifying recipes that affect allergen profiles — should be documented and made available for the next inspection.</p>
+<h3>How long does approval take and what does it cost?</h3>
+<p>The guideline does not publish processing times or fees, so contact Dubai Municipality for current figures. The one timing rule it does set: new or reformulated menu items are approved only at the end of each term, for the following term. Leave enough time before a term starts to get your supplier criteria in place and your weekly menus approved.</p>
 
-<h2>Conclusion: Preparation Is the Difference Between 6 Weeks and 6 Months</h2>
-<p>The path to becoming an approved school food supplier in Dubai is straightforward but demanding. The businesses that move through the process quickly are those that prepare their documentation thoroughly before submitting, invest in accurate nutritional analysis tools, ensure their facility meets standards before the inspection, and treat the application as a project with defined milestones and deadlines. The school food market in Dubai rewards preparation — and penalizes shortcuts.</p>
-
-<div class="blog-cta-box"><h3>RecipeBuilder for Dubai School Caterers</h3><p>RecipeBuilder generates Dubai Municipality-compliant nutrition labels, allergen matrices (all 14 GSO allergens), Smart Food Choices traffic-light classifications, and NutriCheck audit documentation from a single platform — used by school caterers across the UAE to maintain MySchoolFood compliance. <a href="/school-catering-dubai">See how RecipeBuilder helps Dubai school caterers stay compliant →</a></p></div>
 <h3>Related Resources</h3>
 <ul>
-<li><a href="/blog/dubai-municipality-school-food-requirements-caterers-guide">Dubai Municipality School Food Requirements: Complete Guide for Caterers</a></li>
-<li><a href="/blog/nutri-check-dubai-school-canteen-compliance-guide">Nutrition in Charge (NIC): Roles & Responsibilities for Dubai School Caterers</a></li>
-<li><a href="/blog/nutri-check-dubai-school-canteen-compliance-guide">How to Use NutriCheck for Dubai School Canteen Compliance</a></li>
+<li><a href="https://myschoolfood.com/wp-content/uploads/2025/11/Dubai-Food-Nutrition-Guidelines-and-Requirements.pdf">Dubai Food and Nutrition Guidelines and Requirements in Educational Institutions (Dubai Municipality, PDF)</a></li>
+<li><a href="https://myschoolfood.com/food-suppliers/">My School Food: resources for food suppliers</a></li>
+<li><a href="/blog/dubai-municipality-school-food-requirements-caterers-guide">Dubai Municipality School Food Requirements: 2026 Guide for Caterers</a></li>
+<li><a href="/blog/smart-food-choices-system-dubai-school-canteen">Dubai Smart Food Choices for Schools: Green, Amber, Red &amp; Black</a></li>
+<li><a href="/blog/nutri-check-dubai-school-canteen-compliance-guide">NutriCheck and Nutrition in Charge: Dubai School Canteen Self-Audits</a></li>
+<li><a href="/school-catering-dubai">RecipeBuilder for School Catering in Dubai</a></li>
+<li><a href="/recipe-management">Recipe Management</a></li>
 </ul>
 `,
   },
-
   {
     slug: "nutri-check-dubai-school-canteen-compliance-guide",
-    title: "How to Use NutriCheck for Dubai School Canteen Compliance: A Complete Caterer's Guide (2026)",
-    description: "Step-by-step guide for school food suppliers on using Dubai Municipality's NutriCheck self-audit platform — registration, monthly cycles, checklists, and audit tips.",
+    title: "NutriCheck and Nutrition in Charge: Dubai School Canteen Self-Audits",
+    description:
+      "How Dubai Municipality's NutriCheck self-audit works, what the Nutrition in Charge (PIC) does, and a monthly checklist based on the official school guideline.",
     date: "2026-03-13",
+    updatedDate: "2026-09-14",
     category: "Compliance",
     readTime: "11 min read",
     keywords: [
       "NutriCheck Dubai",
-      "school canteen self-audit",
-      "NutriCheck platform guide",
-      "Dubai Municipality canteen compliance",
-      "school food self audit Dubai",
-      "NutriCheck caterer guide",
-      "MySchoolFood NutriCheck",
-      "school canteen audit tool Dubai",
-      "food supplier NutriCheck registration",
-      "school food compliance platform UAE",
-      "canteen nutrition audit Dubai",
-      "NutriCheck monthly audit",
+      "Nutrition in Charge Dubai",
+      "NIC school canteen Dubai",
+      "Person in Charge school canteen Dubai",
+      "school canteen self-audit Dubai",
+      "Dubai school canteen monthly audit checklist",
+      "My School Food NutriCheck",
+      "Dubai Food and Nutrition Guidelines educational institutions",
+      "Dubai Municipality school food supplier compliance",
+      "DM Checked school canteen",
     ],
     content: `
-<p>Dubai Municipality's NutriCheck platform is the official self-audit tool that every approved school canteen food supplier must use. If you operate a school canteen in Dubai — or supply one — NutriCheck is not optional. It is the mechanism through which Dubai Municipality tracks canteen compliance, assigns FoodWatch ratings, and identifies catering companies at risk of regulatory action.</p>
+<p>Dubai Municipality's My School Food programme is shifting school canteen compliance away from relying only on occasional inspections and towards continuous self-checking. Two things sit at the centre of that shift: NutriCheck, the self-audit platform for food suppliers and schools, and the Nutrition in Charge (NIC), the trained person who carries out those audits on the ground.</p>
 
-<p>Yet despite its importance, many catering companies approach NutriCheck reactively: they log in when an audit is due, rush through the checklist, and hope for a pass. This guide takes a different approach. It explains what NutriCheck actually is, how to use it systematically, and how to build internal processes that make passing monthly audits a routine outcome rather than a stressful event.</p>
+<p>This guide sets out what Dubai Municipality has actually published about both, and turns the <a href="https://myschoolfood.com/wp-content/uploads/2025/11/Dubai-Food-Nutrition-Guidelines-and-Requirements.pdf">Dubai Food and Nutrition Guidelines and Requirements in Educational Institutions</a> into a monthly preparation checklist. Where official detail is not public, we say so. The hosted copy of the guideline is marked as a draft dated 2 August 2024, so check the <a href="https://myschoolfood.com/food-suppliers/">My School Food supplier page</a> for the latest version.</p>
 
-<div class="key-takeaways"><h3>Key Takeaways</h3><ul><li>NutriCheck is Dubai Municipality's mandatory self-audit platform for school canteen food suppliers.</li><li>Both food suppliers and school PICs (Persons in Charge) have distinct roles in the platform.</li><li>Monthly audit cycles must be completed within the designated window or the canteen risks a compliance downgrade.</li><li>The audit checklist spans hygiene, nutrition labelling, allergens, temperature control, and documentation.</li><li>Failing audits repeatedly can affect a supplier's FoodWatch grading and their right to operate in Dubai schools.</li><li>Structured documentation — especially nutrition analysis and allergen records — is the fastest path to consistent audit passes.</li></ul></div>
+<div class="key-takeaways"><h3>Key Takeaways</h3><ul><li>NutriCheck is Dubai Municipality's self-audit platform, designed to prompt food suppliers and school Persons-in-Charge (PICs) to run regular self-audits of their canteens.</li><li>The school food guideline requires canteen self-monitoring monthly by the food supplier's PIC and every quarter by the educational institution's PIC.</li><li>The supplier's canteen PIC must be formally trained in both nutrition and food safety and present every shift, with separate PICs for multiple food service areas.</li><li>Dubai Municipality's announcement, as reported by Gulf News, said existing hygiene and food safety officers can take on the Nutrition in Charge role. We found no published degree requirement.</li><li>Self-audits sit alongside the Municipality's own nutrition audits and routine food safety inspections. They do not replace them.</li><li>The guideline lists nine allergen groups that must be declared on the menu, no matter how small the amount.</li></ul></div>
 
 <h2>What Is NutriCheck?</h2>
 
-<p>NutriCheck is a digital self-audit platform developed and managed by Dubai Municipality's Food Safety Department. It is part of the broader MySchoolFood initiative, which sets the regulatory framework for food service in Dubai's private schools.</p>
+<p>NutriCheck is the self-audit platform Dubai Municipality introduced under My School Food. In its back-to-school announcement for the 2025-26 academic year, the Municipality described NutriCheck as a way to encourage both food suppliers and school Persons-in-Charge to carry out regular self-audits, building accountability and continuous compliance. Food suppliers and school management were encouraged to use it to make sure their canteens meet the guideline.</p>
 
-<p>The platform allows food suppliers and school representatives to conduct structured self-assessments against Dubai Municipality's canteen compliance standards. These self-audits are not informal checklists — they are official records that feed into a supplier's compliance profile, influence their FoodWatch grading, and can be accessed by DM inspectors during on-site visits.</p>
+<p>When the programme was announced in June 2025, Gulf News reported that catering companies supplying food to schools must register and undergo monthly audits. It said these are self-audits run by a designated NIC from either the catering company or the school. The same report described three platform features: an interactive Dubai map showing school nutrition compliance, a built-in checklist to guide schools, and real-time monitoring that lets food inspectors see each entity's audit history.</p>
 
-<p>NutriCheck sits alongside physical inspections conducted by Dubai Municipality's Food Safety inspectors. Self-audit results complement inspection outcomes; a strong self-audit record can positively influence how inspectors assess your operation, while a poor record — or missing audits — signals systemic compliance weakness.</p>
+<p>In other words, a self-audit is a record inspectors can see, so treat every submission as a factual statement about your canteen.</p>
 
-<h2>Who Must Use NutriCheck?</h2>
+<p>Dubai Municipality has not published audit submission windows, grace periods or corrective-action deadlines for NutriCheck. For those details, check the instructions inside the platform or contact the Applied Nutrition and Awareness Section at nutrition@dm.gov.ae, the address listed in the guideline.</p>
 
-<p>There are two primary user types within the NutriCheck platform.</p>
+<h2>Where Self-Audits Fit in Dubai's School Food Oversight</h2>
 
-<p><strong>Food Suppliers</strong> are the catering companies approved by Dubai Municipality to operate school canteens. Suppliers must register on the platform, maintain an active account, and complete the monthly self-audit for every school they service.</p>
-
-<p><strong>School PICs (Persons in Charge)</strong> are the school-side representatives responsible for canteen oversight. They also have access to NutriCheck and may be required to verify or co-sign certain audit submissions. In some cases, schools can initiate corrective action requests through the platform if they identify compliance issues that the supplier has not addressed.</p>
-
-<p>If your company manages canteens across multiple schools, you will have separate audit obligations for each school. NutriCheck tracks compliance at the individual school canteen level, not at the company level.</p>
-
-<h2>How to Register as a Food Supplier on NutriCheck</h2>
-
-<p>Before you can access NutriCheck, your company must be registered as an approved school food supplier with Dubai Municipality. That approval process — including the required documentation and facility inspection — is covered in detail in our guide on <a href="/blog/how-to-become-approved-school-food-supplier-dubai">how to become an approved school food supplier in Dubai</a>.</p>
-
-<p>Once your company has received its DM approval, the registration process for NutriCheck involves the following steps.</p>
-
-<p><strong>Step 1: Obtain your supplier credentials.</strong> Dubai Municipality will issue your company with login credentials for the MySchoolFood portal, which houses the NutriCheck module. These credentials are typically provided as part of the approval confirmation.</p>
-
-<p><strong>Step 2: Complete your supplier profile.</strong> Log in and populate your company profile with accurate information: trade licence details, DM approval number, contact information for your Nutrition in Charge (NIC), and the list of schools you are approved to service.</p>
-
-<p><strong>Step 3: Link your school canteen(s).</strong> Each canteen you operate must be linked to your supplier account. The school's PIC will typically need to confirm this linkage from their side. Once confirmed, audit obligations for that school appear in your dashboard.</p>
-
-<p><strong>Step 4: Upload baseline documentation.</strong> Before your first audit cycle, upload the required standing documents: your approved menu, nutrition analysis records for menu items, allergen matrix, staff health card records, and NIC appointment letter. These documents underpin every subsequent monthly audit.</p>
-
-<h2>The Monthly Audit Cycle</h2>
-
-<p>NutriCheck operates on a monthly audit cycle. Each month, a new audit window opens for each school you service. The window has a defined opening and closing date — typically aligned to the school calendar month. Audits not completed within the window are recorded as missed, which is treated as a compliance failure.</p>
+<p>Section 3.5.2 of the guideline sets out several layers of monitoring, and the Municipality added its own nutrition audits for the 2025-26 school year.</p>
 
 <table>
   <thead>
-    <tr><th>Audit Activity</th><th>Frequency</th><th>Responsible Party</th></tr>
+    <tr><th>Layer</th><th>Who</th><th>What the source says</th></tr>
   </thead>
   <tbody>
-    <tr><td>Monthly self-audit completion</td><td>Monthly</td><td>Food Supplier (NIC)</td></tr>
-    <tr><td>Corrective action follow-up</td><td>Within 7 days of audit</td><td>Food Supplier (NIC)</td></tr>
-    <tr><td>School PIC verification</td><td>Monthly</td><td>School PIC</td></tr>
-    <tr><td>DM physical inspection</td><td>Unannounced / periodic</td><td>Dubai Municipality</td></tr>
-    <tr><td>Menu approval renewal</td><td>Annual (or when menu changes)</td><td>Food Supplier</td></tr>
-    <tr><td>Staff health card renewal</td><td>Annual</td><td>Food Supplier</td></tr>
+    <tr><td>Self-monitoring for canteens</td><td>Food supplier's PIC</td><td>Monthly, covering food safety, nutrition and stakeholder engagement (Guideline 3.5.2)</td></tr>
+    <tr><td>Self-monitoring for canteens</td><td>Educational institution's PIC</td><td>Every quarter (Guideline 3.5.2)</td></tr>
+    <tr><td>Self-monitoring for production facilities</td><td>Food supplier</td><td>Checks food safety and nutrition compliance at the production facility. No frequency stated (Guideline 3.5.2)</td></tr>
+    <tr><td>Food inspection</td><td>Dubai Municipality</td><td>Suppliers of ready-to-eat high-risk foods to schools should be treated as high risk and inspected at least once every six months (Guideline 3.5.2)</td></tr>
+    <tr><td>Nutrition audits</td><td>Dubai Municipality</td><td>Introduced for 2025-26 to check canteen compliance with the guideline, as an additional safeguard to NutriCheck (Municipality announcement)</td></tr>
   </tbody>
 </table>
 
-<p>The most common mistake catering companies make is treating the audit as a point-in-time task. In reality, the monthly audit is a snapshot of your ongoing compliance. If you are maintaining compliant operations continuously, completing the audit checklist should take 20–30 minutes. If compliance is only assembled when an audit is due, each cycle becomes a high-risk scramble.</p>
+<p>In November 2025, Khaleej Times reported that a Dubai Municipality assessment of more than 200 schools and over 7,000 food items found limited fruit options and some snacks that exceeded nutritional limits or contained restricted ingredients. A good monthly self-audit should catch problems like these first.</p>
 
-<h2>What the NutriCheck Audit Checklist Covers</h2>
+<h3>Foodwatch, DM Checked and inspection grades</h3>
 
-<p>The NutriCheck audit checklist is organized into distinct compliance domains. While the exact structure of the checklist can be updated by Dubai Municipality, the core coverage areas are consistent and align with DM's school food safety circular requirements.</p>
+<p>The guideline refers to Foodwatch, Dubai Municipality's digital food safety platform. Gulf News has since described DM Checked as the revamped version of Food Watch, and reported in September 2025 that DM Checked is used to track canteen performance and approve school menus. You may see either name depending on when a document was written.</p>
 
-<h3>1. Hygiene and Food Safety</h3>
+<p>Dubai's food inspection grades run from A (excellent) to E (very poor), and the guideline requires an approved school food supplier to hold a verifiable grade of A or B. The grade comes from inspections. NutriCheck is a self-audit tool, and no public source says its results feed directly into the grade.</p>
 
-<p>This section covers the foundational food safety requirements that apply in any commercial kitchen environment. Inspectors — and the self-audit checklist — look for evidence that your kitchen maintains Safe food handling procedures. Key checkpoints include personal hygiene practices, hand washing facilities, pest control records, cleaning schedules, and illness reporting protocols for staff.</p>
+<h2>The Nutrition in Charge and Person-in-Charge Roles</h2>
 
-<h3>2. Nutrition Compliance</h3>
+<p>The guideline uses Person-in-Charge (PIC). Launch coverage and the Municipality's training materials use Nutrition in Charge (NIC), a role Gulf News reported was modelled on the food safety PIC in food establishments. The My School Food supplier page lists NIC certification results for both technical experts and persons in charge.</p>
 
-<p>This section verifies that your menu items comply with Dubai Municipality's nutritional requirements. Calorie display requirements — including per-serving calorie counts on the menu and on packaged items — are verified here. Smart Food Choices colour coding on menus and signage is also checked. Caterers must demonstrate that their menu items have been nutritionally analysed and that the displayed values are accurate.</p>
+<h3>What the guideline requires of the supplier's canteen PIC</h3>
 
-<p>For practical guidance on Dubai's calorie display and allergen labelling requirements, see our post on <a href="/blog/smart-food-choices-system-dubai-school-canteen">nutrition compliance for school caterers in Dubai</a>.</p>
+<p>Clause 3.2.1.2 lists a trained PIC as a condition for being an approved school food supplier. The PIC must:</p>
 
-<h3>3. Allergen Management</h3>
+<ul>
+<li>be designated and specifically assigned to the canteen in that educational institution</li>
+<li>hold an active account on the Municipality's food safety platform (Foodwatch in the guideline text)</li>
+<li>have completed formal training in both nutritional requirements and food safety practices</li>
+<li>be present every shift</li>
+<li>be one of several PICs where the institution has multiple food service areas or locations, because each needs its own</li>
+</ul>
 
-<p>Allergen management is one of the highest-risk areas from both a compliance and a student safety perspective. The NutriCheck checklist requires evidence that: all 14 major allergens are declared for every menu item, allergen information is visible to students and staff at the point of service, staff have been trained on allergen handling protocols, and allergen matrices are current and reflect actual production ingredients.</p>
+<h3>What the school's PIC does</h3>
 
-<h3>4. Temperature Control and Cold Chain</h3>
+<p>Under clause 3.2.1.5, school management must assign its own PIC who can identify, review and monitor food safety and nutrition requirements. Both the supplier's PIC and the school's PIC are named on the Supply Food To Educational Institutions Form, which is submitted with the weekly menus for approval (clause 3.2.2.3).</p>
 
-<p>Temperature logs for food storage, transport, and service must be maintained and available for review. Refrigeration units must be operating within required ranges, and hot food must be held at safe service temperatures. Delivery temperature records — particularly for perishable items arriving from your central kitchen — are also reviewed.</p>
+<h3>Who can be the NIC?</h3>
 
-<h3>5. Labelling and Packaging</h3>
+<p>According to Gulf News's report on the Municipality's announcement, existing hygiene and food safety officers can take on the role, or another suitable person can. Coverage described the NIC's job as ensuring nutritional compliance, promoting healthy eating, monitoring food quality, addressing nutrition-related concerns and training canteen staff. The guideline we reviewed does not require a university degree in nutrition or dietetics. We also found no published rule allowing one NIC to cover several schools. The every-shift and separate-PIC requirements point the other way, so plan for enough trained people to cover every shift and every service point.</p>
 
-<p>Pre-packaged items sold through the canteen must carry labels that comply with UAE food labelling regulations and Dubai Municipality's school-specific requirements. This includes ingredient lists, allergen declarations, serving size information, and calorie content. The Smart Food Choices category (Green, Yellow, Red, Black) must also be indicated where required. For a deeper look at food labelling requirements, see our <a href="/food-labeling">food labelling resources</a>.</p>
+<p>Dubai Municipality's 2025 NIC training programme had separate tracks for technical experts (nutritionists, hygiene managers, QA officers), senior school and supplier management, chefs and R&amp;D teams, and persons in charge of operations (canteen supervisors, school PICs, nurses). The operations track covered conducting and documenting self-audits in NutriCheck, carrying out corrective actions and keeping operational records.</p>
 
-<h3>6. Documentation and Records</h3>
+<p>Separately, section 3.5.1 of the guideline makes Basic Food Hygiene Training mandatory for all food handlers, and lists PIC and advanced PIC training among the relevant courses.</p>
 
-<p>The final section of the checklist verifies that your documentation is in order: approved menu on file, NIC appointment documented, DM approval certificate current, staff health cards valid, and training records available. Missing or expired documentation is one of the most common audit failure points — and one of the most avoidable.</p>
+<h2>A Monthly Self-Audit Preparation Checklist</h2>
 
-<h2>How to Access and Interpret Audit Reports</h2>
+<p>The official checklists are the ones inside NutriCheck and the My School Food Compliance Checklist that section 3.5.3 of the guideline points to on myschoolfood.com. Use those as the authority. The list below is only a preparation aid: every item traces back to a clause in the guideline, so you can confirm the canteen is ready before the NIC completes the official self-audit.</p>
 
-<p>After you complete and submit a monthly self-audit, NutriCheck generates an audit report that summarises your compliance status across each domain. Reports are available within the platform and can be downloaded for your records.</p>
+<h3>Permits, approvals and supplier status</h3>
 
-<p>Pay close attention to any items flagged as non-compliant or requiring corrective action. NutriCheck allows you to submit corrective action responses directly within the platform, and unresolved items carry forward to the next audit cycle — compounding your risk profile.</p>
+<ul>
+<li>The trade licence is valid and explicitly lists the relevant activity, such as catering, bakery or manufacturing (3.2.1.2).</li>
+<li>The food inspection grade is A or B, and there have been no major violations during the supply period (3.2.1.2, 3.2.2.1).</li>
+<li>An independent third-party food safety audit is in place (3.2.1.2).</li>
+<li>The Food Permit To Educational Institutions is valid, and only foods on the Approved Menu are being sold (3.2.1.3, 3.2.2.4).</li>
+<li>The canteen and production facility layout and processes were approved by the Food Safety Department before supply started (3.2.2.1).</li>
+<li>The Approved Menu and the weekly menu have been uploaded against the school's QR code on the platform (3.2.2.3).</li>
+</ul>
 
-<p>Your audit history is visible to Dubai Municipality inspectors. A clean, consistent audit record over multiple months is one of the strongest signals of a well-run operation. Conversely, a pattern of recurring failures in the same areas signals systemic compliance gaps that may trigger a targeted inspection.</p>
+<h3>People and training</h3>
 
-<h2>Consequences of Failing NutriCheck Audits</h2>
+<ul>
+<li>A formally trained PIC is present on every shift, with a separate PIC for each additional food service area (3.2.1.2).</li>
+<li>Every food handler has completed Basic Food Hygiene Training, and training records are on file (3.5.1).</li>
+</ul>
 
-<p>The consequences of poor NutriCheck performance are progressive but significant.</p>
+<h3>Menu, nutrition data and labels</h3>
 
-<p><strong>Missed audits</strong> are recorded as failures. A missed audit cannot be backdated or completed retroactively. Each missed audit affects your compliance score for that school canteen.</p>
+<ul>
+<li>Nothing is on sale that is not on the Approved Menu. Any menu change has been approved by Dubai Municipality, and additional or reformulated items are approved only at the end of each term for the following term (3.2.1.3, 3.2.2.3).</li>
+<li>Every product has a nutritional assessment based on its recipe, including ingredients and quantities. It was produced with nutrient analysis software, analysis from a Food Safety Department-approved laboratory, or manual calculation (3.2.2.5, 3.2.2.7).</li>
+<li>Nutrition information was revalidated and re-approved after any change to a product, its ingredients, proportions or serving size (3.2.2.6).</li>
+<li>Every menu item is verified and labelled per serving for calories, carbohydrates, saturated fat, sodium and added sugars. The fuller nutrient information set out in the guideline (per serving and per 100 grams) is available for all items (3.4.8).</li>
+<li>Every menu item is classified under Smart Choices, and Daily Smart Choices (Green) items are always on the menu (3.3.2.1).</li>
+</ul>
 
-<p><strong>Repeated non-compliance</strong> in critical areas — especially allergen management, food safety, or nutrition labelling — can result in a formal compliance notice from Dubai Municipality.</p>
+<h3>Allergens</h3>
 
-<p><strong>FoodWatch grading impact.</strong> NutriCheck performance feeds into the FoodWatch grading system, which is Dubai's public-facing food safety rating for food businesses. A downgraded FoodWatch rating is visible to school administrators and parents, creating reputational risk beyond the regulatory dimension. For context on how FoodWatch applies to your operation, see our <a href="/blog/dubai-municipality-school-food-requirements-caterers-guide">Dubai Municipality food safety requirements for catering companies</a>.</p>
+<p>Clause 3.4.9 requires every meal to indicate any allergen present as a main ingredient, compound ingredient, additive or processing aid. Allergens must be labelled or declared on the menu however small the amount. The guideline lists nine allergen groups:</p>
 
-<p><strong>Suspension of school canteen approval.</strong> In cases of sustained non-compliance or serious food safety violations, Dubai Municipality can suspend a supplier's approval to operate in school canteens. This is the most severe outcome and typically follows a period of escalating compliance interventions.</p>
+<ul>
+<li>crustaceans</li>
+<li>peanuts</li>
+<li>soybeans</li>
+<li>tree nuts</li>
+<li>sesame seeds</li>
+<li>fish</li>
+<li>eggs</li>
+<li>milk</li>
+<li>gluten and cereals containing gluten</li>
+</ul>
 
-<h2>Practical Tips for Passing NutriCheck Audits Consistently</h2>
+<p>Each group includes its products. Check that every current menu item's declaration covers all nine groups and matches the ingredients actually in use this month.</p>
 
-<p><strong>Appoint a dedicated NIC.</strong> Your Nutrition in Charge should own the NutriCheck process end-to-end. They should know exactly when each audit window opens, have all supporting documentation pre-organised, and conduct a quick internal review before submitting the self-audit. The NIC role is covered in detail in our post on Nutrition in Charge responsibilities for Dubai school caterers.</p>
+<h3>Food safety controls</h3>
 
-<p><strong>Maintain a documentation library.</strong> Keep all standing documents — approved menu, allergen matrix, nutrition analysis records, staff health cards, NIC appointment letter — in a single accessible location. Update them immediately when anything changes. Document gaps are responsible for a large proportion of avoidable audit failures.</p>
+<p>All food suppliers must follow the guideline's 10 Points To Food Safety (3.4.10), which are detailed in Part 2 of the guidelines:</p>
 
-<p><strong>Conduct internal pre-audits.</strong> Two weeks before the audit window closes each month, run through the NutriCheck checklist internally. Identify any gaps and close them before the formal submission. This discipline converts audit preparation from a crisis into a routine.</p>
+<ul>
+<li>good personal hygiene</li>
+<li>preventing the transmission of illness</li>
+<li>supplier management</li>
+<li>food safety controls</li>
+<li>monitoring storage practices</li>
+<li>evaluating the menu</li>
+<li>pest management</li>
+<li>cleaning and disinfection</li>
+<li>waste management</li>
+<li>allergen management</li>
+</ul>
 
-<p><strong>Keep temperature logs current.</strong> Temperature logging failures are common and entirely preventable. Assign specific staff members to complete temperature logs at defined times each day. Review logs weekly to catch equipment failures before they become compliance events.</p>
+<p>Use them as the headings for the walk-through part of the monthly self-audit.</p>
 
-<p><strong>Train staff on allergen protocols regularly.</strong> Staff turnover is a persistent challenge in school catering. Build allergen training into your onboarding process so that every new team member is trained before they work in the canteen. Document each training session.</p>
+<h3>School-side items for the institution's PIC</h3>
 
-<h2>How RecipeBuilder Supports NutriCheck Compliance</h2>
+<ul>
+<li>Enough cold storage is provided for lunch boxes not eaten within two hours (3.2.1.4).</li>
+<li>The school is registered on the platform and the contracted approved supplier is linked (3.2.1.4).</li>
+<li>No unapproved foods, such as orders from online delivery platforms, are on the premises during school hours (3.2.1.6).</li>
+<li>The canteen menu is available to parents (3.2.1.9).</li>
+<li>The school's quarterly self-monitoring is up to date (3.5.2).</li>
+</ul>
 
-<p>The documentation that NutriCheck auditors look for — nutrition analysis per serving, allergen matrices, ingredient records — needs to be accurate, current, and accessible. Maintaining this documentation manually across a rotating menu is one of the most time-consuming aspects of school canteen compliance.</p>
+<h2>Running the Monthly Self-Audit Well</h2>
 
-<p><a href="/food-labeling">RecipeBuilder</a> is designed specifically for food businesses operating in the UAE and GCC. It allows your NIC to build a complete digital recipe library with per-serving nutrition analysis calculated automatically, allergen matrices generated from ingredient-level data, and documentation that can be exported in audit-ready formats.</p>
+<p>The guideline sets the frequency but not the method, so the following are practical habits rather than regulatory requirements.</p>
 
-<p>When your menu changes — a new item added, an ingredient substituted — RecipeBuilder recalculates the affected nutrition values and allergen flags instantly. Your NutriCheck documentation reflects your actual current menu, not a static snapshot from months ago.</p>
+<p><strong>Fix an internal date.</strong> Use the same point each month for the supplier PIC's self-audit, and the same point each quarter for the school PIC's.</p>
 
-<p>If you want to see how RecipeBuilder fits into your NutriCheck workflow, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a discovery call</a> with our team.</p>
+<p><strong>Walk the floor, then check the files.</strong> Look at what is on the counter, in the fridges and in the vending machines before opening the paperwork. Unapproved items are easier to spot in person.</p>
 
-<h2>Summary</h2>
+<p><strong>Record what you find.</strong> Inspectors can see audit history, so an honest record with corrective actions is worth more than a perfect score that an inspection later contradicts. Log each issue, the fix, who made it and when, and re-check it next cycle.</p>
 
-<p>NutriCheck is Dubai Municipality's primary mechanism for maintaining standards in school canteens between physical inspections. For food suppliers, it is not a bureaucratic hurdle — it is a structured framework that, when used properly, helps you operate a consistently compliant canteen.</p>
+<p><strong>Watch recipe changes.</strong> A new ingredient brand or a bigger portion can change nutrition values and allergens. Clause 3.2.2.6 requires those changes to be revalidated and approved.</p>
 
-<p>The suppliers who pass NutriCheck audits consistently are not those who know the system best. They are the ones who maintain compliant operations every day and use the audit as a documentation exercise rather than a compliance intervention. Build your internal processes around continuous compliance — accurate documentation, trained staff, current records — and NutriCheck becomes manageable.</p>
+<h2>Keeping Recipe Records Audit-Ready</h2>
+
+<p>Several checklist items depend on recipe data being accurate and up to date: nutrition values per serving and per 100 grams, allergen declarations, and proof that labels were updated when a recipe changed. Nutrient analysis software is one of the calculation methods the guideline accepts. The results still need Dubai Municipality's approval, and the self-audit itself still belongs to your PIC.</p>
+
+<p>RecipeBuilder is recipe management and labelling software built for food businesses in the UAE. It calculates nutrition from ingredient data sourced from USDA FoodData Central and flags allergens from each recipe's ingredients. It also produces bilingual English and Arabic labels, and keeps recipe versions organised, so the figures you submit and the figures on the counter come from the same record.</p>
+
+<div class="blog-cta-box"><h3>Keep your canteen recipe data in one place</h3><p>RecipeBuilder helps school caterers calculate nutrition from USDA FoodData Central data, declare allergens from recipe ingredients, generate bilingual English/Arabic labels, and keep recipe records organised as menus change each term. <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">Book a call</a> to see how it could fit your monthly self-audit preparation.</p></div>
 
 <h2>Frequently Asked Questions</h2>
 
-<h3>Is NutriCheck mandatory for all school canteen operators in Dubai?</h3>
-<p>Yes. All food suppliers approved by Dubai Municipality to operate school canteens in Dubai must use NutriCheck to complete monthly self-audits. There is no exemption based on canteen size or number of schools serviced.</p>
+<h3>Is NutriCheck mandatory for Dubai school caterers?</h3>
+<p>The guideline requires canteen self-monitoring monthly by the food supplier's PIC and quarterly by the school's PIC. Dubai Municipality presents NutriCheck as the platform for those self-audits, and Gulf News reported in June 2025 that catering companies supplying schools must register and undergo monthly audits. Access and onboarding arrangements can change, so confirm your current obligations with the Applied Nutrition and Awareness Section at nutrition@dm.gov.ae.</p>
 
-<h3>What happens if I miss a NutriCheck audit window?</h3>
-<p>A missed audit is recorded as a compliance failure for that month. Missed audits cannot be backdated or completed retrospectively. Repeated missed audits will negatively affect your compliance profile and may trigger follow-up from Dubai Municipality's Food Safety Department.</p>
+<h3>Does the Nutrition in Charge need a nutrition or dietetics degree?</h3>
+<p>We found no published degree requirement. The guideline requires the supplier's canteen PIC to have formal training in both nutritional requirements and food safety practices. Press coverage of the Municipality's announcement said existing hygiene and food safety officers can take on the NIC role. Dubai Municipality runs NIC training with certification, and results are published on the My School Food supplier page.</p>
 
-<h3>Can the school PIC reject or dispute a self-audit I have submitted?</h3>
-<p>The school PIC has visibility into your audit submissions and may raise concerns or flag discrepancies. Dubai Municipality can also review submission histories. It is important that your self-audit responses accurately reflect actual canteen conditions — inaccurate submissions carry their own compliance risk.</p>
+<h3>Can one NIC or PIC cover several schools or canteens?</h3>
+<p>The guideline points against it. It requires a PIC specifically assigned to the canteen in each educational institution, present every shift, with separate PICs for multiple food service areas or locations. We found no published provision for sharing one PIC across schools, so check with Dubai Municipality before planning cover that way.</p>
 
-<h3>How does NutriCheck connect to my FoodWatch grading?</h3>
-<p>NutriCheck self-audit performance is one of the data inputs that Dubai Municipality uses when assigning and reviewing FoodWatch grades. Consistent audit passes support a strong FoodWatch rating; recurring failures — particularly in food safety and allergen management — can result in a grade downgrade.</p>
+<h3>Does NutriCheck affect my food inspection grade?</h3>
+<p>No public source links NutriCheck results to inspection grades. Grades from A to E come from Dubai Municipality food inspections, and approved school food suppliers need an A or B. Gulf News did report that inspectors can see each entity's audit history, so a poor or inaccurate self-audit record could still shape how an inspection goes.</p>
 
-<div class="blog-cta-box"><h3>RecipeBuilder for Dubai School Caterers</h3><p>RecipeBuilder generates Dubai Municipality-compliant nutrition labels, allergen matrices (all 14 GSO allergens), Smart Food Choices traffic-light classifications, and NutriCheck audit documentation from a single platform — used by school caterers across the UAE to maintain MySchoolFood compliance. <a href="/school-catering-dubai">See how RecipeBuilder helps Dubai school caterers stay compliant →</a></p></div>
 <h3>Related Resources</h3>
 <ul>
-<li><a href="/blog/dubai-municipality-school-food-requirements-caterers-guide">Dubai Municipality School Food Requirements: Complete Guide for Caterers</a></li>
-<li><a href="/blog/smart-food-choices-system-dubai-school-canteen">Nutrition Compliance for School Caterers in Dubai</a></li>
-<li><a href="/blog/how-to-become-approved-school-food-supplier-dubai">How to Become an Approved School Food Supplier in Dubai</a></li>
+<li><a href="/blog/dubai-municipality-school-food-requirements-caterers-guide">Dubai Municipality School Food Requirements: 2026 Guide for Caterers</a></li>
+<li><a href="/blog/smart-food-choices-system-dubai-school-canteen">Dubai Smart Food Choices for Schools: Green, Amber, Red &amp; Black</a></li>
+<li><a href="/blog/how-to-become-approved-school-food-supplier-dubai">How to Become an Approved School Food Supplier in Dubai (2026)</a></li>
+<li><a href="/blog/uae-food-labeling-requirements-2026">UAE Food Labeling Requirements 2026: Standards, Dates and Penalties</a></li>
+<li><a href="/school-catering-dubai">RecipeBuilder for Dubai School Catering</a></li>
+<li><a href="https://myschoolfood.com/wp-content/uploads/2025/11/Dubai-Food-Nutrition-Guidelines-and-Requirements.pdf">Dubai Food and Nutrition Guidelines and Requirements in Educational Institutions (Dubai Municipality, PDF)</a></li>
+<li><a href="https://myschoolfood.com/food-suppliers/">My School Food: resources for food suppliers</a></li>
 </ul>
 `,
   },
-
   {
     slug: "smart-food-choices-system-dubai-school-canteen",
-    title: "Dubai's Smart Food Choices System: Green, Yellow, Red & Black Categories for School Canteens",
-    description: "Understand Dubai Municipality's 4-tier food classification for school canteens — what each colour means, which foods are banned, and how to reformulate to reclassify.",
+    title: "Dubai Smart Food Choices for Schools: Green, Amber, Red & Black",
+    description:
+      "Dubai Municipality's Smart Choices tiers for school canteens: Daily, Sometimes, Seldom and Never, the published nutrient limits, and how to check a menu item.",
     date: "2026-03-14",
+    updatedDate: "2026-09-14",
     category: "Compliance",
-    readTime: "10 min read",
+    readTime: "11 min read",
     keywords: [
-      "Smart Food Choices System Dubai",
-      "school canteen food categories Dubai",
+      "Smart Food Choices Dubai",
+      "Smart Choices classification Dubai school canteen",
+      "Dubai Food and Nutrition Guidelines educational institutions",
+      "Daily Sometimes Seldom Never Smart Choices",
+      "green amber red black school food Dubai",
+      "Dubai school canteen nutrient criteria",
       "banned foods school canteen Dubai",
-      "green food category school",
-      "red category school food Dubai",
-      "black listed school foods Dubai",
-      "Dubai Municipality food classification schools",
-      "school canteen healthy food requirements",
-      "yellow category food school canteen",
-      "Dubai school food traffic light system",
-      "permitted foods school canteen UAE",
-      "school food labeling Dubai Municipality",
+      "My School Food Dubai Municipality",
+      "school menu nutrition calculation per serving per 100g",
+      "Dubai school canteen allergens",
     ],
     content: `
-<p>If you supply or operate a school canteen in Dubai, every food and beverage item you offer falls into one of four categories under Dubai Municipality's Smart Food Choices System: Green, Yellow, Red, or Black. Getting this classification wrong — either by misclassifying an item or by offering a Black-category product in a school setting — is a direct compliance violation that can affect your approval to operate.</p>
+<p>Every menu item a caterer supplies to a private school in Dubai has to fit Dubai Municipality's Smart Choices classification, often called the Smart Food Choices system. The tier decides whether an item can be on the canteen menu every day, twice a week, once a month, or never.</p>
 
-<p>This guide explains the Smart Food Choices System from the ground up: what each category means, how classification is determined, how you must display categories on menus and packaging, and what you can do if an item falls into a category you want to change.</p>
+<p>This guide covers the four tiers under their official names, the nutrient limits published in the <em>Dubai Food and Nutrition Guidelines and Requirements in Educational Institutions</em>, and a practical way to calculate a menu item's values and check it before you submit your menu.</p>
 
-<div class="key-takeaways"><h3>Key Takeaways</h3><ul><li>Dubai Municipality's Smart Food Choices System classifies all school canteen foods into four tiers: Green, Yellow, Red, and Black.</li><li>Green items should be promoted; Yellow items are permitted in moderation; Red items must be limited; Black items are completely banned from school canteens.</li><li>Classification is based on nutritional thresholds — calories, sodium, sugar, saturated fat, and other parameters.</li><li>Caterers must display the colour classification on menus and on pre-packaged item labels sold through the canteen.</li><li>Reformulating a product can move it from a more restrictive category to a less restrictive one — but the new formulation must be re-analysed and re-submitted.</li><li>Energy drinks and high-sugar, high-sodium snack items are among the most commonly banned Black-category products.</li></ul></div>
+<div class="key-takeaways"><h3>Key Takeaways</h3><ul><li>The guideline defines four tiers: Daily Smart Choices (Green), Sometimes Smart Choices (Amber), Seldom Smart Choices (Red) and Never Smart Choices (Black). The second tier is officially Amber, even though some news coverage calls it yellow.</li><li>Menu items are checked against published limits for energy, total fat, saturated fat, sodium, added sugars and dietary fibre, both per serving and per 100 g.</li><li>Per-serving limits are adjusted by age group and kind of menu item, from 40% (snacks for 4 to 8 year olds) to 130% (full meal combos for 14 to 18 year olds).</li><li>Red items may be served 3 times every term or once per month. Black items must never be made available in any form.</li><li>Nutrition values must come from the recipe and be revalidated whenever ingredients, proportions or serving sizes change.</li><li>The guideline lists nine allergen groups that must be labelled or declared on the menu.</li></ul></div>
 
-<h2>What Is the Smart Food Choices System?</h2>
+<h2>What the Smart Choices Classification Is</h2>
 
-<p>The Smart Food Choices System is Dubai Municipality's nutritional classification framework for foods and beverages sold or served in school canteens. It was developed to make healthy eating the default option in school food environments and to give students, parents, and school administrators clear, visible information about the nutritional quality of canteen offerings.</p>
+<p>The classification is set out in clause 3.3.2.1 of the <a href="https://myschoolfood.com/wp-content/uploads/2025/11/Dubai-Food-Nutrition-Guidelines-and-Requirements.pdf">Dubai Food and Nutrition Guidelines and Requirements in Educational Institutions</a>. The document was prepared by the Applied Nutrition and Awareness Section of Dubai Municipality's Food Safety Department and revises DM's 2016 school guidelines. It underpins <a href="https://myschoolfood.com/">My School Food</a>, the municipality's school nutrition program. The copy on the My School Food portal has a cover date of 2 August 2024, so check the portal for later revisions before relying on specific values.</p>
 
-<p>The system uses a traffic-light structure — with the addition of a fourth, most-restrictive tier — to signal whether a food should be encouraged, permitted in moderation, limited, or prohibited entirely. This structure aligns with international best practices in school food policy and with the UAE's National Nutrition Strategy goals.</p>
+<p>The guideline applies to food suppliers and canteens serving private school students aged 4 to 18. It also covers vending machines, student cafés, events and fundraisers, and canteens in nurseries, universities and colleges. Prepared, ready-to-eat and pre-packaged foods are all included. "Shall" and "must" mark mandatory requirements, and "should" marks strongly recommended ones.</p>
 
-<p>The Smart Food Choices System applies to all items offered through school canteens, including freshly prepared meals, a la carte items, packaged snacks, and beverages. It is part of the broader MySchoolFood framework that governs food in Dubai's private schools. For a comprehensive overview of these requirements, see our guide on <a href="/blog/dubai-municipality-school-food-requirements-caterers-guide">Dubai Municipality school food requirements for caterers</a>.</p>
+<p>A note on names: a September 2025 Dubai Municipality news release and some press coverage say green, yellow, red and black. The guideline itself uses Amber, and that is the term to use on menus, signage and in staff training.</p>
 
-<h2>The Four Categories Explained</h2>
-
-<h3>Green — Encourage and Promote</h3>
-
-<p>Green-category foods are nutritionally optimal choices that should be the majority of your canteen offering. Dubai Municipality requires that Green-category items are actively promoted — they should be prominently placed on the menu, visually highlighted, and where possible priced to incentivise selection.</p>
-
-<p>Green foods are characterised by: low saturated fat, low added sugar, low sodium, high fibre or protein content, and minimal processing. Whole foods — fruits, vegetables, whole grains, legumes, lean proteins, dairy — typically fall into this category.</p>
-
-<p>The menu composition requirements under Dubai Municipality's framework set a minimum proportion of Green-category items that must be available at each meal service. This percentage target varies by meal type (breakfast service vs. lunch vs. snack period), and caterers should confirm current targets against the latest DM circular.</p>
-
-<h3>Yellow — Permitted in Moderation</h3>
-
-<p>Yellow-category foods are acceptable choices that can be offered, but should not dominate the menu. They fall outside the optimal nutritional profile of Green foods but do not exceed the thresholds that trigger restriction or prohibition.</p>
-
-<p>Yellow foods typically include items with moderate levels of fat, sugar, or sodium that do not meet the Green criteria but remain within acceptable nutritional ranges. Many popular canteen staples — certain sandwiches, flavoured yoghurts, some baked goods — fall into the Yellow category depending on their specific formulation.</p>
-
-<p>There is no hard cap on the number of Yellow-category items in a canteen menu, but the overall menu must meet the Green percentage minimums, which effectively limits how many Yellow and Red items can be offered.</p>
-
-<h3>Red — Limit</h3>
-
-<p>Red-category foods can technically be offered in a school canteen, but their inclusion must be limited. Dubai Municipality sets frequency and quantity constraints on Red-category items. They should not be available every day, and portion sizes must be managed.</p>
-
-<p>Red foods are characterised by elevated levels of saturated fat, added sugar, or sodium that place them outside the range of foods appropriate for regular consumption by school-age children. Fried items, high-sugar confectionery, and heavily processed snack foods often fall into the Red category.</p>
-
-<p>Caterers operating in Dubai schools must be particularly careful about the cumulative proportion of Red-category items across their menu. A menu that is predominantly Red — even if no Black items are included — will not meet DM's nutritional composition requirements.</p>
-
-<h3>Black — Banned Completely</h3>
-
-<p>Black-category items may not be sold, served, or distributed through Dubai school canteens under any circumstances. This is an absolute prohibition, and it applies regardless of the item's packaging, branding, or how it is presented.</p>
-
-<p>Black-category items are those that exceed the most restrictive nutritional thresholds or that are categorically inappropriate for school food environments. The most commonly cited examples include energy drinks and beverages with high caffeine content, confectionery and snacks exceeding defined sugar thresholds, very high-sodium products, and certain food items with artificial additives that are specifically prohibited in the school context.</p>
-
-<p>Offering a Black-category item in your school canteen — even inadvertently — is a direct compliance violation. Staff must be trained to identify Black-category items and ensure they never enter the canteen food offer.</p>
-
-<h2>Category Classification Table: Example Foods</h2>
+<h2>The Four Tiers at a Glance</h2>
 
 <table>
   <thead>
-    <tr><th>Category</th><th>Example Foods</th><th>Key Nutritional Characteristic</th></tr>
+    <tr><th>Colour</th><th>Official name</th><th>Frequency on the canteen menu</th><th>Examples given in the guideline</th></tr>
   </thead>
   <tbody>
-    <tr><td>Green</td><td>Fresh fruit, plain water, grilled chicken wrap, vegetable salad, plain low-fat yoghurt</td><td>Low saturated fat, low sugar, low sodium; minimally processed</td></tr>
-    <tr><td>Yellow</td><td>Flavoured yoghurt (moderate sugar), cheese sandwich, 100% fruit juice (small portion), plain crackers</td><td>Moderate fat or sugar; within acceptable range for periodic consumption</td></tr>
-    <tr><td>Red</td><td>French fries, chocolate biscuits, sweetened pastries, fried chicken (regular)</td><td>Elevated saturated fat, sugar, or sodium; suitable only for limited frequency</td></tr>
-    <tr><td>Black</td><td>Energy drinks, high-caffeine beverages, confectionery exceeding sugar thresholds, very high-sodium instant noodles</td><td>Exceeds maximum nutritional thresholds OR categorically prohibited</td></tr>
+    <tr><td>Green</td><td>Daily Smart Choices</td><td>Always on the menu</td><td>Fruits, vegetables, whole grains, lean proteins, low fat dairy, healthy fats, water</td></tr>
+    <tr><td>Amber</td><td>Sometimes Smart Choices (Basic Amber)</td><td>Twice a week</td><td>Muffins without frosting, baked savoury snacks such as crackers, full fat yogurt and laban</td></tr>
+    <tr><td>Light Amber</td><td>Sometimes Smart + Choices</td><td>Once a week, alongside basic Sometimes options, in smaller portions</td><td>Whole-wheat baked goods without frosting, low-fat yogurt with fruit</td></tr>
+    <tr><td>Red</td><td>Seldom Smart Choices</td><td>Once a month (see below)</td><td>Baked goods with frosting, baked donuts, ice cream</td></tr>
+    <tr><td>Black</td><td>Never Smart Choices</td><td>Not allowed as an ingredient or menu item</td><td>Non-halal products, added protein supplements, artificial sweeteners, deep-fried food, confectionery, sugary drinks, energy drinks, processed meats</td></tr>
   </tbody>
 </table>
 
-<p><em>Note: These are illustrative examples. The actual classification of any specific product depends on its full nutritional profile measured against DM's published thresholds. Caterers should always verify classification based on the most recent Dubai Municipality circular.</em></p>
+<h3>Green and Amber</h3>
 
-<h2>How Classification Is Determined</h2>
+<p>Daily items are described as highly nutritious and low in saturated fat, added sugars and sodium. The guideline recommends placing them at eye level in the main serving area. Basic Amber items are moderately healthy but may be slightly higher in added sugars, saturated fat or sodium, and should not be placed at eye level or beside Green choices.</p>
 
-<p>Classification is based on the nutritional content of the food as prepared and served. The key parameters include: calorie density per serving, saturated fat content, total added sugar, sodium content, and in some categories, fibre and protein content as positive markers.</p>
+<p>Sometimes Smart + (Light Amber) items sit closer to Green and may use whole grains, vegetables, healthy fats or fruit as the main ingredient (50%). The guideline says they may have one more nutrient at amber values on the per-100 g criteria (other than total fat and sodium), whereas basic Sometimes items may have two more.</p>
 
-<p>For freshly prepared items, the nutritional analysis must be conducted using standardised recipes. The per-serving values for each parameter are then compared against DM's published thresholds for each category. For pre-packaged items, the nutritional information on the product label is the reference point — but caterers should be cautious about relying on labels for items where serving sizes differ from the packaged quantity.</p>
+<h3>Red: Seldom Smart Choices</h3>
 
-<p>Accurate nutritional analysis is the foundation of correct classification. For more detail on how to conduct compliant nutrition analysis for your menu items, see our <a href="/food-labeling">nutrition analysis resources</a> and our post on nutrition compliance for school caterers in Dubai.</p>
+<p>Red items are restricted treats. The tier description gives a frequency of once a month. Clause 3.3.2.5 adds that items exceeding the nutrient criteria and falling under Red "shall be served 3 times every term or once per month". The guideline recommends serving them outside the main serving area or on designated treat days, in smaller portions.</p>
 
-<h2>Display Requirements: Menus, Signage, and Packaging</h2>
+<p>Clause 3.4.2 lists Restricted Foods that may not be displayed, sold or promoted unless approved under the classification. The list includes high-fat or high-sodium packaged savoury snacks, sugary bakery products, high-salt foods and condiments, high-fat dressings, desserts and caffeinated drinks. Each has conditional exemptions. For example, a savoury snack must be limited to 40 grams, not deep-fried, a source of fibre, and low or medium in fat and sodium. A bakery product must be limited to 60 grams with no frosting or icing.</p>
 
-<p>Dubai Municipality requires that Smart Food Choices colour classifications are visible to students and staff at the point of decision. This means classification must be displayed on menus — both printed menus and any digital display boards — and on labels for pre-packaged items sold through the canteen.</p>
+<h3>Black: Never Smart Choices</h3>
 
-<p>The colour coding must be presented clearly, using the actual category colours (Green, Yellow, Red) with sufficient contrast to be readable. Black-category items should not appear on menus at all — the display requirement for Black is simply absence.</p>
+<p>Never items must not be made available in any form or at any event (clause 3.3.2.6). Clause 3.4.3 lists the following with no exemptions:</p>
 
-<p>For pre-packaged items, the Smart Food Choices label must appear on the product packaging as sold or distributed from the canteen. Items that are pre-packaged centrally — for example, by your central kitchen — must carry this information before they are sent to the school. For guidance on labelling requirements, see our <a href="/food-labeling">food labelling resources</a>.</p>
+<ul>
+<li>artificial sweeteners and salt substitutes</li>
+<li>foods or drinks with added protein supplements</li>
+<li>non-halal foods, including at staff and parent events</li>
+<li>processed meats such as deli meats, hot dogs, mortadella, and commercially processed burgers and nuggets</li>
+<li>confectionery</li>
+<li>highly sweetened drinks such as soft drinks, sports drinks and flavoured water</li>
+</ul>
 
-<h2>Calorie Display and the Smart Food Choices System</h2>
+<p>Chocolate is allowed only as 200 ml chocolate milk or hot chocolate that is low in added sugars, or as cacao in baked goods based on fruit, vegetables or legumes. Deep-fried foods are allowed only if baked instead and low in fat or sodium.</p>
 
-<p>The Smart Food Choices colour classification works alongside — not instead of — the calorie display requirement. Menu items must show both the Smart Food Choices category colour and the per-serving calorie count.</p>
+<p>Vending machines must not sell Seldom or Never items (clause 3.4.4). Other food access points, including staff areas, events and after-school programs, must include nothing from those tiers (clause 3.4.5).</p>
 
-<p>Calorie display requirements are tiered by age group: the calorie targets for primary school students differ from those for secondary students, and portion sizes should reflect these differences. A Green-category item that is served in an oversized portion can exceed the calorie target for a given age group, creating a secondary compliance issue even though the food itself is classified correctly.</p>
+<h2>The Published Nutrient Limits</h2>
 
-<h2>How to Reclassify a Product Through Reformulation</h2>
+<p>Clause 3.3.2.2 requires each menu item to comply with the criteria for calories, total fat, saturated fat, added sugars, sodium and fibre. The same table appears in Annex 16.</p>
 
-<p>If one of your menu items falls into the Red category and you want to move it to Yellow — or if a Yellow item is close to the Green threshold — reformulation is the path forward. Reformulation means adjusting the recipe to change the nutritional profile of the item so that it meets the criteria for a more favourable classification.</p>
+<table>
+  <thead>
+    <tr><th>Nutrient</th><th>Green per serving</th><th>Amber per serving</th><th>Red per serving</th><th>Green per 100 g</th><th>Amber per 100 g</th><th>Red per 100 g</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Energy</td><td>500</td><td>600</td><td>&gt; 600</td><td>120</td><td>500</td><td>&gt; 500</td></tr>
+    <tr><td>Total fat</td><td>19.5</td><td>23</td><td>&gt; 23</td><td>3</td><td>17.5</td><td>&gt; 17.5</td></tr>
+    <tr><td>Saturated fat</td><td>5</td><td>6</td><td>&gt; 6</td><td>1.5</td><td>5</td><td>&gt; 5</td></tr>
+    <tr><td>Sodium</td><td>600</td><td>700</td><td>&gt; 700</td><td>120</td><td>600</td><td>&gt; 600</td></tr>
+    <tr><td>Added sugars</td><td>6.75</td><td>9</td><td>&gt; 9</td><td>5.75</td><td>11.25</td><td>&gt; 11.25</td></tr>
+    <tr><td>Dietary fibre</td><td>2.8</td><td>2.52</td><td>&lt; 2.52</td><td>3</td><td>2</td><td>&lt; 2</td></tr>
+  </tbody>
+</table>
 
-<p>Common reformulation strategies include: reducing the sodium content of sauces and marinades, substituting saturated fat sources with unsaturated alternatives, reducing added sugar in baked goods, using lower-fat cooking methods (grilling instead of frying), and increasing the proportion of vegetable content to improve the fibre profile.</p>
+<p><em>Source: Smart Choices Nutrient Criteria Table, clause 3.3.2.2 and Annex 16. The table does not print units. Energy is normally read in kilocalories (the unit in the guideline's labelling clause), fat, sugars and fibre in grams, and sodium in milligrams. For borderline items, confirm with DM's Applied Nutrition and Awareness Section at nutrition@dm.gov.ae.</em></p>
 
-<p>After reformulation, the new recipe must be nutritionally analysed, the resulting values compared against the classification thresholds, and the new classification confirmed. The updated menu item must then be submitted as part of your DM menu approval process if it is a material change to your approved menu.</p>
+<p>For energy, fats, sodium and added sugars, the Green and Amber columns are ceilings, and anything above the Amber value is Red. Fibre works the other way: less fibre moves an item towards Red.</p>
 
-<h2>How RecipeBuilder Supports Smart Food Choices Classification</h2>
+<h3>Per Serving and Per 100 g Both Count</h3>
 
-<p>Accurately classifying every item on a rotating school canteen menu — and keeping those classifications current as recipes evolve — is a significant data management task. A single ingredient substitution can shift a menu item's sodium or saturated fat content enough to change its category.</p>
+<p>Clause 3.3.2.3 requires the criteria to be met both per 100 grams and per serving, with the per-serving baseline adjusted for the kind of menu item and the age group. The guideline's Annex 18 infographic describes restricted items as those that exceed the amber criteria per 100 g and/or per serving. Check every nutrient on both bases.</p>
 
-<p><a href="/food-labeling">RecipeBuilder</a> calculates the full nutritional profile of your menu items at the recipe level, using your actual ingredients and portion sizes. It can flag which items fall into each Smart Food Choices category based on current nutritional thresholds, identify items that are close to a category boundary and could be reclassified through minor reformulation, and generate the documentation your NutriCheck auditors need to verify your menu compliance.</p>
+<h3>Age-Group Percentages</h3>
 
-<p>When a recipe changes, RecipeBuilder recalculates automatically — so your classification data stays current with your actual menu. To see how this works for your canteen operation, <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">book a discovery call</a>.</p>
+<p>Clause 3.3.2.4 sets the percentages applied to the per-serving criteria for schools:</p>
 
-<h2>Summary</h2>
+<table>
+  <thead>
+    <tr><th>Age group</th><th>Main dish</th><th>Main dish combo</th><th>Full meal combo</th><th>Entrée snacks</th><th>Snacks</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>4-8 years (Small)</td><td>70%</td><td>80%</td><td>100%</td><td>40%</td><td>40%</td></tr>
+    <tr><td>9-13 years (Medium)</td><td>90%</td><td>100%</td><td>120%</td><td>70%</td><td>70%</td></tr>
+    <tr><td>14-18 years / University (Large)</td><td>100%</td><td>110%</td><td>130%</td><td>Not listed</td><td>Not listed</td></tr>
+  </tbody>
+</table>
 
-<p>The Smart Food Choices System gives school canteen caterers a clear nutritional framework. Green items should anchor your menu; Yellow items supplement it; Red items appear sparingly; Black items never appear at all. Classification is determined by nutritional thresholds, displayed visibly on menus and packaging, and verified through NutriCheck audits.</p>
+<p>A separate table covers nurseries. The percentages are applied through the Supply Food To Educational Institutions Form once the kind of menu item is selected. As we read it, a main dish for 4 to 8 year olds would be assessed against 70% of the per-serving baseline, which is 350 for Green energy. Treat the form as the authority.</p>
 
-<p>The operational challenge is maintaining accurate, current nutritional data for every item on a rotating menu. Caterers who invest in systematic nutrition analysis workflows will find classification management straightforward. Those who rely on estimates or outdated data will consistently face reclassification errors and audit risk.</p>
+<h3>Food Types and Beverages</h3>
+
+<p>Clause 3.3.1.3 sets item weight limits: 40 g for pre-packaged products, 60 g for bakery and dessert items, 100 g for other savoury foods, and no fixed limit for catered mains. Drinks must meet the Simplified Beverage Criteria in Annex 17. For example, school juices are 200 ml of 100% juice with no added sugars, and plain water has no volume restriction. Coffee and tea may be served only to G11-12 / Y12-13 students, up to 240 ml, in a designated area.</p>
+
+<h2>How to Calculate a Menu Item's Values</h2>
+
+<p>Clause 3.2.2.5 requires nutrition to be assessed from the recipe, including ingredients and quantities. Clause 3.2.2.7 allows nutrient analysis software, a DM-approved laboratory, or manual calculation from known ingredient values. The procedure below works for a manual calculation or for checking your software's output.</p>
+
+<h3>Step 1: Define the Menu Item</h3>
+<p>Record the kind of menu item (main dish, combo, entrée snack, snack or beverage), its food type, serving size and age group. For mains and combos, each component (protein, grains, vegetables, side) is declared per 100 g before the item is evaluated as a whole.</p>
+
+<h3>Step 2: Standardise the Recipe by Weight</h3>
+<p>List every ingredient in grams as used, including cooking oil, sauces, stock and seasoning. Estimated oil and salt are the most common cause of misclassification.</p>
+
+<h3>Step 3: Calculate Batch Totals</h3>
+<p>For each ingredient, multiply its nutrient value per 100 g by the grams used and divide by 100. Add the results to get batch totals for all six nutrients of concern.</p>
+
+<h3>Step 4: Convert to Per 100 g Using the Finished Weight</h3>
+<p>Weigh the cooked batch. Divide each total by the finished weight and multiply by 100. Cooking changes weight, so raw weights misstate the concentration.</p>
+
+<h3>Step 5: Calculate Per Serving</h3>
+<p>Multiply each per-100 g value by the serving weight and divide by 100.</p>
+
+<h3>Step 6: Compare Against Both Criteria Tables</h3>
+<p>Check each nutrient against the per-100 g table and the age-adjusted per-serving criteria, then against the Restricted and Never lists and the weight limits. Because Light Amber depends on how many nutrients reach amber values, check all six, not just calories.</p>
+<p>Hypothetical example: a vegetable pasta bake batch contains 6,000 mg of sodium and weighs 5,000 g cooked. That is 120 mg per 100 g, and 300 mg in a 250 g serving. The per-100 g value equals the Green figure of 120, and the per-serving value is below the 600 baseline. Repeat for the other five nutrients before assigning a tier.</p>
+
+<h3>Step 7: Revalidate When Anything Changes</h3>
+<p>Nutrition information must be revalidated and re-approved when ingredients, proportions or serving sizes change (clause 3.2.2.6). Reformulated items are approved only at the end of each term, for the following term (clause 3.2.2.3). Menus rotate at least four weekly cycles, submitted in 4-week batches (clause 3.3.1.1).</p>
+
+<h2>Labelling, Allergens and Monitoring</h2>
+
+<p>Clause 3.4.8 requires each menu item sold on the premises to be verified and labelled per serving for calories, carbohydrates, saturated fat, sodium and added sugars. A fuller panel, per serving and per 100 g, adds fibre, protein, total fat, vitamin D and iron.</p>
+
+<p>Clause 3.4.9 requires allergens to be labelled or declared on the menu no matter how small the amount. It lists nine groups, each including their products: crustaceans, peanuts, soybeans, tree nuts, sesame, fish, egg, milk, and gluten-containing cereals. Pre-packaged foods must also meet UAE labelling rules; see our <a href="/blog/uae-food-labeling-requirements-2026">UAE food labelling guide</a>.</p>
+
+<p>Under clause 3.5.2, the food supplier's person-in-charge carries out canteen self-monitoring monthly and the school's person-in-charge quarterly. In a September 2025 release, Dubai Municipality said its inspectors cover 456 educational institutions a year. Annex 20 also sets a phased schedule of red, amber and green targets running to the 2027-2028 academic year, shifting menus towards Green items.</p>
+
+<h2>Keeping Classifications Accurate with RecipeBuilder</h2>
+
+<p>The hard part is keeping per-serving and per-100 g values right across a rotating four-week menu. A new supplier, a different oil or a larger scoop can move an item from Green to Amber without anyone noticing. <a href="/recipe-management">RecipeBuilder</a> calculates nutrition at recipe level from your ingredient weights and serving sizes. You can check each item against the published limits and recalculate when a recipe changes.</p>
+
+<div class="blog-cta-box"><h3>Check Your Canteen Menu Against the Smart Choices Limits</h3><p>RecipeBuilder calculates nutrition from USDA FoodData Central data, gives per-serving and per-100g values, records allergen declarations and produces bilingual English/Arabic labels, so you can check each menu item against Dubai Municipality's published criteria before you submit. <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">Book a call</a> to walk through your school menu.</p></div>
 
 <h2>Frequently Asked Questions</h2>
 
-<h3>Can a food item change its Smart Food Choices category over time?</h3>
-<p>Yes. If you reformulate a recipe — changing ingredients, cooking methods, or portion sizes — the item's nutritional profile changes and it must be re-classified. Similarly, if Dubai Municipality updates its classification thresholds (which happens periodically), items that were previously Yellow may shift to Red or vice versa. Always re-classify based on the most current DM thresholds.</p>
+<h3>Is the second Smart Choices tier yellow or amber?</h3>
+<p>Dubai Municipality's guideline names it Sometimes Smart Choices (Amber), with a Sometimes Smart + (Light Amber) sub-level. Some news releases and press coverage say yellow, but the guideline uses Amber, so use that on menus and signage.</p>
 
-<h3>What if a pre-packaged product I want to sell doesn't carry Smart Food Choices labelling?</h3>
-<p>If you are distributing pre-packaged items through your canteen, you are responsible for ensuring they carry the correct Smart Food Choices classification. If the product does not already carry this label, you will need to classify it based on its nutritional information and apply appropriate labelling before sale or distribution. Items that fall into the Black category cannot be distributed regardless of labelling.</p>
+<h3>How often can Red (Seldom Smart Choices) items be served?</h3>
+<p>Clause 3.3.2.5 says Red items shall be served 3 times every term or once per month, and the tier description gives once a month. Red items must not be sold in vending machines or at other food access points such as events.</p>
 
-<h3>Are there different thresholds for primary and secondary school students?</h3>
-<p>Dubai Municipality's classification thresholds are applied at the product level rather than being age-differentiated. However, portion size guidance and calorie targets do differ by age group. A Green-category food may still contribute to an age-group calorie excess if served in an oversized portion for younger students. Both classification and portion compliance must be managed together.</p>
+<h3>Do the Smart Choices limits apply per serving or per 100 g?</h3>
+<p>Both. Clause 3.3.2.3 requires items to meet the criteria per 100 grams and per serving, with the per-serving baseline adjusted by age group and kind of menu item. Exceeding amber values on either basis makes an item restricted.</p>
 
-<h3>Who verifies our Smart Food Choices classifications?</h3>
-<p>Your classifications are subject to verification through the NutriCheck monthly self-audit process and during physical inspections by Dubai Municipality Food Safety inspectors. Inspectors may request the nutritional analysis documentation that underpins your classifications. If a classification cannot be supported by documented nutritional analysis, it is treated as unverified — which is a compliance finding.</p>
+<h3>Which allergens must be declared on Dubai school canteen menus?</h3>
+<p>The guideline lists nine allergen groups: crustaceans, peanuts, soybeans, tree nuts, sesame, fish, egg, milk and gluten-containing cereals, each including their products. They must be labelled or declared on the menu however small the amount.</p>
 
-<div class="blog-cta-box"><h3>RecipeBuilder for Dubai School Caterers</h3><p>RecipeBuilder generates Dubai Municipality-compliant nutrition labels, allergen matrices (all 14 GSO allergens), Smart Food Choices traffic-light classifications, and NutriCheck audit documentation from a single platform — used by school caterers across the UAE to maintain MySchoolFood compliance. <a href="/school-catering-dubai">See how RecipeBuilder helps Dubai school caterers stay compliant →</a></p></div>
 <h3>Related Resources</h3>
 <ul>
-<li><a href="/blog/dubai-municipality-school-food-requirements-caterers-guide">Dubai Municipality School Food Requirements: Complete Guide for Caterers</a></li>
-<li><a href="/blog/nutri-check-dubai-school-canteen-compliance-guide">How to Use NutriCheck for Dubai School Canteen Compliance</a></li>
-<li>Nutrition Compliance for School Caterers in Dubai: Calories, Allergens &amp; Menus</li>
+<li><a href="/blog/dubai-municipality-school-food-requirements-caterers-guide">Dubai Municipality School Food Requirements: 2026 Guide for Caterers</a></li>
+<li><a href="/blog/how-to-become-approved-school-food-supplier-dubai">How to Become an Approved School Food Supplier in Dubai (2026)</a></li>
+<li><a href="/blog/nutri-check-dubai-school-canteen-compliance-guide">NutriCheck and Nutrition in Charge: Dubai School Canteen Self-Audits</a></li>
+<li><a href="/blog/uae-food-labeling-requirements-2026">UAE Food Labeling Requirements 2026: Standards, Dates and Penalties</a></li>
+<li><a href="/school-catering-dubai">RecipeBuilder for Dubai School Caterers</a></li>
+<li><a href="https://myschoolfood.com/wp-content/uploads/2025/11/Dubai-Food-Nutrition-Guidelines-and-Requirements.pdf">Dubai Food and Nutrition Guidelines and Requirements in Educational Institutions (PDF)</a></li>
 </ul>
 `,
   },
-
 ];

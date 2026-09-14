@@ -66,7 +66,7 @@ const faqs = [
     question:
       "Can RecipeBuilder classify my menu items under the Smart Food Choices system?",
     answer:
-      "RecipeBuilder calculates the nutritional profile of each menu item and compares it against Dubai Municipality's Smart Food Choices thresholds, flagging items as Green (encourage), Yellow (moderate), Red (limit), or Black (banned) — and highlighting which nutrients need to be reduced for reclassification.",
+      "RecipeBuilder calculates the nutritional profile of each menu item and compares it against Dubai Municipality's Smart Food Choices thresholds, flagging items as Green (Daily), Amber (Sometimes), Red (Seldom), or Black (Never) — and highlighting which nutrients need to be reduced for reclassification.",
   },
   {
     question:
@@ -177,7 +177,7 @@ export default function SchoolCateringDubaiPage() {
                   Smart Food Choices Classification
                 </h3>
                 <p className="text-text leading-relaxed">
-                  Automatically classify every menu item as Green, Yellow, Red,
+                  Automatically classify every menu item as Green, Amber, Red,
                   or Black based on Dubai Municipality&apos;s Smart Food Choices
                   nutrient thresholds — and get instant guidance on which
                   changes move an item to a better category.
@@ -289,7 +289,7 @@ export default function SchoolCateringDubaiPage() {
                 {
                   icon: <CheckCircle className="w-5 h-5 text-accent" />,
                   title: "Smart Food Choices Auto-Classification",
-                  body: "Automatically classify menu items into Green / Yellow / Red / Black based on Dubai Municipality thresholds, with item-level improvement guidance.",
+                  body: "Automatically classify menu items into Green / Amber / Red / Black based on Dubai Municipality thresholds, with item-level improvement guidance.",
                 },
                 {
                   icon: <Tag className="w-5 h-5 text-accent" />,
@@ -461,7 +461,7 @@ export default function SchoolCateringDubaiPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 { href: "/blog/dubai-municipality-school-food-requirements-caterers-guide", label: "Dubai Municipality School Food Requirements: Complete Guide for Caterers" },
-                { href: "/blog/smart-food-choices-system-dubai-school-canteen", label: "Dubai's Smart Food Choices System: Green, Yellow, Red & Black Categories" },
+                { href: "/blog/smart-food-choices-system-dubai-school-canteen", label: "Dubai Smart Food Choices for Schools: Green, Amber, Red & Black" },
                 { href: "/blog/nutri-check-dubai-school-canteen-compliance-guide", label: "How to Use NutriCheck for Dubai School Canteen Compliance" },
                 { href: "/blog/how-to-become-approved-school-food-supplier-dubai", label: "How to Become a Dubai Municipality Approved School Food Supplier" },
               ].map((post) => (
