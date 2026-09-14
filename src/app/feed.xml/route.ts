@@ -3,7 +3,12 @@ import { blogPosts } from "@/data/blog-posts";
 const SITE_URL = "https://www.recipebuilder.co";
 const FEED_TITLE = "RecipeBuilder Blog";
 const FEED_DESCRIPTION =
-  "Food labeling, recipe management, and food-business compliance guides for FDA, EU, and GCC markets — from the RecipeBuilder team.";
+  "Food labeling and compliance guides for food businesses in the UAE — UAE labeling rules, product registration, and Dubai Municipality school catering requirements — from the RecipeBuilder team.";
+
+// When the set of posts last changed (a post added, removed, or materially
+// updated). Bump alongside those changes. Kept stable rather than using the
+// build time, for the same reason as the sitemap lastmod dates.
+const FEED_LAST_CHANGED = "2026-09-14";
 
 function escapeXml(value: string): string {
   return value
@@ -19,9 +24,13 @@ export async function GET() {
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
   );
 
-  const lastBuildDate = sorted[0]
-    ? new Date(sorted[0].date).toUTCString()
-    : new Date().toUTCString();
+  const lastChanged = Math.max(
+    new Date(FEED_LAST_CHANGED).getTime(),
+    ...blogPosts.map((post) =>
+      new Date(post.updatedDate ?? post.date).getTime(),
+    ),
+  );
+  const lastBuildDate = new Date(lastChanged).toUTCString();
 
   const items = sorted
     .map((post) => {
