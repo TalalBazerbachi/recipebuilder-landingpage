@@ -564,7 +564,7 @@ export default function Hero({ content }: { content: HeroContent }) {
                 rel="noopener noreferrer"
                 className="btn-glow inline-flex items-center gap-2 px-8 py-4 text-base font-semibold text-white bg-gradient-to-r from-primary to-primary-dark rounded-xl hover:shadow-2xl hover:shadow-primary/25 transition-all hover:-translate-y-0.5"
               >
-                Book a Demo
+                Book a Call
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a

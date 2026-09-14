@@ -1,14 +1,13 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { Check, ArrowRight, BookOpen, Headset } from "lucide-react";
 import type { PricingContent } from "@/data/landing-content";
 
 export default function Pricing({ content }: { content: PricingContent }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const [isAnnual, setIsAnnual] = useState(true);
 
   return (
     <section id="pricing" className="relative py-24 bg-surface overflow-hidden" ref={ref}>
@@ -33,42 +32,10 @@ export default function Pricing({ content }: { content: PricingContent }) {
           </p>
         </motion.div>
 
-        {/* Billing toggle */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 0.15 }}
-          className="flex items-center justify-center gap-3 mb-12"
-        >
-          <span className={`text-sm font-medium ${!isAnnual ? "text-foreground" : "text-text-light"}`}>
-            Monthly
-          </span>
-          <button
-            onClick={() => setIsAnnual(!isAnnual)}
-            className="relative w-14 h-7 rounded-full bg-primary/20 transition-colors focus:outline-none focus:ring-2 focus:ring-primary/50"
-            aria-label="Toggle annual billing"
-          >
-            <div
-              className={`absolute top-0.5 w-6 h-6 rounded-full bg-primary shadow transition-transform ${
-                isAnnual ? "translate-x-7" : "translate-x-0.5"
-              }`}
-            />
-          </button>
-          <span className={`text-sm font-medium ${isAnnual ? "text-foreground" : "text-text-light"}`}>
-            Annual
-          </span>
-          {isAnnual && (
-            <span className="inline-flex items-center px-2.5 py-0.5 text-xs font-semibold text-emerald-700 bg-emerald-100 rounded-full">
-              Save up to 40%
-            </span>
-          )}
-        </motion.div>
-
         {/* Tier cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-16">
           {content.tiers.map((tier, i) => {
-            const isCustom = tier.monthlyPrice === null;
-            const price = isAnnual ? tier.annualPrice : tier.monthlyPrice;
+            const isCustom = tier.yearlyPrice === null;
 
             return (
               <motion.div
@@ -110,27 +77,15 @@ export default function Pricing({ content }: { content: PricingContent }) {
                 <div className="mt-6 mb-6">
                   {isCustom ? (
                     <div className="text-3xl sm:text-4xl font-bold text-foreground">
-                      Custom
+                      Contact us
                     </div>
                   ) : (
-                    <>
-                      <div className="flex items-baseline gap-1">
-                        <span className="text-4xl sm:text-5xl font-bold text-foreground">
-                          ${price}
-                        </span>
-                        <span className="text-sm text-text-light">/mo</span>
-                      </div>
-                      {isAnnual && tier.annualPrice !== null && (
-                        <div className="mt-1 text-sm text-text-light">
-                          Billed annually (${tier.annualPrice * 12}/yr)
-                        </div>
-                      )}
-                      {!isAnnual && tier.annualPrice !== null && tier.monthlyPrice !== null && tier.annualPrice < tier.monthlyPrice && (
-                        <div className="mt-1 text-sm text-emerald-600">
-                          Save ${(tier.monthlyPrice - tier.annualPrice) * 12}/yr with annual
-                        </div>
-                      )}
-                    </>
+                    <div className="flex items-baseline gap-1">
+                      <span className="text-4xl sm:text-5xl font-bold text-foreground">
+                        ${tier.yearlyPrice?.toLocaleString("en-US")}
+                      </span>
+                      <span className="text-sm text-text-light">/year</span>
+                    </div>
                   )}
                 </div>
 
@@ -172,7 +127,7 @@ export default function Pricing({ content }: { content: PricingContent }) {
           transition={{ duration: 0.5, delay: 0.6 }}
           className="text-center text-sm text-text-light mt-8"
         >
-          All plans include a 14-day free trial. No credit card required.
+          All plans are billed yearly. Book a call and we&apos;ll set up your account.
         </motion.p>
       </div>
     </section>

@@ -3,7 +3,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import NewsletterCapture from "@/components/NewsletterCapture";
 import { blogPosts } from "@/data/blog-posts";
 import { Calendar, Clock, ArrowLeft, ArrowRight, ChefHat } from "lucide-react";
 
@@ -407,7 +406,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary-dark hover:underline"
                   >
-                    Book a free demo
+                    Book a call
                     <ArrowRight className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -617,13 +616,6 @@ export default async function BlogPostPage({ params }: PageProps) {
           </div>
         </section>
 
-        {/* Newsletter capture — keeps low-intent readers in our orbit */}
-        <section className="py-12 bg-white">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <NewsletterCapture variant="inline" />
-          </div>
-        </section>
-
         {/* Related posts */}
         <section className="py-20 bg-surface">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -711,14 +703,8 @@ export default async function BlogPostPage({ params }: PageProps) {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-primary bg-white rounded-lg hover:bg-white/90 transition-colors"
                   >
-                    Book a Demo
+                    Book a Call
                     <ArrowRight className="w-4 h-4" />
-                  </a>
-                  <a
-                    href="mailto:info@bytebeam.co?subject=RecipeBuilder Inquiry"
-                    className="inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-white border-2 border-white/30 rounded-lg hover:bg-white/10 transition-colors"
-                  >
-                    Contact Sales
                   </a>
                 </div>
               </div>

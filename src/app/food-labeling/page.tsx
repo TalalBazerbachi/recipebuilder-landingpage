@@ -16,6 +16,9 @@ import {
   Tag,
   CheckCircle,
   Globe,
+  Calculator,
+  PieChart,
+  Dumbbell,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -86,6 +89,24 @@ const features = [
     description:
       "Export your finished labels in high-resolution PNG for digital use or print-ready PDF for professional packaging. Labels are formatted to standard packaging dimensions and ready for your printer.",
   },
+  {
+    icon: Calculator,
+    title: "Automatic Nutrition Calculation",
+    description:
+      "Add your ingredients and quantities and RecipeBuilder calculates the complete nutrition profile of the recipe from USDA FoodData Central data — calories, macronutrients, and micronutrients, with no manual calculations.",
+  },
+  {
+    icon: PieChart,
+    title: "Macronutrient Breakdown",
+    description:
+      "See how protein, carbohydrates, and fat contribute to the total energy of every recipe in a single chart, so you understand a product's nutritional balance before the label is printed.",
+  },
+  {
+    icon: Dumbbell,
+    title: "Vitamin & Mineral Tracking",
+    description:
+      "Track vitamins and minerals such as Vitamin A, Vitamin C, calcium, iron, and potassium across your recipes. Micronutrient data is pulled from the USDA database for every ingredient.",
+  },
 ];
 
 const compliancePoints = [
@@ -134,7 +155,7 @@ export default function FoodLabelingPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-white bg-primary rounded-lg hover:bg-primary-dark transition-colors shadow-lg shadow-primary/25"
                 >
-                  Book a Demo
+                  Book a Call
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a
@@ -504,14 +525,8 @@ export default function FoodLabelingPage() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-primary bg-white rounded-lg hover:bg-white/90 transition-colors"
                   >
-                    Book a Demo
+                    Book a Call
                     <ArrowRight className="w-4 h-4" />
-                  </a>
-                  <a
-                    href="mailto:info@bytebeam.co?subject=Food Labeling Inquiry"
-                    className="inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-white border-2 border-white/30 rounded-lg hover:bg-white/10 transition-colors"
-                  >
-                    Contact Sales
                   </a>
                 </div>
               </div>
@@ -536,8 +551,8 @@ export default function FoodLabelingPage() {
             offers: {
               "@type": "AggregateOffer",
               priceCurrency: "USD",
-              lowPrice: "29",
-              highPrice: "99",
+              lowPrice: "828",
+              highPrice: "1500",
               offerCount: "3",
               category: "SaaS",
               availability: "https://schema.org/InStock",

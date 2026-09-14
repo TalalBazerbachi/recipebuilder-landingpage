@@ -144,7 +144,7 @@ export default function CostTracking() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-white bg-primary rounded-lg hover:bg-primary-dark transition-colors shadow-lg shadow-primary/25"
               >
-                Book a Demo
+                Book a Call
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
@@ -538,7 +538,7 @@ export default function CostTracking() {
                 </h2>
 
                 <p className="mt-4 text-lg text-white/80 max-w-xl mx-auto">
-                  Book a demo to see how RecipeBuilder tracks ingredient costs,
+                  Book a call to see how RecipeBuilder tracks ingredient costs,
                   calculates per serving cost, and shows your net profit margin
                   in real time — all in AED.
                 </p>
@@ -550,14 +550,8 @@ export default function CostTracking() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-primary bg-white rounded-lg hover:bg-white/90 transition-colors"
                   >
-                    Book a Demo
+                    Book a Call
                     <ArrowRight className="w-4 h-4" />
-                  </a>
-                  <a
-                    href="mailto:info@bytebeam.co?subject=RecipeBuilder Cost Tracking Inquiry"
-                    className="inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-white border-2 border-white/30 rounded-lg hover:bg-white/10 transition-colors"
-                  >
-                    Contact Sales
                   </a>
                 </div>
               </div>
@@ -578,7 +572,7 @@ export default function CostTracking() {
             applicationCategory: "BusinessApplication",
             operatingSystem: "Web",
             description: "Track ingredient costs, calculate profit margins, manage VAT, and optimize food costs for recipes and menu items.",
-            offers: { "@type": "AggregateOffer", priceCurrency: "USD", lowPrice: "29", highPrice: "99", offerCount: "3", category: "SaaS", availability: "https://schema.org/InStock" },
+            offers: { "@type": "AggregateOffer", priceCurrency: "USD", lowPrice: "828", highPrice: "1500", offerCount: "3", category: "SaaS", availability: "https://schema.org/InStock" },
             provider: { "@type": "Organization", name: "ByteBeam", url: "https://www.bytebeam.co" },
             featureList: [
               "Ingredient cost tracking",

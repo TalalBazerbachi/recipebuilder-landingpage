@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title:
     "RecipeBuilder — Food Labeling & Recipe Management Software",
   description:
-    "RecipeBuilder auto-generates FDA, EU, and GCC/SFDA-compliant nutrition labels, barcodes, and QR codes from your recipes using 20,000+ USDA ingredients. 40+ languages. From $29/mo (annual).",
+    "RecipeBuilder auto-generates FDA, EU, and GCC/SFDA-compliant nutrition labels, barcodes, and QR codes from your recipes using 20,000+ USDA ingredients. 40+ languages. From $828/year.",
   keywords: [
     "recipe management software",
     "food labeling software",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title:
       "RecipeBuilder — Food Labeling & Recipe Management for Food Businesses",
     description:
-      "Auto-generate FDA, EU, and GCC/SFDA-compliant nutrition labels, barcodes, and QR codes from recipes. 20,000+ USDA ingredients. From $29/mo (annual).",
+      "Auto-generate FDA, EU, and GCC/SFDA-compliant nutrition labels, barcodes, and QR codes from recipes. 20,000+ USDA ingredients. From $828/year.",
     url: "https://www.recipebuilder.co",
     siteName: "RecipeBuilder",
     type: "website",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "RecipeBuilder — Food Labeling & Recipe Management",
     description:
-      "Auto-generate FDA, EU, and GCC/SFDA-compliant nutrition labels, barcodes, and QR codes from recipes. From $29/mo (annual).",
+      "Auto-generate FDA, EU, and GCC/SFDA-compliant nutrition labels, barcodes, and QR codes from recipes. From $828/year.",
     // Twitter image inherits from opengraph-image convention
   },
   robots: {
@@ -120,8 +120,8 @@ export default function RootLayout({
               offers: {
                 "@type": "AggregateOffer",
                 priceCurrency: "USD",
-                lowPrice: "29",
-                highPrice: "99",
+                lowPrice: "828",
+                highPrice: "1500",
                 offerCount: "3",
                 category: "SaaS",
                 availability: "https://schema.org/InStock",

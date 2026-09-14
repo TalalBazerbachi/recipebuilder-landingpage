@@ -12,7 +12,6 @@ export interface HeroContent {
   headlineHighlight: string;
   headlineAfter: string;
   subheadline: string;
-  secondaryCta: { label: string; href: string };
   socialProofLine: string;
   stats: HeroStat[];
   variant: "global" | "gcc";
@@ -111,8 +110,8 @@ export interface PricingFeature {
 export interface PricingTier {
   name: string;
   badge?: string;
-  monthlyPrice: number | null;
-  annualPrice: number | null;
+  /** Price per year in USD; null means custom pricing ("Contact us"). */
+  yearlyPrice: number | null;
   recipes: string;
   support: string;
   highlighted?: boolean;

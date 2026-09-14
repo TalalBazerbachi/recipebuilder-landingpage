@@ -8,7 +8,6 @@ export const globalContent: LandingPageContent = {
     headlineAfter: " — In Minutes, Not Weeks",
     subheadline:
       "Stop paying $500+ per product for lab testing. RecipeBuilder auto-generates compliant nutrition labels, barcodes, QR codes, and packaging artwork from your recipes — for FDA, EU, GCC, and 10+ regulatory frameworks.",
-    secondaryCta: { label: "Get a Sample Label", href: "mailto:info@bytebeam.co?subject=Sample Label Request" },
     socialProofLine: "Trusted by Carrefour, Ben's Farmhouse & food businesses worldwide",
     stats: [
       { iconName: "BadgeCheck", value: "5,000+", label: "Regulatory-Approved Labels" },
@@ -194,7 +193,7 @@ export const globalContent: LandingPageContent = {
   },
 
   pricing: {
-    subtitle: "All plans include every feature. Pick the recipe volume that fits your business.",
+    subtitle: "All plans include every feature and are billed yearly. Pick the recipe volume that fits your business.",
     allFeatures: [
       { text: "All regulatory formats (FDA, EU, GCC & more)" },
       { text: "Nutrition analysis & label generation" },
@@ -207,31 +206,28 @@ export const globalContent: LandingPageContent = {
     tiers: [
       {
         name: "Starter",
-        monthlyPrice: 49,
-        annualPrice: 29,
-        recipes: "Up to 75 recipes",
+        yearlyPrice: 828,
+        recipes: "Up to 400 recipes",
         support: "Email support",
-        cta: "Start Free Trial",
+        cta: "Book a Call",
         ctaHref: "https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call",
       },
       {
         name: "Growth",
         badge: "Most Popular",
-        monthlyPrice: 99,
-        annualPrice: 69,
-        recipes: "Up to 400 recipes",
+        yearlyPrice: 1500,
+        recipes: "Up to 1,500 recipes",
         support: "Priority email & chat support",
         highlighted: true,
-        cta: "Start Free Trial",
+        cta: "Book a Call",
         ctaHref: "https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call",
       },
       {
         name: "Business",
-        monthlyPrice: null,
-        annualPrice: null,
+        yearlyPrice: null,
         recipes: "Unlimited recipes",
         support: "Dedicated account manager & phone support",
-        cta: "Contact Us",
+        cta: "Book a Call",
         ctaHref: "https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call",
       },
     ],
@@ -296,7 +292,7 @@ export const globalContent: LandingPageContent = {
       },
       {
         question: "How much does RecipeBuilder cost?",
-        answer: "RecipeBuilder starts at $29/month billed annually ($49/month billed monthly) on the Starter plan — up to 75 recipes, unlimited label generation, barcodes, QR codes, and FDA, EU, and GCC/SFDA compliance included. The Growth plan is $69/month annually ($99 monthly) for up to 400 recipes with priority support. Business plans with unlimited recipes are custom-quoted. Compare that to $500–$2,000 per product for traditional lab testing.",
+        answer: "RecipeBuilder is billed yearly. The Starter plan is $828/year for up to 400 recipes, and the Growth plan is $1,500/year for up to 1,500 recipes. Business plans with unlimited recipes are priced on request. Every plan includes unlimited label generation, barcodes, QR codes, and FDA, EU, and GCC/SFDA label formats. To get started, book a call with our team. Compare that to $500–$2,000 per product for traditional lab testing.",
       },
       {
         question: "Can I track recipe costs and inventory?",

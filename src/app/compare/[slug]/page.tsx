@@ -79,17 +79,17 @@ const universalFaqs: { question: string; answer: string }[] = [
   {
     question: "How long does it take to get started with RecipeBuilder?",
     answer:
-      "Most food businesses create their first label within a day of starting a free trial. The ingredient database is searchable, recipe building is straightforward, and label generation is automatic once a recipe is saved.",
+      "Most food businesses create their first label within a day of onboarding. Once your account is set up, the ingredient database is searchable, recipe building is straightforward, and label generation is automatic once a recipe is saved.",
   },
   {
-    question: "Does RecipeBuilder have a free trial?",
+    question: "How do I get started with RecipeBuilder?",
     answer:
-      "Yes. RecipeBuilder offers a 14-day free trial with no credit card required. You can build recipes, generate labels, and test the GCC compliance features before committing.",
+      "Book a 30-minute call with our team. We walk through your recipes and label requirements, recommend the plan that fits your catalogue, and set up your account.",
   },
   {
     question: "How does RecipeBuilder pricing work?",
     answer:
-      "RecipeBuilder starts at $29/mo billed annually on the Starter plan, scaling to $79/mo for larger teams. All plans include unlimited label generation, GCC/SFDA compliance features, and packaging artwork. There are no per-label or per-product fees.",
+      "RecipeBuilder is billed yearly: the Starter plan is $828/year for up to 400 recipes, the Growth plan is $1,500/year for up to 1,500 recipes, and Business plans with unlimited recipes are priced on request. Every plan includes unlimited label generation, GCC/SFDA label formats, and packaging artwork, with no per-label or per-product fees.",
   },
 ];
 
@@ -113,36 +113,36 @@ function buildFaqs(
         answer: `Yes — and it goes further. ${competitor} supports FDA and CFIA only, so GCC businesses using it cannot generate SFDA-compliant labels or bilingual Arabic content through the platform. RecipeBuilder was built with GCC compliance as a core feature, not an afterthought. Over 5,000 labels produced with RecipeBuilder have been approved by Dubai Municipality, and the platform handles the bilingual Arabic/English formatting that GCC regulations require.`,
       },
       {
-        question: `Is RecipeBuilder cheaper than ${competitor}?`,
-        answer: `Yes. RecipeBuilder starts at $29/mo billed annually versus ${competitor}'s $49/mo entry tier, while offering a substantially broader feature set: GCC/SFDA compliance, packaging artwork, barcodes, QR codes, recipe costing, and inventory management — none of which are included in ${competitor}. Both offer a free trial, so you can evaluate RecipeBuilder without committing.`,
+        question: `How does RecipeBuilder pricing compare to ${competitor}?`,
+        answer: `${competitor} offers pay-per-recipe and monthly plans, which suit very small catalogues. RecipeBuilder is billed yearly, from $828/year for up to 400 recipes or $1,500/year for up to 1,500 recipes, and every plan includes packaging artwork, barcodes, QR codes, GCC/SFDA label formats, and recipe costing. For a handful of recipes ${competitor} can cost less; as your catalogue grows, one all-inclusive yearly plan is simpler to budget.`,
       },
     ],
     "food-label-maker-alternative": [
       {
         question: `How does RecipeBuilder compare to ${competitor}?`,
-        answer: `${competitor} is a capable US-focused nutrition label platform with allergen management and a solid ingredient database. The main differences: RecipeBuilder adds GCC/SFDA compliance, bilingual Arabic labels, full packaging artwork generation, barcodes, and QR codes — features ${competitor} does not offer at any price tier. For businesses needing to package and sell products in the Gulf region, RecipeBuilder is the more complete solution.`,
+        answer: `${competitor} is a self-serve nutrition label platform that covers several regulatory formats, including SFDA-ready labels in English and Arabic. RecipeBuilder is built around the recipe rather than the label: alongside labels it generates complete print-ready packaging artwork with barcodes and QR codes, and includes recipe costing, sub-recipes, and portion stock tracking in the same platform.`,
       },
       {
         question: `Can RecipeBuilder replace ${competitor} for GCC businesses?`,
-        answer: `For GCC businesses, RecipeBuilder is the better fit. ${competitor} lacks GCC regulatory frameworks and Arabic language output — both of which are legal requirements for food labels sold in the UAE, Saudi Arabia, and across the Gulf. RecipeBuilder's GCC track record includes 5,000+ labels approved by Dubai Municipality, making it a proven compliance tool for the region.`,
+        answer: `Yes. Both tools can produce Arabic and English labels for the Gulf. The difference is scope: RecipeBuilder adds full packaging artwork, barcodes, QR codes, recipe costing, and stock tracking, so teams that manage production and pricing alongside labeling can work in one place.`,
       },
       {
-        question: `Is RecipeBuilder cheaper than ${competitor}?`,
-        answer: `RecipeBuilder starts at $29/mo billed annually, while ${competitor} starts at $39/mo and climbs into enterprise pricing on request. Beyond the lower base price, RecipeBuilder bundles recipe costing, inventory management, and full packaging artwork — capabilities that would require additional tools or higher ${competitor} tiers.`,
+        question: `How does RecipeBuilder pricing compare to ${competitor}?`,
+        answer: `${competitor} uses monthly subscription tiers that start lower than RecipeBuilder. RecipeBuilder is billed yearly, from $828/year for up to 400 recipes or $1,500/year for up to 1,500 recipes, with packaging artwork, barcodes, QR codes, recipe costing, and stock tracking included in every plan rather than split across tiers.`,
       },
     ],
     "nutrical-alternative": [
       {
         question: `How does RecipeBuilder compare to ${competitor}?`,
-        answer: `Both platforms target the GCC market, but they differ significantly in scope. ${competitor} focuses on nutrition calculations and basic label panels for GCC compliance, while RecipeBuilder covers GCC/SFDA alongside 9 additional regulatory frameworks (FDA, EU, Codex, and more), generates full packaging artwork with barcodes and QR codes, and includes recipe costing and inventory management. For businesses that export or need a complete packaging workflow, RecipeBuilder is the more comprehensive choice.`,
+        answer: `Both platforms serve food businesses in the GCC and produce bilingual English and Arabic labels. ${competitor} centres on nutrition analysis, while RecipeBuilder is built around the full recipe-to-pack workflow: print-ready packaging artwork with barcodes and QR codes, sub-recipes, recipe costing, and portion stock tracking in one platform.`,
       },
       {
         question: `Can RecipeBuilder replace ${competitor} for GCC businesses?`,
-        answer: `RecipeBuilder matches ${competitor} on GCC and SFDA compliance while adding features ${competitor} lacks: complete packaging artwork, auto-generated barcodes and QR codes, a 20,000+ USDA ingredient database, and transparent subscription pricing with a free trial. If you are already using ${competitor} for GCC labels, RecipeBuilder offers the same compliance with a fuller production workflow.`,
+        answer: `Yes. RecipeBuilder covers GCC and SFDA label formats and adds complete packaging artwork, auto-generated barcodes and QR codes, and portion stock tracking. If you already use ${competitor} for GCC labels, RecipeBuilder offers the same label formats with a fuller production workflow.`,
       },
       {
-        question: `Is RecipeBuilder cheaper than ${competitor}?`,
-        answer: `${competitor} uses custom pricing with no publicly listed rates, which means you need to request a quote. RecipeBuilder offers transparent subscription pricing from $29/mo billed annually with a 14-day free trial, so you can assess value immediately without a sales conversation.`,
+        question: `How does RecipeBuilder pricing compare to ${competitor}?`,
+        answer: `${competitor} is quote-based, so you need to contact them for rates. RecipeBuilder publishes yearly pricing: $828/year for up to 400 recipes, $1,500/year for up to 1,500 recipes, and custom pricing for unlimited recipes. Book a call and we will confirm the right plan for your catalogue.`,
       },
     ],
     "labelcalc-alternative": [
@@ -152,142 +152,16 @@ function buildFaqs(
       },
       {
         question: `Can RecipeBuilder replace ${competitor} for GCC businesses?`,
-        answer: `Absolutely. ${competitor} has no GCC or SFDA support at all, making it unsuitable for Middle Eastern food businesses. RecipeBuilder was built with GCC compliance as a first-class feature — including Arabic language labels and SFDA formatting — and has 5,000+ Dubai Municipality-approved labels to demonstrate real-world compliance. The switch also comes with a significant cost reduction.`,
+        answer: `Absolutely. ${competitor} has no GCC or SFDA support at all, making it unsuitable for Middle Eastern food businesses. RecipeBuilder was built with GCC compliance as a first-class feature — including Arabic language labels and SFDA formatting — and has 5,000+ Dubai Municipality-approved labels to demonstrate real-world compliance.`,
       },
       {
-        question: `Is RecipeBuilder cheaper than ${competitor}?`,
-        answer: `Considerably. ${competitor} now sits within Datacor's enterprise ERP pricing, typically $500–$1,500+/yr with no self-serve trial. RecipeBuilder starts at $29/mo billed annually with a 14-day free trial and transparent monthly pricing — no annual contracts or enterprise negotiations required.`,
-      },
-    ],
-    "genesis-rd-alternative": [
-      {
-        question: `How does RecipeBuilder compare to ${competitor}?`,
-        answer: `${competitor} is the gold-standard nutrition analysis platform for large US food manufacturers — it has an enormous ingredient database, advanced formulation tools, and deep regulatory compliance for the US market. However, it costs $18,000+/yr, requires significant onboarding, and has no GCC or SFDA support. RecipeBuilder targets growing food businesses and GCC operators: it is faster to deploy, covers 10+ frameworks including GCC/SFDA, generates packaging artwork with barcodes and QR codes, and starts at $29/mo billed annually.`,
-      },
-      {
-        question: `Can RecipeBuilder replace ${competitor} for GCC businesses?`,
-        answer: `For GCC businesses, RecipeBuilder is the appropriate tool — ${competitor} was not designed for this market and has no Arabic or SFDA support. RecipeBuilder covers all the GCC compliance requirements ${competitor} lacks, with the added benefit of packaging artwork generation and an accessible price point. Large enterprises with complex US formulation needs may still require ${competitor} for those specific workflows, but GCC-focused businesses are better served by RecipeBuilder.`,
-      },
-      {
-        question: `Is RecipeBuilder cheaper than ${competitor}?`,
-        answer: `RecipeBuilder starts at $29/mo billed annually vs ${competitor}'s $18,000+/yr enterprise licensing — a difference of over 99% in cost. RecipeBuilder also offers a 14-day free trial with no sales engagement required, whereas ${competitor} requires a formal demo and enterprise contract.`,
-      },
-    ],
-    "nutritics-alternative": [
-      {
-        question: `How does RecipeBuilder compare to ${competitor}?`,
-        answer: `${competitor} is a well-regarded UK and EU nutrition platform with a 1.5M+ ingredient database and strong foodservice workflow tools. Its weaknesses for GCC businesses are significant: no GCC or SFDA compliance, no Arabic language support, and no packaging artwork generation. RecipeBuilder covers EU frameworks in addition to GCC/SFDA, generates bilingual Arabic/English packaging artwork with barcodes and QR codes, and starts at a lower price point.`,
-      },
-      {
-        question: `Can RecipeBuilder replace ${competitor} for GCC businesses?`,
-        answer: `Yes — and for GCC-market businesses, RecipeBuilder is the only practical choice between the two. ${competitor} has no Middle East regulatory support and no Arabic language capabilities. RecipeBuilder is the platform that has actually earned 5,000+ label approvals from Dubai Municipality and is actively used by food manufacturers across the UAE and Gulf region.`,
-      },
-      {
-        question: `Is RecipeBuilder cheaper than ${competitor}?`,
-        answer: `RecipeBuilder starts at $29/mo billed annually vs ${competitor}'s approximately £99/mo (~$125/mo) entry tier. For GCC businesses, RecipeBuilder offers better regulatory fit at a lower price — and the feature overlap that ${competitor} does offer (EU frameworks, recipe management) is matched by RecipeBuilder as well.`,
-      },
-    ],
-    "nutritionist-pro-alternative": [
-      {
-        question: `How does RecipeBuilder compare to ${competitor}?`,
-        answer: `${competitor} covers US, Canada, UK, EU, and China markets and is a capable multi-region nutrition analysis tool. The key gaps: no GCC or SFDA support, no Arabic output, a dated interface, and nutrition label reports rather than print-ready packaging artwork. RecipeBuilder covers all the same Western markets plus the GCC, generates bilingual Arabic/English packaging with barcodes and QR codes, and offers a modern cloud-native experience.`,
-      },
-      {
-        question: `Can RecipeBuilder replace ${competitor} for GCC businesses?`,
-        answer: `Yes. ${competitor} has zero GCC presence — no SFDA frameworks, no Arabic label output, and no Dubai Municipality track record. RecipeBuilder fills every gap: full GCC/SFDA compliance, bilingual Arabic/English labels, and 5,000+ labels already approved in Dubai. For any business operating in or selling into the Gulf region, RecipeBuilder is the clear choice.`,
-      },
-      {
-        question: `Is RecipeBuilder cheaper than ${competitor}?`,
-        answer: `RecipeBuilder starts at $29/mo billed annually vs ${competitor}'s $39/mo entry tier, and includes packaging artwork, barcodes, QR codes, recipe costing, and inventory management that ${competitor} does not bundle in at its base price.`,
-      },
-    ],
-    "menusano-alternative": [
-      {
-        question: `How does RecipeBuilder compare to ${competitor}?`,
-        answer: `${competitor} is a restaurant and foodservice menu labeling tool designed for Canadian and US compliance. It is well-suited for chain restaurant calorie labeling but was not designed for packaged food manufacturing — there is no packaging artwork, no barcodes, no GCC support, and no Arabic. RecipeBuilder covers packaged food production end-to-end: regulatory-compliant labels, print-ready packaging artwork with barcodes and QR codes, recipe costing, and inventory management.`,
-      },
-      {
-        question: `Can RecipeBuilder replace ${competitor} for GCC businesses?`,
-        answer: `Completely. ${competitor} has no GCC market presence and no Arabic language support. For any food business operating in the UAE, Saudi Arabia, or elsewhere in the Gulf, ${competitor} is not a viable option. RecipeBuilder was purpose-built for GCC food businesses and has the regulatory compliance and label approvals to prove it.`,
-      },
-      {
-        question: `Is RecipeBuilder cheaper than ${competitor}?`,
-        answer: `RecipeBuilder starts at $29/mo billed annually vs ${competitor}'s $69/mo entry tier — a meaningful saving, especially when RecipeBuilder includes features like packaging artwork, barcodes, QR codes, and inventory management that ${competitor} does not offer.`,
-      },
-    ],
-    "nutraid-alternative": [
-      {
-        question: `How does RecipeBuilder compare to ${competitor}?`,
-        answer: `${competitor} is an accessible UK and EU food labeling tool aimed at small food businesses. It handles basic EU label panels but has no GCC/SFDA support, no Arabic language output, no packaging artwork, and no barcodes or QR codes. RecipeBuilder covers the EU plus 9 additional regulatory frameworks, generates complete packaging artwork, and includes bilingual Arabic/English label output — making it the better choice for any business with international ambitions.`,
-      },
-      {
-        question: `Can RecipeBuilder replace ${competitor} for GCC businesses?`,
-        answer: `Yes. ${competitor} has no presence in GCC markets and cannot generate SFDA-compliant or Arabic-language labels. RecipeBuilder covers all GCC regulatory requirements and has a proven track record with 5,000+ labels approved by Dubai Municipality. UK-based businesses using ${competitor} that want to export to the Gulf would need to switch to RecipeBuilder.`,
-      },
-      {
-        question: `Is RecipeBuilder cheaper than ${competitor}?`,
-        answer: `${competitor} starts at approximately £19/mo (~$24/mo). RecipeBuilder starts at $29/mo billed annually and includes significantly more: 10+ regulatory frameworks, packaging artwork, barcodes, QR codes, recipe costing, and inventory management — substantially more capability at a comparable or lower price.`,
-      },
-    ],
-    "foodzilla-alternative": [
-      {
-        question: `How does RecipeBuilder compare to ${competitor}?`,
-        answer: `${competitor} and RecipeBuilder serve entirely different markets. ${competitor} is a dietitian and nutrition coaching platform — its recipe features are designed for client meal plans, not commercial food production. RecipeBuilder is a food manufacturing compliance platform: it generates regulatory-compliant food labels, packaging artwork with barcodes and QR codes, and supports GCC/SFDA compliance. If you are a food manufacturer rather than a nutrition practitioner, RecipeBuilder is the appropriate tool.`,
-      },
-      {
-        question: `Can RecipeBuilder replace ${competitor} for GCC businesses?`,
-        answer: `If you are a GCC food manufacturer or packaged food business, RecipeBuilder is purpose-built for your needs — ${competitor} is not. ${competitor} has no regulatory compliance module, no SFDA or GCC frameworks, and no packaging artwork. RecipeBuilder covers all of these with a proven GCC track record.`,
-      },
-      {
-        question: `Is RecipeBuilder cheaper than ${competitor}?`,
-        answer: `RecipeBuilder starts at $29/mo billed annually vs ${competitor}'s $29/mo entry tier. More importantly, RecipeBuilder is the appropriate tool for food manufacturing — ${competitor}'s lower tiers are designed for individual dietitians, not food businesses.`,
-      },
-    ],
-    "erudus-alternative": [
-      {
-        question: `How does RecipeBuilder compare to ${competitor}?`,
-        answer: `${competitor} and RecipeBuilder solve different problems. ${competitor} is a UK foodservice allergen data-sharing network — suppliers upload product data so operators can access allergen information. It is not a food label generator. RecipeBuilder generates regulatory-compliant food labels, packaging artwork with barcodes and QR codes, and handles GCC/SFDA compliance. If you need to create labels rather than share allergen data with UK foodservice operators, RecipeBuilder is the tool you need.`,
-      },
-      {
-        question: `Can RecipeBuilder replace ${competitor} for GCC businesses?`,
-        answer: `${competitor} is a UK-specific foodservice allergen network with no GCC presence. For GCC food businesses, it is not a relevant comparison. RecipeBuilder is built for GCC food manufacturers and has the compliance track record — 5,000+ Dubai Municipality-approved labels — to demonstrate it. If your business is in the Gulf, RecipeBuilder is the platform, not ${competitor}.`,
-      },
-      {
-        question: `Is RecipeBuilder cheaper than ${competitor}?`,
-        answer: `${competitor} offers free supplier access but charges operators ~£200+/yr for broader functionality. RecipeBuilder starts at $29/mo billed annually as a complete food labeling and compliance platform. The comparison is largely moot given that they serve different workflows, but RecipeBuilder offers far more labeling and manufacturing functionality for any food business.`,
-      },
-    ],
-    "lab-testing-alternative": [
-      {
-        question: `How does RecipeBuilder compare to nutrition lab testing?`,
-        answer: `Lab testing and RecipeBuilder serve the same underlying goal — getting accurate nutritional data — but in very different ways. A lab test takes 2–4 weeks, costs $300–$800 per test, and gives you a data report you must then format into a compliant label yourself. RecipeBuilder calculates nutrition instantly from 20,000+ USDA-verified ingredients, generates a GCC/SFDA-compliant label with packaging artwork, barcodes, and QR codes, and lets you iterate on your recipe as many times as you need for a flat monthly fee.`,
-      },
-      {
-        question: `Can RecipeBuilder replace lab testing for GCC businesses?`,
-        answer: `For most GCC food businesses, RecipeBuilder's USDA-database-calculated nutrition is sufficient for label compliance — and Dubai Municipality has approved 5,000+ labels created this way. Some product categories (especially novel or complex formulations) may still require lab verification, but RecipeBuilder handles the label generation, compliance formatting, Arabic/English output, and packaging artwork that a lab report never provides. Many businesses use RecipeBuilder as their primary labeling tool and commission lab tests only for specific regulatory submissions.`,
-      },
-      {
-        question: `Is RecipeBuilder cheaper than lab testing?`,
-        answer: `Dramatically. A single lab test costs $300–$800, takes 2–4 weeks, and must be repeated every time you change your recipe. RecipeBuilder costs $29–$99/mo and supports unlimited recipe iterations in real time. For a business with 10 products that reformulates twice a year, lab testing alone could cost $6,000–$16,000/yr just for the raw data — before label design, artwork, or compliance formatting.`,
+        question: `How does RecipeBuilder pricing compare to ${competitor}?`,
+        answer: `${competitor} offers one-time and subscription licence options focused on FDA nutrition facts calculation. RecipeBuilder is billed yearly, from $828/year for up to 400 recipes or $1,500/year for up to 1,500 recipes, and covers FDA, EU, and GCC/SFDA label formats with packaging artwork, barcodes, and QR codes included.`,
       },
     ],
   };
 
-  const competitorFaqs =
-    faqMap[page.slug] ?? [
-      {
-        question: `How does RecipeBuilder compare to ${competitor}?`,
-        answer: `RecipeBuilder covers 10+ regulatory frameworks including GCC/SFDA, generates complete print-ready packaging artwork with barcodes and QR codes, and supports bilingual English and Arabic output — capabilities ${competitor} does not offer. For food businesses operating in the GCC or needing a complete packaging workflow, RecipeBuilder is the more comprehensive choice starting from $29/mo billed annually.`,
-      },
-      {
-        question: `Can RecipeBuilder replace ${competitor} for GCC businesses?`,
-        answer: `For GCC-market businesses, RecipeBuilder is the purpose-built solution. ${competitor} focuses on ${competitorRegions} without GCC or SFDA support. RecipeBuilder has earned 5,000+ label approvals from Dubai Municipality and handles the bilingual Arabic/English formatting that GCC regulations mandate.`,
-      },
-      {
-        question: `Is RecipeBuilder cheaper than ${competitor}?`,
-        answer: `RecipeBuilder starts at $29/mo billed annually with a 14-day free trial, versus ${competitor}'s ${competitorPricing}. RecipeBuilder also bundles features — packaging artwork, barcodes, QR codes, recipe costing, and inventory management — that ${competitor} either charges extra for or does not offer at all.`,
-      },
-    ];
+  const competitorFaqs = faqMap[page.slug] ?? [];
 
   return [...competitorFaqs, ...universalFaqs];
 }
@@ -354,8 +228,8 @@ export default async function CompareSlugPage({ params }: PageProps) {
     offers: {
       "@type": "AggregateOffer",
       priceCurrency: "USD",
-      lowPrice: "29",
-      highPrice: "99",
+      lowPrice: "828",
+      highPrice: "1500",
       offerCount: "3",
       availability: "https://schema.org/InStock",
     },
@@ -474,14 +348,8 @@ export default async function CompareSlugPage({ params }: PageProps) {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-white bg-primary rounded-lg hover:bg-primary-dark transition-colors shadow-lg shadow-primary/25"
                 >
-                  Book a Free Demo
+                  Book a Call
                   <ArrowRight className="w-4 h-4" />
-                </a>
-                <a
-                  href="mailto:info@bytebeam.co?subject=RecipeBuilder Inquiry"
-                  className="inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-foreground bg-white border border-border rounded-lg hover:bg-surface transition-colors"
-                >
-                  Contact Sales
                 </a>
               </div>
             </div>
@@ -517,7 +385,7 @@ export default async function CompareSlugPage({ params }: PageProps) {
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
                   <span className="text-amber-900 text-sm leading-relaxed">
-                    RecipeBuilder starts at $29/mo billed annually. {page.competitor} starts at{" "}
+                    RecipeBuilder is billed yearly, from $828/year. {page.competitor} pricing:{" "}
                     {page.competitorPricing}.
                   </span>
                 </li>
@@ -544,7 +412,7 @@ export default async function CompareSlugPage({ params }: PageProps) {
               </span>
               <span className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-primary shrink-0" />
-                From $29/mo (annual) · 14-day free trial
+                Yearly plans from $828/year
               </span>
             </div>
           </div>
@@ -690,7 +558,7 @@ export default async function CompareSlugPage({ params }: PageProps) {
                     "Want complete packaging artwork generated automatically — not just a nutrition panel",
                     "Need barcodes and QR codes on every label without additional tools",
                     "Want recipe costing and inventory management in the same platform",
-                    "Are looking for a more affordable option with a 14-day free trial",
+                    "Prefer one yearly plan that includes every feature",
                   ].map((bullet) => (
                     <li key={bullet} className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
@@ -749,10 +617,10 @@ export default async function CompareSlugPage({ params }: PageProps) {
                     "No manual data entry for ingredient nutrition. Search, select, and build recipes instantly.",
                 },
                 {
-                  stat: "From $29/mo (annual)",
+                  stat: "From $828/year",
                   label: "vs $300–$800 per lab test",
                   detail:
-                    "Dramatically lower cost than alternatives, with unlimited recipe iterations included.",
+                    "One yearly plan with unlimited recipe iterations included — no per-test fees.",
                 },
                 {
                   stat: "40+",
@@ -822,7 +690,7 @@ export default async function CompareSlugPage({ params }: PageProps) {
                     "5,000+ labels approved by Dubai Municipality",
                     "20,000+ USDA FoodData Central ingredients",
                     "Recipe costing, margin tracking & inventory management",
-                    "From $29/mo (annual) with a 14-day free trial",
+                    "Yearly plans from $828/year, every feature included",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-primary mt-0.5 shrink-0" />
@@ -966,14 +834,14 @@ export default async function CompareSlugPage({ params }: PageProps) {
                   Pricing at scale: how the total cost of food labeling adds up
                 </h3>
                 <p className="leading-relaxed">
-                  RecipeBuilder starts at $29/mo billed annually with a flat subscription that
+                  RecipeBuilder is billed yearly, from $828/year, with a flat subscription that
                   covers unlimited label generation. There are no per-label fees,
                   no per-product charges, and no separate line items for
                   barcodes, QR codes, or packaging artwork — they are all
                   included. {page.competitor} starts at {page.competitorPricing}.
-                  For food businesses with 10, 20, or 50 SKUs, the difference
-                  compounds quickly. A 14-day free trial means you can verify
-                  the fit before committing.
+                  For food businesses with 10, 20, or 50 SKUs, a flat yearly plan
+                  is simpler to budget than per-label or per-product fees. Book a
+                  call to confirm the right plan before committing.
                 </p>
               </div>
             </div>
@@ -1069,14 +937,14 @@ export default async function CompareSlugPage({ params }: PageProps) {
                   </p>
                 </Link>
               ))}
-              {/* Related blog posts */}
+              {/* Competitor listicle hub */}
               <Link
-                href="/blog/best-nutrition-label-software-2026"
+                href="/compare"
                 className="bg-white rounded-2xl border border-border p-6 shadow-sm hover:shadow-md hover:border-primary/20 transition-all group"
               >
                 <div className="flex items-center justify-between mb-3">
                   <span className="text-xs font-semibold text-primary uppercase tracking-wider">
-                    Blog
+                    All Comparisons
                   </span>
                   <ArrowRight className="w-4 h-4 text-text/40 group-hover:text-primary transition-colors" />
                 </div>
@@ -1084,26 +952,8 @@ export default async function CompareSlugPage({ params }: PageProps) {
                   Best Nutrition Label Software 2026
                 </h3>
                 <p className="text-sm text-text">
-                  A comprehensive guide to the top food labeling tools for
-                  growing food businesses in 2026.
-                </p>
-              </Link>
-              <Link
-                href="/blog/best-nutrition-label-software-gcc-middle-east"
-                className="bg-white rounded-2xl border border-border p-6 shadow-sm hover:shadow-md hover:border-primary/20 transition-all group"
-              >
-                <div className="flex items-center justify-between mb-3">
-                  <span className="text-xs font-semibold text-primary uppercase tracking-wider">
-                    Blog
-                  </span>
-                  <ArrowRight className="w-4 h-4 text-text/40 group-hover:text-primary transition-colors" />
-                </div>
-                <h3 className="text-base font-semibold text-foreground mb-2">
-                  Best Nutrition Label Software for GCC & Middle East
-                </h3>
-                <p className="text-sm text-text">
-                  Which food labeling tools actually support GCC, SFDA, and
-                  Arabic label requirements in 2026?
+                  RecipeBuilder, ReciPal, Food Label Maker, NutriCal and
+                  LabelCalc compared side by side.
                 </p>
               </Link>
             </div>
@@ -1135,18 +985,12 @@ export default async function CompareSlugPage({ params }: PageProps) {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-primary bg-white rounded-lg hover:bg-white/90 transition-colors"
                   >
-                    Book a Free Demo
+                    Book a Call
                     <ArrowRight className="w-4 h-4" />
-                  </a>
-                  <a
-                    href="mailto:info@bytebeam.co?subject=RecipeBuilder Inquiry"
-                    className="inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-white border-2 border-white/30 rounded-lg hover:bg-white/10 transition-colors"
-                  >
-                    Contact Sales
                   </a>
                 </div>
                 <p className="mt-6 text-sm text-white/50">
-                  14-day free trial · No credit card required ·{" "}
+                  30-minute call · No commitment ·{" "}
                   <Link
                     href="/compare"
                     className="underline underline-offset-2 hover:text-white/80 transition-colors"

@@ -1,46 +1,38 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { FooterContent } from "@/data/landing-content";
-import NewsletterCapture from "./NewsletterCapture";
+
+const BOOKING_URL =
+  "https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call";
 
 const footerLinks = {
   Product: [
     { label: "Food Labeling", href: "/food-labeling" },
     { label: "Recipe Management", href: "/recipe-management" },
-    { label: "Nutrition Analysis", href: "/nutrition-analysis" },
     { label: "Cost Tracking", href: "/cost-tracking" },
-    { label: "Inventory Management", href: "/inventory-management" },
-  ],
-  "Free Tools": [
-    { label: "Nutrition Label Generator", href: "/tools/nutrition-label-generator" },
-    { label: "Ingredient List Maker", href: "/tools/ingredient-list-maker" },
-    { label: "Recipe Cost Calculator", href: "/tools/recipe-cost-calculator" },
-    { label: "All Free Tools", href: "/tools" },
+    { label: "Pricing", href: "/#pricing" },
   ],
   Compare: [
     { label: "vs ReciPal", href: "/compare/recipal-alternative" },
     { label: "vs Food Label Maker", href: "/compare/food-label-maker-alternative" },
     { label: "vs Nutrical", href: "/compare/nutrical-alternative" },
-    { label: "vs Genesis R&D", href: "/compare/genesis-rd-alternative" },
+    { label: "vs LabelCalc", href: "/compare/labelcalc-alternative" },
     { label: "All Comparisons", href: "/compare" },
   ],
   Resources: [
     { label: "Blog", href: "/blog" },
-    { label: "Compliance Resources", href: "/compliance-resources" },
-    { label: "GCC Food Businesses", href: "/gcc" },
     { label: "School Catering Dubai", href: "/school-catering-dubai" },
     { label: "Blog RSS Feed", href: "/feed.xml" },
     { label: "FAQ", href: "/#faq" },
   ],
   Company: [
     { label: "About Us", href: "/about" },
+    { label: "Book a Call", href: BOOKING_URL },
     { label: "ByteBeam", href: "https://www.bytebeam.co" },
-    { label: "Contact Sales", href: "mailto:info@bytebeam.co?subject=RecipeBuilder%20Inquiry" },
     { label: "Privacy Policy", href: "/privacy-policy" },
     { label: "Terms of Service", href: "/terms-of-service" },
   ],
 };
-
 const defaultContent: FooterContent = {
   description: "The complete recipe management and food labeling platform for food businesses worldwide. A product by ByteBeam.",
 };
@@ -50,27 +42,8 @@ export default function Footer({ content = defaultContent }: { content?: FooterC
     <footer className="relative bg-dark overflow-hidden">
       <div className="absolute inset-0 bg-grid-pattern" />
 
-      {/* Newsletter bar — captures low-intent visitors before the link wall */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8 border-b border-white/10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <div>
-            <h3 className="text-xl font-semibold text-white mb-2">
-              Stay ahead of food compliance changes
-            </h3>
-            <p className="text-white/60 text-sm leading-relaxed max-w-md">
-              Practical guides on FDA, EU, and GCC food labeling, Dubai
-              Municipality requirements, and food cost management — when
-              there&apos;s something worth reading. No spam.
-            </p>
-          </div>
-          <div>
-            <NewsletterCapture variant="compact" />
-          </div>
-        </div>
-      </div>
-
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2 md:col-span-2">
             <div className="flex items-center gap-2.5 mb-5">

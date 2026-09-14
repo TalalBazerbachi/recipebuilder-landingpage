@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.recipebuilder.co/privacy-policy",
   },
   robots: {
-    index: true,
+    index: false,
     follow: true,
   },
 };

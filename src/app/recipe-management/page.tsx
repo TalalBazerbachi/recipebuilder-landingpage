@@ -17,12 +17,15 @@ import {
   CheckCircle,
   Search,
   Lock,
+  RefreshCw,
+  LayoutDashboard,
+  CalendarClock,
 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Recipe Management Software for Food Businesses | RecipeBuilder",
   description:
-    "Create, organize, and scale recipes with automatic nutrition analysis and sub-recipe support. Built on 20,000+ USDA ingredients. From $29/mo (annual).",
+    "Create, organize, and scale recipes with automatic nutrition analysis and sub-recipe support. Built on 20,000+ USDA ingredients. From $828/year.",
   keywords: [
     "recipe management software",
     "recipe organizer",
@@ -85,6 +88,24 @@ const coreFeatures = [
     title: "Prep Method Documentation",
     description:
       "Document detailed preparation methods with step-by-step instructions. Record cooking temperatures, timing, equipment needed, and technique notes so your team can replicate recipes with consistency every time.",
+  },
+  {
+    icon: RefreshCw,
+    title: "Portion Stock Tracking",
+    description:
+      "Keep a live count of available portions for every recipe. Adjust stock in one tap with -10, -5, -1, +1, +5 and +10 controls, or set an exact value after a physical count or production batch.",
+  },
+  {
+    icon: LayoutDashboard,
+    title: "Stock on the Recipe Dashboard",
+    description:
+      "Each recipe's current stock count and last-updated time sit directly on the recipe dashboard, next to prep time, serving size, and cost — no separate inventory screen to check.",
+  },
+  {
+    icon: CalendarClock,
+    title: "Production Planning",
+    description:
+      "When you can see exactly how many portions remain for every recipe, planning the next production run becomes a straightforward decision rather than a guess.",
   },
 ];
 
@@ -150,7 +171,7 @@ export default function RecipeManagementPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-white bg-primary rounded-lg hover:bg-primary-dark transition-colors shadow-lg shadow-primary/25"
                 >
-                  Book a Demo
+                  Book a Call
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a
@@ -543,14 +564,8 @@ export default function RecipeManagementPage() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-primary bg-white rounded-lg hover:bg-white/90 transition-colors"
                   >
-                    Book a Demo
+                    Book a Call
                     <ArrowRight className="w-4 h-4" />
-                  </a>
-                  <a
-                    href="mailto:info@bytebeam.co?subject=Recipe Management Inquiry"
-                    className="inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-white border-2 border-white/30 rounded-lg hover:bg-white/10 transition-colors"
-                  >
-                    Contact Sales
                   </a>
                 </div>
               </div>
@@ -571,7 +586,7 @@ export default function RecipeManagementPage() {
             applicationCategory: "BusinessApplication",
             operatingSystem: "Web",
             description: "Organize, analyze, and publish recipes with automatic nutrition analysis, sub-recipe support, and USDA FoodData Central database access.",
-            offers: { "@type": "AggregateOffer", priceCurrency: "USD", lowPrice: "29", highPrice: "99", offerCount: "3", category: "SaaS", availability: "https://schema.org/InStock" },
+            offers: { "@type": "AggregateOffer", priceCurrency: "USD", lowPrice: "828", highPrice: "1500", offerCount: "3", category: "SaaS", availability: "https://schema.org/InStock" },
             provider: { "@type": "Organization", name: "ByteBeam", url: "https://www.bytebeam.co" },
             featureList: [
               "Recipe creation and organization",

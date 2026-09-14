@@ -63,14 +63,8 @@ export default function CTA() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 text-base font-semibold text-primary bg-white rounded-xl hover:bg-white/90 transition-all hover:-translate-y-0.5 shadow-xl"
               >
-                Book a Demo
+                Book a Call
                 <ArrowRight className="w-4 h-4" />
-              </a>
-              <a
-                href="mailto:info@bytebeam.co?subject=Sample Label Request"
-                className="inline-flex items-center gap-2 px-8 py-4 text-base font-semibold text-white border-2 border-white/30 rounded-xl hover:bg-white/10 transition-all"
-              >
-                Get a Sample Label
               </a>
             </motion.div>
 
@@ -80,7 +74,7 @@ export default function CTA() {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="mt-5 text-sm text-white/40"
             >
-              Free demo. No commitment. Dedicated onboarding included.
+              Free 30-minute call. No commitment. Dedicated onboarding included.
             </motion.p>
           </div>
         </motion.div>

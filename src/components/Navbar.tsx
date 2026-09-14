@@ -6,16 +6,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function Navbar({ variant = "global", light = false }: { variant?: "global" | "gcc"; light?: boolean }) {
-  const basePath = variant === "gcc" ? "/gcc" : "";
-  const navLinks = [
-    { label: "Features", href: `${basePath}/#features` },
-    { label: "Pricing", href: `${basePath}/#pricing` },
-    { label: "Tools", href: "/tools" },
-    { label: "Compare", href: "/compare" },
-    { label: "Blog", href: "/blog" },
-    ...(variant === "global" ? [{ label: "GCC", href: "/gcc" }] : []),
-  ];
+const navLinks = [
+  { label: "Food Labeling", href: "/food-labeling" },
+  { label: "Recipe Management", href: "/recipe-management" },
+  { label: "Cost Tracking", href: "/cost-tracking" },
+  { label: "Pricing", href: "/#pricing" },
+  { label: "Compare", href: "/compare" },
+  { label: "Blog", href: "/blog" },
+];
+
+export default function Navbar({ light = false }: { light?: boolean }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const useDarkText = light || scrolled;
@@ -37,7 +37,7 @@ export default function Navbar({ variant = "global", light = false }: { variant?
       }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 lg:h-20">
-        <Link href={variant === "gcc" ? "/gcc" : "/"} className="flex items-center gap-2.5">
+        <Link href="/" className="flex items-center gap-2.5">
           <Image src="/logo.svg" alt="RecipeBuilder" width={36} height={36} className="w-9 h-9" priority unoptimized />
           <span
             className={`text-xl font-bold transition-colors duration-300 ${
@@ -71,7 +71,7 @@ export default function Navbar({ variant = "global", light = false }: { variant?
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-primary to-primary-dark rounded-xl hover:shadow-lg hover:shadow-primary/25 transition-all hover:-translate-y-0.5"
           >
-            Book a Demo
+            Book a Call
           </a>
         </div>
 
@@ -115,7 +115,7 @@ export default function Navbar({ variant = "global", light = false }: { variant?
                 rel="noopener noreferrer"
                 className="mt-3 block w-full text-center px-5 py-3 text-sm font-semibold text-white bg-gradient-to-r from-primary to-primary-dark rounded-xl"
               >
-                Book a Demo
+                Book a Call
               </a>
             </div>
           </motion.div>

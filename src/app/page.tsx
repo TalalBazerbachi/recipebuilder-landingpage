@@ -18,7 +18,7 @@ import { globalContent } from "@/data/global-content";
 export const metadata: Metadata = {
   title: "RecipeBuilder — Recipe Management & Food Labeling for Food Businesses",
   description:
-    "RecipeBuilder is a recipe management and food labeling platform by ByteBeam (Dubai). It auto-generates nutrition labels, barcodes, and QR codes from recipes using 20,000+ USDA-verified ingredients. Supports FDA, EU, and GCC/SFDA labeling standards in 40+ languages. Used by food manufacturers, restaurants, and catering businesses worldwide. Pricing starts at $49/month.",
+    "RecipeBuilder is a recipe management and food labeling platform by ByteBeam (Dubai). It auto-generates nutrition labels, barcodes, and QR codes from recipes using 20,000+ USDA-verified ingredients. Supports FDA, EU, and GCC/SFDA labeling standards in 40+ languages. Used by food manufacturers, restaurants, and catering businesses worldwide. Pricing starts at $828/year.",
   alternates: {
     canonical: "https://www.recipebuilder.co",
   },
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Navbar variant="global" light />
+      <Navbar light />
       <main>
         <Hero content={globalContent.hero} />
         <TrustPillars content={globalContent.trustPillars} />

@@ -467,7 +467,7 @@ export default function AboutPage() {
                   Ready to See RecipeBuilder in Action?
                 </h2>
                 <p className="mt-4 text-lg text-white/80 max-w-xl mx-auto">
-                  Book a personalized demo and see how RecipeBuilder can help
+                  Book a call and see how RecipeBuilder can help
                   your food business manage recipes, generate labels, and
                   streamline operations.
                 </p>
@@ -478,14 +478,8 @@ export default function AboutPage() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-primary bg-white rounded-lg hover:bg-white/90 transition-colors"
                   >
-                    Book a Demo
+                    Book a Call
                     <ArrowRight className="w-4 h-4" />
-                  </a>
-                  <a
-                    href="mailto:info@bytebeam.co?subject=RecipeBuilder Inquiry"
-                    className="inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-white border-2 border-white/30 rounded-lg hover:bg-white/10 transition-colors"
-                  >
-                    Contact Sales
                   </a>
                 </div>
               </div>

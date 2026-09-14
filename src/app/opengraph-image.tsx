@@ -93,7 +93,7 @@ export default function OpenGraphImage() {
             display: "flex",
           }}
         >
-          FDA · EU · GCC/SFDA compliant · 40+ languages · From $29/mo
+          FDA · EU · GCC/SFDA compliant · 40+ languages · From $828/year
         </div>
         <div
           style={{

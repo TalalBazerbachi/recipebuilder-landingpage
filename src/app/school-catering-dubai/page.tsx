@@ -54,8 +54,6 @@ export const metadata: Metadata = {
 
 const DEMO_URL =
   "https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call";
-const CONTACT_URL =
-  "mailto:info@bytebeam.co?subject=RecipeBuilder School Catering Dubai";
 
 const faqs = [
   {
@@ -129,14 +127,8 @@ export default function SchoolCateringDubaiPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 text-base font-semibold text-dark bg-primary rounded-xl hover:bg-primary/90 transition-all hover:-translate-y-0.5 shadow-xl shadow-primary/20 btn-glow"
               >
-                Book a Demo
+                Book a Call
                 <ArrowRight className="w-4 h-4" />
-              </a>
-              <a
-                href={CONTACT_URL}
-                className="inline-flex items-center gap-2 px-8 py-4 text-base font-semibold text-white border-2 border-white/20 rounded-xl hover:bg-white/10 transition-all"
-              >
-                Contact Sales
               </a>
             </div>
 
@@ -469,14 +461,9 @@ export default function SchoolCateringDubaiPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 { href: "/blog/dubai-municipality-school-food-requirements-caterers-guide", label: "Dubai Municipality School Food Requirements: Complete Guide for Caterers" },
-                { href: "/blog/nutri-check-dubai-school-canteen-compliance-guide", label: "How to Use NutriCheck for Dubai School Canteen Compliance" },
                 { href: "/blog/smart-food-choices-system-dubai-school-canteen", label: "Dubai's Smart Food Choices System: Green, Yellow, Red & Black Categories" },
-                { href: "/blog/nutrition-in-charge-dubai-schools-nic-guide", label: "Nutrition in Charge (NIC): Roles & Responsibilities for Dubai School Caterers" },
-                { href: "/blog/dubai-school-canteen-monthly-audit-checklist", label: "Dubai School Canteen Monthly Audit Checklist: What Inspectors Look For" },
-                { href: "/blog/green-canteen-certification-dubai-sustainability", label: "Dubai Green Canteen Certification: Sustainability Requirements (2026)" },
-                { href: "/blog/nutrition-compliance-school-caterers-dubai-calorie-allergen-menu", label: "Nutrition Compliance: Calorie Limits, Allergen Management & Menu Planning" },
+                { href: "/blog/nutri-check-dubai-school-canteen-compliance-guide", label: "How to Use NutriCheck for Dubai School Canteen Compliance" },
                 { href: "/blog/how-to-become-approved-school-food-supplier-dubai", label: "How to Become a Dubai Municipality Approved School Food Supplier" },
-                { href: "/blog/dubai-municipality-food-safety-requirements-catering-companies", label: "Dubai Municipality Food Safety Requirements for Catering Companies" },
               ].map((post) => (
                 <a
                   key={post.href}
@@ -523,19 +510,13 @@ export default function SchoolCateringDubaiPage() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-8 py-4 text-base font-semibold text-dark bg-primary rounded-xl hover:bg-primary/90 transition-all hover:-translate-y-0.5 shadow-xl shadow-primary/20"
                   >
-                    Book a Demo
+                    Book a Call
                     <ArrowRight className="w-4 h-4" />
-                  </a>
-                  <a
-                    href={CONTACT_URL}
-                    className="inline-flex items-center gap-2 px-8 py-4 text-base font-semibold text-white border-2 border-white/20 rounded-xl hover:bg-white/10 transition-all"
-                  >
-                    Contact Sales
                   </a>
                 </div>
 
                 <p className="mt-5 text-sm text-white/35">
-                  Free demo. No commitment. Dedicated onboarding included.
+                  Free 30-minute call. No commitment. Dedicated onboarding included.
                 </p>
               </div>
             </div>
@@ -639,9 +620,9 @@ export default function SchoolCateringDubaiPage() {
               "Recipe management and food labeling software for Dubai school food caterers — generates Dubai Municipality-compliant nutrition labels, allergen matrices, and NutriCheck audit documentation.",
             offers: {
               "@type": "Offer",
-              price: "0",
+              price: "828",
               priceCurrency: "USD",
-              description: "Book a free demo to get started",
+              description: "Yearly plans from $828/year. Book a call to get started.",
             },
             featureList: [
               "Dubai Municipality nutrition label generation",

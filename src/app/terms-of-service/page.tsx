@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.recipebuilder.co/terms-of-service",
   },
   robots: {
-    index: true,
+    index: false,
     follow: true,
   },
 };
@@ -199,7 +199,7 @@ export default function TermsOfService() {
                 </li>
                 <li>
                   Authorize us to charge your designated payment method on a
-                  recurring basis (monthly or annually, depending on your plan)
+                  recurring annual basis
                 </li>
                 <li>
                   Provide accurate and complete billing information
