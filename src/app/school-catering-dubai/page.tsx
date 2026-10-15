@@ -50,6 +50,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.recipebuilder.co/school-catering-dubai",
   },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 const DEMO_URL =

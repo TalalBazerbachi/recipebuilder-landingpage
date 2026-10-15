@@ -8,7 +8,6 @@ import { comparePages } from "@/data/compare-content";
 // lastmod entirely as an untrustworthy signal.
 const ROUTE_LAST_MODIFIED: Record<string, string> = {
   "/": "2026-09-14",
-  "/school-catering-dubai": "2026-09-14",
   "/blog": "2026-09-14",
   "/compare": "2026-09-14",
   "/about": "2026-09-14",
@@ -19,7 +18,8 @@ const ROUTE_LAST_MODIFIED: Record<string, string> = {
 
 const COMPARE_LAST_MODIFIED = "2026-09-14";
 
-// Privacy policy and terms are noindex, so they are deliberately left out.
+// Privacy policy, terms and /school-catering-dubai are noindex, so they are
+// deliberately left out.
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.recipebuilder.co";
 
@@ -52,12 +52,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(ROUTE_LAST_MODIFIED["/"]),
       changeFrequency: "weekly",
       priority: 1,
-    },
-    {
-      url: `${baseUrl}/school-catering-dubai`,
-      lastModified: new Date(ROUTE_LAST_MODIFIED["/school-catering-dubai"]),
-      changeFrequency: "monthly",
-      priority: 0.9,
     },
     {
       url: `${baseUrl}/blog`,
