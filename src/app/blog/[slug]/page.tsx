@@ -1,25 +1,91 @@
+import fs from "node:fs";
+import path from "node:path";
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import TableOfContents from "@/components/TableOfContents";
 import { blogPosts } from "@/data/blog-posts";
 import { Calendar, Clock, ArrowLeft, ArrowRight, ChefHat } from "lucide-react";
 
-function splitAtSecondH2(html: string): [string, string] {
+const DEFAULT_AUTHOR = {
+  name: "Talal Bazerbachi",
+  role: "Founder, RecipeBuilder",
+  url: "https://www.recipebuilder.co/about",
+  image: "/authors/talal-bazerbachi.jpg",
+};
+
+// Falls back to initials until the photo file is added to /public.
+function publicFileExists(src?: string): src is string {
+  return !!src && fs.existsSync(path.join(process.cwd(), "public", src));
+}
+
+function AuthorAvatar({
+  name,
+  photo,
+  size,
+}: {
+  name: string;
+  photo: string | null;
+  size: number;
+}) {
+  if (photo) {
+    return (
+      <Image
+        src={photo}
+        alt={name}
+        width={size}
+        height={size}
+        className="rounded-full object-cover flex-shrink-0"
+        style={{ width: size, height: size }}
+      />
+    );
+  }
+  const initials = name
+    .split(" ")
+    .map((n) => n[0])
+    .slice(0, 2)
+    .join("");
+  return (
+    <div
+      className="rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center text-white font-semibold flex-shrink-0"
+      style={{ width: size, height: size, fontSize: size * 0.36 }}
+    >
+      {initials}
+    </div>
+  );
+}
+
+// Splits just before the 3rd H2 so the mid-article CTA lands after the
+// 2nd section's body rather than between its heading and its text.
+function splitAfterSecondSection(html: string): [string, string] {
   let count = 0;
-  let splitIndex = -1;
-  const pattern = /<\/h2>/gi;
+  const pattern = /<h2[\s>]/gi;
   let match;
   while ((match = pattern.exec(html)) !== null) {
     count++;
-    if (count === 2) {
-      splitIndex = match.index + match[0].length;
-      break;
+    if (count === 3) {
+      return [html.slice(0, match.index), html.slice(match.index)];
     }
   }
-  if (splitIndex === -1) return [html, ""];
-  return [html.slice(0, splitIndex), html.slice(splitIndex)];
+  return [html, ""];
+}
+
+function extractSources(html: string): { name: string; url: string }[] {
+  const section = html.match(/<h2>Sources<\/h2>([\s\S]*?)(?=<h2>|$)/);
+  if (!section) return [];
+  const linkRegex = /<a[^>]*href="(https?:[^"]+)"[^>]*>([\s\S]*?)<\/a>/g;
+  const sources: { name: string; url: string }[] = [];
+  let match;
+  while ((match = linkRegex.exec(section[1])) !== null) {
+    sources.push({
+      url: match[1].replace(/&amp;/g, "&"),
+      name: match[2].replace(/<[^>]*>/g, "").trim(),
+    });
+  }
+  return sources;
 }
 
 /**
@@ -50,6 +116,7 @@ function extractH2Headings(html: string): { id: string; text: string }[] {
     // Skip auto-injected sections so the TOC stays focused on the article.
     if (/frequently asked questions/i.test(text)) continue;
     if (/related resources/i.test(text)) continue;
+    if (/^sources$/i.test(text)) continue;
     if (/conclusion/i.test(text) && headings.length === 0) continue;
     headings.push({ id: h2Slug(text), text });
   }
@@ -66,6 +133,11 @@ function addH2Anchors(html: string): string {
     if (!text) return full;
     return `<h2 id="${h2Slug(text)}">${inner}</h2>`;
   });
+}
+
+// Numbered [n] citation markers are for readers, not for schema text.
+function stripCites(html: string): string {
+  return html.replace(/<sup class="cite">[\s\S]*?<\/sup>/g, "");
 }
 
 function extractFaqs(html: string): { question: string; answer: string }[] {
@@ -162,13 +234,24 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       type: "article",
       publishedTime: post.date,
       modifiedTime: post.updatedDate ?? post.date,
-      authors: post.author ? [post.author.name] : ["RecipeBuilder Editorial Team"],
+      authors: [(post.author ?? DEFAULT_AUTHOR).name],
       tags: post.keywords,
       siteName: "RecipeBuilder",
       url: `https://www.recipebuilder.co/blog/${post.slug}`,
+      ...(post.heroImage && {
+        images: [
+          {
+            url: post.heroImage.src,
+            width: post.heroImage.width,
+            height: post.heroImage.height,
+            alt: post.heroImage.alt,
+          },
+        ],
+      }),
     },
     twitter: {
       card: "summary_large_image",
+      ...(post.heroImage && { images: [post.heroImage.src] }),
       title: post.title,
       description: post.description,
     },
@@ -177,14 +260,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
   };
 }
-
-const categoryColors: Record<string, string> = {
-  Compliance: "bg-red-50 text-red-700",
-  Regulation: "bg-amber-50 text-amber-700",
-  Industry: "bg-blue-50 text-blue-700",
-  Labeling: "bg-green-50 text-green-700",
-  Technology: "bg-purple-50 text-purple-700",
-};
 
 export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params;
@@ -218,21 +293,19 @@ export default async function BlogPostPage({ params }: PageProps) {
     .slice(0, 3)
     .map((x) => x.post);
 
-  const faqs = extractFaqs(post.content);
+  const faqs = extractFaqs(stripCites(post.content));
   const anchoredContent = addH2Anchors(post.content);
-  const [contentBefore, contentAfter] = splitAtSecondH2(anchoredContent);
+  const [contentBefore, contentAfter] = splitAfterSecondSection(anchoredContent);
+  const sources = extractSources(post.content);
   const tocHeadings = extractH2Headings(post.content);
   const showToc = tocHeadings.length >= 3; // Only show TOC for substantive posts
   const modifiedDate = post.updatedDate ?? post.date;
   const wasUpdated = post.updatedDate && post.updatedDate !== post.date;
-  const author = post.author ?? {
-    name: "RecipeBuilder Editorial Team",
-    role: "Food Compliance & Recipe Management",
-    url: "https://www.recipebuilder.co/about",
-  };
+  const author = post.author ?? DEFAULT_AUTHOR;
+  const authorPhoto = publicFileExists(author.image) ? author.image : null;
 
   // Heuristic schema detection
-  const howToSteps = extractHowToSteps(post.content);
+  const howToSteps = extractHowToSteps(stripCites(post.content));
   const postUrl = `https://www.recipebuilder.co/blog/${post.slug}`;
   const listiclePicks = /best|alternatives|alternative/i.test(post.title)
     ? extractListiclePicks(post.content, postUrl)
@@ -260,13 +333,14 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   const proseClasses =
     "prose prose-slate max-w-none" +
-    " [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:text-foreground [&_h2]:mt-10 [&_h2]:mb-4" +
+    " [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:text-foreground [&_h2]:mt-10 [&_h2]:mb-4 [&_h2]:scroll-mt-28" +
     " [&_h3]:text-base [&_h3]:font-semibold [&_h3]:text-foreground [&_h3]:mt-6 [&_h3]:mb-2" +
     " [&_p]:text-text [&_p]:leading-relaxed [&_p]:mb-4" +
     " [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2 [&_ul]:mb-4 [&_ul]:text-text" +
     " [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:space-y-2 [&_ol]:mb-4 [&_ol]:text-text" +
     " [&_li]:leading-relaxed" +
     " [&_strong]:text-foreground" +
+    " [&_a]:text-primary-dark [&_a]:font-medium [&_a]:underline [&_a]:decoration-primary/40 [&_a]:underline-offset-2 [&_a:hover]:decoration-primary-dark" +
     " [&_table]:w-full [&_table]:border-collapse [&_table]:mb-4" +
     " [&_th]:text-left [&_th]:p-3 [&_th]:border [&_th]:border-border [&_th]:bg-surface [&_th]:font-medium [&_th]:text-foreground [&_th]:text-sm" +
     " [&_td]:p-3 [&_td]:border [&_td]:border-border [&_td]:text-sm [&_td]:text-text";
@@ -275,26 +349,34 @@ export default async function BlogPostPage({ params }: PageProps) {
     <>
       <Navbar light />
       <main className="pt-28 pb-20">
-        {/* Hero */}
-        <section className="relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-b from-primary-light/60 to-white pointer-events-none" />
-          <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+        <div className="relative">
+          <div className="absolute inset-x-0 top-0 h-[28rem] bg-gradient-to-b from-primary-light/60 to-white pointer-events-none" />
+          <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 lg:grid lg:grid-cols-[13.5rem_minmax(0,1fr)] lg:gap-14">
+            {/* Left rail: sticks under the fixed navbar and tracks the section in view */}
+            <aside className="hidden lg:block">
+              <div className="sticky top-28 pt-16 pb-8 max-h-[calc(100vh-7rem)] overflow-y-auto">
+                <Link
+                  href="/blog"
+                  className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary-dark mb-8 transition-colors"
+                >
+                  <ArrowLeft className="w-4 h-4" />
+                  All posts
+                </Link>
+                {showToc && <TableOfContents headings={tocHeadings} />}
+              </div>
+            </aside>
+
+            <div className="min-w-0 max-w-3xl">
+            <header className="pt-12 sm:pt-16 pb-10">
             <Link
               href="/blog"
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary-dark mb-8 transition-colors"
+              className="lg:hidden inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary-dark mb-8 transition-colors"
             >
               <ArrowLeft className="w-4 h-4" />
               Back to Blog
             </Link>
 
             <div className="flex flex-wrap items-center gap-3 mb-5">
-              <span
-                className={`text-xs font-semibold px-2.5 py-1 rounded-full ${
-                  categoryColors[post.category] || "bg-gray-50 text-gray-700"
-                }`}
-              >
-                {post.category}
-              </span>
               <span className="flex items-center gap-1 text-sm text-text-light">
                 <Calendar className="w-3.5 h-3.5" />
                 {new Date(post.date).toLocaleDateString("en-US", {
@@ -328,18 +410,12 @@ export default async function BlogPostPage({ params }: PageProps) {
 
             {/* Author byline — E-E-A-T signal */}
             <div className="mt-6 flex items-center gap-3 text-sm">
-              <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center text-white font-semibold text-xs">
-                {author.name
-                  .split(" ")
-                  .map((n) => n[0])
-                  .slice(0, 2)
-                  .join("")}
-              </div>
-              <div>
-                <span className="font-medium text-foreground">
-                  By {author.name}
+              <AuthorAvatar name={author.name} photo={authorPhoto} size={44} />
+              <div className="leading-tight">
+                <span className="block font-semibold text-foreground">
+                  {author.name}
                 </span>
-                <span className="text-text-light"> · {author.role}</span>
+                <span className="text-text-light">{author.role}</span>
               </div>
             </div>
 
@@ -358,17 +434,26 @@ export default async function BlogPostPage({ params }: PageProps) {
                 </a>
               ))}
             </div>
-          </div>
-        </section>
 
-        {/* Content */}
-        <section className="py-12 bg-white">
-          <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            {/* Table of Contents — Affinda pattern, helps AI/LLM citation + reader navigation */}
+            {post.heroImage && (
+              <Image
+                src={post.heroImage.src}
+                alt={post.heroImage.alt}
+                width={post.heroImage.width}
+                height={post.heroImage.height}
+                priority
+                sizes="(min-width: 1024px) 768px, 100vw"
+                className="mt-10 w-full h-auto rounded-2xl border border-border"
+              />
+            )}
+            </header>
+
+          <article className="pb-12">
+            {/* Inline TOC for narrow screens; wide screens use the sticky left rail */}
             {showToc && (
               <nav
                 aria-label="Table of contents"
-                className="mb-10 rounded-xl border border-border bg-surface/40 p-6"
+                className="lg:hidden mb-10 rounded-xl border border-border bg-surface/40 p-6"
               >
                 <h2 className="text-xs font-bold uppercase tracking-wider text-text-light mb-4">
                   On this page
@@ -430,6 +515,9 @@ export default async function BlogPostPage({ params }: PageProps) {
                     name: author.name,
                     jobTitle: author.role,
                     url: author.url ?? "https://www.recipebuilder.co/about",
+                    ...(authorPhoto && {
+                      image: `https://www.recipebuilder.co${authorPhoto}`,
+                    }),
                     worksFor: {
                       "@type": "Organization",
                       name: "ByteBeam",
@@ -447,13 +535,22 @@ export default async function BlogPostPage({ params }: PageProps) {
                       height: 180,
                     },
                   },
-                  image: `https://www.recipebuilder.co/blog/${post.slug}/opengraph-image`,
+                  image: post.heroImage
+                    ? `https://www.recipebuilder.co${post.heroImage.src}`
+                    : "https://www.recipebuilder.co/opengraph-image",
                   mainEntityOfPage: {
                     "@type": "WebPage",
                     "@id": `https://www.recipebuilder.co/blog/${post.slug}`,
                   },
                   articleSection: post.category,
                   keywords: post.keywords.join(", "),
+                  ...(sources.length > 0 && {
+                    citation: sources.map((s) => ({
+                      "@type": "CreativeWork",
+                      name: s.name,
+                      url: s.url,
+                    })),
+                  }),
                 }),
               }}
             />
@@ -575,19 +672,15 @@ export default async function BlogPostPage({ params }: PageProps) {
               }}
             />
           </article>
-        </section>
+            </div>
+          </div>
+        </div>
 
         {/* Author bio block — E-E-A-T signal at article close */}
         <section className="py-12 bg-white border-t border-border">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-start gap-5">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center text-white font-bold text-lg flex-shrink-0">
-                {author.name
-                  .split(" ")
-                  .map((n) => n[0])
-                  .slice(0, 2)
-                  .join("")}
-              </div>
+              <AuthorAvatar name={author.name} photo={authorPhoto} size={64} />
               <div>
                 <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-1">
                   About the author
@@ -597,10 +690,11 @@ export default async function BlogPostPage({ params }: PageProps) {
                 </h3>
                 <p className="text-sm text-text-light mb-2">{author.role}</p>
                 <p className="text-text leading-relaxed text-sm">
-                  RecipeBuilder is built by the team at ByteBeam (Dubai). We
-                  work daily with food manufacturers, school caterers, and
-                  cloud kitchens across the GCC, US, EU, and UK to keep
-                  labels compliant and recipes profitable. If you spot
+                  RecipeBuilder is nutrition labeling software built by
+                  ByteBeam in Dubai. We work daily with food manufacturers,
+                  school caterers, and cloud kitchens across the GCC, US, EU,
+                  and UK to produce labels that meet each market&apos;s
+                  requirements. If you spot
                   something we got wrong here — or want to compare notes on
                   a specific regulation —{" "}
                   <a
@@ -641,13 +735,6 @@ export default async function BlogPostPage({ params }: PageProps) {
                 >
                   <article className="h-full bg-white border border-border rounded-2xl p-6 hover:shadow-lg hover:border-primary/20 transition-all flex flex-col">
                     <div className="flex items-center gap-3 mb-4">
-                      <span
-                        className={`text-xs font-semibold px-2.5 py-1 rounded-full ${
-                          categoryColors[rp.category] || "bg-gray-50 text-gray-700"
-                        }`}
-                      >
-                        {rp.category}
-                      </span>
                       <span className="text-xs text-text-light">
                         {rp.readTime}
                       </span>

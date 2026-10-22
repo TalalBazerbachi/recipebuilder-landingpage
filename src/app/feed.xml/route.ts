@@ -3,12 +3,12 @@ import { blogPosts } from "@/data/blog-posts";
 const SITE_URL = "https://www.recipebuilder.co";
 const FEED_TITLE = "RecipeBuilder Blog";
 const FEED_DESCRIPTION =
-  "Food labeling and compliance guides for food businesses in the UAE — UAE labeling rules, product registration, and Dubai Municipality school catering requirements — from the RecipeBuilder team.";
+  "Food labeling and compliance guides for food businesses in the UAE — UAE labeling rules, salt, sugar and fat limits, product registration, and Dubai Municipality school catering requirements — from the RecipeBuilder team.";
 
 // When the set of posts last changed (a post added, removed, or materially
 // updated). Bump alongside those changes. Kept stable rather than using the
 // build time, for the same reason as the sitemap lastmod dates.
-const FEED_LAST_CHANGED = "2026-09-14";
+const FEED_LAST_CHANGED = "2026-10-22";
 
 function escapeXml(value: string): string {
   return value

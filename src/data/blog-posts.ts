@@ -20,18 +20,496 @@ export interface BlogPost {
     name: string;
     role: string;
     url?: string;
+    image?: string;
+  };
+  /** Banner shown under the byline. Path relative to /public. */
+  heroImage?: {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
   };
   content: string; // HTML string
 }
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "uae-salt-sugar-fat-limits-2026",
+    title:
+      "UAE Salt, Sugar and Fat Limits 2026: The 9-Month Clock Is Ticking (AED 500K Fines)",
+    description:
+      "MoHAP's new resolution caps sodium, sugar and fat in bread, dairy drinks, yoghurt, snacks and processed cheese. Every limit, deadline, exception rule and fine.",
+    date: "2026-10-22",
+    category: "Compliance",
+    readTime: "20 min read",
+    heroImage: {
+      src: "/blog/uae-salt-sugar-fat-limits-2026.png",
+      alt: "UAE salt, sugar and fat limits: leavened bread nutrition panel showing sodium falling from 444 mg to 370 mg, total sugars from 6 g to 5 g and total fat from 8.4 g to 7 g per 100 g",
+      width: 1600,
+      height: 840,
+    },
+    keywords: [
+      "UAE salt sugar fat limits",
+      "MoHAP sodium limits",
+      "UAE sodium limits bread",
+      "UAE food reformulation 2030",
+      "MoHAP resolution sodium sugar fats",
+      "UAE processed cheese sodium limit",
+      "UAE flavoured yoghurt sugar limit",
+      "UAE salty snacks sodium limit",
+      "WHO global sodium benchmarks",
+      "UAE food compliance 2026",
+      "UAE food labeling requirements",
+    ],
+    content: `
+<p>The UAE now caps how much sodium, sugar and fat ten kinds of packaged food can contain. Under a resolution the Ministry of Health and Prevention (MoHAP) began implementing on 6 October 2026, bread, sweetened milk drinks, flavoured yoghurt and laban, salty snacks and processed cheese must stay under maximum limits per 100 g. The limits tighten in two phases, the final limits apply from 31 December 2030, and fines reach AED 500,000<sup class="cite"><a href="#src-1">[1]</a></sup>.</p>
+<p>The first deadline is closer than it looks. Bread, dairy drinks, yoghurt and snacks have nine months from the date the resolution takes effect to meet the first-phase caps.<sup class="cite"><a href="#src-1">[1]</a></sup> And a product that only just meets those caps still needs another 16.7% cut before 2030. This guide covers every limit, deadline and exception rule in the official announcement, where the numbers come from, and what R&amp;D, QA and regulatory teams should do first.</p>
+
+<div class="key-takeaways">
+<h3>Key Takeaways</h3>
+<ul>
+<li><strong>Ten product lines, three nutrients.</strong> Sodium is capped in bread, salty snacks and processed cheese. Total sugars are capped in bread, sweetened milk drinks and flavoured yoghurt and laban. Total fat is capped in bread only.<sup class="cite"><a href="#src-1">[1]</a></sup></li>
+<li><strong>Each Phase 1 cap is the final cap plus 20%.</strong> Design to the final number now, or you will reformulate twice.<sup class="cite"><a href="#src-1">[1]</a></sup></li>
+<li><strong>Group 1 has 9 months, processed cheese has 2 years and 3 months,</strong> and every product must meet its final limit by 31 December 2030. Existing stock can stay on sale for up to one year, or until it expires if that comes first.<sup class="cite"><a href="#src-1">[1]</a></sup></li>
+<li><strong>An exception is possible but narrow.</strong> It applies only if Phase 1 would force a cut of more than 20%, you must apply within 30 days of the effective date with accredited lab results, and it never moves the 2030 deadline.<sup class="cite"><a href="#src-1">[1]</a></sup></li>
+<li><strong>It covers local and imported packaged food, free zones included.</strong> Penalties run from a warning to fines of AED 5,000 to AED 500,000, closure for up to six months, or licence cancellation.<sup class="cite"><a href="#src-1">[1]</a></sup></li>
+<li><strong>The final caps closely track the WHO's 2021 global sodium benchmarks.</strong> The 320 mg flatbread limit, for example, is the same as the WHO benchmark, which was itself based on Qatar's national target.<sup class="cite"><a href="#src-3">[3]</a><a href="#src-4">[4]</a></sup></li>
+</ul>
+</div>
+
+<div class="blog-cta-box">
+<h3>Every recipe you reformulate needs a new nutrition label</h3>
+<p>Cut the salt, sugar or fat and the nutrition panel on the pack changes with it, often the ingredient list too. RecipeBuilder produces <a href="/food-labeling">nutrition labels that meet UAE requirements</a> straight from your recipes, so your packs match your new formulas before the Phase 1 deadline.</p>
+<ul>
+<li><strong>Guaranteed acceptance</strong> of your labels</li>
+<li><strong>Unlimited change requests</strong>, so every reformulation round is covered</li>
+<li><strong>Money-back guarantee</strong></li>
+</ul>
+<p><a class="blog-cta-button" href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call?utm_source=blog&amp;utm_medium=article&amp;utm_campaign=uae-salt-sugar-fat-limits&amp;utm_content=top-cta" target="_blank" rel="noopener">Book a call →</a> <a href="/#product-demo">or see the product demo first</a></p>
+</div>
+
+<h2>What Does the UAE's New Salt, Sugar and Fat Resolution Do?</h2>
+<p>The resolution sets a national framework to gradually reduce "all types of sodium", sugar and fat in selected food products, in clearly defined phases that run to the end of 2030, according to the official announcement from WAM, the UAE's state news agency<sup class="cite"><a href="#src-1">[1]</a></sup>. MoHAP says the aim is to protect public health and reduce obesity and other noncommunicable diseases linked to unhealthy food.</p>
+<figure class="viz">
+<div class="viz-title">The resolution in three parts</div>
+<div class="viz-cards">
+<div class="viz-card"><span class="viz-tag">LIMITS</span><span class="viz-k">Per 100 g</span><span class="viz-l">Maximum sodium, total sugars and total fat for 10 product lines, in a Phase 1 and a final phase.</span></div>
+<div class="viz-card"><span class="viz-tag">DEADLINES</span><span class="viz-k">9 mo → 2030</span><span class="viz-l">Set by product group, with a shared final deadline of 31 December 2030.</span></div>
+<div class="viz-card"><span class="viz-tag">PENALTIES</span><span class="viz-k">AED 500K</span><span class="viz-l">Maximum fine for making or selling a product over the limit that applies at the time.</span></div>
+</div>
+<figcaption>Source: the MoHAP resolution as published by WAM <sup class="cite"><a href="#src-1">[1]</a></sup>.</figcaption>
+</figure>
+<p>The approach is reformulation, not a tax. Dr Ahmed Al Khazraji, Executive Director of Healthy Living at the Department of Health – Abu Dhabi, described the goal as to "improve the nutritional profile of products that people already buy and enjoy"<sup class="cite"><a href="#src-15">[15]</a></sup>. In practice, the burden falls on product developers, not on shoppers.</p>
+<p>One wording point matters for compliance teams. WAM's summary says "processed sugar", but every sugar limit in the resolution is written as <strong>total sugars</strong>. This guide uses "total sugars" throughout.</p>
+
+<h2>Is Your Product Covered?</h2>
+<p>According to WAM's summary of the resolution, a product is in scope when all three answers are yes:</p>
+<figure class="viz">
+<div class="viz-title">Scope check</div>
+<div class="viz-flow">
+<div class="viz-node"><strong>1. Packaged food?</strong>In one of the 10 listed product lines.</div>
+<div class="viz-arrow" aria-hidden="true">→</div>
+<div class="viz-node"><strong>2. Made here or imported?</strong>Both count. Export-only products are excluded unless sold in the UAE.</div>
+<div class="viz-arrow" aria-hidden="true">→</div>
+<div class="viz-node"><strong>3. Handled in the UAE?</strong>By any establishment, free zones included, at any stage from production to sale.</div>
+<div class="viz-arrow" aria-hidden="true">→</div>
+<div class="viz-node viz-node--end"><strong>In scope</strong>The limits and deadlines apply.</div>
+</div>
+<figcaption>Source: scope and exclusions as published by WAM <sup class="cite"><a href="#src-1">[1]</a></sup>.</figcaption>
+</figure>
+<p>Two practical consequences are easy to miss:</p>
+<ul>
+<li><strong>Importers, distributors and retailers are covered, not just manufacturers.</strong> Once the stock window ends, no establishment may trade a non-conforming product.<sup class="cite"><a href="#src-1">[1]</a></sup> If you import crackers or processed cheese, your supplier's recipe is now your compliance problem.</li>
+<li><strong>The announcement refers to packaged food.</strong> It does not mention bread sold unpackaged at a bakery counter.<sup class="cite"><a href="#src-1">[1]</a></sup> Until the full text or implementing decisions say otherwise, confirm the status of unpackaged products with your health authority before assuming they are exempt.</li>
+</ul>
+
+<h2>Every UAE Salt, Sugar and Fat Limit in One Table</h2>
+<figure class="viz">
+<div class="viz-title">What is capped, and how long you have</div>
+<div class="table-scroll">
+<table class="viz-matrix">
+<thead><tr><th>Product line</th><th>Sodium</th><th>Total sugars</th><th>Total fat</th><th>Phase 1 due</th></tr></thead>
+<tbody>
+<tr><td>Leavened and flat bread</td><td><span class="viz-dot" aria-label="Capped">✓</span></td><td><span class="viz-dot" aria-label="Capped">✓</span></td><td><span class="viz-dot" aria-label="Capped">✓</span></td><td>9 months</td></tr>
+<tr><td>Sweetened milk drinks</td><td><span class="viz-dash" aria-label="Not capped">–</span></td><td><span class="viz-dot" aria-label="Capped">✓</span></td><td><span class="viz-dash" aria-label="Not capped">–</span></td><td>9 months</td></tr>
+<tr><td>Flavoured yoghurt and laban</td><td><span class="viz-dash" aria-label="Not capped">–</span></td><td><span class="viz-dot" aria-label="Capped">✓</span></td><td><span class="viz-dash" aria-label="Not capped">–</span></td><td>9 months</td></tr>
+<tr><td>Salty snacks (4 types)</td><td><span class="viz-dot" aria-label="Capped">✓</span></td><td><span class="viz-dash" aria-label="Not capped">–</span></td><td><span class="viz-dash" aria-label="Not capped">–</span></td><td>9 months</td></tr>
+<tr><td>Processed cheese (2 types)</td><td><span class="viz-dot" aria-label="Capped">✓</span></td><td><span class="viz-dash" aria-label="Not capped">–</span></td><td><span class="viz-dash" aria-label="Not capped">–</span></td><td>2 years 3 months</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption>Only bread is capped on all three nutrients. Every product line must meet its final limit by 31 December 2030. Source: <sup class="cite"><a href="#src-1">[1]</a></sup></figcaption>
+</figure>
+<p>All limits are per 100 g of product, as published by WAM.<sup class="cite"><a href="#src-1">[1]</a></sup> The salt column converts each sodium limit using the WHO factor of 1 g of salt = 400 mg of sodium<sup class="cite"><a href="#src-5">[5]</a></sup>.</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr><th>Group</th><th>Product</th><th>Nutrient</th><th>Phase 1 limit</th><th>Final limit</th><th>Final limit as salt</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>Leavened bread</td><td>Sodium</td><td>444 mg</td><td>370 mg</td><td>≈ 0.93 g</td></tr>
+<tr><td>1</td><td>Leavened bread</td><td>Total sugars</td><td>6 g</td><td>5 g</td><td>–</td></tr>
+<tr><td>1</td><td>Leavened bread</td><td>Total fat</td><td>8.4 g</td><td>7 g</td><td>–</td></tr>
+<tr><td>1</td><td>Flat bread</td><td>Sodium</td><td>384 mg</td><td>320 mg</td><td>0.80 g</td></tr>
+<tr><td>1</td><td>Flat bread</td><td>Total sugars</td><td>6 g</td><td>5 g</td><td>–</td></tr>
+<tr><td>1</td><td>Flat bread</td><td>Total fat</td><td>8.4 g</td><td>7 g</td><td>–</td></tr>
+<tr><td>1</td><td>Sweetened milk drinks, including milk alternatives</td><td>Total sugars</td><td>9.6 g</td><td>8 g</td><td>–</td></tr>
+<tr><td>1</td><td>Sweetened or flavoured yoghurt and laban</td><td>Total sugars</td><td>12 g</td><td>10 g</td><td>–</td></tr>
+<tr><td>1</td><td>Salted crackers</td><td>Sodium</td><td>696 mg</td><td>580 mg</td><td>1.45 g</td></tr>
+<tr><td>1</td><td>Salted nuts and seeds</td><td>Sodium</td><td>336 mg</td><td>280 mg</td><td>0.70 g</td></tr>
+<tr><td>1</td><td>Pretzels</td><td>Sodium</td><td>912 mg</td><td>760 mg</td><td>1.90 g</td></tr>
+<tr><td>1</td><td>Extruded snacks and chips (potato, sweet potato, vegetable or grain)</td><td>Sodium</td><td>564 mg</td><td>470 mg</td><td>≈ 1.18 g</td></tr>
+<tr><td>2</td><td>Spreadable processed cheese</td><td>Sodium</td><td>864 mg</td><td>720 mg</td><td>1.80 g</td></tr>
+<tr><td>2</td><td>Other processed cheese</td><td>Sodium</td><td>1,200 mg</td><td>1,000 mg</td><td>2.50 g</td></tr>
+</tbody>
+</table>
+</div>
+<figure class="viz">
+<div class="viz-title">Phase 1 is the final limit plus 20%</div>
+<div class="viz-bars viz-bars--single" role="img" aria-label="Leavened bread sodium: Phase 1 cap 444 mg, final cap 370 mg per 100 g, a further 16.7 percent cut">
+<div class="viz-row"><span>Phase 1 cap<small>Leavened bread, sodium</small></span><div class="viz-bar is-muted"><b style="width:86%"></b><em>444 mg</em></div></div>
+<div class="viz-row"><span>Final cap<small>by 31 Dec 2030</small></span><div class="viz-bar"><b style="width:72%"></b><em>370 mg · −16.7%</em></div></div>
+</div>
+<figcaption>Every one of the 14 Phase 1 limits is exactly its final limit × 1.2. A product designed only to the Phase 1 cap will need a second reformulation before 2030. Calculated from the limits in <sup class="cite"><a href="#src-1">[1]</a></sup>.</figcaption>
+</figure>
+<p>Two more details in the table change how you plan:</p>
+<ul>
+<li><strong>"Total sugars" includes the sugar already in milk.</strong> Codex defines sugars as "all mono-saccharides and di-saccharides present in food"<sup class="cite"><a href="#src-6">[6]</a></sup>. Lactose therefore counts toward the milk drink and yoghurt caps, which leaves far less room for added sugar than the headline number suggests.</li>
+<li><strong>The fat cap is total fat, and it applies to bread only.</strong> There is no separate saturated-fat cap, and no fat limit for snacks or cheese.<sup class="cite"><a href="#src-1">[1]</a></sup></li>
+</ul>
+
+<h2>The Deadlines, and the One Date Nobody Has Published Yet</h2>
+<p>Every deadline in the resolution counts from "the date it takes effect". As of 21 October 2026, that date has not been published. MoHAP announced that implementation began on 6 October 2026,<sup class="cite"><a href="#src-1">[1]</a></sup> and the resolution text was not yet searchable on the <a href="https://uaelegislation.gov.ae/en/legislations" target="_blank" rel="noopener">UAE Legislation platform</a><sup class="cite"><a href="#src-16">[16]</a></sup> when we checked. The timeline below shows what each deadline would be <em>if</em> the effective date turns out to be 6 October 2026. Treat the "≈" dates as planning estimates, not legal dates.</p>
+<figure class="viz">
+<div class="viz-title">Compliance timeline (if effective 6 Oct 2026)</div>
+<div class="viz-timeline">
+<div class="viz-tl"><time>6 Oct 2026</time><span><strong>MoHAP starts implementing</strong>Announced by WAM. Formal effective date not yet published.</span></div>
+<div class="viz-tl is-key"><time>≈ 5 Nov 2026</time><span><strong>Exception applications close</strong>30 days from the effective date.</span></div>
+<div class="viz-tl is-key"><time>≈ 6 Jul 2027</time><span><strong>Group 1 meets Phase 1</strong>Bread, sweetened milk drinks, flavoured yoghurt and laban, salty snacks: 9 months.</span></div>
+<div class="viz-tl"><time>≈ 6 Oct 2027</time><span><strong>Old stock must be off sale</strong>1 year from the effective date, or the product's expiry if earlier.</span></div>
+<div class="viz-tl"><time>≈ 6 Jan 2029</time><span><strong>Group 2 meets Phase 1</strong>Processed cheese: 2 years and 3 months.</span></div>
+<div class="viz-tl is-key"><time>31 Dec 2030</time><span><strong>Final limits for every product</strong>The one fixed date in the resolution.</span></div>
+</div>
+<figcaption>Rules from the resolution as published by WAM <sup class="cite"><a href="#src-1">[1]</a></sup>. Dates marked "≈" are our estimates.</figcaption>
+</figure>
+<p>Nine months is short for reformulation. A recipe change usually has to go through bench trials, sensory testing, shelf-life validation, supplier changes, label redesign and registration updates before it reaches the shelf. Working back from July 2027, Group 1 teams should be choosing reformulation candidates now.</p>
+
+<h2>The 20% Exception: Who Qualifies and What to File</h2>
+<p>The resolution lets an establishment ask MoHAP for an exception from the <strong>Phase 1</strong> limit, under strict conditions<sup class="cite"><a href="#src-1">[1]</a></sup>:</p>
+<ul>
+<li><strong>The test:</strong> meeting the Phase 1 limit would mean cutting the target ingredient by <strong>more than 20%</strong> of its established content in the product.</li>
+<li><strong>Eligible products:</strong> only products manufactured, imported or traded in the UAE before the effective date. New launches do not qualify.</li>
+<li><strong>The deadline:</strong> apply within <strong>30 days</strong> of the effective date.</li>
+<li><strong>The evidence:</strong> technical data, the <strong>registered nutrition label data</strong>, and test results from an <strong>accredited laboratory</strong>.</li>
+<li><strong>The commitment:</strong> you must still cut the ingredient by <strong>at least 20%</strong> within the Phase 1 period.</li>
+<li><strong>The limit:</strong> an exception does not exempt the product from the limits, and it cannot push compliance past 31 December 2030.</li>
+</ul>
+<h3>Worked example: a flatbread at 520 mg sodium</h3>
+<figure class="viz">
+<div class="viz-title">Hypothetical flatbread, mg sodium per 100 g</div>
+<div class="viz-legend"><span><i class="sw-muted"></i>Current recipe</span><span><i class="sw-accent"></i>Level it must reach</span></div>
+<div class="viz-bars" role="img" aria-label="Flatbread at 520 mg sodium today; 416 mg required within Phase 1 if an exception is granted; Phase 1 cap 384 mg; final cap 320 mg by 31 December 2030">
+<div class="viz-row"><span>Today</span><div class="viz-bar is-muted"><b style="width:90%"></b><em>520 mg</em></div></div>
+<div class="viz-row"><span>With exception<small>20% cut, within Phase 1</small></span><div class="viz-bar"><b style="width:72%"></b><em>416 mg · −20%</em></div></div>
+<div class="viz-row"><span>Phase 1 cap<small>without exception</small></span><div class="viz-bar"><b style="width:66.5%"></b><em>384 mg · −26.2%</em></div></div>
+<div class="viz-row"><span>Final cap<small>by 31 Dec 2030</small></span><div class="viz-bar"><b style="width:55.4%"></b><em>320 mg · −38.5%</em></div></div>
+</div>
+<figcaption>Reaching 384 mg needs a 26.2% cut, more than 20%, so this product passes the exception test. With an exception it must still reach 416 mg in Phase 1, and 320 mg by 2030 either way. Our calculation, using the limits and exception rule in <sup class="cite"><a href="#src-1">[1]</a></sup>.</figcaption>
+</figure>
+<p>The exception buys time in Phase 1. It does not change where the product has to end up. Because the evidence must come from an accredited laboratory, recipe calculations are useful for working out which SKUs are likely to qualify, but they cannot replace the lab report in the application. The announcement also does not say how "established content" is set: from the registered label, a lab result or a product specification. Ask MoHAP before you rely on any one of them.</p>
+<p>Whether you apply for an exception or reformulate straight away, the label on the pack has to match what is inside it, at every step down to the final limit. <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call?utm_source=blog&amp;utm_medium=article&amp;utm_campaign=uae-salt-sugar-fat-limits&amp;utm_content=exception-cta" target="_blank" rel="noopener">Book a call</a> to see how RecipeBuilder turns each revised recipe into a <a href="/food-labeling">UAE-compliant nutrition label</a>, with unlimited change requests included.</p>
+
+<h2>Where Did These Numbers Come From? (Hint: the WHO)</h2>
+<p>The final UAE limits are close to, and in places identical to, the <a href="https://www.who.int/publications/i/item/9789240025097" target="_blank" rel="noopener">WHO global sodium benchmarks for different food categories</a><sup class="cite"><a href="#src-3">[3]</a></sup>, published in May 2021. WHO collected sodium targets from 41 countries, one WHO region and one WHO subregion, and in principle chose the <em>lowest</em> existing national or regional target for each subcategory as the benchmark<sup class="cite"><a href="#src-4">[4]</a></sup>.</p>
+<figure class="viz">
+<div class="viz-title">UAE final limit vs WHO benchmark, mg sodium per 100 g</div>
+<div class="viz-legend"><span><i class="sw-accent"></i>UAE final limit</span><span><i class="sw-muted"></i>WHO benchmark (2021)</span></div>
+<div class="viz-bars" role="img" aria-label="UAE final sodium limits compared with WHO 2021 benchmarks: leavened bread 370 vs 330, flatbreads 320 vs 320, crackers 580 vs 600, nuts and seeds 280 vs 280, pretzels 760 vs 760, chips 470 vs 500, extruded snacks 470 vs 520, spreadable processed cheese 720 vs 720, other processed cheese 1,000 vs 720">
+<div class="viz-row"><span>Leavened bread<small>12% above WHO</small></span><div class="viz-track"><div class="viz-bar"><b style="width:33.3%"></b><em>370</em></div><div class="viz-bar is-muted"><b style="width:29.7%"></b><em>330</em></div></div></div>
+<div class="viz-row"><span>Flatbreads<small>Same as WHO (Qatar target)</small></span><div class="viz-track"><div class="viz-bar"><b style="width:28.8%"></b><em>320</em></div><div class="viz-bar is-muted"><b style="width:28.8%"></b><em>320</em></div></div></div>
+<div class="viz-row"><span>Crackers<small>Stricter than WHO</small></span><div class="viz-track"><div class="viz-bar"><b style="width:52.2%"></b><em>580</em></div><div class="viz-bar is-muted"><b style="width:54%"></b><em>600</em></div></div></div>
+<div class="viz-row"><span>Nuts and seeds<small>Same as WHO</small></span><div class="viz-track"><div class="viz-bar"><b style="width:25.2%"></b><em>280</em></div><div class="viz-bar is-muted"><b style="width:25.2%"></b><em>280</em></div></div></div>
+<div class="viz-row"><span>Pretzels<small>Same as WHO</small></span><div class="viz-track"><div class="viz-bar"><b style="width:68.4%"></b><em>760</em></div><div class="viz-bar is-muted"><b style="width:68.4%"></b><em>760</em></div></div></div>
+<div class="viz-row"><span>Chips<small>Stricter than WHO</small></span><div class="viz-track"><div class="viz-bar"><b style="width:42.3%"></b><em>470</em></div><div class="viz-bar is-muted"><b style="width:45%"></b><em>500</em></div></div></div>
+<div class="viz-row"><span>Extruded snacks<small>Stricter than WHO</small></span><div class="viz-track"><div class="viz-bar"><b style="width:42.3%"></b><em>470</em></div><div class="viz-bar is-muted"><b style="width:46.8%"></b><em>520</em></div></div></div>
+<div class="viz-row"><span>Processed cheese, spreadable<small>Same as WHO</small></span><div class="viz-track"><div class="viz-bar"><b style="width:64.8%"></b><em>720</em></div><div class="viz-bar is-muted"><b style="width:64.8%"></b><em>720</em></div></div></div>
+<div class="viz-row"><span>Processed cheese, other<small>Above WHO</small></span><div class="viz-track"><div class="viz-bar"><b style="width:90%"></b><em>1,000</em></div><div class="viz-bar is-muted"><b style="width:64.8%"></b><em>720</em></div></div></div>
+</div>
+<figcaption>UAE limits from <sup class="cite"><a href="#src-1">[1]</a></sup>; WHO benchmarks and the countries they are based on from <sup class="cite"><a href="#src-3">[3]</a><a href="#src-4">[4]</a></sup>.</figcaption>
+<details>
+<summary>Show as table</summary>
+<div class="table-scroll">
+<table>
+<thead>
+<tr><th>Category</th><th>WHO benchmark (mg sodium / 100 g)</th><th>Country the benchmark is based on</th><th>UAE final limit</th><th>UAE vs WHO</th></tr>
+</thead>
+<tbody>
+<tr><td>Leavened bread</td><td>330</td><td>Hungary</td><td>370</td><td>12% higher than WHO</td></tr>
+<tr><td>Flatbreads</td><td>320</td><td>Qatar</td><td>320</td><td>Same</td></tr>
+<tr><td>Crackers / savoury biscuits</td><td>600</td><td>Paraguay</td><td>580</td><td>Stricter</td></tr>
+<tr><td>Nuts, seeds and kernels</td><td>280</td><td>Colombia</td><td>280</td><td>Same</td></tr>
+<tr><td>Pretzels</td><td>760</td><td>–</td><td>760</td><td>Same</td></tr>
+<tr><td>Potato, vegetable and grain chips</td><td>500</td><td>Australia</td><td>470</td><td>Stricter</td></tr>
+<tr><td>Extruded snacks</td><td>520</td><td>–</td><td>470</td><td>Stricter</td></tr>
+<tr><td>Processed cheese</td><td>720</td><td>United Kingdom</td><td>720 (spreadable) / 1,000 (other)</td><td>Same / higher</td></tr>
+</tbody>
+</table>
+</div>
+</details>
+</figure>
+<p>This tells you two things. First, the targets are not arbitrary: other countries already reach them in real products. Second, the gap between the UAE's Phase 1 caps and its final caps is mainly an on-ramp to an international benchmark. Expect regional and export customers to use the same numbers.</p>
+<p>Within the GCC, Saudi Arabia went first on bread. Since 30 April 2019, SFDA technical regulation SFDA.FD 2362/2018 has limited salt in bread to no more than 1 g per 100 g of finished product<sup class="cite"><a href="#src-9">[9]</a></sup>, which works out to about 400 mg of sodium<sup class="cite"><a href="#src-5">[5]</a></sup>. The UAE's final limits for leavened bread (370 mg) and flat bread (320 mg) are stricter, and they also cover sugar and fat.</p>
+
+<h2>Why the UAE Is Doing This Now</h2>
+<p>The trigger was the evidence. MoHAP's WHO-endorsed National Health and Nutrition Survey 2024–2025 covered 20,000 households and 2,000 people living in workers' accommodation, and was published on 6 January 2026<sup class="cite"><a href="#src-2">[2]</a></sup>.</p>
+<figure class="viz">
+<div class="viz-title">Share of UAE adults, National Health and Nutrition Survey 2024–2025</div>
+<div class="viz-cards viz-cards--3">
+<div class="viz-card"><span class="viz-k">96.2%</span><span class="viz-l">exceed recommended sodium intake</span><div class="viz-meter"><b style="width:96.2%"></b></div></div>
+<div class="viz-card"><span class="viz-k">56.1%</span><span class="viz-l">exceed recommended fat intake</span><div class="viz-meter"><b style="width:56.1%"></b></div></div>
+<div class="viz-card"><span class="viz-k">27.3%</span><span class="viz-l">exceed recommended sugar intake</span><div class="viz-meter"><b style="width:27.3%"></b></div></div>
+<div class="viz-card"><span class="viz-k">25.9%</span><span class="viz-l">have high blood pressure</span><div class="viz-meter"><b style="width:25.9%"></b></div></div>
+<div class="viz-card"><span class="viz-k">22.4%</span><span class="viz-l">are living with obesity</span><div class="viz-meter"><b style="width:22.4%"></b></div></div>
+<div class="viz-card"><span class="viz-k">27.4%</span><span class="viz-l">drink sugar-sweetened beverages daily</span><div class="viz-meter"><b style="width:27.4%"></b></div></div>
+</div>
+<figcaption>Intake figures are for adults aged 18 to 69; health figures for adults 18 and over. The survey also found 54.2% of adults have high cholesterol and 16.1% of children aged 6 to 17 are living with obesity. Source: MoHAP National Health and Nutrition Survey 2024–2025, via WAM <sup class="cite"><a href="#src-2">[2]</a></sup>.</figcaption>
+</figure>
+<p>Health Minister Ahmed Ali Al-Sayegh said the findings "reinforce the importance of prevention, early intervention, and long-term planning."<sup class="cite"><a href="#src-2">[2]</a></sup></p>
+<p>Independent measurement points the same way. A peer-reviewed study of 190 healthy UAE adults measured average sodium excretion of 2,816 mg a day, roughly 7 g of salt, with 65.3% above the WHO limit. Only about 35% of participants recognised Arabic and Iranian breads as high in sodium<sup class="cite"><a href="#src-10">[10]</a></sup>. For comparison, the WHO recommends less than 2,000 mg of sodium (5 g of salt) a day for adults, and estimates that excess sodium was associated with 1.7 million deaths in 2023<sup class="cite"><a href="#src-5">[5]</a></sup>.</p>
+<p>The caps are one part of a wider set of measures:</p>
+<figure class="viz">
+<div class="viz-title">How the measures stack up</div>
+<div class="viz-cards viz-cards--2">
+<div class="viz-card"><span class="viz-tag">1 JAN 2026 · UAE</span><span class="viz-k">Sugar tax tiers</span><span class="viz-l">Sweetened drinks taxed by sugar per 100 ml: AED 1.09/L at 8 g+, AED 0.97/L at 5 to under 8 g, nothing under 5 g<sup class="cite"><a href="#src-7">[7]</a></sup>.</span></div>
+<div class="viz-card"><span class="viz-tag">OCT 2026 · UAE</span><span class="viz-k">Composition caps</span><span class="viz-l">Sodium, total sugars and total fat limits for 10 packaged product lines (this resolution)<sup class="cite"><a href="#src-1">[1]</a></sup>.</span></div>
+<div class="viz-card"><span class="viz-tag">1 JAN 2027 · ABU DHABI</span><span class="viz-k">Shelf placement</span><span class="viz-l">SEHHI "unhealthy" foods out of entrances, aisle ends, checkouts and prominent online spots in stores over 4,000 sq ft<sup class="cite"><a href="#src-8">[8]</a></sup>.</span></div>
+<div class="viz-card"><span class="viz-tag">VOLUNTARY · ABU DHABI</span><span class="viz-k">Nutri-Mark</span><span class="viz-l">A–E front-of-pack grade, separate from the caps. See our <a href="/blog/front-of-pack-nutrition-labels-gcc-guide">Nutri-Mark guide</a>.</span></div>
+</div>
+</figure>
+<p>For a manufacturer, these measures reinforce each other. A lower-sodium, lower-sugar recipe helps you meet the cap, can lower your sugar tax, and can improve your SEHHI and Nutri-Mark position.</p>
+
+<h2>How to Hit the Limits, Category by Category</h2>
+<p>The research is consistent on one point: gradual reduction, tested with consumers at each step, is less risky than one large cut. The WHO lists reformulating foods to contain less salt, and setting target levels for salt in foods, among its most cost-effective "best buy" interventions<sup class="cite"><a href="#src-5">[5]</a></sup>. Here is what the evidence says for each category.</p>
+<figure class="viz">
+<div class="viz-title">First lever to pull, by category</div>
+<div class="viz-cards viz-cards--3">
+<div class="viz-card"><span class="viz-tag">BREAD · Na, sugar, fat</span><span class="viz-l">Step salt down gradually. Sourdough helps recover flavour and shelf life; test potassium chloride in small steps.</span></div>
+<div class="viz-card"><span class="viz-tag">MILK DRINKS · sugar</span><span class="viz-l">Lactose already uses about half the cap. Cut added sugar in steps under 30%, or use Reb A or monk fruit blends.</span></div>
+<div class="viz-card"><span class="viz-tag">YOGHURT, LABAN · sugar</span><span class="viz-l">The milk base is fixed. Work on the sugar in the fruit preparation or syrup.</span></div>
+<div class="viz-card"><span class="viz-tag">SNACKS · Na</span><span class="viz-l">Rebalance the topical seasoning and its application rate. Check nuts and seeds first (280 mg cap).</span></div>
+<div class="viz-card"><span class="viz-tag">CHEESE · Na</span><span class="viz-l">Swap about 15% of the sodium in emulsifying salts for potassium, and run challenge tests.</span></div>
+</div>
+<figcaption>Sources: bread <sup class="cite"><a href="#src-11">[11]</a><a href="#src-12">[12]</a></sup>, dairy <sup class="cite"><a href="#src-13">[13]</a></sup>, processed cheese <sup class="cite"><a href="#src-14">[14]</a></sup>, caps <sup class="cite"><a href="#src-1">[1]</a></sup>.</figcaption>
+</figure>
+
+<h3>Bread: sodium, sugar and fat</h3>
+<p>Salt is not just a flavour in bread. It controls fermentation, strengthens the gluten network, and affects how the dough handles, the loaf volume, shelf life and taste. A review in <em>Critical Reviews in Food Science and Nutrition</em> sets out these technical and quality problems and assesses common ways to replace sodium chloride<sup class="cite"><a href="#src-11">[11]</a></sup>. Adding sourdough is one of the more promising ways to win back flavour and shelf life in reduced-salt bread<sup class="cite"><a href="#src-12">[12]</a></sup>. Salt replacers such as potassium chloride are another option the research assesses<sup class="cite"><a href="#src-11">[11]</a><a href="#src-12">[12]</a></sup>; trial them in small steps with sensory testing. Most plain loaves will mainly need sodium work. The 5 g sugar and 7 g fat caps are more likely to affect enriched products such as milk bread, brioche-style loaves and sweet or flavoured flatbreads.</p>
+
+<h3>Sweetened milk drinks: the lactose trap</h3>
+<p>Plain milk already contains about 4–5 g of sugar per 100 ml, all of it lactose, and commercial chocolate milks range from about 8% to 13% total sugar<sup class="cite"><a href="#src-13">[13]</a></sup>. Because lactose counts toward total sugars, a final cap of 8 g leaves only about 3–4 g per 100 g for added sugar.</p>
+<figure class="viz">
+<div class="viz-title">The lactose trap: sweetened milk drink, total sugars per 100 g</div>
+<div class="viz-legend"><span><i class="sw-muted"></i>Milk's own lactose (≈4.5 g)</span><span><i class="sw-accent"></i>Room left for added sugar</span></div>
+<div class="viz-bars" role="img" aria-label="Phase 1 cap 9.6 g total sugars leaves about 5.1 g for added sugar after about 4.5 g of lactose; final cap 8 g leaves about 3.5 g">
+<div class="viz-row"><span>Phase 1 cap<small>9.6 g total sugars</small></span><div class="viz-stack"><span class="seg-muted" style="width:46.9%">≈4.5 g lactose</span><span class="seg-accent" style="width:53.1%">≈5.1 g added</span></div></div>
+<div class="viz-row"><span>Final cap<small>8 g total sugars</small></span><div class="viz-stack"><span class="seg-muted" style="width:46.9%">≈4.5 g lactose</span><span class="seg-accent" style="width:36.5%">≈3.5 g added</span></div></div>
+</div>
+<figcaption>Plain milk contains about 4–5 g of lactose per 100 ml (midpoint shown). Bars share one scale, so the final-cap bar is shorter. Lactose figure from <sup class="cite"><a href="#src-13">[13]</a></sup>; caps from <sup class="cite"><a href="#src-1">[1]</a></sup>.</figcaption>
+</figure>
+<figure class="viz">
+<div class="viz-title">Sugar-reduction methods with published evidence</div>
+<div class="viz-cards viz-cards--2">
+<div class="viz-card"><span class="viz-k">−12.9%</span><span class="viz-l"><strong>Stealth reduction.</strong> Sucrose cut with no change in liking; cuts under 30% often go unnoticed.</span></div>
+<div class="viz-card"><span class="viz-k">−35%</span><span class="viz-l"><strong>Reb A at 150 ppm.</strong> Same overall liking. Monk fruit and stevia blends also worked.</span></div>
+<div class="viz-card"><span class="viz-k">≈70%</span><span class="viz-l"><strong>Lactose hydrolysis.</strong> Adds sweetness like ~2% sugar, but glucose and galactose still count as total sugars.</span></div>
+<div class="viz-card"><span class="viz-k">Aroma + body</span><span class="viz-l"><strong>Flavour and texture.</strong> Vanilla raises perceived sweetness; starches or gums replace the body sugar gave.</span></div>
+</div>
+<figcaption>Source: Mahato et al., Foods, 2020 <sup class="cite"><a href="#src-13">[13]</a></sup>.</figcaption>
+</figure>
+
+<h3>Flavoured yoghurt and laban</h3>
+<p>The same lactose rule applies<sup class="cite"><a href="#src-6">[6]</a></sup>. Most of the room under the 10 g final cap goes to the milk base, so the sugar in a fruit preparation or syrup is what you can actually change. The industry has started already: Al Ain Farms Group says it has cut added sugar by 10% to 20% in some juices, flavoured milks, flavoured yoghurts and laban, and Arla says it is reformulating products<sup class="cite"><a href="#src-15">[15]</a></sup>.</p>
+
+<h3>Salty snacks: crackers, nuts and seeds, pretzels, chips and extruded snacks</h3>
+<p>Snacks have only sodium limits, and two of them are stricter than the WHO benchmarks (chips and extruded snacks at 470 mg)<sup class="cite"><a href="#src-1">[1]</a><a href="#src-3">[3]</a></sup>. A practical starting point is the seasoning: its blend and its application rate. Then confirm the result on finished-product samples, not just on the formula. Salted nuts and seeds carry the lowest sodium cap in the whole resolution, 280 mg<sup class="cite"><a href="#src-1">[1]</a></sup>, so they have the least room for error.</p>
+
+<h3>Processed cheese: sodium from emulsifying salts</h3>
+<p>In processed cheese, sodium comes from the sodium phosphate and citrate emulsifying salts as well as from added salt. A study in the <em>International Dairy Journal</em> found that replacing 15% of the sodium in phosphate emulsifying salts with potassium kept the viscosity close to the reference and most samples acceptable, while 30% lowered the viscosity slightly<sup class="cite"><a href="#src-14">[14]</a></sup>. Sodium also helps keep processed cheese microbiologically safe, so plan challenge tests alongside sensory work. Group 2's 27-month Phase 1 window<sup class="cite"><a href="#src-1">[1]</a></sup> reflects how hard this category is. Use the time.</p>
+
+<h2>What to Do in the Next 30 Days</h2>
+<p>These steps are in the order that protects your options. Use the exception window and the nine-month clock as your planning horizon.</p>
+<div class="viz-steps">
+<div class="viz-stepcard">
+<h3>1. List every affected SKU, including imports and private label</h3>
+<p>List every SKU in the ten product lines that you make, import, distribute or sell under your own brand, free-zone and private label included. Retailers and distributors should include supplier products.</p>
+</div>
+<div class="viz-stepcard">
+<h3>2. Get a sodium, total sugars and total fat value per 100 g for each SKU</h3>
+<p>Start with registered label data and check it against <a href="/recipe-management">recipe-level nutrition calculations</a>. Send products with no reliable data, or close to a cap, for accredited lab testing. Use total sugars, including lactose<sup class="cite"><a href="#src-6">[6]</a></sup>.</p>
+</div>
+<div class="viz-stepcard">
+<h3>3. Score each SKU against both the Phase 1 and the final limit</h3>
+<p>Sort every SKU into one of three groups, and calculate the percentage cut each red SKU needs:</p>
+<div class="viz-status">
+<span class="st-good"><strong>✓ Green</strong>Already under the final limit. No change needed.</span>
+<span class="st-warn"><strong>! Amber</strong>Under Phase 1, over final. Plan the change before 2030.</span>
+<span class="st-bad"><strong>✕ Red</strong>Over Phase 1. Act now, and check the exception test.</span>
+</div>
+</div>
+<div class="viz-stepcard">
+<h3>4. Decide on exceptions before the 30-day window closes</h3>
+<p>Any red SKU needing more than a 20% cut is a candidate<sup class="cite"><a href="#src-1">[1]</a></sup>. Gather technical data, registered label data and accredited lab results now, and confirm the process and the meaning of "established content" with MoHAP.</p>
+</div>
+<div class="viz-stepcard">
+<h3>5. Reformulate to the final limit, not the Phase 1 limit</h3>
+<p>Phase 1 is only 20% above the final limit<sup class="cite"><a href="#src-1">[1]</a></sup>. Designing straight to the final limit saves a second round of trials, sensory panels, shelf-life studies and label changes.</p>
+</div>
+<div class="viz-stepcard">
+<h3>6. Update labels, registrations and supplier specifications together</h3>
+<p>A new recipe changes the nutrition declaration, sometimes the ingredient list and allergens too. Keep recipe, <a href="/food-labeling">label artwork</a>, <a href="/blog/dubai-municipality-montaji-food-registration">registration data</a> and supplier specs under one change record.</p>
+</div>
+</div>
+
+<h2>Reformulated? Your Label and Registration Data Must Follow</h2>
+<p>The resolution does not add new labelling rules, but it relies on your existing ones. Exception applications must include registered nutrition label data<sup class="cite"><a href="#src-1">[1]</a></sup>, and inspectors will compare products against the limits. Each reformulation therefore sets off a chain:</p>
+<figure class="viz">
+<div class="viz-title">What one recipe change touches</div>
+<div class="viz-flow">
+<div class="viz-node"><strong>Recipe changes</strong>Less salt, sugar or fat.</div>
+<div class="viz-arrow" aria-hidden="true">→</div>
+<div class="viz-node"><strong>Label updates</strong>Nutrition panel, maybe ingredient order. <a href="/blog/uae-food-labeling-requirements-2026">UAE labeling rules</a></div>
+<div class="viz-arrow" aria-hidden="true">→</div>
+<div class="viz-node"><strong>Re-registration</strong>A change in ingredients or composition means registering again in ZAD. <a href="/blog/dubai-municipality-montaji-food-registration">ZAD, FIRS, Montaji</a></div>
+<div class="viz-arrow" aria-hidden="true">→</div>
+<div class="viz-node viz-node--end"><strong>Grade may improve</strong>Recalculate Nutri-Mark if you use it. <a href="/blog/front-of-pack-nutrition-labels-gcc-guide">Nutri-Mark guide</a></div>
+</div>
+</figure>
+
+<h2>What the Official Announcement Doesn't Tell You Yet</h2>
+<p>Several questions remain open as of 21 October 2026. Check each with MoHAP or your local health authority before relying on it:</p>
+<figure class="viz">
+<div class="viz-title">Open questions</div>
+<div class="viz-cards viz-cards--3">
+<div class="viz-card viz-card--q"><span class="viz-tag">? DATES</span><span class="viz-l"><strong>Resolution number and effective date.</strong> Every deadline depends on the effective date.</span></div>
+<div class="viz-card viz-card--q"><span class="viz-tag">? EXCEPTIONS</span><span class="viz-l"><strong>"Established content".</strong> How the baseline for the 20% test is set.</span></div>
+<div class="viz-card viz-card--q"><span class="viz-tag">? PENALTIES</span><span class="viz-l"><strong>Violation schedule.</strong> To be issued by the Cabinet, with implementing decisions from the Minister.</span></div>
+<div class="viz-card viz-card--q"><span class="viz-tag">? DRINKS</span><span class="viz-l"><strong>Per 100 g or 100 ml.</strong> Limits are given per 100 g; drinks are usually labelled per 100 ml.</span></div>
+<div class="viz-card viz-card--q"><span class="viz-tag">? SCOPE</span><span class="viz-l"><strong>Powders, concentrates, unpackaged.</strong> How they are assessed, and whether they are covered.</span></div>
+</div>
+<figcaption>Based on what the WAM announcement <sup class="cite"><a href="#src-1">[1]</a></sup> does and does not state, and a search of the UAE Legislation platform <sup class="cite"><a href="#src-16">[16]</a></sup> on 21 October 2026.</figcaption>
+</figure>
+<p>We will update this guide when the full text and implementing decisions are published.</p>
+
+<h2>How RecipeBuilder Keeps Your Labels Compliant Through Reformulation</h2>
+<p>RecipeBuilder is <a href="/food-labeling">nutrition labeling software</a> for food businesses in the UAE and the wider region. Reformulating to the caps is rarely one change: most products will go through several recipe versions on the way to the final limit, and each one needs a label that matches it. RecipeBuilder builds that label from the recipe itself:</p>
+<figure class="viz">
+<div class="viz-cards viz-cards--2">
+<div class="viz-card"><span class="viz-tag">LABELS</span><span class="viz-l"><strong>Meet UAE requirements.</strong> Bilingual English and Arabic, ingredients by weight, allergens and a nutrition panel, ready for print.</span></div>
+<div class="viz-card"><span class="viz-tag">NUTRITION</span><span class="viz-l"><strong>Calculated from your ingredients.</strong> <a href="/recipe-management">20,000+ USDA FoodData Central ingredients</a> or your own specs. Change the salt, sugar or fat and the label updates.</span></div>
+<div class="viz-card"><span class="viz-tag">SUB-RECIPES</span><span class="viz-l"><strong>Update everywhere.</strong> Change a dough, filling or seasoning blend once, and every product using it follows.</span></div>
+<div class="viz-card"><span class="viz-tag">CHANGES</span><span class="viz-l"><strong>Unlimited change requests.</strong> The Phase 1 relabel, the final-limit relabel and every trial version in between are covered.</span></div>
+</div>
+</figure>
+<p>Evaluating tools? See how RecipeBuilder compares with <a href="/compare/nutrical-alternative">NutriCal</a>, <a href="/compare/food-label-maker-alternative">Food Label Maker</a> and <a href="/compare">other nutrition label software</a>, or check <a href="/#pricing">plans and pricing</a>.</p>
+<p>Keep in mind that for exception applications, the resolution requires test results from an accredited laboratory<sup class="cite"><a href="#src-1">[1]</a></sup>.</p>
+<div class="blog-cta-box">
+<h3>Get UAE-compliant labels for every reformulated product</h3>
+<p>Book a call and we will show you how RecipeBuilder turns your recipes into labels that meet UAE requirements, and how the guarantees work for your product range.</p>
+<ul>
+<li><strong>Guaranteed acceptance</strong></li>
+<li><strong>Unlimited change requests</strong></li>
+<li><strong>Money-back guarantee</strong></li>
+</ul>
+<p><a class="blog-cta-button" href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call?utm_source=blog&amp;utm_medium=article&amp;utm_campaign=uae-salt-sugar-fat-limits&amp;utm_content=product-cta" target="_blank" rel="noopener">Book a call →</a></p>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+
+<figure class="viz">
+<div class="viz-title">Quick answers</div>
+<div class="viz-cards viz-cards--3">
+<div class="viz-card"><span class="viz-tag">IMPORTS, FREE ZONES</span><span class="viz-k">Covered</span><span class="viz-l">Only export-only products are excluded.</span></div>
+<div class="viz-card"><span class="viz-tag">BASIS</span><span class="viz-k">Per 100 g</span><span class="viz-l">Not per serving, for every product line.</span></div>
+<div class="viz-card"><span class="viz-tag">LACTOSE</span><span class="viz-k">Counts</span><span class="viz-l">Limits are for total sugars, not added sugar.</span></div>
+<div class="viz-card"><span class="viz-tag">MAX FINE</span><span class="viz-k">AED 500K</span><span class="viz-l">Plus closure up to 6 months or licence loss.</span></div>
+<div class="viz-card"><span class="viz-tag">OLD STOCK</span><span class="viz-k">1 year</span><span class="viz-l">Or until expiry, if that comes first.</span></div>
+<div class="viz-card"><span class="viz-tag">NUTRI-MARK</span><span class="viz-k">Separate</span><span class="viz-l">Voluntary label; the caps are mandatory.</span></div>
+</div>
+<figcaption>Sources: <sup class="cite"><a href="#src-1">[1]</a></sup>; lactose <sup class="cite"><a href="#src-6">[6]</a><a href="#src-13">[13]</a></sup>.</figcaption>
+</figure>
+<div class="faq-item">
+<h3>What are the UAE's new salt, sugar and fat limits?</h3>
+<p>They are maximum levels of sodium, total sugars and total fat per 100 g, set by a resolution that MoHAP began implementing in October 2026, for leavened and flat bread, sweetened milk drinks, flavoured yoghurt and laban, salted crackers, salted nuts and seeds, pretzels, chips and extruded snacks, and processed cheese. Each product has a Phase 1 limit and a stricter final limit due by 31 December 2030. For example, leavened bread goes from 444 mg to 370 mg of sodium per 100 g.<sup class="cite"><a href="#src-1">[1]</a></sup></p>
+</div>
+<div class="faq-item">
+<h3>Do the limits apply to imported food and free-zone companies?</h3>
+<p>Yes. According to WAM's summary, the resolution covers packaged foods that are made locally or imported, and all food establishments in the UAE that handle them, including free-zone companies. Products made or imported only for export or re-export are excluded unless they are also sold in the UAE.<sup class="cite"><a href="#src-1">[1]</a></sup></p>
+</div>
+<div class="faq-item">
+<h3>Does lactose count toward the sugar limit for milk drinks and yoghurt?</h3>
+<p>The limits are for total sugars, and Codex defines sugars as all monosaccharides and disaccharides present in food, which includes the lactose naturally present in milk. Plain milk already contains about 4 to 5 g of sugar per 100 ml, so the 8 g final cap for sweetened milk drinks leaves only about 3 to 4 g for added sugar.<sup class="cite"><a href="#src-6">[6]</a><a href="#src-13">[13]</a></sup></p>
+</div>
+<div class="faq-item">
+<h3>When do the UAE sodium limits take effect?</h3>
+<p>MoHAP began implementing the resolution on 6 October 2026, but the exact effective date had not been published as of 21 October 2026. Bread, sweetened milk drinks, flavoured yoghurt and laban, and salty snacks must meet Phase 1 limits within 9 months of the effective date. Processed cheese has 2 years and 3 months. All products must meet final limits by 31 December 2030.<sup class="cite"><a href="#src-1">[1]</a></sup></p>
+</div>
+<div class="faq-item">
+<h3>What is the fine for exceeding the UAE salt, sugar and fat limits?</h3>
+<p>Depending on how serious the violation is, the circumstances and whether it is repeated, penalties range from a warning, to an administrative fine of AED 5,000 to AED 500,000, to closure of the establishment for up to six months (renewable), to cancellation of its licence or approval. The Cabinet will issue the detailed list of violations and penalties.<sup class="cite"><a href="#src-1">[1]</a></sup></p>
+</div>
+<div class="faq-item">
+<h3>Can a company get an exception from the limits?</h3>
+<p>Only from the Phase 1 limit, and only for products already on the UAE market before the effective date, where meeting Phase 1 would require cutting the ingredient by more than 20%. The application must be made to MoHAP within 30 days of the effective date, with technical data, registered nutrition label data and accredited laboratory results. The company must still cut the ingredient by at least 20% during Phase 1, and the 31 December 2030 final deadline still applies.<sup class="cite"><a href="#src-1">[1]</a></sup></p>
+</div>
+<div class="faq-item">
+<h3>Can old stock still be sold after the deadlines?</h3>
+<p>Stock manufactured or imported before the resolution takes effect can stay on sale for up to one year from the effective date, or until it expires if that comes first. After that, no product that exceeds the applicable limit may be traded in the UAE.<sup class="cite"><a href="#src-1">[1]</a></sup></p>
+</div>
+<div class="faq-item">
+<h3>Is this the same as Abu Dhabi's Nutri-Mark?</h3>
+<p>No. Nutri-Mark is an Abu Dhabi front-of-pack nutrition grade from A to E that is currently voluntary. The MoHAP resolution applies across the UAE and sets mandatory maximum limits on product composition. A product can comply with the caps and still carry a low Nutri-Mark grade, but reformulating to the caps will often improve the grade. See our <a href="/blog/front-of-pack-nutrition-labels-gcc-guide">Nutri-Mark guide</a>.</p>
+</div>
+
+<h2>Related Resources</h2>
+<div class="viz-links">
+<a href="/blog/uae-food-labeling-requirements-2026"><span>Updating labels after a recipe change?</span><strong>UAE Food Labeling Requirements 2026</strong></a>
+<a href="/blog/dubai-municipality-montaji-food-registration"><span>Need to update registration data?</span><strong>ZAD, FIRS and Montaji explained</strong></a>
+<a href="/blog/front-of-pack-nutrition-labels-gcc-guide"><span>Selling in Abu Dhabi?</span><strong>Abu Dhabi Nutri-Mark guide</strong></a>
+<a href="/compare/nutrical-alternative"><span>Comparing tools?</span><strong>RecipeBuilder vs NutriCal</strong></a>
+<a href="/#pricing"><span>Budgeting for relabelling?</span><strong>RecipeBuilder plans and pricing</strong></a>
+<a href="/food-labeling"><span>Labels from your recipes</span><strong>RecipeBuilder Food Labeling</strong></a>
+</div>
+
+<h2>Sources</h2>
+
+
+<ol class="sources-list">
+<li id="src-1"><a href="https://www.wam.ae/en/article/c2lumyf-mohap-starts-implementing-resolution-setting-caps" target="_blank" rel="noopener">WAM (Emirates News Agency): MoHAP starts implementing resolution setting caps on levels of sodium, sugar, fats in selected food products</a> (6 October 2026)</li>
+<li id="src-2"><a href="https://www.wam.ae/en/article/by3bapo-mohap-releases-national-health-and-nutrition" target="_blank" rel="noopener">WAM (Emirates News Agency): MoHAP releases National Health and Nutrition Survey 2024-2025</a> (6 January 2026)</li>
+<li id="src-3"><a href="https://www.who.int/publications/i/item/9789240025097" target="_blank" rel="noopener">World Health Organization: WHO global sodium benchmarks for different food categories</a> (3 May 2021)</li>
+<li id="src-4"><a href="https://cdn.who.int/media/docs/default-source/nutritionlibrary/events/2021/launch-who-sodium-benchmarks-presentation-5may2021.pdf" target="_blank" rel="noopener">World Health Organization: Launch presentation on the WHO global sodium benchmarks</a> (5 May 2021)</li>
+<li id="src-5"><a href="https://www.who.int/news-room/fact-sheets/detail/salt-reduction" target="_blank" rel="noopener">World Health Organization: Sodium reduction fact sheet</a></li>
+<li id="src-6"><a href="https://www.fao.org/4/Y2770E/y2770e06.htm" target="_blank" rel="noopener">FAO/WHO Codex Alimentarius: Guidelines on Nutrition Labelling (CAC/GL 2-1985)</a></li>
+<li id="src-7"><a href="https://tax.gov.ae/en/taxes/excise.tax/excise.tax.topics/calculating.excise.tax.according.aspx" target="_blank" rel="noopener">UAE Federal Tax Authority: Calculating excise tax for sweetened drinks (tiered-volumetric model)</a></li>
+<li id="src-8"><a href="https://www.mediaoffice.abudhabi/en/economy/healthy-living-and-abu-dhabi-registration-authority-introduce-new-responsible-placement-of-food-and-beverage-policy-for-supermarkets-and-their-online-platforms/" target="_blank" rel="noopener">Abu Dhabi Media Office: Responsible placement of food and beverage policy for supermarkets and their online platforms</a></li>
+<li id="src-9"><a href="https://www.sfda.gov.sa/en/news/sfda-sets-limit-levels-salt-bread-and-obliged-manufacturers-and-importers-abide-such-limit" target="_blank" rel="noopener">Saudi Food and Drug Authority: SFDA sets limit levels of salt in bread</a> (2019)</li>
+<li id="src-10"><a href="https://doi.org/10.1017/S1368980024002015" target="_blank" rel="noopener">Jarrar AH et al. Salt-related knowledge, attitudes and practices and 24-h urinary sodium and potassium excretion in UAE residents. Public Health Nutrition 27(1):e235</a> (2024)</li>
+<li id="src-11"><a href="https://doi.org/10.1080/10408398.2010.502265" target="_blank" rel="noopener">Belz MCE, Ryan LAM, Arendt EK. The impact of salt reduction in bread: a review. Critical Reviews in Food Science and Nutrition 52(6):514–524</a> (2012)</li>
+<li id="src-12"><a href="https://doi.org/10.1016/j.jcs.2016.10.010" target="_blank" rel="noopener">Silow C, Axel C, Zannini E, Arendt EK. Current status of salt reduction in bread and bakery products – a review. Journal of Cereal Science 72:135–145</a> (2016)</li>
+<li id="src-13"><a href="https://doi.org/10.3390/foods9101400" target="_blank" rel="noopener">Mahato DK et al. Sugar reduction in dairy food: an overview with flavoured milk as an example. Foods 9(10):1400</a> (2020)</li>
+<li id="src-14"><a href="https://nofima.com/publication/1678430/" target="_blank" rel="noopener">Mozuraityte R et al. Sodium reduction in processed cheese spreads and the effect on physicochemical properties. International Dairy Journal 90:45–55</a> (2019)</li>
+<li id="src-15"><a href="https://www.thenationalnews.com/news/uae/2026/10/08/uae-salt-sugar-fat-limits/" target="_blank" rel="noopener">The National: UAE drive to cut sugar, salt and fat in food to make healthy choices easier, experts say</a> (8 October 2026)</li>
+<li id="src-16"><a href="https://uaelegislation.gov.ae/en/legislations" target="_blank" rel="noopener">UAE Legislation platform (searched for the resolution text)</a> (checked 21 October 2026)</li>
+</ol>
+`,
+  },
+  {
     slug: "front-of-pack-nutrition-labels-gcc-guide",
     title: "Abu Dhabi Nutri-Mark: Front-of-Pack Label Guide (2026)",
     description:
       "Abu Dhabi's Nutri-Mark explained: A to E grades, the five first-phase categories, how scores are calculated, how to register, and its mandatory status.",
     date: "2026-01-10",
-    updatedDate: "2026-09-14",
+    updatedDate: "2026-10-22",
     category: "Labeling",
     readTime: "10 min read",
     keywords: [
@@ -68,6 +546,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>The A to E Grading Scale</h2>
 <p>QCC describes a graded scale of five letters and colours. According to QCC, the purpose is to distinguish healthier options from less healthy ones within the same product category, and to help producers see how reformulating a product could move it up a grade.</p>
+<p>Reformulation is now also a legal requirement for some products. Since October 2026, a federal MoHAP resolution caps sodium, total sugars and total fat in bread, sweetened milk drinks, flavoured yoghurt and laban, salty snacks and processed cheese. Several of these sit in Nutri-Mark's first-phase categories, so one recipe change can serve both. See our guide to the <a href="/blog/uae-salt-sugar-fat-limits-2026">UAE salt, sugar and fat limits</a>.</p>
 <table>
 <thead>
 <tr><th>Grade</th><th>Colour (per QCC)</th><th>Meaning</th></tr>
@@ -190,7 +669,7 @@ export const blogPosts: BlogPost[] = [
     description:
       "UAE food labeling rules for 2026: UAE.S GSO 9, the Arabic rule, date marking, UAE.S 192:2019 additives, allergens, halal, Nutri-Mark and penalties.",
     date: "2026-01-16",
-    updatedDate: "2026-09-14",
+    updatedDate: "2026-10-22",
     category: "Compliance",
     readTime: "13 min read",
     keywords: [
@@ -298,6 +777,7 @@ export const blogPosts: BlogPost[] = [
 <li>Use gram, mg, µg or IU, and kilocalories for energy.</li>
 </ul>
 <p>Nutrition and health claims are governed by UAE.S GSO 2333:2019 and the Codex general guidelines on claims. Claims are not permitted on foods for infants and young children unless a specific standard allows them, and health claims must be supported by evidence. The UAE's traffic-light front-of-pack standard, UAE.S 5034:2018, was changed from mandatory to voluntary by the UAE Cabinet in December 2021.</p>
+<p>Separately from labelling, a MoHAP resolution implemented from October 2026 now caps sodium, total sugars and total fat per 100 g in bread, sweetened milk drinks, flavoured yoghurt and laban, salty snacks and processed cheese, with final limits due by 31 December 2030. Any reformulation to meet those caps changes the nutrition declaration above. See our guide to the <a href="/blog/uae-salt-sugar-fat-limits-2026">UAE salt, sugar and fat limits</a>.</p>
 
 <h2>Abu Dhabi's Nutri-Mark</h2>
 <p>Nutri-Mark is a front-of-pack nutrition grade launched by the <strong>Abu Dhabi Quality and Conformity Council (ADQCC)</strong> and the <strong>Abu Dhabi Public Health Centre (ADPHC)</strong>. It is not an ESMA or MoIAT scheme. Announced in November 2024, it grades products from A (highest nutritional value) to E (lowest), each with its own colour.</p>
@@ -402,7 +882,7 @@ export const blogPosts: BlogPost[] = [
     description:
       "How food product registration works in Dubai: the ZAD, FIRS and ZADI portals, label assessment, risk-based lab testing, and where Montaji fits.",
     date: "2026-01-16",
-    updatedDate: "2026-09-14",
+    updatedDate: "2026-10-22",
     category: "Compliance",
     readTime: "9 min read",
     keywords: [
@@ -451,7 +931,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
 <li><strong>Importers</strong> register each food item before applying for an import request. USDA guidance for exporters notes that registration is done by the UAE importer, so overseas manufacturers usually work through their importer or distributor.</li>
 <li><strong>Local manufacturers</strong> register food they produce in the UAE, just as importers do.</li>
-<li><strong>Anyone changing a registered product</strong> must register again if the label, ingredients or composition change.</li>
+<li><strong>Anyone changing a registered product</strong> must register again if the label, ingredients or composition change. That includes products reformulated to meet the new <a href="/blog/uae-salt-sugar-fat-limits-2026">UAE salt, sugar and fat limits</a>.</li>
 <li><strong>Re-exporters in Dubai</strong> need label approval for consignments meant for re-export as well as those meant for local sale. Dubai Municipality runs a separate service for approving the release of food imported for re-export.</li>
 </ul>
 <p>Two points often catch businesses out: a 100 g and a 200 g pack of the same product are separate food items that must each be registered, and a label changed after approval (packaging, weight, text or barcode) needs a new assessment.</p>

@@ -8,7 +8,7 @@ import { comparePages } from "@/data/compare-content";
 // lastmod entirely as an untrustworthy signal.
 const ROUTE_LAST_MODIFIED: Record<string, string> = {
   "/": "2026-09-14",
-  "/blog": "2026-09-14",
+  "/blog": "2026-10-22",
   "/compare": "2026-09-14",
   "/about": "2026-09-14",
   "/food-labeling": "2026-09-14",
