@@ -86,12 +86,15 @@ function ctaText(el: Element): string {
   return text.slice(0, 100);
 }
 
+function pickUtms(params: URLSearchParams): Record<string, string> {
+  return Object.fromEntries(
+    UTM_KEYS.filter((key) => params.get(key)).map((key) => [key, params.get(key)!])
+  );
+}
+
 function rememberUtms() {
   try {
-    const params = new URLSearchParams(window.location.search);
-    const utms = Object.fromEntries(
-      UTM_KEYS.filter((key) => params.get(key)).map((key) => [key, params.get(key)])
-    );
+    const utms = pickUtms(new URLSearchParams(window.location.search));
     if (Object.keys(utms).length > 0) {
       sessionStorage.setItem(UTM_STORAGE_KEY, JSON.stringify(utms));
     }
@@ -108,12 +111,53 @@ function storedUtms(): Record<string, string> {
   }
 }
 
+// UTMs on the link itself (blog CTAs set utm_content), overridden by the ones
+// the visitor landed with, which carry the ad attribution.
+function bookingConfig(href: string): Record<string, string> {
+  let linkUtms: Record<string, string> = {};
+  try {
+    linkUtms = pickUtms(new URL(href).searchParams);
+  } catch {
+    // Malformed href: book without the link's UTMs.
+  }
+  return { layout: "month_view", ...linkUtms, ...storedUtms() };
+}
+
+// How long a click made before embed.js has loaded waits for the popup
+// before cal.com is opened directly instead.
+const CAL_LOAD_TIMEOUT_MS = 4000;
+
 // Module-level so React Strict Mode's double effect run in development
 // can't register the cal.com listener twice or double-count a booking.
 let calInitialized = false;
 let calReady = false;
+let calFailed = false;
+let pendingHref: string | null = null;
+let pendingTimer: number | undefined;
 let lastCta: { location: string; text: string } | null = null;
 const trackedBookings = new Set<string>();
+
+function openPopup(href: string) {
+  window.Cal?.ns?.[CAL_NAMESPACE]?.("modal", {
+    calLink: CAL_LINK,
+    config: bookingConfig(href),
+  });
+}
+
+// Fallback when the popup can't load. A delayed window.open can be stopped
+// by popup blockers, so then this tab goes to cal.com instead.
+function openCalDirectly(href: string) {
+  const win = window.open(href, "_blank");
+  if (win) win.opener = null;
+  else window.location.assign(href);
+}
+
+function takePendingHref(): string | null {
+  const href = pendingHref;
+  pendingHref = null;
+  window.clearTimeout(pendingTimer);
+  return href;
+}
 
 function onBookingSuccess(e: BookingSuccessEvent) {
   const uid = e.detail?.data?.uid ?? null;
@@ -140,11 +184,19 @@ function setupCal() {
   api("ui", { hideEventTypeDetails: false, layout: "month_view" });
   api("on", { action: "bookingSuccessfulV2", callback: onBookingSuccess });
 
-  document
-    .querySelector<HTMLScriptElement>(`script[src="${CAL_EMBED_SRC}"]`)
-    ?.addEventListener("load", () => {
-      calReady = true;
-    });
+  const script = document.querySelector<HTMLScriptElement>(
+    `script[src="${CAL_EMBED_SRC}"]`
+  );
+  script?.addEventListener("load", () => {
+    calReady = true;
+    const href = takePendingHref();
+    if (href) openPopup(href);
+  });
+  script?.addEventListener("error", () => {
+    calFailed = true;
+    const href = takePendingHref();
+    if (href) openCalDirectly(href);
+  });
 }
 
 function onClick(e: MouseEvent) {
@@ -166,14 +218,21 @@ function onClick(e: MouseEvent) {
 
     const plainClick =
       e.button === 0 && !e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey;
-    const api = window.Cal?.ns?.[CAL_NAMESPACE];
-    if (calReady && plainClick && api && !e.defaultPrevented) {
-      e.preventDefault();
-      api("modal", {
-        calLink: CAL_LINK,
-        config: { layout: "month_view", ...storedUtms() },
-      });
+    if (!plainClick || e.defaultPrevented || calFailed) return;
+    e.preventDefault();
+    if (calReady) {
+      openPopup(href);
+      return;
     }
+    // Clicked before embed.js loaded (or before it started loading): open
+    // the popup once it loads rather than losing the booking to a new tab.
+    setupCal();
+    window.clearTimeout(pendingTimer);
+    pendingHref = href;
+    pendingTimer = window.setTimeout(() => {
+      const pending = takePendingHref();
+      if (pending) openCalDirectly(pending);
+    }, CAL_LOAD_TIMEOUT_MS);
     return;
   }
 
@@ -194,8 +253,9 @@ function onClick(e: MouseEvent) {
 }
 
 // Opens the booking page in a cal.com popup instead of a new tab, so the
-// booking can be measured on recipebuilder.co. Until the embed script has
-// loaded (or if it is blocked), links keep their normal new-tab behaviour.
+// booking can be measured on recipebuilder.co. A click that lands before the
+// embed script has loaded waits for it; if the script is blocked or too slow,
+// cal.com opens directly as the link would normally.
 export default function BookingTracker() {
   useEffect(() => {
     rememberUtms();
