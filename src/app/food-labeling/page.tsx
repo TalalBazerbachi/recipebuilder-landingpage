@@ -3,6 +3,7 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TrustPillars from "@/components/TrustPillars";
+import { guarantee, GUARANTEE_ANCHOR } from "@/data/guarantee";
 import {
   ArrowRight,
   FileText,
@@ -19,6 +20,10 @@ import {
   Calculator,
   PieChart,
   Dumbbell,
+  BadgeCheck,
+  RefreshCw,
+  XCircle,
+  Mail,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -165,6 +170,15 @@ export default function FoodLabelingPage() {
                   Explore All Features
                 </a>
               </div>
+
+              <a
+                href={`#${GUARANTEE_ANCHOR}`}
+                className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-primary-dark hover:text-primary transition-colors"
+              >
+                <BadgeCheck className="w-4 h-4 shrink-0" />
+                Approved by {guarantee.authority} or your money back. See the
+                terms
+              </a>
             </div>
 
             {/* Stats bar */}
@@ -352,6 +366,112 @@ export default function FoodLabelingPage() {
                     </li>
                   ))}
                 </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Approval Guarantee: the ads promise this, so its full terms live here */}
+        <section id={GUARANTEE_ANCHOR} className="py-24 scroll-mt-20 bg-primary-light/40">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <span className="text-sm font-semibold text-primary uppercase tracking-wider">
+                Our Guarantee
+              </span>
+              <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-foreground">
+                {guarantee.name}
+              </h2>
+              <p className="mt-4 text-lg text-text leading-relaxed">
+                {guarantee.summary}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-white rounded-2xl border border-border p-8">
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center shrink-0">
+                    <RefreshCw className="w-5 h-5 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">
+                    What you get
+                  </h3>
+                </div>
+                <ul className="space-y-3">
+                  {guarantee.promises.map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+                      <span className="text-text leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-2xl border border-border p-8">
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center shrink-0">
+                    <ShieldCheck className="w-5 h-5 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">
+                    Conditions
+                  </h3>
+                </div>
+                <ul className="space-y-3">
+                  {guarantee.conditions.map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+                      <span className="text-text leading-relaxed text-sm">
+                        {item}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-2xl border border-border p-8">
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-10 h-10 bg-surface rounded-lg flex items-center justify-center shrink-0">
+                    <XCircle className="w-5 h-5 text-text" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">
+                    Not covered
+                  </h3>
+                </div>
+                <ul className="space-y-3">
+                  {guarantee.exclusions.map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <XCircle className="w-5 h-5 text-text-light mt-0.5 shrink-0" />
+                      <span className="text-text leading-relaxed text-sm">
+                        {item}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-2xl border border-border p-8">
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center shrink-0">
+                    <Mail className="w-5 h-5 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">
+                    How to claim
+                  </h3>
+                </div>
+                <p className="text-text leading-relaxed text-sm">
+                  {guarantee.claim}
+                </p>
+                <p className="mt-4 text-text leading-relaxed text-sm">
+                  Approval decisions rest with {guarantee.authority}.
+                  RecipeBuilder is not affiliated with {guarantee.authority}.
+                  Full terms are in Section 7 of our{" "}
+                  <a
+                    href={`/terms-of-service#${GUARANTEE_ANCHOR}`}
+                    className="font-semibold text-primary-dark hover:text-primary"
+                  >
+                    Terms of Service
+                  </a>
+                  .
+                </p>
               </div>
             </div>
           </div>

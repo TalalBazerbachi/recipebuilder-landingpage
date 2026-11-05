@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { guarantee, GUARANTEE_ANCHOR } from "@/data/guarantee";
 
 export const metadata: Metadata = {
   title: "Terms of Service | RecipeBuilder",
@@ -25,7 +26,7 @@ export default function TermsOfService() {
             Terms of Service
           </h1>
           <p className="text-text mb-10">
-            Updated: January 2026
+            Updated: November 2026
           </p>
 
           <div className="prose prose-slate max-w-none space-y-8 text-text leading-relaxed">
@@ -162,7 +163,8 @@ export default function TermsOfService() {
                     RecipeBuilder is a tool to assist with label generation, not
                     a regulatory authority.
                   </strong>{" "}
-                  We do not guarantee that labels generated through the Platform
+                  Except as set out in the Approval Guarantee in Section 7, we
+                  do not guarantee that labels generated through the Platform
                   meet all applicable regulatory requirements in every
                   jurisdiction.
                 </li>
@@ -206,15 +208,58 @@ export default function TermsOfService() {
                 </li>
               </ul>
               <p className="mt-3">
-                Subscription fees are non-refundable unless otherwise stated. We
-                reserve the right to change pricing with reasonable advance
-                notice.
+                Subscription fees are non-refundable, except as provided under
+                the Approval Guarantee in Section 7. We reserve the right to
+                change pricing with reasonable advance notice.
+              </p>
+            </section>
+
+            <section id={GUARANTEE_ANCHOR} className="scroll-mt-28">
+              <h2 className="text-xl font-semibold text-foreground mt-10 mb-4">
+                7. Approval Guarantee ({guarantee.name})
+              </h2>
+              <p>
+                This guarantee applies to labels submitted to{" "}
+                {guarantee.authority} for food product label assessment.
+              </p>
+              <h3 className="font-semibold text-foreground mt-5 mb-2">
+                What we provide
+              </h3>
+              <ul className="list-disc pl-6 space-y-2">
+                {guarantee.promises.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+              <h3 className="font-semibold text-foreground mt-5 mb-2">
+                Conditions
+              </h3>
+              <ul className="list-disc pl-6 space-y-2">
+                {guarantee.conditions.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+              <h3 className="font-semibold text-foreground mt-5 mb-2">
+                Not covered
+              </h3>
+              <ul className="list-disc pl-6 space-y-2">
+                {guarantee.exclusions.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+              <h3 className="font-semibold text-foreground mt-5 mb-2">
+                How to claim
+              </h3>
+              <p>{guarantee.claim}</p>
+              <p className="mt-3">
+                Approval decisions rest with {guarantee.authority}. RecipeBuilder
+                is not affiliated with {guarantee.authority} and does not submit
+                applications on your behalf.
               </p>
             </section>
 
             <section>
               <h2 className="text-xl font-semibold text-foreground mt-10 mb-4">
-                7. Intellectual Property
+                8. Intellectual Property
               </h2>
               <p>
                 The RecipeBuilder platform, including its design, code, features,
@@ -227,7 +272,7 @@ export default function TermsOfService() {
 
             <section>
               <h2 className="text-xl font-semibold text-foreground mt-10 mb-4">
-                8. Limitation of Liability
+                9. Limitation of Liability
               </h2>
               <p>
                 To the fullest extent permitted by law, ByteBeam shall not be
@@ -245,7 +290,7 @@ export default function TermsOfService() {
 
             <section>
               <h2 className="text-xl font-semibold text-foreground mt-10 mb-4">
-                9. Disclaimers
+                10. Disclaimers
               </h2>
               <p>
                 RecipeBuilder is provided on an &quot;as is&quot; and &quot;as
@@ -263,7 +308,7 @@ export default function TermsOfService() {
 
             <section>
               <h2 className="text-xl font-semibold text-foreground mt-10 mb-4">
-                10. Termination
+                11. Termination
               </h2>
               <p>
                 We may terminate or suspend your access to RecipeBuilder at any
@@ -276,7 +321,7 @@ export default function TermsOfService() {
 
             <section>
               <h2 className="text-xl font-semibold text-foreground mt-10 mb-4">
-                11. Governing Law
+                12. Governing Law
               </h2>
               <p>
                 These Terms shall be governed by and construed in accordance
@@ -288,7 +333,7 @@ export default function TermsOfService() {
 
             <section>
               <h2 className="text-xl font-semibold text-foreground mt-10 mb-4">
-                12. Changes to These Terms
+                13. Changes to These Terms
               </h2>
               <p>
                 We reserve the right to update these Terms at any time. Changes
@@ -300,7 +345,7 @@ export default function TermsOfService() {
 
             <section>
               <h2 className="text-xl font-semibold text-foreground mt-10 mb-4">
-                13. Contact Us
+                14. Contact Us
               </h2>
               <p>
                 If you have any questions about these Terms, please contact us:
@@ -315,7 +360,7 @@ export default function TermsOfService() {
             </section>
 
             <p className="text-sm text-text-light mt-10 border-t border-border pt-6">
-              Last Updated: January 2026
+              Last Updated: November 2026
             </p>
           </div>
         </div>
