@@ -81,9 +81,8 @@ export const blogPosts: BlogPost[] = [
 <h3>Every recipe you reformulate needs a new nutrition label</h3>
 <p>Cut the salt, sugar or fat and the nutrition panel on the pack changes with it, often the ingredient list too. RecipeBuilder produces <a href="/food-labeling">nutrition labels that meet UAE requirements</a> straight from your recipes, so your packs match your new formulas before the Phase 1 deadline.</p>
 <ul>
-<li><strong>Guaranteed acceptance</strong> of your labels</li>
+<li><strong>Approved by Dubai Municipality or your money back</strong> (<a href="/food-labeling#approval-guarantee">see the terms</a>)</li>
 <li><strong>Unlimited change requests</strong>, so every reformulation round is covered</li>
-<li><strong>Money-back guarantee</strong></li>
 </ul>
 <p><a class="blog-cta-button" href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call?utm_source=blog&amp;utm_medium=article&amp;utm_campaign=uae-salt-sugar-fat-limits&amp;utm_content=top-cta" target="_blank" rel="noopener">Book a call →</a> <a href="/#product-demo">or see the product demo first</a></p>
 </div>
@@ -414,11 +413,10 @@ export const blogPosts: BlogPost[] = [
 <p>Keep in mind that for exception applications, the resolution requires test results from an accredited laboratory<sup class="cite"><a href="#src-1">[1]</a></sup>.</p>
 <div class="blog-cta-box">
 <h3>Get UAE-compliant labels for every reformulated product</h3>
-<p>Book a call and we will show you how RecipeBuilder turns your recipes into labels that meet UAE requirements, and how the guarantees work for your product range.</p>
+<p>Book a call and we will show you how RecipeBuilder turns your recipes into labels that meet UAE requirements, and how the guarantee works for your product range.</p>
 <ul>
-<li><strong>Guaranteed acceptance</strong></li>
+<li><strong>Approved by Dubai Municipality or your money back</strong> (<a href="/food-labeling#approval-guarantee">see the terms</a>)</li>
 <li><strong>Unlimited change requests</strong></li>
-<li><strong>Money-back guarantee</strong></li>
 </ul>
 <p><a class="blog-cta-button" href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call?utm_source=blog&amp;utm_medium=article&amp;utm_campaign=uae-salt-sugar-fat-limits&amp;utm_content=product-cta" target="_blank" rel="noopener">Book a call →</a></p>
 </div>
@@ -850,7 +848,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>How RecipeBuilder Helps With Label Preparation</h2>
 <p>Many label errors start in the recipe: an ingredient that moved after reformulation, an allergen inside a sub-recipe, or an Arabic panel that no longer matches the English. RecipeBuilder keeps the recipe as the single source for label content. It supports label preparation; it does not replace assessment by UAE authorities.</p>
-<div class="blog-cta-box"><h3>Turn recipes into UAE-ready label content</h3><p>RecipeBuilder generates ingredient lists ordered by weight, calculates nutrition from USDA FoodData Central data, builds allergen declarations from your ingredients and sub-recipes, and produces bilingual English/Arabic label content, print-ready packaging artwork, barcodes and QR codes. <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">Book a call</a> to see how it fits your UAE labeling workflow.</p></div>
+<div class="blog-cta-box"><h3>Turn recipes into UAE-ready label content</h3><p>RecipeBuilder generates ingredient lists ordered by weight, calculates nutrition from USDA FoodData Central data, builds allergen declarations from your ingredients and sub-recipes, and produces bilingual English/Arabic label content, print-ready packaging artwork, barcodes and QR codes.</p><p><strong>Approved by Dubai Municipality or your money back.</strong> If Dubai Municipality rejects a label made in RecipeBuilder, we revise it based on the reviewer's feedback until it is approved. If it still isn't approved, we refund your subscription (<a href="/food-labeling#approval-guarantee">see the terms</a>).</p><p><a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">Book a call</a> to see how it fits your UAE labeling workflow.</p></div>
 
 <h2>Frequently Asked Questions</h2>
 <h3>Does a UAE food label have to be in both Arabic and English?</h3>
@@ -1008,7 +1006,9 @@ export const blogPosts: BlogPost[] = [
 
 <div class="blog-cta-box">
 <h3>Get your label content right before registration</h3>
-<p>RecipeBuilder builds ingredient lists ordered by weight from your recipes, calculates nutrition values using USDA FoodData Central data, generates allergen declarations, and produces bilingual English and Arabic label content. It also exports print-ready packaging artwork and barcodes, so the label you upload for assessment matches the data behind it. <a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">Book a call</a> to see how it fits your product registration workflow.</p>
+<p>RecipeBuilder builds ingredient lists ordered by weight from your recipes, calculates nutrition values using USDA FoodData Central data, generates allergen declarations, and produces bilingual English and Arabic label content. It also exports print-ready packaging artwork and barcodes, so the label you upload for assessment matches the data behind it.</p>
+<p><strong>Approved by Dubai Municipality or your money back.</strong> If Dubai Municipality rejects a label made in RecipeBuilder, we revise it based on the reviewer's feedback until it is approved. If it still isn't approved, we refund your subscription (<a href="/food-labeling#approval-guarantee">see the terms</a>).</p>
+<p><a href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call">Book a call</a> to see how it fits your product registration workflow.</p>
 </div>
 
 <h2>Frequently Asked Questions</h2>
