@@ -34,6 +34,449 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "arabic-food-label-requirements",
+    title: "Arabic Food Label Requirements 2026: UAE and Saudi Rules",
+    description:
+      "Arabic is mandatory on UAE and Saudi food labels; English is optional. Exact Arabic wording, sticker and date rules, and the errors regulators flag most.",
+    date: "2026-11-10",
+    category: "Compliance",
+    readTime: "19 min read",
+    heroImage: {
+      src: "/blog/arabic-food-label-requirements.png",
+      alt: "Arabic food label requirements: an English nutrition facts label behind an Arabic label headed الحقائق التغذوية, with an Arabic ingredients and allergen sticker and a green approval check",
+      width: 1600,
+      height: 840,
+    },
+    keywords: [
+      "arabic food label",
+      "arabic food label requirements",
+      "food labels in arabic",
+      "arabic nutrition facts",
+      "SFDA nutrition label",
+      "SFDA food labeling",
+      "Saudi food label requirements",
+      "arabic sticker food label",
+      "GSO 9:2022",
+      "GCC allergen labelling",
+      "GCC food labelling regulations",
+      "UAE food labeling requirements",
+    ],
+    content: `
+<p>Arabic is the mandatory language for food labels in both the UAE and Saudi Arabia. English is optional, but anything printed in another language must say exactly what the Arabic says<sup class="cite"><a href="#src-1">[1]</a><a href="#src-5">[5]</a></sup>. Imported packs can carry a single Arabic sticker instead of a reprint, but production and expiry dates can never go on it, and Saudi Arabia wants the sticker designed and printed by the manufacturer<sup class="cite"><a href="#src-2">[2]</a><a href="#src-3">[3]</a><a href="#src-12">[12]</a></sup>.</p>
+<p>The Arabic is also where labels most often go wrong. The Saudi Food and Drug Authority (SFDA) puts Arabic text that doesn't match the English first on its own list of the most common label errors, followed by nutrition facts missing in Arabic<sup class="cite"><a href="#src-11">[11]</a></sup>. This guide compares the UAE and Saudi rules side by side, gives the Arabic wording used in official templates, and lists the mistakes regulators flag most. Every rule links to the regulator's own document.</p>
+
+<div class="key-takeaways">
+<h3>Key Takeaways</h3>
+<ul>
+<li><strong>Arabic is mandatory and English is optional.</strong> Under GSO 9, the Gulf labelling standard both countries apply, text in any other language must be identical to the Arabic.<sup class="cite"><a href="#src-1">[1]</a><a href="#src-5">[5]</a></sup></li>
+<li><strong>One Arabic sticker, and no dates on it.</strong> Imported packs may carry a single sticker, but production and expiry dates must be printed on the original pack.<sup class="cite"><a href="#src-2">[2]</a><a href="#src-3">[3]</a><a href="#src-12">[12]</a></sup></li>
+<li><strong>Saudi Arabia is stricter about who applies the sticker.</strong> It must be designed and printed by the manufacturer, and SFDA stopped accepting stickers applied by export houses in 2010.<sup class="cite"><a href="#src-12">[12]</a><a href="#src-13">[13]</a></sup></li>
+<li><strong>Western digits are accepted, and there is no minimum font size.</strong> Abu Dhabi's labelling code allows 1, 2, 3 or <span lang="ar" dir="rtl">١، ٢، ٣</span>, and SFDA's own nutrition template uses Western digits.<sup class="cite"><a href="#src-2">[2]</a><a href="#src-15">[15]</a></sup></li>
+<li><strong>14 allergen groups, declared in Arabic.</strong> The statement starts <span lang="ar" dir="rtl">يحتوي على</span> ("contains"). Saudi Arabia applies the new GCC allergen regulation, GSO 2810:2025, from SFDA's approval in December 2025.<sup class="cite"><a href="#src-9">[9]</a><a href="#src-16">[16]</a></sup></li>
+<li><strong>A new nutrition labelling regulation applies in Saudi Arabia from 1 January 2028.</strong> Every change to the panel has to be made in the Arabic first.<sup class="cite"><a href="#src-9">[9]</a></sup></li>
+</ul>
+</div>
+
+<div class="blog-cta-box">
+<h3>Need Arabic labels that match your English, line for line?</h3>
+<p>RecipeBuilder generates <a href="/food-labeling">bilingual English and Arabic food labels</a> from a single recipe. The ingredient list, allergens, nutrition facts and storage text come from the same data in both languages, so when the recipe changes, both languages change with it.</p>
+<ul>
+<li><strong>Approved by Dubai Municipality or your money back</strong> (<a href="/food-labeling#approval-guarantee">see the terms</a>)</li>
+<li><strong>Unlimited change requests</strong>, so every recipe and pack change is covered</li>
+</ul>
+<p><a class="blog-cta-button" href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call?utm_source=blog&amp;utm_medium=article&amp;utm_campaign=arabic-food-label-requirements&amp;utm_content=top-cta" target="_blank" rel="noopener">Book a call →</a> <a href="/#product-demo">or see the product demo first</a></p>
+</div>
+
+<h2>Does a Food Label Have to Be in Arabic in the UAE and Saudi Arabia?</h2>
+<p>Yes. Both countries apply GSO 9, the Gulf Cooperation Council (GCC) standard for labelling prepackaged food. SFDA quotes its language clause in full: "Labelling and adjoining explanatory statements shall be in Arabic and, where another language is used, it shall be alongside the Arabic. All the information provided in another language shall be identical with those written in Arabic."<sup class="cite"><a href="#src-5">[5]</a></sup> Dubai Municipality puts it more simply: "The mandatory language is Arabic and English is optional."<sup class="cite"><a href="#src-1">[1]</a></sup></p>
+<div class="table-scroll">
+<table>
+<thead><tr><th>Market</th><th>What the regulator says</th></tr></thead>
+<tbody>
+<tr><td>Dubai</td><td>Dubai Municipality: "The mandatory language is Arabic and English is optional."<sup class="cite"><a href="#src-1">[1]</a></sup></td></tr>
+<tr><td>Abu Dhabi</td><td>The Abu Dhabi Agriculture and Food Safety Authority (ADAFSA): "All information displayed on the label of foods shall be labelled in Arabic." Other languages are allowed "but only in addition to Arabic."<sup class="cite"><a href="#src-2">[2]</a></sup></td></tr>
+<tr><td>Sharjah</td><td>Sharjah City Municipality: all data in other languages must be identical to the data written in Arabic.<sup class="cite"><a href="#src-27">[27]</a></sup></td></tr>
+<tr><td>Saudi Arabia</td><td>SFDA applies the same GSO 9 clause, as SFDA.FD/GSO 9: Arabic, with any other language alongside it and identical to it.<sup class="cite"><a href="#src-5">[5]</a></sup></td></tr>
+</tbody>
+</table>
+</div>
+<p>Treat the Arabic as the master text and the English as its translation. The current Gulf edition, GSO 9:2022, lists Arabic as its reference language<sup class="cite"><a href="#src-6">[6]</a></sup>, and every rule in the table is about the other languages matching the Arabic, not the other way round. If your team writes the English first and translates it at the end, check the Arabic against it line by line before you submit.</p>
+<h3>When is an English-only label accepted?</h3>
+<p>Only for food that doesn't reach a shopper in its own pack, plus one small-pack exception in Abu Dhabi:</p>
+<ul>
+<li><strong>Abu Dhabi:</strong> food for manufacturing or repacking, food for large caterers that reprocess it, food for special patient groups, food for re-export, and packs whose largest surface is under 10 cm². Items that caterers pass on to consumers still need Arabic.<sup class="cite"><a href="#src-2">[2]</a></sup></li>
+<li><strong>Saudi Arabia:</strong> food imported for manufacturing in licensed Saudi factories, or for restaurant kitchens that process it before serving. The importer files a commitment on SFDA's Fasah platform, and the exception "does not include products displayed on the consumer's table, such as sauces and flavourings".<sup class="cite"><a href="#src-10">[10]</a></sup></li>
+</ul>
+<p>Apart from Abu Dhabi's tiny-pack rule, there is no English-only route for retail packs in either country.</p>
+
+<h2>What Must Appear in Arabic on a Food Label?</h2>
+<p>Everything that is mandatory. Abu Dhabi's code says "all information" on the label must be in Arabic<sup class="cite"><a href="#src-2">[2]</a></sup>, and GSO 9's "identical" rule means anything you print in English needs its Arabic equivalent. The table lists the mandatory items with the Arabic headings used in SFDA's draft labelling regulation and its nutrition label guide.</p>
+<div class="table-scroll">
+<table>
+<thead><tr><th>Item</th><th>Arabic heading</th><th>What to check</th></tr></thead>
+<tbody>
+<tr><td>Name of the food</td><td>No heading. The name itself, in Arabic.</td><td>It must say what the product is. SFDA lists a product name that doesn't describe the nature of the product among its most common errors.<sup class="cite"><a href="#src-11">[11]</a></sup></td></tr>
+<tr><td>Ingredients</td><td lang="ar" dir="rtl">قائمة المكونات</td><td>In descending order by weight<sup class="cite"><a href="#src-1">[1]</a></sup>, with the same ingredients in the same order as the English.</td></tr>
+<tr><td>Additives</td><td>The class name, such as <span lang="ar" dir="rtl">مستحلب</span> (emulsifier) or <span lang="ar" dir="rtl">مادة حافظة</span> (preservative)</td><td>The additive class is a mandatory item in the UAE.<sup class="cite"><a href="#src-3">[3]</a><a href="#src-19">[19]</a></sup></td></tr>
+<tr><td>Allergen statement</td><td lang="ar" dir="rtl">يحتوي على / قد يحتوي على</td><td>"Contains" and "may contain". See the allergen section below.<sup class="cite"><a href="#src-16">[16]</a></sup></td></tr>
+<tr><td>Nutrition facts</td><td lang="ar" dir="rtl">الحقائق التغذوية</td><td>Every line in Arabic, including serving size and % daily value.<sup class="cite"><a href="#src-11">[11]</a><a href="#src-15">[15]</a></sup></td></tr>
+<tr><td>Net contents</td><td lang="ar" dir="rtl">صافي المحتويات / الوزن الصافي</td><td>A missing net weight is on SFDA's common-errors list.<sup class="cite"><a href="#src-11">[11]</a><a href="#src-19">[19]</a></sup></td></tr>
+<tr><td>Name and address</td><td lang="ar" dir="rtl">الاسم والعنوان</td><td>Of the manufacturer or packer. In Saudi Arabia, the importer named on the pack must match the documents submitted.<sup class="cite"><a href="#src-3">[3]</a><a href="#src-11">[11]</a></sup></td></tr>
+<tr><td>Country of origin</td><td lang="ar" dir="rtl">بلد المنشأ</td><td>Required in both countries.<sup class="cite"><a href="#src-1">[1]</a><a href="#src-11">[11]</a></sup></td></tr>
+<tr><td>Production and expiry dates</td><td lang="ar" dir="rtl">تاريخ الإنتاج / تاريخ انتهاء الصلاحية</td><td>Printed on the pack itself, never on a sticker.<sup class="cite"><a href="#src-3">[3]</a><a href="#src-12">[12]</a></sup></td></tr>
+<tr><td>Storage conditions</td><td lang="ar" dir="rtl">الشروط الخاصة بالتخزين</td><td>For example, <span lang="ar" dir="rtl">يحفظ في مكان بارد وجاف</span> ("store in a cool, dry place").<sup class="cite"><a href="#src-19">[19]</a></sup></td></tr>
+<tr><td>Directions for use</td><td lang="ar" dir="rtl">التعليمات الخاصة باستخدام المنتج</td><td>Where the product needs them.<sup class="cite"><a href="#src-3">[3]</a><a href="#src-19">[19]</a></sup></td></tr>
+<tr><td>Lot or batch</td><td lang="ar" dir="rtl">رمز دفعة الإنتاج (رقم التشغيلة)</td><td>In code or another indelible mark.<sup class="cite"><a href="#src-3">[3]</a><a href="#src-19">[19]</a></sup></td></tr>
+</tbody>
+</table>
+</div>
+<p>Dubai Municipality also requires a brand name for UAE-made products<sup class="cite"><a href="#src-1">[1]</a></sup>. Some guidance gives a shorter minimum for an Arabic sticker: product name, ingredients, country of origin and, where they apply, storage conditions, instructions for use and nutrition information<sup class="cite"><a href="#src-4">[4]</a></sup>. Abu Dhabi asks for all information in Arabic, so translating every mandatory item meets both.</p>
+<figure class="viz viz-figure">
+<div class="viz-title">Example of a bilingual Arabic and English food label</div>
+<a href="/blog/arabic-food-label-example.png" target="_blank" rel="noopener"><img src="/blog/arabic-food-label-example.png" alt="Example bilingual food label for a date and oat bar, with English on the left and Arabic on the right. Seven numbered callouts mark the Arabic product name, the ingredients in descending order with allergens in bold, the Arabic allergen statement, a nutrition facts panel using SFDA's Arabic terms, the net weight in grams, storage, origin and manufacturer details, and production and expiry dates printed once on the pack." width="1600" height="1180" loading="lazy" decoding="async"></a>
+<figcaption>An illustrative label for a made-up product, not approved artwork. The Arabic terms follow SFDA's nutrition label guide and the GCC allergen regulation's published draft<sup class="cite"><a href="#src-15">[15]</a><a href="#src-16">[16]</a></sup>. The layout rules come from Dubai Municipality, ADAFSA and USDA guidance<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a><a href="#src-3">[3]</a></sup>. <a href="/blog/arabic-food-label-example.png" target="_blank" rel="noopener">Open the full-size image</a>.</figcaption>
+</figure>
+
+<h2>Can You Use an Arabic Sticker Instead of Reprinting the Label?</h2>
+<p>Yes, on imported products, as long as it is a single sticker that hides nothing required, doesn't contradict the original label and can't come off in normal handling. Production and expiry dates must stay on the original pack<sup class="cite"><a href="#src-2">[2]</a><a href="#src-3">[3]</a><a href="#src-11">[11]</a><a href="#src-12">[12]</a></sup>. The UAE and Saudi Arabia differ on who applies the sticker, and when.</p>
+<div class="table-scroll">
+<table>
+<thead><tr><th>Rule</th><th>Dubai (USDA guidance)</th><th>Abu Dhabi (ADAFSA)</th><th>Saudi Arabia (SFDA)</th></tr></thead>
+<tbody>
+<tr><td>How many</td><td>A single sticker<sup class="cite"><a href="#src-3">[3]</a></sup></td><td>One additional sticker<sup class="cite"><a href="#src-2">[2]</a></sup></td><td>A single sticker<sup class="cite"><a href="#src-12">[12]</a></sup></td></tr>
+<tr><td>Who applies it, and where</td><td>Before export. USDA says it "cannot be completed upon entry".<sup class="cite"><a href="#src-3">[3]</a></sup></td><td>The manufacturer, producer, packer or importer. If applied in the UAE, it is under ADAFSA's control and supervision.<sup class="cite"><a href="#src-2">[2]</a></sup></td><td>The manufacturer. The sticker must be "designed and printed" by them.<sup class="cite"><a href="#src-12">[12]</a></sup></td></tr>
+<tr><td>Approval</td><td>"approved by UAE authorities prior to use", as part of label assessment<sup class="cite"><a href="#src-3">[3]</a></sup></td><td>Must be complete and accurate, and must not contradict the original label<sup class="cite"><a href="#src-2">[2]</a></sup></td><td>Must not hide required information, contradict the original label or come off easily<sup class="cite"><a href="#src-11">[11]</a></sup></td></tr>
+<tr><td>Dates on the sticker</td><td>Not accepted<sup class="cite"><a href="#src-3">[3]</a></sup></td><td>Not allowed. Dates stay on the original label.<sup class="cite"><a href="#src-2">[2]</a></sup></td><td>Not allowed<sup class="cite"><a href="#src-12">[12]</a></sup></td></tr>
+</tbody>
+</table>
+</div>
+<p>Three details catch exporters out:</p>
+<ul>
+<li><strong>"Before export" comes from US government guidance, not UAE law.</strong> USDA's UAE report says stickering "must be a single sticker performed prior to export and cannot be completed upon entry"<sup class="cite"><a href="#src-3">[3]</a></sup>. Abu Dhabi's own code lets the importer apply it in the UAE under ADAFSA supervision<sup class="cite"><a href="#src-2">[2]</a></sup>. The plan that works in both emirates is for the manufacturer to apply the approved sticker before the goods ship.</li>
+<li><strong>The sticker can't cover the label's original language.</strong> In Abu Dhabi it may cover other languages, but not the one the label was first printed in. ADAFSA's example is a UK product labelled in English, German, Chinese and Italian: the sticker can go over anything except the English. On multipacks, the Arabic goes on the units sold to consumers.<sup class="cite"><a href="#src-2">[2]</a></sup></li>
+<li><strong>Saudi Arabia's written rule is stricter than its practice.</strong> In 2010, SFDA circular E/991 stopped accepting stickers applied by export houses or consolidators and told port laboratories to reject shipments that didn't comply<sup class="cite"><a href="#src-13">[13]</a></sup>. USDA's 2025 Saudi reports say consolidators still apply Arabic stickers in practice<sup class="cite"><a href="#src-12">[12]</a><a href="#src-14">[14]</a></sup>. Don't build an export plan on that. The rule is a sticker designed and printed by the manufacturer.</li>
+</ul>
+
+<h2>How Should Dates and Numbers Be Written on GCC Food Labels?</h2>
+<p>Write dates day/month/year when the shelf life is three months or less. Longer shelf lives can use month/year. Print one set of dates on the original pack, in Western or Arabic-Indic digits, and never on a sticker<sup class="cite"><a href="#src-2">[2]</a><a href="#src-3">[3]</a><a href="#src-12">[12]</a></sup>.</p>
+<div class="table-scroll">
+<table>
+<thead><tr><th>Rule</th><th>UAE</th><th>Saudi Arabia</th></tr></thead>
+<tbody>
+<tr><td>Shelf life of 3 months or less</td><td>Day/month/year<sup class="cite"><a href="#src-3">[3]</a></sup></td><td>Day/month/year<sup class="cite"><a href="#src-12">[12]</a></sup></td></tr>
+<tr><td>Shelf life over 3 months</td><td>Day/month/year or month/year. With month/year, the last day of the month is the expiry date, and "both 3/2013 and March 2013 are acceptable".<sup class="cite"><a href="#src-3">[3]</a></sup></td><td>Month/year<sup class="cite"><a href="#src-12">[12]</a></sup></td></tr>
+<tr><td>Where dates go</td><td>Printed, embossed or stamped in indelible ink on the original label or primary pack. "Dates printed only on the stickers are not accepted."<sup class="cite"><a href="#src-3">[3]</a></sup></td><td>"engraved or in relief and printed by stamp with permanent ink directly on all packages, or on their original label by the producer"<sup class="cite"><a href="#src-12">[12]</a></sup></td></tr>
+<tr><td>How many sets</td><td>One set of production and expiry dates<sup class="cite"><a href="#src-3">[3]</a></sup></td><td>"There may not be more than one date of production or expiration on the same package."<sup class="cite"><a href="#src-12">[12]</a></sup></td></tr>
+<tr><td>Products with no set expiry</td><td>Follow the shelf-life standards, UAE.S 150-1 (mandatory) and 150-2 (voluntary)<sup class="cite"><a href="#src-1">[1]</a></sup></td><td>Salt, spices and milled rice show only a production date<sup class="cite"><a href="#src-12">[12]</a></sup></td></tr>
+<tr><td>Digits</td><td>"Arabic or Indian Numerals" are both accepted: 1, 2, 3 or <span lang="ar" dir="rtl">١، ٢، ٣</span><sup class="cite"><a href="#src-2">[2]</a></sup></td><td>SFDA's own Arabic nutrition template uses Western digits<sup class="cite"><a href="#src-15">[15]</a></sup></td></tr>
+</tbody>
+</table>
+</div>
+<p>A few more rules sit around the dates:</p>
+<ul>
+<li><strong>Use Gregorian dates.</strong> In Abu Dhabi, a Hijri date is allowed only in addition, and months may be written in letters in Arabic or English.<sup class="cite"><a href="#src-2">[2]</a></sup></li>
+<li><strong>Show a production date unless your product is on the voluntary shelf-life list.</strong> USDA lists production and expiry dates for products with a mandatory shelf life<sup class="cite"><a href="#src-3">[3]</a></sup>, and UAE.S 150-1 sets shelf lives that are "mandatory and cannot be changed"<sup class="cite"><a href="#src-1">[1]</a></sup>. A missing production date is also on SFDA's common-errors list<sup class="cite"><a href="#src-11">[11]</a></sup>.</li>
+<li><strong>Use an accepted expiry phrase in Saudi Arabia.</strong> USDA lists "Expiration Date", "Use by", "Fit for (from the day of production)", "Use Before" and, for food with an expiry over three months, "Sell by date"<sup class="cite"><a href="#src-12">[12]</a></sup>. The usual Arabic headings are <span lang="ar" dir="rtl">تاريخ انتهاء الصلاحية</span> (expiry date) and <span lang="ar" dir="rtl">يفضل استخدامه قبل</span> (best before)<sup class="cite"><a href="#src-19">[19]</a></sup>.</li>
+<li><strong>There is no minimum font size.</strong> ADAFSA states: "There is no prescribed font or text size under the legislation." Text must still be clear and legible.<sup class="cite"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h2>What Does an Arabic Nutrition Facts Panel Look Like?</h2>
+<p>In Saudi Arabia, the panel follows SFDA's template, headed <span lang="ar" dir="rtl">الحقائق التغذوية</span> (Nutrition Facts). It covers calories, fats, cholesterol, sodium, carbohydrates, sugars including added sugars, and protein, with % daily value based on a 2,000-calorie diet<sup class="cite"><a href="#src-15">[15]</a></sup>. It has been mandatory since 1 April 2021 under SFDA.FD/GSO 2233, including the added sugar line<sup class="cite"><a href="#src-12">[12]</a></sup>. In the UAE, nutrition information is part of Dubai Municipality's basic label information<sup class="cite"><a href="#src-1">[1]</a></sup>.</p>
+<p>These are the Arabic terms on SFDA's template, with the wording in the draft of the updated GSO 2233 regulation where it differs:</p>
+<div class="table-scroll">
+<table>
+<thead><tr><th>English</th><th>Arabic on SFDA's template</th><th>Regulation wording, if different</th></tr></thead>
+<tbody>
+<tr><td>Nutrition Facts</td><td lang="ar" dir="rtl">الحقائق التغذوية</td><td></td></tr>
+<tr><td>Servings per container</td><td lang="ar" dir="rtl">عدد الحصص في العبوة</td><td></td></tr>
+<tr><td>Serving size</td><td lang="ar" dir="rtl">حجم الحصة</td><td></td></tr>
+<tr><td>Amount per serving</td><td lang="ar" dir="rtl">الكمية لكل حصة غذائية</td><td></td></tr>
+<tr><td>Calories</td><td lang="ar" dir="rtl">السعرات الحرارية</td><td lang="ar" dir="rtl">الطاقة</td></tr>
+<tr><td>% Daily Value</td><td lang="ar" dir="rtl">نسبة الاحتياج اليومي %</td><td></td></tr>
+<tr><td>Total fat</td><td lang="ar" dir="rtl">الدهون الكلية</td><td lang="ar" dir="rtl">المحتوى الكلي للدهن</td></tr>
+<tr><td>Saturated fat</td><td lang="ar" dir="rtl">دهون مشبعة</td><td lang="ar" dir="rtl">أحماض دهنية مشبعة</td></tr>
+<tr><td>Trans fat</td><td lang="ar" dir="rtl">دهون متحولة</td><td lang="ar" dir="rtl">أحماض دهنية متحولة</td></tr>
+<tr><td>Cholesterol</td><td lang="ar" dir="rtl">كوليسترول</td><td></td></tr>
+<tr><td>Sodium</td><td lang="ar" dir="rtl">صوديوم</td><td>Salt: <span lang="ar" dir="rtl">الملح</span></td></tr>
+<tr><td>Total carbohydrate</td><td lang="ar" dir="rtl">الكربوهيدرات الكلية</td><td lang="ar" dir="rtl">مجموع الكربوهيدرات</td></tr>
+<tr><td>Dietary fibre</td><td lang="ar" dir="rtl">الألياف الغذائية</td><td lang="ar" dir="rtl">ألياف غذائية</td></tr>
+<tr><td>Total sugars</td><td lang="ar" dir="rtl">سكريات كلية</td><td lang="ar" dir="rtl">المجموع الكلي للسكريات</td></tr>
+<tr><td>Includes 10 g added sugars</td><td lang="ar" dir="rtl">يتضمن 10 غرامات سكر مضاف</td><td lang="ar" dir="rtl">السكر المضاف</td></tr>
+<tr><td>Protein</td><td lang="ar" dir="rtl">بروتين</td><td></td></tr>
+</tbody>
+</table>
+</div>
+<p>Sources: SFDA's nutrition label guide<sup class="cite"><a href="#src-15">[15]</a></sup> and the GSO 2233 draft published for consultation<sup class="cite"><a href="#src-29">[29]</a></sup>. The template's footnote reads <span lang="ar" dir="rtl">تدل على نسبة الاحتياج اليومي للمغذيات في الحصة الواحدة مبنية على نظام غذائي محتوي على 2000 سعرة حرارية</span>, meaning the % daily value of each nutrient in a serving is based on a 2,000-calorie diet.<sup class="cite"><a href="#src-15">[15]</a></sup></p>
+<p>To calculate % daily value, SFDA's guide uses these daily amounts: total carbohydrate 260 g, dietary fibre 28 g, total sugars 90 g, added sugar 50 g, total fat 70 g, saturated fat 20 g, cholesterol 300 mg and protein 50 g<sup class="cite"><a href="#src-15">[15]</a></sup>. The GSO 2233 draft adds salt at 5 g and sodium at 2,000 mg<sup class="cite"><a href="#src-29">[29]</a></sup>.</p>
+<p>Three Saudi rules decide whether you need a panel at all, and what goes on the front:</p>
+<ul>
+<li><strong>Single-ingredient foods can skip the panel.</strong> SFDA gives rice, tea, coffee and sugar as examples<sup class="cite"><a href="#src-20">[20]</a></sup>.</li>
+<li><strong>Add a second ingredient and the panel is back.</strong> SFDA's own example of a common error is coffee with 2% mastic sold without a nutrition table<sup class="cite"><a href="#src-11">[11]</a></sup>.</li>
+<li><strong>Front-of-pack traffic lights are voluntary.</strong> Saudi Arabia postponed the mandatory version indefinitely and withdrew its WTO notification in June 2022<sup class="cite"><a href="#src-12">[12]</a></sup>.</li>
+</ul>
+<p>For front-of-pack grades in the UAE, see our <a href="/blog/front-of-pack-nutrition-labels-gcc-guide">Nutri-Mark and GCC front-of-pack guide</a>. If you sell bread, dairy drinks, yoghurt, snacks or processed cheese in the UAE, check the new <a href="/blog/uae-salt-sugar-fat-limits-2026">UAE salt, sugar and fat limits</a> too. A reformulation changes the panel in both languages.</p>
+
+<h2>How Do You Declare Allergens in Arabic?</h2>
+<p>Name the allergen in Arabic in a statement that starts <span lang="ar" dir="rtl">يحتوي على</span> ("contains"). Use <span lang="ar" dir="rtl">قد يحتوي على</span> ("may contain") for cross-contact. The GCC allergen regulation, GSO 2810:2025, covers 14 groups<sup class="cite"><a href="#src-16">[16]</a><a href="#src-17">[17]</a></sup>. Saudi Arabia applies it from SFDA's board approval in December 2025, replacing its national allergen regulation<sup class="cite"><a href="#src-9">[9]</a></sup>. GSO sells the final text in Arabic only, so the wording below comes from the published draft<sup class="cite"><a href="#src-16">[16]</a></sup>.</p>
+<div class="table-scroll">
+<table>
+<thead><tr><th>#</th><th>Allergen group</th><th>Arabic wording in the draft</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Cereals containing gluten, such as wheat, barley, oats and rye</td><td lang="ar" dir="rtl">الحبوب التي تحتوي على مادة الجلوتين مثل القمح والشعير والشوفان والشيلم والدخن</td></tr>
+<tr><td>2</td><td>Crustaceans</td><td lang="ar" dir="rtl">القشريات</td></tr>
+<tr><td>3</td><td>Eggs</td><td lang="ar" dir="rtl">البيض</td></tr>
+<tr><td>4</td><td>Fish</td><td lang="ar" dir="rtl">الأسماك</td></tr>
+<tr><td>5</td><td>Peanuts</td><td lang="ar" dir="rtl">الفول السوداني</td></tr>
+<tr><td>6</td><td>Tree nuts: almond, hazelnut, walnut, Brazil nut, cashew, pecan, macadamia, pistachio</td><td lang="ar" dir="rtl">المكسرات (اللوز، البندق، الجوز، الجوز البرازيلي، الكاجو، جوز البيكان، جوز المكاداميا، الفستق)</td></tr>
+<tr><td>7</td><td>Milk and milk products, including lactose</td><td lang="ar" dir="rtl">الحليب ومنتجاته (بما فيها اللاكتوز)</td></tr>
+<tr><td>8</td><td>Sulphites at 10 ppm or more</td><td lang="ar" dir="rtl">الكبريتيت بتركيز (10) جزء في المليون أو أكثر</td></tr>
+<tr><td>9</td><td>Celery</td><td lang="ar" dir="rtl">الكرفس</td></tr>
+<tr><td>10</td><td>Mustard</td><td lang="ar" dir="rtl">الخردل</td></tr>
+<tr><td>11</td><td>Sesame</td><td lang="ar" dir="rtl">بذور السمسم</td></tr>
+<tr><td>12</td><td>Molluscs</td><td lang="ar" dir="rtl">الرخويات</td></tr>
+<tr><td>13</td><td>Lupin</td><td lang="ar" dir="rtl">اللوبين (الترمس)</td></tr>
+<tr><td>14</td><td>Soybeans</td><td lang="ar" dir="rtl">فول الصويا</td></tr>
+</tbody>
+</table>
+</div>
+<p>The draft also sets how the statement is written<sup class="cite"><a href="#src-16">[16]</a></sup>:</p>
+<ul>
+<li><strong>Name the source every time.</strong> For example, <span lang="ar" dir="rtl">توفو (صويا)</span> for tofu (soy) and <span lang="ar" dir="rtl">طحينة (سمسم)</span> for tahini (sesame).</li>
+<li><strong>Emphasise allergens in the ingredient list</strong> with bold, colour or underlining.</li>
+<li><strong>Symbols only with words.</strong> An allergen icon can't stand on its own.</li>
+<li><strong>Translations can't differ from the Arabic.</strong> Any other language must not differ from the Arabic wording.</li>
+<li><strong>Online sales count.</strong> Online shops and delivery apps must show allergens before checkout.</li>
+</ul>
+<p>The 14 groups line up with the European Union's 14 allergen groups<sup class="cite"><a href="#src-28">[28]</a></sup>. A label built for Europe has the right list to start from, but the Arabic wording still has to match the table above.</p>
+
+<h2>Which Label Errors Do Saudi and UAE Regulators Flag Most?</h2>
+<p>Mismatched Arabic and English, and nutrition information missing in Arabic. Both head SFDA's own list of the most common food label errors, published in Arabic in its 2021 guide to correcting violations<sup class="cite"><a href="#src-11">[11]</a></sup>. Here is the list in full, with an English translation:</p>
+<div class="table-scroll">
+<table>
+<thead><tr><th>#</th><th>SFDA's wording</th><th>In English</th></tr></thead>
+<tbody>
+<tr><td>1</td><td lang="ar" dir="rtl">عدم تتطابق البيانات باللغة العربية مع البيانات باللغة الإنجليزية</td><td>The Arabic text doesn't match the English text</td></tr>
+<tr><td>2</td><td lang="ar" dir="rtl">عدم ذكر البيانات التغذوية باللغة العربية</td><td>Nutrition information not given in Arabic</td></tr>
+<tr><td>3</td><td lang="ar" dir="rtl">عدم وجود حقائق تغذوية باللغة العربية على المنتج</td><td>No Arabic nutrition facts on the product</td></tr>
+<tr><td>4</td><td lang="ar" dir="rtl">عدم ذكر نسبة الاحتياج اليومي وحجم الحصة والكمية لكل حصة باللغة العربية</td><td>% daily value, serving size and amount per serving not in Arabic</td></tr>
+<tr><td>5</td><td lang="ar" dir="rtl">عدم تحديد كمية الدهون المتحولة</td><td>Trans fat amount not stated</td></tr>
+<tr><td>6</td><td lang="ar" dir="rtl">عدم إضافة جدول الحقائق التغذوية للمنتجات التي تحتوي على أكثر من مكون</td><td>No nutrition table on a product with more than one ingredient</td></tr>
+<tr><td>7</td><td lang="ar" dir="rtl">أسم الصنف لا يعبر عن طبيعة المنتج</td><td>The product name doesn't describe the nature of the product</td></tr>
+<tr><td>8</td><td lang="ar" dir="rtl">عدم ذكر الوزن الصافي</td><td>Net weight missing</td></tr>
+<tr><td>9</td><td lang="ar" dir="rtl">عدم ذكر بلد منشأ الصنع أو الانتاج</td><td>Country of origin missing</td></tr>
+<tr><td>10</td><td lang="ar" dir="rtl">عدم إضافة تاريخ الإنتاج على المنتجات</td><td>Production date missing</td></tr>
+<tr><td>11</td><td lang="ar" dir="rtl">أن يتم إضافة تاريخ الصلاحية على الكرتون الخارجي للمنتج فقط ولا يتم اضافته على اصغر وحدة بيع</td><td>Expiry date only on the outer carton, not on the smallest unit sold</td></tr>
+<tr><td>12</td><td lang="ar" dir="rtl">اسم المستورد المدون على المنتج يختلف عن اسم المستورد المذكور في المستندات المقدمة</td><td>The importer's name on the pack differs from the documents submitted</td></tr>
+<tr><td>13</td><td lang="ar" dir="rtl">استخدام شعار حلال أو علامات الجودة أو منتج عضوي بدون تقديم ما يثبت صحة هذا الادعاء</td><td>A halal, quality or organic logo used without proof</td></tr>
+<tr><td>14</td><td>The <span lang="ar" dir="rtl">يحتوي على</span> or <span lang="ar" dir="rtl">قد يحتوي على</span> statement</td><td>Missing "contains" or "may contain" allergen statement</td></tr>
+</tbody>
+</table>
+</div>
+<p>Source: SFDA, <span lang="ar" dir="rtl">تصويب مخالفات المواد الغذائية</span> ("Correcting food product violations"), October 2021<sup class="cite"><a href="#src-11">[11]</a></sup>. Our translation. The same guide lists the accepted ways to correct a label: laser printing, a hard-to-remove sticker or a sewn-on label, applied without affecting the product's safety or appearance.</p>
+<h3>Mistranslations regulators have named</h3>
+<ul>
+<li><strong>Trans fat translated as "unsaturated fat".</strong> Bahrain's Ministry of Health lists this in its table of common label mistakes: trans fat "mentioned in Arabic as unsaturated fats" (<span lang="ar" dir="rtl">دهون غير مشبعة</span>) "is considered an incorrect translation"<sup class="cite"><a href="#src-18">[18]</a></sup>. The right term is <span lang="ar" dir="rtl">أحماض دهنية متحولة</span>, or <span lang="ar" dir="rtl">دهون متحولة</span> as on SFDA's panel<sup class="cite"><a href="#src-15">[15]</a></sup>. The mistake turns the least healthy fat on the panel into what reads like a healthy one.</li>
+<li><strong>Cholesterol listed under carbohydrates.</strong> The same table flags it. Cholesterol belongs with the fats.<sup class="cite"><a href="#src-18">[18]</a></sup></li>
+<li><strong>"Incorrect translation from English to Arabic" in general.</strong> The ministry's fix: "The translation must be correct, all the information provided in different language shall be identical, with avoiding spelling mistakes."<sup class="cite"><a href="#src-18">[18]</a></sup></li>
+<li><strong>Additive functions turned around.</strong> One SFDA consultation draft gives "foaming agent" as <span lang="ar" dir="rtl">مانع الرغوة</span>, which means anti-foaming agent<sup class="cite"><a href="#src-19">[19]</a></sup>. If a regulator's draft can slip, so can machine translation. Use the official terms in this guide.</li>
+</ul>
+<h3>What gets a label rejected in the UAE</h3>
+<ul>
+<li><strong>Data that doesn't match the label.</strong> Dubai Municipality wants product details entered "exactly as mentioned in label", and says "Unclear image and incomplete information will always be reason of rejection."<sup class="cite"><a href="#src-1">[1]</a></sup> See our guide to <a href="/blog/dubai-municipality-montaji-food-registration">Dubai food registration on ZAD, FIRS and Montaji</a> for where the data goes.</li>
+<li><strong>An ingredient found in testing but missing from the label.</strong> For first-time registrations in Dubai, "the food item will be rejected"<sup class="cite"><a href="#src-3">[3]</a></sup>.</li>
+<li><strong>Dates only on the sticker.</strong> Not accepted<sup class="cite"><a href="#src-3">[3]</a></sup>.</li>
+<li><strong>A non-compliant label at the border.</strong> ADAFSA lists it as a ground for rejecting a consignment in Abu Dhabi<sup class="cite"><a href="#src-25">[25]</a></sup>.</li>
+</ul>
+<p>The consequences go beyond a resubmission. In Saudi Arabia, rejected products "have to be re-exported or destroyed domestically under SFDA's supervision"<sup class="cite"><a href="#src-12">[12]</a></sup>. In the UAE, Federal Law No. 10 of 2015 sets a fine of AED 10,000 to AED 100,000 for trading food that violates technical regulations<sup class="cite"><a href="#src-24">[24]</a></sup>. Our <a href="/blog/uae-food-labeling-requirements-2026">UAE food labeling requirements guide</a> covers the full penalty table.</p>
+<h3>How to keep the Arabic and English in sync</h3>
+<div class="viz-steps">
+<div class="viz-stepcard">
+<h3>1. Generate both languages from the recipe, not from the English artwork</h3>
+<p>If the Arabic is translated from finished English artwork, every later edit has to be made twice. Build both from the same recipe data: ingredients by weight, allergens and nutrition values.</p>
+</div>
+<div class="viz-stepcard">
+<h3>2. Use the official Arabic terms</h3>
+<p>Take nutrition panel terms from SFDA's template and allergen names from the GCC regulation, as in the tables above<sup class="cite"><a href="#src-15">[15]</a><a href="#src-16">[16]</a></sup>. Have a food-literate Arabic speaker review anything new.</p>
+</div>
+<div class="viz-stepcard">
+<h3>3. Check every line in both languages before you submit</h3>
+<p>Every ingredient, allergen, percentage and number must appear in both languages, in the same order. That covers SFDA's top four errors<sup class="cite"><a href="#src-11">[11]</a></sup>.</p>
+</div>
+<div class="viz-stepcard">
+<h3>4. Match the label to your registration data</h3>
+<p>Product name, importer, pack size and ingredients must match what you register in Dubai's systems or SFDA's Ghad platform<sup class="cite"><a href="#src-1">[1]</a><a href="#src-10">[10]</a><a href="#src-11">[11]</a></sup>.</p>
+</div>
+<div class="viz-stepcard">
+<h3>5. Redo the label every time the recipe or pack changes</h3>
+<p>In Dubai, a new ingredient, colour or flavour means the product "should be asses[sed] again"<sup class="cite"><a href="#src-1">[1]</a></sup>, an amended label needs a reassessment, and each pack size is a separate item<sup class="cite"><a href="#src-3">[3]</a></sup>. In Saudi Arabia, a change of formulation or label means registering the product again<sup class="cite"><a href="#src-12">[12]</a></sup>.</p>
+</div>
+</div>
+
+<h2>What Are the GCC Food Labelling Regulations in 2026?</h2>
+<p>Labels in both countries rest on three Gulf standards: GSO 9 for general labelling, GSO 2233 for nutrition labelling and GSO 2810 for allergens. Saudi Arabia adopts each one as an SFDA regulation with its own start date, and the UAE adopts them as UAE.S standards.</p>
+<div class="table-scroll">
+<table>
+<thead><tr><th>Regulation</th><th>Covers</th><th>Saudi Arabia</th><th>UAE</th></tr></thead>
+<tbody>
+<tr><td>GSO 9:2022</td><td>General labelling: language, stickers, dates</td><td>In force as SFDA.FD GSO 9:2022 since 1 January 2025<sup class="cite"><a href="#src-8">[8]</a></sup></td><td>Dubai Municipality and USDA still cite UAE.S GSO 9:2019<sup class="cite"><a href="#src-1">[1]</a><a href="#src-3">[3]</a></sup></td></tr>
+<tr><td>GSO 9:2022/Amd1:2025</td><td>QR and other electronic codes, in addition to the printed label only</td><td>From approval, December 2025<sup class="cite"><a href="#src-7">[7]</a><a href="#src-9">[9]</a></sup></td><td>No adoption date found</td></tr>
+<tr><td>GSO 2233</td><td>Nutrition labelling</td><td>Mandatory since 1 April 2021. The 2025 edition applies from 1 January 2028.<sup class="cite"><a href="#src-9">[9]</a><a href="#src-12">[12]</a><a href="#src-26">[26]</a></sup></td><td>No start date found for the 2025 edition</td></tr>
+<tr><td>GSO 2810:2025</td><td>Allergen declaration, 14 groups</td><td>From approval, December 2025<sup class="cite"><a href="#src-9">[9]</a></sup></td><td>No start date found</td></tr>
+<tr><td>SFDA.FD 2333:2025</td><td>Health and nutrition claims</td><td>From 1 January 2028<sup class="cite"><a href="#src-21">[21]</a></sup></td><td>Not applicable</td></tr>
+<tr><td>SFDA.FD 5036:2026</td><td>Food sold in online stores</td><td>From 1 July 2027<sup class="cite"><a href="#src-22">[22]</a></sup></td><td>Not applicable</td></tr>
+</tbody>
+</table>
+</div>
+<figure class="viz">
+<div class="viz-title">Saudi label rule dates, 2021 to 2028</div>
+<div class="viz-timeline">
+<div class="viz-tl"><time>1 Apr 2021</time><span><strong>Nutrition panel mandatory</strong>SFDA.FD/GSO 2233, including added sugar.</span></div>
+<div class="viz-tl"><time>1 Jan 2025</time><span><strong>SFDA.FD GSO 9:2022 applies</strong>It replaces the 2013 edition.</span></div>
+<div class="viz-tl is-key"><time>Dec 2025</time><span><strong>Allergens and electronic codes</strong>GSO 2810:2025 (14 groups) and the GSO 9 amendment apply from SFDA's approval.</span></div>
+<div class="viz-tl"><time>1 Jul 2027</time><span><strong>Online store rules</strong>SFDA.FD 5036:2026 for food sold online.</span></div>
+<div class="viz-tl is-key"><time>1 Jan 2028</time><span><strong>New nutrition panel and claims rules</strong>GSO 2233:2025 and SFDA.FD 2333:2025.</span></div>
+</div>
+<figcaption>Sources: SFDA board decisions and USDA's 2025 Saudi report <sup class="cite"><a href="#src-8">[8]</a><a href="#src-9">[9]</a><a href="#src-12">[12]</a><a href="#src-21">[21]</a><a href="#src-22">[22]</a></sup>.</figcaption>
+</figure>
+<p>Two changes in the UAE are worth watching:</p>
+<ul>
+<li><strong>A federal Nutri-Mark.</strong> A draft UAE regulation was notified to the WTO as G/TBT/N/ARE/679 in October 2025. Adoption hadn't been confirmed when we checked<sup class="cite"><a href="#src-23">[23]</a></sup>.</li>
+<li><strong>Salt, sugar and fat caps.</strong> These are already being implemented for ten product lines. See our <a href="/blog/uae-salt-sugar-fat-limits-2026">guide to the UAE limits</a>.</li>
+</ul>
+<p>The 2025 amendment to GSO 9 allows QR codes and other electronic codes "additionally (and not as a substitute for the written labelling card)"<sup class="cite"><a href="#src-7">[7]</a></sup>. A QR code can link to more information, but the Arabic must still be printed on the pack.</p>
+
+<h2>Myths About Arabic Food Labels</h2>
+<p>Several claims on pages that rank for this topic don't match the regulators' documents:</p>
+<div class="table-scroll">
+<table>
+<thead><tr><th>Claim seen online</th><th>What the regulators say</th></tr></thead>
+<tbody>
+<tr><td>"Labels must be in Arabic and English."</td><td>Arabic is mandatory and English is optional.<sup class="cite"><a href="#src-1">[1]</a><a href="#src-5">[5]</a></sup></td></tr>
+<tr><td>"Arabic text must be at least 1.2 mm or 1.5 mm high", or "as big as the English".</td><td>"There is no prescribed font or text size under the legislation."<sup class="cite"><a href="#src-2">[2]</a></sup></td></tr>
+<tr><td>"You must use Arabic-Indic digits."</td><td>Western and Arabic-Indic digits are both accepted, and SFDA's own template uses Western digits.<sup class="cite"><a href="#src-2">[2]</a><a href="#src-15">[15]</a></sup></td></tr>
+<tr><td>"Dates must always be dd/mm/yyyy."</td><td>Month/year is fine for shelf lives over three months.<sup class="cite"><a href="#src-3">[3]</a><a href="#src-12">[12]</a></sup></td></tr>
+<tr><td>"There is a GSO 9:2023."</td><td>The current Gulf edition is GSO 9:2022, amended in 2025.<sup class="cite"><a href="#src-6">[6]</a><a href="#src-7">[7]</a></sup></td></tr>
+<tr><td>"A QR code can replace the printed label."</td><td>Only in addition to it, never as a substitute.<sup class="cite"><a href="#src-7">[7]</a></sup></td></tr>
+<tr><td>"Stickers are never allowed", or "the dates can go on the sticker".</td><td>A single approved sticker is allowed, and the dates can never be on it.<sup class="cite"><a href="#src-2">[2]</a><a href="#src-3">[3]</a><a href="#src-12">[12]</a></sup></td></tr>
+<tr><td>"Any distributor can sticker your goods for Saudi Arabia."</td><td>The rule is a single sticker designed and printed by the manufacturer. SFDA stopped accepting consolidator stickers in 2010.<sup class="cite"><a href="#src-12">[12]</a><a href="#src-13">[13]</a></sup></td></tr>
+<tr><td>"Saudi traffic-light labels are mandatory."</td><td>They are voluntary. The mandatory plan was postponed indefinitely in 2022.<sup class="cite"><a href="#src-12">[12]</a></sup></td></tr>
+<tr><td>"English-only labels are fine if your importer agrees."</td><td>Only for food imported for manufacturing or restaurant kitchens, with a commitment filed on Fasah. Never for retail packs.<sup class="cite"><a href="#src-10">[10]</a></sup></td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>What This Guide Can't Confirm Yet</h2>
+<p>We checked every rule above against the regulators' own documents. A few points are still open as of 10 November 2026:</p>
+<ul>
+<li><strong>The final texts of GSO 2810:2025 and GSO 2233:2025.</strong> GSO sells them in Arabic only<sup class="cite"><a href="#src-17">[17]</a><a href="#src-26">[26]</a></sup>. The allergen list and the regulation wording in this guide come from the drafts published for consultation, so check the final text before you print.</li>
+<li><strong>Clause numbers in GSO 9:2022.</strong> The standard is paywalled, so we quote the language and sticker rules from SFDA, ADAFSA and USDA instead.</li>
+<li><strong>Whether the UAE has adopted the 2022 edition of GSO 9.</strong> Dubai Municipality and USDA's November 2025 report still cite UAE.S GSO 9:2019<sup class="cite"><a href="#src-1">[1]</a><a href="#src-3">[3]</a></sup>.</li>
+<li><strong>Saudi fines for label violations.</strong> We found no primary source, so we don't quote amounts.</li>
+<li><strong>A first-time Arabic sticker applied inside Saudi Arabia.</strong> SFDA's guide allows stickers or laser printing to correct violations<sup class="cite"><a href="#src-11">[11]</a></sup>, but that isn't a route for first-time compliance.</li>
+</ul>
+<p>We will update this guide as these are confirmed.</p>
+
+<h2>How RecipeBuilder Produces Matching Arabic and English Labels</h2>
+<p>RecipeBuilder is <a href="/food-labeling">food labeling software</a> for food businesses selling into the UAE, Saudi Arabia and the wider Gulf. Most of the errors above happen when the Arabic is a separate translation job that drifts away from the English. RecipeBuilder avoids that by building both from the recipe:</p>
+<figure class="viz">
+<div class="viz-cards viz-cards--2">
+<div class="viz-card"><span class="viz-tag">ONE RECIPE</span><span class="viz-l"><strong>Both languages from the same data.</strong> Bilingual English and Arabic labels are generated automatically from a single recipe, with no separate translation workflow.</span></div>
+<div class="viz-card"><span class="viz-tag">LABEL CONTENT</span><span class="viz-l"><strong>Built to GCC and SFDA requirements.</strong> Ingredients by weight, allergen declarations, a nutrition facts panel and storage text, in both languages.</span></div>
+<div class="viz-card"><span class="viz-tag">ARTWORK</span><span class="viz-l"><strong>Print-ready packaging files.</strong> Nutrition facts panel, bilingual ingredient list, allergen declaration, storage instructions, barcode and QR code.</span></div>
+<div class="viz-card"><span class="viz-tag">CHANGES</span><span class="viz-l"><strong>Unlimited change requests.</strong> A new ingredient, flavour or pack size means a new label in both languages, and each one is covered.</span></div>
+</div>
+</figure>
+<p>Evaluating tools? See how RecipeBuilder compares with <a href="/compare/food-label-maker-alternative">Food Label Maker</a> and <a href="/compare/nutrical-alternative">NutriCal</a>, or check <a href="/#pricing">plans and pricing</a>.</p>
+<div class="blog-cta-box">
+<h3>Get Arabic and English labels that match</h3>
+<p>Book a call and we'll show you how RecipeBuilder turns your recipes into bilingual labels for the UAE and Saudi Arabia, and how the Dubai Municipality approval guarantee works for your products.</p>
+<ul>
+<li><strong>Approved by Dubai Municipality or your money back</strong> (<a href="/food-labeling#approval-guarantee">see the terms</a>)</li>
+<li><strong>Unlimited change requests</strong></li>
+</ul>
+<p><a class="blog-cta-button" href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call?utm_source=blog&amp;utm_medium=article&amp;utm_campaign=arabic-food-label-requirements&amp;utm_content=product-cta" target="_blank" rel="noopener">Book a call →</a></p>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+<div class="faq-item">
+<h3>Is Arabic mandatory on food labels in the UAE?</h3>
+<p>Yes. Dubai Municipality states that "The mandatory language is Arabic and English is optional", and Abu Dhabi's code requires all label information in Arabic. English or any other language may be added, but it must be identical to the Arabic text.<sup class="cite"><a href="#src-1">[1]</a><a href="#src-2">[2]</a></sup></p>
+</div>
+<div class="faq-item">
+<h3>Can a food label in Saudi Arabia be in English only?</h3>
+<p>Not for retail packs. SFDA applies GSO 9, which requires Arabic, with any other language alongside it and identical to it. The only exception is food imported for manufacturing in licensed Saudi factories or for restaurant kitchens that process it before serving, with a commitment filed on the Fasah platform. Sauces and flavourings placed on the consumer's table don't qualify.<sup class="cite"><a href="#src-5">[5]</a><a href="#src-10">[10]</a></sup></p>
+</div>
+<div class="faq-item">
+<h3>Can I put an Arabic sticker on imported food?</h3>
+<p>Yes, if it is a single sticker that doesn't hide required information, doesn't contradict the original label and can't come off in normal handling. Production and expiry dates must stay on the original pack. In Dubai the sticker must be approved during label assessment and applied before export, and in Saudi Arabia it must be designed and printed by the manufacturer.<sup class="cite"><a href="#src-2">[2]</a><a href="#src-3">[3]</a><a href="#src-12">[12]</a></sup></p>
+</div>
+<div class="faq-item">
+<h3>Do I have to use Arabic-Indic numerals on an Arabic label?</h3>
+<p>No. Abu Dhabi's labelling code accepts both Western digits (1, 2, 3) and Arabic-Indic digits (<span lang="ar" dir="rtl">١، ٢، ٣</span>), and SFDA's own Arabic nutrition label template uses Western digits.<sup class="cite"><a href="#src-2">[2]</a><a href="#src-15">[15]</a></sup></p>
+</div>
+<div class="faq-item">
+<h3>What is "Nutrition Facts" in Arabic?</h3>
+<p>SFDA's nutrition label template uses <span lang="ar" dir="rtl">الحقائق التغذوية</span> for Nutrition Facts, <span lang="ar" dir="rtl">حجم الحصة</span> for serving size, <span lang="ar" dir="rtl">السعرات الحرارية</span> for calories and <span lang="ar" dir="rtl">نسبة الاحتياج اليومي</span> for % daily value. Trans fat is <span lang="ar" dir="rtl">دهون متحولة</span>, never "unsaturated fat".<sup class="cite"><a href="#src-15">[15]</a><a href="#src-18">[18]</a></sup></p>
+</div>
+<div class="faq-item">
+<h3>What are the 14 allergens on GCC food labels?</h3>
+<p>Cereals containing gluten, crustaceans, eggs, fish, peanuts, tree nuts, milk (including lactose), sulphites at 10 ppm or more, celery, mustard, sesame, molluscs, lupin and soybeans. They are listed in the GCC allergen regulation, GSO 2810:2025, which Saudi Arabia applies from December 2025, and are declared with a statement starting <span lang="ar" dir="rtl">يحتوي على</span> ("contains").<sup class="cite"><a href="#src-9">[9]</a><a href="#src-16">[16]</a></sup></p>
+</div>
+<div class="faq-item">
+<h3>Is there a minimum font size for Arabic on food labels?</h3>
+<p>No. ADAFSA's labelling code says "There is no prescribed font or text size under the legislation." The Arabic must still be clear and legible, and the claims that it must be at least 1.2 mm or 1.5 mm high, or as large as the English, have no basis in the regulators' documents.<sup class="cite"><a href="#src-2">[2]</a></sup></p>
+</div>
+<div class="faq-item">
+<h3>Can a QR code replace the Arabic label?</h3>
+<p>No. The 2025 amendment to GSO 9:2022 allows QR codes and other electronic codes only in addition to the printed label, not as a substitute for it. The mandatory information must still be printed on the pack in Arabic.<sup class="cite"><a href="#src-7">[7]</a></sup></p>
+</div>
+
+<h2>Related Resources</h2>
+<div class="viz-links">
+<a href="/blog/uae-food-labeling-requirements-2026"><span>Selling in the UAE?</span><strong>UAE Food Labeling Requirements 2026</strong></a>
+<a href="/blog/dubai-municipality-montaji-food-registration"><span>Registering the product?</span><strong>ZAD, FIRS and Montaji explained</strong></a>
+<a href="/blog/front-of-pack-nutrition-labels-gcc-guide"><span>Adding a front-of-pack grade?</span><strong>Nutri-Mark and GCC front-of-pack guide</strong></a>
+<a href="/blog/uae-salt-sugar-fat-limits-2026"><span>Reformulating for the UAE?</span><strong>UAE salt, sugar and fat limits</strong></a>
+<a href="/compare/food-label-maker-alternative"><span>Comparing tools?</span><strong>RecipeBuilder vs Food Label Maker</strong></a>
+<a href="/food-labeling"><span>Labels from your recipes</span><strong>RecipeBuilder Food Labeling</strong></a>
+</div>
+
+<h2>Sources</h2>
+
+<ol class="sources-list">
+<li id="src-1"><a href="https://dmpmedia.dm.gov.ae/uploads/2023/12/IRS-eng.pdf" target="_blank" rel="noopener">Dubai Municipality: How to apply for Food Label Assessment on the IRS system</a> (December 2023)</li>
+<li id="src-2"><a href="https://www.adafsa.gov.ae/CMS/Guidelines/Code%20of%20Practice%20No.%20%2805%29%20of%202019%20General%20Food%20Labelling%20Requirements.pdf" target="_blank" rel="noopener">ADAFSA: Code of Practice No. 5 of 2019, General Food Labelling Requirements</a> (2019)</li>
+<li id="src-3"><a href="https://www.fas.usda.gov/data/gain/2025/11/united-arab-emirates-fairs-country-report-annual" target="_blank" rel="noopener">USDA Foreign Agricultural Service: United Arab Emirates FAIRS Country Report Annual (TC2025-0008)</a> (21 November 2025)</li>
+<li id="src-4"><a href="https://www.trade.gov/knowledge-product/united-arab-emirates-labelingmarking-requirements" target="_blank" rel="noopener">US International Trade Administration: United Arab Emirates Labeling and Marking Requirements</a></li>
+<li id="src-5"><a href="https://www.sfda.gov.sa/en/faq/it-allowed-write-food-product-label-english-only" target="_blank" rel="noopener">Saudi Food and Drug Authority: Is it allowed to write the food product label in English only?</a> (20 February 2024)</li>
+<li id="src-6"><a href="https://www.gso.org.sa/store/standards/GSO:810825/GSO%209:2022?lang=en" target="_blank" rel="noopener">GCC Standardization Organization: GSO 9:2022 Labeling of prepackaged food stuffs</a> (approved 19 October 2022)</li>
+<li id="src-7"><a href="https://gso-sims-preview-doc-aws.s3-eu-west-1.amazonaws.com/gso-9-2022-amd1-2025-en.html" target="_blank" rel="noopener">GCC Standardization Organization: GSO 9:2022/Amd1:2025, preview of the amendment text</a> (April 2025)</li>
+<li id="src-8"><a href="https://www.sfda.gov.sa/sites/default/files/2024-07/F4-38.pdf" target="_blank" rel="noopener">Saudi Food and Drug Authority: Approved food technical regulations, board decision 4/38</a> (2024)</li>
+<li id="src-9"><a href="https://sfda.gov.sa/sites/default/files/2026-09/48-5F.pdf" target="_blank" rel="noopener">Saudi Food and Drug Authority: Approved food technical regulations, board decision 5/48</a> (December 2025)</li>
+<li id="src-10"><a href="https://sfda.gov.sa/sites/default/files/2025-04/ConditionsRequirementsFoodClearanceE.pdf" target="_blank" rel="noopener">Saudi Food and Drug Authority: Conditions and Requirements for Food Clearance</a> (April 2025)</li>
+<li id="src-11"><a href="https://www.sfda.gov.sa/sites/default/files/2021-10/SFDAcomp.pdf" target="_blank" rel="noopener">Saudi Food and Drug Authority: تصويب مخالفات المواد الغذائية (Correcting food product violations)</a> (October 2021)</li>
+<li id="src-12"><a href="https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=FAIRS+Country+Report+Annual_Riyadh_Saudi+Arabia_SA2025-0013.pdf" target="_blank" rel="noopener">USDA Foreign Agricultural Service: Saudi Arabia FAIRS Country Report Annual (SA2025-0013)</a> (14 July 2025)</li>
+<li id="src-13"><a href="https://apps.fas.usda.gov/newgainapi/api/report/downloadreportbyfilename?filename=Food+and+Agricultural+Import+Regulations+and+Standards+-+Narrative_Riyadh_Saudi+Arabia_12-24-2012.pdf" target="_blank" rel="noopener">USDA Foreign Agricultural Service: Saudi Arabia Food and Agricultural Import Regulations and Standards, Narrative</a> (24 December 2012)</li>
+<li id="src-14"><a href="https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Exporter+Guide+Annual_Riyadh_Saudi+Arabia_SA2025-0010.pdf" target="_blank" rel="noopener">USDA Foreign Agricultural Service: Saudi Arabia Exporter Guide Annual (SA2025-0010)</a> (2025)</li>
+<li id="src-15"><a href="https://sfda.gov.sa/sites/default/files/2026-08/Ta-01.pdf" target="_blank" rel="noopener">Saudi Food and Drug Authority: دليل البطاقة التغذوية – الحقائق التغذوية (Nutrition label guide: Nutrition Facts)</a> (August 2026)</li>
+<li id="src-16"><a href="https://istitlaa.ncc.gov.sa/ar/health/sfda/1LabelingFoodAllergensPrepackagedFood/Pages/default.aspx" target="_blank" rel="noopener">Istitlaa (Saudi public consultation platform): Draft GCC technical regulation on declaring food allergens on prepackaged food labels</a></li>
+<li id="src-17"><a href="https://www.gso.org.sa/store/standards/GSO:948494/GSO%202810:2025" target="_blank" rel="noopener">GCC Standardization Organization: GSO 2810:2025 Declaration of food allergens on prepackaged food labels</a> (approved 30 April 2025)</li>
+<li id="src-18"><a href="https://www.moh.gov.bh/Content/Upload/File/637593531227238437-General-Restriction-and-Requirements-that-Relevant-to-Prepackaged-Food-Stuffs-Labels-.pdf" target="_blank" rel="noopener">Bahrain Ministry of Health: General Restriction and Requirements that Relevant to Prepackaged Food Stuffs Labels</a> (2021)</li>
+<li id="src-19"><a href="https://istitlaa.ncc.gov.sa/ar/health/sfda/PrepackagedFood/Pages/default.aspx" target="_blank" rel="noopener">Istitlaa (Saudi public consultation platform): SFDA draft technical regulation on labelling prepackaged foods</a></li>
+<li id="src-20"><a href="https://sfda.gov.sa/en/faq/it-possible-remove-nutritional-facts-food-product-label-product-only-one-ingredient" target="_blank" rel="noopener">Saudi Food and Drug Authority: Is it possible to remove nutritional facts from a product with only one ingredient?</a> (2024)</li>
+<li id="src-21"><a href="https://sfda.gov.sa/sites/default/files/2025-10/F7-46_0.pdf" target="_blank" rel="noopener">Saudi Food and Drug Authority: Board decision 7/46 on SFDA.FD 2333:2025 health and nutrition claims</a> (2025)</li>
+<li id="src-22"><a href="https://www.sfda.gov.sa/sites/default/files/2026-08/%D9%82%D8%A7%D8%A6%D9%85%D8%A9%20%D8%A7%D9%84%D9%84%D9%88%D8%A7%D8%A6%D8%AD%20%D8%A7%D9%84%D9%81%D9%86%D9%8A%D8%A9%20%D9%88%D9%85%D9%88%D8%B9%D8%AF%20%D8%AD%D9%8A%D8%B2%20%D8%A7%D9%84%D9%86%D9%81%D8%A7%D8%B0%203.pdf" target="_blank" rel="noopener">Saudi Food and Drug Authority: Board decision 4/50 on SFDA.FD 5036:2026 food sold in online stores</a> (2026)</li>
+<li id="src-23"><a href="https://tradeconcerns.wto.org/FR/stcs/details?domainId=TBT&amp;imsId=903" target="_blank" rel="noopener">World Trade Organization: Specific trade concern on the UAE Nutri-Mark draft regulation (G/TBT/N/ARE/679)</a></li>
+<li id="src-24"><a href="https://uaelegislation.gov.ae/en/legislations/1161" target="_blank" rel="noopener">UAE Legislation platform: Federal Law No. 10 of 2015 on Food Safety</a></li>
+<li id="src-25"><a href="https://www.adafsa.gov.ae/CMS/Guidelines/Guideline%20No.%201%20of%202024%20.pdf" target="_blank" rel="noopener">ADAFSA: Guideline No. 1 of 2024 on food import</a> (2024)</li>
+<li id="src-26"><a href="https://www.gso.org.sa/store/standards/GSO:948492/GSO%202233:2025?lang=en" target="_blank" rel="noopener">GCC Standardization Organization: GSO 2233:2025 Requirements of nutritional labeling</a> (approved 30 April 2025)</li>
+<li id="src-27"><a href="https://portal.shjmun.gov.ae/SiteAssets/Education/PDF/Food_Control_Manual.pdf" target="_blank" rel="noopener">Sharjah City Municipality: Food Control Section Procedures Manual</a> (2019)</li>
+<li id="src-28"><a href="https://eur-lex.europa.eu/eli/reg/2011/1169/oj" target="_blank" rel="noopener">EUR-Lex: Regulation (EU) No 1169/2011 on the provision of food information to consumers, Annex II</a></li>
+<li id="src-29"><a href="https://istitlaa.ncc.gov.sa/ar/health/sfda/RequirementsNutritionalLabeling/Pages/default.aspx" target="_blank" rel="noopener">Istitlaa (Saudi public consultation platform): Draft update to the requirements of nutritional labeling (GSO 2233)</a></li>
+</ol>
+`,
+  },
+  {
     slug: "uae-salt-sugar-fat-limits-2026",
     title:
       "UAE Salt, Sugar and Fat Limits 2026: The 9-Month Clock Is Ticking (AED 500K Fines)",
@@ -745,7 +1188,7 @@ export const blogPosts: BlogPost[] = [
 <li>Use a single sticker. It must not hide required information, contradict the original label, or come off easily.</li>
 <li>The sticker must not carry production or expiry dates that differ from the original label. Dates printed only on a sticker are not accepted.</li>
 </ul>
-<p>At minimum, the Arabic label or sticker must give the product name, ingredients, country of origin and, where applicable, storage conditions, instructions for use and nutritional information. Because the Arabic text is the reference, use a translator who knows food terminology and check it against the English line by line.</p>
+<p>At minimum, the Arabic label or sticker must give the product name, ingredients, country of origin and, where applicable, storage conditions, instructions for use and nutritional information. Because the Arabic text is the reference, use a translator who knows food terminology and check it against the English line by line. Our <a href="/blog/arabic-food-label-requirements">Arabic food label requirements guide</a> gives the official Arabic terms for the nutrition panel and allergens, compares the UAE and Saudi sticker rules, and lists the label errors regulators flag most.</p>
 
 <h2>Date Marking Requirements</h2>
 <p>Date marking is easy to get wrong on imported artwork. Under UAE.S 9:2019, as summarised by USDA:</p>
@@ -862,6 +1305,7 @@ export const blogPosts: BlogPost[] = [
 
 <h3>Related Resources</h3>
 <ul>
+<li><a href="/blog/arabic-food-label-requirements">Arabic Food Label Requirements 2026: UAE and Saudi Rules</a></li>
 <li><a href="/blog/front-of-pack-nutrition-labels-gcc-guide">Abu Dhabi Nutri-Mark: Front-of-Pack Label Guide (2026)</a></li>
 <li><a href="/blog/dubai-municipality-montaji-food-registration">Dubai Food Product Registration: ZAD, FIRS and Montaji Explained</a></li>
 <li><a href="/blog/how-to-become-approved-school-food-supplier-dubai">How to Become an Approved School Food Supplier in Dubai (2026)</a></li>
@@ -980,7 +1424,7 @@ export const blogPosts: BlogPost[] = [
 <li>Mandatory warnings and declarations</li>
 <li>Arabic text, with any other language matching the Arabic exactly</li>
 </ul>
-<p>There are some specific rules as well. Six synthetic colours (E102, E104, E110, E122, E124 and E129) must be marked on the label with a warning about possible effects on children's activity and attention. The source of gelatin, lecithin, mono- and diglycerides must be declared. Titanium dioxide (E171) has been banned as a food additive since 31 March 2023. Arabic translation stickers are allowed, but they must be submitted during label assessment, applied as a single sticker before export, and must not hide required information or contradict the original label. For the full labeling picture, see our <a href="/blog/uae-food-labeling-requirements-2026">UAE food labeling requirements guide</a> and our <a href="/blog/front-of-pack-nutrition-labels-gcc-guide">front-of-pack nutrition labeling guide for the GCC</a>.</p>
+<p>There are some specific rules as well. Six synthetic colours (E102, E104, E110, E122, E124 and E129) must be marked on the label with a warning about possible effects on children's activity and attention. The source of gelatin, lecithin, mono- and diglycerides must be declared. Titanium dioxide (E171) has been banned as a food additive since 31 March 2023. Arabic translation stickers are allowed, but they must be submitted during label assessment, applied as a single sticker before export, and must not hide required information or contradict the original label. For the full labeling picture, see our <a href="/blog/uae-food-labeling-requirements-2026">UAE food labeling requirements guide</a> and our <a href="/blog/front-of-pack-nutrition-labels-gcc-guide">front-of-pack nutrition labeling guide for the GCC</a>. For the Arabic text itself, our <a href="/blog/arabic-food-label-requirements">guide to Arabic food label requirements</a> covers the official terms and the errors that get labels rejected.</p>
 
 <h2>Fees, Processing Times and Validity: Check the Live Service Card</h2>
 <p>Earlier versions of this article listed fixed government fees, a certificate validity period and a timeline in business days. We have removed them. The figures published online disagree with each other, and we could not confirm any of them on a live Dubai Municipality page. Fees also change, and testing or consignment release may be charged separately.</p>
@@ -1028,6 +1472,7 @@ export const blogPosts: BlogPost[] = [
 <h3>Related Resources</h3>
 <ul>
 <li><a href="/blog/uae-food-labeling-requirements-2026">UAE Food Labeling Requirements 2026: Standards, Dates and Penalties</a></li>
+<li><a href="/blog/arabic-food-label-requirements">Arabic Food Label Requirements 2026: UAE and Saudi Rules</a></li>
 <li><a href="/blog/front-of-pack-nutrition-labels-gcc-guide">Abu Dhabi Nutri-Mark: Front-of-Pack Label Guide (2026)</a></li>
 <li><a href="/food-labeling">RecipeBuilder Food Labeling</a></li>
 <li><a href="/recipe-management">RecipeBuilder Recipe Management</a></li>
