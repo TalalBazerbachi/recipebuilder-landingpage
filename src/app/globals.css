@@ -648,6 +648,26 @@ body {
   margin-bottom: 0.75rem;
 }
 
+/* Arabic text inside blog posts. Geist has no Arabic glyphs, so name
+   system Arabic fonts explicitly and size them up slightly to match. */
+.prose [lang="ar"] {
+  font-family: "Noto Sans Arabic", "Geeza Pro", "SF Arabic", "Segoe UI", Tahoma, Arial, sans-serif;
+  font-size: 1.05em;
+}
+
+.prose td[lang="ar"],
+.prose th[lang="ar"] {
+  text-align: right;
+}
+
+/* Images placed inside in-article figures */
+.viz-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
 /* FAQ items as cards; the h3 + p pair inside stays intact for FAQPage schema */
 .faq-item {
   margin: 0 0 0.75rem;
