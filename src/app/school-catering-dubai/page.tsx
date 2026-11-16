@@ -1,3 +1,4 @@
+import { bookingHref } from "@/lib/booking";
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -56,8 +57,7 @@ export const metadata: Metadata = {
   },
 };
 
-const DEMO_URL =
-  "https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call";
+const DEMO_URL = bookingHref("/school-catering-dubai");
 
 const faqs = [
   {

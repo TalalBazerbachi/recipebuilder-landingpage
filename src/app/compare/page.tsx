@@ -1,3 +1,4 @@
+import { bookingHref } from "@/lib/booking";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
@@ -5,8 +6,7 @@ import Footer from "@/components/Footer";
 import { comparePages } from "@/data/compare-content";
 import { ArrowRight, CheckCircle, ChevronRight, Layers } from "lucide-react";
 
-const BOOKING_URL =
-  "https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call";
+const BOOKING_URL = bookingHref("/compare");
 
 export const metadata: Metadata = {
   title:

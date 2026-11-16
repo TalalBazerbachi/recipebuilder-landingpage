@@ -2,6 +2,8 @@
 
 import { useEffect } from "react";
 import { CAL_LINK, trackEvent } from "@/lib/analytics";
+import { BOOKING_PARAM } from "@/lib/booking";
+import { rbIds, rbLandingPath } from "@/lib/rb-analytics";
 
 const CAL_ORIGIN = "https://app.cal.com";
 const CAL_EMBED_SRC = `${CAL_ORIGIN}/embed/embed.js`;
@@ -108,6 +110,44 @@ function storedUtms(): Record<string, string> {
   }
 }
 
+// What a booking carries so it can be joined to the visit behind it: the page
+// and button, the first page of the visit, and the visitor and session IDs.
+// cal.com returns these `metadata[...]` values in its booking webhook.
+function bookingStamps(anchor: HTMLAnchorElement, location: string): Record<string, string> {
+  let cta = location;
+  try {
+    cta = new URL(anchor.href).searchParams.get(BOOKING_PARAM.cta) || location;
+  } catch {
+    // Keep the computed location.
+  }
+  const stamps: Record<string, string> = {
+    [BOOKING_PARAM.from]: window.location.pathname,
+    [BOOKING_PARAM.cta]: cta,
+  };
+  const { vid, sid } = rbIds();
+  if (vid) stamps[BOOKING_PARAM.visitor] = vid;
+  if (sid) stamps[BOOKING_PARAM.session] = sid;
+  const landing = rbLandingPath();
+  if (landing) stamps[BOOKING_PARAM.landing] = landing;
+  return stamps;
+}
+
+// Bookings opened in a new tab (before the popup script loads, or with a
+// modified click) skip the popup, so the link itself has to carry the stamps.
+function onPointerDown(e: Event) {
+  const anchor = (e.target as Element | null)?.closest?.("a[href]");
+  if (!(anchor instanceof HTMLAnchorElement) || !anchor.href.includes(CAL_LINK)) return;
+  try {
+    const url = new URL(anchor.href);
+    for (const [key, value] of Object.entries(bookingStamps(anchor, ctaLocation(anchor)))) {
+      url.searchParams.set(key, value);
+    }
+    if (url.toString() !== anchor.href) anchor.href = url.toString();
+  } catch {
+    // Leave the link as it is.
+  }
+}
+
 // Module-level so React Strict Mode's double effect run in development
 // can't register the cal.com listener twice or double-count a booking.
 let calInitialized = false;
@@ -171,7 +211,7 @@ function onClick(e: MouseEvent) {
       e.preventDefault();
       api("modal", {
         calLink: CAL_LINK,
-        config: { layout: "month_view", ...storedUtms() },
+        config: { layout: "month_view", ...storedUtms(), ...bookingStamps(anchor, location) },
       });
     }
     return;
@@ -207,8 +247,10 @@ export default function BookingTracker() {
       : window.setTimeout(setupCal, 1500);
 
     document.addEventListener("click", onClick);
+    document.addEventListener("pointerdown", onPointerDown, true);
     return () => {
       document.removeEventListener("click", onClick);
+      document.removeEventListener("pointerdown", onPointerDown, true);
       if (hasIdle) window.cancelIdleCallback(handle);
       else window.clearTimeout(handle);
     };

@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import GoogleTagManager from "@/components/analytics/GoogleTagManager";
 import BookingTracker from "@/components/analytics/BookingTracker";
+import FirstPartyAnalytics from "@/components/analytics/FirstPartyAnalytics";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -210,6 +211,7 @@ export default function RootLayout({
       >
         <GoogleTagManager />
         <BookingTracker />
+        <FirstPartyAnalytics />
         {children}
       </body>
     </html>

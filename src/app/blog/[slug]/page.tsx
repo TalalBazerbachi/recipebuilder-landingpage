@@ -1,3 +1,4 @@
+import { bookingHref, stampBookingLinksInHtml } from "@/lib/booking";
 import fs from "node:fs";
 import path from "node:path";
 import type { Metadata } from "next";
@@ -294,7 +295,10 @@ export default async function BlogPostPage({ params }: PageProps) {
     .map((x) => x.post);
 
   const faqs = extractFaqs(stripCites(post.content));
-  const anchoredContent = addH2Anchors(post.content);
+  const anchoredContent = stampBookingLinksInHtml(
+    addH2Anchors(post.content),
+    `/blog/${post.slug}`
+  );
   const [contentBefore, contentAfter] = splitAfterSecondSection(anchoredContent);
   const sources = extractSources(post.content);
   const tocHeadings = extractH2Headings(post.content);
@@ -486,7 +490,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                     built for food businesses in the UAE and beyond.
                   </p>
                   <a
-                    href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call"
+                    href={bookingHref(`/blog/${post.slug}`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary-dark hover:underline"
@@ -785,7 +789,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                 </p>
                 <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
                   <a
-                    href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call"
+                    href={bookingHref(`/blog/${post.slug}`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-primary bg-white rounded-lg hover:bg-white/90 transition-colors"
