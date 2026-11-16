@@ -84,15 +84,19 @@ values ('/blog/new-post-slug', 'new_topic', 10, 'content');
 
 ## cal.com webhook
 
+Created on 2026-11-16 on the "RecipeBuilder | Discovery Call" event type
+(cal.com > the event type > Webhooks), so only RecipeBuilder bookings are sent.
+
 - URL: `https://skpgwmmltttnqoudnsml.supabase.co/functions/v1/rb-cal-webhook`
-- Triggers: Booking created, rescheduled, cancelled, no-show updated, meeting ended.
-- Scope it to the "RecipeBuilder | Discovery Call" event type. Bookings for
-  other event types are ignored either way (`cal_event_slugs` in
+- Triggers: booking created, rescheduled, canceled, no-show updated, meeting ended.
+- Bookings for any other event type are ignored (`cal_event_slugs` in
   `analytics.config`), and no personal data from them is kept.
-- Secret: `select value from analytics.config where key = 'cal_webhook_secret';`
-  Paste it into the webhook's Secret field, then require signatures:
-  `update analytics.config set value = 'true' where key = 'cal_require_signature';`
-  Until then unsigned deliveries are accepted; a wrong signature is always rejected.
+- **It has no secret yet**, so deliveries are unsigned. To require signatures:
+  1. Read the secret: `select value from analytics.config where key = 'cal_webhook_secret';`
+  2. Paste it into the webhook's Secret field in cal.com and save.
+  3. `update analytics.config set value = 'true' where key = 'cal_require_signature';`
+
+  A wrong signature is always rejected, with or without step 3.
 - Every delivery is logged in `analytics.cal_webhook_log`.
 
 ## Reading the data
