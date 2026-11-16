@@ -109,7 +109,8 @@ values ('/blog/new-post-slug', 'new_topic', 10, 'content');
 | `analytics.v_account_funnel` | product accounts: created, first recipe, plan, and the lead's source |
 
 `select analytics.report('2026-11-09', '2026-11-15');` returns everything the
-weekly report needs as one JSON document.
+weekly report needs as one JSON document. `weekly-report.md` holds the prompt that
+turns it into a plain-language report; it can be run on demand or scheduled.
 
 ### Updating a lead by hand
 
