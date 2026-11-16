@@ -1,14 +1,10 @@
 import Script from "next/script";
 import { GTM_ID } from "@/lib/analytics";
+import { CONSENT_REQUIRED_REGIONS } from "@/lib/consent-regions";
 
-// There is no cookie banner, so visitors from the EEA, UK and Switzerland get
-// Consent Mode defaults of "denied" (Google tags send cookieless pings only).
+// Consent Mode defaults: "denied" in the countries listed in
+// src/lib/consent-regions.ts (Google tags send cookieless pings only there).
 // Everyone else, including the UAE where ads run, is measured normally.
-const CONSENT_REQUIRED_REGIONS = [
-  "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR",
-  "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK",
-  "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH",
-];
 
 const gtmBootstrap = `
 window.dataLayer = window.dataLayer || [];

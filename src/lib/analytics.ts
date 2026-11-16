@@ -1,3 +1,5 @@
+import { rbTrack } from "@/lib/rb-analytics";
+
 export const GTM_ID = "GTM-P9JRRWQV";
 
 // Every "Book a Call" / "Book a Demo" link on the site points here.
@@ -22,4 +24,9 @@ declare global {
 export function trackEvent(payload: TrackedEvent) {
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push(payload);
+
+  // The same event also goes to first-party analytics. The data layer push
+  // above is what Google Tag Manager and Google Ads read; it is unchanged.
+  const { event, ...props } = payload;
+  rbTrack(event, props);
 }

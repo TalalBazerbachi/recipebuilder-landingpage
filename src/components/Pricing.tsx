@@ -1,11 +1,14 @@
 "use client";
 
+import { CAL_LINK } from "@/lib/analytics";
+import { useBookingHref } from "@/components/analytics/useBookingHref";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Check, ArrowRight, BookOpen, Headset } from "lucide-react";
 import type { PricingContent } from "@/data/landing-content";
 
 export default function Pricing({ content }: { content: PricingContent }) {
+  const bookingHref = useBookingHref();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -103,7 +106,7 @@ export default function Pricing({ content }: { content: PricingContent }) {
 
                 {/* CTA */}
                 <a
-                  href={tier.ctaHref}
+                  href={tier.ctaHref.includes(CAL_LINK) ? bookingHref : tier.ctaHref}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`flex items-center justify-center gap-2 w-full px-6 py-3.5 text-sm font-semibold rounded-xl transition-all hover:-translate-y-0.5 ${

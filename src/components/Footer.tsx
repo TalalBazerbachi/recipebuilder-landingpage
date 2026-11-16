@@ -1,9 +1,10 @@
+import { BOOKING_BASE_URL } from "@/lib/booking";
+import BookingAnchor from "@/components/analytics/BookingAnchor";
 import Image from "next/image";
 import Link from "next/link";
 import type { FooterContent } from "@/data/landing-content";
 
-const BOOKING_URL =
-  "https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call";
+const BOOKING_URL = BOOKING_BASE_URL;
 
 const footerLinks = {
   Product: [
@@ -101,7 +102,11 @@ export default function Footer({ content = defaultContent }: { content?: FooterC
               <ul className="space-y-2.5">
                 {links.map((link) => (
                   <li key={link.label}>
-                    {link.href.startsWith("http") || link.href.startsWith("mailto:") ? (
+                    {link.href === BOOKING_URL ? (
+                      <BookingAnchor className="text-sm text-white/40 hover:text-white transition-colors">
+                        {link.label}
+                      </BookingAnchor>
+                    ) : link.href.startsWith("http") || link.href.startsWith("mailto:") ? (
                       <a
                         href={link.href}
                         target={link.href.startsWith("http") ? "_blank" : undefined}

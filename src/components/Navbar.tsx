@@ -1,5 +1,6 @@
 "use client";
 
+import { useBookingHref } from "@/components/analytics/useBookingHref";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
@@ -16,6 +17,7 @@ const navLinks = [
 ];
 
 export default function Navbar({ light = false }: { light?: boolean }) {
+  const bookingHref = useBookingHref();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const useDarkText = light || scrolled;
@@ -66,7 +68,7 @@ export default function Navbar({ light = false }: { light?: boolean }) {
 
         <div className="hidden lg:flex items-center gap-3">
           <a
-            href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call"
+            href={bookingHref}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-primary to-primary-dark rounded-xl hover:shadow-lg hover:shadow-primary/25 transition-all hover:-translate-y-0.5"
@@ -110,7 +112,7 @@ export default function Navbar({ light = false }: { light?: boolean }) {
                 </Link>
               ))}
               <a
-                href="https://cal.com/talal-bazerbachi-jb8a7d/recipebuilder-discovery-call"
+                href={bookingHref}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-3 block w-full text-center px-5 py-3 text-sm font-semibold text-white bg-gradient-to-r from-primary to-primary-dark rounded-xl"
